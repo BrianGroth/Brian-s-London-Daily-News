@@ -1,6 +1,6 @@
 # Brian's London Daily News
 
-A personal, mobile-first London newspaper built from the strongest parts of two earlier projects:
+A personal, mobile-first daily newspaper about London events, areas, and activities that Brian finds interesting. It is built from the strongest parts of two earlier projects:
 
 - **Brian Daily News** supplies the editorial design, three-edition archive, personal five-story format, source directory, and integrated Nearby POI app.
 - **NW3-News** supplies the lightweight RSS discovery pattern, deduplication, retained candidate history, and scheduled GitHub Actions job.
