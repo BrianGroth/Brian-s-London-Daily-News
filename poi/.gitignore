@@ -1,0 +1,11 @@
+# Machine-local Claude Code state (permissions etc.)
+.claude/settings.local.json
+
+# Node — the project has no dependencies, but keep these out if one is ever added
+node_modules/
+npm-debug.log*
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini

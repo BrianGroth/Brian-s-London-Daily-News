@@ -1,0 +1,514 @@
+/* Nearby Explorer — mobile-first, dark-mode aware.
+   Light and dark are both first-class: this app is used walking around London
+   after dark as much as in daylight. */
+
+:root {
+    --plaque-blue: #15478a;
+
+    --bg: #f4f5f7;
+    --surface: #ffffff;
+    --surface-sunken: #eef0f4;
+    --text: #16191d;
+    /* Meets 4.5:1 on --surface; the old #6c757d did not. */
+    --text-muted: #5b6470;
+    --accent: var(--plaque-blue);
+    --accent-text: #ffffff;
+    --border: #dde1e7;
+    --shadow: 0 1px 2px rgba(16, 24, 40, .06), 0 4px 12px rgba(16, 24, 40, .08);
+    --danger: #a4262c;
+    --radius: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #0d1117;
+        --surface: #161b22;
+        --surface-sunken: #1f242c;
+        --text: #e8eaed;
+        --text-muted: #a3adba;
+        --accent: #5b9bf3;
+        --accent-text: #08121f;
+        --border: #2a313a;
+        --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 4px 14px rgba(0, 0, 0, .35);
+        --danger: #ff8087;
+    }
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    background: var(--bg);
+    color: var(--text);
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+:where(a, button):focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* --- header ----------------------------------------------------------- */
+
+/* Not sticky: the map is the hero now, and the controls strip below it is what
+   follows you down the page. Two sticky bars would stack and eat the screen. */
+.header {
+    background: var(--bg);
+    padding: .6rem 1rem .5rem;
+}
+
+.header__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__title { font-size: 1.15rem; font-weight: 650; letter-spacing: -.01em; }
+
+.header__refresh {
+    font: inherit;
+    font-size: .85rem;
+    font-weight: 550;
+    color: var(--accent);
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: .3rem .85rem;
+    cursor: pointer;
+    min-height: 40px;
+}
+.header__refresh:hover { background: var(--surface-sunken); }
+
+.header__location {
+    max-width: 1200px;
+    margin: .1rem auto 0;
+    font-size: .78rem;
+    color: var(--text-muted);
+}
+
+/* --- map -------------------------------------------------------------- */
+
+.map-shell {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.map {
+    /* Tall enough to be the thing you see on opening, short enough that the
+       nearest cards peek above the fold and invite a scroll. */
+    height: 42vh;
+    min-height: 260px;
+    max-height: 460px;
+    width: 100%;
+    background: var(--surface-sunken);
+    z-index: 1;
+}
+
+@media (min-width: 800px) {
+    .map { height: 46vh; }
+}
+
+.map-recentre {
+    position: absolute;
+    right: .75rem;
+    bottom: .75rem;
+    z-index: 500;
+    font: inherit;
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: .45rem .9rem;
+    min-height: 40px;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+}
+.map-recentre:hover { background: var(--surface-sunken); }
+
+/* Leaflet paints its own chrome white; bring it into the theme. */
+.leaflet-container { font: inherit; background: var(--surface-sunken); }
+
+.leaflet-control-attribution,
+.leaflet-control-scale-line {
+    background: color-mix(in srgb, var(--surface) 85%, transparent) !important;
+    color: var(--text-muted) !important;
+    font-size: .65rem !important;
+}
+.leaflet-control-attribution a { color: var(--accent) !important; }
+.leaflet-control-scale-line { border-color: var(--text-muted) !important; }
+
+.leaflet-bar a {
+    background: var(--surface) !important;
+    color: var(--text) !important;
+    border-color: var(--border) !important;
+}
+.leaflet-bar a:hover { background: var(--surface-sunken) !important; }
+
+@media (prefers-color-scheme: dark) {
+    /* Full-strength OSM tiles glare at night; take the edge off without
+       making street names unreadable. */
+    .leaflet-tile-pane { filter: brightness(.75) contrast(1.05); }
+}
+
+/* Pins ----------------------------------------------------------------- */
+
+.poi-pin {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--pin, #5b6470);
+    border: 2.5px solid #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .45);
+}
+
+.poi-pin--plaque   { --pin: #1f6fd0; }
+.poi-pin--postcard { --pin: #c12026; }
+.poi-pin--historic { --pin: #8a5a2b; }
+.poi-pin--museum   { --pin: #7b3fa0; }
+.poi-pin--article  { --pin: #0f7b6c; }
+.poi-pin--green    { --pin: #2e7d32; }
+.poi-pin--worship  { --pin: #a2621c; }
+.poi-pin--listed   { --pin: #5b6470; }
+
+/* The closest place gets a ring so it is findable at a glance. */
+.poi-pin--nearest {
+    width: 19px;
+    height: 19px;
+    margin: -2px 0 0 -2px;
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--pin) 45%, transparent),
+                0 1px 4px rgba(0, 0, 0, .45);
+}
+
+.user-dot {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #1a73e8;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .25), 0 2px 6px rgba(0, 0, 0, .4);
+}
+
+.accuracy-ring {
+    stroke: #1a73e8;
+    fill: #1a73e8;
+    fill-opacity: .10;
+    stroke-opacity: .45;
+}
+
+/* Popups ---------------------------------------------------------------- */
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+    background: var(--surface) !important;
+    color: var(--text) !important;
+    box-shadow: var(--shadow) !important;
+}
+.leaflet-popup-content { margin: .7rem .85rem !important; line-height: 1.45 !important; }
+.leaflet-popup-close-button { color: var(--text-muted) !important; }
+
+.map-popup { display: flex; flex-direction: column; gap: .3rem; }
+
+.map-popup__badge {
+    font-size: .68rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.map-popup__title { font-size: .95rem; line-height: 1.3; }
+
+.map-popup__distance {
+    font-size: .8rem;
+    font-weight: 700;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+}
+
+.map-popup__inscription {
+    font-size: .78rem;
+    font-style: italic;
+    color: var(--text-muted);
+    quotes: '"' '"';
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.map-popup__walk {
+    align-self: flex-start;
+    margin-top: .2rem;
+    padding: .35rem .8rem;
+    background: var(--accent);
+    color: var(--accent-text);
+    border-radius: 999px;
+    font-size: .78rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* --- controls strip ---------------------------------------------------- */
+
+.controls {
+    position: sticky;
+    top: 0;
+    z-index: 400;
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: .5rem 1rem .1rem;
+}
+
+.summary {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: .8rem;
+    font-weight: 550;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+}
+
+/* --- filter chips ----------------------------------------------------- */
+
+.filters {
+    display: flex;
+    gap: .4rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: .5rem 0 .45rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.filters::-webkit-scrollbar { display: none; }
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    flex: 0 0 auto;
+    font: inherit;
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: .35rem .7rem;
+    cursor: pointer;
+    white-space: nowrap;
+    min-height: 36px;
+    transition: background-color .15s, border-color .15s, color .15s;
+}
+
+.chip[aria-pressed="true"] {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-text);
+}
+
+.chip:disabled { opacity: .4; cursor: default; }
+
+.chip__icon { font-size: .9em; }
+
+.chip__count {
+    font-variant-numeric: tabular-nums;
+    font-size: .72rem;
+    opacity: .7;
+}
+
+/* --- layout ----------------------------------------------------------- */
+
+.main { max-width: 1200px; margin: 0 auto; padding: 1rem; }
+
+.status {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    color: var(--text-muted);
+    font-size: .95rem;
+}
+.status.is-error { color: var(--danger); }
+
+.status.is-busy::after {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    text-align: left;
+    animation: ellipsis 1.2s steps(4, end) infinite;
+}
+@keyframes ellipsis {
+    0%   { content: ''; }
+    25%  { content: '.'; }
+    50%  { content: '..'; }
+    75%  { content: '...'; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .status.is-busy::after { animation: none; content: '…'; }
+    * { transition-duration: .01ms !important; }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 1rem;
+    align-items: start;
+}
+
+/* --- cards ------------------------------------------------------------ */
+
+.poi {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.poi__image {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    background: var(--surface-sunken);
+    display: block;
+}
+
+.poi__body {
+    padding: .85rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    flex: 1;
+}
+
+.poi__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    font-size: .74rem;
+}
+
+.poi__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: .3rem;
+    background: var(--surface-sunken);
+    color: var(--text-muted);
+    border-radius: 999px;
+    padding: .15rem .55rem;
+    font-weight: 550;
+    white-space: nowrap;
+}
+
+.poi__distance {
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.poi__title { font-size: 1.05rem; font-weight: 640; line-height: 1.3; }
+.poi__title-link { color: inherit; text-decoration: none; }
+.poi__title-link:hover { color: var(--accent); text-decoration: underline; }
+
+/* The plaque text itself — the answer to "who lived here". */
+.poi__inscription {
+    font-size: .88rem;
+    line-height: 1.5;
+    color: var(--text);
+    border-left: 3px solid var(--accent);
+    background: var(--surface-sunken);
+    border-radius: 0 6px 6px 0;
+    padding: .5rem .7rem;
+    font-style: italic;
+}
+
+.poi__description {
+    font-size: .88rem;
+    color: var(--text-muted);
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.poi__attribution {
+    font-size: .73rem;
+    color: var(--text-muted);
+    opacity: .85;
+}
+
+.poi__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .5rem;
+    margin-top: auto;
+    padding-top: .25rem;
+}
+
+.poi__button {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: .4rem 1rem;
+    background: var(--accent);
+    color: var(--accent-text);
+    text-decoration: none;
+    border-radius: 999px;
+    font-size: .85rem;
+    font-weight: 600;
+}
+.poi__button:hover { filter: brightness(1.08); }
+
+.poi__link {
+    font-size: .8rem;
+    color: var(--accent);
+    text-decoration: none;
+    padding: .3rem 0;
+}
+.poi__link:hover { text-decoration: underline; }
+
+/* --- footer / more ---------------------------------------------------- */
+
+.more {
+    display: block;
+    width: 100%;
+    margin: 1.25rem auto 0;
+    max-width: 340px;
+    font: inherit;
+    font-size: .9rem;
+    font-weight: 550;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: .7rem 1rem;
+    cursor: pointer;
+    min-height: 44px;
+}
+.more:hover { background: var(--surface-sunken); }
+
+.footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 2.5rem;
+    font-size: .73rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+    text-align: center;
+}

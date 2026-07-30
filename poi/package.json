@@ -1,0 +1,12 @@
+{
+  "name": "nearbypoi",
+  "version": "2.0.0",
+  "description": "Historical places, blue plaques and listed buildings within walking distance.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/",
+    "serve": "python -m http.server 8080"
+  },
+  "license": "MIT"
+}

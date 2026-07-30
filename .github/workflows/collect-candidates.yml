@@ -1,0 +1,36 @@
+name: Collect London news candidates
+
+on:
+  schedule:
+    - cron: "15 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: london-news-candidates
+  cancel-in-progress: true
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Collect candidate stories
+        run: python scripts/collect_candidates.py
+
+      - name: Commit candidate file
+        run: |
+          git config user.name "london-news-candidate-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/rss_candidates.json
+          git diff --quiet --cached || git commit -m "Refresh London news candidates"
+          git push
