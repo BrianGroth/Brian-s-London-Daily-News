@@ -579,9 +579,9 @@
   <div class="shell">
     <header class="masthead">
       <p class="brand">BRIAN'S LONDON DAILY NEWS</p>
-      <p class="issue-line" id="issue-line">London <span class="dot">•</span> Monday 27 July 2026</p>
+      <p class="issue-line" id="issue-line">London <span class="dot">•</span> Friday 31 July 2026</p>
       <nav class="date-nav" aria-label="Choose briefing date" role="tablist">
-        <button class="date-tab" id="tab-today" role="tab" aria-controls="today" aria-selected="true" data-day="today">Today 27 July</button>
+        <button class="date-tab" id="tab-today" role="tab" aria-controls="today" aria-selected="true" data-day="today">Today 31 July</button>
         <button class="date-tab" id="tab-yesterday" role="tab" aria-controls="yesterday" aria-selected="false" data-day="yesterday">Yesterday</button>
         <button class="date-tab" id="tab-day-before" role="tab" aria-controls="day-before" aria-selected="false" data-day="day-before">Day Before</button>
       </nav>
@@ -733,11 +733,124 @@
         src: "https://www.english-heritage.org.uk/siteassets/home/visit/whats-on-202627/london/kenwood/poster-ratio-1-1-with-title-1.png",
         alt: "Pirates of Penzance outdoor theatre poster",
         credit: "Image: English Heritage"
+      },
+      heathLitter: {
+        src: "https://static1.squarespace.com/static/5eff13e8f5beea28d1539c30/t/682382e3f9c8016586ffa3fb/1753104827799/youth+gardening+savernake.jpg?format=1500w",
+        alt: "Heath Hands volunteers working together outdoors",
+        credit: "Photo: Heath Hands"
+      },
+      fiveIron: {
+        src: "https://morning-read.brightspotcdn.com/dims4/default/f7771cd/2147483647/strip/true/crop/3840x2016+0+272/resize/1200x630!/quality/90/?url=http%3A%2F%2Fmorning-read-brightspot.s3.us-east-1.amazonaws.com%2F3e%2F99%2Fc459fe2d434995aa8e25cba0720d%2Fdsc06195.jpeg",
+        alt: "A golfer using a simulator bay inside Five Iron Golf Liverpool Street",
+        credit: "Photo: Five Iron Golf"
+      },
+      wexler: {
+        src: "https://cdn.prod.website-files.com/67078054dafa439d9295a74d/685430733b3f32f84de5cc71_Cropped%20Header%20-%20Wexler.avif",
+        alt: "Wexler's fact-intelligence platform shown on a laptop",
+        credit: "Image: Wexler"
+      },
+      greyparrot: {
+        src: "https://www.greyparrot.ai/hubfs/gpr01/Featured%20images/Featured%20image%20packaging.jpg",
+        alt: "Packaging travelling through an automated recycling sorting line",
+        credit: "Photo: Greyparrot"
+      },
+      piccadilly: {
+        src: "https://cdn.prgloo.com/media/bfdfc080d85a459fb83ff2244c556640.jpg?width=1200&height=800",
+        alt: "Two new Piccadilly line test trains standing side by side",
+        credit: "Photo: Transport for London"
       }
     };
 
     const issues = {
       today: {
+        label: "London • Friday 31 July 2026",
+        footer: "Friday 31 July 2026",
+        morning: {
+          mode: "Nearby POI",
+          modeUrl: "poi/",
+          temperature: "26° / 17°",
+          weatherUrl: "https://weather.metoffice.gov.uk/forecast/gcpvj0v07",
+          rain: "Dry all day · <5%",
+          pollen: "High pollen",
+          transit: [
+            ["Northern", "Part suspended", "check", "https://tfl.gov.uk/tube-dlr-overground/status/"],
+            ["Overground", "Mildmay severe delays", "check", "https://tfl.gov.uk/tube-dlr-overground/status/"]
+          ]
+        },
+        stories: [
+          {
+            id: "2026-07-31-heath-litter-pick",
+            section: "Near home",
+            headline: "Give Parliament Hill an hour",
+            location: "Near NW3",
+            action: "Participate",
+            actionUrl: "https://www.heath-hands.org.uk/whatson/litter-pick-01aug26",
+            image: images.heathLitter,
+            brief: "Heath Hands is running a free, family-friendly litter pick around Parliament Hill tomorrow, Saturday 1 August, from noon to 1pm. Meet at the Heath Info Hut beside the Parliament Hill tennis courts. Everyone is welcome, children should bring an adult, all equipment is supplied and booking is not required.",
+            why: "It is the strongest current non-repeating Heath option: a useful hour within walking range of NW3, with no cost, no advance commitment and a visible result for the park.",
+            sources: [
+              ["Heath Hands event", "https://www.heath-hands.org.uk/whatson/litter-pick-01aug26"]
+            ]
+          },
+          {
+            id: "2026-07-31-five-iron-liverpool-street",
+            section: "Near work",
+            headline: "Broadgate opens an indoor fairway",
+            location: "Near EC2N",
+            action: "Book",
+            actionUrl: "https://fiveirongolf.co.uk/book-now/",
+            image: images.fiveIron,
+            brief: "Five Iron Golf’s first UK venue is now open at 1 Finsbury Avenue, steps from Liverpool Street. Eight Trackman simulator bays offer hundreds of virtual courses plus non-golf games; the 7,000-square-foot space also has a bar, kitchen and terrace. Walk-ins are possible, but the operator recommends booking because unreserved bays are not guaranteed.",
+            why: "It gives EC2N workers a genuinely new after-work or client option within minutes of the office, and the simulator format works for beginners as well as regular golfers.",
+            sources: [
+              ["Broadgate venue listing", "https://broadgate.co.uk/eatdrinkshop/five-iron-golf/"],
+              ["Five Iron Golf UK", "https://fiveirongolf.co.uk/"],
+              ["First Call Golf", "https://www.firstcallgolf.com/industry-news/release/2026-07-27/five-iron-golf-celebrates-opening-of-liverpool-street-venue-at-londons-broadgate-campus"]
+            ]
+          },
+          {
+            id: "2026-07-31-legora-wexler-london-hub",
+            section: "London AI",
+            headline: "Wexler deal seeds a London legal-AI hub",
+            location: "London-based",
+            image: images.wexler,
+            brief: "Legal-AI platform Legora is buying London-based Wexler, whose software turns large litigation document sets into sourced facts, chronologies and confidence-scored answers. Wexler’s 18-person engineering team will become the founding group of Legora’s new London engineering hub, bringing a specialist evidence layer into Legora’s broader agentic legal-work platform.",
+            why: "This is a London story because the acquisition keeps a home-grown technical team together and turns it into the nucleus of a new engineering hub serving a fast-consolidating legal-AI market.",
+            sources: [
+              ["Artificial Lawyer", "https://www.artificiallawyer.com/2026/07/29/legora-buys-wexler-5th-deal-this-year/"],
+              ["Wexler", "https://www.wexler.ai/"]
+            ]
+          },
+          {
+            id: "2026-07-31-greyparrot-series-b",
+            section: "London technology",
+            headline: "Waste vision wins £20m to scale",
+            location: "London-based",
+            image: images.greyparrot,
+            brief: "London-headquartered Greyparrot has raised a £20m Series B for its camera-and-AI waste intelligence system. Analyzer units mounted above sorting conveyors classify more than 100 material categories and feed live operational data into recycling facilities. The company says more than 250 units now operate across over 65 facilities in 20 countries, with one trillion detections recorded.",
+            why: "The round backs a London-built technology already embedded in physical infrastructure, where better visibility can increase recoveries, reduce residue and give packaging makers evidence about what is actually recycled.",
+            sources: [
+              ["Greyparrot", "https://www.greyparrot.ai/press"],
+              ["Axios Pro Rata", "https://www.axios.com/newsletters/axios-pro-rata-160af1b9-9b3f-4cab-81e1-43f5984bbccb"]
+            ]
+          },
+          {
+            id: "2026-07-31-piccadilly-weekend-closure",
+            section: "Plan ahead",
+            headline: "Piccadilly closure reaches Heathrow",
+            location: "Across London",
+            action: "Avoid",
+            image: images.piccadilly,
+            brief: "The Piccadilly line has no service between Cockfosters and Uxbridge today. On Saturday 1 and Sunday 2 August, the closure extends from Cockfosters all the way to Heathrow, including Saturday Night Tube hours; Cockfosters–Uxbridge closes again on Monday. TfL says the block is needed for infrastructure upgrades and testing of the new train fleet.",
+            why: "Any weekend airport, King’s Cross or West End journey using the line needs rerouting now. District and Metropolitan services remain alternatives on parts of the corridor, but allow extra time and check TfL before leaving.",
+            sources: [
+              ["TfL Newsroom", "https://tfl-newsroom.prgloo.com/news/planned-part-closures-on-the-piccadilly-line-as-vital-upgrade-work-and-testing-of-the-brand-new-trains-gathers-pace"],
+              ["TfL Piccadilly line upgrade", "https://tfl.gov.uk/status-updates/major-works-and-events/piccadilly-line-upgrade"]
+            ]
+          }
+        ]
+      },
+      yesterday: {
         label: "London • Monday 27 July 2026",
         footer: "Monday 27 July 2026",
         morning: {
@@ -821,7 +934,7 @@
           }
         ]
       },
-      yesterday: {
+      "day-before": {
         label: "London • Sunday 26 July 2026",
         footer: "Sunday 26 July 2026",
         morning: {
@@ -902,93 +1015,6 @@
             why: "The walk offers rare guided access to the Heath at dusk and has a finite bookable group, so acting now is more useful than waiting until the August date is close.",
             sources: [
               ["Heath Hands", "https://www.heath-hands.org.uk/whatson/batwalk200826"]
-            ]
-          }
-        ]
-      },
-      "day-before": {
-        label: "London • Saturday 25 July 2026",
-        footer: "Saturday 25 July 2026",
-        morning: {
-          mode: "Nearby POI",
-          modeUrl: "poi/",
-          temperature: "28° / 17°",
-          weatherUrl: "https://weather.metoffice.gov.uk/forecast/gcpvj0v07",
-          rain: "Dry all day · <5%",
-          pollen: "Very high pollen",
-          transit: [
-            ["Northern", "Good service", "good", "https://tfl.gov.uk/tube-dlr-overground/status/"],
-            ["Overground", "Good service", "good", "https://tfl.gov.uk/tube-dlr-overground/status/"]
-          ]
-        },
-        stories: [
-          {
-            id: "2026-07-25-springwood-final-performance",
-            section: "Near home",
-            headline: "Springwood has one last curtain",
-            location: "Near NW3",
-            action: "Book",
-            actionUrl: "https://www.hampsteadtheatre.co.uk/whats-on/2026/springwood/",
-            image: images.theatre,
-            brief: "Richard Nelson’s world-premiere family drama Springwood closes at Hampstead Theatre tonight. The 7.30pm performance has limited availability; the 2.30pm matinee is sold out. Robert Lindsay and Jemma Redgrave lead the cast in a production lasting about two hours and ten minutes.",
-            why: "It is a genuinely last-chance cultural option a short walk from NW3 2RU, with enough availability left to make a spontaneous Saturday booking realistic.",
-            sources: [
-              ["Hampstead Theatre", "https://www.hampsteadtheatre.co.uk/whats-on/2026/springwood/"]
-            ]
-          },
-          {
-            id: "2026-07-25-barbican-architecture-tours",
-            section: "Near work",
-            headline: "See the Barbican from the inside out",
-            location: "Near EC2N",
-            action: "Book",
-            actionUrl: "https://www.barbican.org.uk/whats-on/2026/event/architecture-tours",
-            image: images.barbican,
-            brief: "The Barbican’s 90-minute architecture tours are running through 31 August. Guides connect Roman ramparts and wartime ruins to the estate’s radical concrete design, including spaces hidden below the Tube line. Tickets are £19.50 and tours leave from the Barbican Centre.",
-            why: "It turns a familiar part of the City into an unusually revealing lunchtime or after-work detour, within easy reach of EC2N and bookable well beyond this weekend.",
-            sources: [
-              ["Barbican", "https://www.barbican.org.uk/whats-on/2026/event/architecture-tours"]
-            ]
-          },
-          {
-            id: "2026-07-25-deloitte-google-london-ai-studio",
-            section: "London AI",
-            headline: "London’s new AI studio targets the four-week leap",
-            location: "London-based",
-            image: images.aiStudio,
-            brief: "Deloitte and Google Cloud’s London AI Studio reaches its planned late-July opening window at Deloitte’s New Street Square campus. Client teams will use four-week labs to prototype and validate production-ready agentic systems, while 1,000 UK Deloitte AI and data specialists train on Gemini Enterprise.",
-            why: "This is a concrete London investment aimed at closing the gap between impressive AI demonstrations and governed systems that major organisations can actually deploy.",
-            sources: [
-              ["Google Cloud", "https://www.googlecloudpresscorner.com/2026-06-17-Deloitte-and-Google-Cloud-Collaborate-to-Launch-London-AI-Studio-to-Spearhead-UKs-Transition-to-Agentic-AI"],
-              ["Deloitte London office", "https://www.deloitte.com/uk/en/offices/uk-offices/london.html"]
-            ]
-          },
-          {
-            id: "2026-07-25-queen-mary-fibre-positioning",
-            section: "London technology",
-            headline: "Buried fibre could find you when GPS cannot",
-            location: "London-based",
-            image: images.fibre,
-            brief: "Queen Mary University of London researchers have combined satellite positioning with existing buried fibre-optic cables that sense nearby vibrations. In real-world trials, the hybrid system stayed more accurate than GPS alone during signal outages and worked with lower-powered devices.",
-            why: "Dense streets, tunnels and buildings make London a natural proving ground for resilient positioning—useful for transport, emergency response and future autonomous systems without installing an entirely new network.",
-            sources: [
-              ["Queen Mary University of London", "https://www.qmul.ac.uk/news/latest-news/2026/science-and-engineering/se/new-hybrid-positioning-system-promises-reliable-tracking-where-gps-fails-.html"],
-              ["IEEE paper", "https://ieeexplore.ieee.org/document/11587254"]
-            ]
-          },
-          {
-            id: "2026-07-25-electric-summer-battersea",
-            section: "Plan ahead",
-            headline: "A new summer fair lands beside the Thames",
-            location: "Across London",
-            action: "Participate",
-            actionUrl: "https://electricsummer.com/",
-            image: images.summerFair,
-            brief: "Electric Summer opens at Battersea Power Station on Wednesday 29 July and runs through 31 August. The free-to-enter riverside takeover brings a roller rink, Big Wheel, pétanque, boardwalk games, street food and a bar to Power Station Park.",
-            why: "It is a useful diary marker for an easy summer outing: direct on the Northern line, flexible enough for a short visit, and distinct from the indoor mini-golf exhibition featured yesterday.",
-            sources: [
-              ["Electric Summer", "https://electricsummer.com/"],
-              ["Getting there", "https://electricsummer.com/getting-here/"]
             ]
           }
         ]
