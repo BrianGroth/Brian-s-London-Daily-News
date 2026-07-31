@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Collect London news leads without pretending to edit the newspaper.
 
-Adapted from NW3-News. Uses only the Python standard library and writes a
-deduplicated, rolling candidate file for the daily Codex research run.
+Uses only the Python standard library and writes a deduplicated, rolling
+candidate file for the daily Codex research run.
 """
 
 from __future__ import annotations
@@ -161,11 +161,22 @@ def still_recent(item: dict, cutoff: datetime) -> bool:
         return False
 
 
+def item_timestamp(item: dict) -> float:
+    """Prefer the publisher's timestamp; fall back to discovery time."""
+    published = parse_date(item.get("published_at", ""))
+    if published:
+        return published.timestamp()
+    try:
+        return datetime.fromisoformat(item["discovered_at"]).timestamp()
+    except (KeyError, TypeError, ValueError):
+        return 0.0
+
+
 def deduplicate(items: list[dict]) -> list[dict]:
     seen_links: set[str] = set()
     seen_titles: set[str] = set()
     result = []
-    for item in sorted(items, key=lambda row: row.get("discovered_at", ""), reverse=True):
+    for item in sorted(items, key=item_timestamp, reverse=True):
         link = item.get("link", "").strip()
         title_key = normalise_title(item.get("title", ""))
         if not link or not title_key or link in seen_links or title_key in seen_titles:

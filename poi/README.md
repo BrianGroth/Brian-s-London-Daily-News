@@ -1,6 +1,6 @@
 # Nearby Explorer
 
-**Live: <https://briangroth.github.io/Brian_Daily_News/poi/>**
+This app is integrated at `poi/` within Brian's London Daily News and is maintained directly in this repository.
 
 What is historically interesting within walking distance of where you are standing right now — blue plaques, listed buildings, monuments and the stories attached to them.
 

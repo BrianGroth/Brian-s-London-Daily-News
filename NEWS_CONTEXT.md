@@ -79,6 +79,15 @@ The permanent, growing set of previously used sources lives in `resources.html`.
 
 Use it to discover leads only. Open the destination, verify the publication time and substance, search for primary evidence, and decide independently whether the story belongs.
 
+## Freshness uses two clocks
+
+Freshness is an editorial requirement with two different measurements:
+
+1. **Development clock for news:** hard news, AI, technology, policy, research, funding, and announcements should normally have been published or materially updated within 36 hours. The daily run begins with the newest verified candidates. A 36–72 hour item needs a clear reason to outrank newer material.
+2. **Action clock for events and activities:** for a performance, walk, consultation, exhibition, ticket release, closure, deadline, or planned disruption, the relevant freshness is its upcoming event/action date. The source page may be older, but the date, time, price, availability, booking status, and cancellation status must be rechecked today.
+
+Never confuse a recently published recap with a new development. Never reject a still-upcoming useful activity solely because its official listing was published earlier.
+
 ## Evidence and writing
 
 - Prefer primary sources for dates, policy, research, events, ticketing, transport, and company claims.
@@ -121,6 +130,8 @@ The reference concepts are:
 - Near Home and Near Work are geographically honest.
 - AI and technology pass the London test.
 - Plan Ahead contains a real future decision.
+- Ordinary news is within the 36-hour window, or a documented 36–72 hour exception.
+- Every event/activity remains upcoming and its actionable date and availability were verified today.
 - No semantic repeat of yesterday.
 - All action links, source URLs, images, alt text, and credits verified.
 - New source domains appended once; no existing resource removed.

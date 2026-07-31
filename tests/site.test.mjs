@@ -6,6 +6,11 @@ import test from "node:test";
 const index = await readFile(new URL("../index.html", import.meta.url), "utf8");
 const resources = await readFile(new URL("../resources.html", import.meta.url), "utf8");
 const about = await readFile(new URL("../about.html", import.meta.url), "utf8");
+const readme = await readFile(new URL("../README.md", import.meta.url), "utf8");
+const dailyPrompt = await readFile(new URL("../DAILY_NEWS_PROMPT.md", import.meta.url), "utf8");
+const contextGuide = await readFile(new URL("../NEWS_CONTEXT.md", import.meta.url), "utf8");
+const collector = await readFile(new URL("../scripts/collect_candidates.py", import.meta.url), "utf8");
+const poiReadme = await readFile(new URL("../poi/README.md", import.meta.url), "utf8");
 
 function extractIssues() {
   const start = index.indexOf("    const images =");
@@ -65,4 +70,26 @@ test("primary navigation reaches the merged companion pages", () => {
   assert.match(index, /href="poi\/"/);
   assert.match(index, /href="about\.html"/);
   assert.match(index, /href="resources\.html"/);
+});
+
+test("the project is self-contained and contains no archived-project references", () => {
+  const maintainedText = [readme, dailyPrompt, contextGuide, collector, poiReadme].join("\n");
+  const retiredNames = [
+    ["Brian", "_Daily_", "News"].join(""),
+    ["NW3", "-", "News"].join(""),
+    ["Brian", " Daily ", "News"].join(""),
+  ];
+  for (const retiredName of retiredNames) {
+    assert.equal(maintainedText.includes(retiredName), false);
+  }
+});
+
+test("the one-prompt workflow owns collection, validation, and two-clock freshness", () => {
+  assert.match(readme, /one required action/i);
+  assert.match(readme, /does \*\*not\*\* need to run Python or npm separately/i);
+  assert.match(dailyPrompt, /python scripts\/collect_candidates\.py/);
+  assert.match(dailyPrompt, /previous \*\*36 hours\*\*/);
+  assert.match(dailyPrompt, /important date is the event, availability, deadline, or action date/i);
+  assert.match(contextGuide, /Freshness uses two clocks/);
+  assert.match(collector, /key=item_timestamp/);
 });
