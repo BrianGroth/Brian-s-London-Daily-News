@@ -579,9 +579,9 @@
   <div class="shell">
     <header class="masthead">
       <p class="brand">BRIAN'S LONDON DAILY NEWS</p>
-      <p class="issue-line" id="issue-line">London <span class="dot">•</span> Friday 31 July 2026</p>
+          <p class="issue-line" id="issue-line">London <span class="dot">•</span> Sunday 2 August 2026</p>
       <nav class="date-nav" aria-label="Choose briefing date" role="tablist">
-        <button class="date-tab" id="tab-today" role="tab" aria-controls="today" aria-selected="true" data-day="today">Today 31 July</button>
+        <button class="date-tab" id="tab-today" role="tab" aria-controls="today" aria-selected="true" data-day="today">Today 2 August</button>
         <button class="date-tab" id="tab-yesterday" role="tab" aria-controls="yesterday" aria-selected="false" data-day="yesterday">Yesterday</button>
         <button class="date-tab" id="tab-day-before" role="tab" aria-controls="day-before" aria-selected="false" data-day="day-before">Day Before</button>
       </nav>
@@ -758,11 +758,119 @@
         src: "https://cdn.prgloo.com/media/bfdfc080d85a459fb83ff2244c556640.jpg?width=1200&height=800",
         alt: "Two new Piccadilly line test trains standing side by side",
         credit: "Photo: Transport for London"
+      },
+      floralForay: {
+        src: "https://static1.squarespace.com/static/5eff13e8f5beea28d1539c30/5f904e6f753ece5363fc3024/6a5f56a88411e8683b0d6d49/1784633130843/WildflowersJoM.jpg?format=1500w",
+        alt: "Wild flowers growing across a summer meadow on Hampstead Heath",
+        credit: "Photo: Heath Hands"
+      },
+      londiniumTrail: {
+        src: "https://www.cityoflondon.gov.uk/image-library/banners-1920-x-630/Things-to-do/reimagining-londinium-banner.xb4111e1a.jpg?w=1200&q=70",
+        alt: "Colourful illustrated map for the Reimagining Londinium art trail",
+        credit: "Image: City of London Corporation"
+      },
+      imaginationLeadership: {
+        src: "https://www.qmul.ac.uk/media/qmul/media/news/items/pr/Leadership-in-Imagination-age_large.png",
+        alt: "Leadership in the Imagination Age book cover showing a figure flying a yellow kite",
+        credit: "Image: Queen Mary University of London"
+      },
+      lifeSciencesInvestment: {
+        src: "https://ik.imagekit.io/businessweekly/thumbnails/Abdul-Qureshi_Barclays_XBU3gvJht.jpg",
+        alt: "Barclays business banking executive Abdul Qureshi",
+        credit: "Photo: Barclays"
+      },
+      solarEclipse: {
+        src: "https://www.rmg.co.uk/sites/default/files/styles/large/public/2025-12/Photo%20by%20Cris%20Menles%20on%20Pexels.jpg.webp?itok=1nUbQBbL",
+        alt: "A partial solar eclipse seen above a dark landscape",
+        credit: "Photo: Cris Menles / Pexels, via Royal Museums Greenwich"
       }
     };
 
     const issues = {
       today: {
+        label: "London • Sunday 2 August 2026",
+        footer: "Sunday 2 August 2026",
+        morning: {
+          mode: "Nearby POI",
+          modeUrl: "poi/",
+          temperature: "28° / 16°",
+          weatherUrl: "https://weather.metoffice.gov.uk/forecast/gcpvj0v07",
+          rain: "Dry all day · <5%",
+          pollen: "High pollen",
+          transit: [
+            ["Northern", "Good service", "good", "https://tfl.gov.uk/tube-dlr-overground/status/"],
+            ["Overground", "Multiple disruptions", "check", "https://tfl.gov.uk/tube-dlr-overground/status/"]
+          ]
+        },
+        stories: [
+          {
+            id: "2026-08-02-heath-floral-foray",
+            section: "Near home",
+            headline: "Search the Heath for uncommon plants",
+            location: "Near NW3",
+            action: "Walk",
+            image: images.floralForay,
+            brief: "The London Natural History Society’s free Floral Foray crosses Hampstead Heath today from 10.30am to 3pm. Led by Liz Andrew, the group will search for uncommon plants recorded in the Millennial Flora database. Meet at the Flagstaff by Whitestone Pond, bring lunch, and expect a detailed ecological survey rather than a short introductory stroll.",
+            why: "It is today’s strongest verified Heath option: genuinely local, open to everyone and timed early enough to join this morning without booking.",
+            sources: [
+              ["Heath Hands event", "https://www.heath-hands.org.uk/whatson/lnhs-floralforay-aug"]
+            ]
+          },
+          {
+            id: "2026-08-02-reimagining-londinium",
+            section: "Near work",
+            headline: "Roman London becomes an eight-stop art trail",
+            location: "Near EC2N",
+            action: "Walk",
+            image: images.londiniumTrail,
+            brief: "Eight artworks created by primary-school children now form a free City trail through Roman Londinium, running until 31 August. The route connects locations including London’s Roman Amphitheatre, Leadenhall Market and St Dunstan in the East, with playful interpretations of Roman trade, food, markets and medicinal plants. A downloadable map links the stops.",
+            why: "The outdoor route turns the Square Mile around EC2N into a useful lunch-break or quiet-Sunday walk, with no ticket, fixed start time or booking decision.",
+            sources: [
+              ["City of London", "https://www.cityoflondon.gov.uk/events/reimagining-londinium"]
+            ]
+          },
+          {
+            id: "2026-08-02-qmul-imagination-leadership",
+            section: "London AI",
+            headline: "Queen Mary puts judgement ahead of automation",
+            location: "London-based",
+            image: images.imaginationLeadership,
+            brief: "A new book by Queen Mary University of London academic Dr S M A Moin argues that AI-era leadership depends on imagination, ethical judgement and moral courage rather than automation alone. Published on Friday, it introduces three frameworks—the Leadership Compass, Moral Gyroscope and Cosmic Leadership—to balance purpose, people, performance, innovation and responsibility under uncertainty.",
+            why: "This is a London story because a Queen Mary scholar is offering organisations a concrete governance vocabulary for decisions that data and AI systems cannot responsibly settle on their own.",
+            sources: [
+              ["Queen Mary University of London", "https://www.qmul.ac.uk/news/latest-news/2026/humanities-and-social-sciences/hss/what-remains-uniquely-human-about-leadership-new-book-explores-leading-in-an-age-of-ai-and-uncertainty.html"]
+            ]
+          },
+          {
+            id: "2026-08-02-london-life-sciences-equity",
+            section: "London technology",
+            headline: "London captures £2.06bn in life-sciences equity",
+            location: "London-based",
+            image: images.lifeSciencesInvestment,
+            brief: "London attracted £2.06bn of the UK’s £2.76bn in life-sciences equity investment during the first half of 2026, according to a new Barclays Eagle Labs and Beauhurst regional map. Together with the East of England, the two regions secured £2.43bn—88.7% of the national total—while UK equity investment across all sectors rose 26% to £14.4bn.",
+            why: "The numbers show London’s science companies retaining exceptional access to growth capital, but also expose how sharply the country’s commercialisation pipeline is concentrated in the London–Cambridge corridor.",
+            sources: [
+              ["Business Weekly", "https://www.businessweekly.co.uk/posts/london-and-east-grab-ps245bn-of-uk-life-sciences-equity-cash-as-h1-investment-soars"]
+            ]
+          },
+          {
+            id: "2026-08-02-london-solar-eclipse",
+            section: "Plan ahead",
+            headline: "Prepare now for London’s 90% eclipse",
+            location: "Across London",
+            action: "Participate",
+            actionUrl: "https://www.rmg.co.uk/whats-on/online/solar-eclipse-august-2026-uk-live-stream",
+            image: images.solarEclipse,
+            brief: "London’s partial solar eclipse begins at 6.17pm on Wednesday 12 August, reaches roughly 90% coverage at 7.12pm and ends at 8.06pm. The low setting Sun requires a clear western horizon. Royal Observatory Greenwich will stream the event free from 6.10pm; direct viewing requires undamaged eclipse glasses marked ISO 12312-2, not ordinary sunglasses.",
+            why: "This is the UK’s deepest solar eclipse since 1999, so the useful decision is early: secure certified protection, identify a high western viewpoint, or save the Observatory’s safe live stream.",
+            sources: [
+              ["Royal Observatory eclipse guide", "https://www.rmg.co.uk/stories/space-astronomy/how-see-12-august-2026-partial-solar-eclipse"],
+              ["Royal Observatory live stream", "https://www.rmg.co.uk/whats-on/online/solar-eclipse-august-2026-uk-live-stream"]
+            ]
+          }
+        ]
+      },
+      yesterday: {
         label: "London • Friday 31 July 2026",
         footer: "Friday 31 July 2026",
         morning: {
@@ -850,7 +958,7 @@
           }
         ]
       },
-      yesterday: {
+      "day-before": {
         label: "London • Monday 27 July 2026",
         footer: "Monday 27 July 2026",
         morning: {
@@ -934,91 +1042,6 @@
           }
         ]
       },
-      "day-before": {
-        label: "London • Sunday 26 July 2026",
-        footer: "Sunday 26 July 2026",
-        morning: {
-          mode: "Nearby POI",
-          modeUrl: "poi/",
-          temperature: "25° / 17°",
-          weatherUrl: "https://weather.metoffice.gov.uk/forecast/gcpvj0v07",
-          rain: "Rain risk 9–10am",
-          pollen: "High pollen",
-          transit: [
-            ["Northern", "Good service", "good", "https://tfl.gov.uk/tube-dlr-overground/status/"],
-            ["Overground", "Part closure", "check", "https://tfl.gov.uk/tube-dlr-overground/status/"]
-          ]
-        },
-        stories: [
-          {
-            id: "2026-07-26-heath-butterfly-walk",
-            section: "Near home",
-            headline: "Butterfly season gets a guided close-up",
-            location: "Near NW3",
-            action: "Participate",
-            actionUrl: "https://www.heath-hands.org.uk/whatson/natureramblebutterflies-1aug2026",
-            image: images.butterfly,
-            brief: "Heath Hands is leading a 90-minute butterfly walk on Hampstead Heath next Saturday, 1 August, from 11am. The current listing invites participants to discover the species active on the Heath at the height of summer.",
-            why: "Today’s KIX Jazz concert was already covered yesterday, so this is the strongest verified, non-repeating Heath event close to NW3—and an easy local plan to secure before the weekend fills up.",
-            sources: [
-              ["Heath Hands event", "https://www.heath-hands.org.uk/whatson/natureramblebutterflies-1aug2026"],
-              ["Heath Hands listings", "https://www.heath-hands.org.uk/whatson"]
-            ]
-          },
-          {
-            id: "2026-07-26-barbican-harmony-closing",
-            section: "Near work",
-            headline: "Harmony has three City days left",
-            location: "Near EC2N",
-            action: "Walk",
-            image: images.textile,
-            brief: "Jo Aidoo’s free Harmony exhibition closes at Barbican Library on Wednesday 29 July. Her patchwork portraits use only recycled fabrics to explore coexistence across conflict, mental health and family tension.",
-            why: "The library is a practical walk from EC2N, and the short closing window makes this a useful lunch-break decision rather than another open-ended cultural recommendation.",
-            sources: [
-              ["City of London", "https://www.cityoflondon.gov.uk/events/harmony-a-new-exhibition-by-jo-aidoo"]
-            ]
-          },
-          {
-            id: "2026-07-26-kings-ai-psychosis-screening",
-            section: "London AI",
-            headline: "AI spots psychosis risk in long interviews",
-            location: "London-based",
-            image: images.mentalHealth,
-            brief: "King’s College London researchers tested 11 large language models on 678 clinical interview transcripts from 373 people. The models extracted symptoms, estimated severity and classified psychosis risk comparably with human researchers; a new £2.4m Wellcome-backed project will now develop a conversational screening system.",
-            why: "This is a London-led clinical AI programme moving beyond a benchmark toward a patient-facing tool, while its tendency to over-pathologise everyday experiences makes human oversight central rather than optional.",
-            sources: [
-              ["King’s College London", "https://www.kcl.ac.uk/news/ai-could-help-identify-patients-at-risk-of-psychosis-more-quickly"],
-              ["npj Digital Medicine", "https://www.nature.com/articles/s41746-026-02928-4"]
-            ]
-          },
-          {
-            id: "2026-07-26-imperial-proteus-repair-robot",
-            section: "London technology",
-            headline: "One robot tackles offshore corrosion end to end",
-            location: "London-based",
-            image: images.factoryAi,
-            brief: "Proteus, developed in the joint Imperial College London and Royal College of Art Innovation Design Engineering programme, is a deployable robot for hazardous offshore splash zones. Its prototype combines defect detection, surface preparation and protective coating in one intervention.",
-            why: "Conventional machines split inspection, cleaning and repair into separate jobs. A London-built system that performs the whole sequence could reduce human exposure and vessel time around hard-to-service energy infrastructure.",
-            sources: [
-              ["Imperial College London", "https://www.imperial.ac.uk/news/articles/engineering/design-engineering/2026/ide-show-article/"]
-            ]
-          },
-          {
-            id: "2026-07-26-hampstead-heath-bat-walk",
-            section: "Plan ahead",
-            headline: "Book the Heath after dark",
-            location: "Near NW3",
-            action: "Book",
-            actionUrl: "https://heathhands.beaconforms.com/form/849433fd",
-            image: images.batWalk,
-            brief: "Heath Hands has opened booking for a Hampstead Heath bat walk on Thursday 20 August, 7.30–9pm, in the Parliament Hill area. Staff will use bat detectors to help the group find bats in flight and explain their ecology; tickets start at £6 and are free for Heath Hands friends and volunteers.",
-            why: "The walk offers rare guided access to the Heath at dusk and has a finite bookable group, so acting now is more useful than waiting until the August date is close.",
-            sources: [
-              ["Heath Hands", "https://www.heath-hands.org.uk/whatson/batwalk200826"]
-            ]
-          }
-        ]
-      }
     };
 
     const escapeHtml = value => value.replace(/[&<>"']/g, char => ({
