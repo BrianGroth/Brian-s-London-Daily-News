@@ -44,6 +44,12 @@ export const CITY_OF_LONDON_HERITAGE_MAPSERVER =
 export const CITY_OF_LONDON_POSTCARD_MAPSERVER =
   'https://www.mapping.cityoflondon.gov.uk/arcgis/rest/services/' +
   'COMPASS_Hampstead_Historic_Postcards/MapServer';
+export const GLA_CULTURAL_INFRASTRUCTURE_MAPSERVER =
+  'https://gis.london.gov.uk/arcgis/rest/services/apps/' +
+  'Cultural_infrastructure_2023_for_webapp_verified/MapServer';
+export const OPENPLAQUES_SNAPSHOT_URL = './data/openplaques-london.json';
+export const MUSEUM_DATA_SNAPSHOT_URL = './data/museum-data-london.json';
+export const EDITORIAL_POIS_URL = './data/editorial-pois.json';
 
 // Commons thumbnails: full-resolution P18 images are routinely 0.5-20 MB.
 export const IMAGE_WIDTH_PX = 400;

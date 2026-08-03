@@ -27,7 +27,8 @@
             https://en.wikipedia.org
             https://www.wikidata.org
             https://services-eu1.arcgis.com
-            https://www.mapping.cityoflondon.gov.uk;
+            https://www.mapping.cityoflondon.gov.uk
+            https://gis.london.gov.uk;
         base-uri 'none';
         form-action 'none';
         object-src 'none'">
@@ -45,7 +46,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./vendor/leaflet/leaflet.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/brian-daily.css?v=6">
+    <link rel="stylesheet" href="./css/brian-daily.css?v=7">
 
     <link rel="preconnect" href="https://overpass-api.de" crossorigin>
     <link rel="preconnect" href="https://en.wikipedia.org" crossorigin>
@@ -101,15 +102,22 @@
         <button type="button" id="more" class="more" hidden>Show more</button>
     </main>
 
-    <footer class="footer shell">
+    <div class="poi-attribution shell">
         <p>
             Map data &amp; tiles &copy; OpenStreetMap contributors (ODbL).
             Places from OpenStreetMap, Wikipedia &amp; Wikidata (CC BY-SA),
-            Historic England (Open Government Licence), OpenPlaques,
-            and City of London heritage data.
+            Historic England, GLA and City of London data (Open Government Licence),
+            OpenPlaques (public domain), Museum Data Service, and Daily News discoveries.
             Map rendering by <a href="https://leafletjs.com">Leaflet</a>.
         </p>
-        <a class="footer__back" href="../index.html">Back to the daily news</a>
+    </div>
+
+    <footer class="site-footer shell">
+        <nav class="site-footer-nav" aria-label="About Brian's London Daily News">
+            <a class="site-footer-link" href="./" aria-current="page">Points of Interest</a>
+            <a class="site-footer-link" href="../about.html">About &amp; method</a>
+            <a class="site-footer-link" href="../resources.html">Sources</a>
+        </nav>
     </footer>
 
     <!-- Classic script, so it runs before the deferred module below and has

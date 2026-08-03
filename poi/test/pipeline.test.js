@@ -4,6 +4,10 @@ import { osmElementToPOI } from '../js/sources/overpass.js';
 import { mergePOIs } from '../js/lib/merge.js';
 import { categoriseOsmTags } from '../js/lib/categories.js';
 import { distanceMeters } from '../js/lib/geo.js';
+import { openPlaqueToPOI } from '../js/sources/openplaques.js';
+import { museumDataRecordToPOI } from '../js/sources/museumdata.js';
+import { editorialRecordToPOI } from '../js/sources/editorial.js';
+import { glaFeatureToPOI } from '../js/sources/gla.js';
 
 const SOHO = { lat: 51.5136, lon: -0.1365 };
 
@@ -63,6 +67,31 @@ test('elements with neither name nor inscription are dropped', () => {
   assert.equal(osmElementToPOI({ type: 'node', id: 3, lat: 1, lon: 1, tags: { historic: 'yes' } }), null);
 });
 
+test('new POI sources normalize into the shared model', () => {
+  const plaque = openPlaqueToPOI({ id: 42, lat: 51.5, lon: -0.1, inscription: 'A notable person lived here.' });
+  assert.equal(plaque.source, 'openplaques');
+  assert.equal(plaque.categories[0], 'plaque');
+
+  const museum = museumDataRecordToPOI({
+    id: 'q1', name: 'Test Museum', lat: 51.5, lon: -0.1,
+    url: 'https://museumdata.uk/museums/q1/', wikidataId: 'Q1', status: ['accredited'],
+  });
+  assert.equal(museum.meta.wikidataId, 'Q1');
+
+  const editorial = editorialRecordToPOI({
+    id: 'new-place', name: 'New Place', category: 'culture', lat: 51.5, lon: -0.1,
+    url: 'https://example.org/place', sourceUrl: 'javascript:alert(1)',
+  });
+  assert.deepEqual(editorial.links.map(({ label }) => label), ['Official place page']);
+
+  const gla = glaFeatureToPOI({
+    geometry: { x: -0.1, y: 51.5 },
+    attributes: { objectid: 9, name: 'GLA Theatre', borough_name: 'Camden' },
+  }, { id: 35, label: 'Theatre', category: 'culture' });
+  assert.equal(gla.source, 'gla-culture');
+  assert.equal(gla.meta.borough, 'Camden');
+});
+
 test('ways and relations take their centre coordinate', () => {
   const poi = osmElementToPOI({
     type: 'way',
@@ -120,6 +149,14 @@ test('records sharing a Wikidata id collapse into one', () => {
   const merged = mergePOIs([
     base({ id: 'osm:node/1', meta: { wikidataId: 'Q1' } }),
     base({ id: 'wikipedia:9', source: 'wikipedia', name: 'Thing (building)', meta: { wikidataId: 'Q1' } }),
+  ]);
+  assert.equal(merged.length, 1);
+});
+
+test('an OSM plaque and OpenPlaques snapshot record sharing an ID collapse', () => {
+  const merged = mergePOIs([
+    base({ id: 'osm:node/1', categories: ['plaque'], meta: { openPlaquesId: '580' } }),
+    base({ id: 'openplaques:580', source: 'openplaques', name: 'A different inscription-derived title', meta: { openPlaquesId: '580' } }),
   ]);
   assert.equal(merged.length, 1);
 });

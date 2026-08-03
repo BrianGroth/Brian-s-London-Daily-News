@@ -1,6 +1,6 @@
 # Nearby Explorer — Product & Architecture
 
-**Status:** v3, July 2026
+**Status:** v4, August 2026
 **Repository:** [BrianGroth/POI](https://github.com/BrianGroth/POI)
 **Live:** <https://briangroth.github.io/POI/>
 
@@ -43,8 +43,9 @@ Design consequences: dark mode is not a nicety, touch targets are ≥40 px, dist
 
 ## 3. Data sources
 
-All discovery sources are free, keyless, CORS-enabled, and queried directly
-from the browser. There is no backend.
+All live discovery sources are free, keyless and CORS-enabled. Two bulk sources
+are stored as compact, versioned London snapshots so the browser does not repeatedly
+download nationwide data. There is no backend.
 
 ### 3.1 OpenStreetMap via Overpass API — *primary*
 
@@ -112,11 +113,20 @@ Hampstead Heath Historic Postcard Project at the location they depict.
 These records receive their own **Historic views** filter and link back to the
 official project or City interactive-map directory.
 
-### 3.6 Supplemental detail source
+### 3.6 OpenPlaques, GLA culture, Museum Data Service and editorial discoveries
 
-[OpenPlaques](https://openplaques.org/) is not queried as a discovery API.
-Where OSM already supplies an `openplaques:id`, the card links directly to the
-corresponding OpenPlaques record for plaque-specific detail and imagery.
+- **OpenPlaques** is now a full discovery layer. Its public-domain London dump is
+  reduced to IDs, coordinates and inscriptions in `data/openplaques-london.json`.
+- **GLA Cultural Infrastructure Map** is queried live for a focused set of public-facing
+  cultural layers. Each layer can fail independently and coordinates are returned as WGS84.
+- **Museum Data Service** public museum records are reduced to a London snapshot with
+  record links and Wikidata IDs retained for attribution and cross-source merging.
+- **Daily News discoveries** live in append-only `data/editorial-pois.json`; the daily
+  workflow adds every newly verified, fixed-location POI it encounters.
+
+The two bulk snapshots are refreshed manually with
+`node scripts/refresh_poi_snapshots.mjs`. They and the editorial dataset are part of the
+service-worker shell, so all three remain available without a signal.
 
 ### 3.7 Considered and not used
 
@@ -124,7 +134,6 @@ corresponding OpenPlaques record for plaque-specific detail and imagery.
 |---|---|
 | **London Remembers** | Broader plaque coverage than Open Plaques, but no public API. |
 | **Layers of London** | Valuable historical map overlays, but no stable keyless nearby-POI API was found for the static client. |
-| **GLA Cultural Infrastructure Map** | Excellent London-wide cultural inventory. The current 2025 release is downloadable; its older live ArcGIS service did not expose a dependable JSON endpoint for this static app. |
 | **Wikidata SPARQL geo-search** | Would work, but WDQS rate-limits aggressively and deprioritises callers without a descriptive `User-Agent`, which a browser cannot set. |
 
 ---
@@ -154,6 +163,11 @@ js/
     wikipedia.js      Wikipedia GeoSearch
     historicengland.js  NHLE listed buildings
     cityoflondon.js   City heritage + Hampstead Heath historic views
+    gla.js            Live GLA cultural-infrastructure layers
+    openplaques.js    Local London plaque snapshot
+    museumdata.js     Local London museum snapshot
+    editorial.js      Append-only Daily News discoveries
+    snapshot.js       Shared nearby filtering for local data
   enrich/
     wikidata.js       Batched id -> description/image/link
   ui/
@@ -172,7 +186,7 @@ watchPosition (high accuracy)
         ├─ moved > 150 m ?  ── no ──▶ re-rank + re-plot only, zero network
         │                yes
         ▼
-  loadPOIs(): each of [Overpass, Wikipedia, Historic England, City of London]
+  loadPOIs(): every live and snapshot-backed source
   independently, rendered the instant it lands — NOT awaited as a set
         │   each wrapped in a localStorage tile cache
         ▼
@@ -218,7 +232,7 @@ Every source normalises to one shape, which is what makes merging and ranking so
 
 ### Merging
 
-Records are collapsed when they describe the same real-world place, matched in order of confidence: identical source id → shared Wikidata id → same normalised name within **45 m**.
+Records are collapsed when they describe the same real-world place, matched in order of confidence: identical source id → shared Wikidata ID → shared OpenPlaques ID → same normalised name within **45 m**.
 
 Name normalisation drops apostrophes rather than replacing them with spaces, because Historic England writes `ST ANNES CHURCH` where OSM has `St Anne's Church`.
 
@@ -226,7 +240,8 @@ On collision, OSM wins for prose (an inscription beats a generic blurb), gaps ar
 
 ### Categories
 
-`plaque`, `historic`, `museum`, `article`, `green`, `worship` are on by default; `listed` is off. Chips show live counts and disable at zero.
+`plaque`, `historic`, `museum`, `culture`, `article`, `green`, `worship` and
+`postcard` are on by default; `listed` is off. Chips show live counts and disable at zero.
 
 ---
 
@@ -264,7 +279,7 @@ Measured: one Soho tile across all three sources occupies ~237 KB of localStorag
 
 **Security.** Third-party strings reach `src` and `href` attributes, so every URL passes `safeHttpsUrl()` — parsed with `URL`, upgraded to https, and rejected unless the final protocol is https. This closes a `javascript:` injection path. A `Content-Security-Policy` meta tag pins the reachable hosts, with `object-src 'none'`, `base-uri 'none'`, `form-action 'none'`. All text is written via `textContent`; the app never assembles HTML from data.
 
-**Privacy.** No analytics, no cookies, no accounts, no backend. Coordinates go only to the four public APIs, in the request path only. Everything cached is local.
+**Privacy.** No analytics, no cookies, no accounts, no backend. Coordinates go only to the live public APIs, in the request path only. Snapshot filtering happens entirely on the device. Everything cached is local.
 
 **Accessibility.** Verified in-browser: all text ≥ 4.5:1 contrast in **both** light and dark (lowest measured 5.5:1 light, 6.65:1 dark). Status region is `role="status" aria-live="polite"`. Chips are real `<button>`s with `aria-pressed`. Visible focus rings. Touch targets ≥ 40 px. `prefers-reduced-motion` disables the loading animation and transitions. No horizontal page scroll at 375 px.
 

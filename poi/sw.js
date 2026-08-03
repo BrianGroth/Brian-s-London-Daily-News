@@ -12,7 +12,7 @@
 // SHELL_ASSETS. The shell is served cache-first, so returning users keep the
 // old HTML/CSS/JS indefinitely until this string changes and `activate` clears
 // the previous caches. Editing a file without bumping this ships nothing.
-const VERSION = 'brian-daily-v8';
+const VERSION = 'brian-daily-v9';
 const SHELL_CACHE = `nearbypoi-shell-${VERSION}`;
 const API_CACHE = `nearbypoi-api-${VERSION}`;
 // Tiles are versionless on purpose: they change rarely, they are expensive to
@@ -26,7 +26,7 @@ const SHELL_ASSETS = [
   './index.html',
   './manifest.webmanifest',
   './css/styles.css',
-  './css/brian-daily.css?v=6',
+  './css/brian-daily.css?v=7',
   './vendor/leaflet/leaflet.js',
   './vendor/leaflet/leaflet.css',
   './js/app.js',
@@ -40,6 +40,14 @@ const SHELL_ASSETS = [
   './js/sources/wikipedia.js',
   './js/sources/historicengland.js',
   './js/sources/cityoflondon.js',
+  './js/sources/snapshot.js',
+  './js/sources/editorial.js',
+  './js/sources/openplaques.js',
+  './js/sources/museumdata.js',
+  './js/sources/gla.js',
+  './data/editorial-pois.json',
+  './data/openplaques-london.json',
+  './data/museum-data-london.json',
   './js/enrich/wikidata.js',
   './js/ui/render.js',
   './js/ui/status.js',
@@ -57,6 +65,7 @@ const API_HOSTS = new Set([
   'www.wikidata.org',
   'services-eu1.arcgis.com',
   'www.mapping.cityoflondon.gov.uk',
+  'gis.london.gov.uk',
   'commons.wikimedia.org',
   'upload.wikimedia.org',
 ]);

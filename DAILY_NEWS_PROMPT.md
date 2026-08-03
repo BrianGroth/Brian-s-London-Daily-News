@@ -12,7 +12,7 @@ Treat this as a complete research, editorial, implementation, validation, and pu
 
 1. Read `NEWS_CONTEXT.md` completely.
 2. Run `python scripts/collect_candidates.py` to refresh `data/rss_candidates.json`. This is an internal Codex step; Brian does not run it separately. If collection fails, continue with live web research and report the collector failure at the end.
-3. Read `index.html`, `resources.html`, the refreshed `data/rss_candidates.json`, and the current git status.
+3. Read `index.html`, `resources.html`, `poi/data/editorial-pois.json`, the refreshed `data/rss_candidates.json`, and the current git status. `PotentialUnusedResources.html` is a research backlog, not an approved production source list.
 4. Use the **Europe/London** calendar date. Inspect the current `today`, `yesterday`, and `day-before` editions before changing anything.
 5. The RSS file contains discovery leads only. Search the live web broadly and open the underlying articles. Prefer primary sources and corroborate consequential claims. Do not cite a Google News redirect as the final source.
 
@@ -79,6 +79,19 @@ Treat `resources.html` as append-only production data.
 - Ignore `www.` and URL paths when deduplicating.
 - Never delete existing cards or rewrite the directory from only today's sources.
 
+## Persist every new point of interest
+
+While researching and writing the edition, identify every newly discovered, named, fixed-location London place that a reader could genuinely visit. This includes venues, museums, galleries, gardens, monuments, historic buildings and other lasting places connected to today’s stories—even when the place is not selected as one of the five stories.
+
+- For every eligible new place found, append one record to `poi/data/editorial-pois.json` in the same run. Do not postpone it to a later edition.
+- A place is eligible only when its name, WGS84 latitude/longitude, useful description and official or otherwise authoritative page can be verified live.
+- Do not add temporary event installations, generic neighbourhoods or boroughs, online-only activities, private addresses, vague locations, or a venue whose continued existence cannot be verified.
+- Deduplicate before adding: compare stable IDs, normalized names, source URLs, and coordinates against the editorial dataset and the POI page’s existing sources. Treat matching names within 45 metres as the same place. Never remove or silently rewrite an existing editorial POI merely because it appears in another source.
+- Use a stable lowercase ID, one current category from `poi/js/lib/categories.js`, numeric `lat` and `lon`, a concise factual `description`, an official `url`, the discovery `sourceUrl`, and today’s London date in `addedOn`.
+- Keep the JSON valid, preserve every existing record, set `updatedAt` to today’s London date when records are appended, and add no speculative fields.
+- Finding an eligible POI creates an obligation to append it; not finding one is acceptable. State the number and names of POIs added—or explicitly state that none qualified—in the completion report.
+- If the POI shell or source code changes, also bump the POI service-worker version. A data-only editorial append does not require a shell redesign.
+
 ## Design lock
 
 Preserve the established design and responsive behaviour:
@@ -100,8 +113,9 @@ These are Codex responsibilities included in this single prompt; Brian does not 
 3. Run `git diff --check`.
 4. Render and inspect the homepage at desktop and mobile widths. Check all three date tabs plus `about.html`, `resources.html`, and `poi/`.
 5. Confirm images load, links are direct, actions are accurate, source hostnames are deduplicated, and no story repeats yesterday.
-6. Review the final diff and commit only the intended edition/resource changes with `Publish London edition YYYY-MM-DD`.
-7. Push to `origin/main` without force.
-8. Confirm local `HEAD` equals `origin/main`, monitor the Pages deployment, and verify the public homepage shows today's London issue date.
+6. Validate `poi/data/editorial-pois.json`; confirm every eligible POI discovered today was appended once and appears on `poi/` when its area is searched.
+7. Review the final diff and commit only the intended edition/resource/POI changes with `Publish London edition YYYY-MM-DD`.
+8. Push to `origin/main` without force.
+9. Confirm local `HEAD` equals `origin/main`, monitor the Pages deployment, and verify the public homepage shows today's London issue date.
 
 Do not report success until the edition is in `index.html`, validation passes, the intended commit is pushed, and the public deployment is verified. If publishing is blocked, preserve the local work and report the exact blocker.

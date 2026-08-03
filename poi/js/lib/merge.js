@@ -17,7 +17,16 @@ function normaliseName(name) {
 
 // Later sources only fill gaps, so the order the app fetches in decides which
 // description wins. OSM first: an inscription beats a generic Wikidata blurb.
-const SOURCE_RANK = { osm: 0, citylondon: 1, wikipedia: 2, nhle: 3 };
+const SOURCE_RANK = {
+  osm: 0,
+  editorial: 1,
+  openplaques: 2,
+  citylondon: 3,
+  museumdata: 4,
+  'gla-culture': 5,
+  wikipedia: 6,
+  nhle: 7,
+};
 
 function preferred(a, b) {
   return (SOURCE_RANK[a.source] ?? 9) <= (SOURCE_RANK[b.source] ?? 9) ? a : b;
@@ -50,15 +59,18 @@ export function mergePOIs(records) {
   const merged = [];
   const byId = new Map();
   const byWikidata = new Map();
+  const byOpenPlaques = new Map();
   const byName = new Map();
 
   for (const record of records) {
     const nameKey = normaliseName(record.name);
     const wikidataId = record.meta?.wikidataId;
+    const openPlaquesId = record.meta?.openPlaquesId;
 
     let targetIndex =
       byId.get(record.id) ??
-      (wikidataId ? byWikidata.get(wikidataId) : undefined);
+      (wikidataId ? byWikidata.get(wikidataId) : undefined) ??
+      (openPlaquesId ? byOpenPlaques.get(String(openPlaquesId)) : undefined);
 
     if (targetIndex === undefined && nameKey) {
       for (const candidate of byName.get(nameKey) ?? []) {
@@ -81,6 +93,7 @@ export function mergePOIs(records) {
 
     byId.set(record.id, targetIndex);
     if (wikidataId) byWikidata.set(wikidataId, targetIndex);
+    if (openPlaquesId) byOpenPlaques.set(String(openPlaquesId), targetIndex);
     if (nameKey) {
       if (!byName.has(nameKey)) byName.set(nameKey, []);
       byName.get(nameKey).push(targetIndex);
