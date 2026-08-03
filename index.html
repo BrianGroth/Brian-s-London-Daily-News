@@ -579,9 +579,9 @@
   <div class="shell">
     <header class="masthead">
       <p class="brand">BRIAN'S LONDON DAILY NEWS</p>
-          <p class="issue-line" id="issue-line">London <span class="dot">•</span> Sunday 2 August 2026</p>
+          <p class="issue-line" id="issue-line">London <span class="dot">•</span> Monday 3 August 2026</p>
       <nav class="date-nav" aria-label="Choose briefing date" role="tablist">
-        <button class="date-tab" id="tab-today" role="tab" aria-controls="today" aria-selected="true" data-day="today">Today 2 August</button>
+        <button class="date-tab" id="tab-today" role="tab" aria-controls="today" aria-selected="true" data-day="today">Today 3 August</button>
         <button class="date-tab" id="tab-yesterday" role="tab" aria-controls="yesterday" aria-selected="false" data-day="yesterday">Yesterday</button>
         <button class="date-tab" id="tab-day-before" role="tab" aria-controls="day-before" aria-selected="false" data-day="day-before">Day Before</button>
       </nav>
@@ -783,11 +783,119 @@
         src: "https://www.rmg.co.uk/sites/default/files/styles/large/public/2025-12/Photo%20by%20Cris%20Menles%20on%20Pexels.jpg.webp?itok=1nUbQBbL",
         alt: "A partial solar eclipse seen above a dark landscape",
         credit: "Photo: Cris Menles / Pexels, via Royal Museums Greenwich"
+      },
+      swordStone: {
+        src: "https://images.squarespace-cdn.com/content/v1/5eff13e8f5beea28d1539c30/2c747bae-57af-4f1a-a789-b2d8e6298734/sword+in+the+stone.webp",
+        alt: "Illustration for The Sword in the Stone outdoor theatre at Keats House",
+        credit: "Image: Cambridge Touring Productions, via Heath Hands"
+      },
+      undergroundArt: {
+        src: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1400&q=86",
+        alt: "Central London seen above the city whose Underground inspires the exhibition",
+        credit: "Photo: Benjamin Davies / Unsplash"
+      },
+      techFounders: {
+        src: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=86",
+        alt: "Technology professionals collaborating around a table",
+        credit: "Photo: Austin Distel / Unsplash"
+      },
+      romanQuest: {
+        src: "https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=1400&q=86",
+        alt: "The City of London, where a family trail will connect three Roman sites",
+        credit: "Photo: Giammarco Boscaro / Unsplash"
       }
     };
 
     const issues = {
       today: {
+        label: "London • Monday 3 August 2026",
+        footer: "Monday 3 August 2026",
+        morning: {
+          mode: "Nearby POI",
+          modeUrl: "poi/",
+          temperature: "31° / 18°",
+          weatherUrl: "https://weather.metoffice.gov.uk/forecast/gcpvj0v07",
+          rain: "Sunny and dry · <5%",
+          pollen: "High pollen",
+          transit: [
+            ["Northern", "Good service", "good", "https://tfl.gov.uk/tube-dlr-overground/status/"],
+            ["Overground", "Good service", "good", "https://tfl.gov.uk/tube-dlr-overground/status/"]
+          ]
+        },
+        stories: [
+          {
+            id: "2026-08-03-keats-sword-stone",
+            section: "Near home",
+            headline: "Arthurian theatre comes to Keats House garden",
+            location: "Near NW3",
+            action: "Book",
+            actionUrl: "https://www.ticketsource.com/booking/select/ynbbbjzxxjep",
+            image: images.swordStone,
+            brief: "Cambridge Touring Productions brings The Sword in the Stone to Keats House garden on Thursday 6 August, from 6pm to 8pm. The family-friendly outdoor show is suitable for all ages; tickets start at £17 and booking is essential. Bring a blanket, rug or low-backed chair, plus sun protection or wet-weather layers as needed.",
+            why: "It is a distinctive evening within a few minutes of NW3 2RU, and the finite garden capacity makes booking the useful decision rather than waiting until Thursday.",
+            sources: [
+              ["City of London", "https://www.cityoflondon.gov.uk/events/the-sword-in-the-stone-outdoor-theatre"],
+              ["Heath Hands listing", "https://www.heath-hands.org.uk/whatson/theatreatkeats"]
+            ]
+          },
+          {
+            id: "2026-08-03-underground-surface-exhibition",
+            section: "Near work",
+            headline: "Hear the Tube differently at Guildhall",
+            location: "Near EC2N",
+            action: "Book",
+            actionUrl: "https://guildhall-art-gallery.myshopify.com/products/general-admission-underground-and-surface",
+            image: images.undergroundArt,
+            brief: "Guildhall Art Gallery’s Underground (and Surface) pairs Jock McFadyen’s large-scale Tube-station paintings with a Jem Finer soundscape built from Northern and Central line field recordings. The show runs daily from 10am to 5pm until 20 September on a Pay What You Can basis; ear defenders are available for visitors sensitive to tunnel sounds.",
+            why: "At Guildhall Yard, it is a practical culture break from EC2N with enough substance for a full visit but opening hours that also fit a long lunch.",
+            sources: [
+              ["City of London", "https://www.cityoflondon.gov.uk/events/underground-and-surface-exhibition"]
+            ]
+          },
+          {
+            id: "2026-08-03-palantir-met-procurement-filing",
+            section: "London AI",
+            headline: "City Hall sharpens its case against the Met’s AI deal",
+            location: "Across London",
+            image: images.cityHall,
+            brief: "A new pre-trial defence filing says the Mayor’s Office for Policing and Crime will ask the High Court to dismiss Palantir’s challenge over a blocked £50m Met Police AI and data-analysis contract. City Hall’s lawyers allege the larger award followed a low-cost pilot without effective, transparent competition; Palantir argues the refusal was unlawful and irrational.",
+            why: "The dispute will help define how London’s largest police force can buy high-stakes AI: whether a successful pilot justifies a direct scale-up, and how much procurement scrutiny public safety technology must withstand.",
+            sources: [
+              ["POLITICO", "https://www.politico.eu/article/london-mayor-sadiq-khan-accuses-palantir-bypassing-procurement-rules/"],
+              ["London City Hall background", "https://www.london.gov.uk/who-we-are/what-london-assembly-does/london-assembly-press-releases/questions-over-clear-and-serious-breach-procurement-rules-over-ps50m-palantir-contract"]
+            ]
+          },
+          {
+            id: "2026-08-03-city-tech-founders-networking",
+            section: "London technology",
+            headline: "City founders trade product problems tonight",
+            location: "City of London",
+            action: "Book",
+            actionUrl: "https://www.eventbrite.co.uk/e/networking-eventtech-founders-ai-intelligent-systems-for-startups-pros-tickets-1993258635235",
+            image: images.techFounders,
+            brief: "A three-hour technology founders and practitioners meetup starts at 6pm tonight at The Anthologist, 58 Gresham Street. The organiser is pitching it to startup founders, software engineers, product leaders, data scientists, investors and researchers looking for collaborators, technical co-founders, customers or hiring connections.",
+            why: "Unlike a conference months away, this is a same-day chance to test an idea or hiring need against London’s working technology community, a short walk from Liverpool Street.",
+            sources: [
+              ["Eventbrite", "https://www.eventbrite.co.uk/e/networking-eventtech-founders-ai-intelligent-systems-for-startups-pros-tickets-1993258635235"]
+            ]
+          },
+          {
+            id: "2026-08-03-roman-london-family-quest",
+            section: "Plan ahead",
+            headline: "Three Roman sites join forces for a family quest",
+            location: "City of London",
+            action: "Participate",
+            actionUrl: "https://www.cityoflondon.gov.uk/events/roman-london-family-quest",
+            image: images.romanQuest,
+            brief: "London’s Roman Amphitheatre, London Museum and London Mithraeum Bloomberg SPACE will run a free family quest on Friday 14 and Saturday 15 August, from 10am to 4pm. Children can follow a trail, complete activities and win a prize; it is aimed at ages 5–11 but open to all, with no booking required and a guided walking bus between venues.",
+            why: "The dates fall in the school holidays and combine three normally separate Roman-London stops, so the useful move is simply to reserve one of the two days before other plans fill the diary.",
+            sources: [
+              ["City of London", "https://www.cityoflondon.gov.uk/events/roman-london-family-quest"]
+            ]
+          }
+        ]
+      },
+      yesterday: {
         label: "London • Sunday 2 August 2026",
         footer: "Sunday 2 August 2026",
         morning: {
@@ -870,7 +978,7 @@
           }
         ]
       },
-      yesterday: {
+      "day-before": {
         label: "London • Friday 31 July 2026",
         footer: "Friday 31 July 2026",
         morning: {
@@ -954,90 +1062,6 @@
             sources: [
               ["TfL Newsroom", "https://tfl-newsroom.prgloo.com/news/planned-part-closures-on-the-piccadilly-line-as-vital-upgrade-work-and-testing-of-the-brand-new-trains-gathers-pace"],
               ["TfL Piccadilly line upgrade", "https://tfl.gov.uk/status-updates/major-works-and-events/piccadilly-line-upgrade"]
-            ]
-          }
-        ]
-      },
-      "day-before": {
-        label: "London • Monday 27 July 2026",
-        footer: "Monday 27 July 2026",
-        morning: {
-          mode: "Nearby POI",
-          modeUrl: "poi/",
-          temperature: "25° / 17°",
-          weatherUrl: "https://weather.metoffice.gov.uk/forecast/gcpvj0v07",
-          rain: "Dry all day · <5%",
-          pollen: "High pollen",
-          transit: [
-            ["Northern", "Good service", "good", "https://tfl.gov.uk/tube-dlr-overground/status/"],
-            ["Overground", "Good service", "good", "https://tfl.gov.uk/tube-dlr-overground/status/"]
-          ]
-        },
-        stories: [
-          {
-            id: "2026-07-27-heath-health-walks",
-            section: "Near home",
-            headline: "Two Heath walks leave at ten",
-            location: "Near NW3",
-            action: "Walk",
-            image: images.healthWalk,
-            brief: "Heath Hands’ free Monday health walks set off at 10am today. A gentler one-hour route meets at Parliament Hill Café; the longer route meets opposite Hampstead Heath Overground, explores more of the Heath on uneven paths and usually finishes around noon.",
-            why: "This is the most useful verified Heath option for today: no booking, two effort levels and enough time to choose a route before the volunteer leaders leave promptly.",
-            sources: [
-              ["Heath Hands walking guide", "https://www.heath-hands.org.uk/walkinghampsteadheath"]
-            ]
-          },
-          {
-            id: "2026-07-27-fleet-street-consultation",
-            section: "Near work",
-            headline: "Fleet Street’s redesign closes for comment",
-            location: "Near EC2N",
-            action: "Participate",
-            actionUrl: "https://transformingfleetstreet.commonplace.is/",
-            image: images.fleetStreet,
-            brief: "The City of London’s public consultation on Fleet Street closes today. One design option gives substantially more room to walking, wheeling, cycling, planting and seating while changing through traffic; the second makes more incremental improvements and retains all through traffic.",
-            why: "Workers and visitors have a final chance to shape a major Square Mile route before the City chooses which design to take forward.",
-            sources: [
-              ["City of London consultation", "https://www.cityoflondon.gov.uk/services/streets/projects-and-proposals/fleet-street-area-programme/transforming-fleet-street"]
-            ]
-          },
-          {
-            id: "2026-07-27-london-ai-jobs-report",
-            section: "London AI",
-            headline: "City Hall turns AI anxiety into three moves",
-            location: "Across London",
-            image: images.aiJobs,
-            brief: "London’s AI and Jobs Taskforce has published its recommendations after gathering 1,337 public responses. It asks City Hall to act early with better labour-market intelligence, shape adoption with employers, workers, educators and unions, and create routes into good work that value judgement, communication and creativity.",
-            why: "This is a London story because a City Hall taskforce is converting evidence from Londoners into a capital-specific workforce agenda that will inform the Mayor’s next policy decisions.",
-            sources: [
-              ["Talk London", "https://www.london.gov.uk/talk-london/topics/skills-and-education/artificial-intelligence-london/updates/1266"]
-            ]
-          },
-          {
-            id: "2026-07-27-qmul-airway-cell-maps",
-            section: "London technology",
-            headline: "London team maps lung defence cell by cell",
-            location: "London-based",
-            image: images.airwayMap,
-            brief: "Queen Mary University of London researchers and collaborators have produced the first complete 3D nanoscale maps of human airway epithelium. They combined volume electron microscopy, super-resolution light microscopy, AI segmentation and CRISPR methods to connect whole-cell architecture with molecular function.",
-            why: "The openly available maps create a healthy-cell reference for finding the structural changes behind asthma, COPD and other respiratory disease—and a reusable platform for future computational biology.",
-            sources: [
-              ["Queen Mary University of London", "https://www.qmul.ac.uk/news/latest-news/2026/science-and-engineering/se/scientists-create-the-first-3d-nanoscale-maps-of-human-airway-epithelium-revealing-the-hidden-architecture-of-lung-defence-cells-.html"]
-            ]
-          },
-          {
-            id: "2026-07-27-kenwood-pirates-of-penzance",
-            section: "Plan ahead",
-            headline: "Pirates sail into Kenwood next week",
-            location: "Near NW3",
-            action: "Book",
-            actionUrl: "https://www.english-heritage.org.uk/visit/whats-on/kenwood-pirates-of-penzance-wed-5-aug//#BuyTickets",
-            image: images.kenwoodPirates,
-            brief: "Illyria brings The Pirates of Penzance to Kenwood for an outdoor performance on Wednesday 5 August. Doors open at 6pm, the show runs 7–9pm with an interval, and current tickets are £20 for adults and £10 for children aged 5–17.",
-            why: "The finite ticketed performance is a distinctive night on the edge of the Heath, and booking now removes the risk from waiting until next week.",
-            sources: [
-              ["English Heritage", "https://www.english-heritage.org.uk/visit/whats-on/kenwood-pirates-of-penzance-wed-5-aug/"],
-              ["Heath Hands listing", "https://www.heath-hands.org.uk/whatson"]
             ]
           }
         ]
