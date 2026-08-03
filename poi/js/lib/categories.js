@@ -8,6 +8,7 @@ export const CATEGORIES = [
   { id: 'postcard', label: 'Historic views', icon: '🕰️', defaultOn: true },
   { id: 'historic', label: 'Historic',  icon: '🏛️', defaultOn: true },
   { id: 'museum',  label: 'Museums',    icon: '🖼️', defaultOn: true },
+  { id: 'culture', label: 'Culture',    icon: '🎭', defaultOn: true },
   { id: 'article', label: 'Wikipedia',  icon: '📖', defaultOn: true },
   { id: 'green',   label: 'Parks',      icon: '🌳', defaultOn: true },
   { id: 'worship', label: 'Places of worship', icon: '⛪', defaultOn: true },

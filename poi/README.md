@@ -26,8 +26,8 @@ Then open <http://localhost:8080>. On a phone, use **Add to Home Screen** to ins
 npm test
 ```
 
-23 tests, no dependencies, covering the pure logic: geodesics, distance
-formatting, cache tiling, OSM and City of London record mapping, and
+Tests have no dependencies and cover the pure logic: geodesics, distance
+formatting, cache tiling, source-record mapping, and
 cross-source merging. Network layers and the map are exercised manually
 in-browser against live APIs — see [PRD.md](PRD.md#9-testing).
 
@@ -47,12 +47,19 @@ Push to GitHub and enable Pages. There is no build step — no bundler, no frame
 | [Historic England](https://opendata-historicengland.hub.arcgis.com/) | Every listed building in England | OGL v3 |
 | [City of London interactive maps](https://www.cityoflondon.gov.uk/footer/interactive-map-layers) | Official heritage assets and City blue plaques near the Square Mile | Public interactive data |
 | [Hampstead Heath Historic Postcard Project](https://www.cityoflondon.gov.uk/things-to-do/green-spaces/hampstead-heath/activities-at-hampstead-heath/historic-postcard-project) | Geolocated historic views of the Heath | City of London |
-| [OpenPlaques](https://openplaques.org/) | Detail pages for plaques carrying an OpenPlaques ID | Open data |
+| [OpenPlaques](https://openplaques.org/) | London plaque coordinates and inscriptions from a versioned snapshot | Public domain |
+| [GLA Cultural Infrastructure Map](https://data.london.gov.uk/dataset/cultural-infrastructure-map-2023) | Live arts, culture, venue and public-space layers | OGL v3 |
+| [Museum Data Service](https://museumdata.uk/using-data/our-apis/) | London museum and collection sites from a versioned snapshot | Public API; linked attribution |
+| Daily News editorial dataset | New fixed-location places verified during each edition run | Source-specific links retained |
 
-The discovery sources are free, keyless and queried directly from the browser.
+The live discovery sources are free, keyless and queried directly from the browser.
+OpenPlaques and Museum Data Service are refreshed into compact London-only snapshots by
+`node scripts/refresh_poi_snapshots.mjs`; this avoids repeated bulk downloads on a phone
+and makes those layers available offline. Daily discoveries are append-only in
+`data/editorial-pois.json`.
 There is no backend, no account, no analytics and no tracking; your selected
 search centre is sent only to the discovery APIs and is never stored anywhere
-but your own device. OpenPlaques is linked only when you choose its details link.
+but your own device.
 
 The map itself uses [OpenStreetMap tiles](https://www.openstreetmap.org/copyright) rendered by [Leaflet](https://leafletjs.com) (vendored, not CDN-loaded, so it still works offline from the service worker cache).
 

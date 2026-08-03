@@ -11,6 +11,10 @@ import { fetchOverpassPOIs } from './sources/overpass.js';
 import { fetchWikipediaPOIs } from './sources/wikipedia.js';
 import { fetchListedBuildings } from './sources/historicengland.js';
 import { fetchCityOfLondonPOIs } from './sources/cityoflondon.js';
+import { fetchEditorialPOIs } from './sources/editorial.js';
+import { fetchOpenPlaques } from './sources/openplaques.js';
+import { fetchMuseumDataPOIs } from './sources/museumdata.js';
+import { fetchGLACulturalPOIs } from './sources/gla.js';
 import { enrichWithWikidata } from './enrich/wikidata.js';
 import { renderPOIs, renderFilters } from './ui/render.js';
 import { setStatus, clearStatus } from './ui/status.js';
@@ -53,8 +57,12 @@ const state = {
 };
 
 const SOURCES = [
+  { name: 'Daily News discoveries', fetch: fetchEditorialPOIs },
   { name: 'OpenStreetMap', fetch: fetchOverpassPOIs },
+  { name: 'OpenPlaques', fetch: fetchOpenPlaques },
   { name: 'Wikipedia', fetch: fetchWikipediaPOIs },
+  { name: 'Museum Data Service', fetch: fetchMuseumDataPOIs },
+  { name: 'GLA cultural infrastructure', fetch: fetchGLACulturalPOIs },
   { name: 'Historic England', fetch: fetchListedBuildings },
   { name: 'City of London heritage', fetch: fetchCityOfLondonPOIs },
 ];

@@ -54,7 +54,7 @@ These are starting points, not a closed list and not permission to skip live ver
 - Mayor of London / London Assembly
 - TfL news, status, and planned works
 - Barbican and City cultural institutions
-- BBC London, Evening Standard, City A.M., ianVisits, Londonist, Time Out London
+- BBC London, Evening Standard, City A.M., ianVisits, Londonist, Secret London, Visit London, Open City, ArtRabbit, Camden New Journal, Eastern City, Time Out London
 
 ### AI, science, and technology
 
@@ -65,6 +65,7 @@ These are starting points, not a closed list and not permission to skip live ver
 - Sifted, TechCrunch, UKTN, Financial Times, and specialist reporting for context
 
 The permanent, growing set of previously used sources lives in `resources.html`.
+The tested POI discovery stack is listed in the POI Resources section there. Candidates in `PotentialUnusedResources.html` remain outside the production workflow until deliberately promoted.
 
 ## RSS candidate file
 
@@ -135,4 +136,5 @@ The reference concepts are:
 - No semantic repeat of yesterday.
 - All action links, source URLs, images, alt text, and credits verified.
 - New source domains appended once; no existing resource removed.
+- Every eligible new fixed-location POI found during research appended once to `poi/data/editorial-pois.json`, or none explicitly reported.
 - All automated and browser checks pass.

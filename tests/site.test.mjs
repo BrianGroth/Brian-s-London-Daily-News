@@ -5,6 +5,7 @@ import test from "node:test";
 
 const index = await readFile(new URL("../index.html", import.meta.url), "utf8");
 const resources = await readFile(new URL("../resources.html", import.meta.url), "utf8");
+const potentialResources = await readFile(new URL("../PotentialUnusedResources.html", import.meta.url), "utf8");
 const about = await readFile(new URL("../about.html", import.meta.url), "utf8");
 const readme = await readFile(new URL("../README.md", import.meta.url), "utf8");
 const dailyPrompt = await readFile(new URL("../DAILY_NEWS_PROMPT.md", import.meta.url), "utf8");
@@ -63,6 +64,33 @@ test("source directory is unique and covers current edition hostnames", () => {
       const hostname = new URL(url).hostname.replace(/^www\./, "");
       assert.ok(domains.includes(hostname), `resources includes ${hostname}`);
     }
+  }
+});
+
+test("the active shortlist and separate potential-resource backlog are explicit", () => {
+  for (const hostname of [
+    "londonist.com", "secretldn.com", "visitlondon.com", "open-city.org.uk",
+    "artrabbit.com", "camdennewjournal.co.uk", "easterncity.co.uk",
+    "openplaques.org", "data.london.gov.uk", "museumdata.uk",
+  ]) {
+    assert.match(resources, new RegExp(`data-domain="${hostname.replaceAll(".", "\\.")}"`));
+  }
+  assert.match(resources, /id="poi-sources"/);
+  assert.match(potentialResources, /Not production inputs/);
+  assert.match(potentialResources, /r\/london/);
+});
+
+test("daily workflow persists newly discovered POIs", () => {
+  assert.match(dailyPrompt, /Persist every new point of interest/);
+  assert.match(dailyPrompt, /poi\/data\/editorial-pois\.json/);
+  assert.match(dailyPrompt, /matching names within 45 metres/);
+});
+
+test("POI page uses the same three-link footer as the daily page", async () => {
+  const poiIndex = await readFile(new URL("../poi/index.html", import.meta.url), "utf8");
+  for (const label of ["Points of Interest", "About &amp; method", "Sources"]) {
+    assert.match(index, new RegExp(label));
+    assert.match(poiIndex, new RegExp(label));
   }
 });
 
