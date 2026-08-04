@@ -84,6 +84,7 @@ a { color: inherit; }
 h1, h2 { font-family: var(--serif); font-weight: 400; }
 h1 { margin: 0; font-size: clamp(48px, 7vw, 88px); line-height: .9; letter-spacing: -.03em; }
 .calendar-intro > div > p { max-width: 650px; margin: 18px 0 0; color: #35404a; font-size: clamp(17px, 2vw, 21px); line-height: 1.45; }
+.calendar-intro > div > .calendar-updated { margin-top: 9px; color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
 
 .calendar-summary { display: flex; margin: 0; border-block: 1px solid var(--rule); }
 .calendar-summary div { min-width: 112px; padding: 13px 16px; }

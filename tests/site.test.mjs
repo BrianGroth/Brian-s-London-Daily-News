@@ -104,10 +104,13 @@ test("upcoming events use valid dates, unique IDs, and authoritative links", () 
 
 test("calendar page and daily prompt share the editorial event store", () => {
   assert.match(upcomingEventsScript, /data\/upcoming-events\.json/);
+  assert.match(upcomingEventsPage, /id="calendarUpdated"/);
+  assert.match(upcomingEventsScript, /payload\.updatedAt/);
   assert.match(upcomingEventsPage, /Month/);
   assert.match(upcomingEventsPage, /Agenda/);
   assert.match(dailyPrompt, /Persist every upcoming event/);
   assert.match(dailyPrompt, /data\/upcoming-events\.json/);
+  assert.match(dailyPrompt, /Update the calendar page every run/i);
   assert.match(dailyPrompt, /calendar as an editorial planning source/);
 });
 
@@ -121,6 +124,7 @@ test("POI page uses the same three-link footer as the daily page", async () => {
 
 test("primary navigation reaches the merged companion pages", () => {
   assert.match(index, /href="poi\/"/);
+  assert.match(index, /href="upcoming-events\.html"/);
   assert.match(index, /href="about\.html"/);
   assert.match(index, /href="resources\.html"/);
 });

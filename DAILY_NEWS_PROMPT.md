@@ -12,7 +12,7 @@ Treat this as a complete research, editorial, implementation, validation, and pu
 
 1. Read `NEWS_CONTEXT.md` completely.
 2. Run `python scripts/collect_candidates.py` to refresh `data/rss_candidates.json`. This is an internal Codex step; Brian does not run it separately. If collection fails, continue with live web research and report the collector failure at the end.
-3. Read `index.html`, `resources.html`, `data/upcoming-events.json`, `poi/data/editorial-pois.json`, the refreshed `data/rss_candidates.json`, and the current git status. `PotentialUnusedResources.html` is a research backlog, not an approved production source list.
+3. Read `index.html`, `upcoming-events.html`, `upcoming-events.js`, `resources.html`, `data/upcoming-events.json`, `poi/data/editorial-pois.json`, the refreshed `data/rss_candidates.json`, and the current git status. `PotentialUnusedResources.html` is a research backlog, not an approved production source list.
 4. Use the **Europe/London** calendar date. Inspect the current `today`, `yesterday`, and `day-before` editions before changing anything.
 5. The RSS file contains discovery leads only. Search the live web broadly and open the underlying articles. Prefer primary sources and corroborate consequential claims. Do not cite a Google News redirect as the final source.
 
@@ -96,6 +96,8 @@ While researching and writing the edition, identify every newly discovered, name
 
 While researching the edition, append every verified London event, performance, exhibition, consultation, ticket release, deadline, planned disruption or other dated opportunity that is still upcoming to `data/upcoming-events.json`—even when it is not selected as one of the five stories.
 
+**Update the calendar page every run.** Updating the JSON store alone is not sufficient: render `upcoming-events.html` after the data change and confirm its visible “Calendar updated” date comes from the new `updatedAt` value, the event count is current, and every added, updated or removed record appears correctly in both Month and Agenda views. If `upcoming-events.js` changes, update its cache-busting version in `upcoming-events.html`.
+
 - Add an event only when its date and authoritative source can be verified live. Verify time, venue, availability, price, booking status and cancellation status when those details apply.
 - Deduplicate by stable ID, normalized title, source URL and overlapping date range. Never remove or silently rewrite an existing future event merely because it appears in another source.
 - Use a stable lowercase ID beginning with the start date. Include `title`, `startDate`, `section`, `location`, `sourceName`, `sourceUrl`, a concise factual `summary`, and today's London date in `addedOn`. Add `endDate`, 24-hour `time`, `venue`, `action` and direct `actionUrl` when verified and useful. Do not add speculative fields.
@@ -112,7 +114,7 @@ Preserve the established design and responsive behaviour:
 - near-black text on very light cool grey `#F3F5F7`;
 - editorial serif masthead/headlines and modern sans-serif body;
 - open broadsheet composition, sharp rules, square image frames, no generic rounded card grid;
-- working date tabs, keyboard navigation, image credits, source links, POI/About/Sources footer links, and mobile layout.
+- working date tabs, keyboard navigation, image credits, source links, POI/Upcoming Events/About/Sources footer links, and mobile layout.
 
 Do not redesign the site during a daily edition run.
 
@@ -123,9 +125,9 @@ These are Codex responsibilities included in this single prompt; Brian does not 
 1. Run `npm test`.
 2. Run `python -m py_compile scripts/collect_candidates.py`.
 3. Run `git diff --check`.
-4. Render and inspect the homepage at desktop and mobile widths. Check all three date tabs plus `upcoming-events.html`, `about.html`, `resources.html`, and `poi/`.
+4. Render and inspect the homepage at desktop and mobile widths. Check all three date tabs plus `upcoming-events.html`, `about.html`, `resources.html`, and `poi/`. Follow the homepage footer’s `Upcoming Events` link and confirm it reaches the calendar.
 5. Confirm images load, links are direct, actions are accurate, source hostnames are deduplicated, and no story repeats yesterday.
-6. Validate `data/upcoming-events.json` and `poi/data/editorial-pois.json`; confirm every eligible event and POI discovered today was appended once, calendar events appear on the correct dates, and POIs appear on `poi/` when their area is searched.
+6. Validate `data/upcoming-events.json` and `poi/data/editorial-pois.json`; confirm every eligible event and POI discovered today was appended once, the calendar’s visible updated date and count match the JSON, events appear on the correct dates in both Month and Agenda views, and POIs appear on `poi/` when their area is searched.
 7. Review the final diff and commit only the intended edition/resource/POI changes with `Publish London edition YYYY-MM-DD`.
 8. Push to `origin/main` without force.
 9. Confirm local `HEAD` equals `origin/main`, monitor the Pages deployment, and verify the public homepage shows today's London issue date.

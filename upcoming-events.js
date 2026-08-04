@@ -24,6 +24,7 @@ const elements = {
   agendaViewButton: document.getElementById("agendaViewButton"),
   eventCount: document.getElementById("eventCount"),
   nextEventDate: document.getElementById("nextEventDate"),
+  calendarUpdated: document.getElementById("calendarUpdated"),
   todayLabel: document.getElementById("todayLabel"),
   loadError: document.getElementById("loadError"),
   dialog: document.getElementById("eventDialog"),
@@ -61,6 +62,14 @@ async function loadEvents() {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const payload = await response.json();
     if (!Array.isArray(payload.events)) throw new Error("Invalid event data");
+    if (/^\d{4}-\d{2}-\d{2}$/.test(payload.updatedAt || "")) {
+      elements.calendarUpdated.dateTime = payload.updatedAt;
+      elements.calendarUpdated.textContent = displayDate(payload.updatedAt, {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      });
+    }
     events = payload.events
       .filter(isValidEvent)
       .sort((a, b) => eventSortKey(a).localeCompare(eventSortKey(b)));
