@@ -30,6 +30,8 @@ If a Codex run cannot execute one of its internal steps, it must continue with s
 | `DAILY_NEWS_PROMPT.md` | The prompt Brian sends to Codex each day |
 | `NEWS_CONTEXT.md` | Stable editorial context, source seeds, and quality rules |
 | `data/rss_candidates.json` | Machine-collected leads; never treated as verified reporting |
+| `data/upcoming-events.json` | Verified future events collected during daily research |
+| `upcoming-events.html` | Searchable month and agenda calendar for planning ahead |
 | `scripts/collect_candidates.py` | Self-contained standard-library RSS candidate collector |
 | `resources.html` | Append-only directory of sources used in published editions |
 | `about.html` | Purpose and editorial method |

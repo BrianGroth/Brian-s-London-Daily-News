@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08264a">
+  <meta name="description" content="A calendar of useful London events discovered by Brian's London Daily News.">
+  <title>Upcoming Events — Brian's London Daily News</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="upcoming-events.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="masthead">
+      <a class="brand" href="index.html">BRIAN'S LONDON DAILY NEWS</a>
+      <p class="issue-line">London <span>•</span> Upcoming events</p>
+      <a class="back-link" href="index.html">Back to today</a>
+    </header>
+
+    <main>
+      <section class="calendar-intro" aria-labelledby="page-title">
+        <div>
+          <h1 id="page-title">Upcoming Events</h1>
+          <p>Dates worth keeping in view, found while researching the daily news.</p>
+        </div>
+        <dl class="calendar-summary" aria-label="Calendar summary">
+          <div><dt id="eventCount">0</dt><dd>events ahead</dd></div>
+          <div><dt id="nextEventDate">—</dt><dd>next date</dd></div>
+        </dl>
+      </section>
+
+      <section class="calendar-tools" aria-label="Calendar controls">
+        <div class="month-title-group">
+          <button class="month-title" id="monthTitle" type="button" aria-label="Choose month"></button>
+          <input id="monthPicker" class="month-picker" type="month" aria-label="Jump to month">
+        </div>
+        <div class="month-navigation">
+          <button class="text-button" id="todayButton" type="button">Today</button>
+          <button class="icon-button" id="previousMonth" type="button" aria-label="Previous month">←</button>
+          <button class="icon-button" id="nextMonth" type="button" aria-label="Next month">→</button>
+        </div>
+        <div class="view-switcher" role="tablist" aria-label="Calendar view">
+          <button id="monthViewButton" type="button" role="tab" aria-selected="true">Month</button>
+          <button id="agendaViewButton" type="button" role="tab" aria-selected="false">Agenda</button>
+        </div>
+        <label class="search-field">
+          <span class="visually-hidden">Search upcoming events</span>
+          <input id="eventSearch" type="search" placeholder="Search events" autocomplete="off">
+        </label>
+      </section>
+
+      <div id="loadError" class="load-error" role="alert" hidden>Events could not be loaded. Please try again later.</div>
+
+      <section id="monthWorkspace" class="calendar-workspace">
+        <div class="month-panel" aria-label="Month calendar">
+          <div class="weekday-row" aria-hidden="true">
+            <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+          </div>
+          <div id="calendarGrid" class="calendar-grid" role="grid"></div>
+        </div>
+
+        <aside class="up-next" aria-labelledby="up-next-title">
+          <header>
+            <h2 id="up-next-title">Up next</h2>
+            <p id="todayLabel"></p>
+          </header>
+          <ol id="upcomingList" class="event-list"></ol>
+          <p class="rail-note">Showing the next six dates</p>
+        </aside>
+      </section>
+
+      <section id="agendaWorkspace" class="agenda-workspace" aria-labelledby="agenda-title" hidden>
+        <header>
+          <h2 id="agenda-title">The forward diary</h2>
+          <p>Every saved event in chronological order.</p>
+        </header>
+        <ol id="agendaList" class="agenda-list"></ol>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <a href="index.html">Today's briefing</a>
+      <a href="poi/">Points of Interest</a>
+      <a href="about.html">About &amp; method</a>
+      <a href="resources.html">Sources</a>
+    </footer>
+  </div>
+
+  <dialog id="eventDialog" class="event-dialog" aria-labelledby="dialogTitle">
+    <button id="closeDialog" class="dialog-close" type="button" aria-label="Close event details">×</button>
+    <p id="dialogSection" class="dialog-section"></p>
+    <h2 id="dialogTitle"></h2>
+    <p id="dialogDate" class="dialog-date"></p>
+    <p id="dialogLocation" class="dialog-location"></p>
+    <p id="dialogSummary" class="dialog-summary"></p>
+    <div id="dialogLinks" class="dialog-links"></div>
+  </dialog>
+
+  <script src="upcoming-events.js"></script>
+</body>
+</html>
