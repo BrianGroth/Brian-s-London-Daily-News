@@ -12,6 +12,9 @@ const dailyPrompt = await readFile(new URL("../DAILY_NEWS_PROMPT.md", import.met
 const contextGuide = await readFile(new URL("../NEWS_CONTEXT.md", import.meta.url), "utf8");
 const collector = await readFile(new URL("../scripts/collect_candidates.py", import.meta.url), "utf8");
 const poiReadme = await readFile(new URL("../poi/README.md", import.meta.url), "utf8");
+const upcomingEventsPage = await readFile(new URL("../upcoming-events.html", import.meta.url), "utf8");
+const upcomingEventsScript = await readFile(new URL("../upcoming-events.js", import.meta.url), "utf8");
+const upcomingEventsData = JSON.parse(await readFile(new URL("../data/upcoming-events.json", import.meta.url), "utf8"));
 
 function extractIssues() {
   const start = index.indexOf("    const images =");
@@ -84,6 +87,28 @@ test("daily workflow persists newly discovered POIs", () => {
   assert.match(dailyPrompt, /Persist every new point of interest/);
   assert.match(dailyPrompt, /poi\/data\/editorial-pois\.json/);
   assert.match(dailyPrompt, /matching names within 45 metres/);
+});
+
+test("upcoming events use valid dates, unique IDs, and authoritative links", () => {
+  assert.ok(Array.isArray(upcomingEventsData.events));
+  assert.equal(new Set(upcomingEventsData.events.map(({ id }) => id)).size, upcomingEventsData.events.length);
+  for (const event of upcomingEventsData.events) {
+    assert.match(event.id, /^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/);
+    assert.match(event.startDate, /^\d{4}-\d{2}-\d{2}$/);
+    assert.match(event.sourceUrl, /^https:\/\//);
+    assert.ok(event.title && event.section && event.location && event.summary && event.addedOn);
+    if (event.endDate) assert.ok(event.endDate >= event.startDate);
+    if (["Book", "Participate"].includes(event.action)) assert.match(event.actionUrl, /^https:\/\//);
+  }
+});
+
+test("calendar page and daily prompt share the editorial event store", () => {
+  assert.match(upcomingEventsScript, /data\/upcoming-events\.json/);
+  assert.match(upcomingEventsPage, /Month/);
+  assert.match(upcomingEventsPage, /Agenda/);
+  assert.match(dailyPrompt, /Persist every upcoming event/);
+  assert.match(dailyPrompt, /data\/upcoming-events\.json/);
+  assert.match(dailyPrompt, /calendar as an editorial planning source/);
 });
 
 test("POI page uses the same three-link footer as the daily page", async () => {
