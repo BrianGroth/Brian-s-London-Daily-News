@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-03",
+  "updatedAt": "2026-08-04",
   "events": [
     {
       "id": "2026-08-12-london-partial-solar-eclipse",
@@ -31,6 +31,91 @@
       "sourceUrl": "https://www.cityoflondon.gov.uk/events/roman-london-family-quest",
       "summary": "A free family trail joins three Roman-London sites from 10am to 4pm on Friday and Saturday. It is aimed at ages 5–11, open to all and does not require booking.",
       "addedOn": "2026-08-03"
+    },
+    {
+      "id": "2026-07-26-charing-cross-waterloo-east-closure",
+      "title": "Charing Cross and Waterloo East station closure",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-16",
+      "section": "Across London",
+      "location": "London Charing Cross and London Waterloo East",
+      "action": "Avoid",
+      "sourceName": "National Rail",
+      "sourceUrl": "https://www.nationalrail.co.uk/engineering-works/chx-26-july-20260726/",
+      "summary": "No trains serve either station during a 22-day, £20m engineering programme. Southeastern routes divert to other London terminals and weekend arrangements can vary.",
+      "addedOn": "2026-08-04"
+    },
+    {
+      "id": "2026-08-05-kenwood-pirates-penzance",
+      "title": "The Pirates of Penzance at Kenwood",
+      "startDate": "2026-08-05",
+      "time": "19:00",
+      "section": "Near home",
+      "location": "Near NW3",
+      "venue": "Kenwood, Hampstead Lane, NW3 7JR",
+      "action": "Book",
+      "actionUrl": "https://www.english-heritage.org.uk/visit/whats-on/kenwood-pirates-of-penzance-wed-5-aug/",
+      "sourceName": "English Heritage",
+      "sourceUrl": "https://www.english-heritage.org.uk/visit/whats-on/kenwood-pirates-of-penzance-wed-5-aug/",
+      "summary": "Illyria's outdoor Gilbert and Sullivan performance runs from 7pm to 9pm. Doors open at 6pm; adult tickets are £20 and child tickets are £10.",
+      "addedOn": "2026-08-04"
+    },
+    {
+      "id": "2026-08-06-keats-sword-stone",
+      "title": "The Sword in the Stone at Keats House",
+      "startDate": "2026-08-06",
+      "time": "18:00",
+      "section": "Near home",
+      "location": "Near NW3",
+      "venue": "Keats House garden",
+      "action": "Book",
+      "actionUrl": "https://www.ticketsource.com/booking/select/ynbbbjzxxjep",
+      "sourceName": "City of London",
+      "sourceUrl": "https://www.cityoflondon.gov.uk/events/the-sword-in-the-stone-outdoor-theatre",
+      "summary": "The family-friendly outdoor show runs from 6pm to 8pm. Tickets start at £17 and visitors should bring a blanket, rug or low-backed chair.",
+      "addedOn": "2026-08-04"
+    },
+    {
+      "id": "2026-08-07-aiih-late-registration-deadline",
+      "title": "AI in Healthcare late-registration deadline",
+      "startDate": "2026-08-07",
+      "section": "London AI",
+      "location": "Imperial College London",
+      "action": "Book",
+      "actionUrl": "https://aiih.cc/registration/",
+      "sourceName": "AIiH",
+      "sourceUrl": "https://aiih.cc/registration/",
+      "summary": "Late registration closes for the 26–28 August conference. Full access is £620, student access £480 and single-day tickets £250.",
+      "addedOn": "2026-08-04"
+    },
+    {
+      "id": "2026-08-30-ucl-hatchery-application-deadline",
+      "title": "UCL Hatchery incubator application deadline",
+      "startDate": "2026-08-30",
+      "time": "23:59",
+      "section": "London technology",
+      "location": "BaseKX, King’s Cross",
+      "action": "Participate",
+      "actionUrl": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=_oivH5ipW0yTySEKEdmlwiKXvCA37atMnvcnTF5MqWpUOFlFVVpPREhMWTM3Q1oxVU1KTTVRQTRJUSQlQCNjPTEkJUAjdD1n",
+      "sourceName": "UCL Innovation & Enterprise",
+      "sourceUrl": "https://www.ucl.ac.uk/enterprise/students/grow-your-startup-hatchery-incubator-programme",
+      "summary": "Applications close at 11.59pm for UCL's two-year, equity-free incubator. Applicants must be current UCL students or recent graduates and have a registered company.",
+      "addedOn": "2026-08-04"
+    },
+    {
+      "id": "2026-09-07-london-6g-week",
+      "title": "London 6G Week",
+      "startDate": "2026-09-07",
+      "endDate": "2026-09-11",
+      "time": "09:00",
+      "section": "London technology",
+      "location": "King’s College London, Strand",
+      "action": "Book",
+      "actionUrl": "https://www.eventbrite.ch/e/one6g-summit-2026-connected-intelligence-for-6g-sept-10-11-london-uk-tickets-1990479087533/",
+      "sourceName": "King’s College London",
+      "sourceUrl": "https://www.kcl.ac.uk/events/london-6g-week",
+      "summary": "A week of standards, communications and AI-native network sessions culminates in the one6G Summit on 10–11 September; registration is open.",
+      "addedOn": "2026-08-04"
     }
   ]
 }

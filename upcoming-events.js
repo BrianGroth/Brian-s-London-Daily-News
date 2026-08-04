@@ -150,8 +150,12 @@ function render() {
 
   const upcoming = futureEvents();
   elements.eventCount.textContent = upcoming.length;
+  const todayKey = dateKey(today);
+  const nextEventKey = upcoming.length && upcoming[0].startDate < todayKey
+    ? todayKey
+    : upcoming[0]?.startDate;
   elements.nextEventDate.textContent = upcoming.length
-    ? displayDate(upcoming[0].startDate, { day: "numeric", month: "short" })
+    ? displayDate(nextEventKey, { day: "numeric", month: "short" })
     : "—";
 
   const monthSelected = viewMode === "month";
