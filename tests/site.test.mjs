@@ -34,11 +34,18 @@ test("brand and required palette are present", () => {
   assert.match(about, /BRIAN'S LONDON DAILY NEWS/);
 });
 
-test("each archived issue has exactly five valid, non-repeating stories", () => {
+// Story count moved from 5 to 10 (two per section) as part of the UI-Update
+// redesign — see DAILY_NEWS_PROMPT.md "Build exactly ten stories, two per
+// section". This assertion will fail against the currently-published
+// index.html (still 5 stories per edition) until the next daily edition run
+// regenerates all three editions under the updated prompt. That failure is
+// expected and intentional: it is the signal that content regeneration is
+// still outstanding, not a bug in this test.
+test("each archived issue has exactly ten valid, non-repeating stories", () => {
   const issues = extractIssues();
   const order = ["today", "yesterday", "day-before"];
   for (const key of order) {
-    assert.equal(issues[key].stories.length, 5, `${key} has five stories`);
+    assert.equal(issues[key].stories.length, 10, `${key} has ten stories`);
     for (const story of issues[key].stories) {
       assert.match(story.id, /^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/);
       assert.ok(story.headline && story.brief && story.why);
@@ -114,16 +121,24 @@ test("calendar page and daily prompt share the editorial event store", () => {
   assert.match(dailyPrompt, /calendar as an editorial planning source/);
 });
 
-test("POI page uses the same three-link footer as the daily page", async () => {
+test("daily page footer is not duplicative of the morning strip's POI link", () => {
+  assert.match(index, /mode:\s*"Nearby POI"/);
+  assert.match(index, /modeUrl:\s*"poi\/"/);
+  assert.doesNotMatch(index, /site-footer-link" href="poi\/">Points of Interest/);
+  for (const label of ["Upcoming Events", "About &amp; method", "Sources"]) {
+    assert.match(index, new RegExp(label));
+  }
+});
+
+test("POI page still carries its own three-link footer", async () => {
   const poiIndex = await readFile(new URL("../poi/index.html", import.meta.url), "utf8");
   for (const label of ["Points of Interest", "About &amp; method", "Sources"]) {
-    assert.match(index, new RegExp(label));
     assert.match(poiIndex, new RegExp(label));
   }
 });
 
 test("primary navigation reaches the merged companion pages", () => {
-  assert.match(index, /href="poi\/"/);
+  assert.match(index, /modeUrl:\s*"poi\/"/);
   assert.match(index, /href="upcoming-events\.html"/);
   assert.match(index, /href="about\.html"/);
   assert.match(index, /href="resources\.html"/);

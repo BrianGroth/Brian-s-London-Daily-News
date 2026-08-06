@@ -86,6 +86,15 @@
       color: var(--accent);
     }
 
+    .issue-rolling {
+      margin: -14px 0 20px;
+      color: #948a76;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
     .date-nav {
       position: sticky;
       top: 0;
@@ -340,6 +349,14 @@
       outline-offset: 3px;
     }
 
+    .action-plain {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
     .story-body {
       order: 3;
       font-size: clamp(18px, 5vw, 20px);
@@ -352,6 +369,11 @@
 
     .story-body strong {
       font-weight: 700;
+    }
+
+    .why {
+      padding-left: 11px;
+      border-left: 2px solid var(--accent);
     }
 
     .why strong {
@@ -580,6 +602,7 @@
     <header class="masthead">
       <p class="brand">BRIAN'S LONDON DAILY NEWS</p>
           <p class="issue-line" id="issue-line">London <span class="dot">•</span> Tuesday 4 August 2026</p>
+      <p class="issue-rolling">Rolling 3-day edition · today, yesterday, day before</p>
       <nav class="date-nav" aria-label="Choose briefing date" role="tablist">
         <button class="date-tab" id="tab-today" role="tab" aria-controls="today" aria-selected="true" data-day="today">Today 4 August</button>
         <button class="date-tab" id="tab-yesterday" role="tab" aria-controls="yesterday" aria-selected="false" data-day="yesterday">Yesterday</button>
@@ -595,7 +618,6 @@
 
     <footer class="site-footer">
       <nav class="site-footer-nav" aria-label="About Brian's London Daily News">
-        <a class="site-footer-link" href="poi/">Points of Interest</a>
         <a class="site-footer-link" href="upcoming-events.html">Upcoming Events</a>
         <a class="site-footer-link" href="about.html">About &amp; method</a>
         <a class="site-footer-link" href="resources.html">Sources</a>
@@ -1124,7 +1146,7 @@
           ? `<a class="action-label action-link" href="${escapeHtml(story.actionUrl)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(story.action)}: ${escapeHtml(story.headline)}">${escapeHtml(story.action)}</a>`
           : requiresActionUrl
             ? ""
-            : `<span class="action-label">${escapeHtml(story.action)}</span>`
+            : `<span class="action-plain">${escapeHtml(story.action)}</span>`
         : "";
 
       return `

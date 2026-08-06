@@ -24,12 +24,18 @@ MAX_PER_FEED = 15
 RETENTION_DAYS = 14
 
 SEARCHES = {
+    # Two stories a day are required per section (see DAILY_NEWS_PROMPT.md),
+    # so every section runs at least two independent queries to keep the raw
+    # candidate pool wide enough to find two genuinely distinct, non-duplicate
+    # stories rather than starving on the second slot.
     "Near Home": [
         '"Hampstead Heath" when:3d',
         '(Hampstead OR "Belsize Park" OR "Swiss Cottage" OR NW3) London when:3d',
+        '(Gospel Oak OR "Finchley Road" OR "South End Green") London when:3d',
     ],
     "Near Work": [
         '("City of London" OR Bishopsgate OR Broadgate OR "Liverpool Street") when:3d',
+        '(Spitalfields OR "Square Mile" OR Moorgate OR Barbican) London when:3d',
     ],
     "London AI": [
         'London artificial intelligence AI when:3d',
@@ -37,9 +43,11 @@ SEARCHES = {
     ],
     "London Technology": [
         'London technology science innovation when:3d',
+        '(London startup OR "London tech" OR robotics OR quantum OR biotech) when:5d',
     ],
     "Plan Ahead": [
         'London event tickets opening closing disruption when:7d',
+        '(London exhibition OR festival OR "ticket release") when:10d',
     ],
 }
 

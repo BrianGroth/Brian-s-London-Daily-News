@@ -12,7 +12,7 @@ That one prompt instructs Codex to:
 
 - refresh the RSS candidate file;
 - research and verify live sources;
-- select, analyse, categorise, and write the five stories;
+- select, analyse, categorise, and write the ten stories (two per section);
 - update weather and current TfL status;
 - update `index.html` and the source directory;
 - run Python/Node validation and browser checks;
