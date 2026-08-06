@@ -121,6 +121,7 @@ Preserve the established design and responsive behaviour (as of the 2026-08 "Fle
 - the "Rolling 3-day edition · today, yesterday, day before" line under the issue date, stating the archive limit explicitly;
 - `Book`/`Participate` actions with a verified `actionUrl` render as a bordered accent call-to-action (`.action-label.action-link`); `Walk`/`Avoid` or any action without a direct link render as plain muted text (`.action-plain`) — never give a non-clickable action the bordered button treatment, and never give a real link the plain-text treatment;
 - the accent-coloured left rule on the "Why it matters" line (`.why`), keeping it visually distinct from the executive brief above it;
+- the morning strip's linked facts stay live links: `Nearby POI` → `poi/`, the temperature reading → the Met Office forecast, and both transit statuses → the TfL status page (see "Morning strip" above for the verification rule); `rain` and `pollen` stay plain text, as they always have;
 - working date tabs, keyboard navigation, image credits, source links, and mobile layout;
 - footer links to Upcoming Events, About & method, and Sources only. Points of Interest is reached solely through the morning strip's `Nearby POI` link — do not re-add a Points of Interest link to the daily page's footer, since that would duplicate the morning strip.
 
