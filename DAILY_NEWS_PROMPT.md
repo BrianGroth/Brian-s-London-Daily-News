@@ -16,13 +16,17 @@ Treat this as a complete research, editorial, implementation, validation, and pu
 4. Use the **Europe/London** calendar date. Inspect the current `today`, `yesterday`, and `day-before` editions before changing anything.
 5. The RSS file contains discovery leads only. Search the live web broadly and open the underlying articles. Prefer primary sources and corroborate consequential claims. Do not cite a Google News redirect as the final source.
 
-## Build exactly five stories, in this order
+## Build exactly ten stories, two per section, in this order
 
-1. **Near Home** — timely and genuinely useful within roughly a 20-minute walk of NW3 2RU. Search current official Hampstead Heath and Heath Hands listings first; a strong non-repeating Heath item takes priority.
-2. **Near Work** — useful around EC2N 4AY: Liverpool Street, Bishopsgate, Broadgate, Spitalfields, or the Square Mile.
-3. **London AI** — a material AI development in which a London institution, deployment, investment, workforce, public service, or community is central.
-4. **London Technology** — a significant non-duplicative technology or science advancement with a concrete London connection.
-5. **Plan Ahead** — a London event, deadline, ticket release, scheduled disruption, or closing date where acting early is useful.
+Each section runs as an adjacent pair (its two stories back to back) before the next section begins. The two stories in a pair must cover genuinely distinct topics or events — never two angles on the same announcement, venue, or activity.
+
+1–2. **Near Home** — timely and genuinely useful within roughly a 20-minute walk of NW3 2RU. Search current official Hampstead Heath and Heath Hands listings first; a strong non-repeating Heath item takes priority for one of the two slots.
+3–4. **Near Work** — useful around EC2N 4AY: Liverpool Street, Bishopsgate, Broadgate, Spitalfields, or the Square Mile.
+5–6. **London AI** — a material AI development in which a London institution, deployment, investment, workforce, public service, or community is central.
+7–8. **London Technology** — a significant non-duplicative technology or science advancement with a concrete London connection.
+9–10. **Plan Ahead** — a London event, deadline, ticket release, scheduled disruption, or closing date where acting early is useful.
+
+Never fill a section's second slot with a weak or marginal story merely to reach ten; keep researching until both slots are genuinely justified. If, after exhausting reasonable search, only one strong candidate exists for a section, state that explicitly in the completion report rather than padding the section.
 
 For each story supply:
 
@@ -31,8 +35,8 @@ For each story supply:
 - the required section;
 - one of `Near NW3`, `Near EC2N`, `London-based`, or `Across London`;
 - `Walk`, `Book`, `Participate`, or `Avoid` only when genuinely useful;
-- a direct `actionUrl` whenever the action is `Book` or `Participate`;
-- one properly licensed, hotlink-safe editorial image with accurate alt text and credit;
+- a direct `actionUrl` whenever the action is `Book` or `Participate`. A story with `Walk` or `Avoid` (or any action without a verified direct link) renders as plain text, not a button — never invent a placeholder `actionUrl` just to make an action look clickable;
+- one properly licensed, hotlink-safe editorial image with accurate alt text and credit — real photography or official artwork from the story's own source, never a generic stock stand-in for a specific place or event;
 - an executive brief of about 45–80 words;
 - a distinct “Why it matters” explanation of about 25–55 words;
 - direct source URLs, favouring official or primary evidence.
@@ -65,9 +69,9 @@ Verify all volatile facts live. Never leave a placeholder such as “Check live�
 - Otherwise delete the old `day-before`, move `yesterday` to `day-before`, move `today` to `yesterday`, and insert the new edition as `today`.
 - Never rotate twice on the same date.
 - Reject the same underlying story as yesterday even if the headline, source, or angle differs.
-- Compare every proposed story with every story in yesterday: 25 semantic comparisons.
+- Compare every proposed story with every story in yesterday: 100 semantic comparisons.
 - A continuing story may return only after a full intervening issue and a material new development.
-- Keep exactly five stories in each archived edition and keep all story IDs unique across adjacent editions.
+- Keep exactly ten stories in each archived edition and keep all story IDs unique across adjacent editions.
 
 ## Source directory
 
@@ -81,7 +85,7 @@ Treat `resources.html` as append-only production data.
 
 ## Persist every new point of interest
 
-While researching and writing the edition, identify every newly discovered, named, fixed-location London place that a reader could genuinely visit. This includes venues, museums, galleries, gardens, monuments, historic buildings and other lasting places connected to today’s stories—even when the place is not selected as one of the five stories.
+While researching and writing the edition, identify every newly discovered, named, fixed-location London place that a reader could genuinely visit. This includes venues, museums, galleries, gardens, monuments, historic buildings and other lasting places connected to today’s stories—even when the place is not selected as one of the ten stories.
 
 - For every eligible new place found, append one record to `poi/data/editorial-pois.json` in the same run. Do not postpone it to a later edition.
 - A place is eligible only when its name, WGS84 latitude/longitude, useful description and official or otherwise authoritative page can be verified live.
@@ -94,7 +98,7 @@ While researching and writing the edition, identify every newly discovered, name
 
 ## Persist every upcoming event
 
-While researching the edition, append every verified London event, performance, exhibition, consultation, ticket release, deadline, planned disruption or other dated opportunity that is still upcoming to `data/upcoming-events.json`—even when it is not selected as one of the five stories.
+While researching the edition, append every verified London event, performance, exhibition, consultation, ticket release, deadline, planned disruption or other dated opportunity that is still upcoming to `data/upcoming-events.json`—even when it is not selected as one of the ten stories.
 
 **Update the calendar page every run.** Updating the JSON store alone is not sufficient: render `upcoming-events.html` after the data change and confirm its visible “Calendar updated” date comes from the new `updatedAt` value, the event count is current, and every added, updated or removed record appears correctly in both Month and Agenda views. If `upcoming-events.js` changes, update its cache-busting version in `upcoming-events.html`.
 
@@ -108,13 +112,17 @@ While researching the edition, append every verified London event, performance, 
 
 ## Design lock
 
-Preserve the established design and responsive behaviour:
+Preserve the established design and responsive behaviour (as of the 2026-08 "Fleet Street, Fixed" revision):
 
 - white masthead text on dark navy `#08264A`;
 - near-black text on very light cool grey `#F3F5F7`;
 - editorial serif masthead/headlines and modern sans-serif body;
 - open broadsheet composition, sharp rules, square image frames, no generic rounded card grid;
-- working date tabs, keyboard navigation, image credits, source links, POI/Upcoming Events/About/Sources footer links, and mobile layout.
+- the "Rolling 3-day edition · today, yesterday, day before" line under the issue date, stating the archive limit explicitly;
+- `Book`/`Participate` actions with a verified `actionUrl` render as a bordered accent call-to-action (`.action-label.action-link`); `Walk`/`Avoid` or any action without a direct link render as plain muted text (`.action-plain`) — never give a non-clickable action the bordered button treatment, and never give a real link the plain-text treatment;
+- the accent-coloured left rule on the "Why it matters" line (`.why`), keeping it visually distinct from the executive brief above it;
+- working date tabs, keyboard navigation, image credits, source links, and mobile layout;
+- footer links to Upcoming Events, About & method, and Sources only. Points of Interest is reached solely through the morning strip's `Nearby POI` link — do not re-add a Points of Interest link to the daily page's footer, since that would duplicate the morning strip.
 
 Do not redesign the site during a daily edition run.
 
@@ -126,7 +134,7 @@ These are Codex responsibilities included in this single prompt; Brian does not 
 2. Run `python -m py_compile scripts/collect_candidates.py`.
 3. Run `git diff --check`.
 4. Render and inspect the homepage at desktop and mobile widths. Check all three date tabs plus `upcoming-events.html`, `about.html`, `resources.html`, and `poi/`. Follow the homepage footer’s `Upcoming Events` link and confirm it reaches the calendar.
-5. Confirm images load, links are direct, actions are accurate, source hostnames are deduplicated, and no story repeats yesterday.
+5. Confirm images load, links are direct, actions are accurate, every `Walk`/`Avoid` story renders as plain text rather than a button, every `Book`/`Participate` story renders as a bordered link, source hostnames are deduplicated, and no story repeats yesterday.
 6. Validate `data/upcoming-events.json` and `poi/data/editorial-pois.json`; confirm every eligible event and POI discovered today was appended once, the calendar’s visible updated date and count match the JSON, events appear on the correct dates in both Month and Agenda views, and POIs appear on `poi/` when their area is searched.
 7. Review the final diff and commit only the intended edition/resource/POI changes with `Publish London edition YYYY-MM-DD`.
 8. Push to `origin/main` without force.
