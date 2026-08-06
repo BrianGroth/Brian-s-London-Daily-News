@@ -75,9 +75,9 @@ Verify all volatile facts live. Never leave a placeholder such as “Check live�
 - Otherwise delete the old `day-before`, move `yesterday` to `day-before`, move `today` to `yesterday`, and insert the new edition as `today`.
 - Never rotate twice on the same date.
 - Reject the same underlying story as yesterday even if the headline, source, or angle differs.
-- Compare every proposed story against every story in yesterday's edition for semantic overlap, not just headline wording — a reworded angle on the same event or announcement still counts as a repeat.
+- Compare every proposed story with every story in yesterday before publication.
 - A continuing story may return only after a full intervening issue and a material new development.
-- Keep exactly ten stories in each archived edition and keep all story IDs unique across adjacent editions.
+- Keep exactly ten stories in every new edition, preserve the story count of already-published archival editions, and keep all story IDs unique across adjacent editions.
 
 ## Source directory
 

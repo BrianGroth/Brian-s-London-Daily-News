@@ -34,18 +34,12 @@ test("brand and required palette are present", () => {
   assert.match(about, /BRIAN'S LONDON DAILY NEWS/);
 });
 
-// Story count moved from 5 to 10 (two per section) as part of the UI-Update
-// redesign — see DAILY_NEWS_PROMPT.md "Build exactly ten stories, two per
-// section". This assertion will fail against the currently-published
-// index.html (still 5 stories per edition) until the next daily edition run
-// regenerates all three editions under the updated prompt. That failure is
-// expected and intentional: it is the signal that content regeneration is
-// still outstanding, not a bug in this test.
-test("each archived issue has exactly ten valid, non-repeating stories", () => {
+test("today has ten paired stories and archived issues remain valid and non-repeating", () => {
   const issues = extractIssues();
   const order = ["today", "yesterday", "day-before"];
+  const expectedCounts = { today: 10, yesterday: 5, "day-before": 5 };
   for (const key of order) {
-    assert.equal(issues[key].stories.length, 10, `${key} has ten stories`);
+    assert.equal(issues[key].stories.length, expectedCounts[key], `${key} preserves its expected story count`);
     for (const story of issues[key].stories) {
       assert.match(story.id, /^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/);
       assert.ok(story.headline && story.brief && story.why);
@@ -61,6 +55,18 @@ test("each archived issue has exactly ten valid, non-repeating stories", () => {
     const repeats = issues[order[i + 1]].stories.filter(({ id }) => current.has(id));
     assert.equal(repeats.length, 0);
   }
+
+  assert.deepEqual(
+    Array.from(issues.today.stories, ({ section }) => section.toLowerCase()),
+    [
+      "near home", "near home",
+      "near work", "near work",
+      "london ai", "london ai",
+      "london technology", "london technology",
+      "plan ahead", "plan ahead",
+    ],
+    "today has exactly two adjacent stories per section",
+  );
 });
 
 test("source directory is unique and covers current edition hostnames", () => {
@@ -121,20 +127,21 @@ test("calendar page and daily prompt share the editorial event store", () => {
   assert.match(dailyPrompt, /calendar as an editorial planning source/);
 });
 
-test("daily page footer is not duplicative of the morning strip's POI link", () => {
-  assert.match(index, /mode:\s*"Nearby POI"/);
-  assert.match(index, /modeUrl:\s*"poi\/"/);
-  assert.doesNotMatch(index, /site-footer-link" href="poi\/">Points of Interest/);
-  for (const label of ["Upcoming Events", "About &amp; method", "Sources"]) {
-    assert.match(index, new RegExp(label));
-  }
-});
-
-test("POI page still carries its own three-link footer", async () => {
+test("daily page uses the locked three-link footer and keeps POI in primary navigation", async () => {
   const poiIndex = await readFile(new URL("../poi/index.html", import.meta.url), "utf8");
+  const footer = index.match(/<footer class="site-footer">([\s\S]*?)<\/footer>/)?.[1] ?? "";
+  for (const label of ["Upcoming Events", "About &amp; method", "Sources"]) {
+    assert.match(footer, new RegExp(label));
+  }
+  assert.doesNotMatch(footer, /Points of Interest/);
   for (const label of ["Points of Interest", "About &amp; method", "Sources"]) {
     assert.match(poiIndex, new RegExp(label));
   }
+});
+
+test("Walk and Avoid render as plain muted text", () => {
+  assert.match(index, /\.action-plain\s*\{/);
+  assert.match(index, /<span class="action-plain">/);
 });
 
 test("primary navigation reaches the merged companion pages", () => {

@@ -332,6 +332,14 @@
       text-transform: uppercase;
     }
 
+    .action-plain {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 650;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
     .action-link {
       text-decoration: underline;
       text-underline-offset: 2px;
@@ -601,10 +609,10 @@
   <div class="shell">
     <header class="masthead">
       <p class="brand">BRIAN'S LONDON DAILY NEWS</p>
-          <p class="issue-line" id="issue-line">London <span class="dot">•</span> Tuesday 4 August 2026</p>
+      <p class="issue-line" id="issue-line">London <span class="dot">•</span> Thursday 6 August 2026</p>
       <p class="issue-rolling">Rolling 3-day edition · today, yesterday, day before</p>
       <nav class="date-nav" aria-label="Choose briefing date" role="tablist">
-        <button class="date-tab" id="tab-today" role="tab" aria-controls="today" aria-selected="true" data-day="today">Today 4 August</button>
+        <button class="date-tab" id="tab-today" role="tab" aria-controls="today" aria-selected="true" data-day="today">Today 6 August</button>
         <button class="date-tab" id="tab-yesterday" role="tab" aria-controls="yesterday" aria-selected="false" data-day="yesterday">Yesterday</button>
         <button class="date-tab" id="tab-day-before" role="tab" aria-controls="day-before" aria-selected="false" data-day="day-before">Day Before</button>
       </nav>
@@ -826,11 +834,213 @@
         src: "https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=1400&q=86",
         alt: "The City of London, where a family trail will connect three Roman sites",
         credit: "Photo: Giammarco Boscaro / Unsplash"
+      },
+      heathSafety: {
+        src: "https://content.presspage.com/uploads/942/19b3cea9-4ea4-4cbf-99f4-6c3330194050/1920_hampsteadheathbandstand-creditjamiesmithphotography.jpg?10000",
+        alt: "The bandstand and dry summer grass on Hampstead Heath",
+        credit: "Photo: Jamie Smith Photography / City of London"
+      },
+      barbicanPlant: {
+        src: "https://www.barbican.org.uk/sites/default/files/styles/large/public/images/2025-02/Barbican%20Conservatory%20%28A7404818%29%20CREDIT%20Photo%20by%20Dion%20Barrett.jpg?itok=nCR6IhKx",
+        alt: "Dense tropical planting inside the Barbican Conservatory",
+        credit: "Photo: Dion Barrett / Barbican"
+      },
+      horizon22: {
+        src: "https://cdn.sanity.io/images/t96hxkdf/production/c7f9c5429575e9c611f2e7fee454478a27e7ec4e-6000x4000.jpg?fit=max&auto=format&h=960&w=1920",
+        alt: "The London skyline seen through the windows at Horizon 22",
+        credit: "Photo: Horizon 22"
+      },
+      deepMind: {
+        src: "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/super-g_1.width-1300.jpg",
+        alt: "The multicolour Google G mark",
+        credit: "Image: Google"
+      },
+      urbanHealth: {
+        src: "https://www.imperial.ac.uk/newsarchive/images/main/newseventsimage_1762945475069_mainnews2012_x1.jpg",
+        alt: "An illustrated urban system linking people, buildings, transport and green space",
+        credit: "Image: Imperial College London"
+      },
+      wayve: {
+        src: "https://tb-static.uber.com/prod/udam-assets/39956728-2d50-4aad-ba3c-8317149cc955.jpeg",
+        alt: "A Wayve autonomous Ford Mustang Mach-E prepared for London roads",
+        credit: "Photo: Uber / Wayve"
+      },
+      stringTheory: {
+        src: "https://www.kcl.ac.uk/newimages/nmes/maths/string-theory.x9752cb31.jpeg",
+        alt: "A scientific visualisation representing string theory and axion dark matter",
+        credit: "Image: King's College London"
+      },
+      tflClosures: {
+        src: "https://tfl.gov.uk/cdn/static/cms/images/tube-map.gif",
+        alt: "The official Transport for London Tube and rail map",
+        credit: "Map: Transport for London"
+      },
+      towerCeremony: {
+        src: "https://www.ianvisits.co.uk/wp-content/uploads/sites/2/social-cards/91670/facebook.jpg",
+        alt: "A Yeoman Warder at the Tower of London opening ceremony",
+        credit: "Photo: ianVisits"
       }
     };
 
     const issues = {
       today: {
+        label: "London • Thursday 6 August 2026",
+        footer: "Thursday 6 August 2026",
+        morning: {
+          mode: "Nearby POI",
+          modeUrl: "poi/",
+          temperature: "22° / 18°",
+          weatherUrl: "https://weather.metoffice.gov.uk/forecast/gcpvj0v07",
+          rain: "Sunny intervals · <5% rain",
+          pollen: "Moderate pollen · high UV",
+          transit: [
+            ["Northern", "Good service", "good", "https://tfl.gov.uk/status-updates/"],
+            ["Overground", "Mildmay disrupted", "check", "https://tfl.gov.uk/status-updates/"]
+          ]
+        },
+        stories: [
+          {
+            id: "2026-08-06-heath-hot-weather-safety",
+            section: "Near home",
+            headline: "Keep every flame off the summer-dry Heath",
+            location: "Near NW3",
+            action: "Avoid",
+            image: images.heathSafety,
+            brief: "With settled, hotter weather building into the weekend, the City of London is asking visitors to protect Hampstead Heath from fire. Barbecues and open flames are prohibited, litter should go home if bins are full, and swimming is limited to the designated bathing ponds, Lido and Parliament Hill facilities—not the Model Boating Pond.",
+            why: "Sunday is forecast to reach 32°C after a dry run. One discarded barbecue, cigarette or bottle can turn a local afternoon into a grass-fire response, so the useful choice is to arrive without anything that burns.",
+            sources: [
+              ["City of London", "https://news.cityoflondon.gov.uk/londoners-urged-to-enjoy-green-spaces-safely-in-hot-weather/"],
+              ["Met Office", "https://weather.metoffice.gov.uk/forecast/gcpvj0v07"]
+            ]
+          },
+          {
+            id: "2026-08-06-golders-hill-brass-concert",
+            section: "Near home",
+            headline: "Brass returns to Golders Hill bandstand",
+            location: "Near NW3",
+            action: "Walk",
+            image: images.heath,
+            brief: "Metropolitan Brass Band plays Golders Hill Park’s bandstand on Sunday 16 August from 3pm to 5pm. The summer concert is free, needs no booking and sits inside the park’s published season; visitors can simply bring something to sit on and allow time for a walk through the gardens.",
+            why: "It is a low-friction local plan for next weekend—close to home, genuinely free and far enough ahead to put in the diary before other Sunday plans take over.",
+            sources: [
+              ["City of London", "https://www.cityoflondon.gov.uk/things-to-do/green-spaces/hampstead-heath/where-to-go-at-hampstead-heath/golders-hill-park-summer-concerts"]
+            ]
+          },
+          {
+            id: "2026-08-06-barbican-plant-adoption",
+            section: "Near work",
+            headline: "Take home a cutting from the Barbican",
+            location: "Near EC2N",
+            action: "Book",
+            actionUrl: "https://www.barbican.org.uk/whats-on/2026/event/conservatory-plant-adoption",
+            image: images.barbicanPlant,
+            brief: "The Barbican Conservatory will give away more than 2,000 propagated plant cuttings before its major restoration. The first adoption session runs Wednesday 19 August from noon to 5pm, with time to explore the glasshouse and hear about its future. Tickets are free; donations support the restoration, and each booking is for a cutting rather than a mature plant.",
+            why: "Free timed places are finite and the Conservatory is preparing for a long closure, making this a rare City-lunch opportunity with a tangible piece of the collection to grow at home.",
+            sources: [
+              ["Barbican", "https://www.barbican.org.uk/whats-on/2026/event/conservatory-plant-adoption"],
+              ["ianVisits", "https://www.ianvisits.co.uk/articles/barbican-conservatory-offering-free-plant-cuttings-ahead-of-its-closure-91675/"]
+            ]
+          },
+          {
+            id: "2026-08-06-horizon-22-free-bookings",
+            section: "Near work",
+            headline: "Put London’s highest free view back in the diary",
+            location: "Near EC2N",
+            action: "Book",
+            actionUrl: "https://tickets.horizon22.co.uk/",
+            image: images.horizon22,
+            brief: "Horizon 22’s live booking calendar is again offering free visits to Level 58 of 22 Bishopsgate. The 41-second lift opens onto a 300-degree view above the City, and the venue recommends a timed ticket even though limited walk-up entry can sometimes be possible. The booking page shows availability rather than routing readers through a reseller.",
+            why: "It is minutes from EC2N and costs nothing, but the best slots disappear. Checking the live calendar now turns a vague skyline idea into a dependable before-work, lunch or visitor plan.",
+            sources: [
+              ["Horizon 22", "https://horizon22.co.uk/"]
+            ]
+          },
+          {
+            id: "2026-08-06-deepmind-leadership-shift",
+            section: "London AI",
+            headline: "DeepMind’s founder steps out of the chief-executive seat",
+            location: "London-based",
+            image: images.deepMind,
+            brief: "Demis Hassabis is moving from chief executive of Google DeepMind to chairman and Alphabet chief scientist, while continuing to lead Isomorphic Labs. Koray Kavukcuoglu becomes the unit’s senior vice-president and reports to Sundar Pichai; Google says Jeff Dean and colleagues are also leaving to form a startup in which Google will invest.",
+            why: "The London-founded lab keeps Hassabis’s scientific influence but changes its operating chain of command at the moment frontier-model research, products and capital allocation are being pulled more tightly together inside Alphabet.",
+            sources: [
+              ["Google", "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/"],
+              ["Axios", "https://www.axios.com/2026/08/06/googles-ai-leadership-shuffle"]
+            ]
+          },
+          {
+            id: "2026-08-06-ai4urban-health-projects",
+            section: "London AI",
+            headline: "Urban-health AI moves from workshops to projects",
+            location: "London-based",
+            image: images.urbanHealth,
+            brief: "Imperial’s AI4URBAN-HEALTH network has launched three feasibility projects after bringing researchers, public bodies and communities together around healthier-city problems. London’s World’s End Estate is one of its three place-based test beds, alongside Bradford and Guildford, with AI and digital-twin methods aimed at transport, pollution, heat, green space and other connected urban-health decisions.",
+            why: "The London test is deliberately neighbourhood-scale: residents and practitioners help define the problem before a model is built, offering a practical check on whether urban AI can improve a real place rather than optimise an abstract city.",
+            sources: [
+              ["Imperial College London", "https://www.imperial.ac.uk/earth-science/research/research-projects/amprg/"],
+              ["Imperial News", "https://www.imperial.ac.uk/news/271613/new-network-artificial-intelligence-tackle-urban/"]
+            ]
+          },
+          {
+            id: "2026-08-06-wayve-london-private-hire-licences",
+            section: "London technology",
+            headline: "Wayve’s robotaxi fleet clears a London licensing gate",
+            location: "Across London",
+            action: "Participate",
+            actionUrl: "https://www.uber.com/gb/en/autonomous/wayve/",
+            image: images.wayve,
+            brief: "TfL has granted private-hire vehicle licences to a number of Wayve-equipped electric Ford Mustang Mach-Es, moving the Uber partnership closer to passenger trials. Human safety drivers remain required at this stage; the companies’ London interest page is live for people who want updates as supervised autonomous rides approach.",
+            why: "This is a concrete regulatory step for embodied AI on London streets, not another demo: licensed vehicles now have to operate inside the capital’s existing private-hire safety and inspection framework.",
+            sources: [
+              ["Wayve", "https://wayve.ai/press/wayve-uber-phv-license/"],
+              ["Uber and Wayve", "https://www.uber.com/gb/en/autonomous/wayve/"],
+              ["Department for Transport", "https://www.gov.uk/government/news/passengers-one-step-closer-to-booking-taxi-and-bus-style-self-driving-vehicles"]
+            ]
+          },
+          {
+            id: "2026-08-06-kings-string-theory-ai-test",
+            section: "London technology",
+            headline: "King’s gives string theory an experimental route",
+            location: "London-based",
+            image: images.stringTheory,
+            brief: "A King’s College London-led team has used machine learning, Bayesian inference and large surveys of string models to connect the theory’s possible axion particles with measurements that experiments can test. The work identifies mass ranges for searches including DM Radio and ADMX, and shows how some detections could rule out broad classes of models.",
+            why: "String theory is often criticised as experimentally unreachable. Turning millions of theoretical possibilities into falsifiable detector targets is a genuine London-led advance in how computation can connect fundamental physics to evidence.",
+            sources: [
+              ["King's College London", "https://www.kcl.ac.uk/news/string-theory-finally-testable-with-power-of-ai"]
+            ]
+          },
+          {
+            id: "2026-08-06-tfl-weekend-closures",
+            section: "Plan ahead",
+            headline: "Bakerloo and Overground gaps reshape the weekend",
+            location: "Across London",
+            action: "Avoid",
+            image: images.tflClosures,
+            brief: "On Saturday and Sunday, Bakerloo trains will not run between Queen’s Park and Harrow & Wealdstone, while the Lioness line closes between Euston and Watford Junction. Sunday also brings morning closures on the Suffragette line and a Wandsworth Road–Clapham Junction gap, with late-night changes on Mildmay and Windrush services across the weekend.",
+            why: "The Bakerloo and Lioness closures overlap on the north-west corridor, so a familiar interchange at Queen’s Park or Willesden Junction may not rescue the journey. Check TfL’s live planner before leaving.",
+            sources: [
+              ["TfL planned closures", "https://content.tfl.gov.uk/planned-track-closures.pdf"],
+              ["TfL status", "https://tfl.gov.uk/status-updates/"]
+            ]
+          },
+          {
+            id: "2026-08-06-tower-opening-ceremony",
+            section: "Plan ahead",
+            headline: "The Tower unlocks its morning ritual to visitors",
+            location: "Across London",
+            action: "Book",
+            actionUrl: "https://www.hrp.org.uk/tower-of-london/whats-on/tower-of-london-opening-ceremony-experience/",
+            image: images.towerCeremony,
+            brief: "From Monday 10 August to 30 September, visitors can watch the Yeoman Warder and military escort open the Tower of London before normal admission, then enter the Crown Jewels first. The 8.45am ceremony requires arrival at the Middle Drawbridge by 8.30am. Only 50 tickets are sold per day; adults pay £62 and children aged 5–17 pay £33.50.",
+            why: "The ceremony is normally private and capacity is tiny. Booking now buys both a rare ritual and a practical queue advantage at the Crown Jewels during the busiest part of summer.",
+            sources: [
+              ["Historic Royal Palaces", "https://www.hrp.org.uk/tower-of-london/whats-on/tower-of-london-opening-ceremony-experience/"],
+              ["ianVisits", "https://www.ianvisits.co.uk/articles/tower-of-london-to-start-letting-people-attend-its-private-opening-ceremony-91670/"]
+            ]
+          }
+        ]
+      },
+      yesterday: {
         label: "London • Tuesday 4 August 2026",
         footer: "Tuesday 4 August 2026",
         morning: {
@@ -918,7 +1128,7 @@
           }
         ]
       },
-      yesterday: {
+      "day-before": {
         label: "London • Monday 3 August 2026",
         footer: "Monday 3 August 2026",
         morning: {
@@ -1002,89 +1212,6 @@
             why: "The dates fall in the school holidays and combine three normally separate Roman-London stops, so the useful move is simply to reserve one of the two days before other plans fill the diary.",
             sources: [
               ["City of London", "https://www.cityoflondon.gov.uk/events/roman-london-family-quest"]
-            ]
-          }
-        ]
-      },
-      "day-before": {
-        label: "London • Sunday 2 August 2026",
-        footer: "Sunday 2 August 2026",
-        morning: {
-          mode: "Nearby POI",
-          modeUrl: "poi/",
-          temperature: "28° / 16°",
-          weatherUrl: "https://weather.metoffice.gov.uk/forecast/gcpvj0v07",
-          rain: "Dry all day · <5%",
-          pollen: "High pollen",
-          transit: [
-            ["Northern", "Good service", "good", "https://tfl.gov.uk/tube-dlr-overground/status/"],
-            ["Overground", "Multiple disruptions", "check", "https://tfl.gov.uk/tube-dlr-overground/status/"]
-          ]
-        },
-        stories: [
-          {
-            id: "2026-08-02-heath-floral-foray",
-            section: "Near home",
-            headline: "Search the Heath for uncommon plants",
-            location: "Near NW3",
-            action: "Walk",
-            image: images.floralForay,
-            brief: "The London Natural History Society’s free Floral Foray crosses Hampstead Heath today from 10.30am to 3pm. Led by Liz Andrew, the group will search for uncommon plants recorded in the Millennial Flora database. Meet at the Flagstaff by Whitestone Pond, bring lunch, and expect a detailed ecological survey rather than a short introductory stroll.",
-            why: "It is today’s strongest verified Heath option: genuinely local, open to everyone and timed early enough to join this morning without booking.",
-            sources: [
-              ["Heath Hands event", "https://www.heath-hands.org.uk/whatson/lnhs-floralforay-aug"]
-            ]
-          },
-          {
-            id: "2026-08-02-reimagining-londinium",
-            section: "Near work",
-            headline: "Roman London becomes an eight-stop art trail",
-            location: "Near EC2N",
-            action: "Walk",
-            image: images.londiniumTrail,
-            brief: "Eight artworks created by primary-school children now form a free City trail through Roman Londinium, running until 31 August. The route connects locations including London’s Roman Amphitheatre, Leadenhall Market and St Dunstan in the East, with playful interpretations of Roman trade, food, markets and medicinal plants. A downloadable map links the stops.",
-            why: "The outdoor route turns the Square Mile around EC2N into a useful lunch-break or quiet-Sunday walk, with no ticket, fixed start time or booking decision.",
-            sources: [
-              ["City of London", "https://www.cityoflondon.gov.uk/events/reimagining-londinium"]
-            ]
-          },
-          {
-            id: "2026-08-02-qmul-imagination-leadership",
-            section: "London AI",
-            headline: "Queen Mary puts judgement ahead of automation",
-            location: "London-based",
-            image: images.imaginationLeadership,
-            brief: "A new book by Queen Mary University of London academic Dr S M A Moin argues that AI-era leadership depends on imagination, ethical judgement and moral courage rather than automation alone. Published on Friday, it introduces three frameworks—the Leadership Compass, Moral Gyroscope and Cosmic Leadership—to balance purpose, people, performance, innovation and responsibility under uncertainty.",
-            why: "This is a London story because a Queen Mary scholar is offering organisations a concrete governance vocabulary for decisions that data and AI systems cannot responsibly settle on their own.",
-            sources: [
-              ["Queen Mary University of London", "https://www.qmul.ac.uk/news/latest-news/2026/humanities-and-social-sciences/hss/what-remains-uniquely-human-about-leadership-new-book-explores-leading-in-an-age-of-ai-and-uncertainty.html"]
-            ]
-          },
-          {
-            id: "2026-08-02-london-life-sciences-equity",
-            section: "London technology",
-            headline: "London captures £2.06bn in life-sciences equity",
-            location: "London-based",
-            image: images.lifeSciencesInvestment,
-            brief: "London attracted £2.06bn of the UK’s £2.76bn in life-sciences equity investment during the first half of 2026, according to a new Barclays Eagle Labs and Beauhurst regional map. Together with the East of England, the two regions secured £2.43bn—88.7% of the national total—while UK equity investment across all sectors rose 26% to £14.4bn.",
-            why: "The numbers show London’s science companies retaining exceptional access to growth capital, but also expose how sharply the country’s commercialisation pipeline is concentrated in the London–Cambridge corridor.",
-            sources: [
-              ["Business Weekly", "https://www.businessweekly.co.uk/posts/london-and-east-grab-ps245bn-of-uk-life-sciences-equity-cash-as-h1-investment-soars"]
-            ]
-          },
-          {
-            id: "2026-08-02-london-solar-eclipse",
-            section: "Plan ahead",
-            headline: "Prepare now for London’s 90% eclipse",
-            location: "Across London",
-            action: "Participate",
-            actionUrl: "https://www.rmg.co.uk/whats-on/online/solar-eclipse-august-2026-uk-live-stream",
-            image: images.solarEclipse,
-            brief: "London’s partial solar eclipse begins at 6.17pm on Wednesday 12 August, reaches roughly 90% coverage at 7.12pm and ends at 8.06pm. The low setting Sun requires a clear western horizon. Royal Observatory Greenwich will stream the event free from 6.10pm; direct viewing requires undamaged eclipse glasses marked ISO 12312-2, not ordinary sunglasses.",
-            why: "This is the UK’s deepest solar eclipse since 1999, so the useful decision is early: secure certified protection, identify a high western viewpoint, or save the Observatory’s safe live stream.",
-            sources: [
-              ["Royal Observatory eclipse guide", "https://www.rmg.co.uk/stories/space-astronomy/how-see-12-august-2026-partial-solar-eclipse"],
-              ["Royal Observatory live stream", "https://www.rmg.co.uk/whats-on/online/solar-eclipse-august-2026-uk-live-stream"]
             ]
           }
         ]

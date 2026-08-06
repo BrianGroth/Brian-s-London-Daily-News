@@ -126,7 +126,7 @@ The reference concepts are:
 
 - London date and weather checked live.
 - Current Northern and Overground status checked live.
-- Exactly ten stories, two per section, in the required order.
+- Exactly ten stories: two adjacent stories for each section in the required order.
 - Strong Heath item chosen first when one exists.
 - Near Home and Near Work are geographically honest.
 - AI and technology pass the London test.
