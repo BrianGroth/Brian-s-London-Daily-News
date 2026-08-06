@@ -55,9 +55,9 @@ After the design work landed, Brian asked for a review of `DAILY_NEWS_PROMPT.md`
 3. **No rule for ordering the two stories within a pair.** Added: the more time-critical story (nearer deadline, sooner event, more perishable news) runs first in each section.
 4. **Freshness pressure doubled silently.** London AI and London Technology now each need two genuinely fresh (36–72h) stories a day instead of one. Added a line to the Freshness section naming this explicitly and pointing at the existing 72-hour extension as the intended relief valve for the second slot, rather than leaving Codex to either invent the pressure-handling itself or quietly accept a weaker story.
 
-Two smaller items came up in the same review but were **not** acted on, by design — flag to Brian if he wants them done too:
-- The "compare every proposed story with every story in yesterday: 100 semantic comparisons" line is restated arithmetic (10×10) with no real instructional content; could be simplified or dropped.
-- `about.html`'s "ten concise choices" copy isn't in Codex's "Start here" read list, so if the story count ever changes again it can go stale silently. Low priority since the count is now expected to be stable.
+Two smaller items came up in the same review and were fixed in a follow-up commit:
+- The "compare every proposed story with every story in yesterday: 100 semantic comparisons" line was restated arithmetic (10×10) with no real instructional content. Reworded to state the actual rule — compare for semantic overlap, not just headline wording, and a reworded angle on the same event still counts as a repeat.
+- `about.html` is now in Codex's "Start here" read list (step 3), and the "Build exactly ten stories" section now has an explicit line telling Codex to update `about.html`'s editorial-mix description if the story count or section split ever changes again — it's hand-maintained, not regenerated automatically, so it was previously easy to leave stale.
 
 ## What's deliberately NOT done in this branch, and why
 
