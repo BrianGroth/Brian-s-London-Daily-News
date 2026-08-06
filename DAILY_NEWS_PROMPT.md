@@ -26,7 +26,11 @@ Each section runs as an adjacent pair (its two stories back to back) before the 
 7–8. **London Technology** — a significant non-duplicative technology or science advancement with a concrete London connection.
 9–10. **Plan Ahead** — a London event, deadline, ticket release, scheduled disruption, or closing date where acting early is useful.
 
-Never fill a section's second slot with a weak or marginal story merely to reach ten; keep researching until both slots are genuinely justified. If, after exhausting reasonable search, only one strong candidate exists for a section, state that explicitly in the completion report rather than padding the section.
+Within each pair, order the more time-critical story first — the one with the nearer deadline, the soonest event, or the more perishable news — and the more evergreen or exploratory item second.
+
+Never fill a section's second slot with a weak or marginal story merely to reach ten. If initial research leaves a section short, broaden before giving up: widen Near Home's walking radius slightly (Gospel Oak, Finchley Road, South End Green are all in scope per `NEWS_CONTEXT.md`), extend Near Work across the wider Square Mile, broaden the London AI/Technology search terms, or look further ahead for Plan Ahead.
+
+Ten stories is a hard requirement, not a target — every archived edition must have exactly ten, and `tests/site.test.mjs` enforces this. If, after genuinely broadening the search, a section still cannot support two justified stories, do not publish nine and do not pad with a weak one. Treat this the same as any other publishing blocker described at the end of this document: stop, preserve local work, and report the exact shortfall (which section, what was tried, why nothing qualified) instead of reporting success.
 
 For each story supply:
 
@@ -45,7 +49,7 @@ For each story supply:
 
 Apply freshness differently to news and to dated activities:
 
-- **Hard news, AI, technology, policy, research, funding, transport announcements, and other developments:** normally use an article or primary announcement published or materially updated within the previous **36 hours**. Start with the newest verified candidates. Extend to 72 hours only when the story is clearly the strongest fit and remains new to this edition; state the reason in the completion report.
+- **Hard news, AI, technology, policy, research, funding, transport announcements, and other developments:** normally use an article or primary announcement published or materially updated within the previous **36 hours**. Start with the newest verified candidates. Extend to 72 hours only when the story is clearly the strongest fit and remains new to this edition; state the reason in the completion report. London AI and London Technology each need two genuinely fresh, non-duplicate stories a day, which is a materially higher bar than one — use the 72-hour extension for the second slot in either section as needed rather than forcing a weaker but fresher story into it.
 - **Events, activities, performances, consultations, ticket releases, closures, deadlines, and planned disruption:** the important date is the event, availability, deadline, or action date—not merely the publication date of the page. An older official listing is valid when the activity is still upcoming and useful. Verify its date, time, availability, price, booking status, and cancellation status today.
 - Never include an event that has already happened or an expired action merely because its page is recent.
 - For Plan Ahead, prefer the nearest meaningful future decision. Look further ahead only when booking pressure, limited capacity, or an important deadline makes early action useful.
