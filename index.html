@@ -609,10 +609,10 @@
   <div class="shell">
     <header class="masthead">
       <p class="brand">BRIAN'S LONDON DAILY NEWS</p>
-      <p class="issue-line" id="issue-line">London <span class="dot">•</span> Thursday 6 August 2026</p>
+      <p class="issue-line" id="issue-line">London <span class="dot">•</span> Saturday 15 August 2026</p>
       <p class="issue-rolling">Rolling 3-day edition · today, yesterday, day before</p>
       <nav class="date-nav" aria-label="Choose briefing date" role="tablist">
-        <button class="date-tab" id="tab-today" role="tab" aria-controls="today" aria-selected="true" data-day="today">Today 6 August</button>
+        <button class="date-tab" id="tab-today" role="tab" aria-controls="today" aria-selected="true" data-day="today">Today 15 August</button>
         <button class="date-tab" id="tab-yesterday" role="tab" aria-controls="yesterday" aria-selected="false" data-day="yesterday">Yesterday</button>
         <button class="date-tab" id="tab-day-before" role="tab" aria-controls="day-before" aria-selected="false" data-day="day-before">Day Before</button>
       </nav>
@@ -635,6 +635,41 @@
 
   <script>
     const images = {
+      keatsFlow: {
+        src: "https://images.squarespace-cdn.com/content/v1/5eff13e8f5beea28d1539c30/875184a4-51b9-4408-b706-ad86b12edec9/Keats+house+and+garden.jpg",
+        alt: "Keats House and its garden in Hampstead",
+        credit: "Photo: Heath Hands"
+      },
+      heathPhoto: {
+        src: "https://images.squarespace-cdn.com/content/v1/5eff13e8f5beea28d1539c30/8a7c915a-98ca-49cb-ae9e-36ac455506ad/JosephBarnes3.jpg",
+        alt: "A winning Hampstead Heath calendar competition photograph",
+        credit: "Photo: Joseph Barnes / Heath Hands"
+      },
+      playMakeDo: {
+        src: "https://www.barbican.org.uk/sites/default/files/styles/hero_constrained_small/public/images/2026-06/Picture1.png?itok=cW82q5Ba",
+        alt: "Colourful illustrated circus performers for Play Make Do",
+        credit: "Illustration: Matt Munday / Barbican"
+      },
+      arrival: {
+        src: "https://www.barbican.org.uk/sites/default/files/styles/hero_constrained_small/public/images/2022-03/ARRIVAL_8.jpg?itok=v_YJcBcc",
+        alt: "Amy Adams as linguist Louise Banks in Arrival",
+        credit: "Film still: Arrival / Barbican"
+      },
+      bold: {
+        src: "https://cdn.mos.cms.futurecdn.net/9UYzc2inFPC7jftqaavwmP.jpg",
+        alt: "The AMD logo on a dark reflective surface",
+        credit: "Photo: Getty Images / IT Pro"
+      },
+      eduGrade: {
+        src: "https://pxl-qmulacuk.terminalfour.net/filters:quality(80)/filters:format(webp)/prod01/channel_262/queen-mary-university-of-london/media/qmul/media/news/items/se/edugrade-AI-large.png",
+        alt: "EduGrade AI assessment project graphic",
+        credit: "Image: Queen Mary University of London"
+      },
+      polymateria: {
+        src: "https://article-cns.cnsmedia.com/articleimgs/resized_rect_newsimages/240/639222957320202886FULL_BIODEGRADATION_OF_PREVIOUSLY_INDESTRUCTIBLE_PLASTICS_UNCOVERED_IN_NEW_STUDY_Lab_Image.webp",
+        alt: "A researcher examining plastic biodegradation in a laboratory",
+        credit: "Photo: Polymateria / Packaging Insights"
+      },
       heath: {
         src: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1400&q=86",
         alt: "A summer crowd enjoying an outdoor music performance",
@@ -884,6 +919,158 @@
 
     const issues = {
       today: {
+        label: "London • Saturday 15 August 2026",
+        footer: "Saturday 15 August 2026",
+        morning: {
+          mode: "Nearby POI",
+          modeUrl: "poi/",
+          temperature: "28° / 14°",
+          weatherUrl: "https://weather.metoffice.gov.uk/forecast/gcpvj0v07",
+          rain: "Bright spells · rain possible overnight",
+          pollen: "Moderate weed pollen · low pollution",
+          transit: [
+            ["Northern", "Good service", "good", "https://tfl.gov.uk/status-updates/"],
+            ["Overground", "Mildmay part-suspended", "check", "https://tfl.gov.uk/status-updates/"]
+          ]
+        },
+        stories: [
+          {
+            id: "2026-08-15-keats-flow-and-write",
+            section: "Near home",
+            headline: "Stretch, then write in Keats's garden",
+            location: "Near NW3",
+            action: "Book",
+            actionUrl: "https://www.eventbrite.co.uk/e/flow-and-write-yoga-and-creative-writing-tickets-1989100895323",
+            image: images.keatsFlow,
+            brief: "Keats House hosts a two-hour Flow and Write workshop tomorrow, Sunday 16 August, from 10.45am to 12.45pm. The £18 adult session combines an accessible yoga flow with creative-writing prompts; admission to the house is included. Bring a mat, notebook, pen and water. No previous yoga or writing experience is required.",
+            why: "This is a genuinely local Sunday plan with a finite class size, and the direct ticket page still gives enough time to book and gather the few things the workshop asks you to bring.",
+            sources: [
+              ["City of London", "https://www.cityoflondon.gov.uk/events/flow-and-write-yoga-and-creative-writing-2"]
+            ]
+          },
+          {
+            id: "2026-08-15-heath-photo-competition",
+            section: "Near home",
+            headline: "Give your best Heath photograph a wider view",
+            location: "Near NW3",
+            action: "Participate",
+            actionUrl: "https://www.heath-hands.org.uk/photo-competition",
+            image: images.heathPhoto,
+            brief: "Heath Hands is accepting up to three photographs for its 2027 Hampstead Heath calendar until midnight on Monday 24 August. Entry is free. Images must have been taken on the Heath and suit a landscape calendar format; the adult winner receives £50 and the youth winner £30, with selected work shown in an exhibition.",
+            why: "The deadline is close enough to prompt a weekend camera-roll review, while the free entry and three-image allowance make this an unusually easy way to turn a familiar local view into a public submission.",
+            sources: [
+              ["Heath Hands", "https://www.heath-hands.org.uk/photo-competition"]
+            ]
+          },
+          {
+            id: "2026-08-15-barbican-play-make-do",
+            section: "Near work",
+            headline: "Play Make Do takes its final Barbican bow",
+            location: "Near EC2N",
+            action: "Walk",
+            image: images.playMakeDo,
+            brief: "The Barbican's family festival reaches its final day tomorrow, Sunday 16 August. Play Make Do spreads circus, dance, storytelling and hands-on craft through the Centre, with free and affordable activities for all ages and quieter creative spaces alongside the busier performances. Individual session times and any ticket requirements sit in the live programme.",
+            why: "It is a last-chance City outing rather than a distant diary note, and the mix of drop-in making, performance and lower-stimulation spaces gives families several ways to shape the visit.",
+            sources: [
+              ["Barbican", "https://www.barbican.org.uk/whats-on/2026/series/play-make-do-2026-a-festival-of-fun-for-all-the-family"]
+            ]
+          },
+          {
+            id: "2026-08-15-barbican-arrival-outdoor-cinema",
+            section: "Near work",
+            headline: "Arrival lands in the Sculpture Court",
+            location: "Near EC2N",
+            action: "Book",
+            actionUrl: "https://www.barbican.org.uk/whats-on/2026/event/outdoor-cinema-arrival",
+            image: images.arrival,
+            brief: "The Barbican screens Denis Villeneuve's Arrival outdoors in the Sculpture Court on Wednesday 19 August at 8.30pm. Standard tickets are £20 before the booking fee, with member, concession, under-18 and Young Barbican prices. The screening is captioned and audio-described; seats open an hour early, headphones are supplied, and warm or waterproof layers are sensible.",
+            why: "The courtyard setting is a rare after-work use of the Barbican's architecture, but it is exposed to the weather and ticketed—so booking and deciding what to wear matter more than simply remembering the film time.",
+            sources: [
+              ["Barbican", "https://www.barbican.org.uk/whats-on/2026/event/outdoor-cinema-arrival"]
+            ]
+          },
+          {
+            id: "2026-08-15-amd-bold-lab-support",
+            section: "London AI",
+            headline: "AMD gives London's frontier-AI researchers more room to experiment",
+            location: "London-linked",
+            image: images.bold,
+            brief: "AMD plans to provide up to £5m of computing support during the British Open-ended Learning and Discovery Lab's first 18 months. The Oxford-led BOLD lab includes researchers affiliated with UCL and Imperial, who will examine learning beyond backpropagation, multi-agent discovery, adaptive physical AI and human-centred embodied systems, with open-source tools and spin-outs among the intended routes to impact.",
+            why: "Compute access can decide which fundamental ideas leave the whiteboard. London's role through UCL and Imperial makes this a practical capacity increase for researchers trying alternatives to the industry's scale-first training recipe.",
+            sources: [
+              ["IT Pro", "https://www.itpro.com/infrastructure/amd-pledges-support-for-oxford-frontier-ai-research-lab"],
+              ["University of Oxford", "https://www.ox.ac.uk/news/2026-06-22-oxford-to-host-new-uk-ai-research-lab"]
+            ]
+          },
+          {
+            id: "2026-08-15-qmul-edugrade-spinout",
+            section: "London AI",
+            headline: "Queen Mary's marking assistant moves towards a spin-out",
+            location: "London-based",
+            image: images.eduGrade,
+            brief: "Queen Mary's EduGrade AI project has entered Innovate UK's ICURe business and spin-out readiness programme. The system turns an educator's rubric into draft feedback that the educator reviews and edits rather than publishing automatically. Trials covering more than 1,000 submissions cut marking time by about 60%, while 86% of surveyed students found the feedback helpful.",
+            why: "The human-in-the-loop design and measured classroom results make this more than an AI-marking pitch. The new commercialisation stage will test whether a London university prototype can become a durable education product without removing academic judgement.",
+            sources: [
+              ["Queen Mary University of London", "https://www.qmul.ac.uk/news/latest-news/2026/science-and-engineering/se/from-teaching-challenge-to-potential-spinout-queen-mary-ai-assessment-project-takes-next-step-.html"]
+            ]
+          },
+          {
+            id: "2026-08-15-polymateria-plastic-biodegradation",
+            section: "London technology",
+            headline: "Imperial-linked chemistry gives common plastic a timed exit",
+            location: "London-linked",
+            image: images.polymateria,
+            brief: "Peer-reviewed work involving Imperial College London, Polymateria and Malaysia's SIRIM shows a manufacturing additive can transform polyethylene and polypropylene into bioavailable wax after their useful life, without persistent microplastic or toxic residue in the reported tests. Complete biodegradation took 292 days for polyethylene and 269 for polypropylene; the chemistry is added during normal manufacture.",
+            why: "The result targets two of the world's most common plastics with existing factory equipment, but its limits matter: it is not a universal answer for polystyrene, PVC or products designed to last for years. Independent replication and real waste-system performance are the next tests.",
+            sources: [
+              ["Packaging Insights", "https://www.packaginginsights.com/news/polymateria-pe-pp-biodegradation-tech.html"],
+              ["npj Materials Degradation", "https://www.nature.com/articles/s41529-026-00817-5"]
+            ]
+          },
+          {
+            id: "2026-08-15-one-triton-square-100gbps",
+            section: "London technology",
+            headline: "One Triton Square wires every floor for 100Gbps",
+            location: "London-based",
+            image: images.fibre,
+            brief: "Vorboss has installed independently available 100Gbps fibre on every floor of British Land's One Triton Square. The Knowledge Quarter building provides more than 300,000 sq ft of offices, laboratories and flexible workspace, and is the first British Land property announced under the operator's building-connectivity partnership as technology and innovation occupiers demand heavier data capacity.",
+            why: "For lab and compute-intensive tenants, connectivity promised at the building edge is more useful than a vague 'fast broadband' claim. The deployment also shows premium London workspace treating 100Gbps access as leasable infrastructure rather than a bespoke later upgrade.",
+            sources: [
+              ["Technology Reseller", "https://technologyreseller.uk/one-triton-square-joins-londons-best-connected-buildings-with-vorboss-100gbps-connectivity-as-tech-and-innovation-occupier-demand-grows/"]
+            ]
+          },
+          {
+            id: "2026-08-15-open-house-booking-day",
+            section: "Plan ahead",
+            headline: "Open House bookings unlock at midday Wednesday",
+            location: "Across London",
+            action: "Book",
+            actionUrl: "https://programme.openhouse.org.uk/",
+            image: images.london,
+            brief: "Bookings for Open House Festival's ticketed activities open at noon on Wednesday 19 August. The free architecture festival runs from 12 to 20 September across all 33 London boroughs. Open City recommends creating a free programme account before release time; unticketed visits and walks will sit alongside the places that require advance booking.",
+            why: "Popular interiors and small tours can disappear quickly when the booking window opens. An account and a short list prepared before Wednesday noon turn a huge programme into a realistic September plan.",
+            sources: [
+              ["Open City", "https://open-city.org.uk/open-house-festival"],
+              ["Open House programme", "https://programme.openhouse.org.uk/"]
+            ]
+          },
+          {
+            id: "2026-08-15-ucl-hatchery-deadline",
+            section: "Plan ahead",
+            headline: "UCL founders have two weeks to claim a BaseKX desk",
+            location: "London-based",
+            action: "Participate",
+            actionUrl: "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=_oivH5ipW0yTySEKEdmlwiKXvCA37atMnvcnTF5MqWpUOFlFVVpPREhMWTM3Q1oxVU1KTTVRQTRJUSQlQCNjPTEkJUAjdD1n",
+            image: images.aiStudio,
+            brief: "Applications for UCL's Hatchery incubator close at 11.59pm on Sunday 30 August. Current students and graduates from the past two years can apply if their company is registered before submission. Successful founders receive two years of equity-free support at BaseKX, beginning with a compulsory eight-week induction from 15 October to 3 December.",
+            why: "The equity-free term and physical King's Cross base are unusually valuable, but eligibility paperwork and company registration make this a deadline to start now rather than a form to discover on the final Sunday.",
+            sources: [
+              ["UCL", "https://www.ucl.ac.uk/enterprise/students/grow-your-startup-hatchery-incubator-programme"]
+            ]
+          }
+        ]
+      },
+      yesterday: {
         label: "London • Thursday 6 August 2026",
         footer: "Thursday 6 August 2026",
         morning: {
@@ -1040,7 +1227,7 @@
           }
         ]
       },
-      yesterday: {
+      "day-before": {
         label: "London • Tuesday 4 August 2026",
         footer: "Tuesday 4 August 2026",
         morning: {
@@ -1124,94 +1311,6 @@
             why: "The closure now spans two more working weeks and a weekend, so any Southeastern journey needs its London terminal checked before departure rather than relying on the usual route.",
             sources: [
               ["National Rail", "https://www.nationalrail.co.uk/engineering-works/chx-26-july-20260726/"]
-            ]
-          }
-        ]
-      },
-      "day-before": {
-        label: "London • Monday 3 August 2026",
-        footer: "Monday 3 August 2026",
-        morning: {
-          mode: "Nearby POI",
-          modeUrl: "poi/",
-          temperature: "31° / 18°",
-          weatherUrl: "https://weather.metoffice.gov.uk/forecast/gcpvj0v07",
-          rain: "Sunny and dry · <5%",
-          pollen: "High pollen",
-          transit: [
-            ["Northern", "Good service", "good", "https://tfl.gov.uk/tube-dlr-overground/status/"],
-            ["Overground", "Good service", "good", "https://tfl.gov.uk/tube-dlr-overground/status/"]
-          ]
-        },
-        stories: [
-          {
-            id: "2026-08-03-keats-sword-stone",
-            section: "Near home",
-            headline: "Arthurian theatre comes to Keats House garden",
-            location: "Near NW3",
-            action: "Book",
-            actionUrl: "https://www.ticketsource.com/booking/select/ynbbbjzxxjep",
-            image: images.swordStone,
-            brief: "Cambridge Touring Productions brings The Sword in the Stone to Keats House garden on Thursday 6 August, from 6pm to 8pm. The family-friendly outdoor show is suitable for all ages; tickets start at £17 and booking is essential. Bring a blanket, rug or low-backed chair, plus sun protection or wet-weather layers as needed.",
-            why: "It is a distinctive evening within a few minutes of NW3 2RU, and the finite garden capacity makes booking the useful decision rather than waiting until Thursday.",
-            sources: [
-              ["City of London", "https://www.cityoflondon.gov.uk/events/the-sword-in-the-stone-outdoor-theatre"],
-              ["Heath Hands listing", "https://www.heath-hands.org.uk/whatson/theatreatkeats"]
-            ]
-          },
-          {
-            id: "2026-08-03-underground-surface-exhibition",
-            section: "Near work",
-            headline: "Hear the Tube differently at Guildhall",
-            location: "Near EC2N",
-            action: "Book",
-            actionUrl: "https://guildhall-art-gallery.myshopify.com/products/general-admission-underground-and-surface",
-            image: images.undergroundArt,
-            brief: "Guildhall Art Gallery’s Underground (and Surface) pairs Jock McFadyen’s large-scale Tube-station paintings with a Jem Finer soundscape built from Northern and Central line field recordings. The show runs daily from 10am to 5pm until 20 September on a Pay What You Can basis; ear defenders are available for visitors sensitive to tunnel sounds.",
-            why: "At Guildhall Yard, it is a practical culture break from EC2N with enough substance for a full visit but opening hours that also fit a long lunch.",
-            sources: [
-              ["City of London", "https://www.cityoflondon.gov.uk/events/underground-and-surface-exhibition"]
-            ]
-          },
-          {
-            id: "2026-08-03-palantir-met-procurement-filing",
-            section: "London AI",
-            headline: "City Hall sharpens its case against the Met’s AI deal",
-            location: "Across London",
-            image: images.cityHall,
-            brief: "A new pre-trial defence filing says the Mayor’s Office for Policing and Crime will ask the High Court to dismiss Palantir’s challenge over a blocked £50m Met Police AI and data-analysis contract. City Hall’s lawyers allege the larger award followed a low-cost pilot without effective, transparent competition; Palantir argues the refusal was unlawful and irrational.",
-            why: "The dispute will help define how London’s largest police force can buy high-stakes AI: whether a successful pilot justifies a direct scale-up, and how much procurement scrutiny public safety technology must withstand.",
-            sources: [
-              ["POLITICO", "https://www.politico.eu/article/london-mayor-sadiq-khan-accuses-palantir-bypassing-procurement-rules/"],
-              ["London City Hall background", "https://www.london.gov.uk/who-we-are/what-london-assembly-does/london-assembly-press-releases/questions-over-clear-and-serious-breach-procurement-rules-over-ps50m-palantir-contract"]
-            ]
-          },
-          {
-            id: "2026-08-03-city-tech-founders-networking",
-            section: "London technology",
-            headline: "City founders trade product problems tonight",
-            location: "City of London",
-            action: "Book",
-            actionUrl: "https://www.eventbrite.co.uk/e/networking-eventtech-founders-ai-intelligent-systems-for-startups-pros-tickets-1993258635235",
-            image: images.techFounders,
-            brief: "A three-hour technology founders and practitioners meetup starts at 6pm tonight at The Anthologist, 58 Gresham Street. The organiser is pitching it to startup founders, software engineers, product leaders, data scientists, investors and researchers looking for collaborators, technical co-founders, customers or hiring connections.",
-            why: "Unlike a conference months away, this is a same-day chance to test an idea or hiring need against London’s working technology community, a short walk from Liverpool Street.",
-            sources: [
-              ["Eventbrite", "https://www.eventbrite.co.uk/e/networking-eventtech-founders-ai-intelligent-systems-for-startups-pros-tickets-1993258635235"]
-            ]
-          },
-          {
-            id: "2026-08-03-roman-london-family-quest",
-            section: "Plan ahead",
-            headline: "Three Roman sites join forces for a family quest",
-            location: "City of London",
-            action: "Participate",
-            actionUrl: "https://www.cityoflondon.gov.uk/events/roman-london-family-quest",
-            image: images.romanQuest,
-            brief: "London’s Roman Amphitheatre, London Museum and London Mithraeum Bloomberg SPACE will run a free family quest on Friday 14 and Saturday 15 August, from 10am to 4pm. Children can follow a trail, complete activities and win a prize; it is aimed at ages 5–11 but open to all, with no booking required and a guided walking bus between venues.",
-            why: "The dates fall in the school holidays and combine three normally separate Roman-London stops, so the useful move is simply to reserve one of the two days before other plans fill the diary.",
-            sources: [
-              ["City of London", "https://www.cityoflondon.gov.uk/events/roman-london-family-quest"]
             ]
           }
         ]
