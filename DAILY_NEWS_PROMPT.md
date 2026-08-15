@@ -12,9 +12,17 @@ Treat this as a complete research, editorial, implementation, validation, and pu
 
 1. Read `NEWS_CONTEXT.md` completely.
 2. Run `python scripts/collect_candidates.py` to refresh `data/rss_candidates.json`. This is an internal Codex step; Brian does not run it separately. If collection fails, continue with live web research and report the collector failure at the end.
-3. Read `index.html`, `about.html`, `upcoming-events.html`, `upcoming-events.js`, `resources.html`, `data/upcoming-events.json`, `poi/data/editorial-pois.json`, the refreshed `data/rss_candidates.json`, and the current git status. `PotentialUnusedResources.html` is a research backlog, not an approved production source list.
-4. Use the **Europe/London** calendar date. Inspect the current `today`, `yesterday`, and `day-before` editions before changing anything.
-5. The RSS file contains discovery leads only. Search the live web broadly and open the underlying articles. Prefer primary sources and corroborate consequential claims. Do not cite a Google News redirect as the final source.
+3. Run `npm run prepare:brief`. This deterministically deduplicates and ranks the large RSS file into `data/daily-brief.json`, keeping ten discovery leads per section plus compact duplicate, event, POI and source-domain context.
+4. Read the current git status, `data/daily-brief.json`, `data/editions.json`, `data/upcoming-events.json`, `poi/data/editorial-pois.json`, `resources.html`, and the files directly involved in any change. Read `index.html`, `upcoming-events.html`, `upcoming-events.js`, `about.html` or POI source code only when validating or changing their behaviour. `PotentialUnusedResources.html` is a research backlog, not an approved production source list.
+5. Use the **Europe/London** calendar date. Inspect the current `today`, `yesterday`, and `day-before` objects in `data/editions.json` before changing anything.
+6. Treat `data/daily-brief.json` and `data/rss_candidates.json` as discovery leads only. Begin with the compact brief, open destination pages, verify publication times and facts live, and prefer primary sources. Never cite a Google News redirect as the final source. Read the full RSS file only when the shortlist is insufficient or when diagnosing collection/ranking; broaden live web research whenever a section remains weak.
+
+## Fast, reliable execution
+
+- Use one agent for the normal run. Batch independent searches and source checks in parallel where safe; do not create subagents merely to save wall-clock time because they increase total model usage.
+- Do not reread large generated files after the compact brief contains the needed fields. Open only the candidates and repository files required for the decisions being made.
+- Let scripts handle mechanical work: candidate reduction, archive rendering, date labels and structural checks. Keep model effort for editorial judgement, live verification and concise writing.
+- This prompt is designed to work well with a balanced, lower-cost Codex model at low or medium reasoning. Escalate to a frontier model or higher reasoning only when verification, conflicting evidence or a failed validation genuinely requires it.
 
 ## Build exactly ten stories, two per section, in this order
 
@@ -43,6 +51,7 @@ For each story supply:
 - `Walk`, `Book`, `Participate`, or `Avoid` only when genuinely useful;
 - a direct `actionUrl` whenever the action is `Book` or `Participate`. A story with `Walk` or `Avoid` (or any action without a verified direct link) renders as plain text, not a button — never invent a placeholder `actionUrl` just to make an action look clickable;
 - one properly licensed, hotlink-safe editorial image with accurate alt text and credit — real photography or official artwork from the story's own source, never a generic stock stand-in for a specific place or event;
+- an `imageKey` that points to that image in the top-level `images` object in `data/editions.json`; reuse an existing image only when it remains accurate and properly credited;
 - an executive brief of about 45–80 words;
 - a distinct “Why it matters” explanation of about 25–55 words;
 - direct source URLs, favouring official or primary evidence.
@@ -71,6 +80,7 @@ Verify all volatile facts live. Never leave a placeholder such as “Check live�
 
 ## Archive and duplicate rules
 
+- Make edition and image changes in `data/editions.json`, never by hand inside the generated data block in `index.html`.
 - If `today` already has today's London date, this is a same-day rerun: replace/update `today` only.
 - Otherwise delete the old `day-before`, move `yesterday` to `day-before`, move `today` to `yesterday`, and insert the new edition as `today`.
 - Never rotate twice on the same date.
@@ -78,6 +88,8 @@ Verify all volatile facts live. Never leave a placeholder such as “Check live�
 - Compare every proposed story with every story in yesterday before publication.
 - A continuing story may return only after a full intervening issue and a material new development.
 - Keep exactly ten stories in every new edition, preserve the story count of already-published archival editions, and keep all story IDs unique across adjacent editions.
+- After updating structured edition data, run `npm run render:edition`. This regenerates the embedded `images` and `issues` block plus the visible Today date in `index.html`, keeping the published page self-contained for GitHub Pages.
+- Never hand-edit generated edition data in `index.html`. If generated output is wrong, fix `data/editions.json` or `scripts/render_edition.mjs` and render again.
 
 ## Source directory
 
@@ -137,14 +149,15 @@ Do not redesign the site during a daily edition run.
 
 These are Codex responsibilities included in this single prompt; Brian does not run them separately.
 
-1. Run `npm test`.
-2. Run `python -m py_compile scripts/collect_candidates.py`.
-3. Run `git diff --check`.
-4. Render and inspect the homepage at desktop and mobile widths. Check all three date tabs plus `upcoming-events.html`, `about.html`, `resources.html`, and `poi/`. Follow the homepage footer’s `Upcoming Events` link and confirm it reaches the calendar.
-5. Confirm images load, links are direct, actions are accurate, every `Walk`/`Avoid` story renders as plain text rather than a button, every `Book`/`Participate` story renders as a bordered link, source hostnames are deduplicated, and no story repeats yesterday.
-6. Validate `data/upcoming-events.json` and `poi/data/editorial-pois.json`; confirm every eligible event and POI discovered today was appended once, the calendar’s visible updated date and count match the JSON, events appear on the correct dates in both Month and Agenda views, and POIs appear on `poi/` when their area is searched.
-7. Review the final diff and commit only the intended edition/resource/POI changes with `Publish London edition YYYY-MM-DD`.
-8. Push to `origin/main` without force.
-9. Confirm local `HEAD` equals `origin/main`, monitor the Pages deployment, and verify the public homepage shows today's London issue date.
+1. Run `npm run prepare:brief` again so its compact duplicate/event/POI context reflects the finished structured data.
+2. Run `npm run render:edition` and then `npm test`. The test command first verifies that `index.html` is exactly in sync with `data/editions.json`.
+3. Run `python -m py_compile scripts/collect_candidates.py` and `git diff --check`.
+4. Always perform a browser smoke test of the homepage at desktop and mobile widths: check all three date tabs, ten current stories, visible date, images, direct links, action styling, footer navigation, horizontal overflow and console errors.
+5. Always follow the homepage footer’s `Upcoming Events` link. Confirm the visible updated date and count match `data/upcoming-events.json`, and inspect every added, updated or removed record in both Month and Agenda views.
+6. Inspect `resources.html` in the browser when resource cards changed. Search the relevant area in `poi/` when editorial POIs changed. Inspect `about.html` when its content or shared secondary styling changed. Run the former full companion-page browser tour only when shared HTML/CSS/JavaScript changed or the smoke test reveals a regression.
+7. Confirm every `Walk`/`Avoid` story renders as plain text, every `Book`/`Participate` story renders as a bordered link, source hostnames are deduplicated, no story repeats yesterday, and all JSON remains valid.
+8. Review the final diff and commit only intended edition, shortlist, resource, event and POI changes with `Publish London edition YYYY-MM-DD`.
+9. Push to `origin/main` without force.
+10. Confirm local `HEAD` equals `origin/main`, monitor the Pages deployment, and verify the public homepage shows today's London issue date.
 
 Do not report success until the edition is in `index.html`, validation passes, the intended commit is pushed, and the public deployment is verified. If publishing is blocked, preserve the local work and report the exact blocker.

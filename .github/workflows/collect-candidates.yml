@@ -27,10 +27,13 @@ jobs:
       - name: Collect candidate stories
         run: python scripts/collect_candidates.py
 
-      - name: Commit candidate file
+      - name: Prepare compact daily brief
+        run: node scripts/prepare_daily_brief.mjs
+
+      - name: Commit discovery files
         run: |
           git config user.name "london-news-candidate-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/rss_candidates.json
+          git add data/rss_candidates.json data/daily-brief.json
           git diff --quiet --cached || git commit -m "Refresh London news candidates"
           git push
