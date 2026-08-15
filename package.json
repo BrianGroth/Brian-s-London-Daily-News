@@ -4,6 +4,9 @@
   "private": true,
   "description": "A personal, mobile-first London newspaper generated with Codex.",
   "scripts": {
-    "test": "node --test tests/site.test.mjs && npm --prefix poi test"
+    "prepare:brief": "node scripts/prepare_daily_brief.mjs",
+    "render:edition": "node scripts/render_edition.mjs",
+    "check:edition": "node scripts/render_edition.mjs --check",
+    "test": "npm run check:edition && node --test tests/site.test.mjs && npm --prefix poi test"
   }
 }

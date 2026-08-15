@@ -15,6 +15,8 @@ const poiReadme = await readFile(new URL("../poi/README.md", import.meta.url), "
 const upcomingEventsPage = await readFile(new URL("../upcoming-events.html", import.meta.url), "utf8");
 const upcomingEventsScript = await readFile(new URL("../upcoming-events.js", import.meta.url), "utf8");
 const upcomingEventsData = JSON.parse(await readFile(new URL("../data/upcoming-events.json", import.meta.url), "utf8"));
+const editionData = JSON.parse(await readFile(new URL("../data/editions.json", import.meta.url), "utf8"));
+const dailyBrief = JSON.parse(await readFile(new URL("../data/daily-brief.json", import.meta.url), "utf8"));
 
 function extractIssues() {
   const start = index.indexOf("    const images =");
@@ -67,6 +69,34 @@ test("today has ten paired stories and archived issues remain valid and non-repe
     ],
     "today has exactly two adjacent stories per section",
   );
+});
+
+test("structured edition data is rendered into the self-contained homepage", () => {
+  const embeddedIssues = extractIssues();
+  assert.equal(editionData.schemaVersion, 1);
+  assert.match(index, /GENERATED DAILY DATA: run npm run render:edition/);
+  for (const issueKey of ["today", "yesterday", "day-before"]) {
+    assert.deepEqual(
+      Array.from(embeddedIssues[issueKey].stories, ({ id, headline }) => ({ id, headline })),
+      editionData.issues[issueKey].stories.map(({ id, headline }) => ({ id, headline })),
+    );
+    for (const story of editionData.issues[issueKey].stories) {
+      assert.ok(editionData.images[story.imageKey], `${story.id} references a known image`);
+    }
+  }
+});
+
+test("daily brief is a compact ranked discovery view, not reporting", () => {
+  assert.equal(dailyBrief.schemaVersion, 1);
+  assert.match(dailyBrief.notice, /Discovery shortlist only/);
+  assert.ok(dailyBrief.sourceCandidateCount >= dailyBrief.deduplicatedCandidateCount);
+  for (const section of ["Near Home", "Near Work", "London AI", "London Technology", "Plan Ahead"]) {
+    assert.equal(dailyBrief.candidateSections[section].length, dailyBrief.candidatesPerSection);
+    for (const candidate of dailyBrief.candidateSections[section]) {
+      assert.ok(candidate.title && candidate.discoveryUrl);
+      assert.equal(typeof candidate.score, "number");
+    }
+  }
 });
 
 test("source directory is unique and covers current edition hostnames", () => {
@@ -145,7 +175,7 @@ test("Walk and Avoid render as plain muted text", () => {
 });
 
 test("primary navigation reaches the merged companion pages", () => {
-  assert.match(index, /modeUrl:\s*"poi\/"/);
+  assert.equal(editionData.issues.today.morning.modeUrl, "poi/");
   assert.match(index, /href="upcoming-events\.html"/);
   assert.match(index, /href="about\.html"/);
   assert.match(index, /href="resources\.html"/);

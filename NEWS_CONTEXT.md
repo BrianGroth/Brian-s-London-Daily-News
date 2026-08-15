@@ -80,6 +80,14 @@ The tested POI discovery stack is listed in the POI Resources section there. Can
 
 Use it to discover leads only. Open the destination, verify the publication time and substance, search for primary evidence, and decide independently whether the story belongs.
 
+The normal daily run consumes `data/daily-brief.json` first. That file is a deterministic, compact ranking of the RSS pool with duplicate context and durable-store summaries; it is still unverified discovery output. Read the full RSS pool only when the shortlist is weak or its ranking needs diagnosis.
+
+## Structured edition pipeline
+
+`data/editions.json` is the editable source for the rolling three-edition archive and its image catalogue. Stories refer to images by `imageKey`. `scripts/render_edition.mjs` embeds this data into `index.html` so the deployed newspaper remains a self-contained static page.
+
+Never hand-edit the generated edition block in `index.html`. Change the structured data, run `npm run render:edition`, and let `npm test` confirm the embedded page is synchronized.
+
 ## Freshness uses two clocks
 
 Freshness is an editorial requirement with two different measurements:
