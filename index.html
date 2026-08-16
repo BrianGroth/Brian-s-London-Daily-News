@@ -609,10 +609,10 @@
   <div class="shell">
     <header class="masthead">
       <p class="brand">BRIAN'S LONDON DAILY NEWS</p>
-      <p class="issue-line" id="issue-line">London <span class="dot">•</span> Saturday 15 August 2026</p>
+      <p class="issue-line" id="issue-line">London <span class="dot">•</span> Sunday 16 August 2026</p>
       <p class="issue-rolling">Rolling 3-day edition · today, yesterday, day before</p>
       <nav class="date-nav" aria-label="Choose briefing date" role="tablist">
-        <button class="date-tab" id="tab-today" role="tab" aria-controls="today" aria-selected="true" data-day="today">Today 15 August</button>
+        <button class="date-tab" id="tab-today" role="tab" aria-controls="today" aria-selected="true" data-day="today">Today 16 August</button>
         <button class="date-tab" id="tab-yesterday" role="tab" aria-controls="yesterday" aria-selected="false" data-day="yesterday">Yesterday</button>
         <button class="date-tab" id="tab-day-before" role="tab" aria-controls="day-before" aria-selected="false" data-day="day-before">Day Before</button>
       </nav>
@@ -645,6 +645,11 @@
         "src": "https://images.squarespace-cdn.com/content/v1/5eff13e8f5beea28d1539c30/8a7c915a-98ca-49cb-ae9e-36ac455506ad/JosephBarnes3.jpg",
         "alt": "A winning Hampstead Heath calendar competition photograph",
         "credit": "Photo: Joseph Barnes / Heath Hands"
+      },
+      "heathSwim": {
+        "src": "https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=1400&q=86",
+        "alt": "A swimmer moving through open water",
+        "credit": "Photo: Gentrit Sylejmani / Unsplash"
       },
       "playMakeDo": {
         "src": "https://www.barbican.org.uk/sites/default/files/styles/hero_constrained_small/public/images/2026-06/Picture1.png?itok=cW82q5Ba",
@@ -915,11 +920,216 @@
         "src": "https://www.ianvisits.co.uk/wp-content/uploads/sites/2/social-cards/91670/facebook.jpg",
         "alt": "A Yeoman Warder at the Tower of London opening ceremony",
         "credit": "Photo: ianVisits"
+      },
+      "aiBooks": {
+        "src": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=1400&q=86",
+        "alt": "Shelves of books in a large library",
+        "credit": "Photo: Tom Hermans / Unsplash"
+      },
+      "forestBike": {
+        "src": "https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=1400&q=86",
+        "alt": "An electric bicycle parked outdoors",
+        "credit": "Photo: KBO Bike / Unsplash"
       }
     };
 
     const issues = {
       "today": {
+        "label": "London • Sunday 16 August 2026",
+        "footer": "Sunday 16 August 2026",
+        "morning": {
+          "mode": "Nearby POI",
+          "modeUrl": "poi/",
+          "temperature": "27° / 18°",
+          "weatherUrl": "https://weather.metoffice.gov.uk/forecast/gcpvj0v07",
+          "rain": "Sunny intervals · 30% rain around 8pm",
+          "pollen": "Moderate weed pollen · low pollution",
+          "transit": [
+            [
+              "Northern",
+              "Good service",
+              "good",
+              "https://tfl.gov.uk/status-updates/"
+            ],
+            [
+              "Overground",
+              "Mildmay and Windrush closures",
+              "check",
+              "https://tfl.gov.uk/status-updates/"
+            ]
+          ]
+        },
+        "stories": [
+          {
+            "id": "2026-08-16-heath-swimming-hours-change",
+            "section": "Near home",
+            "headline": "The Heath’s swimming day shortens tonight",
+            "location": "Near NW3",
+            "action": "Walk",
+            "brief": "Hampstead Heath’s mixed and single-sex bathing ponds move to shorter hours today, Sunday 16 August. The published timetable sets last entry at 7.15pm and closing at 7.45pm, one hour earlier than the schedule that ran through Saturday. The Parliament Hill Lido keeps its own session timetable, so check the specific facility before setting out.",
+            "why": "The seasonal change lands today. A familiar after-work or evening-swim time may now be too late, making the last-entry time the useful detail to carry into the week.",
+            "sources": [
+              [
+                "City of London",
+                "https://www.cityoflondon.gov.uk/things-to-do/green-spaces/hampstead-heath/activities-at-hampstead-heath/swimming-at-hampstead-heath/swimming-opening-times"
+              ]
+            ],
+            image: images["heathSwim"]
+          },
+          {
+            "id": "2026-08-16-parliament-hill-mad-dog-bites",
+            "section": "Near home",
+            "headline": "Rock returns to Parliament Hill’s bandstand",
+            "location": "Near NW3",
+            "action": "Walk",
+            "brief": "Mad Dog Bites plays Parliament Hill Bandstand next Sunday, 23 August, from 3pm to 5pm. The City of London lists the rock concert as free and family-friendly, with no booking required. Bring something to sit on and treat the exposed hilltop as a weather-dependent plan.",
+            "why": "It is a genuinely local, zero-cost Sunday plan with a fixed two-hour window, and putting it in the diary now avoids confusing it with today’s final Golders Hill concert.",
+            "sources": [
+              [
+                "City of London",
+                "https://www.cityoflondon.gov.uk/events/parliament-hill-summer-concerts"
+              ]
+            ],
+            image: images["heath"]
+          },
+          {
+            "id": "2026-08-16-city-slave-trade-report",
+            "section": "Near work",
+            "headline": "Leaked research confronts the City’s slave-trade ties",
+            "location": "Near EC2N",
+            "brief": "BBC reporting published this morning says leaked research commissioned by the City of London Corporation details extensive historic links between civic figures and the trafficking of enslaved Africans. The Corporation approved the work to make those connections transparent, but the finished report has not yet been published. Treat the leaked findings as reported claims until the underlying research is released.",
+            "why": "The dispute is about how the Square Mile presents its own institutional history. Publication of the full evidence—and the Corporation’s response—will matter to City heritage, memorials and public accountability.",
+            "sources": [
+              [
+                "BBC",
+                "https://news.google.com/rss/articles/CBMiWkFVX3lxTE12ZTlJYmNIMHFMWkhMRXVLRDc3XzhZd2kxeW5sV2ZzT0YwLUdlaDNjdTRPR0duNi15RmctU2xFOU1JalhBTWlMeTczRlEtSFBKQTFOMWNUaXBoZw?oc=5"
+              ],
+              [
+                "City of London",
+                "https://news.cityoflondon.gov.uk/city-corporation-approves-funding-for-research-into-its-historic-links-to-transatlantic-trade-in-enslaved-african-people/"
+              ]
+            ],
+            image: images["fleetStreet"]
+          },
+          {
+            "id": "2026-08-16-city-plan-hearing-statements",
+            "section": "Near work",
+            "headline": "City skyline evidence is due by Friday",
+            "location": "Near EC2N",
+            "action": "Participate",
+            "actionUrl": "https://www.cityoflondon.gov.uk/services/planning/planning-policy/city-plan-2040-examination-in-public",
+            "brief": "Additional statements for the City Plan 2040 examination must reach the programme process by 5pm this Friday, 21 August. The reopened issue is narrowly focused on Historic England’s alternative tall-building contours around the Tower of London World Heritage Site. Further public hearing sessions are scheduled at Guildhall on 2 and 3 September.",
+            "why": "The deadline concerns the planning envelope that will shape future City towers and protected views. Anyone already engaged in the examination has only five days to follow the inspectors’ additional guidance.",
+            "sources": [
+              [
+                "City of London",
+                "https://www.cityoflondon.gov.uk/services/planning/planning-policy/city-plan-2040-examination-in-public"
+              ]
+            ],
+            image: images["exchange"]
+          },
+          {
+            "id": "2026-08-16-ai-book-orders-heathrow",
+            "section": "London AI",
+            "headline": "Mystery book orders point toward Heathrow",
+            "location": "London-linked",
+            "brief": "Secondhand booksellers are reporting large, apparently unrelated orders that they suspect may be feeding AI training. The Guardian found one delivery postcode used by different buyers leading to freight warehouses near Heathrow; one UK seller said similar buyers had ordered 6,000 books since January. No buyer has been confirmed as an AI company, and Anthropic says its programmes do not destroy rare or antiquarian books.",
+            "why": "The London logistics clue makes a global data-acquisition question tangible: opaque demand may be altering prices, stock and workloads in a trade whose books are attractive precisely because much of their text is absent from the web.",
+            "sources": [
+              [
+                "The Guardian",
+                "https://www.theguardian.com/technology/2026/aug/15/uk-ireland-booksellers-suspect-ai-companies-bulk-orders-data-acquisition"
+              ]
+            ],
+            image: images["aiBooks"]
+          },
+          {
+            "id": "2026-08-16-ai-filmmaking-intensive",
+            "section": "London AI",
+            "headline": "Five days to make a film with AI starts tomorrow",
+            "location": "London-based",
+            "action": "Book",
+            "actionUrl": "https://payments.lfs.org.uk/ai-filmmaking-summer-studio-ws142.html",
+            "brief": "London Film School’s AI Filmmaking Summer Intensive runs tomorrow through Friday, 10am–5pm, at 24 Shelton Street. The £1,200 course has a stated capacity of 15 and takes teams from concept to a completed short film using AI-assisted image, sound, dialogue and post-production workflows, alongside copyright, likeness, consent and transparency questions.",
+            "why": "This is expensive and immediate, but unusually concrete: the live booking route offers working filmmakers a full production cycle rather than another introductory prompt workshop.",
+            "sources": [
+              [
+                "London Film School",
+                "https://lfw.org.uk/course/ai-filmmaking-summer-studio/"
+              ]
+            ],
+            image: images["theatre"]
+          },
+          {
+            "id": "2026-08-16-forest-eu-trademark-ruling",
+            "section": "London technology",
+            "headline": "Forest’s tree-on-legs mark fails its EU test",
+            "location": "London-based",
+            "brief": "London e-bike operator Forest has lost its attempt to register an EU trademark combining the word “forest” with its tree-on-legs device, according to World IP Review. The EU General Court found the sign descriptive and lacking distinctive character for the services claimed. The ruling affects brand protection, not the company’s ability to keep trading under the name.",
+            "why": "For a home-grown micromobility company now operating at London scale, the decision draws a practical line between a memorable identity and a mark the courts consider too descriptive to monopolise.",
+            "sources": [
+              [
+                "World IP Review",
+                "https://www.worldipreview.com/trademark/uk-e-bike-startup-forest-loses-bid-for-eu-trademark"
+              ],
+              [
+                "Forest",
+                "https://www.forest.me/post/forest-bikes-series-b-funding"
+              ]
+            ],
+            image: images["forestBike"]
+          },
+          {
+            "id": "2026-08-16-ucl-open-neuroinformatics-school",
+            "section": "London technology",
+            "headline": "Open neuroscience software gets a London build week",
+            "location": "London-based",
+            "brief": "UCL’s Neuroinformatics Unit begins its two-week Open Software Summer School tomorrow at the Sainsbury Wellcome Centre in Fitzrovia. Selected researchers, developers and users will combine hands-on training, community building and hacking around open-source neuroscience tools. Registration is restricted to accepted participants; the listed fees run from £300 for one academic week to £1,200 for two industry weeks.",
+            "why": "The useful development is the shared infrastructure, not a single product: bringing toolmakers and researchers together can make neuroscience software more reproducible, maintainable and usable beyond one laboratory.",
+            "sources": [
+              [
+                "UCL",
+                "https://onlinestore.ucl.ac.uk/conferences-and-events/faculty-of-life-sciences-c08/sainsbury-wellcome-centre-d75/d75-neuroinformatics-unit-open-software-summer-school-2026"
+              ]
+            ],
+            image: images["mentalHealth"]
+          },
+          {
+            "id": "2026-08-16-charing-cross-follow-up-closure",
+            "section": "Plan ahead",
+            "headline": "Charing Cross reopens—then closes next weekend",
+            "location": "Across London",
+            "action": "Avoid",
+            "brief": "The 22-day closure of Charing Cross and Waterloo East ends tonight, but both stations will close again next Saturday and Sunday, 22–23 August, for follow-up engineering work. Network Rail warns that the alternative service plan may differ from the long closure, so Southeastern passengers should check their specific route and first or last train rather than reuse this week’s plan.",
+            "why": "Monday’s reopening can create false confidence. The separate weekend closure is close enough to disrupt plans already being made, yet different enough that the previous diversion pattern may not apply.",
+            "sources": [
+              [
+                "Network Rail",
+                "https://www.networkrail.co.uk/our-work/our-routes/kent/kent-and-south-east-london-railway-upgrade-plan/london-charing-cross-and-waterloo-east-closed-for-essential-engineering-works/"
+              ]
+            ],
+            image: images["london"]
+          },
+          {
+            "id": "2026-08-16-kenwood-othello",
+            "section": "Plan ahead",
+            "headline": "Othello takes Kenwood’s lawn next Sunday",
+            "location": "Across London",
+            "action": "Book",
+            "actionUrl": "https://www.english-heritage.org.uk/visit/whats-on/kenwood-othello-sun-23-aug/",
+            "brief": "The Lord Chamberlain’s Men performs Othello outdoors at Kenwood next Sunday, 23 August, from 7pm to 9.45pm; doors open at 6pm. English Heritage lists adult tickets at £21.08 and child tickets at £12.65. The all-male production uses Elizabethan costume, music and dance; bring a chair and picnic and prepare for the weather.",
+            "why": "The booking decision is practical now because the long outdoor performance needs both a ticket and a carry plan, and it can follow the free Parliament Hill concert without duplicating the same event.",
+            "sources": [
+              [
+                "English Heritage",
+                "https://www.english-heritage.org.uk/visit/whats-on/kenwood-othello-sun-23-aug/"
+              ]
+            ],
+            image: images["theatre"]
+          }
+        ]
+      },
+      "yesterday": {
         "label": "London • Saturday 15 August 2026",
         "footer": "Saturday 15 August 2026",
         "morning": {
@@ -1120,7 +1330,7 @@
           }
         ]
       },
-      "yesterday": {
+      "day-before": {
         "label": "London • Thursday 6 August 2026",
         "footer": "Thursday 6 August 2026",
         "morning": {
@@ -1338,125 +1548,6 @@
               ]
             ],
             image: images["towerCeremony"]
-          }
-        ]
-      },
-      "day-before": {
-        "label": "London • Tuesday 4 August 2026",
-        "footer": "Tuesday 4 August 2026",
-        "morning": {
-          "mode": "Nearby POI",
-          "modeUrl": "poi/",
-          "temperature": "27° / 19°",
-          "weatherUrl": "https://weather.metoffice.gov.uk/forecast/gcpvj0v07",
-          "rain": "Sunny and dry · <5%",
-          "pollen": "High pollen",
-          "transit": [
-            [
-              "Northern",
-              "Minor delays",
-              "check",
-              "https://tfl.gov.uk/tube-dlr-overground/status/"
-            ],
-            [
-              "Overground",
-              "Good service",
-              "good",
-              "https://tfl.gov.uk/tube-dlr-overground/status/"
-            ]
-          ]
-        },
-        "stories": [
-          {
-            "id": "2026-08-04-kenwood-pirates-penzance",
-            "section": "Near home",
-            "headline": "Pirates land on Kenwood’s lawn tomorrow",
-            "location": "Near NW3",
-            "action": "Book",
-            "actionUrl": "https://www.english-heritage.org.uk/visit/whats-on/kenwood-pirates-of-penzance-wed-5-aug/",
-            "brief": "Illyria brings Gilbert and Sullivan’s The Pirates of Penzance to Kenwood tomorrow evening. Doors open at 6pm and the outdoor show runs from 7pm to 9pm, with a 20-minute interval. Tickets remain on sale at £20 for adults and £10 for children aged 5–17; bring a picnic blanket or folding chair.",
-            "why": "It is a distinctive open-air evening within NW3, and the live ticket button makes tonight the sensible moment to secure a place and plan what to carry.",
-            "sources": [
-              [
-                "English Heritage",
-                "https://www.english-heritage.org.uk/visit/whats-on/kenwood-pirates-of-penzance-wed-5-aug/"
-              ]
-            ],
-            image: images["kenwoodPirates"]
-          },
-          {
-            "id": "2026-08-04-america-london-heritage-display",
-            "section": "Near work",
-            "headline": "Guildhall opens a small window on America",
-            "location": "Near EC2N",
-            "action": "Walk",
-            "brief": "Guildhall Art Gallery’s free America and London display marks the Declaration of Independence’s 250th anniversary with rare objects from The London Archives. Highlights include two 1775 letters sent to the City, a silk bookmark commemorating Abraham Lincoln and the Freedom roll recording Dwight D. Eisenhower. It is open during the gallery’s regular 10am–5pm hours.",
-            "why": "The compact display is close enough to EC2N for lunch, and its original documents make a sharper City-history stop than another general wander through the Square Mile.",
-            "sources": [
-              [
-                "City of London",
-                "https://www.cityoflondon.gov.uk/events/heritage-gallery-display-america-and-london"
-              ]
-            ],
-            image: images["fleetStreet"]
-          },
-          {
-            "id": "2026-08-04-ai-healthcare-registration",
-            "section": "London AI",
-            "headline": "Healthcare AI’s London deadline lands Friday",
-            "location": "London-based",
-            "action": "Book",
-            "actionUrl": "https://aiih.cc/registration/",
-            "brief": "Late registration for the International Conference on AI in Healthcare closes this Friday, 7 August. The Imperial College London meeting runs 26–28 August and covers predictive care, medical imaging, multimodal generative AI, trustworthy systems and robotics. Full late access is £620, students pay £480 and single-day tickets are £250; the live registration page still lists all options.",
-            "why": "The deadline turns a broad research programme into a decision now, with clinical translation, accountability and resource-constrained deployment all represented rather than AI product marketing alone.",
-            "sources": [
-              [
-                "AIiH conference",
-                "https://aiih.cc/"
-              ],
-              [
-                "AIiH registration",
-                "https://aiih.cc/registration/"
-              ]
-            ],
-            image: images["mentalHealth"]
-          },
-          {
-            "id": "2026-08-04-london-6g-week-registration",
-            "section": "London technology",
-            "headline": "London’s 6G week puts AI inside the network",
-            "location": "London-based",
-            "action": "Book",
-            "actionUrl": "https://www.eventbrite.ch/e/one6g-summit-2026-connected-intelligence-for-6g-sept-10-11-london-uk-tickets-1990479087533/",
-            "brief": "Registration is open for London 6G Week at King’s College London from 7–11 September. Its final two-day one6G Summit focuses on AI-native networks, multi-agent control, digital twins, robotics and emerging standards, with live demonstrations. General admission is €390 including VAT, one6G members pay €150 and verified students can register free through a separate route.",
-            "why": "The programme connects technical research to standards and deployable network architecture, giving London practitioners a concrete view of how AI may become part of communications infrastructure rather than sit above it.",
-            "sources": [
-              [
-                "King’s College London",
-                "https://www.kcl.ac.uk/events/london-6g-week"
-              ],
-              [
-                "one6G Summit tickets",
-                "https://summit2026.one6g.org/tickets/"
-              ]
-            ],
-            image: images["fibre"]
-          },
-          {
-            "id": "2026-08-04-charing-cross-closure",
-            "section": "Plan ahead",
-            "headline": "Charing Cross stays shut for twelve more days",
-            "location": "Across London",
-            "action": "Avoid",
-            "brief": "No trains will serve London Charing Cross or Waterloo East until Sunday 16 August while Network Rail completes a £20m, 22-day programme. Southeastern services are diverted to London Bridge, Cannon Street, Blackfriars or Victoria, with route-specific changes. Underground travel between the affected central terminals is accepted at no extra cost; weekend timetables may differ again.",
-            "why": "The closure now spans two more working weeks and a weekend, so any Southeastern journey needs its London terminal checked before departure rather than relying on the usual route.",
-            "sources": [
-              [
-                "National Rail",
-                "https://www.nationalrail.co.uk/engineering-works/chx-26-july-20260726/"
-              ]
-            ],
-            image: images["london"]
           }
         ]
       }

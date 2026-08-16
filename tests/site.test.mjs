@@ -39,7 +39,7 @@ test("brand and required palette are present", () => {
 test("today has ten paired stories and archived issues remain valid and non-repeating", () => {
   const issues = extractIssues();
   const order = ["today", "yesterday", "day-before"];
-  const expectedCounts = { today: 10, yesterday: 10, "day-before": 5 };
+  const expectedCounts = { today: 10, yesterday: 10, "day-before": 10 };
   for (const key of order) {
     assert.equal(issues[key].stories.length, expectedCounts[key], `${key} preserves its expected story count`);
     for (const story of issues[key].stories) {
