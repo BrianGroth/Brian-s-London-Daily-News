@@ -16,15 +16,15 @@ The voice is informed, calm, compact, and specific. It should feel like a well-e
 
 ## Editorial mix
 
-Each edition contains exactly ten stories, two per section, run as adjacent pairs in this order:
+Each edition contains exactly ten stories, run as adjacent section blocks in this order:
 
-1–2. Near Home
-3–4. Near Work
-5–6. London AI
-7–8. London Technology
+1–4. Near Home activities
+5–6. Near Work
+7. London AI
+8. London Technology
 9–10. Plan Ahead
 
-Do not let two items cover the same announcement or event — this applies within a section's pair as much as across the whole edition. Do not fill a slot with a weak story merely to satisfy the category; keep researching.
+Do not let two items cover the same announcement or event — this applies within a section block as much as across the whole edition. Do not fill a slot with a weak story merely to satisfy the category; keep researching.
 
 ## London test for AI and technology
 
@@ -134,8 +134,8 @@ The reference concepts are:
 
 - London date and weather checked live.
 - Current Northern and Overground status checked live.
-- Exactly ten stories: two adjacent stories for each section in the required order.
-- Strong Heath item chosen first when one exists.
+- Exactly ten stories in the required 4 Near Home / 2 Near Work / 1 London AI / 1 London Technology / 2 Plan Ahead order.
+- Four useful, distinct Near Home activities, with strong Heath items prioritised when they exist.
 - Near Home and Near Work are geographically honest.
 - AI and technology pass the London test.
 - Plan Ahead contains a real future decision.

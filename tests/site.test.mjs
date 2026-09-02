@@ -36,7 +36,7 @@ test("brand and required palette are present", () => {
   assert.match(about, /BRIAN'S LONDON DAILY NEWS/);
 });
 
-test("today has ten paired stories and archived issues remain valid and non-repeating", () => {
+test("today has the ten-story local-first mix and archived issues remain valid and non-repeating", () => {
   const issues = extractIssues();
   const order = ["today", "yesterday", "day-before"];
   const expectedCounts = { today: 10, yesterday: 10, "day-before": 10 };
@@ -61,13 +61,13 @@ test("today has ten paired stories and archived issues remain valid and non-repe
   assert.deepEqual(
     Array.from(issues.today.stories, ({ section }) => section.toLowerCase()),
     [
-      "near home", "near home",
+      "near home", "near home", "near home", "near home",
       "near work", "near work",
-      "london ai", "london ai",
-      "london technology", "london technology",
+      "london ai",
+      "london technology",
       "plan ahead", "plan ahead",
     ],
-    "today has exactly two adjacent stories per section",
+    "today has the required 4/2/1/1/2 adjacent section mix",
   );
 });
 

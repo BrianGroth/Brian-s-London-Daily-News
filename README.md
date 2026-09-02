@@ -13,7 +13,7 @@ That one prompt instructs Codex to:
 - refresh the RSS candidate file;
 - reduce hundreds of raw leads to a compact, ranked daily brief;
 - research and verify live sources;
-- select, analyse, categorise, and write the ten stories (two per section);
+- select, analyse, categorise, and write the ten stories (four near home, two near work, one each for London AI and technology, and two plan-ahead items);
 - update weather and current TfL status;
 - update structured edition data, deterministically render `index.html`, and maintain the source directory;
 - run Python/Node validation and browser checks;
