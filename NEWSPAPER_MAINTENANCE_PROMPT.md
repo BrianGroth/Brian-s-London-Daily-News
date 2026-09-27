@@ -22,10 +22,14 @@ Treat this as a whole-project engineering task, not a daily newspaper publicatio
 4. Reconstruct the live data flow from source rather than relying on prior assumptions:
    - `scripts/collect_candidates.py` creates the unverified discovery pool in `data/rss_candidates.json`;
    - `scripts/prepare_daily_brief.mjs` reduces it deterministically to `data/daily-brief.json`;
+   - `scripts/lookup_context.mjs` retrieves complete editorial records on demand;
+   - `scripts/apply_edition.mjs` validates verified input and applies archive rotation and append-only bookkeeping, defaulting to a dry run;
    - `data/editions.json` is the editable source for images and the three newspaper editions;
    - `scripts/render_edition.mjs` embeds that data into the self-contained `index.html`;
    - `data/upcoming-events.json`, `resources.html` and `poi/data/editorial-pois.json` are durable append/preserve stores governed by the daily prompt;
    - GitHub Pages publishes the static site.
+   - `scripts/browser_smoke.mjs` checks desktop/mobile behavior; its isolated CI mode never replaces live publication acceptance;
+   - `scripts/stage_site.mjs` stages public runtime files for the optional Actions-based Pages pipeline. See `docs/PUBLISHING.md` for activation boundaries.
 5. Distinguish authored source from generated output. Never hand-edit the generated edition block in `index.html`; edit `data/editions.json` or the renderer and run `npm run render:edition`.
 6. Identify the relevant invariants, tests, cache-busting rules, service-worker rules, accessibility requirements and publication boundaries before editing.
 
@@ -42,9 +46,10 @@ Treat this as a whole-project engineering task, not a daily newspaper publicatio
 ## Validate proportionally
 
 1. Run `npm run render:edition` whenever `data/editions.json` or the renderer changes.
-2. Run `npm test`, `python -m py_compile scripts/collect_candidates.py`, and `git diff --check` for any structural workflow change.
-3. Run the directly affected scripts with real repository data and inspect their generated output for size, correctness, determinism and useful failure messages.
+2. Run `npm test`, `npm run test:collector`, `python -m py_compile scripts/collect_candidates.py`, and `git diff --check` for any structural workflow change.
+3. Run the directly affected scripts with real repository data and inspect their generated output for size, correctness, determinism and useful failure messages. Use temporary output options and dry runs to avoid changing the published edition or discovery snapshots during maintenance.
 4. For rendered changes, serve the site over HTTP and inspect affected pages at desktop and mobile widths. Check keyboard operation, overflow, images, direct links, console errors and accessible names.
+   Use `npm run test:browser` for repeatable regression checks and `npm run test:browser:live` for actual media/network checks. Report third-party or existing live failures explicitly; do not weaken assertions to hide them.
 5. Review the final diff and state precisely what changed, which checks passed and any residual risk or follow-up.
 
 ## Git and publication boundary

@@ -8,26 +8,30 @@ candidate file for the daily Codex research run.
 from __future__ import annotations
 
 import html
+import argparse
 import json
 import re
+import sys
+import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor
+from threading import BoundedSemaphore
 
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "rss_candidates.json"
 MAX_PER_FEED = 15
 RETENTION_DAYS = 14
+MAX_WORKERS = 4
+MAX_PER_HOST = 2
 
 SEARCHES = {
-    # Two stories a day are required per section (see DAILY_NEWS_PROMPT.md),
-    # so every section runs at least two independent queries to keep the raw
-    # candidate pool wide enough to find two genuinely distinct, non-duplicate
-    # stories rather than starving on the second slot.
+    # Preserve independent queries in every section; ranking is not reporting.
     "Near Home": [
         '"Hampstead Heath" when:3d',
         '(Hampstead OR "Belsize Park" OR "Swiss Cottage" OR NW3) London when:3d',
@@ -56,17 +60,16 @@ PUBLISHER_FEEDS = [
 ]
 
 
-def fetch_xml(url: str) -> ET.Element | None:
+def fetch_xml(url: str) -> ET.Element:
     request = urllib.request.Request(
         url,
         headers={"User-Agent": "BrianLondonDailyNews/1.0 (+GitHub Pages)"},
     )
-    try:
-        with urllib.request.urlopen(request, timeout=25) as response:
-            return ET.fromstring(response.read())
-    except Exception as exc:  # A broken feed should not block the other feeds.
-        print(f"[warn] {url}: {exc}")
-        return None
+    with urllib.request.urlopen(request, timeout=25) as response:
+        root = ET.fromstring(response.read())
+    if root.tag != "rss":
+        raise ValueError("Expected an RSS document")
+    return root
 
 
 def clean_text(value: str) -> str:
@@ -86,15 +89,16 @@ def parse_date(value: str) -> datetime | None:
         return None
 
 
-def google_news(category: str, query: str, collected_at: str) -> list[dict]:
+def google_news_url(query: str) -> str:
     encoded = urllib.parse.quote(query)
-    url = (
+    return (
         f"https://news.google.com/rss/search?q={encoded}"
         "&hl=en-GB&gl=GB&ceid=GB:en"
     )
-    root = fetch_xml(url)
-    if root is None:
-        return []
+
+
+def google_news(category: str, query: str, collected_at: str, fetcher=fetch_xml) -> list[dict]:
+    root = fetcher(google_news_url(query))
 
     items = []
     for node in root.findall(".//item")[:MAX_PER_FEED]:
@@ -108,6 +112,7 @@ def google_news(category: str, query: str, collected_at: str) -> list[dict]:
                 "title": title,
                 "link": link,
                 "publisher": clean_text(node.findtext("source") or ""),
+                "publisher_url": node.find("source").get("url", "") if node.find("source") is not None else "",
                 "published_at": node.findtext("pubDate") or "",
                 "summary": "",
                 "discovered_at": collected_at,
@@ -117,10 +122,8 @@ def google_news(category: str, query: str, collected_at: str) -> list[dict]:
     return items
 
 
-def publisher_feed(name: str, url: str, collected_at: str) -> list[dict]:
-    root = fetch_xml(url)
-    if root is None:
-        return []
+def publisher_feed(name: str, url: str, collected_at: str, fetcher=fetch_xml) -> list[dict]:
+    root = fetcher(url)
 
     london_terms = re.compile(
         r"\b(london|hampstead|camden|city of london|tfl|barbican|nw3)\b",
@@ -150,12 +153,12 @@ def publisher_feed(name: str, url: str, collected_at: str) -> list[dict]:
     return items
 
 
-def load_existing() -> list[dict]:
+def load_existing(output: Path = OUTPUT) -> dict:
     try:
-        payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
-        return payload.get("items", []) if isinstance(payload, dict) else []
+        payload = json.loads(output.read_text(encoding="utf-8"))
+        return payload if isinstance(payload, dict) else {}
     except (OSError, json.JSONDecodeError):
-        return []
+        return {}
 
 
 def still_recent(item: dict, cutoff: datetime) -> bool:
@@ -195,35 +198,69 @@ def deduplicate(items: list[dict]) -> list[dict]:
     return result
 
 
-def main() -> None:
-    now = datetime.now(timezone.utc)
+def collect(existing: dict, now: datetime, fetcher=fetch_xml,
+            workers: int = MAX_WORKERS, per_host: int = MAX_PER_HOST) -> dict:
+    """Fetch in parallel, then merge in configured order regardless of completion order."""
+    if workers < 1 or per_host < 1:
+        raise ValueError("Concurrency limits must be positive")
     collected_at = now.isoformat()
-    fresh = []
+    jobs = [(google_news_url(query), category, query, True)
+            for category, queries in SEARCHES.items() for query in queries]
+    jobs.extend((url, name, url, False) for name, url in PUBLISHER_FEEDS)
+    gates = {urllib.parse.urlsplit(url).hostname: BoundedSemaphore(per_host)
+             for url, *_ in jobs}
+    previous = {feed["url"]: feed for feed in existing.get("feeds", [])}
 
-    for category, queries in SEARCHES.items():
-        for query in queries:
-            print(f"Checking {category}: {query}")
-            fresh.extend(google_news(category, query, collected_at))
+    def run(job):
+        url, name, query, is_search = job
+        health = {"url": url, "name": name, "attempted_at": collected_at,
+                  "last_success_at": previous.get(url, {}).get("last_success_at")}
+        try:
+            with gates[urllib.parse.urlsplit(url).hostname]:
+                items = (google_news(name, query, collected_at, fetcher) if is_search
+                         else publisher_feed(name, url, collected_at, fetcher))
+            health.update(status="ok", last_success_at=collected_at, item_count=len(items))
+            return items, health
+        except Exception as exc:  # One failed feed must not suppress the others.
+            health.update(status="error", item_count=0, error=str(exc))
+            return [], health
 
-    for name, url in PUBLISHER_FEEDS:
-        print(f"Checking publisher: {name}")
-        fresh.extend(publisher_feed(name, url, collected_at))
-
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        results = list(executor.map(run, jobs))
+    fresh = [item for items, _ in results for item in items]
+    feeds = [health for _, health in results]
     cutoff = now - timedelta(days=RETENTION_DAYS)
-    retained = [item for item in load_existing() if still_recent(item, cutoff)]
+    retained = [item for item in existing.get("items", []) if still_recent(item, cutoff)]
     items = deduplicate(fresh + retained)
-    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text(
+    successes = sum(feed["status"] == "ok" for feed in feeds)
+    return {"generated_at": collected_at,
+            "last_success_at": collected_at if successes else existing.get("last_success_at"),
+            "collection_status": "ok" if successes == len(feeds) else "partial" if successes else "failed",
+            "feeds": feeds, "count": len(items), "items": items}
+
+
+def main() -> int:
+    started = time.perf_counter()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", type=Path, default=OUTPUT)
+    args = parser.parse_args()
+    payload = collect(load_existing(args.output), datetime.now(timezone.utc))
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    args.output.write_text(
         json.dumps(
-            {"generated_at": collected_at, "count": len(items), "items": items},
+            payload,
             ensure_ascii=False,
             indent=2,
         )
         + "\n",
         encoding="utf-8",
     )
-    print(f"Wrote {len(items)} candidates to {OUTPUT.relative_to(ROOT)}")
+    for feed in payload["feeds"]:
+        if feed["status"] == "error":
+            print(f"[warn] {feed['url']}: {feed['error']}", file=sys.stderr)
+    print(f"Wrote {payload['count']} candidates to {args.output}; collection {payload['collection_status']} in {time.perf_counter() - started:.2f}s")
+    return 1 if payload["collection_status"] == "failed" else 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

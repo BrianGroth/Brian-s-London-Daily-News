@@ -7,6 +7,14 @@
     "prepare:brief": "node scripts/prepare_daily_brief.mjs",
     "render:edition": "node scripts/render_edition.mjs",
     "check:edition": "node scripts/render_edition.mjs --check",
-    "test": "npm run check:edition && node --test tests/site.test.mjs && npm --prefix poi test"
+    "apply:edition": "node scripts/apply_edition.mjs",
+    "lookup:context": "node scripts/lookup_context.mjs",
+    "test": "npm run check:edition && node --test tests && npm --prefix poi test",
+    "test:collector": "python -m unittest discover -s tests -p \"*_test.py\"",
+    "test:browser": "node scripts/browser_smoke.mjs",
+    "test:browser:live": "node scripts/browser_smoke.mjs --live"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
   }
 }

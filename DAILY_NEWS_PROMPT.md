@@ -10,11 +10,11 @@ Treat this as a complete research, editorial, implementation, validation, and pu
 
 ## Start here
 
-1. Read `NEWS_CONTEXT.md` completely.
+1. Read `NEWS_CONTEXT.md` completely and inspect git status before any file writes. Preserve unrelated changes.
 2. Run `python scripts/collect_candidates.py` to refresh `data/rss_candidates.json`. This is an internal Codex step; Brian does not run it separately. If collection fails, continue with live web research and report the collector failure at the end.
-3. Run `npm run prepare:brief`. This deterministically deduplicates and ranks the large RSS file into `data/daily-brief.json`, keeping ten discovery leads per section plus compact duplicate, event, POI and source-domain context.
-4. Read the current git status, `data/daily-brief.json`, `data/editions.json`, `data/upcoming-events.json`, `poi/data/editorial-pois.json`, `resources.html`, and the files directly involved in any change. Read `index.html`, `upcoming-events.html`, `upcoming-events.js`, `about.html` or POI source code only when validating or changing their behaviour. `PotentialUnusedResources.html` is a research backlog, not an approved production source list.
-5. Use the **Europe/London** calendar date. Inspect the current `today`, `yesterday`, and `day-before` objects in `data/editions.json` before changing anything.
+3. Run `npm run prepare:brief`. This ranks the RSS pool into `data/daily-brief.json`, retaining alternative coverage alongside diverse leads, calendar opportunities, source restrictions and collection-health warnings. A weak or short section is a research gap, not permission to pad it.
+4. Read the current git status and `data/daily-brief.json` first. Use the targeted context lookup described in `README.md` for complete records needed to evaluate a candidate or prepare an update. Do not reread entire edition, event, POI and resource stores merely because their summaries appear in the brief. Read the files directly involved in code or manual data changes. `PotentialUnusedResources.html` is a research backlog, not an approved production source list.
+5. Use the **Europe/London** calendar date. Inspect all three edition dates and the adjacent story summaries before changing anything; retrieve complete stories when checking a possible repeat. The edition helper loads and preserves all archive records internally.
 6. Treat `data/daily-brief.json` and `data/rss_candidates.json` as discovery leads only. Begin with the compact brief, open destination pages, verify publication times and facts live, and prefer primary sources. Never cite a Google News redirect as the final source. Read the full RSS file only when the shortlist is insufficient or when diagnosing collection/ranking; broaden live web research whenever a section remains weak.
 
 ## Fast, reliable execution
@@ -22,6 +22,9 @@ Treat this as a complete research, editorial, implementation, validation, and pu
 - Use one agent for the normal run. Batch independent searches and source checks in parallel where safe; do not create subagents merely to save wall-clock time because they increase total model usage.
 - Do not reread large generated files after the compact brief contains the needed fields. Open only the candidates and repository files required for the decisions being made.
 - Let scripts handle mechanical work: candidate reduction, archive rendering, date labels and structural checks. Keep model effort for editorial judgement, live verification and concise writing.
+- Collection timestamps are not evidence that every feed succeeded. Inspect health and freshness warnings, and broaden live research for failed sources or weak sections. Never wait for the scheduled collector or reuse cached claims as verified reporting.
+- Keep the full candidate pool and grouped alternate coverage available. Topic grouping and keyword ranking are aids, not proof of semantic duplication or London relevance. Official activity pages and upcoming calendar entries still require today's date, availability and cancellation checks.
+- Record elapsed research, update and validation time plus shortlist gaps in the completion report. Do not promise a speedup based only on faster script execution.
 - This prompt is designed to work well with a balanced, lower-cost Codex model at low or medium reasoning. Escalate to a frontier model or higher reasoning only when verification, conflicting evidence or a failed validation genuinely requires it.
 
 ## Build exactly ten stories in this order
@@ -81,6 +84,7 @@ Verify all volatile facts live. Never leave a placeholder such as â€œCheck liveâ
 ## Archive and duplicate rules
 
 - Make edition and image changes in `data/editions.json`, never by hand inside the generated data block in `index.html`.
+- Prepare verified input following `docs/EDITION_INPUT.md`, then run the edition helper in dry-run mode and inspect its proposed changes before applying it with `--write`. Use a local ignored `.daily-work/` directory for the input. The helper handles rotation, rendering and supported append-only additions; it does not verify reporting, licensing or semantic story novelty. Resolve duplicate conflicts by inspecting the existing record rather than bypassing validation. Follow the documented manual workflow for verified event corrections, cancellations or expired-event removal.
 - If `today` already has today's London date, this is a same-day rerun: replace/update `today` only.
 - Otherwise delete the old `day-before`, move `yesterday` to `day-before`, move `today` to `yesterday`, and insert the new edition as `today`.
 - Never rotate twice on the same date.
@@ -95,7 +99,7 @@ Verify all volatile facts live. Never leave a placeholder such as â€œCheck liveâ
 
 Treat `resources.html` as append-only production data.
 
-- Read every existing `data-domain`.
+- Inspect the complete source-domain/status context in the brief or lookup output; retrieve the full card when adding or reviewing a source.
 - Never use or reactivate a `data-status="do-not-use"` entry.
 - Add one well-written resource card for every new normalized hostname cited today.
 - Ignore `www.` and URL paths when deduplicating.
@@ -151,10 +155,10 @@ These are Codex responsibilities included in this single prompt; Brian does not 
 
 1. Run `npm run prepare:brief` again so its compact duplicate/event/POI context reflects the finished structured data.
 2. Run `npm run render:edition` and then `npm test`. The test command first verifies that `index.html` is exactly in sync with `data/editions.json`.
-3. Run `python -m py_compile scripts/collect_candidates.py` and `git diff --check`.
-4. Always perform a browser smoke test of the homepage at desktop and mobile widths: check all three date tabs, ten current stories in the 4/2/1/1/2 section mix, visible date, images, direct links, action styling, footer navigation, horizontal overflow and console errors.
+3. Run `npm run test:collector`, `python -m py_compile scripts/collect_candidates.py` and `git diff --check`.
+4. Run `npm run test:browser:live` for the full browser acceptance suite, and inspect its screenshots at desktop and mobile widths. Check all three date tabs, ten current stories in the 4/2/1/1/2 section mix, visible date, actual image loading, direct links, action styling, footer navigation, horizontal overflow and console errors. The deterministic `npm run test:browser` mode is useful for CI but cannot replace live image and source checks. If browser tooling is unavailable, perform the complete checklist interactively and report that substitution; do not silently omit coverage.
 5. Always follow the homepage footerâ€™s `Upcoming Events` link. Confirm the visible updated date and count match `data/upcoming-events.json`, and inspect every added, updated or removed record in both Month and Agenda views.
-6. Inspect `resources.html` in the browser when resource cards changed. Search the relevant area in `poi/` when editorial POIs changed. Inspect `about.html` when its content or shared secondary styling changed. Run the former full companion-page browser tour only when shared HTML/CSS/JavaScript changed or the smoke test reveals a regression.
+6. Include `resources.html`, `about.html` and `poi/` in the full browser tour every daily run, matching `AGENTS.md`. Inspect new source cards and search the relevant area when editorial POIs changed. Automation removes repeated interaction work, not page coverage or editorial review.
 7. Confirm every `Walk`/`Avoid` story renders as plain text, every `Book`/`Participate` story renders as a bordered link, source hostnames are deduplicated, no story repeats yesterday, and all JSON remains valid.
 8. Review the final diff and commit only intended edition, shortlist, resource, event and POI changes with `Publish London edition YYYY-MM-DD`.
 9. Push to `origin/main` without force.

@@ -1,0 +1,135 @@
+name: Validate and publish static site
+
+on:
+  pull_request:
+    paths-ignore:
+      - 'data/rss_candidates.json'
+      - 'data/daily-brief.json'
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'data/rss_candidates.json'
+      - 'data/daily-brief.json'
+  workflow_dispatch:
+    inputs:
+      restore_sha:
+        description: 'Optional full commit SHA to redeploy; blank builds this workflow revision'
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.event_name == 'pull_request' && github.ref || 'production' }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    outputs:
+      site_sha: ${{ steps.revision.outputs.sha }}
+    steps:
+      - name: Validate optional recovery revision
+        env:
+          RESTORE_SHA: ${{ inputs.restore_sha }}
+        run: |
+          if [ -n "$RESTORE_SHA" ] && ! [[ "$RESTORE_SHA" =~ ^[0-9a-fA-F]{40}$ ]]; then
+            echo 'Recovery requires an immutable full commit SHA.' >&2
+            exit 1
+          fi
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: ${{ inputs.restore_sha || github.sha }}
+          persist-credentials: false
+      - name: Set up Node
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: '3.12'
+      - name: Install development tools
+        run: npm ci
+      - name: Validate structured content and code
+        run: |
+          npm test
+          npm run test:collector
+          python -m py_compile scripts/collect_candidates.py
+          git diff --check
+      - name: Record revision
+        id: revision
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Stage public runtime files
+        run: node scripts/stage_site.mjs
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Check staged desktop and mobile pages
+        env:
+          SMOKE_ARTIFACT_DIR: ${{ runner.temp }}/browser-smoke
+        run: npm run test:browser -- --serve-dir _site
+      - name: Save browser evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: browser-smoke-${{ github.run_id }}
+          path: ${{ runner.temp }}/browser-smoke
+          if-no-files-found: ignore
+          retention-days: 7
+      - name: Save validated site for Pages
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
+        with:
+          path: _site
+
+  deploy:
+    # Inert until an authorized maintainer switches Pages source AND sets this variable.
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && vars.PAGES_ACTIONS_ENABLED == 'true'
+    needs: validate
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Set up Node for deployment verification
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+      - name: Deploy tested static artifact
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
+      - name: Verify public revision and exact homepage
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          EXPECTED_SHA: ${{ needs.validate.outputs.site_sha }}
+        run: |
+          node --input-type=module <<'JS'
+          import { createHash } from 'node:crypto';
+          const base = process.env.PAGE_URL.replace(/\/?$/, '/');
+          for (let attempt = 0; attempt < 12; attempt++) {
+            try {
+              const metadataResponse = await fetch(`${base}deployment.json?revision=${process.env.EXPECTED_SHA}`, { signal: AbortSignal.timeout(10000) });
+              if (!metadataResponse.ok) throw new Error(`Metadata HTTP ${metadataResponse.status}`);
+              const metadata = await metadataResponse.json();
+              const response = await fetch(`${base}index.html?revision=${process.env.EXPECTED_SHA}`, { signal: AbortSignal.timeout(10000) });
+              if (!response.ok) throw new Error(`Homepage HTTP ${response.status}`);
+              const html = await response.text();
+              const digest = createHash('sha256').update(html).digest('hex');
+              if (metadata.commit !== process.env.EXPECTED_SHA || metadata.indexSha256 !== digest) throw new Error('Public revision or homepage is still stale');
+              console.log(`Verified ${metadata.commit}: ${metadata.issueLabel} at ${base}`);
+              process.exit(0);
+            } catch (error) {
+              console.log(`Verification attempt ${attempt + 1}: ${error.message}`);
+              await new Promise(resolve => setTimeout(resolve, 5000));
+            }
+          }
+          throw new Error('Public deployment could not be verified; see docs/PUBLISHING.md for recovery.');
+          JS

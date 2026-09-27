@@ -33,8 +33,9 @@ function indent(value, spaces) {
 
 export function renderDataBlock(data) {
   assertEditionData(data);
-  const imagesSource = JSON.stringify(data.images, null, 2);
+  const imagesSource = JSON.stringify(data.images, null, 2).replace(/</g, "\\u003c");
   const issuesSource = JSON.stringify(data.issues, null, 2)
+    .replace(/</g, "\\u003c")
     .replace(/^(\s*)"imageKey": "([A-Za-z0-9_-]+)"/gm, '$1image: images["$2"]');
 
   return [
@@ -82,21 +83,23 @@ export function renderIndex(index, data) {
   return updateVisibleDate(withData, data.issues.today);
 }
 
-const data = JSON.parse(await readFile(editionsPath, "utf8"));
-const currentIndex = await readFile(indexPath, "utf8");
-const renderedIndex = renderIndex(currentIndex, data);
-const checkOnly = process.argv.includes("--check");
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  const data = JSON.parse(await readFile(editionsPath, "utf8"));
+  const currentIndex = await readFile(indexPath, "utf8");
+  const renderedIndex = renderIndex(currentIndex, data);
+  const checkOnly = process.argv.includes("--check");
 
-if (checkOnly) {
-  if (renderedIndex !== currentIndex) {
-    console.error("index.html is out of sync with data/editions.json. Run npm run render:edition.");
-    process.exitCode = 1;
+  if (checkOnly) {
+    if (renderedIndex !== currentIndex) {
+      console.error("index.html is out of sync with data/editions.json. Run npm run render:edition.");
+      process.exitCode = 1;
+    } else {
+      console.log("index.html is in sync with data/editions.json.");
+    }
+  } else if (renderedIndex !== currentIndex) {
+    await writeFile(indexPath, renderedIndex, "utf8");
+    console.log("Rendered data/editions.json into index.html.");
   } else {
-    console.log("index.html is in sync with data/editions.json.");
+    console.log("index.html is already current.");
   }
-} else if (renderedIndex !== currentIndex) {
-  await writeFile(indexPath, renderedIndex, "utf8");
-  console.log("Rendered data/editions.json into index.html.");
-} else {
-  console.log("index.html is already current.");
 }

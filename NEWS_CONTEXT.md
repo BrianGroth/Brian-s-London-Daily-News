@@ -82,11 +82,15 @@ Use it to discover leads only. Open the destination, verify the publication time
 
 The normal daily run consumes `data/daily-brief.json` first. That file is a deterministic, compact ranking of the RSS pool with duplicate context and durable-store summaries; it is still unverified discovery output. Read the full RSS pool only when the shortlist is weak or its ranking needs diagnosis.
 
+Inspect collection-health warnings and source restrictions before selecting leads. Feed failures must not masquerade as fresh discovery. Activity/primary-source signals and conservative topic groups only guide research; inspect alternate coverage and keep editorial judgement over novelty and London relevance. Calendar opportunities need live re-verification even if previously recorded. Use `npm run lookup:context` to retrieve full existing records as needed instead of repeatedly loading entire stores.
+
 ## Structured edition pipeline
 
 `data/editions.json` is the editable source for the rolling three-edition archive and its image catalogue. Stories refer to images by `imageKey`. `scripts/render_edition.mjs` embeds this data into `index.html` so the deployed newspaper remains a self-contained static page.
 
 Never hand-edit the generated edition block in `index.html`. Change the structured data, run `npm run render:edition`, and let `npm test` confirm the embedded page is synchronized.
+
+Prefer the dry-run-first edition helper described in `docs/EDITION_INPUT.md` for archive rotation and append-only updates. It loads complete stores internally and preserves existing records, but does not replace live evidence checks, semantic duplicate review or image licensing checks. Full browser acceptance coverage includes all three homepage tabs and every companion page at desktop and mobile widths.
 
 ## Freshness uses two clocks
 
