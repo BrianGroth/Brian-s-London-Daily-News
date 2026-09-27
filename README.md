@@ -47,6 +47,11 @@ The maintenance prompt does not publish a daily edition unless the request expli
 | `scripts/collect_candidates.py` | Self-contained standard-library RSS candidate collector |
 | `scripts/prepare_daily_brief.mjs` | Deterministic candidate reduction and context assembly |
 | `scripts/render_edition.mjs` | Deterministic renderer from edition JSON to the static homepage |
+| `scripts/apply_edition.mjs` | Validated dry-run/write helper for verified editions and append-only additions |
+| `scripts/lookup_context.mjs` | Full-record lookups without rereading entire editorial stores |
+| `scripts/browser_smoke.mjs` | Repeatable desktop/mobile browser acceptance checks |
+| `docs/EDITION_INPUT.md` | Verified input format and edition update safeguards |
+| `docs/PUBLISHING.md` | Pages workflow activation, validation and rollback |
 | `resources.html` | Append-only directory of sources used in published editions |
 | `about.html` | Purpose and editorial method |
 | `poi/` | Integrated Nearby POI single-page app |
@@ -54,7 +59,7 @@ The maintenance prompt does not publish a daily edition unless the request expli
 
 ## Publishing
 
-The site is static and suitable for GitHub Pages. Enable Pages for the `main` branch at the repository root. The candidate workflow can run on a schedule, but only the daily Codex workflow updates the public edition.
+The site is static and suitable for GitHub Pages. The repository includes a tested, path-filtered Pages workflow; see `docs/PUBLISHING.md` for activation and rollback. Existing branch-based Pages settings remain in effect until an explicitly authorized settings change. The candidate workflow can run on a schedule, but only the daily Codex workflow updates the public edition. Discovery-only changes do not trigger the new deployment workflow once activated.
 
 Useful internal commands, normally run by Codex through the prompts, are:
 
@@ -63,7 +68,31 @@ python scripts/collect_candidates.py
 npm run prepare:brief
 npm run render:edition
 npm test
+npm run test:collector
 ```
+
+## Efficient daily preparation
+
+The collector fetches independent feeds with bounded concurrency and reports per-feed failures. A refreshed JSON timestamp alone does not establish successful collection. The brief uses the actual preparation time and London calendar date; it surfaces stale discovery, source restrictions and coverage gaps. Activity and primary-source signals improve lead ordering, while grouped alternative coverage remains available. Neither ranking nor grouping verifies a story.
+
+Read the brief first, then retrieve only the complete records needed for editorial decisions:
+
+```text
+npm run lookup:context -- editions
+npm run lookup:context -- stories "hampstead"
+npm run lookup:context -- events "heath"
+npm run lookup:context -- pois "kenwood"
+npm run lookup:context -- resources "heath-hands.org.uk"
+npm run lookup:context -- images "keats"
+```
+
+Exact IDs/domain names/image keys take precedence over case-insensitive text search. Lookup returns complete matching records, including image details for stories and status for resources. The helper never modifies data. Use the complete adjacent story summaries for semantic duplicate review; matching IDs alone is insufficient.
+
+Prepare verified additions using `docs/EDITION_INPUT.md`. The edition update helper defaults to a dry run, preserves the archive on same-day reruns, and rejects conflicting additions before writing. Keep temporary editorial input in ignored `.daily-work/`; do not commit unverified research. The helper cannot establish source accuracy, image rights or semantic novelty. Verified calendar corrections/removals still require the documented explicit manual path.
+
+For browser checks, install development tooling once with `npm ci` and `npx playwright install chromium`. Run `npm run test:browser` for deterministic UI regression checks and `npm run test:browser:live` for real image/network checks before daily publication. Keep visual review and live source/booking verification. Both modes exercise the full companion-page tour; see `docs/PUBLISHING.md` for options and evidence output. Playwright is development-only; the deployed site retains its existing dependency-free architecture.
+
+Measure research time, usable shortlisted leads, update time and validation time separately when assessing savings. Preserve the 39 existing tests and full editorial/browser checks rather than trading coverage for a faster reported run.
 
 ## Design
 

@@ -91,7 +91,12 @@ test("daily brief is a compact ranked discovery view, not reporting", () => {
   assert.match(dailyBrief.notice, /Discovery shortlist only/);
   assert.ok(dailyBrief.sourceCandidateCount >= dailyBrief.deduplicatedCandidateCount);
   for (const section of ["Near Home", "Near Work", "London AI", "London Technology", "Plan Ahead"]) {
-    assert.equal(dailyBrief.candidateSections[section].length, dailyBrief.candidatesPerSection);
+    assert.ok(dailyBrief.candidateSections[section].length <= dailyBrief.candidatesPerSection,
+      "shortlists may expose a genuine coverage gap rather than padding weak leads");
+    if (dailyBrief.candidateSections[section].length < dailyBrief.candidatesPerSection) {
+      assert.ok(dailyBrief.warnings?.some((warning) => warning.includes(section)),
+        "short sections must explicitly request broader live research");
+    }
     for (const candidate of dailyBrief.candidateSections[section]) {
       assert.ok(candidate.title && candidate.discoveryUrl);
       assert.equal(typeof candidate.score, "number");
