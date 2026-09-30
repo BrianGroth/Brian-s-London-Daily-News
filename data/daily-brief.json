@@ -1,166 +1,128 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-29T11:23:45.072Z",
-  "londonDate": "2026-09-29",
-  "sourceCollectedAt": "2026-09-29T11:23:42.216412+00:00",
+  "generatedAt": "2026-09-30T11:11:34.573Z",
+  "londonDate": "2026-09-30",
+  "sourceCollectedAt": "2026-09-30T11:11:32.206001+00:00",
   "collectionHealth": {
     "status": "ok",
-    "lastSuccessAt": "2026-09-29T11:23:42.216412+00:00",
+    "lastSuccessAt": "2026-09-30T11:11:32.206001+00:00",
     "feeds": [
       {
         "url": "https://news.google.com/rss/search?q=%22Hampstead%20Heath%22%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Near Home",
-        "attempted_at": "2026-09-29T11:23:42.216412+00:00",
-        "last_success_at": "2026-09-29T11:23:42.216412+00:00",
+        "attempted_at": "2026-09-30T11:11:32.206001+00:00",
+        "last_success_at": "2026-09-30T11:11:32.206001+00:00",
         "status": "ok",
-        "item_count": 11
+        "item_count": 10
       },
       {
         "url": "https://news.google.com/rss/search?q=%28Hampstead%20OR%20%22Belsize%20Park%22%20OR%20%22Swiss%20Cottage%22%20OR%20NW3%29%20London%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Near Home",
-        "attempted_at": "2026-09-29T11:23:42.216412+00:00",
-        "last_success_at": "2026-09-29T11:23:42.216412+00:00",
+        "attempted_at": "2026-09-30T11:11:32.206001+00:00",
+        "last_success_at": "2026-09-30T11:11:32.206001+00:00",
         "status": "ok",
         "item_count": 15
       },
       {
         "url": "https://news.google.com/rss/search?q=%28Gospel%20Oak%20OR%20%22Finchley%20Road%22%20OR%20%22South%20End%20Green%22%29%20London%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Near Home",
-        "attempted_at": "2026-09-29T11:23:42.216412+00:00",
-        "last_success_at": "2026-09-29T11:23:42.216412+00:00",
+        "attempted_at": "2026-09-30T11:11:32.206001+00:00",
+        "last_success_at": "2026-09-30T11:11:32.206001+00:00",
         "status": "ok",
-        "item_count": 1
+        "item_count": 3
       },
       {
         "url": "https://news.google.com/rss/search?q=%28%22City%20of%20London%22%20OR%20Bishopsgate%20OR%20Broadgate%20OR%20%22Liverpool%20Street%22%29%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Near Work",
-        "attempted_at": "2026-09-29T11:23:42.216412+00:00",
-        "last_success_at": "2026-09-29T11:23:42.216412+00:00",
+        "attempted_at": "2026-09-30T11:11:32.206001+00:00",
+        "last_success_at": "2026-09-30T11:11:32.206001+00:00",
         "status": "ok",
         "item_count": 15
       },
       {
         "url": "https://news.google.com/rss/search?q=%28Spitalfields%20OR%20%22Square%20Mile%22%20OR%20Moorgate%20OR%20Barbican%29%20London%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Near Work",
-        "attempted_at": "2026-09-29T11:23:42.216412+00:00",
-        "last_success_at": "2026-09-29T11:23:42.216412+00:00",
+        "attempted_at": "2026-09-30T11:11:32.206001+00:00",
+        "last_success_at": "2026-09-30T11:11:32.206001+00:00",
         "status": "ok",
         "item_count": 15
       },
       {
         "url": "https://news.google.com/rss/search?q=London%20artificial%20intelligence%20AI%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "London AI",
-        "attempted_at": "2026-09-29T11:23:42.216412+00:00",
-        "last_success_at": "2026-09-29T11:23:42.216412+00:00",
+        "attempted_at": "2026-09-30T11:11:32.206001+00:00",
+        "last_success_at": "2026-09-30T11:11:32.206001+00:00",
         "status": "ok",
         "item_count": 15
       },
       {
         "url": "https://news.google.com/rss/search?q=%28UCL%20OR%20Imperial%20OR%20%22King%27s%20College%20London%22%20OR%20%22Queen%20Mary%22%29%20AI%20when%3A7d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "London AI",
-        "attempted_at": "2026-09-29T11:23:42.216412+00:00",
-        "last_success_at": "2026-09-29T11:23:42.216412+00:00",
+        "attempted_at": "2026-09-30T11:11:32.206001+00:00",
+        "last_success_at": "2026-09-30T11:11:32.206001+00:00",
         "status": "ok",
         "item_count": 15
       },
       {
         "url": "https://news.google.com/rss/search?q=London%20technology%20science%20innovation%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "London Technology",
-        "attempted_at": "2026-09-29T11:23:42.216412+00:00",
-        "last_success_at": "2026-09-29T11:23:42.216412+00:00",
+        "attempted_at": "2026-09-30T11:11:32.206001+00:00",
+        "last_success_at": "2026-09-30T11:11:32.206001+00:00",
         "status": "ok",
         "item_count": 15
       },
       {
         "url": "https://news.google.com/rss/search?q=%28London%20startup%20OR%20%22London%20tech%22%20OR%20robotics%20OR%20quantum%20OR%20biotech%29%20when%3A5d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "London Technology",
-        "attempted_at": "2026-09-29T11:23:42.216412+00:00",
-        "last_success_at": "2026-09-29T11:23:42.216412+00:00",
+        "attempted_at": "2026-09-30T11:11:32.206001+00:00",
+        "last_success_at": "2026-09-30T11:11:32.206001+00:00",
         "status": "ok",
         "item_count": 15
       },
       {
         "url": "https://news.google.com/rss/search?q=London%20event%20tickets%20opening%20closing%20disruption%20when%3A7d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Plan Ahead",
-        "attempted_at": "2026-09-29T11:23:42.216412+00:00",
-        "last_success_at": "2026-09-29T11:23:42.216412+00:00",
+        "attempted_at": "2026-09-30T11:11:32.206001+00:00",
+        "last_success_at": "2026-09-30T11:11:32.206001+00:00",
         "status": "ok",
         "item_count": 4
       },
       {
         "url": "https://news.google.com/rss/search?q=%28London%20exhibition%20OR%20festival%20OR%20%22ticket%20release%22%29%20when%3A10d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Plan Ahead",
-        "attempted_at": "2026-09-29T11:23:42.216412+00:00",
-        "last_success_at": "2026-09-29T11:23:42.216412+00:00",
+        "attempted_at": "2026-09-30T11:11:32.206001+00:00",
+        "last_success_at": "2026-09-30T11:11:32.206001+00:00",
         "status": "ok",
         "item_count": 15
       },
       {
         "url": "https://www.ianvisits.co.uk/articles/feed/",
         "name": "ianVisits",
-        "attempted_at": "2026-09-29T11:23:42.216412+00:00",
-        "last_success_at": "2026-09-29T11:23:42.216412+00:00",
+        "attempted_at": "2026-09-30T11:11:32.206001+00:00",
+        "last_success_at": "2026-09-30T11:11:32.206001+00:00",
         "status": "ok",
-        "item_count": 3
+        "item_count": 2
       }
     ]
   },
   "warnings": [],
-  "sourceCandidateCount": 926,
-  "deduplicatedCandidateCount": 926,
+  "sourceCandidateCount": 937,
+  "deduplicatedCandidateCount": 937,
   "candidatesPerSection": 10,
   "notice": "Discovery shortlist only. Open destination pages, verify every volatile claim live, and prefer primary sources before publication.",
   "candidateSections": {
     "Near Home": [
       {
-        "title": "7 Of The Best Autumnal London Walks With Pubs Along The Way - thehandbook.com",
-        "publisher": "thehandbook.com",
+        "title": "7 Of The Best Autumnal London Walks With Pubs Along The Way - The Handbook",
+        "publisher": "The Handbook",
         "publishedAt": "Tue, 29 Sep 2026 07:48:54 GMT",
         "discoveryUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1yTkNlQ3VKUVNhRHhaOUlyQmYtY3JncTBvSlNFQjlyb0RiMUszWXN6aVVqcHpyMlVFOU5HdmtFZW05N3NNa0NpY3R2Q25LSTFxX1k4NUFwN20?oc=5",
         "discoverySource": "Google News RSS",
         "publisherUrl": "https://www.thehandbook.com",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 33.4,
-        "ageHours": 3.6,
-        "activitySignal": true,
-        "primarySourceSignal": false,
-        "signals": [
-          "activity/action wording: verify upcoming date",
-          "collector category"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "Rachel Zegler to return to West End next year for first concert residency - Ham & High",
-        "publisher": "Ham & High",
-        "publishedAt": "Mon, 28 Sep 2026 12:12:15 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQaG5Ra1NGTlBzTEN4VFA0RmtSeFNmSU4yLWYzWXVYQ2tQci1CbkQzQTFhT1A5dXNfSnJLOG1UbXpnaGRyOTJ5Zm44TjJzWVFJeW41TWFhR2ppNHRCc1hMNjJGS0tReWpTNzRyZWJma01SN21SUW5lT3FOQlVPODYyNjBxMV9aMGxGR1pTT3Z4S0w2LWgtdUR0eVJHelFWRGREdGFqUDBMbGUxeVlFVkhKY05SVF9lOGxLMUpGR2ZR?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.hamhigh.co.uk",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 28.13,
-        "ageHours": 23.2,
-        "activitySignal": true,
-        "primarySourceSignal": false,
-        "signals": [
-          "activity/action wording: verify upcoming date",
-          "collector category"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "New Brent Cross comedy festival to raise money for mental health services - Ham & High",
-        "publisher": "Ham & High",
-        "publishedAt": "Mon, 28 Sep 2026 08:41:59 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQdzJEUFk2dmVJODBFUHZfT1FMSWhrZWlxTkZQSHd5T0FKVkhiUk1IOURMRWdORzFmakZiaGJhSS1ZQ0M0Y1hVSnNkaldRVjRGUzZjc3NINWhlUk50ektNOUEyTWY2RnFXcmc5dkJZUXZib3I1elRGdk9QMG1vYlZzbjJ1THJvSzUtX2VBRGVaLVd0N0NCSUREODYyMA?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.hamhigh.co.uk",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 27.55,
-        "ageHours": 26.7,
+        "score": 29.44,
+        "ageHours": 27.4,
         "activitySignal": true,
         "primarySourceSignal": false,
         "signals": [
@@ -178,7 +140,7 @@
         "summary": "",
         "needsDestinationResolution": true,
         "score": 27,
-        "ageHours": 204.3,
+        "ageHours": 228.1,
         "activitySignal": true,
         "primarySourceSignal": false,
         "signals": [
@@ -189,206 +151,249 @@
         "alternateLeads": []
       },
       {
-        "title": "Highgate Watercolour Group Annual Art Exhibition 2026 - Ham & High",
+        "title": "FULL CASTING ANNOUNCED FOR THE LONDON TRANSFER OF THE RSC’S PRODUCTION OF TITUS ANDRONICUS WITH SIMON RUSSELL BEALE - Hampstead Theatre",
+        "publisher": "Hampstead Theatre",
+        "publishedAt": "Tue, 29 Sep 2026 19:08:17 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOVzVVSWlMRVN5M1JaWk5kMHhBdlBwLWZUUWxVSnluVHBVOU01ZDBrLTd4ZWtacnZZVzY0d0xadHNFcndoVWs4d3hDczh1MjU1YnU0WG8xZTN5VUpsVy1MVVh4TUtRZm4zd1dQRkRwWHowcUp0VEhuZU9KQTBpZnRvdkRfaVV3TE1xSzBqMGl0eDNrZ0ZhQkU2THNGVmR4SmpvUTV0enhVNy1zX01EbndWSk4wSGxRZjhFTDFBWFZJWU1pVXpqTU9CQ1kxYzJnbWVqX2VwRmhWUWpDbWp4SE9pdHJR?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.hampsteadtheatre.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 24.32,
+        "ageHours": 16.1,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "hampstead"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "LONDON THEATRE INTERVIEW: LAURA WHITMORE - Hampstead Theatre",
+        "publisher": "Hampstead Theatre",
+        "publishedAt": "Tue, 29 Sep 2026 19:04:36 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTE12NWtjalNQWU9FN1YyNnVlRmhKVWplampvX3QzWEdOTHJ2ZnFud1E4NWZmYmdIeWFVdzZ2bHdrYlpzYXkwdjJVV3VKOTdiX29rWlhsZDJmV255Z1ItSmczdmNUNzBHUm52ZjNRVTVSQWZqVndTYkRnV1g5NWY3Zw?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.hampsteadtheatre.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 24.31,
+        "ageHours": 16.1,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "hampstead"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "Rachel Zegler to return to West End next year for first concert residency - Ham & High",
         "publisher": "Ham & High",
-        "publishedAt": "Sun, 27 Sep 2026 19:32:01 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT0pTcmwxMHJGdmUwLXF6YnNhNkw0bXBzaDczTVhpOUFJVUhCTmEyTk5nSEZyaVlSVnpJM1NycHlWb2dQazZ4SXhwNzlWOHdGTVJvSmc2VHdPTjdJLXo2ZHVOaDd4R2I2TlBPY3c4a2w2R01IVWN6WUdFaGdDNF8yZ19wd3VYampPdmFyUWlVazJsWWNlLVQtQlBPMHpiQldaOFZDTzNPZ2VqWVlMTUZTeTlZV291TTF1SFhjcllBRlVLN1Nf?oc=5",
+        "publishedAt": "Mon, 28 Sep 2026 12:12:15 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQaG5Ra1NGTlBzTEN4VFA0RmtSeFNmSU4yLWYzWXVYQ2tQci1CbkQzQTFhT1A5dXNfSnJLOG1UbXpnaGRyOTJ5Zm44TjJzWVFJeW41TWFhR2ppNHRCc1hMNjJGS0tReWpTNzRyZWJma01SN21SUW5lT3FOQlVPODYyNjBxMV9aMGxGR1pTT3Z4S0w2LWgtdUR0eVJHelFWRGREdGFqUDBMbGUxeVlFVkhKY05SVF9lOGxLMUpGR2ZR?oc=5",
         "discoverySource": "Google News RSS",
         "publisherUrl": "https://www.hamhigh.co.uk",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 25.36,
-        "ageHours": 39.9,
+        "score": 24.17,
+        "ageHours": 47,
         "activitySignal": true,
         "primarySourceSignal": false,
         "signals": [
           "activity/action wording: verify upcoming date",
           "collector category"
         ],
-        "alternateLeads": [
-          {
-            "title": "Highgate Watercolour Group Annual Art Exhibition 2026 - hamhigh.co.uk",
-            "publisher": "hamhigh.co.uk",
-            "publishedAt": "Sat, 26 Sep 2026 14:38:09 GMT",
-            "discoveryUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxONE1zQ0pKZ2xUQUN2NEdUMmJ6UWVpNHJPQVNZMGpTV0hpN1ZYUGhzTXJfeDJaOXFyUW9QMTZkeWFXR05xX2JSMTFQZXJySVdKQ2JkaUdPdEdfRG16bjllOUl0aldiMmI0blo4NHZSM1JFTE1nOFdpLUxfanFtbUY0WktPNEM5c0ZjU3YyMlFNczlrdmNXR2s1Nk1pTDBFUHlFQmxQR2FIZFdLMEdDdUxfZUlFQ0tVek1KNEVBYTBIM1hpUVU?oc=5",
-            "discoverySource": "Google News RSS",
-            "summary": "",
-            "needsDestinationResolution": true,
-            "score": 20.54,
-            "ageHours": 68.8,
-            "activitySignal": true,
-            "primarySourceSignal": false,
-            "signals": [
-              "activity/action wording: verify upcoming date",
-              "collector category"
-            ]
-          }
-        ]
+        "alternateLeads": []
       },
       {
-        "title": "Liam Gallagher and the Morning Runs on Hampstead Heath - Runlovers",
-        "publisher": "Runlovers",
-        "publishedAt": "Mon, 28 Sep 2026 08:17:49 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBGVlhHRjJrT1BxOE14eWwyc0hnNEwtZHNTNjZmWXhXMjFPaHlpUGdnNjZuUG92bDZyQmhWUnh4T0dPR0tYTEkyN0dWSG9rNmtxNHVYUnFxc0lEUkFsZWhnbHMzY0hDeklnaW45ck5OX0p5b3lNSHFr?oc=5",
+        "title": "New Brent Cross comedy festival to raise money for mental health services - Ham & High",
+        "publisher": "Ham & High",
+        "publishedAt": "Mon, 28 Sep 2026 08:41:59 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQdzJEUFk2dmVJODBFUHZfT1FMSWhrZWlxTkZQSHd5T0FKVkhiUk1IOURMRWdORzFmakZiaGJhSS1ZQ0M0Y1hVSnNkaldRVjRGUzZjc3NINWhlUk50ektNOUEyTWY2RnFXcmc5dkJZUXZib3I1elRGdk9QMG1vYlZzbjJ1THJvSzUtX2VBRGVaLVd0N0NCSUREODYyMA?oc=5",
         "discoverySource": "Google News RSS",
-        "publisherUrl": "https://runlovers.it",
+        "publisherUrl": "https://www.hamhigh.co.uk",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 24.48,
-        "ageHours": 27.1,
+        "score": 23.58,
+        "ageHours": 50.5,
+        "activitySignal": true,
+        "primarySourceSignal": false,
+        "signals": [
+          "activity/action wording: verify upcoming date",
+          "collector category"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "STAGE DOOR INTERVIEWS JACK BRADFIELD, WRITER OF THE HABITS - Hampstead Theatre",
+        "publisher": "Hampstead Theatre",
+        "publishedAt": "Tue, 29 Sep 2026 19:06:10 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQSGltS3UyTTlZRVN4SEFKZzY5NVJKbVZIN0ZmSHlFM2tPUmQyN0Z3U2RtSFlkNTd4czgzdHV3ekVuMFFyU2hrSEY2VklILS1hdXN5REtTWXJOSHhrVjA1REptVnFDZE84MjVjQmNBWF9uX2J2aG1LWkZCUEx1R0RkVllNZHVpc0tlMU40SXdwbEc5NmtYLUE?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.hampsteadtheatre.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 22.32,
+        "ageHours": 16.1,
         "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
           "collector category",
-          "hampstead",
-          "heath"
+          "hampstead"
         ],
         "alternateLeads": []
       },
       {
-        "title": "Rare-breed sheep return to Hampstead Heath after challenging summer for wildlife - thisislocallondon.co.uk",
-        "publisher": "thisislocallondon.co.uk",
-        "publishedAt": "Sun, 27 Sep 2026 09:00:00 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxNRFRYRlBoM2pKLUVqWkhKU3VXeWpxU2ZIQmJOU1VzNjFXTGNkZHgtQ3AzY0NHM08xMERxakczQmprRzVRbE5sTjdSYW5jSWJFOHVudWtKb2pONzNMQVdEeW9HMkNKcDVCTEtkeFFqU3A1TENZZmVKYVo3b2xDcXJRLTlEd0taTEpPbnNBdThEUmtacnA0MHlESU1uU0x4dw?oc=5",
+        "title": "JEMMA REDGRAVE AND EWAN MILLER STAR IN MAREK HORN’S OCTOPOLIS - Hampstead Theatre",
+        "publisher": "Hampstead Theatre",
+        "publishedAt": "Tue, 29 Sep 2026 19:06:20 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNc1RKaWUzOE1jMDB2MEFrVnZlSUx6NUFHRTRsVklyZlhBSkZ3ajZRZjFJenJwLWVvU0VHR1ZwWjY2OFpzRW5qV1dWbGh5S1pkdGoybmhCM2doMVZlUjFubWVCSi15OEZ0Y3RQcjZFTU10a1BSeVlqU1lyRDhNbUMyeENhSFdSaTZ0UUdEQU94RVhzLVFPVW5Rc2NR?oc=5",
         "discoverySource": "Google News RSS",
-        "publisherUrl": "http://www.thisislocallondon.co.uk",
+        "publisherUrl": "https://www.hampsteadtheatre.com",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 22.6,
-        "ageHours": 50.4,
+        "score": 22.32,
+        "ageHours": 16.1,
         "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
           "collector category",
-          "hampstead",
-          "heath"
-        ],
-        "alternateLeads": [
-          {
-            "title": "Rare-breed sheep return to Hampstead Heath after challenging summer for wildlife - Ham & High",
-            "publisher": "Ham & High",
-            "publishedAt": "Tue, 22 Sep 2026 09:40:17 GMT",
-            "discoveryUrl": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQUTJtcDMtdmtySW9kRlQ3UHhKaUk4VUw5djg1dHNjUkJCNWxVbmtsRVRqZWNZOVpzT0wtWENQOGlobHUwb2N4dDVGTFhQc0ptMW4xX3JCbXZtUFhVTTVWV2ZvN0Fta2gzQ1U1eDJsTzM2UXZBZVM3emVDdUg2cG1PZE9Ua3NsSjBNNXNJTWVuMFI5Zw?oc=5",
-            "discoverySource": "Google News RSS",
-            "summary": "",
-            "needsDestinationResolution": true,
-            "score": 17,
-            "ageHours": 169.7,
-            "activitySignal": false,
-            "primarySourceSignal": false,
-            "signals": [
-              "collector category",
-              "hampstead",
-              "heath"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "One of the UK's best autumn pub walks is right here in London - London Now",
-        "publisher": "London Now",
-        "publishedAt": "Wed, 23 Sep 2026 04:00:00 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaGlXN05YeTRvMGlkajRFd3RvNkhMbUJXUXdUT2VNbmQzT1JoOFUyVWZoUk1aV2tCSEt4NEZWYXBYQUh4TTBMaFBVVzZuSzhYaFdYRVoybGNPajBFTGFIS1BDcjBjTUJvY05MeklSMHJVZ3hhMUpoSE1GUEVZblNid1I3WUtFYmlhLVlFZjR6SzFtQUZYSzlTQlJIQXBFcnFuam5WZWVfUnFWY0k?oc=5",
-        "discoverySource": "Google News RSS",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 22,
-        "ageHours": 151.4,
-        "activitySignal": true,
-        "primarySourceSignal": false,
-        "signals": [
-          "activity/action wording: verify upcoming date",
-          "collector category"
+          "hampstead"
         ],
         "alternateLeads": []
       },
       {
-        "title": "There's An Exhibition Dedicated To Burberry's Iconic Trench Coat At London’s Victoria & Albert Museum - FZINE Singapore",
-        "publisher": "FZINE Singapore",
-        "publishedAt": "Tue, 22 Sep 2026 09:25:13 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOcXl1SnN6T3k1WWNPS3FZZV9mcE9ZdGFvVU5ZUl9CemRYMmRCbGlRTlBHUTFLMUNucjNXdXpfNE5hd0dvMmxXd01Ib0hfcDZZQkhlcW4zQW1yQXBzTHQxekNSZHplMkpnRlJNbjNJZmo1RDBKVjBEN1VwLTBCT0hLYTU1Sy1MWVhqYWNzVEhFNVZDWGZFaEEtSXVoWHV1YmNORTNpcnZR?oc=5",
+        "title": "THE TIMES INTERVIEW WITH THE DIVINE MRS S ACTOR RACHAEL STIRLING - Hampstead Theatre",
+        "publisher": "Hampstead Theatre",
+        "publishedAt": "Tue, 29 Sep 2026 19:06:43 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTEFlZUZ0M1ZYRVUxc3A4REFjWjZUZkVVVzhoRlBEUkM5a1RXV25IMXJGVFYya25zSXI1ZzgxcTJoTzU0MGNKa0dhUzBpR1dXclV3aHEwSlNLTFZWOTFLUzV4OFJCeDlTYy1MRkNZSmVvMlBpOUZnX0JWUUkzbk9rd21PWGhWNW1HS2VuS21md19JdXpqMVNtTEdyN1BhakU?oc=5",
         "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.hampsteadtheatre.com",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 22,
-        "ageHours": 170,
-        "activitySignal": true,
+        "score": 22.32,
+        "ageHours": 16.1,
+        "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
-          "activity/action wording: verify upcoming date",
-          "collector category"
+          "collector category",
+          "hampstead"
         ],
         "alternateLeads": []
       },
       {
-        "title": "BFI London Film Festival 2026 Full Lineup: 251 Titles From 88 Countries, Major Premieres, Galas And More – Check Dates And Schedule - The Sunday Guardian",
-        "publisher": "The Sunday Guardian",
-        "publishedAt": "Thu, 17 Sep 2026 11:08:57 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNTHlMUHU2ai1jSEJ4U09iTFlMQXBVTjlpVmpiV0JGUEQzQmFxYWNfZWJnaXlqWlpEZ212TEZRV2M0WUpKWXcyczFKbUVMajNlbGRIYWxLOWRnNU1Mb2dTOWRkX001UWRuN0JxYTJzcEs0Rk5FR0xkalJEYmdIeDRJXzRqckM2RFU2dHpSdzQ2UXA2RVMtdlhaU0Q0Mk9uYWlqX0otNGcwS0dZeDJyR2QtQTFkRHlZTVdMVnFEMGZMaFdjMWZ0TnV6Zl9mS2VPNzRWSWl4MWc2VE5FX3I0UWtCaHU4bHc4Yi1kZXNINVhwVi15UnN3aUMyTXVaZlE5d2k1YlNNNGdmcmRTbHF1bXRwcmw5UGZ4eHPSAZcCQVVfeXFMTUx5TFB1NmotY0hCeFNPYkxZTEFwVU45aVZqYldCRlBEM0JhcWFjX2ViZ2l5alpaRGdtdkxGUVdjNFlKSll3MnMxSm1FTGozZWxkSGFsSzlkZzVNTG9nUzlkZF9NNVFkbjdCcWEyc3BLNEZORUdMZGpSRGJnSHg0SV80anJDNkRVNnR6Unc0NlFwNkVTLXZYWlNENDJPbmFpal9KLTRnMEtHWXgyckdkLUExZER5WU1XTFZxRDBmTGhXYzFmdE51emZfZktlTzc0VklpeDFnNlRORV9yNFFrQmh1OGx3OGItZGVzSDVYcFYteVJzd2lDMk11WmZROXdpNWJTTTRnZnJkU2xxdW10cHJsOVBmeHhz?oc=5",
+        "title": "RUN EXTENDED FOR TOM STOPPARD’S THE INVENTION OF LOVE AT HAMPSTEAD THEATRE - Hampstead Theatre",
+        "publisher": "Hampstead Theatre",
+        "publishedAt": "Tue, 29 Sep 2026 19:07:18 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSktyeklaZlNYTHl5WldKODcwYlViRnVrNzRWOWh4eGN2bUIzdFA2V1l6dkpBeERnOHRidVhjXzd4cFcyZmFsNnJ0ZG1xWlhBR2swTmRzQXY0Z0RpeHlCMGRKWDRSQzRxa3pmakhIWFdScmVEbVc4OHhVc3pzUFpLLUtMMW5yclhUbXUybVVIT0h0M0N1Q0t6OXlEMk5NRFFST0x3aERtN1lPQjQ?oc=5",
         "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.hampsteadtheatre.com",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 22,
-        "ageHours": 288.2,
-        "activitySignal": true,
+        "score": 22.32,
+        "ageHours": 16.1,
+        "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
-          "activity/action wording: verify upcoming date",
-          "collector category"
+          "collector category",
+          "hampstead"
         ],
         "alternateLeads": []
       }
     ],
     "Near Work": [
       {
-        "title": "Beth Hart announces September 2027 UK tour - Rayo",
-        "publisher": "Rayo",
-        "publishedAt": "Mon, 28 Sep 2026 12:34:32 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOYy0xM0pPTFlTa3U1eUNwek5UTndUVUFPd3FvYXdqSnFRY2FTQjhYbHlzaENjVTl4YXdGaUxjdmc3TDVackw1d0dBS1JFX0ROTWE4Vmh6ektBV3VqMk44QkFoa054TmlBTVpucFR1NGctRmtjdEs1UFBCWDA4cUlTTkJ6QQ?oc=5",
+        "title": "The Barbican is launching brand-new ghost tours - Time Out Worldwide",
+        "publisher": "Time Out Worldwide",
+        "publishedAt": "Wed, 30 Sep 2026 09:14:11 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWTF1YjVETHc5MkJUNmo2YTZDUXRzWjNfajBza1VjUGVDZjNiU1JxcDhhMjNIRWpXWm1DeVRsb1dxWE44Ml9FUG9aXzJWclZFU1VNWVNRb3hsSHR3OTBfLW1CcXBIZW9QT2E4STVPMXBweGt1WTRnVjBzVlJYeXJvRkR6cUVPdElqNGUw?oc=5",
         "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.hellorayo.co.uk",
+        "publisherUrl": "https://www.timeout.com",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 28.2,
-        "ageHours": 22.8,
+        "score": 35.67,
+        "ageHours": 2,
         "activitySignal": true,
         "primarySourceSignal": false,
         "signals": [
           "activity/action wording: verify upcoming date",
-          "collector category"
+          "collector category",
+          "barbican"
         ],
         "alternateLeads": []
       },
       {
-        "title": "Win two tickets to the Decanter Fine Wine Encounter 2026 worth £240 - squaremile.com",
-        "publisher": "squaremile.com",
-        "publishedAt": "Mon, 28 Sep 2026 08:40:03 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNUVuVmVqMXVzSFFKR25BY1ZCRGlfTkVxOVlUSlhjV1U1UE1TUFg3aXVmSUswZHM0a202cWtIRzdxMkFXOTB5UjZ1TTg2VUwyVFBCLWRrRlN6RldwMzNGSUduT3RFWlB0Ym1nSElqc0d5VDdOY1JTazFBaFgzd1Y2N19LQUJDeG5ZT1hIMTFB?oc=5",
+        "title": "Kim Deal announces live album of Barbican orchestral performance - The Line of Best Fit",
+        "publisher": "The Line of Best Fit",
+        "publishedAt": "Tue, 29 Sep 2026 17:21:34 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNM2FpWWEzYlZWMk1YYWdScXNVZnh3dDRIS2tJV25LU2kxSVdTdDFzOWpvTnpJbGk5SWZ6emxHNUp2N1ZQdjU3VXc1WDVUblVOMGdidTRKRHFaS1lSNXpabVVoRnRwamF5QndldnlyWFlic29LSURIRGgzS1RtbEFseXVQUlpGSTYxb3ZnZUd5T1JZY0RTWmtxR0l4MkJZUFdVX0tweQ?oc=5",
         "discoverySource": "Google News RSS",
-        "publisherUrl": "https://squaremile.com",
+        "publisherUrl": "https://www.thelineofbestfit.com",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 27.55,
-        "ageHours": 26.7,
+        "score": 33.03,
+        "ageHours": 17.8,
         "activitySignal": true,
         "primarySourceSignal": false,
         "signals": [
           "activity/action wording: verify upcoming date",
-          "collector category"
+          "collector category",
+          "barbican"
+        ],
+        "alternateLeads": [
+          {
+            "title": "Kim Deal Announces “Live at the Barbican” Album and Film - floodmagazine.com",
+            "publisher": "floodmagazine.com",
+            "publishedAt": "Tue, 29 Sep 2026 17:38:04 GMT",
+            "discoveryUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85QUQyYV96aUd1cUUwck8xWjRyWFViQ25IOWtLZVgtajAtUG5wWE92emhMMTRrZHVad2FUejNGeGNVdHZpS0dWUFU3THAydWJVWkNEZWlLTXNTb3M2a0lsUHJTZk1weWxsY1BIajMwcVFjdC16d1lOYVhiMC12SFU?oc=5",
+            "discoverySource": "Google News RSS",
+            "publisherUrl": "https://floodmagazine.com",
+            "summary": "",
+            "needsDestinationResolution": true,
+            "score": 19.07,
+            "ageHours": 17.6,
+            "activitySignal": false,
+            "primarySourceSignal": false,
+            "signals": [
+              "collector category",
+              "barbican"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "'Live at the Barbican': See trailer for Kim Deal's new orchestral live album and concert film - Goldmine Magazine",
+        "publisher": "Goldmine Magazine",
+        "publishedAt": "Tue, 29 Sep 2026 15:58:37 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQdUdRNlNUZnhXNnQ5b1hiVU05cnBodThVTjlnbmMyR2JHN1FqSDV3aTBPWG1uNDZzNldFZS1DSW5ISlpLc3Zrb3FLYTM2WDd2SGExanNxT3diWXptZ09WNEhTQ3oxOHFzaGlKR3Z5R05uT3ZENVRIT0d2aFp5TWhfU2VLTUNSR3ZHMjY1XzJ5b3NuMGZZRm11VUwxZFdXX2RJUDZBN2tPaXdyZEpaTGotVDdqaEI2QURPbGxYa1drZ25Qd3BpTm50cENn?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.goldminemag.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 32.8,
+        "ageHours": 19.2,
+        "activitySignal": true,
+        "primarySourceSignal": false,
+        "signals": [
+          "activity/action wording: verify upcoming date",
+          "collector category",
+          "barbican"
         ],
         "alternateLeads": []
       },
       {
-        "title": "STATEMENT: UPDATE ON MAYORALTY ELECTION - City of London Corporation",
+        "title": "Bronek Masojada elected as 698th Lord Mayor of the City of London - City of London Corporation",
         "publisher": "City of London Corporation",
-        "publishedAt": "Sun, 27 Sep 2026 16:21:58 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9nZ0pWd0JlcVE5eXlNRlRoUWYzT21NcFM5d0M1R2lBTmpkM0x5dlhhN0oxNGxWWHdFbExna01kaXd3LVAtNWJteE9obUhPYUtsakt5RjkxeHc5YUhkaTY4a0RZakUzbTJDNnpoRUdZUmJtUWtyNnJQdlQ5YTQ?oc=5",
+        "publishedAt": "Tue, 29 Sep 2026 13:14:49 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNMi1LY0RGTnZLSW9uaEkxYy1pd2xDN2dsMy03YkQtVjBTMnZyTGN1VFhUajJWaE9za1NocnNRNzVuZzVwWHVlNHB6Zlh5NWpuOXA4Nmd3Qm4weE92dVFLTmpQMUJ3VTlRQkxvNG1iTkdXa24xbnE4MjZtZWg1aEdlTGJISnlrN1VtbnBQeTJTSlpnaUhDamlZcVI0UnJjaUpY?oc=5",
         "discoverySource": "Google News RSS",
         "publisherUrl": "https://news.cityoflondon.gov.uk",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 24.83,
-        "ageHours": 43,
+        "score": 28.34,
+        "ageHours": 21.9,
         "activitySignal": false,
         "primarySourceSignal": true,
         "signals": [
@@ -399,151 +404,150 @@
         "alternateLeads": []
       },
       {
-        "title": "Flex workspace operator x+why to join 22 Bishopsgate in the City - Property Week",
+        "title": "Tickets Alert: Barbican ghost tours of their empty library and The Pit",
+        "publisher": "ianVisits",
+        "publishedAt": "Tue, 29 Sep 2026 15:00:18 +0000",
+        "discoveryUrl": "https://www.ianvisits.co.uk/articles/tickets-alert-barbican-ghost-tours-of-their-empty-library-and-the-pit-92915/",
+        "discoverySource": "ianVisits",
+        "summary": "The Barbican is hoping for concrete evidence of the supernatural this autumn as it launches its first Ghost Tours of the arts centre. Read more ›",
+        "needsDestinationResolution": false,
+        "score": 26.64,
+        "ageHours": 20.2,
+        "activitySignal": true,
+        "primarySourceSignal": false,
+        "signals": [
+          "activity/action wording: verify upcoming date",
+          "barbican"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "Inspiring London Through Culture: Grant Opportunity for Cultural Projects in the City of London - fundsforNGOs",
+        "publisher": "fundsforNGOs",
+        "publishedAt": "Wed, 30 Sep 2026 00:58:23 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeUlzYnpadzJMR0xxak9ub0RUNUlkTEtrSHVyV280TGxNeFNuM1U4bG1ZYU1tSGpfdFNOOFhiWWluZllxRllmd2FXQmJGdUE1aHpoYjBTUU9BMENxUVNLZlh5RmpEaGhPZ3o5aUxJQ19IRDc2dzhJaWExUy1sejFnVXNSVzlTSkx6VmhkTkRvQVZSTzVfclFfQ1huZFB1SDRIclRpV29KdU9yMjRYTWxZbUktY23SAboBQVVfeXFMTnQ5SXdnSFQxVUJVdUc3ZlFwdndvaGQxQlFrTW9DVl9hTG9LeHZ1d0sxX2c5ZDRvWEJZOG1nWl9mbzYwcExGZTR6YTZ1WlFuYnY0dmtLYmNiMFRKUVZhVXl6ZVRodUJJd1oxeXJaa0wtT252NWJBQ1RjSzlsRzNwbFJDWmo5dzkyVVBhZDk3dlE1T1VqZ3hlSDFsVnlGMEdsX01FY3FibHhLVU85VW1KQk5VdnJMdzhuWDhR?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www2.fundsforngos.org",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 25.3,
+        "ageHours": 10.2,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "city of london"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "Price to earnings forward of City of London Investment Trust PLC – HAN:CLN - TradingView",
+        "publisher": "TradingView",
+        "publishedAt": "Wed, 30 Sep 2026 00:55:16 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZ3p4ZnM3c3NMZ3l3RkRkeEpkVExPUHhTckJsT3A2ZnZpR2hOakNndU1RY1VScTF6SGpYbHF2SFVOWTVWTS1VQ0NJaTRQRU5FcjByX1B3MGVFNU1tQWVudnZqR2FzU1c5cnlSWVpQbk8xeDVrMzctS0hpSTZ0OTJOUGh5LTVVM2g0UjJrRlZ1XzU0cnV6cXNBaVpyWDI?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.tradingview.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 25.29,
+        "ageHours": 10.3,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "city of london"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "City of London Investment Trust PLC Cash Flow – HAN:CLN - TradingView",
+        "publisher": "TradingView",
+        "publishedAt": "Tue, 29 Sep 2026 22:30:06 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1HQ2lvOXJfWGlhY0ZjSUl6T3VfcnZRa1pTZ1QzbEhzNEFQeldHT3gwdVFoX29BUk1CSkItN0JvT0p3d1hVaFVuc0Zra0FSMWdXRmxCdHZzVmhGMVlqdUp6a3BqZ2tQLVdXVW5DeGtmaFRJNkk?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.tradingview.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 24.88,
+        "ageHours": 12.7,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "city of london"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "ING and DBS provide £1.016bn development loan for One Spitalfields - Property Week",
         "publisher": "Property Week",
-        "publishedAt": "Tue, 29 Sep 2026 08:12:21 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZmZyVDA5djZ1MFBBdE1hWVo4RlN5UXlaNTFzRFI5SG1jZERYLWgzRFFiZGNIV0JISFBoNGc4T2w1VC10X0hVNGVCalBabW9URER1RjBzaGdQOWFaR2U0MVJiN1JPQmJ4Y1FKUnFULWZRRUgxVlJPVmdwMDZsMEoxVEo4X2tmQjFwdDNqRWFSdEkwc2NXS0R1ZktaOA?oc=5",
+        "publishedAt": "Wed, 30 Sep 2026 10:22:29 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMi1jSHVjYm41ZHpLVzNGeGtmczNTaG5Db2JWSDg1VDdzbVJrQmZqRGt2QWcwQkMySUdHMlY4YjZwRTZFdFpCSWJKU2FVTjhudEN2REs2VHkyUW1lZXFfZGFPRWEzSmNUTW5UbTdyTm9OM0FKLXRoVTczR0l2Sy1KdU84dEhBdUVvWV9RSnYwMHVxdXlPMHhpZjIzS3VlT05P?oc=5",
         "discoverySource": "Google News RSS",
         "publisherUrl": "https://www.propertyweek.com",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 24.47,
-        "ageHours": 3.2,
+        "score": 24.86,
+        "ageHours": 0.8,
         "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
           "collector category",
-          "bishopsgate"
+          "spitalfields"
         ],
         "alternateLeads": []
       },
       {
-        "title": "Planning minister lifts direction on emerging City of London local plan following inspectors' heritage conclusions - Planning Resource",
-        "publisher": "Planning Resource",
-        "publishedAt": "Mon, 28 Sep 2026 18:30:07 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPTjVoYlllYWJKcXpTNlJVOU1VVlZ0RjdyRTNRTWJOTEF4VG1mSkZYZHgyVlZyRXhmNjR2OVZzVU9NVFNLcHIxSG1jbk9VWW5EXzhjZUZvdEhwZUQxUVExODhhTXpxaGp3ZU9hWTRVVHBVMlFXU1hqRVc2REhkakpZLUktdjJJUzc3MW9fa3NpeHZhYkM5b2xwT0ZoOFdvVjhHcGtmMVJmaHAzcUxxSWd5THdtUVc4bEdjRHZMYVlTTHZpNHNlaE1JVEowWDkwdVk3MXZXSWpJRGIxazYtSXBxOXdlWGlGTThXS0FrYUJmNA?oc=5",
+        "title": "News | ING and DBS fund £1 billion development loan for One Spitalfields refurbishment - CoStar",
+        "publisher": "CoStar",
+        "publishedAt": "Wed, 30 Sep 2026 09:23:53 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNDlhOFRiOXR6TXBjN2FHdGZOOGFEeUt2akZmVkNZaGJPd1o4eHFIb3htdU02bTh6a1FZTEQ4SXRXT0h1enBweEViLTdDTXNRTXZ4T0dqM0xQMFQzXzVuS2FSR3FhNlpIREs0Q0R3MTFvalVEanpmOVgzZjVBZzdvOW9ydWtGcU0wLWRqcjQ4Wk92S2twU0ZYaVphaEZBdEV2Uk9jX1hhMl9nanZRMDZfRWszdDBmbnZ5UDBF?oc=5",
         "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.planningresource.co.uk",
+        "publisherUrl": "https://www.costar.com",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 24.18,
-        "ageHours": 16.9,
+        "score": 24.7,
+        "ageHours": 1.8,
         "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
           "collector category",
-          "city of london"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "Ronnie Scott’s Jazz Club to mark its founder’s Centenary with Barbican concert and January programme - Jazzwise",
-        "publisher": "Jazzwise",
-        "publishedAt": "Wed, 23 Sep 2026 09:55:14 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPaUYxcDlEcXkzVURONHl6N05LVUNuSFgxNUdCLVZ2ckdBMkJZTGhsRmtDU2dCU2hVQ2Jaa19VbXBSdzhGVmY4cHFCd0xoRThBcEdsZFY5UzFkSVZDbXZNWHV5QWhQZnpvanlLZm9NQVlDaWFFcGNiT0ZFSXlyb1E0bGlnb0pjakRlSHFQclJjYnJmQUhXdENXWjZWYVotb2NYTWNCS2cwUlNFaWhyeHMydEhLTUNrSFZlUDg4S1RwTk9pSUxFN2hMUmFGMFNISGNRb0dMeA?oc=5",
-        "discoverySource": "Google News RSS",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 24,
-        "ageHours": 145.5,
-        "activitySignal": true,
-        "primarySourceSignal": false,
-        "signals": [
-          "activity/action wording: verify upcoming date",
-          "collector category",
-          "barbican"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "The Barbican has unveiled its 2027 programme – and it’s an artsy tour de force - shortlist.com",
-        "publisher": "shortlist.com",
-        "publishedAt": "Mon, 21 Sep 2026 08:30:18 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQN1g2Tjk4UEpheWZVaEt2eU1lVW1WeWhMOXJBMS1KV3dWdHFrd1MzMGFuTjg3cktldFpzOUt4cDlIQmhJT3dvcmQ0cV9HOFdQM0lEMzZVYkQ2b0JoLUl1R3lpbENlLTIyeU9sVXZaWVdYZzBVZHRUVWd5OU94ZURtdkR6TmthckpEbkFBUk1iWURlMFoyWlZHVktEbVBIYmhsZ0oyVDY3SjRqSGZfNThIdXVlUGpJdw?oc=5",
-        "discoverySource": "Google News RSS",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 24,
-        "ageHours": 194.9,
-        "activitySignal": true,
-        "primarySourceSignal": false,
-        "signals": [
-          "activity/action wording: verify upcoming date",
-          "collector category",
-          "barbican"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "UK Treasury minister says her old job as City of London rep is ‘not a conflict’ - politico.eu",
-        "publisher": "politico.eu",
-        "publishedAt": "Mon, 28 Sep 2026 17:06:14 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdG9jTXZESUl6WXl1VnBpa1I2UUpyYmxKbTZhbnZUdGswUk8zZjhqbGhrdEVmdnlmb3VMbTJSaUFLMzVVdFZmSFZENmhuR3QyUlJsbTBlajB0eVE3cWJDajhsQ2c1SnBqMGR1TFNUSUpFRTF1RzFlbnRaV05UY0dwQkZVOWVJQ1g4Um5CMXpycnFySktJTmZTT29QcmQ?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.politico.eu",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 23.95,
-        "ageHours": 18.3,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "city of london"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "Masojada set for 2026/27 City of London mayoralty after Hailes withdrawal - Global Reinsurance",
-        "publisher": "Global Reinsurance",
-        "publishedAt": "Mon, 28 Sep 2026 14:42:11 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWm11RVBzai00Tm43alZOeFVDRkZ1YXNmUnpLYkpmeHV0bHdPTnM5dTdhNXRPVFlubnNiYV95RW13LU5KckhnQTdGekc2UGJmWFRJSE9LUkJRSXNwUnpLSmNlaEFsX0FRaTRZWXFYUXI4dUhZR0xjTWNEejRZTE1fSHVaemxKZTBVaThQbzd6SjhDNEV4N3dhYWVybG5IeE1WRURaM19na0trVkM1a3ZJamxGMFZNcEVEd2UtWExhOXB0N0xYTE1r?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.globalreinsurance.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 23.55,
-        "ageHours": 20.7,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "city of london"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "London’s Square Mile office vacancies sink to a six-year low - Institutional Real Estate, Inc.",
-        "publisher": "Institutional Real Estate, Inc.",
-        "publishedAt": "Mon, 28 Sep 2026 14:37:24 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOT2ZMMnpDSG1aSWxrRGhiTXluVGgtZVBOUGlScjQxajJaSHJQbHZRZ3BQXzZ5bjBWX00zb19QU1BVU3RMTkNVQnZIMGxGMGVLVmptMUdTSEpTS1hVbWlOOUlyd2tHYWtnMGUtZnRNZXN5Mk56eTZ0UndJQ21jYkFPMHJ5X2QxQk8xS0E?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://irei.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 23.54,
-        "ageHours": 20.8,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "square mile"
+          "spitalfields"
         ],
         "alternateLeads": []
       }
     ],
     "London AI": [
       {
-        "title": "Elena Simperl named in Foundever AI 100 UK 2026 - King's College London",
-        "publisher": "King's College London",
+        "title": "How AI Is Starting to Influence Professional Sports - London Post",
+        "publisher": "London Post",
+        "publishedAt": "Wed, 30 Sep 2026 07:05:58 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWWtDTFhJTENla2xGamV6R3NXTkNBVTNjcG9YcnF3Zk15blp4b3NNTVlqOVo2dUUzVUlzbnVWZmpRZl9Ba05YQmtFM2w2c2FIa1Z5OFB1bjhnQ3JneWNId2gyd2pnd3pGVmFxVXFuLVM0QjhyS2QyUWgxQ2JhcGFFZXBtVDg?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://london-post.co.uk",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 23.32,
+        "ageHours": 4.1,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "ai"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "Elena Simperl named in Foundever AI 100 UK 2026 - kcl.ac.uk",
+        "publisher": "kcl.ac.uk",
         "publishedAt": "Tue, 29 Sep 2026 07:49:19 GMT",
         "discoveryUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5hX1hvbThQZXVUTVlUZUV0M0E5cmUtZFViSHpYN3g3WWxWLXVCVW14dzRoaFd5dEt3WVpISVEwZmQwMkhSVlhzREpCd2QyWGFkQzRReWxOd1lmLVBZWlZSUWlFby1MSkNLc0pqM3dfOVVzOGVxaEFJLWY5R1gtem8?oc=5",
         "discoverySource": "Google News RSS",
         "publisherUrl": "https://www.kcl.ac.uk",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 28.4,
-        "ageHours": 3.6,
+        "score": 22.44,
+        "ageHours": 27.4,
         "activitySignal": false,
         "primarySourceSignal": true,
         "signals": [
@@ -554,36 +558,130 @@
         "alternateLeads": []
       },
       {
-        "title": "King's launches initiative to accelerate scientific discovery with AI - King's College London",
-        "publisher": "King's College London",
-        "publishedAt": "Mon, 28 Sep 2026 15:00:01 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQTdNRU80Rmc4TU4xRmU0N1o2MHpBdnJ2ODJRT2FfcDVhV1NMbF83Y0wzbGV6S1AyZTFleFlOZUcteFpmT2l1ZjlPMUZLN1hWVG9lNkRDQV9HTGUzMEFpcWpVYTJkMkw2UHdlQjEzRndYRHkxWmFXNDdEZmpxYnNZRnBsNEdNc01ZTkNGakYzVTBGelhNTC1WSGJmaw?oc=5",
+        "title": "Do you want help from humans or AI bots? Because the UK civil service is changing – and not for the better - The Guardian",
+        "publisher": "The Guardian",
+        "publishedAt": "Wed, 30 Sep 2026 11:00:00 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRTNTcE9VTjZqeVUxc0tLdkd6R0RrMzN3Q05sdklOZS16OUx2dktfTHJHS3QyTDRQdnk0MC1TRmJ2Rm93MVgzOEVZbkJjYXBhQXp3VVd5WnhuaHczdUIwUVZGYUNRT1ZFOXVrTjBQY3plYWtkOHp1M3Y2NXpyOGg3TGRhTHJIOTI0ZTZHY1lQM3ZrZw?oc=5",
         "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.kcl.ac.uk",
+        "publisherUrl": "https://www.theguardian.com",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 25.6,
-        "ageHours": 20.4,
+        "score": 21.97,
+        "ageHours": 0.2,
         "activitySignal": false,
-        "primarySourceSignal": true,
+        "primarySourceSignal": false,
         "signals": [
-          "approved primary-source lead",
           "collector category",
           "ai"
         ],
         "alternateLeads": []
       },
       {
-        "title": "Imperial hosts London Macro Policy Forum, putting AI in the economic spotlight - Imperial College London",
-        "publisher": "Imperial College London",
+        "title": "AI valuations could see ‘sharper correction’, Bank of England warns - The Straits Times",
+        "publisher": "The Straits Times",
+        "publishedAt": "Wed, 30 Sep 2026 10:51:00 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSjBuXzN2c0ctSmNuaU1CQ0pwQllEOUljOUl3X2R2d2QzUlk5Q2FKbmRRcFdMSHRrenZiTjlvLWp5UkxoSXNMQ2h4Rk1VZHpGVGVVR24yRTZ2dXI5bFkzYXNpeHhQaUdtVmVMckQ2N2JrSWUzSWduWFo1aW96dXktVm41UnVYcE5VeWdEQkI1bC1oZ0o0RlFZRVRtS2ZDYmx6UUtvYg?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.straitstimes.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 21.94,
+        "ageHours": 0.3,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "ai"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "Bank of England sees growing risk that dangers from AI and debt will materialise - Reuters",
+        "publisher": "Reuters",
+        "publishedAt": "Wed, 30 Sep 2026 10:28:05 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdDZxOXc0SzIwN2d4Z1p6eDRBOTNfaVlDdFVHSk9LWlZqNk5UUHFwaFEtWDM5VTJFUHFMTFN5bGpaRWZmUldDLW1fQTFTMDlQNGd0QlRHWWxkOFU2SUhUTUtYUUFLZkJhblEwd0xKTnpHLXFDSk1hb1Y0NGJqdzFBVWItVVZjLXd6OUpRbEtHcGRRQmFXZjdlM2tGYzJGaHAyQ0VuM3FkX2dNR1BKMEFQZmwxUkp0NDJxREJLSlhn?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.reuters.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 21.88,
+        "ageHours": 0.7,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "ai"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "Everpure adds data management capabilities for production AI - Computer Weekly",
+        "publisher": "Computer Weekly",
+        "publishedAt": "Wed, 30 Sep 2026 10:08:23 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWEpDVVkzTnA0OVJGaFc5X3dhZG52ZnFwZWxyYTg2MmVjeDVpdW9yNUNFTmhYeXgtOVIySnZKdW1ncHg4RjQtdzhjaEpQbHVDd1VBRkhYWXJfc05ZNXVfV0diWEFUTG9lSVRlMkVOREZ2eFhGNU9ZX2RVYWdJNFlSNW0weFctQldENmJjWjhjYlIwbjQ2ZGVPTnd6VE4zVXVzbUZ5WHE1UFpuZw?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.computerweekly.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 21.82,
+        "ageHours": 1.1,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "ai"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "Trump and AI leaders sign accord over new technology - East London and West Essex Guardian Series",
+        "publisher": "East London and West Essex Guardian Series",
+        "publishedAt": "Tue, 29 Sep 2026 20:12:11 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaExIRVVYNUdTM0hQTWpvd3Z3aHpCWVlrd0E3VTVHQkFGR1FmU2hnZzV1VmNpOXkxRWRyWmI2aGlOX0l4aWdSWmlvdWVqbmxwTzFRUmNtSHVXRjc3cUdYdFJ0OVVsMndNUUw3Qm5hNXRMOWpYVzBiZmZ4eEZ3ZjJHT3NPa1NjTms2aTF3S2FDc1k1alExSmdrVlZ1N01qZG9nVWhB?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.guardian-series.co.uk",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 21.5,
+        "ageHours": 15,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "ai"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "Trump vows to never ‘stifle’ AI as leading executives urge caution - East London Advertiser",
+        "publisher": "East London Advertiser",
+        "publishedAt": "Tue, 29 Sep 2026 18:12:16 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZGpaMW9wUkE3WUY1YWxvOHNIOUZmdzBWc2VnbENJamI1TXZKT2dXYzB1bVNBdldyUjlNYmhMbDQ5M0ZaRExXVjdzS1NFQm9JOUNXcjB4eUJtM0pzZkZzMU96YUprRnBqN0ZwcDZyMk5LeVZzb2t0dG9EVnRxSm5FUTc0VE1TcGk4N0EzeUlXczNNOVp4S09udnl0T2ZGVU13dDVKX0NReWY1NlpZcXNYVl9FUFpTQURUa010S2tn?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.eastlondonadvertiser.co.uk",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 21.17,
+        "ageHours": 17,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "ai"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "Imperial hosts London Macro Policy Forum, putting AI in the economic spotlight - imperial.ac.uk",
+        "publisher": "imperial.ac.uk",
         "publishedAt": "Mon, 28 Sep 2026 12:00:00 GMT",
         "discoveryUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPN0V2SWo5UnNTOGE4M01NZ01oNHdsLXVEb0h1aXBiVXMzYnh5YVRQczNuMFFpX3BQNmtpQU9wbWxscFBhTU9yMzZ4eVJ6aGNKMzJVcmY4OTJ2NE5vaVI5djFLbmZRNzVFbGV1WmI1SlBJSTh6SThzTWhVeldDaFlCczRoNEZVanAxbVl5XzhqYkdyclRsRmJPZ2NCVVVPb1F2SkFRQ3M1Z0xVd0JsYUtQYWI0akFCc2FfWUp4YjA3V0M?oc=5",
         "discoverySource": "Google News RSS",
         "publisherUrl": "https://www.imperial.ac.uk",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 25.1,
-        "ageHours": 23.4,
+        "score": 21.13,
+        "ageHours": 47.2,
         "activitySignal": false,
         "primarySourceSignal": true,
         "signals": [
@@ -594,130 +692,16 @@
         "alternateLeads": []
       },
       {
-        "title": "AI will not replace human creators, BBC director-general Matt Brittin says - East London Advertiser",
-        "publisher": "East London Advertiser",
-        "publishedAt": "Tue, 29 Sep 2026 11:02:16 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPRE5xazFNa3ZIRU5wRW1WRnJQR0hKVk9rbUVuR2NLMUI4c2g4WlBaSkJ4X19fSEtPY01iWUJFTU5RMmJxNXJ0OXFXeWQwOXFnRFo0dlVkNUI0OHNfa2EwSVI5QmN2R3A3SjdQQ3JiQVB1V0xKMzBZVFRvaEJqdWh5UGZNRUVjd3J6RjUzSmpSREhhT3p4LWlzOHhhNnRsMU5ZY29IUm1WLXRHSkJHdllaYk1FMHRLWHFkMi1CbGNDSUxKWEYybWo0ZXhSY3VHdWVqSVE?oc=5",
+        "title": "Chinese factory activity returns to growth in September amid AI boom - FashionNetwork France",
+        "publisher": "FashionNetwork France",
+        "publishedAt": "Wed, 30 Sep 2026 04:19:22 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxONDVQY0lpcWY0YmY3WGtwdjJkNGFpSFhXdDF5QWZLUFlVdDF4Ykl0TE8tTV95Vnp3QzM2Rlh1ZDBnY3hVMjJleS1LS3l5SXMtZ1hpd091REliX3UyX0VrXy1wc2stTFc4ZjZoYVFwZTNqbmFFWFhqQlhFMG45VDRXREhBR2ZDYmJFZE9NcmFOZHkwbjJPLVJEZEprUDgyUzJqUkl0UkprS1RkaUdlaDQ4VG5hUGxzZ0E?oc=5",
         "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.eastlondonadvertiser.co.uk",
+        "publisherUrl": "https://uk.fashionnetwork.com",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 23.94,
-        "ageHours": 0.4,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "ai"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "How Will Shaires (AIM:SHR) Give London Investors A Window Onto Private AI Firms After Its AIM Debut This Week? - Kalkine Media",
-        "publisher": "Kalkine Media",
-        "publishedAt": "Tue, 29 Sep 2026 08:59:00 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOQlV2RE11Um5NNlRDdHlkeDhURVZtTmpJNGpZTXNXNjN0YkVUaURmVEJRam9PTUZZbFpFRExFZEFHV3Ywdm5vaTRDdmZDcUcxRERCRkVvZmU1UGt0TU1iZWlwRGd6RjZnbGY3NGd2bjNqdlFlWTlBc1hiQ3RTMEZBdWNfQlE4cncyR1pCbUhFQjBmRTVCbWZKRlNMZGlQa19XendmS3cySTRoNm9mTERlVWhpSE1iY2lrblFQbHllRV9qXzB3ZW1VVnFoZEhiQkRCR2YtZDcyVHJMbXNSenBIck5iUjBWVy1fYk5xa1VfaWhKUi1uNGxITg?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://kalkinemedia.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 23.6,
-        "ageHours": 2.4,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "ai"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "Acceldata unveils London speaker line-up for AI event - IT Brief UK",
-        "publisher": "IT Brief UK",
-        "publishedAt": "Tue, 29 Sep 2026 08:30:00 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPU1JZZlhOYzhLMUt6eU42NDBtajREVXBYUkZZQTlHSmlGMHRnQUtTVFJ0NS1pQjBiR0N5enZKdmZHSldZTTBaNzl0a3g5WkVLMUxNRE9IYWpYNkh2SXdEMXNKZ0QyMHZLLWh5NnFETWZodmhZT2RSTldHc3Z6WjZZSjk5UWgtNHVo?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://itbrief.co.uk",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 23.52,
-        "ageHours": 2.9,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "ai"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "Prime Video exec sets out vision for AI in the creative industries - TVBEurope",
-        "publisher": "TVBEurope",
-        "publishedAt": "Tue, 29 Sep 2026 10:04:49 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcjJEUGxQZzBoT2JnSTBYdklockFfZ0FBNTRaUlpOZFBaSmEzOThQSWpyYzJtUlRBUnNtZjUtR2pIZmo5UnZpY2x5UkJwZUFBWnNXNmMxdUdvc0poeEYtOF9vV2o0eElWZ09WMXZiVkVQbmtwVlNsbVN3S3BEUk14SkJHaXlGZl8yRXdrTU0wQm9xQmFQYldma0wxS01GMUhWeXZGWnRyV1FmMjBPNzdqZU1vdXR4WUU?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.tvbeurope.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 21.78,
-        "ageHours": 1.3,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "ai"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "UK's biggest AI supercomputer may have to wait until 2030s for enough power - sg.news.yahoo.com",
-        "publisher": "sg.news.yahoo.com",
-        "publishedAt": "Tue, 29 Sep 2026 09:01:26 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBHVzd1RWZIZ2d5UUVlZFdadURaSGRyRWdUNmlSb1BFcllaMGR2eWFxcUtJVVFObnFkaVQ1QjhOMFZrQ1YzT1NHcjlkM1FITC1fWlA0TEY3NEZLUGRTSk9XREQxbVlTcTVLNkZMWjZidUVjM28wZ0VFNXRudWJUdw?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://sg.news.yahoo.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 21.6,
-        "ageHours": 2.4,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "ai"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "AI jobs crisis risks plunging Britain further into lawlessness - The Telegraph",
-        "publisher": "The Telegraph",
-        "publishedAt": "Tue, 29 Sep 2026 05:30:00 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNmNhZkFpSVlmUWlRTDJVOXVxVkZwQ0hTNjBPbzNibHVpeU9PUXlhQVllTjhrcXNkenJaeklVeDNBOFRWTjEtaE9GNVNtVUdVU3lMQVBIZDhISlQ0WW50dFJrQWx3TFlOMUhneU1kcGxyVWY3eXc2V2RfOGRhY2E2TkR2amhXZlg3S29qZ1EzZ2psN3JnN1IwQ0xFa183dXhlM25uMXFB?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.telegraph.co.uk",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 21.02,
-        "ageHours": 5.9,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "ai"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "3 British AI Stocks To Own In September 2026 - simplywall.st",
-        "publisher": "simplywall.st",
-        "publishedAt": "Tue, 29 Sep 2026 02:55:09 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRVVvZ3cwV2pyTldEb1JQY3NFQUlmWGtoSXVfdU5XbFF1MzhTcjY0Q3N6VjFWb3ViVy1RMXliSUkwQjNESUdDdHFQU01jZ1dYYjUxQUtnNXlNcjdNZ1ZmMjdkZlR5aHluVE5hV2JpdHdTaXlhNWI3ZzFaX0dQNEhfbmg0clI1bmZCbGZqcHhBZ3hFZnBNbFB4bXJwWHRTTzBwWmZBbmxETy1WT3JwUUVSdjl2eTY0UmN5dm52X3VvRHVDQkM40gHEAUFVX3lxTE1FVW9ndzBXanJOV0RvUlBjc0VBSWZYa2hJdV91TldsUXUzOFNyNjRDc3pWMVZvdWJXLVExeWJJSTBCM0RJR0N0cVBTTWNnV1hiNTFBS2c1eU1yN01nVmYyN2RmVHloeW5UTmFXYml0d1NpeWE1YjdnMVpfR1A0SF9uaDRyUjVuZkJsZmpweEFneEVmcE1sUHhtcnBYdFNPMHBaZkFubERPLVZPcnBRRVJ2OXZ5NjRSY3l2bnZfdW9EdUNCQzg?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://simplywall.st",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 20.59,
-        "ageHours": 8.5,
+        "score": 20.85,
+        "ageHours": 6.9,
         "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
@@ -729,6 +713,65 @@
     ],
     "London Technology": [
       {
+        "title": "NATO Unveils Quantum Technology Roadmap - Mirage News",
+        "publisher": "Mirage News",
+        "publishedAt": "Wed, 30 Sep 2026 07:42:00 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQVBFZ1dkWmJvdkxxbjJ5WmhHTm55Y3NoWEwwYlBjWXh1TVY4cVhxcWlvQVhtdWF3UV95UzIyM1FFb0VNb3RJREpYT3hrTnViNWNKVmtvLWtlbFV3cTNyeWt1a2hFbDl6SHRIS1owX2VlWllDQUVuRDdKbDh0Rkxpcg?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.miragenews.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 28.42,
+        "ageHours": 3.5,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "technology",
+          "quantum"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "‘Next wave of AI will be physical’: warehouse robotics startup Destro AI bags $8 million in seed funding - Retail Technology Innovation Hub",
+        "publisher": "Retail Technology Innovation Hub",
+        "publishedAt": "Wed, 30 Sep 2026 03:38:06 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQbTZraTd0TWJCREFGRlY0c2lRRWplaDllanlBZ2xubVVXZ2dZXzBfekYyT29XNkNTb2tWOUtBMnEtdzBucDkxZFNodFZnemVKdWxaeEVCbEM4SllBdVBrS2o0My1RMy1lUHNJQUJBajZjLVBqaWJxcnVTdDJnc0d3Z0lfWXpja3UzYk1EbWZKSW5ocFN4VU4zcUk5WmFsMGxLbE5jQnh2REdGSFQtMjdzTTYtUFhwTTE2ZTJlUFFrVFhxeUZsY0dwdUFtNzV3NVprNnVNMG0tWEVFc2loN3lfT1Zma053QQ?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://retailtechinnovationhub.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 27.74,
+        "ageHours": 7.6,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "technology",
+          "startup"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "Quantum Computers For Creatives, As Moth Launches Atlas - quantumzeitgeist.com",
+        "publisher": "quantumzeitgeist.com",
+        "publishedAt": "Wed, 30 Sep 2026 09:33:45 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5INTRZS1VDdXo2eGhtS0xNTkF2eERaREt2aHZzSUFtR0kxVjRWYWZoU3A2bmUxWldoaW1xYkdfZnl3SnV4al9TNFptMElTRDhiMzN0NGNOMGFnZlVxaGV4WVgtU3R1NzZzUnJ4aE5B?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://quantumzeitgeist.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 21.73,
+        "ageHours": 1.6,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "quantum"
+        ],
+        "alternateLeads": []
+      },
+      {
         "title": "Robotics startups are courting university researchers. Microagi just hired eight. - businessinsider.com",
         "publisher": "businessinsider.com",
         "publishedAt": "Tue, 29 Sep 2026 09:00:22 GMT",
@@ -737,14 +780,90 @@
         "publisherUrl": "https://www.businessinsider.com",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 25.6,
-        "ageHours": 2.4,
+        "score": 21.64,
+        "ageHours": 26.2,
         "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
           "collector category",
           "research",
           "startup"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "French National Quantum Update: September 2026 - The Quantum Insider",
+        "publisher": "The Quantum Insider",
+        "publishedAt": "Wed, 30 Sep 2026 08:45:36 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPb0RmZF9QVF9wclRGam9pWkROaFBGYmFyLVZ1OU8xel9GXzVYTFdJTlRKZV9IcnBJcUtpbTE3aTR6UHhWMnlVdnlDdm5ZTURYVWJISEFEWmRLM2Z3ejZEZ3FQN0pZWFBZMUJ6OGY4ZTRHMElPc2U4TVJ6LVU0Qkh2ZndXUkl3OXREdFNIYTkxcFA?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://thequantuminsider.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 21.59,
+        "ageHours": 2.4,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "quantum"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "New Quantum Algorithm Targets Bottleneck in Fluid-Flow Modeling - The Quantum Insider",
+        "publisher": "The Quantum Insider",
+        "publishedAt": "Wed, 30 Sep 2026 08:45:36 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOUjV4eGcwN25VUWYxc2NtSm5FeF9ySDZJYm9XNWdXVGVhTnFFa2tfREM1OVd5RXg4UkpGRU5vRC1NMXZJdG52MF9WMWNHQ01yUDUteFFocExRSUw0Y1BhRkZZVm1QLUhrZGhFYnVCYVptMExmOVlxdlRjYVduRncxQXl6OHFXaWNmdjVuVkdvV2JhMVRvdm94bkp1RlZqZ3pOWHhnZm1EUTk?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://thequantuminsider.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 21.59,
+        "ageHours": 2.4,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "quantum"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "How Foreign Founders Can Launch A Startup In The Netherlands - Business Manchester",
+        "publisher": "Business Manchester",
+        "publishedAt": "Wed, 30 Sep 2026 08:45:05 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQVFrdHp3bE11UWlzank0TXRPQzMwTTFFa2NJWEtDTWdoekF2YU1VWTBCVGRCZ1hPVzNoVDVNcnl2cmFacmpQR3pZLUJPckh4My03bGk2NEptaVZmUHRObTdWbGQ1aGRuZXR3ZElRQnJnaTB6VWlpWDNTcUtMUnc1dkNSQlZtVTI0RmdELXVhYnptVjQ0QkI4dXVkQ2xCYXVLdDZtMnBXUXNnZVNjMlE?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.businessmanchester.co.uk",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 21.59,
+        "ageHours": 2.4,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "startup"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "America’s biotech race with China must be won at home - STAT",
+        "publisher": "STAT",
+        "publishedAt": "Wed, 30 Sep 2026 08:31:33 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTE90bmpxTVR4QlhCNTZWanMwc2hUREVUWjV5SndDSlRPX0V5VFNkalBXLXBpTDkxQ3hTTkdaRHJDc1Z5OVQ2cTJNQkE4V0FkV1QxZ29fLUVEenRCbVdicHdqdnYwSFZjWU5RQW1Wbm1ObUhfeE9YT2R0UnpZck8?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.statnews.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 21.56,
+        "ageHours": 2.7,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "biotech"
         ],
         "alternateLeads": []
       },
@@ -757,8 +876,8 @@
         "publisherUrl": "https://thequantuminsider.com",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 25.47,
-        "ageHours": 3.2,
+        "score": 21.5,
+        "ageHours": 27,
         "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
@@ -769,192 +888,57 @@
         "alternateLeads": []
       },
       {
-        "title": "Final call: 2026 RTIH Retail Technology Innovation Awards entries to close on Friday, 2nd October - Retail Technology Innovation Hub",
-        "publisher": "Retail Technology Innovation Hub",
-        "publishedAt": "Tue, 29 Sep 2026 04:05:29 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOUE1SbnBGaTZDN3o1cDFYSFVvUXlhT3FVNG16WVMyWGVLMldzRWdweUFzbVlMVGNTUUxnMDlyWXBCa3djcHBzTFFfZzdxcUVmUVJVSTZCMFgzdzNqSTNlckNRUjVybHJQc2dMVnE4dTJGcjRHSHMwN0lmZmJyMk9IdTg5aXh0U3VtWlpwRUZranVjUUoxX3VSamR3T0JGYnRlaGRNVndiS3JBR0Fld29zZ1V0bjdsRTYzOVVza3BEU2RtcFBNNi1vMEtoS2h4UHBHOWZrNA?oc=5",
+        "title": "98% of startup leaders believe communications can accelerate fundraising, yet only 35% use it that way - Startups Magazine",
+        "publisher": "Startups Magazine",
+        "publishedAt": "Wed, 30 Sep 2026 08:08:55 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPTkdjSXp3UjRRMWtjcXZHdFFkSjRGaHVSTHh4NlNVSmRJcnpTd3Q4TTFHY0FvUVVtcFdvOE5KS1BfX0tFYnBOT3ozSVg5RnkwYWMtLUVTRTFmWFNTZG9pNlg4Q0JLMjBIc3NqdGs1RDdhalBUZm1US2daYzl1UEZndlB5MGhSbUFRUGhhQUhaVks4azBDS1FGb0NDZmlhSW5aT3NHdkFRazF5UXRNcTFtZGZLRWdfQ3RyT2VuSVZORWYtSTRjd0I0Mm5B?oc=5",
         "discoverySource": "Google News RSS",
-        "publisherUrl": "https://retailtechinnovationhub.com",
+        "publisherUrl": "https://startupsmagazine.co.uk",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 23.78,
-        "ageHours": 7.3,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "technology"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "Tinghua Liquor’s Innovative Technology Receives Patent Recognition in Europe and the United States - The Manila Times",
-        "publisher": "The Manila Times",
-        "publishedAt": "Tue, 29 Sep 2026 04:04:42 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQQ1NPSGdvM3E3QnBhcXhtU1ozWjBCUi16MVVOS0FBWTluWDRDaHIyaklfN3hGOGpsb1RLMDVLY2RwUkJxb1U1YmM3Tk1sa3ZWVGRnNjZjVXBWamgwcG94WUItRXZOekxXUGY3QXdSbWMxRnZUZDZZeXgyUVdMTTBiY0VFOTVDNVFUSE0tdEIwTFotWEFJNWZCSG82cE1rQ1Z3Y1hTSVo2aEJEdlhyVmQzMHhCQU5yNERHSm5SMks1akhobklXYW4yRDRSNWxfOWlDa3VmX25pZlpkaFUwckNXeWVfdTRuVnBEMVdfWTNxR0lYV1NjUlc2T1gycVdxaG9KVkxneW530gGGAkFVX3lxTFBDU09IZ28zcTdCcGFxeG1TWjNaMEJSLXoxVU5LQUFZOW5YNENocjJqSV83eEY4amxvVEswNUtjZHBSQnFvVTViYzdOTWxrdlZUZGc2NmNVcFZqaDBwb3hZQi1Fdk56TFdQZjdBd1JtYzFGdlRkNll5eDJRV0xNMGJjRUU5NUM1UVRITS10QjBMWi1YQUk1ZkJIbzZwTWtDVndjWFNJWjZoQkR2WHJWZDMweEJBTnI0REdKblIySzVqSGhuSVdhbjJENFI1bF85aUNrdWZfbmlmWmRoVTByQ1d5ZV91NG5WcEQxV19ZM3FHSVhXU2NSVzZPWDJxV3Fob0pWTGd5bnc?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.manilatimes.net",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 23.78,
-        "ageHours": 7.3,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "technology"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "The Two-Century Path That Made Quantum Computing Inevitable - Quantum Computing Report",
-        "publisher": "Quantum Computing Report",
-        "publishedAt": "Mon, 28 Sep 2026 03:56:15 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOeVZzUTVubGcxWXlNaEtJY3A3eWdDblNEUTlZTk15aVpuTW9jSGlhU3VHLVhBeVpINGpEUG1lc1NuMmh5VFJMcktMR1JrMl95NmV2YW5aQ3dTR0Qwcmd3TXlIQkZzOUNiNGd0QW1jMm85amtpb2J6MnVwbWtsUnZ0U2g1SXRkaWVfTWZWYUxUcHd1d2tnbmlibnlKd9IBoAFBVV95cUxQX3lVMlB3Rm5mNk5OQVZWWEQwWXhtR1NrSkxnckc0M242OFhkaW0tYm81Y24xV1cweXQtUHdQRy1DR1VyRkl2VS1RMXQ3Nlh2Q1J6dWNYWDBhR2xJaE1rTVkwRFg0X3IyeFUtRWpOcXFlRXRXb1BDRUcwbzJ5QzlBWFdDWW8wYlQ0blI0WmlDWWRDTEpaaElxQlhmeTdPdG1H?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://quantumcomputingreport.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 23.76,
-        "ageHours": 31.5,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "quantum",
-          "computing"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "KIST Accelerates Global Expansion for Korean Quantum Deep-Tech Startups at Quantum World Congress 2026 - PR Newswire",
-        "publisher": "PR Newswire",
-        "publishedAt": "Mon, 28 Sep 2026 10:23:00 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNSnBmWmF6d0tyM1lvLTk0X1hMVE1QRThiNFRIN0VmN3pmWjU0WFpHN1RfXy16REhTbkx2aWtGa3ctdVlvSGIwbXZWc3NFTU9GVWpHclRZazRPVDFtSU16Y1AtRUJha1FfWlgxNWMwdnphX01IY05iOHpzcmFkZmMtQlNOWThtcTY4cFpGRTRoeHVSbjJIZjMtVFduQ0dQUk1pMmpGdEJSc1VrR3FFQTV6TTVLSFR5QXJBVENkVjdlMHlvRnBvNHNSZGxHa042ZlQyaHJVZG5tQWlOY1ppTkgxUzdpeFhua0FJOWVjRVRqUQ?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.prnewswire.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 21.83,
-        "ageHours": 25,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "quantum",
-          "startup"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "AMD snaps up Fei-Fei Li's startup in $8.2 billion physical AI push - news.cgtn.com",
-        "publisher": "news.cgtn.com",
-        "publishedAt": "Tue, 29 Sep 2026 09:29:53 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPeS1RaDlrT1ZLX2VWMHJ2SzVBOHA0TUgta1FZcTdvVktWVjhkWEk4YUtVS0ZNeHhhWDk1LUFqVzR0WXBQcWFlbFlmNkVJZWkzbTVGVUJEaEUzVGFJOG91M0R3ZDRDLU01c0VsaWNKZC1HTzdxc2syeVlza0w1TFNCc2pHNTh5emxEVUI0c25kaFBhaHUtUk5fNk4yQ2kxM0gyeVAyeHdSVFd6WnIzX2xadC00bTQxUG5zSWlOaVllbw?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://news.cgtn.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 21.68,
-        "ageHours": 1.9,
+        "score": 21.49,
+        "ageHours": 3,
         "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
           "collector category",
           "startup"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "Dark fiber between Delft and Rotterdam serves as a test for a quantum network - Techzine Global",
-        "publisher": "Techzine Global",
-        "publishedAt": "Tue, 29 Sep 2026 09:00:00 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQb2VZYkpuUmJXNWVwY25BelE2MllqRVBOSjFkVkZEdUJqdVUwYllmTmhnX0JwNG1ocy0wUEV4Vl9TVmVXYk1jMXZIWGVsOUw0YzVNbklhZ1ltandFR0Vsb1M2ZmlVT2EtUkR6ZlpmYzYwUkhXTGV5OERJenBIVjB0M2NOWXAzR3k2QVFma19aVVVNREh4SkVhX2xESWhLNG5FNUYwWVZuckQyYnZVOHp3dzhWSlAyWGpnenprTmJqaGRjMzRyaGhCUA?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.techzine.eu",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 21.6,
-        "ageHours": 2.4,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "quantum"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "Chip Maker AMD Acquires 'Godmother Of AI' Fei-Fei Li's Startup - NDTV",
-        "publisher": "NDTV",
-        "publishedAt": "Tue, 29 Sep 2026 08:46:59 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbmZJSFlzUkVvZWQ5ZE1FeHlFV2lMc1lPalpPcTV0cFBlS25nNk9iTnk4WThoRXdLNUx3cHBjcXVVUnpqTFg1dlpyc3Iwb04zU050aGw3LTZwRC1rLXUtcE4wX2pEejM3SjVzVUJzVWVmMGtlbTJmRThqb1JRMmhYcURjblphcG4wYzBtQ3hQdmZmNEp1WFROa1UyRFRqME96NnBfajRzT1EzSkFSYkdTU1JUeHczN3JfZXlLeNIBxAFBVV95cUxPUktJTmEwYzdPV2ZxaUVuOTNxSUJUTU1fS1U1ZDczTkhOeU1taUVWYmV6RzFuMjNFb25RbUk4WmFwWnlCdjZMUm12YnZkSnRtdWMtNm93b3RtUUVQTTBfM1lmU0g4a2VHT2J0VUd3WEdvT21VcmtDY2JXMjc0MlFiZ3JUam5wME9PVHNpZGJrWjlicnBhRzNGZGFhWFNZN0NnbTZWTDkyd1Z1bzdqc0k5LWFYUG13TWhGVmtTdENrN1ljM0p2?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.ndtv.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 21.56,
-        "ageHours": 2.6,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "startup"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "Synchronization in a dissipative quantum many-body system - APS Journals",
-        "publisher": "APS Journals",
-        "publishedAt": "Tue, 29 Sep 2026 08:45:10 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5VdWJ2VFFOODJNWk5xVUxyaHRmdU5rSkluR3R2TmRBUTJ3cjhUUkphX3dsUUZvYUNIZ1kwX3RtczFVX0xsbFlBYTJKSGxIeUNPUzVVaHNGMkJrcG52U1hSRzd1a3JiQQ?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://journals.aps.org",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 21.56,
-        "ageHours": 2.6,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "quantum"
         ],
         "alternateLeads": []
       }
     ],
     "Plan Ahead": [
       {
-        "title": "BFI London Film Festival 2026 - Film Review: My Wife Cries - Voice Magazine",
-        "publisher": "Voice Magazine",
-        "publishedAt": "Tue, 29 Sep 2026 10:52:30 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMHBBRVRObXFJNUNkQ3R2THA1aVQ4UFRwVHNhMUxLSjdRMV9kc05MVmtaaFUtU2NkaEdabEJUQ2lrZThTTU1oZjJ4NU1RMGFRa29RazNYV2JsemJmYjBCVzE0VGgycTliV1ZXVDF3QjV3Z3ZsLXNEX2N2N1hEakJFSjJ4UkxWaVZYYnYtLUJfWnZkWndzOHlz?oc=5",
+        "title": "The Top Exhibitions To See In London: October 2026 - Londonist",
+        "publisher": "Londonist",
+        "publishedAt": "Wed, 30 Sep 2026 08:32:42 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMjFMN1Yxem1ET1dKRGZnSHNqVU1CQVJSRmNlM3JpUFBPUFVTbmhhcDFxS0lNV0Z6VFR4TEN1em9MX3pQX3ZwX3E3R182UmhpNFcxTS00cVRiUWtIeVFxdHFZTnFzZFJYOEhMeU93MG1QNDRhWFBPYlB2N0NGeWhIbEx1N1kyZ25YSWExNkZwVl96dUNCa01vc2tVZ3JVQXZnbmc?oc=5",
         "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.voicemag.uk",
+        "publisherUrl": "https://londonist.com",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 37.91,
-        "ageHours": 0.5,
+        "score": 40.56,
+        "ageHours": 2.6,
         "activitySignal": true,
         "primarySourceSignal": false,
         "signals": [
           "activity/action wording: verify upcoming date",
           "collector category",
-          "festival"
+          "exhibition"
         ],
         "alternateLeads": []
       },
       {
-        "title": "BFI London Film Festival 2026 - Film Review: I Love Boosters - Voice Magazine",
+        "title": "BFI London Film Festival 2026 - Film Review: The History of Concrete - Voice Magazine",
         "publisher": "Voice Magazine",
-        "publishedAt": "Tue, 29 Sep 2026 06:22:30 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxONTFUQlJTdGFQMjE4cnZEZnZnNkhURUJxV0FlcVcwUGFxWXYyV3ZCQnRoZmExb2JZMFUxUjE5X0ZVaDFWcWdIbzhJRlZnWmYxSl9SVDRzbnItTml5Rm01dW9hb1pyel9pLVhRSEFfRV9tZ2NfVk5ueG9OYWgxd0U0NG5wZDBJOUFpQUNYaEw3MDVHSFBXcmZHamtB?oc=5",
+        "publishedAt": "Wed, 30 Sep 2026 08:03:45 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNLVR1TmZvZW5KVlk0X2prQkRkOHdlcXZoSU5ENHBmNVN2c0NsYnZ2ckM4YmdndndKeGFLTVlTejFkbUM1dTR1dmtmQWhJOFBTMHhFM1dDYWhFRHVGckJ5VUZ1WElROElZY2RDY3UxOTBBRl95MGpYQ21VSWx6RzJwNGpyYU9nZ1JPLWF4WFBmXzVVZm0tejdpQ0EwVU9jS2lMXzhrMQ?oc=5",
         "discoverySource": "Google News RSS",
         "publisherUrl": "https://www.voicemag.uk",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 37.16,
-        "ageHours": 5,
+        "score": 37.48,
+        "ageHours": 3.1,
         "activitySignal": true,
         "primarySourceSignal": false,
         "signals": [
@@ -974,7 +958,7 @@
         "summary": "",
         "needsDestinationResolution": true,
         "score": 36,
-        "ageHours": 166.4,
+        "ageHours": 190.2,
         "activitySignal": true,
         "primarySourceSignal": true,
         "signals": [
@@ -987,22 +971,62 @@
         "alternateLeads": []
       },
       {
-        "title": "Britain knew about the Holocaust as it happened. A new exhibition reckons with that truth - The Guardian",
-        "publisher": "The Guardian",
-        "publishedAt": "Mon, 28 Sep 2026 01:30:00 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPS1F3WUtraG51MFkta1ZPWkhrVVVvbXBnaF9zazNhQjZTc2d3X1pQY01sVzk3ZGZjNXhPS3VEVmcyQUhOOHVSYkNHM0JyZkl6b0YwZVgwUFZ5eTYteVFFVHBONWg0aG5vWjB1TkFnY09nOVlobGZ3Wms0al9XelhVZWlHWnA5WkxKeEZVTUtDbS1zLU5UY1haMjkzWm5DMVJuUmc?oc=5",
+        "title": "BFI London Film Festival 2026 - Film Review: Moonglow - Voice Magazine",
+        "publisher": "Voice Magazine",
+        "publishedAt": "Tue, 29 Sep 2026 22:24:21 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPS1doam9DQVI1Wm45NlNvb2FzMmZIcnc3V2hTcGxjS3ZBV2k1TGtDeE1Pd1pfSW1hampvUEptYkhBVDVWb3dBaS1OYU9Nb2hOUFdJZTVucy0yVVMza214OEszS0hYdmZucUx0NWUyX0JLLVRtRWJSMmd2WTNvR2VueElORTN2dXB1MUJURkg1N2Q?oc=5",
         "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.theguardian.com",
+        "publisherUrl": "https://www.voicemag.uk",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 33.35,
-        "ageHours": 33.9,
+        "score": 35.87,
+        "ageHours": 12.8,
         "activitySignal": true,
         "primarySourceSignal": false,
         "signals": [
           "activity/action wording: verify upcoming date",
           "collector category",
-          "exhibition"
+          "festival"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "BFI London Film Festival 2026 - Film Review: I Love Boosters - Voice Magazine",
+        "publisher": "Voice Magazine",
+        "publishedAt": "Tue, 29 Sep 2026 10:59:11 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxONTFUQlJTdGFQMjE4cnZEZnZnNkhURUJxV0FlcVcwUGFxWXYyV3ZCQnRoZmExb2JZMFUxUjE5X0ZVaDFWcWdIbzhJRlZnWmYxSl9SVDRzbnItTml5Rm01dW9hb1pyel9pLVhRSEFfRV9tZ2NfVk5ueG9OYWgxd0U0NG5wZDBJOUFpQUNYaEw3MDVHSFBXcmZHamtB?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.voicemag.uk",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 33.97,
+        "ageHours": 24.2,
+        "activitySignal": true,
+        "primarySourceSignal": false,
+        "signals": [
+          "activity/action wording: verify upcoming date",
+          "collector category",
+          "festival"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "BFI London Film Festival 2026 - Film Review: My Wife Cries - Voice Magazine",
+        "publisher": "Voice Magazine",
+        "publishedAt": "Tue, 29 Sep 2026 10:52:30 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMHBBRVRObXFJNUNkQ3R2THA1aVQ4UFRwVHNhMUxLSjdRMV9kc05MVmtaaFUtU2NkaEdabEJUQ2lrZThTTU1oZjJ4NU1RMGFRa29RazNYV2JsemJmYjBCVzE0VGgycTliV1ZXVDF3QjV3Z3ZsLXNEX2N2N1hEakJFSjJ4UkxWaVZYYnYtLUJfWnZkWndzOHlz?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.voicemag.uk",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 33.95,
+        "ageHours": 24.3,
+        "activitySignal": true,
+        "primarySourceSignal": false,
+        "signals": [
+          "activity/action wording: verify upcoming date",
+          "collector category",
+          "festival"
         ],
         "alternateLeads": []
       },
@@ -1015,7 +1039,7 @@
         "summary": "",
         "needsDestinationResolution": true,
         "score": 33,
-        "ageHours": 264.3,
+        "ageHours": 288.1,
         "activitySignal": true,
         "primarySourceSignal": false,
         "signals": [
@@ -1027,120 +1051,78 @@
         "alternateLeads": []
       },
       {
-        "title": "Iranian art exhibition in London spotlights scenes from war-torn isolation - thenationalnews.com",
-        "publisher": "thenationalnews.com",
-        "publishedAt": "Sat, 26 Sep 2026 05:42:17 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNeVp3a1FZOWFhbGFIbnZ6MlBSSUhmVkticUFoWmlZdnkzWlJwcHV6X3h5cEtsTWhEWGNYeDhqZnRBUjBreXZhNUJkczh6WW5leHIwM2phU1RER2RYT3A5TExCOHg3M2lpYjljNW0xbTFPRjJRcVZyVHhWTXR6ZUJFMDhhYjFqUjBhWUpSZG9Id19xNTJGNTNQNlJISG5qcUZ3aUM3ZVlwNlB4YXdkRmtWWlQ5MHRwb00xWjlzN3l6RWJxY1pO?oc=5",
+        "title": "New Finsbury Park Festival Embrace LDN to open with Josh Baker, KETTAMA and Prospa next year - Official Charts",
+        "publisher": "Official Charts",
+        "publishedAt": "Tue, 29 Sep 2026 14:40:56 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPaEdVNHFBY2JSYXYwMmNocWpIdkliTzJramZKdmQyYWhGZGRGbGFESWRZa1hELVhCeEVnUlhpancwUlFoNWRxeTh4ckhFRnRURERmX2t2RGxocDhsMWVHclFLeDA3S0k2QjNnZ1RqTnU1ZzZSSUhFR3FpZ2Q4Z0RoOUpnSGRzaklaRlBWY2h6S2pMR2JsZUdHY1VUNzdyOU1renk2WU5BSjJVS1pIdFZlNElIeWFPTnQ0VWlPd1pmcmFqQQ?oc=5",
         "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.thenationalnews.com",
+        "publisherUrl": "https://www.officialcharts.com",
         "summary": "",
         "needsDestinationResolution": true,
-        "score": 29,
-        "ageHours": 77.7,
+        "score": 32.58,
+        "ageHours": 20.5,
         "activitySignal": true,
         "primarySourceSignal": false,
         "signals": [
           "activity/action wording: verify upcoming date",
           "collector category",
-          "exhibition"
+          "festival"
         ],
         "alternateLeads": []
       },
       {
-        "title": "Haya Jarrar Looks Back on Motherhood in Her First London Exhibition - New Wave Magazine",
-        "publisher": "New Wave Magazine",
-        "publishedAt": "Fri, 25 Sep 2026 21:48:45 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNzVCWncwVExNbDhPdlFSUHpubG9qWkFvWElPUVI5SVdtRTJ2Ni13a2EtWDdTbzlkSGItaFNETTU3MWMtdnVzUVBkMGszX2pma2k5SlVrYlFQb3JFSlFjTGstaDd2TlNMUF9JWjhxc2o3Nk5YN2JYYzhyaWVDZFBURy12cXIzeGQ5bHd1elZWYmRiMG5lTGhkd2Z3RkNKcjlTVkJYeHRIRU9LM1V1R25CdQ?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.newwavemagazine.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 29,
-        "ageHours": 85.6,
-        "activitySignal": true,
-        "primarySourceSignal": false,
-        "signals": [
-          "activity/action wording: verify upcoming date",
-          "collector category",
-          "exhibition"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "Free London exhibition puts rock and pop history up for auction - ianVisits",
+        "title": "Tickets Alert: Barbican ghost tours of their empty library and The Pit",
         "publisher": "ianVisits",
-        "publishedAt": "Thu, 24 Sep 2026 09:12:40 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVVJiV2RnejNXYVRJOXR5MDlzaDlSLThheUhQdHJvdnhDM1UyOGZUemZjMDF0anhTRnBxclFFVjhOOXRYQmpsd29ybjRmZ3lva0lRamlWQVgyZFhUUkxrV0RtaGdOWjZSNmU4alg2Rm4xUzhzU0dBbk4yVGl5dmhhWVNXS1JEdmJpT0hEOXJ0TFpEd0JjZFV0UE03alBYUUxHQmhFQkNOZkhCMGs?oc=5",
-        "discoverySource": "Google News RSS",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 29,
-        "ageHours": 122.2,
+        "publishedAt": "Tue, 29 Sep 2026 15:00:18 +0000",
+        "discoveryUrl": "https://www.ianvisits.co.uk/articles/tickets-alert-barbican-ghost-tours-of-their-empty-library-and-the-pit-92915/",
+        "discoverySource": "ianVisits",
+        "summary": "The Barbican is hoping for concrete evidence of the supernatural this autumn as it launches its first Ghost Tours of the arts centre. Read more ›",
+        "needsDestinationResolution": false,
+        "score": 30.64,
+        "ageHours": 20.2,
         "activitySignal": true,
         "primarySourceSignal": false,
         "signals": [
           "activity/action wording: verify upcoming date",
-          "collector category",
-          "exhibition"
+          "ticket",
+          "tour"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "title": "Kim Deal announces live album of Barbican orchestral performance - The Line of Best Fit",
+        "publisher": "The Line of Best Fit",
+        "publishedAt": "Tue, 29 Sep 2026 17:21:34 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNM2FpWWEzYlZWMk1YYWdScXNVZnh3dDRIS2tJV25LU2kxSVdTdDFzOWpvTnpJbGk5SWZ6emxHNUp2N1ZQdjU3VXc1WDVUblVOMGdidTRKRHFaS1lSNXpabVVoRnRwamF5QndldnlyWFlic29LSURIRGgzS1RtbEFseXVQUlpGSTYxb3ZnZUd5T1JZY0RTWmtxR0l4MkJZUFdVX0tweQ?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.thelineofbestfit.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "score": 30.03,
+        "ageHours": 17.8,
+        "activitySignal": true,
+        "primarySourceSignal": false,
+        "signals": [
+          "activity/action wording: verify upcoming date",
+          "performance"
         ],
         "alternateLeads": [
           {
-            "title": "Free London exhibition puts rock and pop history up for auction",
-            "publisher": "ianVisits",
-            "publishedAt": "Thu, 24 Sep 2026 09:10:01 +0000",
-            "discoveryUrl": "https://www.ianvisits.co.uk/articles/free-london-exhibition-puts-rock-and-pop-history-up-for-auction-92739/",
-            "discoverySource": "ianVisits",
-            "summary": "A poster from 1976 is among the music memorabilia on free display near Marble Arch before a Propstore auction. Read more ›",
-            "needsDestinationResolution": false,
-            "score": 23,
-            "ageHours": 122.2,
-            "activitySignal": true,
+            "title": "Kim Deal Announces “Live at the Barbican” Album and Film - floodmagazine.com",
+            "publisher": "floodmagazine.com",
+            "publishedAt": "Tue, 29 Sep 2026 17:38:04 GMT",
+            "discoveryUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85QUQyYV96aUd1cUUwck8xWjRyWFViQ25IOWtLZVgtajAtUG5wWE92emhMMTRrZHVad2FUejNGeGNVdHZpS0dWUFU3THAydWJVWkNEZWlLTXNTb3M2a0lsUHJTZk1weWxsY1BIajMwcVFjdC16d1lOYVhiMC12SFU?oc=5",
+            "discoverySource": "Google News RSS",
+            "publisherUrl": "https://floodmagazine.com",
+            "summary": "",
+            "needsDestinationResolution": true,
+            "score": 9.07,
+            "ageHours": 17.6,
+            "activitySignal": false,
             "primarySourceSignal": false,
-            "signals": [
-              "activity/action wording: verify upcoming date",
-              "exhibition"
-            ]
+            "signals": []
           }
         ]
-      },
-      {
-        "title": "You can see Princess Diana's iconic 'Revenge Dress' at a London exhibition for just 3 more days - before it goes to auction at a special event in New York - Secret London",
-        "publisher": "Secret London",
-        "publishedAt": "Tue, 22 Sep 2026 08:07:46 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOakJwTTZwSUZLUVdWQVVpdmcxS0RGNFRpbUpCZ0xTbjlnTmlYRmd5V1UzMmZ6bVBoTHZJUE1jMWd2VFhOaHFqZFNubFE4MjR3TzI2S1E0MmJVM1NpczU5R3ZWUVRhZ3U1MTVhODhqaE1oYmxwdk1sVEE1SkFhbWhOTTNXZw?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://secretldn.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 29,
-        "ageHours": 171.3,
-        "activitySignal": true,
-        "primarySourceSignal": false,
-        "signals": [
-          "activity/action wording: verify upcoming date",
-          "collector category",
-          "exhibition"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "title": "A FREE limited-time exhibition of never-before-seen works by Salvador Dalí and Pablo Picasso has opened in London - Secret London",
-        "publisher": "Secret London",
-        "publishedAt": "Fri, 18 Sep 2026 13:36:06 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4wLXFMNzA4WmRzQm8ySHpKSnplV2twZlNtbmcxdzRzaFNDaVJ3NXJKY0ZDMEdscG40cktnbFBxU2dGOFk3aW9UMklMLW9tMUJnZzNtTnJLN0F3YzJiLXBSeVZIdkhBVm41dDhXdUFFRTBfYVU?oc=5",
-        "discoverySource": "Google News RSS",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "score": 29,
-        "ageHours": 261.8,
-        "activitySignal": true,
-        "primarySourceSignal": false,
-        "signals": [
-          "activity/action wording: verify upcoming date",
-          "collector category",
-          "exhibition"
-        ],
-        "alternateLeads": []
       }
     ]
   },
