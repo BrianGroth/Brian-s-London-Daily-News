@@ -12,7 +12,7 @@
 // SHELL_ASSETS. The shell is served cache-first, so returning users keep the
 // old HTML/CSS/JS indefinitely until this string changes and `activate` clears
 // the previous caches. Editing a file without bumping this ships nothing.
-const VERSION = 'brian-daily-v9';
+const VERSION = 'brian-daily-v10';
 const SHELL_CACHE = `nearbypoi-shell-${VERSION}`;
 const API_CACHE = `nearbypoi-api-${VERSION}`;
 // Tiles are versionless on purpose: they change rarely, they are expensive to

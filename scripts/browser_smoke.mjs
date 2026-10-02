@@ -207,8 +207,9 @@ async function companions(page, viewportName) {
   const category = await chip.locator("span").nth(1).textContent();
   const selected = await chip.getAttribute("aria-pressed");
   await chip.click();
-  assert.equal(await page.locator("#filters button").filter({ hasText: category }).getAttribute("aria-pressed"), String(selected !== "true"));
-  await page.locator("#filters button").filter({ hasText: category }).click();
+  const sameCategory = page.locator("#filters button").filter({ has: page.getByText(category, { exact: true }) });
+  assert.equal(await sameCategory.getAttribute("aria-pressed"), String(selected !== "true"));
+  await sameCategory.click();
   await page.getByRole("button", { name: "Show on map", exact: true }).first().click();
   await page.locator(".leaflet-popup").waitFor();
   await healthy(page, `${viewportName}-poi`);
