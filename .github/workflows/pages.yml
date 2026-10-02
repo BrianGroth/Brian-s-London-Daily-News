@@ -16,11 +16,6 @@ on:
       - 'data/direct-candidates.json'
   workflow_dispatch:
     inputs:
-      activate_pages:
-        description: 'Explicitly switch this repository to the validated GitHub Actions Pages pipeline'
-        required: false
-        default: false
-        type: boolean
       restore_sha:
         description: 'Optional full commit SHA to redeploy; blank builds this workflow revision'
         required: false
@@ -109,7 +104,7 @@ jobs:
 
   deploy:
     # The single production pipeline; repository Pages source is GitHub Actions.
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && vars.PAGES_ACTIONS_ENABLED != 'false' && (needs.validate.outputs.pages_source == 'workflow' || inputs.activate_pages == true)
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && vars.PAGES_ACTIONS_ENABLED != 'false' && needs.validate.outputs.pages_source == 'workflow'
     needs: validate
     runs-on: ubuntu-24.04
     timeout-minutes: 10
@@ -120,11 +115,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Activate Pages only when explicitly requested
-        if: inputs.activate_pages == true
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh api --method PUT "repos/${GITHUB_REPOSITORY}/pages" -f build_type=workflow
       - name: Set up Node for deployment verification
         uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
         with:
