@@ -82,7 +82,9 @@ jobs:
         id: hosting
         env:
           GH_TOKEN: ${{ github.token }}
-        run: echo "source=$(gh api \"repos/${GITHUB_REPOSITORY}/pages\" --jq .build_type)" >> "$GITHUB_OUTPUT"
+        run: |
+          pages_source=$(gh api "repos/${GITHUB_REPOSITORY}/pages" --jq .build_type)
+          echo "source=$pages_source" >> "$GITHUB_OUTPUT"
       - name: Stage public runtime files
         run: node scripts/stage_site.mjs
       - name: Install Chromium
