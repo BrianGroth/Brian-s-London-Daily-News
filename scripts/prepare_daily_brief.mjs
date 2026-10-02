@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import path from "node:path";
@@ -50,7 +51,7 @@ function hoursOld(item, referenceTime) {
 }
 
 const activityPattern = /\b(walks?|tours?|workshops?|performances?|exhibitions?|festivals?|tickets?|bookings?|concerts?|volunteer|classes|screenings?|open day|guided|register)\b/i;
-const primarySeeds = new Set(["heath-hands.org.uk", "hampsteadtheatre.co.uk", "english-heritage.org.uk", "barbican.org.uk", "turing.ac.uk"]);
+const primarySeeds = new Set(["heath-hands.org.uk", "hampsteadtheatre.com", "english-heritage.org.uk", "barbican.org.uk", "turing.ac.uk"]);
 
 function hostname(url) {
   try { return new URL(url).hostname.toLowerCase().replace(/^www\./, ""); }
@@ -82,7 +83,7 @@ export function officialResearchSources(html, activeDomains) {
     if (!anchor || hostname(anchor[1]) !== domain) continue;
     sources.push({ name: anchor[2].replace(/<[^>]*>/g, "").replaceAll("&amp;", "&").trim(), url: anchor[1].replaceAll("&amp;", "&"), domain, needsLiveVerification: true });
   }
-  const priority = ["heath-hands.org.uk", "cityoflondon.gov.uk", "english-heritage.org.uk", "hampsteadtheatre.co.uk", "barbican.org.uk"];
+  const priority = ["heath-hands.org.uk", "cityoflondon.gov.uk", "english-heritage.org.uk", "hampsteadtheatre.com", "barbican.org.uk"];
   const rank = (domain) => priority.includes(domain) ? priority.indexOf(domain) : priority.length;
   return sources.sort((a, b) => rank(a.domain) - rank(b.domain) || a.domain.localeCompare(b.domain));
 }
@@ -116,9 +117,16 @@ export function scoreForSection(item, section, referenceTime, activeDomains = []
   }
   const domain = hostname(item.publisher_url || item.link);
   const primary = activeDomains.includes(domain) && (/\.(gov|ac)\.uk$/.test(domain) || primarySeeds.has(domain));
+  const eventEnd = Date.parse(item.event_end || item.event_start || "");
+  const datedActivity = Number.isFinite(eventEnd) && eventEnd >= referenceTime;
+  if (datedActivity && sectionMatch && ["Near Home", "Near Work", "Plan Ahead"].includes(section)) {
+    score += 24 + Math.max(0, 14 - Math.max(0, (Date.parse(item.event_start) - referenceTime) / 86400000)); signals.unshift("source lists an upcoming date: reverify availability");
+  }
+  if (item.discovery_source === "Official activity listing" && sectionMatch) score += 18;
+  if (/\bweather forecast\b/i.test(item.title) && section === "Near Home") score -= 30;
   if (primary) { score += 5; signals.unshift("approved primary-source lead"); }
 
-  return { score: Number(score.toFixed(2)), ageHours: Number(age.toFixed(1)), activitySignal: activity, primarySourceSignal: primary, signals: [...new Set(signals)].slice(0, 5) };
+  return { datedActivitySignal: datedActivity, score: Number(score.toFixed(2)), ageHours: item.published_at ? Number(age.toFixed(1)) : null, activitySignal: activity, primarySourceSignal: primary, signals: [...new Set(signals)].slice(0, 5) };
 }
 
 // Group only highly similar wording. Different dates/numbers remain distinct;
@@ -132,13 +140,14 @@ function topicSignature(item) {
   return {
     title,
     numbers: (title.match(/\b\d+\b/g) || []).join(),
+    actionDate: item.event_start?.slice(0, 10) || null,
     tokens: new Set(title.split(" ").filter((word) => word.length > 2 && !["the", "and", "for", "with", "from", "london"].includes(word))),
   };
 }
 
 function sameTopicSignatures(a, b) {
   if (a.title === b.title) return true;
-  if (a.numbers !== b.numbers) return false;
+  if (a.numbers !== b.numbers || a.actionDate !== b.actionDate) return false;
   let common = 0;
   for (const word of a.tokens) if (b.tokens.has(word)) common += 1;
   return common >= 5 && common / (a.tokens.size + b.tokens.size - common) >= 0.65;
@@ -153,7 +162,7 @@ function compactStory(story) {
   };
 }
 
-export function prepareBrief({ rss, editions, events, pois, resourcesHtml }, now = Date.now()) {
+export function prepareBrief({ rss, direct = { items: [] }, editions, events, pois, resourcesHtml }, now = Date.now()) {
   const referenceTime = new Date(now).getTime();
   if (!Number.isFinite(referenceTime)) throw new Error("Invalid briefing time");
   const referenceDate = londonDate(referenceTime);
@@ -162,7 +171,7 @@ export function prepareBrief({ rss, editions, events, pois, resourcesHtml }, now
 
   const deduplicated = [];
   const seenLinks = new Set();
-  for (const item of rss.items || []) {
+  for (const item of [...(direct.items || []), ...(rss.items || [])]) {
     const titleKey = normalizedTitle(item);
     if (!titleKey || !item.link || seenLinks.has(item.link)) continue;
     if (isBlockedDomain(hostname(item.link), blocked) || isBlockedDomain(hostname(item.publisher_url), blocked)) continue;
@@ -173,6 +182,7 @@ export function prepareBrief({ rss, editions, events, pois, resourcesHtml }, now
   const candidateSections = Object.fromEntries(sections.map((section) => {
     const ranked = deduplicated
       .map((item) => ({ item, signature: topicSignature(item), ranking: scoreForSection(item, section, referenceTime, domains.activeResourceDomains) }))
+      .filter(({ item, ranking }) => !["London AI", "London Technology"].includes(section) || (item.published_at && ranking.ageHours <= 72))
       .sort((a, b) => b.ranking.score - a.ranking.score || a.ranking.ageHours - b.ranking.ageHours || a.item.link.localeCompare(b.item.link));
     const groups = [];
     for (const candidate of ranked) {
@@ -181,7 +191,10 @@ export function prepareBrief({ rss, editions, events, pois, resourcesHtml }, now
       else if (groups.length < candidatesPerSection) groups.push({ ...candidate, alternates: [] });
     }
     const compact = ({ item, ranking }) => ({
+        id: item.id || "lead-" + createHash("sha256").update(item.link).digest("hex").slice(0, 16),
         title: item.title,
+        eventStart: item.event_start, eventEnd: item.event_end,
+        evidenceFile: item.evidence_file, checkedAt: item.checked_at,
         publisher: item.publisher,
         publishedAt: item.published_at,
         discoveryUrl: item.link,
@@ -215,6 +228,7 @@ export function prepareBrief({ rss, editions, events, pois, resourcesHtml }, now
   if (!Number.isFinite(sourceAgeHours) || sourceAgeHours > 24) warnings.push("Discovery collection is missing a timestamp or older than 24 hours; refresh or broaden live research.");
   if (!rss.collection_status) warnings.push("Feed health is unknown for this legacy discovery file.");
   else if (rss.collection_status !== "ok") warnings.push(`Feed collection ${rss.collection_status}; inspect collectionHealth and research failed sections live.`);
+  for (const feed of direct.feeds || []) if (feed.status !== "ok") warnings.push(`Direct source ${feed.id}: ${feed.error || feed.status}; broaden research.`);
   for (const section of sections) {
     if (candidateSections[section].length < candidatesPerSection) warnings.push(`${section}: fewer than ${candidatesPerSection} distinct leads; broaden research.`);
   }
@@ -226,7 +240,8 @@ export function prepareBrief({ rss, editions, events, pois, resourcesHtml }, now
     sourceCollectedAt: rss.generated_at || null,
     collectionHealth: { status: rss.collection_status || "unknown", lastSuccessAt: rss.last_success_at || null, feeds: rss.feeds || [] },
     warnings,
-    sourceCandidateCount: rss.items?.length || 0,
+    sourceCandidateCount: (rss.items?.length || 0) + (direct.items?.length || 0),
+    directCollectionHealth: { status: direct.collection_status || "not-collected", feeds: direct.feeds || [] },
     deduplicatedCandidateCount: deduplicated.length,
     candidatesPerSection,
     notice: "Discovery shortlist only. Open destination pages, verify every volatile claim live, and prefer primary sources before publication.",
@@ -248,19 +263,43 @@ export function prepareBrief({ rss, editions, events, pois, resourcesHtml }, now
   return brief;
 }
 
+// Model-facing view: no opaque redirect URLs, article bodies or unlimited catalogues.
+export function readingBrief(brief) {
+  const limits = { "Near Home": 6, "Near Work": 4, "London AI": 3, "London Technology": 3, "Plan Ahead": 4 };
+  const candidates = Object.fromEntries(sections.map(section => [section, brief.candidateSections[section].slice(0, limits[section]).map(c => ({
+    id: c.id, title: c.title.slice(0, 150), publisher: c.publisher, ageHours: c.ageHours,
+    ...(c.eventStart ? { eventStart: c.eventStart, eventEnd: c.eventEnd } : {}),
+    primary: c.primarySourceSignal, alternatives: c.alternateLeads.length,
+  }))]));
+  return { schemaVersion: 1, londonDate: brief.londonDate,
+    notice: "Discovery only. Read selected full records with lookup:context candidates ID. Reverify facts live; alternatives and the full pool remain on disk.",
+    health: { rss: brief.collectionHealth.status, direct: brief.directCollectionHealth?.status, rawCount: brief.sourceCandidateCount },
+    warnings: brief.warnings, archiveDates: brief.archiveDates,
+    adjacentStories: Object.fromEntries(Object.entries(brief.adjacentEditionStories).map(([key, stories]) => [key, stories.map(({ id, section, headline }) => ({ id, section, headline }))])),
+    candidates, upcoming: brief.upcomingEvents.slice(0, 12).map(({ id, title, startDate, endDate }) => ({ id, title, startDate, endDate })),
+    counts: { calendar: brief.upcomingEvents.length, pois: brief.editorialPois.length, resources: brief.activeResourceDomains.length },
+    blockedResourceDomains: brief.blockedResourceDomains,
+    lookup: "Use editions, stories, candidates, images, events, pois or resources with an ID or search phrase. Never dump the full pool by default." };
+}
+
 export async function main(args = process.argv.slice(2)) {
   const started = performance.now();
   const options = {};
   for (let i = 0; i < args.length; i += 2) {
-    if (!["--output", "--now"].includes(args[i]) || !args[i + 1]) throw new Error("Usage: prepare_daily_brief.mjs [--output PATH] [--now ISO_TIMESTAMP]");
+    if (!["--output", "--reading-output", "--now"].includes(args[i]) || !args[i + 1]) throw new Error("Usage: prepare_daily_brief.mjs [--output PATH] [--reading-output PATH] [--now ISO_TIMESTAMP]");
     options[args[i]] = args[i + 1];
   }
   const paths = [dataPath("rss_candidates.json"), dataPath("editions.json"), dataPath("upcoming-events.json"), path.join(repositoryRoot, "poi/data/editorial-pois.json"), path.join(repositoryRoot, "resources.html")];
   const loaded = await Promise.all(paths.map((file) => readFile(file, "utf8")));
   const [rss, editions, events, pois] = loaded.slice(0, 4).map(JSON.parse);
-  const brief = prepareBrief({ rss, editions, events, pois, resourcesHtml: loaded[4] }, options["--now"] || Date.now());
+  const direct = JSON.parse(await readFile(dataPath("direct-candidates.json"), "utf8").catch(error => { if (error.code === "ENOENT") return '{"items":[]}'; throw error; }));
+  const brief = prepareBrief({ rss, direct, editions, events, pois, resourcesHtml: loaded[4] }, options["--now"] || Date.now());
   const output = options["--output"] || dataPath("daily-brief.json");
   await writeFile(output, JSON.stringify(brief, null, 2) + "\n", "utf8");
+  const readingOutput = options["--reading-output"] || path.join(path.dirname(output), "reading-brief.json");
+  const reading = readingBrief(brief);
+  await writeFile(readingOutput, JSON.stringify(reading) + "\n", "utf8");
+  console.log(`Reading brief: ${readingOutput} (${Buffer.byteLength(JSON.stringify(reading))} bytes); full records remain in ${output}.`);
   console.log(`Prepared ${output}: ${brief.sourceCandidateCount} raw candidates -> ${Object.values(brief.candidateSections).flat().length} topic leads in ${((performance.now() - started) / 1000).toFixed(2)}s.`);
   for (const warning of brief.warnings) console.warn(warning);
 }

@@ -64,6 +64,8 @@ These are starting points, not a closed list and not permission to skip live ver
 - Peer-reviewed papers and official programme pages
 - Sifted, TechCrunch, UKTN, Financial Times, and specialist reporting for context
 
+Official activity adapters and the bounded evidence cache are documented in `docs/DAILY_RUN.md`. Direct discovery is not editorial verification. Broad catalogue discovery runs weekly; daily research remains focused on the ten choices.
+
 The permanent, growing set of previously used sources lives in `resources.html`.
 The tested POI discovery stack is listed in the POI Resources section there. Candidates in `PotentialUnusedResources.html` remain outside the production workflow until deliberately promoted.
 
@@ -80,7 +82,7 @@ The tested POI discovery stack is listed in the POI Resources section there. Can
 
 Use it to discover leads only. Open the destination, verify the publication time and substance, search for primary evidence, and decide independently whether the story belongs.
 
-The normal daily run consumes `data/daily-brief.json` first. That file is a deterministic, compact ranking of the RSS pool with duplicate context and durable-store summaries; it is still unverified discovery output. Read the full RSS pool only when the shortlist is weak or its ranking needs diagnosis.
+The normal daily run consumes `data/reading-brief.json` first and retrieves selected complete candidates from `data/daily-brief.json` by ID. That file is a deterministic, compact ranking of the RSS pool with duplicate context and durable-store summaries; it is still unverified discovery output. Read the full RSS pool only when the shortlist is weak or its ranking needs diagnosis.
 
 Inspect collection-health warnings and source restrictions before selecting leads. Feed failures must not masquerade as fresh discovery. Activity/primary-source signals and conservative topic groups only guide research; inspect alternate coverage and keep editorial judgement over novelty and London relevance. Calendar opportunities need live re-verification even if previously recorded. Use `npm run lookup:context` to retrieve full existing records as needed instead of repeatedly loading entire stores.
 
@@ -90,7 +92,7 @@ Inspect collection-health warnings and source restrictions before selecting lead
 
 Never hand-edit the generated edition block in `index.html`. Change the structured data, run `npm run render:edition`, and let `npm test` confirm the embedded page is synchronized.
 
-Prefer the dry-run-first edition helper described in `docs/EDITION_INPUT.md` for archive rotation and append-only updates. It loads complete stores internally and preserves existing records, but does not replace live evidence checks, semantic duplicate review or image licensing checks. Full browser acceptance coverage includes all three homepage tabs and every companion page at desktop and mobile widths.
+Use the resumable operations in `docs/DAILY_RUN.md` to avoid repeated setup and successful checks. Prefer the dry-run-first edition helper described in `docs/EDITION_INPUT.md` for archive rotation and append-only updates. It loads complete stores internally and preserves existing records, but does not replace live evidence checks, semantic duplicate review or image licensing checks. Full browser acceptance coverage includes all three homepage tabs and every companion page at desktop and mobile widths.
 
 ## Freshness uses two clocks
 
@@ -114,6 +116,7 @@ Never confuse a recently published recap with a new development. Never reject a 
 ## Image rules
 
 - Prefer official press images with clear reuse/embedding terms, Wikimedia Commons, or Unsplash.
+- Reuse an accurate photograph from `data/image-library.json` when its reviewed rights apply; daily live loading still needs verification.
 - Record an accurate credit and descriptive alt text.
 - Do not use a search-result thumbnail, screenshot an article, or hotlink a site that blocks embedding.
 - Verify the final rendered image loads. If rights or reliability are unclear, choose another image.

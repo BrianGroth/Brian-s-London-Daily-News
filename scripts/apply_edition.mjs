@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { isDeepStrictEqual } from "node:util";
 import { renderIndex } from "./render_edition.mjs";
+import { pruneCalendar } from "./calendar_housekeeping.mjs";
 import { CATEGORY_IDS } from "../poi/js/lib/categories.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -146,7 +147,7 @@ function appendRecords(existing, additions, validate, similar, label) {
 
 // Prepare and validate everything in memory before touching any target file.
 export function buildEditionUpdate(input, current) {
-  fields(input, ["date", "edition"], ["images", "events", "pois", "resources"]);
+  fields(input, ["date", "edition"], ["images", "events", "pois", "resources", "pruneExpired"]);
   const issueDate = date(input.date);
   fields(input.edition, ["morning", "stories"]);
   requireValue(current.editions.schemaVersion === 1 && current.events.version === 1 && current.pois.schemaVersion === 1, "Unsupported store schema.");
@@ -181,7 +182,9 @@ export function buildEditionUpdate(input, current) {
   const allIds = Object.values(nextIssues).flatMap((issue) => issue.stories.map((story) => story.id));
   requireValue(new Set(allIds).size === allIds.length, "Story IDs must be unique across the archive.");
   const editions = { ...structuredClone(current.editions), updatedAt: issueDate, images, issues: nextIssues };
-  const events = appendRecords(current.events.events, input.events ?? [], (event) => {
+  requireValue(input.pruneExpired === undefined || typeof input.pruneExpired === "boolean", "pruneExpired must be boolean.");
+  const calendar = input.pruneExpired ? pruneCalendar(current.events, issueDate) : { store: current.events, removed: [] };
+  const events = appendRecords(calendar.store.events, input.events ?? [], (event) => {
     fields(event, ["id", "title", "startDate", "section", "location", "sourceName", "sourceUrl", "summary", "addedOn"], ["endDate", "time", "venue", "action", "actionUrl"]);
     for (const key of ["title", "section", "location", "sourceName", "summary"]) text(event[key], key);
     date(event.startDate); date(event.addedOn);
@@ -221,10 +224,10 @@ export function buildEditionUpdate(input, current) {
   return {
     editions,
     index: renderIndex(current.index, editions),
-    events: events.added.length ? { ...current.events, updatedAt: issueDate, events: events.records } : current.events,
+    events: events.added.length || calendar.removed.length ? { ...current.events, updatedAt: issueDate, events: events.records } : current.events,
     pois: pois.added.length ? { ...current.pois, updatedAt: issueDate, items: pois.records } : current.pois,
     resources,
-    summary: { date: issueDate, archive: sameDay ? "same-day replacement" : "rotated once", events: { added: events.added, unchanged: events.unchanged }, pois: { added: pois.added, unchanged: pois.unchanged }, resources: { added: resourceAdded, unchanged: resourceUnchanged } },
+    summary: { date: issueDate, archive: sameDay ? "same-day replacement" : "rotated once", events: { added: events.added, unchanged: events.unchanged, removed: calendar.removed.map(({ id, title }) => ({ id, title })) }, pois: { added: pois.added, unchanged: pois.unchanged }, resources: { added: resourceAdded, unchanged: resourceUnchanged } },
   };
 }
 

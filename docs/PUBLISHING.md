@@ -14,7 +14,7 @@ licensing. No paid service, production dependency, or application redesign is ad
   packages with `npx playwright install --with-deps chromium`.
 - An installed Edge can be used when the Chromium download is unavailable:
   append `--channel msedge`, or set `PLAYWRIGHT_CHANNEL=msedge`.
-- No API keys or new repository secrets are needed. Source-network access is needed
+- Startup, evidence caching and resumable checks are documented in `docs/DAILY_RUN.md`. No API keys or new repository secrets are needed. Source-network access is needed
   for collection and the live browser check.
 
 ## Daily acceptance
@@ -78,22 +78,12 @@ only change the raw candidates and compact brief. It installs from the lockfile,
 runs Node/Python validation, stages only public runtime files, then runs browser
 regression checks against that staged artifact before uploading it. Screenshots
 are retained for seven days. The public artifact excludes discovery files,
-structured edition inputs, prompts, tests, package dependencies and operational
+structured edition inputs, image-rights metadata, prompts, tests, package dependencies and operational
 documentation; it includes the calendar and POI runtime stores.
 
-**Deployment is disabled until explicitly activated.** This implementation does
-not change GitHub settings or publish anything. Branch-based Pages remains active,
-so its existing discovery-triggered deployments continue until activation.
+The target is **GitHub Actions** as the single Pages source. Discovery-only commits (RSS, direct candidates, full brief and reading brief) are excluded. The Monday weekly discovery workflow additionally removes expired calendar entries and saves a reviewed-image queue; an actual calendar change triggers validation. Until activation is verified, legacy branch publication remains active.
 
-When publication and the settings change are authorized, a maintainer should:
-
-1. Merge the reviewed pipeline and confirm its validation run passes.
-2. Set Settings → Pages → Build and deployment → Source to **GitHub Actions**.
-3. Set repository Actions variable `PAGES_ACTIONS_ENABLED` to exactly `true`.
-4. Manually dispatch `Validate and publish static site` from `main`, leaving
-   `restore_sha` blank, and verify the deployment job succeeds.
-5. Confirm the public site and `deployment.json` report the intended revision and
-   edition; perform the live browser acceptance check against the public URL.
+Activation is an explicit hosting operation: publish and validate this workflow, then dispatch `pages.yml` with `activate_pages=true`. After validation, its deployment job uses its narrowly scoped Pages-write token to request the hosting change. Subsequent deployments run when the current Pages source is `workflow`; setting the optional repository variable `PAGES_ACTIONS_ENABLED=false` pauses them. If GitHub denies activation, a repository administrator must select **Settings → Pages → Source → GitHub Actions**. Preparation and validation never change hosting settings.
 
 Only the deployment job receives `pages:write` and `id-token:write`; validation has
 read access and checkout does not persist credentials. Pull requests cannot deploy.
@@ -112,8 +102,8 @@ and `npm ci` still verifies dependencies.
 ## Deployment evidence and recovery
 
 Each staged site contains `deployment.json` with its Git commit, issue label and
-SHA-256 of `index.html`. The deployment job retries public fetches briefly and
-requires both the expected commit and exact homepage digest to match. A successful
+SHA-256 of `index.html` and critical public HTML, CSS, JS and calendar/POI assets. The deployment job retries public fetches briefly and
+requires both the expected commit and exact homepage digest to match. The daily runner uses `verify_public.mjs` to compare those assets with local HEAD, avoiding a second complete UI tour when the already-tested bytes match. A successful
 upload alone is not deployment verification.
 
 After activation, a normal public smoke check is:

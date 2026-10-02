@@ -45,6 +45,9 @@ class CollectorTests(unittest.TestCase):
 
         serial = collector.collect({}, NOW, feed, workers=1)
         parallel = collector.collect({}, NOW, monitored)
+        for payload in (serial, parallel):
+            for health in payload["feeds"]:
+                self.assertGreaterEqual(health.pop("duration_ms"), 0)
         self.assertEqual(serial, parallel)
         self.assertEqual(len(parallel["feeds"]), sum(map(len, collector.SEARCHES.values())) + len(collector.PUBLISHER_FEEDS))
         self.assertTrue(all(value <= collector.MAX_PER_HOST for value in maximum.values()))

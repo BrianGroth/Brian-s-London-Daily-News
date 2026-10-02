@@ -22,7 +22,10 @@ for (const entry of [...files, ...directories]) {
 }
 const index = await readFile(path.join(output, "index.html"));
 const editions = JSON.parse(await readFile(path.join(root, "data/editions.json"), "utf8"));
+const critical = ["index.html", "about.html", "resources.html", "secondary.css", "upcoming-events.html", "upcoming-events.js", "upcoming-events.css", "data/upcoming-events.json", "poi/index.html", "poi/sw.js", "poi/js/app.js", "poi/js/lib/categories.js", "poi/data/editorial-pois.json"];
+const criticalHashes = Object.fromEntries(await Promise.all(critical.map(async file => [file, createHash("sha256").update(await readFile(path.join(output, file))).digest("hex")])));
 const manifest = {
+  files: criticalHashes,
   commit: execFileSync("git", ["rev-parse", "HEAD"], { cwd: root, encoding: "utf8" }).trim(),
   issueLabel: editions.issues.today.label,
   indexSha256: createHash("sha256").update(index).digest("hex"),

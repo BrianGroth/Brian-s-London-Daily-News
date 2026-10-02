@@ -5,7 +5,8 @@ import { readFile, mkdtemp, mkdir, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { chromium } from "playwright";
+import { launchBrowser } from "./lib/browser_runtime.mjs";
+import { installBrowserNetwork } from "./lib/browser_network.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const live = process.argv.includes("--live");
@@ -16,6 +17,7 @@ const option = (name) => {
   return process.argv[index + 1];
 };
 const expectedDate = option("--expected-date");
+const networkMode = option("--network-mode") || "direct";
 const serveRoot = path.resolve(root, option("--serve-dir") || ".");
 const editions = JSON.parse(await readFile(path.join(root, "data/editions.json"), "utf8"));
 const calendar = JSON.parse(await readFile(path.join(root, "data/upcoming-events.json"), "utf8"));
@@ -54,7 +56,7 @@ if (!baseUrl.endsWith("/")) baseUrl += "/";
 const origin = new URL(baseUrl).origin;
 const local = (file) => new URL(file, baseUrl).href;
 const pixel = '<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640"><rect width="640" height="640" fill="#e5e9ef"/></svg>';
-const browser = await chromium.launch({ channel: option("--channel") || process.env.PLAYWRIGHT_CHANNEL || undefined }).catch((error) => {
+const browser = await launchBrowser({ channel: option("--channel") || process.env.PLAYWRIGHT_CHANNEL || undefined }).catch((error) => {
   server.close();
   throw error;
 });
@@ -220,6 +222,7 @@ try {
   for (const viewport of [{ name: "desktop", width: 1440, height: 1000 }, { name: "mobile", width: 390, height: 844 }]) {
     const coordinate = editorial.items.find(({ category }) => category !== "listed") || { lat: 51.514843, lon: -0.091321 };
     const context = await browser.newContext({ viewport: { width: viewport.width, height: viewport.height }, timezoneId: "Europe/London", locale: "en-GB", geolocation: { latitude: coordinate.lat, longitude: coordinate.lon }, permissions: ["geolocation"], serviceWorkers: "block" });
+    if (live) await installBrowserNetwork(context, { mode: networkMode, additionalHosts: [new URL(baseUrl).hostname, ...Object.values(editions.images).map(image => new URL(image.src).hostname)] });
     if (!live) await context.route("**/*", async (route) => {
       const request = route.request();
       if (new URL(request.url()).origin === origin) return route.continue();
@@ -250,6 +253,7 @@ try {
   await new Promise((resolve) => server.close(resolve));
   await writeFile(path.join(artifacts, "report.json"), JSON.stringify({
     schemaVersion: 1,
+    networkMode,
     mode: live ? "live" : "isolated",
     baseUrl,
     expectedDate: expectedDate || null,

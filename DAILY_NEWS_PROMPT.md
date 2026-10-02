@@ -1,167 +1,68 @@
 # Daily generation prompt
 
-Copy everything below the divider into a Codex task opened in this repository.
+Brian's single normal request is: **Generate and publish today's edition of Brian's London Daily News, following DAILY_NEWS_PROMPT.md.** The agent performs every internal command; Brian does not run Python or npm separately.
 
----
+## Prepare once, then research selected leads
 
-Generate and publish today's edition of **Brian's London Daily News**.
+1. Read `NEWS_CONTEXT.md` completely once, inspect git status and preserve unrelated work. Use the Europe/London date. Read `docs/DAILY_RUN.md` the first time using this workflow or when its code changes.
+2. Run `npm run daily:prepare`. This runs the startup checks, `python scripts/collect_candidates.py`, direct official activity collection and brief preparation. Continue with live fallback research for failed or weak discovery sections. Do not rebuild browser/network workarounds during each run: use the preflight result and source-specific logs.
+3. Read **`data/reading-brief.json` first**, not the full RSS or full daily brief. It contains collection warnings, all three issue dates, adjacent headlines, twenty leads across the five sections and nearby calendar opportunities. Full discovery and alternative coverage remain in `data/daily-brief.json` and `data/rss_candidates.json`.
+4. Use `npm run lookup:context -- candidates ID` for selected full leads; fetch alternatives by their IDs. Use targeted `stories`, `events`, `pois`, `images` and `resources` lookups when needed. Never repeatedly dump whole stores, opaque Google redirect URLs or raw source HTML. The helper loads complete stores internally.
+5. Read selected primary pages live with `npm run read:source -- HTTPS_URL --refresh`. Inspect targeted saved evidence when the bounded extraction omits necessary facts. Verify publication time, dates, price, availability, booking and cancellation status. A fresh HTTP response or scraped snippet is not proof of availability. Never cite a Google News redirect.
+6. Prefer direct official Heath/Heath Hands, Hampstead Theatre, City and Barbican activity leads; use RSS/search for AI, technology and genuine coverage gaps. Diagnose a blocked shared source once. Give a URL at most two attempts, then use a qualified alternative. Do not wait repeatedly on several forms with the same network failure.
 
-Treat this as a complete research, editorial, implementation, validation, and publication run. Do not merely suggest stories or give me a prose briefing.
+## Exactly ten justified stories
 
-## Start here
+Use adjacent section blocks in this order: **4 Near Home, 2 Near Work, 1 London AI, 1 London Technology, 2 Plan Ahead**. Within each multi-story section, put the nearest deadline or event first. Stories must be genuinely distinct; never cover two angles on one announcement, venue or activity.
 
-1. Read `NEWS_CONTEXT.md` completely and inspect git status before any file writes. Preserve unrelated changes.
-2. Run `python scripts/collect_candidates.py` to refresh `data/rss_candidates.json`. This is an internal Codex step; Brian does not run it separately. If collection fails, continue with live web research and report the collector failure at the end.
-3. Run `npm run prepare:brief`. This ranks the RSS pool into `data/daily-brief.json`, retaining alternative coverage alongside diverse leads, calendar opportunities, source restrictions and collection-health warnings. A weak or short section is a research gap, not permission to pad it.
-4. Read the current git status and `data/daily-brief.json` first. Use the targeted context lookup described in `README.md` for complete records needed to evaluate a candidate or prepare an update. Do not reread entire edition, event, POI and resource stores merely because their summaries appear in the brief. Read the files directly involved in code or manual data changes. `PotentialUnusedResources.html` is a research backlog, not an approved production source list.
-5. Use the **Europe/London** calendar date. Inspect all three edition dates and the adjacent story summaries before changing anything; retrieve complete stories when checking a possible repeat. The edition helper loads and preserves all archive records internally.
-6. Treat `data/daily-brief.json` and `data/rss_candidates.json` as discovery leads only. Begin with the compact brief, open destination pages, verify publication times and facts live, and prefer primary sources. Never cite a Google News redirect as the final source. Read the full RSS file only when the shortlist is insufficient or when diagnosing collection/ranking; broaden live web research whenever a section remains weak.
+- Near Home: activity-led choices useful within roughly a twenty-minute walk of NW3 2RU. Strong non-repeating Heath items take priority. Broaden to Gospel Oak, Finchley Road, South End Green or other nearby areas when necessary.
+- Near Work: useful around EC2N 4AY, Liverpool Street, Bishopsgate, Broadgate, Spitalfields or the wider Square Mile.
+- AI and technology: name a concrete central London institution, deployment, investment, workforce, public service or consequence. A passing London mention or office alone is insufficient. These two stories must be non-duplicative.
+- Plan Ahead: a real future decision, prioritising the nearest meaningful event, deadline, ticket release, closure or closing date. Look further ahead when limited capacity or an important deadline makes early action useful.
 
-## Fast, reliable execution
+Hard news normally comes from the previous **36 hours**. Extend to 72 hours only for a clearly stronger, still-new London story and record why. For activities the **important date is the event, availability, deadline, or action date**, not the page's publication date. Older listings are valid only after today's live date/availability/cancellation checks. Never include an expired action or event recap as an upcoming opportunity.
 
-- Use one agent for the normal run. Batch independent searches and source checks in parallel where safe; do not create subagents merely to save wall-clock time because they increase total model usage.
-- Do not reread large generated files after the compact brief contains the needed fields. Open only the candidates and repository files required for the decisions being made.
-- Let scripts handle mechanical work: candidate reduction, archive rendering, date labels and structural checks. Keep model effort for editorial judgement, live verification and concise writing.
-- Collection timestamps are not evidence that every feed succeeded. Inspect health and freshness warnings, and broaden live research for failed sources or weak sections. Never wait for the scheduled collector or reuse cached claims as verified reporting.
-- Keep the full candidate pool and grouped alternate coverage available. Topic grouping and keyword ranking are aids, not proof of semantic duplication or London relevance. Official activity pages and upcoming calendar entries still require today's date, availability and cancellation checks.
-- Record elapsed research, update and validation time plus shortlist gaps in the completion report. Do not promise a speedup based only on faster script execution.
-- This prompt is designed to work well with a balanced, lower-cost Codex model at low or medium reasoning. Escalate to a frontier model or higher reasoning only when verification, conflicting evidence or a failed validation genuinely requires it.
+Compare every proposed story with every story in the issue becoming yesterday, using adjacent headlines and full records where needed. Same-day reruns replace today only; newer dates rotate once. A continuing story requires a full intervening issue and a material new development. If broadening still cannot justify the required ten, preserve local work and report the exact shortfall; do not publish a short or padded edition.
 
-## Build exactly ten stories in this order
+Each story needs the existing schema: a `YYYY-MM-DD-` stable ID, required section, concise specific headline, location (`Near NW3`, `Near EC2N`, `London-based` or `Across London`), a 45–80-word executive brief, a distinct 25–55-word why-it-matters explanation, direct source pairs and `imageKey`. Use Walk, Book, Participate or Avoid only when useful. Book/Participate require a verified direct HTTPS `actionUrl`; Walk/Avoid remain plain text.
 
-Each section runs as one adjacent block before the next section begins. Stories within a multi-story section must cover genuinely distinct topics or events — never two angles on the same announcement, venue, or activity.
-
-1–4. **Near Home** — four timely, activity-led listings genuinely useful within roughly a 20-minute walk of NW3 2RU. Search current official Hampstead Heath and Heath Hands listings first; strong non-repeating Heath items take priority.
-5–6. **Near Work** — useful around EC2N 4AY: Liverpool Street, Bishopsgate, Broadgate, Spitalfields, or the Square Mile.
-7. **London AI** — one material AI development in which a London institution, deployment, investment, workforce, public service, or community is central.
-8. **London Technology** — one significant non-duplicative technology or science advancement with a concrete London connection.
-9–10. **Plan Ahead** — a London event, deadline, ticket release, scheduled disruption, or closing date where acting early is useful.
-
-Within each multi-story section, order the more time-critical story first — the one with the nearer deadline, the soonest event, or the more perishable news — and the more evergreen or exploratory items later.
-
-Never fill a section slot with a weak or marginal story merely to reach ten. If initial research leaves a section short, broaden before giving up: widen Near Home's walking radius slightly (Gospel Oak, Finchley Road, South End Green are all in scope per `NEWS_CONTEXT.md`), extend Near Work across the wider Square Mile, broaden the London AI/Technology search terms, or look further ahead for Plan Ahead.
-
-Ten stories is a hard requirement, not a target — every archived edition must have exactly ten, and `tests/site.test.mjs` enforces this. If, after genuinely broadening the search, a section still cannot support its required number of justified stories, do not publish a short edition and do not pad with a weak one. Treat this the same as any other publishing blocker described at the end of this document: stop, preserve local work, and report the exact shortfall (which section, what was tried, why nothing qualified) instead of reporting success.
-
-`about.html` hand-describes this editorial mix for readers ("ten concise choices... across five themes") and is not regenerated by this prompt. If the story count or section split ever changes again, update `about.html` to match in the same run — it is easy to leave it stale otherwise.
-
-For each story supply:
-
-- a stable ID beginning with `YYYY-MM-DD-`;
-- a concise, specific headline;
-- the required section;
-- one of `Near NW3`, `Near EC2N`, `London-based`, or `Across London`;
-- `Walk`, `Book`, `Participate`, or `Avoid` only when genuinely useful;
-- a direct `actionUrl` whenever the action is `Book` or `Participate`. A story with `Walk` or `Avoid` (or any action without a verified direct link) renders as plain text, not a button — never invent a placeholder `actionUrl` just to make an action look clickable;
-- one properly licensed, hotlink-safe editorial image with accurate alt text and credit — real photography or official artwork from the story's own source, never a generic stock stand-in for a specific place or event;
-- an `imageKey` that points to that image in the top-level `images` object in `data/editions.json`; reuse an existing image only when it remains accurate and properly credited;
-- an executive brief of about 45–80 words;
-- a distinct “Why it matters” explanation of about 25–55 words;
-- direct source URLs, favouring official or primary evidence.
-
-## Freshness: use the correct clock
-
-Apply freshness differently to news and to dated activities:
-
-- **Hard news, AI, technology, policy, research, funding, transport announcements, and other developments:** normally use an article or primary announcement published or materially updated within the previous **36 hours**. Start with the newest verified candidates. Extend to 72 hours only when the story is clearly the strongest fit and remains new to this edition; state the reason in the completion report.
-- **Events, activities, performances, consultations, ticket releases, closures, deadlines, and planned disruption:** the important date is the event, availability, deadline, or action date—not merely the publication date of the page. An older official listing is valid when the activity is still upcoming and useful. Verify its date, time, availability, price, booking status, and cancellation status today.
-- Never include an event that has already happened or an expired action merely because its page is recent.
-- For Plan Ahead, prefer the nearest meaningful future decision. Look further ahead only when booking pressure, limited capacity, or an important deadline makes early action useful.
-- When two candidates are equally strong, choose the one with the more recent material development or the more immediate useful action.
+Look up an accurate image in the reviewed `data/image-library.json` via `lookup:context images` before researching a new one. Keep archive images honestly identified. Use real photography or official artwork of the actual place/event/technology, with verified reuse terms, accurate alt text and credit. Never substitute generic stock, assume company artwork is reusable, or label an archive photograph as current coverage. New rights decisions are editorial; the library and weekly checks cannot certify them automatically. Selected images must load in the live browser check.
 
 ## Morning strip
 
-Update:
+Verify weather and transport immediately before writing: the integrated Nearby POI link to `poi/`; London high/overnight low linked to the Met Office; the most relevant rain window; pollen or air quality when notable; Northern and Overground statuses linked to TfL. Keep the existing tuple/style schema. Never use a placeholder or cached volatile fact as a live reading.
 
-- the integrated `Nearby POI` link to `poi/`;
-- London high/low temperature linked to the relevant Met Office forecast;
-- the most decision-relevant rain window;
-- pollen or air quality when notable;
-- current Northern line and London Overground status, with each status linked to the TfL status page.
+## Bookkeeping without exploratory catalogue work
 
-Verify all volatile facts live. Never leave a placeholder such as “Check live”.
+**Persist every new point of interest:** append each qualified named, fixed, visitable London place actually encountered in this edition's research to `poi/data/editorial-pois.json`. Verify name, WGS84 coordinates, description and authoritative URL live. Deduplicate stable IDs, URLs and matching names within 45 metres against editorial records and the POI app's live sources. Use the existing schema/category, preserve all records, and report additions or that none qualified. Temporary installations, vague neighbourhoods, private places and unverified coordinates do not qualify. Shell/code changes require a POI service-worker version bump.
 
-## Archive and duplicate rules
+**Persist every upcoming event:** save each verified future dated opportunity encountered during this bounded research to `data/upcoming-events.json`, even if it is not one of the ten stories. Verify relevant date, time, venue, price, availability, booking and cancellations live. Use one ISO date-range record per multi-day event; deduplicate IDs, normalized titles, URLs and overlapping dates. Preserve existing future records. Never insert unreviewed direct-collector leads as verified calendar entries.
 
-- Make edition and image changes in `data/editions.json`, never by hand inside the generated data block in `index.html`.
-- Prepare verified input following `docs/EDITION_INPUT.md`, then run the edition helper in dry-run mode and inspect its proposed changes before applying it with `--write`. Use a local ignored `.daily-work/` directory for the input. The helper handles rotation, rendering and supported append-only additions; it does not verify reporting, licensing or semantic story novelty. Resolve duplicate conflicts by inspecting the existing record rather than bypassing validation. Follow the documented manual workflow for verified event corrections, cancellations or expired-event removal.
-- If `today` already has today's London date, this is a same-day rerun: replace/update `today` only.
-- Otherwise delete the old `day-before`, move `yesterday` to `day-before`, move `today` to `yesterday`, and insert the new edition as `today`.
-- Never rotate twice on the same date.
-- Reject the same underlying story as yesterday even if the headline, source, or angle differs.
-- Compare every proposed story with every story in yesterday before publication.
-- A continuing story may return only after a full intervening issue and a material new development.
-- Keep exactly ten stories in every new edition, preserve the story count of already-published archival editions, and keep all story IDs unique across adjacent editions.
-- After updating structured edition data, run `npm run render:edition`. This regenerates the embedded `images` and `issues` block plus the visible Today date in `index.html`, keeping the published page self-contained for GitHub Pages.
-- Never hand-edit generated edition data in `index.html`. If generated output is wrong, fix `data/editions.json` or `scripts/render_edition.mjs` and render again.
+Broad year-ahead calendar/POI discovery and image-library upkeep belong to the Monday weekly process described in `docs/DAILY_RUN.md`. Do not expand daily research into an entire programme solely to fill those catalogues. Still save all qualified incidental discoveries within the daily scope.
 
-## Source directory
+Prepare input in ignored `.daily-work/` following `docs/EDITION_INPUT.md`, then run:
 
-Treat `resources.html` as append-only production data.
+```text
+npm run daily:apply -- --input .daily-work/verified-edition.json
+npm run daily:apply -- --input .daily-work/verified-edition.json --write
+```
 
-- Inspect the complete source-domain/status context in the brief or lookup output; retrieve the full card when adding or reviewing a source.
-- Never use or reactivate a `data-status="do-not-use"` entry.
-- Add one well-written resource card for every new normalized hostname cited today.
-- Ignore `www.` and URL paths when deduplicating.
-- Never delete existing cards or rewrite the directory from only today's sources.
+Review the dry-run report before writing. The runner enables deterministic expired-event removal only after the final date, validates additions, preserves archives and renders `index.html`. Cancellation/correction requires authoritative evidence and an explicit reviewed edit. Never hand-edit generated homepage data. No future record is silently rewritten or removed.
 
-## Persist every new point of interest
+Treat `resources.html` as append-only: add one useful card for each newly cited normalized hostname, ignoring `www.` and paths. Never delete cards, duplicate domains or use/reactivate a `do-not-use` source. The full active/blocked context is checked by the helper and available through lookups.
 
-While researching and writing the edition, identify every newly discovered, named, fixed-location London place that a reader could genuinely visit. This includes venues, museums, galleries, gardens, monuments, historic buildings and other lasting places connected to today’s stories—even when the place is not selected as one of the ten stories.
+**Update the calendar page every run** by changing its JSON store when records qualify and verifying its dynamic display; it does not have a separate HTML render step. Confirm the visible updated date, count and changed records in both Month and Agenda views. If `upcoming-events.js` changes, bump its HTML cache-busting version. Treat the calendar as an editorial planning source and reverify selected opportunities live.
 
-- For every eligible new place found, append one record to `poi/data/editorial-pois.json` in the same run. Do not postpone it to a later edition.
-- A place is eligible only when its name, WGS84 latitude/longitude, useful description and official or otherwise authoritative page can be verified live.
-- Do not add temporary event installations, generic neighbourhoods or boroughs, online-only activities, private addresses, vague locations, or a venue whose continued existence cannot be verified.
-- Deduplicate before adding: compare stable IDs, normalized names, source URLs, and coordinates against the editorial dataset and the POI page’s existing sources. Treat matching names within 45 metres as the same place. Never remove or silently rewrite an existing editorial POI merely because it appears in another source.
-- Use a stable lowercase ID, one current category from `poi/js/lib/categories.js`, numeric `lat` and `lon`, a concise factual `description`, an official `url`, the discovery `sourceUrl`, and today’s London date in `addedOn`.
-- Keep the JSON valid, preserve every existing record, set `updatedAt` to today’s London date when records are appended, and add no speculative fields.
-- Finding an eligible POI creates an obligation to append it; not finding one is acceptable. State the number and names of POIs added—or explicitly state that none qualified—in the completion report.
-- If the POI shell or source code changes, also bump the POI service-worker version. A data-only editorial append does not require a shell redesign.
+## Validate, review and publish
 
-## Persist every upcoming event
+Preserve the design and navigation locked in `NEWS_CONTEXT.md`: navy/white masthead, cool-grey paper, editorial type, rules and square media; explicit rolling three-day archive; accent why-it-matters rule; Book/Participate bordered links; Walk/Avoid plain labels; linked morning facts; footer links only to Upcoming Events, About and Sources. Do not redesign during a daily run. `about.html` must continue to describe the ten-story 4/2/1/1/2 mix.
 
-While researching the edition, append every verified London event, performance, exhibition, consultation, ticket release, deadline, planned disruption or other dated opportunity that is still upcoming to `data/upcoming-events.json`—even when it is not selected as one of the ten stories.
+Run `npm run daily:validate`. It refreshes finished brief context, confirms rendering, runs `npm test`, `npm run test:collector`, `python -m py_compile scripts/collect_candidates.py`, `git diff --check` and the complete `npm run test:browser:live` acceptance tour. Reuse valid successful checkpoints; repeat failed checks or those invalidated by changes. Never substitute isolated fixtures for live acceptance or weaken assertions to hide a failure.
 
-**Update the calendar page every run.** Updating the JSON store alone is not sufficient: render `upcoming-events.html` after the data change and confirm its visible “Calendar updated” date comes from the new `updatedAt` value, the event count is current, and every added, updated or removed record appears correctly in both Month and Agenda views. If `upcoming-events.js` changes, update its cache-busting version in `upcoming-events.html`.
+Inspect desktop/mobile screenshots and all three tabs: date, ten current stories, section order, images/credits, direct URLs, action styles, keyboard navigation, overflow and console errors. Follow Upcoming Events through the footer and verify Month/Agenda records, date and count. Include `resources.html`, `about.html` and `poi/` in the full tour; inspect added cards and relevant map areas for new POIs. Source verification, rights review and semantic novelty remain editorial duties.
 
-- Add an event only when its date and authoritative source can be verified live. Verify time, venue, availability, price, booking status and cancellation status when those details apply.
-- Deduplicate by stable ID, normalized title, source URL and overlapping date range. Never remove or silently rewrite an existing future event merely because it appears in another source.
-- Use a stable lowercase ID beginning with the start date. Include `title`, `startDate`, `section`, `location`, `sourceName`, `sourceUrl`, a concise factual `summary`, and today's London date in `addedOn`. Add `endDate`, 24-hour `time`, `venue`, `action` and direct `actionUrl` when verified and useful. Do not add speculative fields.
-- Use ISO `YYYY-MM-DD` dates. For a multi-day event, use one record with `startDate` and `endDate`; do not create a duplicate record for every day.
-- Remove events only after their final date has passed or when an authoritative source confirms cancellation. Preserve future records, keep the JSON valid, and set `updatedAt` to today's London date whenever the file changes.
-- Treat the calendar as an editorial planning source on future runs: check it for timely Plan Ahead candidates, but reverify all volatile details live before publishing a story.
-- State the number and names of calendar events added, updated or removed—or explicitly state that no calendar changes qualified—in the completion report.
+After that concrete review, run `npm run daily:publish -- --reviewed`. It commits only intended publication/discovery files with `Publish London edition YYYY-MM-DD`, pushes `origin/main` without force, and verifies the GitHub Actions deployment manifest and exact public asset hashes against local HEAD. Resolve an advanced remote safely and revalidate. Existing unrelated staged work is a blocker, not permission to include it.
 
-## Design lock
+Report success only after the current issue is in `index.html`, required checks pass, the intended commit is pushed and the public deployment is verified. If blocked, preserve work and report the specific failed phase and log path. Include the public URL, event/POI/resource additions and permitted removals, freshness exceptions and remaining gaps. Use the saved report for full names; keep chat concise.
 
-Preserve the established design and responsive behaviour (as of the 2026-08 "Fleet Street, Fixed" revision):
-
-- white masthead text on dark navy `#08264A`;
-- near-black text on very light cool grey `#F3F5F7`;
-- editorial serif masthead/headlines and modern sans-serif body;
-- open broadsheet composition, sharp rules, square image frames, no generic rounded card grid;
-- the "Rolling 3-day edition · today, yesterday, day before" line under the issue date, stating the archive limit explicitly;
-- `Book`/`Participate` actions with a verified `actionUrl` render as a bordered accent call-to-action (`.action-label.action-link`); `Walk`/`Avoid` or any action without a direct link render as plain muted text (`.action-plain`) — never give a non-clickable action the bordered button treatment, and never give a real link the plain-text treatment;
-- the accent-coloured left rule on the "Why it matters" line (`.why`), keeping it visually distinct from the executive brief above it;
-- the morning strip's linked facts stay live links: `Nearby POI` → `poi/`, the temperature reading → the Met Office forecast, and both transit statuses → the TfL status page (see "Morning strip" above for the verification rule); `rain` and `pollen` stay plain text, as they always have;
-- working date tabs, keyboard navigation, image credits, source links, and mobile layout;
-- footer links to Upcoming Events, About & method, and Sources only. Points of Interest is reached solely through the morning strip's `Nearby POI` link — do not re-add a Points of Interest link to the daily page's footer, since that would duplicate the morning strip.
-
-Do not redesign the site during a daily edition run.
-
-## Validation and publication
-
-These are Codex responsibilities included in this single prompt; Brian does not run them separately.
-
-1. Run `npm run prepare:brief` again so its compact duplicate/event/POI context reflects the finished structured data.
-2. Run `npm run render:edition` and then `npm test`. The test command first verifies that `index.html` is exactly in sync with `data/editions.json`.
-3. Run `npm run test:collector`, `python -m py_compile scripts/collect_candidates.py` and `git diff --check`.
-4. Run `npm run test:browser:live` for the full browser acceptance suite, and inspect its screenshots at desktop and mobile widths. Check all three date tabs, ten current stories in the 4/2/1/1/2 section mix, visible date, actual image loading, direct links, action styling, footer navigation, horizontal overflow and console errors. The deterministic `npm run test:browser` mode is useful for CI but cannot replace live image and source checks. If browser tooling is unavailable, perform the complete checklist interactively and report that substitution; do not silently omit coverage.
-5. Always follow the homepage footer’s `Upcoming Events` link. Confirm the visible updated date and count match `data/upcoming-events.json`, and inspect every added, updated or removed record in both Month and Agenda views.
-6. Include `resources.html`, `about.html` and `poi/` in the full browser tour every daily run, matching `AGENTS.md`. Inspect new source cards and search the relevant area when editorial POIs changed. Automation removes repeated interaction work, not page coverage or editorial review.
-7. Confirm every `Walk`/`Avoid` story renders as plain text, every `Book`/`Participate` story renders as a bordered link, source hostnames are deduplicated, no story repeats yesterday, and all JSON remains valid.
-8. Review the final diff and commit only intended edition, shortlist, resource, event and POI changes with `Publish London edition YYYY-MM-DD`.
-9. Push to `origin/main` without force.
-10. Confirm local `HEAD` equals `origin/main`, monitor the Pages deployment, and verify the public homepage shows today's London issue date.
-
-Do not report success until the edition is in `index.html`, validation passes, the intended commit is pushed, and the public deployment is verified. If publishing is blocked, preserve the local work and report the exact blocker.
+Use one agent, batch independent reads/checks and keep model judgement for reporting and ambiguity. Record research wall time separately from preparation, update, validation and publication; report observed payload bytes, and actual token usage only when available from Codex/API telemetry. Do not claim a total speedup from one fast script or invent token counts. A balanced model at low/medium reasoning is the normal choice; use stronger reasoning only for a real verification conflict.

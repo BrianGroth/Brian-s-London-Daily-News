@@ -108,6 +108,20 @@ test("appends stores without rewriting existing records and reports idempotent a
   assert.deepEqual(repeated.summary.pois.unchanged, [poi().id]);
 });
 
+test("opt-in expiry cleanup preserves future records while appending verified additions", () => {
+  const { current, input } = fixture();
+  const past = event({ id: 'past', startDate: '2026-09-01', addedOn: '2026-09-01' });
+  const future = event({ id: 'future', title: 'Different future event', sourceUrl: 'https://example.org/future', startDate: '2026-10-01' });
+  current.events.events = [past, future];
+  const original = structuredClone(current);
+  input.pruneExpired = true;
+  input.events = [event()];
+  const result = buildEditionUpdate(input, current);
+  assert.deepEqual(result.events.events, [future, event()]);
+  assert.deepEqual(current, original);
+  assert.equal(result.summary.events.removed.length, 1);
+});
+
 test("conflicting existing event IDs and overlapping names or canonical URLs require review", () => {
   for (const incoming of [
     event({ summary: "Changed" }),

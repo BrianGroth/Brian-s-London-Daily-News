@@ -12,7 +12,18 @@
     "test": "npm run check:edition && node scripts/run_tests.mjs tests && npm --prefix poi test",
     "test:collector": "python -m unittest discover -s tests -p \"*_test.py\"",
     "test:browser": "node scripts/browser_smoke.mjs",
-    "test:browser:live": "node scripts/browser_smoke.mjs --live"
+    "test:browser:live": "node --use-env-proxy scripts/browser_smoke.mjs --live",
+    "prepare:sources": "node --use-env-proxy scripts/collect_sources.mjs",
+    "read:source": "node --use-env-proxy scripts/read_source.mjs",
+    "preflight": "node --use-env-proxy scripts/preflight.mjs",
+    "daily:prepare": "node --use-env-proxy scripts/daily_run.mjs prepare",
+    "daily:apply": "node --use-env-proxy scripts/daily_run.mjs apply",
+    "daily:validate": "node --use-env-proxy scripts/daily_run.mjs validate",
+    "daily:publish": "node --use-env-proxy scripts/daily_run.mjs publish",
+    "daily:status": "node scripts/daily_run.mjs status",
+    "weekly:maintain": "node --use-env-proxy scripts/daily_run.mjs maintain",
+    "verify:public": "node --use-env-proxy scripts/verify_public.mjs",
+    "check:images": "node --use-env-proxy scripts/check_image_library.mjs"
   },
   "devDependencies": {
     "playwright": "1.63.0"

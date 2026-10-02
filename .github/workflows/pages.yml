@@ -5,13 +5,22 @@ on:
     paths-ignore:
       - 'data/rss_candidates.json'
       - 'data/daily-brief.json'
+      - 'data/reading-brief.json'
+      - 'data/direct-candidates.json'
   push:
     branches: [main]
     paths-ignore:
       - 'data/rss_candidates.json'
       - 'data/daily-brief.json'
+      - 'data/reading-brief.json'
+      - 'data/direct-candidates.json'
   workflow_dispatch:
     inputs:
+      activate_pages:
+        description: 'Explicitly switch this repository to the validated GitHub Actions Pages pipeline'
+        required: false
+        default: false
+        type: boolean
       restore_sha:
         description: 'Optional full commit SHA to redeploy; blank builds this workflow revision'
         required: false
@@ -26,10 +35,14 @@ concurrency:
 
 jobs:
   validate:
+    permissions:
+      contents: read
+      pages: read
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     outputs:
       site_sha: ${{ steps.revision.outputs.sha }}
+      pages_source: ${{ steps.hosting.outputs.source }}
     steps:
       - name: Validate optional recovery revision
         env:
@@ -64,6 +77,12 @@ jobs:
       - name: Record revision
         id: revision
         run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Read current Pages source
+        if: github.event_name != 'pull_request'
+        id: hosting
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: echo "source=$(gh api \"repos/${GITHUB_REPOSITORY}/pages\" --jq .build_type)" >> "$GITHUB_OUTPUT"
       - name: Stage public runtime files
         run: node scripts/stage_site.mjs
       - name: Install Chromium
@@ -87,8 +106,8 @@ jobs:
           path: _site
 
   deploy:
-    # Inert until an authorized maintainer switches Pages source AND sets this variable.
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && vars.PAGES_ACTIONS_ENABLED == 'true'
+    # The single production pipeline; repository Pages source is GitHub Actions.
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && vars.PAGES_ACTIONS_ENABLED != 'false' && (needs.validate.outputs.pages_source == 'workflow' || inputs.activate_pages == true)
     needs: validate
     runs-on: ubuntu-24.04
     timeout-minutes: 10
@@ -99,6 +118,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Activate Pages only when explicitly requested
+        if: inputs.activate_pages == true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method PUT "repos/${GITHUB_REPOSITORY}/pages" -f build_type=workflow
       - name: Set up Node for deployment verification
         uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
         with:
@@ -124,6 +148,11 @@ jobs:
               const html = await response.text();
               const digest = createHash('sha256').update(html).digest('hex');
               if (metadata.commit !== process.env.EXPECTED_SHA || metadata.indexSha256 !== digest) throw new Error('Public revision or homepage is still stale');
+              for (const [file, expected] of Object.entries(metadata.files || {})) {
+                const asset = await fetch(`${base}${file}?revision=${process.env.EXPECTED_SHA}`, { signal: AbortSignal.timeout(10000) });
+                const actual = createHash('sha256').update(Buffer.from(await asset.arrayBuffer())).digest('hex');
+                if (!asset.ok || actual !== expected) throw new Error(`Public asset is still stale: ${file}`);
+              }
               console.log(`Verified ${metadata.commit}: ${metadata.issueLabel} at ${base}`);
               process.exit(0);
             } catch (error) {

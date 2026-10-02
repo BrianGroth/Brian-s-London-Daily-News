@@ -1,0 +1,47 @@
+name: Weekly discovery and calendar housekeeping
+on:
+  schedule:
+    - cron: '35 5 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: london-weekly-discovery
+  cancel-in-progress: true
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+      - name: Refresh direct activity discovery
+        run: node --use-env-proxy scripts/collect_sources.mjs --refresh
+      - name: Remove entries only after their final date
+        run: node scripts/calendar_housekeeping.mjs --write
+      - name: Prepare full and reading briefs
+        run: node scripts/prepare_daily_brief.mjs
+      - name: Check reviewed image licences
+        id: images
+        continue-on-error: true
+        run: node --use-env-proxy scripts/check_image_library.mjs --refresh
+      - name: Save research and image review queue
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: weekly-research-queue
+          path: |
+            data/direct-candidates.json
+            .daily-work/image-library-check.json
+          retention-days: 14
+      - name: Commit discovery and permitted housekeeping
+        run: |
+          git config user.name 'london-news-candidate-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/direct-candidates.json data/daily-brief.json data/reading-brief.json data/upcoming-events.json
+          git diff --quiet --cached || git commit -m 'Refresh weekly discovery and expire completed events'
+          git push origin HEAD:main

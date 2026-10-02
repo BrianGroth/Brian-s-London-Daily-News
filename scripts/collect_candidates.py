@@ -213,16 +213,17 @@ def collect(existing: dict, now: datetime, fetcher=fetch_xml,
 
     def run(job):
         url, name, query, is_search = job
+        feed_started = time.perf_counter()
         health = {"url": url, "name": name, "attempted_at": collected_at,
                   "last_success_at": previous.get(url, {}).get("last_success_at")}
         try:
             with gates[urllib.parse.urlsplit(url).hostname]:
                 items = (google_news(name, query, collected_at, fetcher) if is_search
                          else publisher_feed(name, url, collected_at, fetcher))
-            health.update(status="ok", last_success_at=collected_at, item_count=len(items))
+            health.update(status="ok", last_success_at=collected_at, item_count=len(items), duration_ms=round((time.perf_counter() - feed_started) * 1000))
             return items, health
         except Exception as exc:  # One failed feed must not suppress the others.
-            health.update(status="error", item_count=0, error=str(exc))
+            health.update(status="error", item_count=0, error=str(exc), duration_ms=round((time.perf_counter() - feed_started) * 1000))
             return [], health
 
     with ThreadPoolExecutor(max_workers=workers) as executor:

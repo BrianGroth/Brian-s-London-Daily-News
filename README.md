@@ -6,7 +6,7 @@ Everything required to research, produce, validate, and publish the newspaper is
 
 ## Generate today's edition
 
-**Brian has one required action:** open this repository as a Codex task and send the complete contents of [`DAILY_NEWS_PROMPT.md`](DAILY_NEWS_PROMPT.md).
+**Brian has one required action:** open this repository as a Codex task and send: **“Generate and publish today’s edition of Brian’s London Daily News, following DAILY_NEWS_PROMPT.md.”** The repository file is the executable workflow; there is no need to paste several pages each day.
 
 That one prompt instructs Codex to:
 
@@ -19,11 +19,11 @@ That one prompt instructs Codex to:
 - run Python/Node validation and browser checks;
 - commit, push, and verify the published edition.
 
-Brian does **not** need to run Python or npm separately. Those commands are implementation and validation steps that Codex runs while fulfilling the prompt. The scheduled GitHub Action is an optional background head start: it refreshes the candidate pool and compact brief each morning, but it is not required for the prompt to work and it never edits the newspaper.
+Brian does **not** need to run Python or npm separately. Those commands are implementation and validation steps that Codex runs while fulfilling the prompt. The scheduled GitHub Action is an optional background head start: it refreshes RSS, direct activity discovery and the reading brief each morning, but it is not required for the prompt to work and it never edits the newspaper.
 
 If a Codex run cannot execute one of its internal steps, it must continue with safe alternatives where possible and report the exact blocker rather than asking Brian to infer which command to run.
 
-The optimized workflow is designed for a balanced, lower-cost Codex model at low or medium reasoning. It starts with `data/daily-brief.json` and reads the much larger RSS discovery file only when the shortlist is insufficient. A frontier model remains useful as a fallback for conflicting evidence, difficult verification or failed validation—not as the default for every mechanical step.
+The optimized workflow is designed for a balanced, lower-cost Codex model at low or medium reasoning. It starts with `data/reading-brief.json` and reads the much larger RSS discovery file only when the shortlist is insufficient. A frontier model remains useful as a fallback for conflicting evidence, difficult verification or failed validation—not as the default for every mechanical step.
 
 ## Rediscover or change the whole project
 
@@ -40,7 +40,12 @@ The maintenance prompt does not publish a daily edition unless the request expli
 | `NEWSPAPER_MAINTENANCE_PROMPT.md` | Whole-project rediscovery, repair and feature-work prompt |
 | `NEWS_CONTEXT.md` | Stable editorial context, source seeds, and quality rules |
 | `data/rss_candidates.json` | Machine-collected leads; never treated as verified reporting |
-| `data/daily-brief.json` | Compact ranked discovery view used by the normal daily run |
+| `data/daily-brief.json` | Full ranked discovery index and alternatives, fetched on demand |
+| `data/reading-brief.json` | Small model-facing initial view with candidate IDs |
+| `data/direct-candidates.json` | Unverified official activity discoveries |
+| `data/image-library.json` | Reviewed photo subject, author and licence metadata |
+| `scripts/daily_run.mjs` | Resumable preparation, updates, checks and publishing |
+| `docs/DAILY_RUN.md` | Commands, evidence cache, checkpoints and weekly upkeep |
 | `data/editions.json` | Editable source of truth for images and the rolling three-edition archive |
 | `data/upcoming-events.json` | Verified future events collected during daily research |
 | `upcoming-events.html` | Searchable month and agenda calendar for planning ahead |
@@ -59,25 +64,28 @@ The maintenance prompt does not publish a daily edition unless the request expli
 
 ## Publishing
 
-The site is static and suitable for GitHub Pages. The repository includes a tested, path-filtered Pages workflow; see `docs/PUBLISHING.md` for activation and rollback. Existing branch-based Pages settings remain in effect until an explicitly authorized settings change. The candidate workflow can run on a schedule, but only the daily Codex workflow updates the public edition. Discovery-only changes do not trigger the new deployment workflow once activated.
+The test-gated GitHub Actions Pages pipeline excludes discovery-only commits and verifies the staged public runtime by commit and asset hashes. Hosting activation is explicit; see `docs/PUBLISHING.md` for the current source and activation steps. The daily prompt authorizes publication, while `docs/DAILY_RUN.md` describes the resumable runner. A Monday workflow handles broad discovery, expired-event housekeeping and image review queues without inserting unverified editorial records.
 
 Useful internal commands, normally run by Codex through the prompts, are:
 
 ```text
-python scripts/collect_candidates.py
-npm run prepare:brief
-npm run render:edition
-npm test
-npm run test:collector
+npm run daily:prepare
+npm run lookup:context -- candidates ID
+npm run read:source -- HTTPS_URL --refresh
+npm run daily:apply -- --input .daily-work/verified-edition.json
+npm run daily:apply -- --input .daily-work/verified-edition.json --write
+npm run daily:validate
+npm run daily:publish -- --reviewed
 ```
 
 ## Efficient daily preparation
 
 The collector fetches independent feeds with bounded concurrency and reports per-feed failures. A refreshed JSON timestamp alone does not establish successful collection. The brief uses the actual preparation time and London calendar date; it surfaces stale discovery, source restrictions and coverage gaps. Activity and primary-source signals improve lead ordering, while grouped alternative coverage remains available. Neither ranking nor grouping verifies a story.
 
-Read the brief first, then retrieve only the complete records needed for editorial decisions:
+Read `data/reading-brief.json` first (about 9 KB in the measured compatibility run), then retrieve only the complete records needed for editorial decisions:
 
 ```text
+npm run lookup:context -- candidates ID
 npm run lookup:context -- editions
 npm run lookup:context -- stories "hampstead"
 npm run lookup:context -- events "heath"
@@ -92,7 +100,7 @@ Prepare verified additions using `docs/EDITION_INPUT.md`. The edition update hel
 
 For browser checks, install development tooling once with `npm ci` and `npx playwright install chromium`. Run `npm run test:browser` for deterministic UI regression checks and `npm run test:browser:live` for real image/network checks before daily publication. Keep visual review and live source/booking verification. Both modes exercise the full companion-page tour; see `docs/PUBLISHING.md` for options and evidence output. Playwright is development-only; the deployed site retains its existing dependency-free architecture.
 
-Measure research time, usable shortlisted leads, update time and validation time separately when assessing savings. Preserve the 39 existing tests and full editorial/browser checks rather than trading coverage for a faster reported run.
+Measure research time, usable shortlisted leads, update time and validation time separately when assessing savings. Preserve the existing tests and full editorial/browser checks rather than trading coverage for a faster reported run.
 
 ## Design
 

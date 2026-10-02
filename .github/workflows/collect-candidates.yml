@@ -35,6 +35,9 @@ jobs:
       - name: Collect candidate stories
         run: python scripts/collect_candidates.py
 
+      - name: Refresh direct activity listings
+        run: node --use-env-proxy scripts/collect_sources.mjs
+
       - name: Prepare compact daily brief
         run: node scripts/prepare_daily_brief.mjs
 
@@ -42,7 +45,7 @@ jobs:
         run: |
           git config user.name "london-news-candidate-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/rss_candidates.json data/daily-brief.json
+          git add data/rss_candidates.json data/direct-candidates.json data/daily-brief.json data/reading-brief.json
           git diff --quiet --cached || git commit -m "Refresh London news candidates"
           # Refuse to overwrite a concurrent publication. A fresh run can retry.
           git push origin HEAD:main

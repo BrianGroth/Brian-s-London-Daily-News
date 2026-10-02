@@ -21,7 +21,7 @@ Treat this as a whole-project engineering task, not a daily newspaper publicatio
 3. Use `rg --files` to inventory the repository. Read `package.json`, tests, GitHub workflows and the files directly involved in my request.
 4. Reconstruct the live data flow from source rather than relying on prior assumptions:
    - `scripts/collect_candidates.py` creates the unverified discovery pool in `data/rss_candidates.json`;
-   - `scripts/prepare_daily_brief.mjs` reduces it deterministically to `data/daily-brief.json`;
+   - `scripts/prepare_daily_brief.mjs` combines it with direct activity discovery into the full `data/daily-brief.json` and the small `data/reading-brief.json`;
    - `scripts/lookup_context.mjs` retrieves complete editorial records on demand;
    - `scripts/apply_edition.mjs` validates verified input and applies archive rotation and append-only bookkeeping, defaulting to a dry run;
    - `data/editions.json` is the editable source for images and the three newspaper editions;
@@ -29,7 +29,7 @@ Treat this as a whole-project engineering task, not a daily newspaper publicatio
    - `data/upcoming-events.json`, `resources.html` and `poi/data/editorial-pois.json` are durable append/preserve stores governed by the daily prompt;
    - GitHub Pages publishes the static site.
    - `scripts/browser_smoke.mjs` checks desktop/mobile behavior; its isolated CI mode never replaces live publication acceptance;
-   - `scripts/stage_site.mjs` stages public runtime files for the optional Actions-based Pages pipeline. See `docs/PUBLISHING.md` for activation boundaries.
+   - `scripts/stage_site.mjs` stages public runtime files for the single test-gated Actions-based Pages pipeline. See `docs/PUBLISHING.md` for deployment and recovery, and `docs/DAILY_RUN.md` for the evidence cache and resumable runner.
 5. Distinguish authored source from generated output. Never hand-edit the generated edition block in `index.html`; edit `data/editions.json` or the renderer and run `npm run render:edition`.
 6. Identify the relevant invariants, tests, cache-busting rules, service-worker rules, accessibility requirements and publication boundaries before editing.
 
