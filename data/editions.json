@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-05",
+  "updatedAt": "2026-10-02",
   "images": {
     "keatsFlow": {
       "src": "https://images.squarespace-cdn.com/content/v1/5eff13e8f5beea28d1539c30/875184a4-51b9-4408-b706-ad86b12edec9/Keats+house+and+garden.jpg",
@@ -346,10 +346,304 @@
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Clock_on_Holy_Sepulchre_church%2C_London_-_2022-09-10.jpg/960px-Clock_on_Holy_Sepulchre_church%2C_London_-_2022-09-10.jpg",
       "alt": "Clock on Holy Sepulchre church, Holborn Viaduct",
       "credit": "Photo: The wub / Wikimedia Commons / CC BY-SA 4.0"
+    },
+    "octHeath": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/6/64/Parliament_Hill_and_Hampstead_Heath_-_geograph.org.uk_-_4273777.jpg",
+      "alt": "Parliament Hill and Hampstead Heath; archive landscape photograph",
+      "credit": "Photo: Clint Mann / Wikimedia Commons / https://creativecommons.org/licenses/by-sa/2.0/"
+    },
+    "octSpitalfields": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Old_Spitalfields_Market_Panorama%2C_London%2C_UK_-_Diliff.jpg/1280px-Old_Spitalfields_Market_Panorama%2C_London%2C_UK_-_Diliff.jpg",
+      "alt": "Covered Old Spitalfields Market beside Market Street; archive venue photograph",
+      "credit": "Photo: DAVID ILIFF / Wikimedia Commons / https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    "octBarbican": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Barbican_Centre.jpg/1280px-Barbican_Centre.jpg",
+      "alt": "Sign outside the Barbican Centre; venue photograph, not an exhibition artwork",
+      "credit": "Photo: Tom Morris / Wikimedia Commons / https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    "octKenwood": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Kenwood_House.jpg/1280px-Kenwood_House.jpg",
+      "alt": "Kenwood House; the craft fair takes place in its Service Wing",
+      "credit": "Photo: Mikegr / Wikimedia Commons / https://creativecommons.org/licenses/by-sa/2.0/"
+    },
+    "octAssembly": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/London_Assembly_chamber.jpg/1280px-London_Assembly_chamber.jpg",
+      "alt": "The London Assembly chamber at its current City Hall in Newham; archive photograph",
+      "credit": "Photo: Cabinetkey / Wikimedia Commons / CC0"
+    },
+    "octLaser": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/78/LAGEOS-NASA.jpg",
+      "alt": "NASA’s LAGEOS laser-ranging satellite with retroreflectors; archive illustration of the technology, not Foundational hardware",
+      "credit": "Photo: NASA / Wikimedia Commons / Public domain"
     }
   },
   "issues": {
     "today": {
+      "label": "London • Friday 2 October 2026",
+      "footer": "Friday 2 October 2026",
+      "morning": {
+        "mode": "Nearby POI",
+        "modeUrl": "poi/",
+        "temperature": "21° / 12° overnight",
+        "weatherUrl": "https://weather.metoffice.gov.uk/forecast/gcpvj0v07",
+        "rain": "10% rain 9am–noon; under 5% later",
+        "pollen": "UV 3 · moderate",
+        "transit": [
+          [
+            "Northern",
+            "Minor delays",
+            "check",
+            "https://tfl.gov.uk/tube-dlr-overground/status/"
+          ],
+          [
+            "Overground",
+            "Weaver minor delays; Mildmay good",
+            "check",
+            "https://tfl.gov.uk/tube-dlr-overground/status/"
+          ]
+        ]
+      },
+      "stories": [
+        {
+          "id": "2026-10-02-urmetazoan-tonight",
+          "section": "Near home",
+          "headline": "Two sisters, one farewell: The Urmetazoan tonight",
+          "location": "Near NW3",
+          "brief": "Hampstead Theatre’s Downstairs stage has a 7.45pm performance of Alex Rugman’s The Urmetazoan tonight, Friday 2 October. One sister is preparing for a one-way mission into deep space; the other wants her to stay. The official schedule offers booking for tonight. Full-price tickets are listed at £28 or £35; the play lasts 100 minutes without an interval and carries guidance of 14+.",
+          "why": "A nearby evening option with a firm start time and a different production from the archive’s Kimberly Akimbo. Book the specific performance rather than assuming the headline ticket price guarantees a particular seat.",
+          "sources": [
+            [
+              "Hampstead Theatre",
+              "https://www.hampsteadtheatre.com/production/the-urmetazoan/"
+            ],
+            [
+              "Venue photograph & licence",
+              "https://commons.wikimedia.org/wiki/File:Hampstead_Theatre_-_geograph.org.uk_-_485799.jpg"
+            ],
+            [
+              "Photo licence",
+              "https://creativecommons.org/licenses/by-sa/2.0/"
+            ]
+          ],
+          "imageKey": "sepTheatre",
+          "action": "Book",
+          "actionUrl": "https://my.hampsteadtheatre.com/15993/16010"
+        },
+        {
+          "id": "2026-10-02-saturday-litter-pick",
+          "section": "Near home",
+          "headline": "Give Parliament Hill an hour on Saturday",
+          "location": "Near NW3",
+          "brief": "Heath Hands runs a drop-in litter pick tomorrow, Saturday 3 October, from noon to 1pm. Meet at the Heath Info Hut near Parliament Hill’s tennis courts at the start. Everyone is welcome, equipment is provided and no booking is required. The session concentrates on the Parliament Hill area, making this a practical, short contribution to the Heath rather than a full-day volunteering commitment.",
+          "why": "An easy way to help the green space used by local walkers and families. The supplied equipment and one-hour format remove much of the preparation normally needed for a conservation session.",
+          "sources": [
+            [
+              "Heath Hands",
+              "https://www.heath-hands.org.uk/whatson/litter-pick-3oct26"
+            ],
+            [
+              "Photograph & licence",
+              "https://commons.wikimedia.org/wiki/File:Parliament_Hill_and_Hampstead_Heath_-_geograph.org.uk_-_4273777.jpg"
+            ],
+            [
+              "Photo licence",
+              "https://creativecommons.org/licenses/by-sa/2.0/"
+            ]
+          ],
+          "imageKey": "octHeath",
+          "action": "Walk"
+        },
+        {
+          "id": "2026-10-02-conker-championships",
+          "section": "Near home",
+          "headline": "Sunday’s conker championships welcome first-timers",
+          "location": "Near NW3",
+          "brief": "The Hampstead Heath Conker Championships return to Parliament Hill Bandstand on Sunday 4 October, 12.30–4pm. Register in person from 12.30pm; the first round begins at 1.15pm. Organisers provide conkers and explain the rules, with age categories for competitors. Donations are welcome. Free family nature activities and live music accompany the competition, so visitors can enjoy the afternoon without entering a match.",
+          "why": "Arriving for registration matters if you want to compete. For everyone else, this offers a seasonal local outing with activities alongside the matches, making it more flexible than a seated performance or booked workshop.",
+          "sources": [
+            [
+              "Heath Hands",
+              "https://www.heath-hands.org.uk/whatson/hampsteadheathconkerchampionships-2026"
+            ],
+            [
+              "Photograph & licence",
+              "https://commons.wikimedia.org/wiki/File:Parliament_Hill_and_Hampstead_Heath_-_geograph.org.uk_-_4273777.jpg"
+            ],
+            [
+              "Photo licence",
+              "https://creativecommons.org/licenses/by-sa/2.0/"
+            ]
+          ],
+          "imageKey": "octHeath",
+          "action": "Walk"
+        },
+        {
+          "id": "2026-10-02-wild-about-heath",
+          "section": "Near home",
+          "headline": "Meet the Heath’s wildlife interpreters next Saturday",
+          "location": "Near NW3",
+          "brief": "Wild About Hampstead Heath offers a free drop-in session on Saturday 10 October, 2–4pm. Heath Hands’ volunteer wildlife interpreters will be in the Parliament Hill area: look for their distinctive large Wild About Hampstead Heath bike. Everyone is welcome and there is no need to book. This is an informal opportunity to ask about nature on the Heath, rather than a scheduled guided bird walk.",
+          "why": "A useful date for a relaxed family visit or a nature question you have been saving. You can drop in during the two-hour window and combine the encounter with your own walk.",
+          "sources": [
+            [
+              "Heath Hands",
+              "https://www.heath-hands.org.uk/whatson/wildabouthampsteadheath-101026"
+            ],
+            [
+              "Photograph & licence",
+              "https://commons.wikimedia.org/wiki/File:Parliament_Hill_and_Hampstead_Heath_-_geograph.org.uk_-_4273777.jpg"
+            ],
+            [
+              "Photo licence",
+              "https://creativecommons.org/licenses/by-sa/2.0/"
+            ]
+          ],
+          "imageKey": "octHeath",
+          "action": "Walk"
+        },
+        {
+          "id": "2026-10-02-spitalfields-arts-weekend",
+          "section": "Near work",
+          "headline": "Spitalfields Arts Market starts today",
+          "location": "Near EC2N",
+          "brief": "Spitalfields Arts Market is on Market Street from Friday 2 to Sunday 4 October, with free entry. The market’s official page confirms this weekend among its remaining 2026 dates, even though its headline looks ahead to 2027. Browse paintings, prints, ceramics and photography, and meet the artists behind them. The next listed weekends are 6–8 November and 4–6 December.",
+          "why": "A timely browsing stop within reach of Liverpool Street and Bishopsgate. Free entry lets you look without committing to a purchase; the three-day run gives both a workday and a weekend opportunity.",
+          "sources": [
+            [
+              "Spitalfields Market",
+              "https://www.spitalfields.co.uk/upcoming-events/a-brush-with-creativity-spitalfields-arts-market/"
+            ],
+            [
+              "Photograph & licence",
+              "https://commons.wikimedia.org/wiki/File:Old_Spitalfields_Market_Panorama,_London,_UK_-_Diliff.jpg"
+            ],
+            [
+              "Photo licence",
+              "https://creativecommons.org/licenses/by-sa/3.0/"
+            ]
+          ],
+          "imageKey": "octSpitalfields",
+          "action": "Walk"
+        },
+        {
+          "id": "2026-10-02-yuko-mohri-curve",
+          "section": "Near work",
+          "headline": "A free new sound installation opens in the Curve",
+          "location": "Near EC2N",
+          "brief": "Yuko Mohri: In Concert opened at the Barbican’s Curve yesterday, 1 October, and runs to 24 January 2027. The free installation brings kinetic sculpture, light and sound together using objects connected with the Barbican. Regular opening is Tuesday–Sunday, 11am–7pm; Mondays are closed. No paid exhibition ticket is needed, making it a straightforward cultural stop beyond the immediate Liverpool Street area.",
+          "why": "The newly opened installation offers a fresh reason to walk across the Square Mile. Its free entry and evening opening make a short visit practical, without the cost or scheduling commitment of a performance.",
+          "sources": [
+            [
+              "Barbican",
+              "https://www.barbican.org.uk/whats-on/2026/event/yuko-mohri-in-concert"
+            ],
+            [
+              "Photograph & licence",
+              "https://commons.wikimedia.org/wiki/File:Barbican_Centre.jpg"
+            ],
+            [
+              "Photo licence",
+              "https://creativecommons.org/licenses/by-sa/3.0/"
+            ]
+          ],
+          "imageKey": "octBarbican",
+          "action": "Walk"
+        },
+        {
+          "id": "2026-10-02-assembly-ai-planning",
+          "section": "London AI",
+          "headline": "London scrutiny turns to AI in planning decisions",
+          "location": "London-based",
+          "brief": "The London Assembly’s Planning and Regeneration Committee put AI in planning on its 1 October agenda. Its 30 September briefing asks how automated tools affect resources, transparency, accountability and public trust, with London academics, Arup and planning specialists invited. It cites a government estimate of 250,000 manual hours saved annually across UK planning authorities; that is a national forecast, not a measured saving in London.",
+          "why": "Planning affects the buildings and neighbourhoods Londoners live with. The scrutiny questions make AI a concrete local public-service issue: who checks a tool’s output, how decisions are explained, and whether residents can challenge them.",
+          "sources": [
+            [
+              "London Assembly briefing",
+              "https://www.london.gov.uk/who-we-are/what-london-assembly-does/london-assembly-press-releases/how-ai-changing-planning-decisions-london"
+            ],
+            [
+              "Photograph & licence",
+              "https://commons.wikimedia.org/wiki/File:London_Assembly_chamber.jpg"
+            ]
+          ],
+          "imageKey": "octAssembly"
+        },
+        {
+          "id": "2026-10-02-foundational-laser-ranging",
+          "section": "London technology",
+          "headline": "London’s Foundational raises £8.2m for satellite laser ranging",
+          "location": "London-based",
+          "brief": "London-based Foundational emerged from stealth on 1 October with £8.2m in pre-seed funding. The company combines automated ground lasers, passive satellite retroreflectors and its Origin software to improve orbital position data. It reports millimetre-level ranging and day-and-night operations up to 2,000km. The funding is intended to expand its station network and manufacturing. These performance claims come from the company, rather than an independent benchmark.",
+          "why": "More precise orbital information can help operators manage increasingly crowded space. This is a concrete London engineering business building measurement infrastructure; its usefulness will depend on network coverage, adoption and demonstrated performance in operation.",
+          "sources": [
+            [
+              "Foundational announcement",
+              "https://foundational.space/news/foundational-emerges-from-stealth"
+            ],
+            [
+              "Tech.eu reporting",
+              "https://tech.eu/2026/10/01/foundational-secures-ps82m-pre-seed-as-it-emerges-from-stealth/"
+            ],
+            [
+              "Photograph & licence",
+              "https://commons.wikimedia.org/wiki/File:LAGEOS-NASA.jpg"
+            ]
+          ],
+          "imageKey": "octLaser"
+        },
+        {
+          "id": "2026-10-02-kenwood-craft-fair",
+          "section": "Plan ahead",
+          "headline": "Plan a free Kenwood craft-fair visit on Sunday",
+          "location": "Across London",
+          "brief": "Kenwood’s Autumn Craft Fair takes place on Sunday 4 October, 11am–3pm, in the Eighteenth-Century Service Wing beside the Brew House Café and Steward’s Room. English Heritage confirms free entry, drop-in attendance and no booking requirement. Local makers will offer jewellery, pottery, artwork and clothing. Set aside time for the walk across the Heath: this is farther from South End Green than the Parliament Hill activities.",
+          "why": "The four-hour window gives the useful planning constraint, rather than a ticket deadline. It is an opportunity to meet local makers and combine browsing with a longer Heath outing before the stalls close.",
+          "sources": [
+            [
+              "English Heritage",
+              "https://www.english-heritage.org.uk/visit/whats-on/kenwood-autumn-craft-fair/"
+            ],
+            [
+              "Photograph & licence",
+              "https://commons.wikimedia.org/wiki/File:Kenwood_House.jpg"
+            ],
+            [
+              "Photo licence",
+              "https://creativecommons.org/licenses/by-sa/2.0/"
+            ]
+          ],
+          "imageKey": "octKenwood",
+          "action": "Walk"
+        },
+        {
+          "id": "2026-10-02-ryman-opening-week",
+          "section": "Plan ahead",
+          "headline": "Choose a lower-cost slot for Robert Ryman’s opening week",
+          "location": "Across London",
+          "brief": "Robert Ryman: The Real Thing opens at the Barbican Art Gallery on Thursday 8 October and runs to 28 February 2027. The retrospective brings together more than 60 works. Standard entry is £20.50 including the transaction fee, but Thursdays 5–8pm and Fridays 10am–noon are Pay What You Can. The gallery recommends allowing 90 minutes; choose your visit and ticket category through the official booking page.",
+          "why": "The opening Thursday’s evening window and Friday morning offer a practical way to plan around work and cost. Booking the relevant session matters: the lower-cost offer applies to specified hours rather than every visit.",
+          "sources": [
+            [
+              "Barbican",
+              "https://www.barbican.org.uk/whats-on/2026/event/robert-ryman-the-real-thing"
+            ],
+            [
+              "Photograph & licence",
+              "https://commons.wikimedia.org/wiki/File:Barbican_Centre.jpg"
+            ],
+            [
+              "Photo licence",
+              "https://creativecommons.org/licenses/by-sa/3.0/"
+            ]
+          ],
+          "imageKey": "octBarbican",
+          "action": "Book",
+          "actionUrl": "https://www.barbican.org.uk/whats-on/2026/event/robert-ryman-the-real-thing"
+        }
+      ]
+    },
+    "yesterday": {
       "label": "London • Saturday 5 September 2026",
       "footer": "Saturday 5 September 2026",
       "morning": {
@@ -635,7 +929,7 @@
         }
       ]
     },
-    "yesterday": {
+    "day-before": {
       "label": "London • Sunday 16 August 2026",
       "footer": "Sunday 16 August 2026",
       "morning": {
@@ -828,207 +1122,6 @@
             ]
           ],
           "imageKey": "london"
-        }
-      ]
-    },
-    "day-before": {
-      "label": "London • Saturday 15 August 2026",
-      "footer": "Saturday 15 August 2026",
-      "morning": {
-        "mode": "Nearby POI",
-        "modeUrl": "poi/",
-        "temperature": "28° / 14°",
-        "weatherUrl": "https://weather.metoffice.gov.uk/forecast/gcpvj0v07",
-        "rain": "Bright spells · rain possible overnight",
-        "pollen": "Moderate weed pollen · low pollution",
-        "transit": [
-          [
-            "Northern",
-            "Good service",
-            "good",
-            "https://tfl.gov.uk/status-updates/"
-          ],
-          [
-            "Overground",
-            "Mildmay part-suspended",
-            "check",
-            "https://tfl.gov.uk/status-updates/"
-          ]
-        ]
-      },
-      "stories": [
-        {
-          "id": "2026-08-15-keats-flow-and-write",
-          "section": "Near home",
-          "headline": "Stretch, then write in Keats's garden",
-          "location": "Near NW3",
-          "action": "Book",
-          "actionUrl": "https://www.eventbrite.co.uk/e/flow-and-write-yoga-and-creative-writing-tickets-1989100895323",
-          "brief": "Keats House hosts a two-hour Flow and Write workshop tomorrow, Sunday 16 August, from 10.45am to 12.45pm. The £18 adult session combines an accessible yoga flow with creative-writing prompts; admission to the house is included. Bring a mat, notebook, pen and water. No previous yoga or writing experience is required.",
-          "why": "This is a genuinely local Sunday plan with a finite class size, and the direct ticket page still gives enough time to book and gather the few things the workshop asks you to bring.",
-          "sources": [
-            [
-              "City of London",
-              "https://www.cityoflondon.gov.uk/events/flow-and-write-yoga-and-creative-writing-2"
-            ]
-          ],
-          "imageKey": "keatsFlow"
-        },
-        {
-          "id": "2026-08-15-heath-photo-competition",
-          "section": "Near home",
-          "headline": "Give your best Heath photograph a wider view",
-          "location": "Near NW3",
-          "action": "Participate",
-          "actionUrl": "https://www.heath-hands.org.uk/photo-competition",
-          "brief": "Heath Hands is accepting up to three photographs for its 2027 Hampstead Heath calendar until midnight on Monday 24 August. Entry is free. Images must have been taken on the Heath and suit a landscape calendar format; the adult winner receives £50 and the youth winner £30, with selected work shown in an exhibition.",
-          "why": "The deadline is close enough to prompt a weekend camera-roll review, while the free entry and three-image allowance make this an unusually easy way to turn a familiar local view into a public submission.",
-          "sources": [
-            [
-              "Heath Hands",
-              "https://www.heath-hands.org.uk/photo-competition"
-            ]
-          ],
-          "imageKey": "heathPhoto"
-        },
-        {
-          "id": "2026-08-15-barbican-play-make-do",
-          "section": "Near work",
-          "headline": "Play Make Do takes its final Barbican bow",
-          "location": "Near EC2N",
-          "action": "Walk",
-          "brief": "The Barbican's family festival reaches its final day tomorrow, Sunday 16 August. Play Make Do spreads circus, dance, storytelling and hands-on craft through the Centre, with free and affordable activities for all ages and quieter creative spaces alongside the busier performances. Individual session times and any ticket requirements sit in the live programme.",
-          "why": "It is a last-chance City outing rather than a distant diary note, and the mix of drop-in making, performance and lower-stimulation spaces gives families several ways to shape the visit.",
-          "sources": [
-            [
-              "Barbican",
-              "https://www.barbican.org.uk/whats-on/2026/series/play-make-do-2026-a-festival-of-fun-for-all-the-family"
-            ]
-          ],
-          "imageKey": "playMakeDo"
-        },
-        {
-          "id": "2026-08-15-barbican-arrival-outdoor-cinema",
-          "section": "Near work",
-          "headline": "Arrival lands in the Sculpture Court",
-          "location": "Near EC2N",
-          "action": "Book",
-          "actionUrl": "https://www.barbican.org.uk/whats-on/2026/event/outdoor-cinema-arrival",
-          "brief": "The Barbican screens Denis Villeneuve's Arrival outdoors in the Sculpture Court on Wednesday 19 August at 8.30pm. Standard tickets are £20 before the booking fee, with member, concession, under-18 and Young Barbican prices. The screening is captioned and audio-described; seats open an hour early, headphones are supplied, and warm or waterproof layers are sensible.",
-          "why": "The courtyard setting is a rare after-work use of the Barbican's architecture, but it is exposed to the weather and ticketed—so booking and deciding what to wear matter more than simply remembering the film time.",
-          "sources": [
-            [
-              "Barbican",
-              "https://www.barbican.org.uk/whats-on/2026/event/outdoor-cinema-arrival"
-            ]
-          ],
-          "imageKey": "arrival"
-        },
-        {
-          "id": "2026-08-15-amd-bold-lab-support",
-          "section": "London AI",
-          "headline": "AMD gives London's frontier-AI researchers more room to experiment",
-          "location": "London-linked",
-          "brief": "AMD plans to provide up to £5m of computing support during the British Open-ended Learning and Discovery Lab's first 18 months. The Oxford-led BOLD lab includes researchers affiliated with UCL and Imperial, who will examine learning beyond backpropagation, multi-agent discovery, adaptive physical AI and human-centred embodied systems, with open-source tools and spin-outs among the intended routes to impact.",
-          "why": "Compute access can decide which fundamental ideas leave the whiteboard. London's role through UCL and Imperial makes this a practical capacity increase for researchers trying alternatives to the industry's scale-first training recipe.",
-          "sources": [
-            [
-              "IT Pro",
-              "https://www.itpro.com/infrastructure/amd-pledges-support-for-oxford-frontier-ai-research-lab"
-            ],
-            [
-              "University of Oxford",
-              "https://www.ox.ac.uk/news/2026-06-22-oxford-to-host-new-uk-ai-research-lab"
-            ]
-          ],
-          "imageKey": "bold"
-        },
-        {
-          "id": "2026-08-15-qmul-edugrade-spinout",
-          "section": "London AI",
-          "headline": "Queen Mary's marking assistant moves towards a spin-out",
-          "location": "London-based",
-          "brief": "Queen Mary's EduGrade AI project has entered Innovate UK's ICURe business and spin-out readiness programme. The system turns an educator's rubric into draft feedback that the educator reviews and edits rather than publishing automatically. Trials covering more than 1,000 submissions cut marking time by about 60%, while 86% of surveyed students found the feedback helpful.",
-          "why": "The human-in-the-loop design and measured classroom results make this more than an AI-marking pitch. The new commercialisation stage will test whether a London university prototype can become a durable education product without removing academic judgement.",
-          "sources": [
-            [
-              "Queen Mary University of London",
-              "https://www.qmul.ac.uk/news/latest-news/2026/science-and-engineering/se/from-teaching-challenge-to-potential-spinout-queen-mary-ai-assessment-project-takes-next-step-.html"
-            ]
-          ],
-          "imageKey": "eduGrade"
-        },
-        {
-          "id": "2026-08-15-polymateria-plastic-biodegradation",
-          "section": "London technology",
-          "headline": "Imperial-linked chemistry gives common plastic a timed exit",
-          "location": "London-linked",
-          "brief": "Peer-reviewed work involving Imperial College London, Polymateria and Malaysia's SIRIM shows a manufacturing additive can transform polyethylene and polypropylene into bioavailable wax after their useful life, without persistent microplastic or toxic residue in the reported tests. Complete biodegradation took 292 days for polyethylene and 269 for polypropylene; the chemistry is added during normal manufacture.",
-          "why": "The result targets two of the world's most common plastics with existing factory equipment, but its limits matter: it is not a universal answer for polystyrene, PVC or products designed to last for years. Independent replication and real waste-system performance are the next tests.",
-          "sources": [
-            [
-              "Packaging Insights",
-              "https://www.packaginginsights.com/news/polymateria-pe-pp-biodegradation-tech.html"
-            ],
-            [
-              "npj Materials Degradation",
-              "https://www.nature.com/articles/s41529-026-00817-5"
-            ]
-          ],
-          "imageKey": "polymateria"
-        },
-        {
-          "id": "2026-08-15-one-triton-square-100gbps",
-          "section": "London technology",
-          "headline": "One Triton Square wires every floor for 100Gbps",
-          "location": "London-based",
-          "brief": "Vorboss has installed independently available 100Gbps fibre on every floor of British Land's One Triton Square. The Knowledge Quarter building provides more than 300,000 sq ft of offices, laboratories and flexible workspace, and is the first British Land property announced under the operator's building-connectivity partnership as technology and innovation occupiers demand heavier data capacity.",
-          "why": "For lab and compute-intensive tenants, connectivity promised at the building edge is more useful than a vague 'fast broadband' claim. The deployment also shows premium London workspace treating 100Gbps access as leasable infrastructure rather than a bespoke later upgrade.",
-          "sources": [
-            [
-              "Technology Reseller",
-              "https://technologyreseller.uk/one-triton-square-joins-londons-best-connected-buildings-with-vorboss-100gbps-connectivity-as-tech-and-innovation-occupier-demand-grows/"
-            ]
-          ],
-          "imageKey": "fibre"
-        },
-        {
-          "id": "2026-08-15-open-house-booking-day",
-          "section": "Plan ahead",
-          "headline": "Open House bookings unlock at midday Wednesday",
-          "location": "Across London",
-          "action": "Book",
-          "actionUrl": "https://programme.openhouse.org.uk/",
-          "brief": "Bookings for Open House Festival's ticketed activities open at noon on Wednesday 19 August. The free architecture festival runs from 12 to 20 September across all 33 London boroughs. Open City recommends creating a free programme account before release time; unticketed visits and walks will sit alongside the places that require advance booking.",
-          "why": "Popular interiors and small tours can disappear quickly when the booking window opens. An account and a short list prepared before Wednesday noon turn a huge programme into a realistic September plan.",
-          "sources": [
-            [
-              "Open City",
-              "https://open-city.org.uk/open-house-festival"
-            ],
-            [
-              "Open House programme",
-              "https://programme.openhouse.org.uk/"
-            ]
-          ],
-          "imageKey": "london"
-        },
-        {
-          "id": "2026-08-15-ucl-hatchery-deadline",
-          "section": "Plan ahead",
-          "headline": "UCL founders have two weeks to claim a BaseKX desk",
-          "location": "London-based",
-          "action": "Participate",
-          "actionUrl": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=_oivH5ipW0yTySEKEdmlwiKXvCA37atMnvcnTF5MqWpUOFlFVVpPREhMWTM3Q1oxVU1KTTVRQTRJUSQlQCNjPTEkJUAjdD1n",
-          "brief": "Applications for UCL's Hatchery incubator close at 11.59pm on Sunday 30 August. Current students and graduates from the past two years can apply if their company is registered before submission. Successful founders receive two years of equity-free support at BaseKX, beginning with a compulsory eight-week induction from 15 October to 3 December.",
-          "why": "The equity-free term and physical King's Cross base are unusually valuable, but eligibility paperwork and company registration make this a deadline to start now rather than a form to discover on the final Sunday.",
-          "sources": [
-            [
-              "UCL",
-              "https://www.ucl.ac.uk/enterprise/students/grow-your-startup-hatchery-incubator-programme"
-            ]
-          ],
-          "imageKey": "aiStudio"
         }
       ]
     }
