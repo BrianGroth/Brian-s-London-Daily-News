@@ -218,11 +218,12 @@ async function companions(page, viewportName) {
 }
 
 try {
+  const liveResponses = new Map();
   console.log(`Browser smoke: ${live ? "LIVE external services/media" : "ISOLATED external-service fixtures (not publication acceptance)"}; ${baseUrl}`);
   for (const viewport of [{ name: "desktop", width: 1440, height: 1000 }, { name: "mobile", width: 390, height: 844 }]) {
     const coordinate = editorial.items.find(({ category }) => category !== "listed") || { lat: 51.514843, lon: -0.091321 };
     const context = await browser.newContext({ viewport: { width: viewport.width, height: viewport.height }, timezoneId: "Europe/London", locale: "en-GB", geolocation: { latitude: coordinate.lat, longitude: coordinate.lon }, permissions: ["geolocation"], serviceWorkers: "block" });
-    if (live) await installBrowserNetwork(context, { mode: networkMode, additionalHosts: [new URL(baseUrl).hostname, ...Object.values(editions.images).map(image => new URL(image.src).hostname)] });
+    if (live) await installBrowserNetwork(context, { mode: networkMode, responses: liveResponses, additionalHosts: [new URL(baseUrl).hostname, ...Object.values(editions.images).map(image => new URL(image.src).hostname)] });
     if (!live) await context.route("**/*", async (route) => {
       const request = route.request();
       if (new URL(request.url()).origin === origin) return route.continue();

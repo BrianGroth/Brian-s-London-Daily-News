@@ -25,10 +25,9 @@ export function bridgeRequest(request, additionalHosts = []) {
       geometries.some(([, radius, lat, lon]) => Number(radius) > 10000 || Number(lat) < 51 || Number(lat) > 52 || Number(lon) < -1 || Number(lon) > 1)) return null;
   return { url: url.href, method: 'POST', body, headers: { 'Content-Type': 'application/x-www-form-urlencoded' } };
 }
-export async function installBrowserNetwork(context, { mode = 'direct', additionalHosts = [] } = {}) {
+export async function installBrowserNetwork(context, { mode = 'direct', additionalHosts = [], responses = new Map() } = {}) {
   if (mode === 'direct') return;
   if (mode !== 'proxy-bridge') throw new Error('Network mode must be direct or proxy-bridge');
-  const responses = new Map();
   await context.route(/^https:\/\//, async route => {
     let operation;
     try { operation = bridgeRequest(route.request(), additionalHosts); } catch { return route.continue(); }
@@ -42,6 +41,8 @@ export async function installBrowserNetwork(context, { mode = 'direct', addition
           const { response } = await publicFetch(operation.url, operation);
           const headers = Object.fromEntries(response.headers);
           for (const header of ['content-encoding', 'content-length', 'set-cookie']) delete headers[header];
+          // A fresh viewport must not replay a cached rate limit or server failure.
+          if (!response.ok) responses.delete(key);
           return { status: response.status, headers, body: await boundedBody(response, 20_000_000) };
         })());
       }
