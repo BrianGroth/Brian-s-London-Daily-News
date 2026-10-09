@@ -1,119 +1,160 @@
 {
-  "generated_at": "2026-10-08T12:04:02.715009+00:00",
-  "last_success_at": "2026-10-08T12:04:02.715009+00:00",
-  "collection_status": "ok",
+  "generated_at": "2026-10-09T11:55:46.418447+00:00",
+  "last_success_at": "2026-10-09T11:55:46.418447+00:00",
+  "collection_status": "partial",
   "feeds": [
     {
       "url": "https://news.google.com/rss/search?q=%22Hampstead%20Heath%22%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "Near Home",
-      "attempted_at": "2026-10-08T12:04:02.715009+00:00",
+      "attempted_at": "2026-10-09T11:55:46.418447+00:00",
       "last_success_at": "2026-10-08T12:04:02.715009+00:00",
-      "status": "ok",
-      "item_count": 15,
-      "duration_ms": 685
+      "status": "error",
+      "item_count": 0,
+      "error": "HTTP Error 503: Service Unavailable",
+      "duration_ms": 5950
     },
     {
       "url": "https://news.google.com/rss/search?q=%28Hampstead%20OR%20%22Belsize%20Park%22%20OR%20%22Swiss%20Cottage%22%20OR%20NW3%29%20London%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "Near Home",
-      "attempted_at": "2026-10-08T12:04:02.715009+00:00",
+      "attempted_at": "2026-10-09T11:55:46.418447+00:00",
       "last_success_at": "2026-10-08T12:04:02.715009+00:00",
-      "status": "ok",
-      "item_count": 15,
-      "duration_ms": 515
+      "status": "error",
+      "item_count": 0,
+      "error": "HTTP Error 503: Service Unavailable",
+      "duration_ms": 7204
     },
     {
       "url": "https://news.google.com/rss/search?q=%28Gospel%20Oak%20OR%20%22Finchley%20Road%22%20OR%20%22South%20End%20Green%22%29%20London%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "Near Home",
-      "attempted_at": "2026-10-08T12:04:02.715009+00:00",
+      "attempted_at": "2026-10-09T11:55:46.418447+00:00",
       "last_success_at": "2026-10-08T12:04:02.715009+00:00",
-      "status": "ok",
+      "status": "error",
       "item_count": 0,
-      "duration_ms": 2905
+      "error": "HTTP Error 503: Service Unavailable",
+      "duration_ms": 15817
     },
     {
       "url": "https://news.google.com/rss/search?q=%28%22City%20of%20London%22%20OR%20Bishopsgate%20OR%20Broadgate%20OR%20%22Liverpool%20Street%22%29%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "Near Work",
-      "attempted_at": "2026-10-08T12:04:02.715009+00:00",
+      "attempted_at": "2026-10-09T11:55:46.418447+00:00",
       "last_success_at": "2026-10-08T12:04:02.715009+00:00",
-      "status": "ok",
-      "item_count": 15,
-      "duration_ms": 2633
+      "status": "error",
+      "item_count": 0,
+      "error": "HTTP Error 503: Service Unavailable",
+      "duration_ms": 16665
     },
     {
       "url": "https://news.google.com/rss/search?q=%28Spitalfields%20OR%20%22Square%20Mile%22%20OR%20Moorgate%20OR%20Barbican%29%20London%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "Near Work",
-      "attempted_at": "2026-10-08T12:04:02.715009+00:00",
+      "attempted_at": "2026-10-09T11:55:46.418447+00:00",
       "last_success_at": "2026-10-08T12:04:02.715009+00:00",
-      "status": "ok",
-      "item_count": 15,
-      "duration_ms": 410
+      "status": "error",
+      "item_count": 0,
+      "error": "HTTP Error 503: Service Unavailable",
+      "duration_ms": 17348
     },
     {
       "url": "https://news.google.com/rss/search?q=London%20artificial%20intelligence%20AI%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "London AI",
-      "attempted_at": "2026-10-08T12:04:02.715009+00:00",
+      "attempted_at": "2026-10-09T11:55:46.418447+00:00",
       "last_success_at": "2026-10-08T12:04:02.715009+00:00",
-      "status": "ok",
-      "item_count": 15,
-      "duration_ms": 516
+      "status": "error",
+      "item_count": 0,
+      "error": "HTTP Error 503: Service Unavailable",
+      "duration_ms": 15427
     },
     {
       "url": "https://news.google.com/rss/search?q=%28UCL%20OR%20Imperial%20OR%20%22King%27s%20College%20London%22%20OR%20%22Queen%20Mary%22%29%20AI%20when%3A7d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "London AI",
-      "attempted_at": "2026-10-08T12:04:02.715009+00:00",
+      "attempted_at": "2026-10-09T11:55:46.418447+00:00",
       "last_success_at": "2026-10-08T12:04:02.715009+00:00",
-      "status": "ok",
-      "item_count": 15,
-      "duration_ms": 609
+      "status": "error",
+      "item_count": 0,
+      "error": "HTTP Error 503: Service Unavailable",
+      "duration_ms": 15578
     },
     {
       "url": "https://news.google.com/rss/search?q=London%20technology%20science%20innovation%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "London Technology",
-      "attempted_at": "2026-10-08T12:04:02.715009+00:00",
+      "attempted_at": "2026-10-09T11:55:46.418447+00:00",
       "last_success_at": "2026-10-08T12:04:02.715009+00:00",
-      "status": "ok",
-      "item_count": 15,
-      "duration_ms": 482
+      "status": "error",
+      "item_count": 0,
+      "error": "HTTP Error 503: Service Unavailable",
+      "duration_ms": 16278
     },
     {
       "url": "https://news.google.com/rss/search?q=%28London%20startup%20OR%20%22London%20tech%22%20OR%20robotics%20OR%20quantum%20OR%20biotech%29%20when%3A5d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "London Technology",
-      "attempted_at": "2026-10-08T12:04:02.715009+00:00",
+      "attempted_at": "2026-10-09T11:55:46.418447+00:00",
       "last_success_at": "2026-10-08T12:04:02.715009+00:00",
-      "status": "ok",
-      "item_count": 15,
-      "duration_ms": 641
+      "status": "error",
+      "item_count": 0,
+      "error": "HTTP Error 503: Service Unavailable",
+      "duration_ms": 14004
     },
     {
       "url": "https://news.google.com/rss/search?q=London%20event%20tickets%20opening%20closing%20disruption%20when%3A7d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "Plan Ahead",
-      "attempted_at": "2026-10-08T12:04:02.715009+00:00",
+      "attempted_at": "2026-10-09T11:55:46.418447+00:00",
       "last_success_at": "2026-10-08T12:04:02.715009+00:00",
-      "status": "ok",
-      "item_count": 7,
-      "duration_ms": 412
+      "status": "error",
+      "item_count": 0,
+      "error": "HTTP Error 503: Service Unavailable",
+      "duration_ms": 17077
     },
     {
       "url": "https://news.google.com/rss/search?q=%28London%20exhibition%20OR%20festival%20OR%20%22ticket%20release%22%29%20when%3A10d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "Plan Ahead",
-      "attempted_at": "2026-10-08T12:04:02.715009+00:00",
+      "attempted_at": "2026-10-09T11:55:46.418447+00:00",
       "last_success_at": "2026-10-08T12:04:02.715009+00:00",
-      "status": "ok",
-      "item_count": 15,
-      "duration_ms": 579
+      "status": "error",
+      "item_count": 0,
+      "error": "HTTP Error 503: Service Unavailable",
+      "duration_ms": 13348
     },
     {
       "url": "https://www.ianvisits.co.uk/articles/feed/",
       "name": "ianVisits",
-      "attempted_at": "2026-10-08T12:04:02.715009+00:00",
-      "last_success_at": "2026-10-08T12:04:02.715009+00:00",
+      "attempted_at": "2026-10-09T11:55:46.418447+00:00",
+      "last_success_at": "2026-10-09T11:55:46.418447+00:00",
       "status": "ok",
-      "item_count": 5,
-      "duration_ms": 709
+      "item_count": 6,
+      "duration_ms": 534
     }
   ],
-  "count": 955,
+  "count": 880,
   "items": [
+    {
+      "category_hint": "London",
+      "title": "TfL staff’s art exhibition on public display in Canary Wharf tube station",
+      "link": "https://www.ianvisits.co.uk/articles/tfl-staffs-art-exhibition-on-public-display-in-canary-wharf-tube-station-93132/",
+      "publisher": "ianVisits",
+      "published_at": "Fri, 09 Oct 2026 11:00:36 +0000",
+      "summary": "The people who drive London’s trains, staff its stations and reunite passengers with lost belongings are showing another side to their talents at Canary Wharf’s Jubilee line station. Read more ›",
+      "discovered_at": "2026-10-09T11:55:46.418447+00:00",
+      "discovery_source": "ianVisits"
+    },
+    {
+      "category_hint": "London",
+      "title": "Virgin targets 2030 launch for cross-Channel trains from London",
+      "link": "https://www.ianvisits.co.uk/articles/virgin-targets-2030-launch-for-cross-channel-trains-from-london-93142/",
+      "publisher": "ianVisits",
+      "published_at": "Fri, 09 Oct 2026 07:15:12 +0000",
+      "summary": "The company proposes 20 daily return services between London and mainland Europe, adding almost 7.5 million seats a year to the cross-Channel market. Read more ›",
+      "discovered_at": "2026-10-09T11:55:46.418447+00:00",
+      "discovery_source": "ianVisits"
+    },
+    {
+      "category_hint": "London",
+      "title": "London’s weekly railway news",
+      "link": "https://www.ianvisits.co.uk/articles/londons-weekly-railway-news-522-93129/",
+      "publisher": "ianVisits",
+      "published_at": "Fri, 09 Oct 2026 06:00:36 +0000",
+      "summary": "This is a weekly round-up of London's rail transport news... Read more ›",
+      "discovered_at": "2026-10-09T11:55:46.418447+00:00",
+      "discovery_source": "ianVisits"
+    },
     {
       "category_hint": "Near Home",
       "title": "SOS meals – the food to cook for friends that shows you care - The Guardian",
@@ -209,7 +250,7 @@
       "publisher": "ianVisits",
       "published_at": "Thu, 08 Oct 2026 10:35:27 +0000",
       "summary": "The third and final consultation on the proposed DLR extension to Thamesmead has, unsurprisingly, favoured building it. Read more ›",
-      "discovered_at": "2026-10-08T12:04:02.715009+00:00",
+      "discovered_at": "2026-10-09T11:55:46.418447+00:00",
       "discovery_source": "ianVisits"
     },
     {
@@ -274,7 +315,7 @@
       "publisher": "ianVisits",
       "published_at": "Thu, 08 Oct 2026 09:00:36 +0000",
       "summary": "The first official portrait of King Charles III in formal state attire, with a coronation robe and an orb and sceptre, will be on display in central London for a couple of weeks. Read more ›",
-      "discovered_at": "2026-10-08T12:04:02.715009+00:00",
+      "discovered_at": "2026-10-09T11:55:46.418447+00:00",
       "discovery_source": "ianVisits"
     },
     {
@@ -460,7 +501,7 @@
       "publisher": "ianVisits",
       "published_at": "Thu, 08 Oct 2026 06:00:36 +0000",
       "summary": "This is a new linear park near Farringdon Station that opened a few months ago Read more ›",
-      "discovered_at": "2026-10-08T12:04:02.715009+00:00",
+      "discovered_at": "2026-10-09T11:55:46.418447+00:00",
       "discovery_source": "ianVisits"
     },
     {
@@ -4553,16 +4594,6 @@
       "summary": "",
       "discovered_at": "2026-10-02T11:08:28.723297+00:00",
       "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London",
-      "title": "London’s weekly railway news",
-      "link": "https://www.ianvisits.co.uk/articles/londons-weekly-railway-news-521-92958/",
-      "publisher": "ianVisits",
-      "published_at": "Fri, 02 Oct 2026 06:00:51 +0000",
-      "summary": "This is a weekly round-up of London's rail transport news... Read more ›",
-      "discovered_at": "2026-10-05T12:19:05.786416+00:00",
-      "discovery_source": "ianVisits"
     },
     {
       "category_hint": "London Technology",
@@ -9709,787 +9740,6 @@
       "published_at": "Fri, 25 Sep 2026 11:56:22 GMT",
       "summary": "",
       "discovered_at": "2026-09-26T09:54:52.815248+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "A universal speed limit for collective decay in quantum systems - nature.com",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1zbXNkQ29vSEtlMEdiajFERjRiZ2JIbG0wZDFRbFR6b1Jna1JXTzV4MFdPMjlIN01GTmZDTlpOT2oxOGV0U2RZNTZfbDI5cVlsUWFQa1BHaEFDS3Y5aVln?oc=5",
-      "publisher": "nature.com",
-      "published_at": "Fri, 25 Sep 2026 11:51:31 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Work",
-      "title": "Blueprint for new skyscrapers near Tower of London can proceed as Government now 'reassured' - My London",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbV9qTmZkUm9JRzhRMkNYaXNnbGdrR0laeVVTc09QeTI4SjhEZFdyenZXX1FxOXk1cFVUdDA2UWgzSjR1RDlaWmhmN3FzVHhsZzNWbjlBQlIwN2RyUWRZdjUwOUpzeGRXQUtiYVd1N0hscFF0blRDTFk3Q092RlpyMGoyTDE1cGpSaDZYZVQ0V1dOd9IBlwFBVV95cUxPXzhYbjMtbHA2OXo1ZDZKYmZKbVE3SmI1djg3VjZvTmZod2hFdHpiS1pDdnA4amJGSXhYV2c2V2RsOENWMFJjSHFZQnU1TF9ZeV9fOGFyRjktbEllYVJrRVdPT0lOd0RVV2RJaHJvME9rVWJSbXRCY3BrcHFJTFU1VC00cmFtWC1KTjZ1M0R2eU1JSzdUVUNJ?oc=5",
-      "publisher": "My London",
-      "publisher_url": "https://www.mylondon.news",
-      "published_at": "Fri, 25 Sep 2026 11:45:25 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-28T11:43:48.583981+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "Geekplus opens European innovation hub for warehouse robotics - eurekamagazine.co.uk",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbW1GSmR4cWJoYzE1eTJZOHhNMmlObWZDSFBWakhvNDdqeHV6TGFiNndkdlhBLUhkOXhSOUtGSWhwdVRXaTg4TlFUMGpkc2U1NGZpQ2hlZ0o2LVVQelEtUlpKclpkYlNtanpFc18zeUw3TVBmczBlNWpydy1YZnlhY3M0VC1EYVdvYWxxdXVZOS1vZWVJbHRBRWxjX2otakFVQk1OYlJlZ2RIOE0?oc=5",
-      "publisher": "eurekamagazine.co.uk",
-      "published_at": "Fri, 25 Sep 2026 11:44:55 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-26T09:54:52.815248+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Work",
-      "title": "Zaluzhny was awarded the honorary title of \"Freedom of the City of London\" - UA.NEWS",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOOUNaTExzMkdEemh4V0h4UlhqSXUzdDdBWnRxYkhsNGVKUmNJSVhkOUlybGZyd2dtWmM3RmpSZzlHejZCQUZ6UVVPLWlSN01NNGdxck1qd2ZUeS1zMWVWcmYzYXlDTE9CeW5mV1Fsc3daSW1qSFdjMmJGendZdk94cmJ2UWJvdzYzVTZwSmIweF9abFk?oc=5",
-      "publisher": "UA.NEWS",
-      "published_at": "Fri, 25 Sep 2026 11:26:30 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Home",
-      "title": "The Urmetazoan | Hampstead Theatre - LondonTheatre1",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBDSjNfRUVDcFo4Q0V0emtmcTZYd0pZOV9TTy1LcW94Mlg2SUdQeHhRa1F5VFA5TjBCRmlUa09fN0xjcmJ6cE5FZF9kYjJiRXk4Y21BWWpYdnVWeTNEY2R2c01LN3JNTzhQLUVoU2RnUTNPcm0wTG4xZU1PTVQ?oc=5",
-      "publisher": "LondonTheatre1",
-      "published_at": "Fri, 25 Sep 2026 11:14:27 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Work",
-      "title": "CBRE and Newton Perkins appointed leasing agents for 10 Lime Street - Property Week",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOdU8zZFQzUUx1VllJLV82VnNSRGFkakt5cUFOOFBiWnlkaXNhaDFucWFDcEpDUWxETlFNR0M2aDRXYmFZMGY5NTJTWWFCYWJZMzNkMF9NWVdHY1ZLLVRocWZOSTQ4WlhvQjRwaU9heHVfT1pfQmE0ZkV0NE9CRGtSWW0wS3I5VHM0M1c3Y1dCcXZfbTM3ekxtQXBITlU2S1dqUDhKRU1KSGtxWjNNSjFBenA5d3UwQlE?oc=5",
-      "publisher": "Property Week",
-      "published_at": "Fri, 25 Sep 2026 11:00:47 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Work",
-      "title": "Rose Ferguson's London: Pie at the Hero and pilates at Nobu - London Evening Standard",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUVQtTjFuMHl3dldTNWF6MnB6WVE5dnFxbzJlYndXcEYzX2phWFdoZlc1RXZNdl9uQloxenZUSGlkS1ZTN05kcEhNVXlwakhXOUUzUnR2MGlsQlBJYUFpWWJESUZQTEd2VGY1TTltYWVGU05KOGZRbHNkLUFVcEF6UDMxbHdoWlc5MlNHRkh2UWV0emdUUWhTMUY1ZDVndUh2VDVWdE9QU1dVcmxoSF9qaw?oc=5",
-      "publisher": "London Evening Standard",
-      "published_at": "Fri, 25 Sep 2026 11:00:42 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Work",
-      "title": "London midday: FTSE maintains gains as oil prices ease off highs - sharecast.com",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNalNHcFNsTGRrdVhZSEx0SDV6cURXelc0TGZUdGlaSUJPZ05KZFFQa29VckJpNkVMRWJNdHpGbWIxdk10emQtajQtaTQ0ZmdwTFYzSUQ3WTduWEVRTjZTVVVZNmZyWGx1MDdKeWVYQnFCbmFDRlc2Y2Y5RTZzRm1sMFFrN2pTbW5aZWlwbUxjR1NsUWp3Mk13ZEUyQzVuQjVyXzdpZVNlZTZrVk5wZGJkYUFpV21UTFdaVmtJUDVkUzhSZW82YWh6NjdB?oc=5",
-      "publisher": "sharecast.com",
-      "published_at": "Fri, 25 Sep 2026 10:59:55 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London AI",
-      "title": "83 per cent of London and South East AI users report efficiency gains - Business Matters",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5oWUpEOEEtMlZUNTgwczdoZmtvLTl6bFFUdUMtX3h4NXNnTUFBNmI4M1dBMDA1dS1LWWxXdjhyMl9qYU5Bd3Q0Vlk4clZXTGR0bC1NbDlKbVZXVHVBWTVoZE9ZXzMxa05jMGdsSW8wX0k4bWl6?oc=5",
-      "publisher": "Business Matters",
-      "published_at": "Fri, 25 Sep 2026 10:19:04 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Plan Ahead",
-      "title": "A41 disruption to last until 2028 during major Brent Cross flyover project - Watford Observer",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdF9fUWVTVkpOLVBBTmVXemtnMUJJZGd5UU5rYUxibEVUeUhaYVhrX1NEVWtGQllHVU9WTWV0TUZkcVlXQzVPM2dadmF4RUtTYjg5ZmNiakV1R2Y3MHVkYnJZejFXN3pMSnJqalNpZS0tR2wyaGUzc2tYTnBtTDhQWTJ2X0x2VGIzLXNoMU12SGpyRkM4enNBLVN3?oc=5",
-      "publisher": "Watford Observer",
-      "published_at": "Fri, 25 Sep 2026 10:05:00 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "Dispatches from CGT International: Big pharma M&A is the new biotech IPO - BioXconomy",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNENMMXcyVndMeVBsVWRvRV9pUHJYMGs2NGxfVTRCRXYxdTlpakNoaTNPOTZ6ZWJBdkp5U1RJWUo5MHg2U1FNeDVidGcwRVZvcUg4SDdRX0o2aDhhUXhORW9mVzdQT005LWY1NGlFdHFZd3JsOFd6Qy1sTUJfcDBLVmpTZHBHNkVPRFp5dFozckRpRkY1UjlzZjh6YnR1VThlQk1GSDdPOEhHbFZBeFE?oc=5",
-      "publisher": "BioXconomy",
-      "published_at": "Fri, 25 Sep 2026 09:59:04 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-25T10:13:56.838760+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Plan Ahead",
-      "title": "One of east London’s most popular family Halloween events has been cancelled for 2026 - Time Out Worldwide",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOX1RUbGF4d2ZaZ01CU0lNOENQZmpoeVhoVjE5M2dkYzlYai11cVA2R055VkdRM19Zb1p0akxqSG9aMVNucmNteVBKNnhsalNKYTg1NVk0SHRiZGE2QzJHUklQb09rMWdudHV3aHNUQm1rODFmb1RadkM0UnI4SzJfMmZMeDRydjBCSnNxUTFleU93eWl0SmhYUjNVcGFtYjFIRHc?oc=5",
-      "publisher": "Time Out Worldwide",
-      "publisher_url": "https://www.timeout.com",
-      "published_at": "Fri, 25 Sep 2026 09:54:15 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-29T11:23:42.216412+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "UKRI leader meets King's academics and entrepreneurs - kcl.ac.uk",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMUpmaHZLRjhKdHVzc2ZDTEJialg5dC1CbHdyMmU2SDdsWnFjZ2gxSlU3dHlQM3NDdTh0UTJiZy16X0p5UGh3WWlOQV9JdlA5MkRPbE02c2ZpQ3RNZV8tRHBralRsNDNfNWpCRUxRT3RZTy1uSThUTURmR2hhZTBkZUtKbk8?oc=5",
-      "publisher": "kcl.ac.uk",
-      "published_at": "Fri, 25 Sep 2026 09:48:29 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Work",
-      "title": "Zaluzhnyi became first Ukrainian diplomat to be awarded Freedom of City of London. PHOTOS - Цензор.НЕТ",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQUWNOb1JiRlhVZWdxUG5aZWhQajQxUmE1S2xOYmFkLWpwN29qNDJRZE5pNFZubmE0MFNicVItUjZldjJOLTVpZ0lvQlV6Znl4emJuNFBLZ3FzNFpOT3pJLUs5WENZb2hJUG1WSkhEbDEtUHhSUTVjUWFQQ0xhdk1yWnVmUkVPVW83TG04bTFTb183U1pKZ2U5SV9jeE0zUQ?oc=5",
-      "publisher": "Цензор.НЕТ",
-      "published_at": "Fri, 25 Sep 2026 09:37:00 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-25T10:13:56.838760+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Home",
-      "title": "The Urmetazoan review at Hampstead Theatre: debut play about sibling rivalry - The Stage",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOUUxQzQzOEthRDluWjdqeWpyTU9RcmI1eHZCN1RkMGxWSURjd0VRZ3RwMV9XTGhIWUVQc3lUVUw4dWR6ek9hSkhCb2o2SDh4OF9XcWo0dmhLb0xSdUI3MjQyclNRVkk2OGNTMHViNTI5Z2dCVXNvcVY1VFJ0dkVOazBSa0xxUGtpX3ZHVTA0bVp3Y0Z5aElfRQ?oc=5",
-      "publisher": "The Stage",
-      "published_at": "Fri, 25 Sep 2026 09:30:00 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Plan Ahead",
-      "title": "13 films you don’t want to miss at this year’s London Film Festival - Time Out Worldwide",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMzRNTno5R0dNVTNaQ0t4NjY5NFloSkxLTUhGTEpIUlNONzBfQXlVWXBiX1VjRWZ1c1dvYzVlelVSS2VkQldSZFFXa3VLSzJlR25iOUZGVS1xbkE1M1ZuWFpsNGw0b0lDM3pQS0E3R01YM29yTFllb2pEUnctWElNWER1NEZ3WHBjSGdKTHZwMnltQlFRclc5UHJVTE4tYV9fd01PUVNxMlJBbENJ?oc=5",
-      "publisher": "Time Out Worldwide",
-      "publisher_url": "https://www.timeout.com",
-      "published_at": "Fri, 25 Sep 2026 09:27:00 GMT",
-      "summary": "",
-      "discovered_at": "2026-10-03T10:26:32.132884+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Work",
-      "title": "Akin becomes latest law firm to upgrade City offices - Legal Cheek",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZjFzTk1Ca2FqOGxFaDNVWUVqYTRrS2JpTkhkS3dGSXg4QWcySkRGaUxOVlY5aGdESXN4dzc3a3ZzcjRUSnVQNWVwOWxEVWNfZjZVekcwLTZ1b0ZBaGJSRTExQVdjVkhVeHoyRGNNd2lhRmdEQVVOcUc5R1JHZG83eTZjOG5hRzhpeFNvTUNmZ3hFZw?oc=5",
-      "publisher": "Legal Cheek",
-      "published_at": "Fri, 25 Sep 2026 09:00:38 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London",
-      "title": "This week’s discounted theatre ticket offers from London Theatre Direct",
-      "link": "https://www.ianvisits.co.uk/articles/this-weeks-discounted-theatre-ticket-offers-from-london-theatre-direct-3-92761/",
-      "publisher": "ianVisits",
-      "published_at": "Fri, 25 Sep 2026 09:00:14 +0000",
-      "summary": "This week’s sale and discount theatre ticket offers from London Theatre Direct. Read more ›",
-      "discovered_at": "2026-09-28T11:43:48.583981+00:00",
-      "discovery_source": "ianVisits"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "ETSI Flags Weak Spots In Quantum Random Number Generators - Quantum Zeitgeist",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBDbkhnVHpDTEdXVjZmaUpNZmE3ek9wTF9vT3BCUzVCcTgwUjJUNjVmVkZsWm8wN2dJak1DVTlnU3V3bFkzRkp1X1NTQWdXZW0td0dBaXBJbkdZOGdFUHQxdl8xaVpZQnJVYzlBZG83YzNFLVJfdmc?oc=5",
-      "publisher": "Quantum Zeitgeist",
-      "published_at": "Fri, 25 Sep 2026 09:00:00 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-25T10:13:56.838760+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "Pasqal Revenue Rose 14% As Quantum Services Grew 34% - Quantum Zeitgeist",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4tTGptdUkxSWFvTDJpYTJmUlRkWDNMcXJTRWZKa0ZrZ2FYTEFCc2t6b0ROYUQ3dWIwRUdUR1hjQ1FsMEJxMWZ1VmVrY2pneHRWRktKaG5yaGFBa2RCX1VHSkw3SUZhMVFKd0hsX0c4TFlIbEw3V3BN?oc=5",
-      "publisher": "Quantum Zeitgeist",
-      "published_at": "Fri, 25 Sep 2026 09:00:00 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-25T10:13:56.838760+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "QuantWare Says Scaling Quantum Power Hinges On Efficiency, Not Just Qubits - Quantum Zeitgeist",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9PNmktMXdtZFVFU2RTSVc3RVh0cnVrYU8tQjNwdFdaRV9PRE53Tk1VOXhoTmhQNTREczJCSzhBc2N1WWFzbXo4eWlJYzY2RnJDdWxudm1SdFRGWVhwN2V3TkM2dlNfSDRTaDlacVZteEIwMEczMFpr?oc=5",
-      "publisher": "Quantum Zeitgeist",
-      "published_at": "Fri, 25 Sep 2026 09:00:00 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-25T10:13:56.838760+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "ePropelled founder Nick Grewal named NH Tech Alliance’s 2026 Entrepreneur of the Year - Manchester Ink Link",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPM1ozX1M1OVQyR2lJVmFTcXhSRkJyWEJiMHZZdC1qR1BRRUNxLV9SZjc0cHFUT2gtZ2RsWndRZkhYYTdPdUhXaXNmNHVnUzZLUW9WN0tIMjFDbWdnU2xVS2VpVzJPMFJiNW1LQ013WWg2Z0h6QXNSZ3pxd0s4VWRtbDd1SERleTBRcVZWMHN0OW1CeU5kLVBYZDNOVy1yVVhHaDh5d2VCTlFkZFdlWVlvNnNBZU83aExr?oc=5",
-      "publisher": "Manchester Ink Link",
-      "published_at": "Fri, 25 Sep 2026 08:44:27 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London AI",
-      "title": "AI: European firms, still catching up, push back against US calls for a slowdown - FashionNetwork France",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPN3hhQWpPTUhuY2lScWVZRE0xWkYyNk1rYWFERUxoTmlzOFViOGZlekpnOXhhVVh0TmllamtSOXhaWm43WFNybjdxSXpSRWY2YXQzc0VrQlFKUmtlWXFYTUVLN0l0eUNtMjBrQm1FazZoS2E1UDc3RnI3RVpwWTVoNlBLX2dMaVVYWDg5d0JnTzJkRWY4OF91XzRmSGpKZmFoU2xiYklVTUg4OEpUam5ucUVCbmh6YW9OTzZCaDZ5M2NQUWs?oc=5",
-      "publisher": "FashionNetwork France",
-      "published_at": "Fri, 25 Sep 2026 08:34:42 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Plan Ahead",
-      "title": "Dubai and Middle East flight disruption: Regional carriers face delays while the UAE suspends all flights by Iranian airlines - Condé Nast Traveller Middle East",
-      "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQSlpIaVNvTm45a3dhdWNpWXFZU0FGUHlNXzZCVVR5SzdWYkxORzB6MzJ5Y0VUQ2ZUMWloMWM0VU1fTVA4b29hUzdXZXJUaFRRWkdOME5mMVhtQk9MeExNT0ZNWVd1NlgyZTg4LWRjZzVNcFo0SjZmRHU0RURZMEsySGFnY0NqLWk2U0FETE8wZFRIY0xNd0Z1SS1BQ0RiSDgwOFN3clhzN1BrMjFXeGc4dWFYeWd5S2lUa1pSS0t2WnhIU0pDcDJvRGo3TGVuUEFKZElfS21sQ1FyaTd0OXY5OFlOS1Z5aE10T2xEd0lfSjdvV1FuQW53UlBxUXFodw?oc=5",
-      "publisher": "Condé Nast Traveller Middle East",
-      "publisher_url": "https://www.cntravellerme.com",
-      "published_at": "Fri, 25 Sep 2026 08:21:23 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-28T11:43:48.583981+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London AI",
-      "title": "AI LIVE: Scaling AI Across Pharmaceuticals and Healthcare - AI Magazine",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQTVNRelFNcXB6ZTQ4eU55bHdlMDFFUWg5VGdKOVl3SkhyYkdxMGx2bnF2dzR5X3p0bVY0SWJFbFU4bWptV2RkMGdqb2JXa1dkQmwybXZqQ0VCWVdpMmVaNFowN19lcWtrRlJqck1QQlBBbWRTWnE5clhCejBLU0dYOERlWVJxNVVGendHQg?oc=5",
-      "publisher": "AI Magazine",
-      "published_at": "Fri, 25 Sep 2026 08:07:07 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-25T10:13:56.838760+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Home",
-      "title": "Barnet planning applications include seven studio flats and school building - hamhigh.co.uk",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNUVfMUx3Q2NJNHppTGhmUnI5d0FtMHlMaHl4b0pqWm9FeUoxb3NJVGYyLWx0RFhmVDhQZjNFcGtYb3lqQnNHOXQxMmZ6SDdTenk4MzQ2enVyM1lZV0xLdVphNElOVElxZC1OME12N1NnQUpkNW00ZnVTYjVGZVByNHpKS2lRNURleU90ZnRsajdFRXM?oc=5",
-      "publisher": "hamhigh.co.uk",
-      "published_at": "Fri, 25 Sep 2026 08:04:37 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Home",
-      "title": "The Urmetazoan – Hampstead Theatre, London - thereviewshub.com",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE04Rm80QlZ2NFJUWVJrVUxqUFlZNVhQcTQ4M1JvMG5XOUVKU0M5anlLdVhBN2dUWHpGbUNRcGdlRkZSVWJibXNoZ1pRNnZZRzU3aG42MEFzNHd2NWtTNWZyWGZRQ1BwWVRlMnQxNkFrTlFoVklja0RmUkJB?oc=5",
-      "publisher": "thereviewshub.com",
-      "published_at": "Fri, 25 Sep 2026 07:52:17 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "UTM Becomes Base For Malaysia’s First Quantum Computing Hardware Company - The Quantum Insider",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRDFzVWNvWVRaUllfVWNra25zSDFVZzhYSUhjRnFwMExXR0thVzk0VGNXTGJHNjVHRGJNSjY4RXYwbEdzMGxzb0ppYmh1b1NpTnV6R3liZ3VqejIxcjZHaUgwTDN5MEVzWmQ1dk5vV0hjSFhfUFU0V1lMOG9mUVo5S3FLS1VCYm1sNFdSVGk5S2NxM1k2NEJoZlc3LTJnVElnV0dyYk45NUlTZlNLZEdBc0lMbw?oc=5",
-      "publisher": "The Quantum Insider",
-      "published_at": "Fri, 25 Sep 2026 07:40:48 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-25T10:13:56.838760+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Work",
-      "title": "Trains disrupted between London and Ipswich due to smouldering railway sleeper - Ipswich Star",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOa0QzdkdxQ0wwZkw4U2dBdXdUaXNCQVhQQjF6WnlObFpVRkpheWJHcjdUTUlXeWlQUFlOajhhRjkwQkNtV180VTljVkViZ0F6NjZCbFVxc05Bcjg4Z0UyXy1kWWJuOUtWaGVDUkZzcUFUWDc0OUcyZmVoc0xhQ2lCMm9oamN6SThqS1lUci1pWmhMNmFa?oc=5",
-      "publisher": "Ipswich Star",
-      "published_at": "Fri, 25 Sep 2026 07:32:00 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-26T09:54:52.815248+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Home",
-      "title": "Fitzroy Square offices could become a single private home under new plans - hamhigh.co.uk",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSV9FT1pacUxhZC0zQUlwbVl2WjN0V2RGRVBXRTdlNnJobUFHelVDOXlXb3p4Zk9OMVQwWTI3LUdLQUNpdnNsUl9RalliTzlmMTJjOXBwZ2tVYVMtVk1EZDNMLXg1ODhGOGpsMHpGd1dpU0pXM0tuUmViWVlCZzVIRENaMEstOVZ1ZzBVSl8zaHdnaUo5OFFWb2FBdEw3UlBaTnNZ?oc=5",
-      "publisher": "hamhigh.co.uk",
-      "published_at": "Fri, 25 Sep 2026 07:29:49 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London AI",
-      "title": "Imperial showcases Global Biosecurity Network ahead of UNGA - Imperial College London",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQR2pvMnlJQkJSejVhRWdXcVpBMG1OalNpSGJpZnhqQ3djLXhjbEV4NTRkM3EtdTlCbDhqUFNpTjBiTnJMVUgyeGJwQzZpa2tsTEVTZTlPcEsxZ0w1SGFqeDdCTzBYVm1rQnFsSkpGRnp6TFVYLXhLbVNRSzVhS3IwbFlTR3JRd1dLZTIzamh2RnJheHZvb1VZaW9FTU5oWExMb0lOZURrWjVaUQ?oc=5",
-      "publisher": "Imperial College London",
-      "publisher_url": "https://www.imperial.ac.uk",
-      "published_at": "Fri, 25 Sep 2026 07:00:00 GMT",
-      "summary": "",
-      "discovered_at": "2026-10-02T06:18:30.163135+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Work",
-      "title": "London pre-open: Stocks set to rise as investors mull GfK data - sharecast.com",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQTjNzdlFOVVJwMG1zQktYZnlNWlR3cERMVmdNQVh1bVBfNEJka1lUb2dNOFlwalZSX0ZhLXdqUTgtZWtDMGhZaU9ISHozRVNKRk9kRXVPQUp1TGFVY28ycENfUFF0ZEplZkl2RFA3cDlxekJZSXk2WTVLbnZ0SUdTRlJVa3RscTZJeV9kUkwydkdBZTR6MDhtZnJ6VWpxYlF3eTVwQ1FWLWthdzJMQk8tWWR4aTRwRGlMcmEwSWstTVJPRFNiR3puNkln?oc=5",
-      "publisher": "sharecast.com",
-      "published_at": "Fri, 25 Sep 2026 06:27:33 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "Aria funding for foreign partners ‘hard to justify’ - Research Professional News",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNTNyVld3T0pVN2wwekVqV2VLclc1ekttQUFwWC1VZnQ0NFVlV0dueFVFTm5aY3BtZE5aVDlJN08xSlZpV2FGZ0RNNE1tT1ZMcGZuTDNVczA2WXRDb0VBdnZqLTFiRkpXUDBxNTZYOWJUejAtRzBtcFc2TlotN1FRUXJxbHlEOGo1X1UxdU9WWU9UTFduOXJzZTR6dWk4bEw0LUJBX0k0Q1VZM212MGZGU1k3V3pnVVpkZzlGRWQ2blUzdFdMMUE?oc=5",
-      "publisher": "Research Professional News",
-      "published_at": "Fri, 25 Sep 2026 06:02:17 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "Ulike Brings Science, Innovation and Support Together at London Forum on PMOS - PA Media",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTlZIRmVoMU5oMlk4RUJrUUtacmNST1BuQjdhVmQ2VzFYZlozSC1CNThzRGZXVFRfYm1jdkFxVlgyQ2JWaGVFUzA5VkJ3VFhVVFpUYzVHVUkyczZhRTFuaUt1SE9lMjhYTmVYTUFCOExGWDhZZGFEXzlDMEg0eTA4QjFMdWZYdW15WGlHOUh0VHV6enJ3ZlUxSTdJeWZmMllHSWxOck1OTWd0UjJ2RXlUNXk2a090OFhhOE9PaERhXzl0Rmg4djZj?oc=5",
-      "publisher": "PA Media",
-      "published_at": "Fri, 25 Sep 2026 06:01:58 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-25T10:13:56.838760+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "Ulike Brings Science, Innovation and Support Together at London Forum on PMOS - PR Newswire UK",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQMnVEYlM1c0pZN2dyZURfUWMweFV4bU9yZDlDRG1va3h4NUNrbWx1aU9PSVVFSGo4X1NYZGhsLVc0b1o4SHUyeHAwYk9aMnJmcGlyU3dHb296b2h1SkFiQTU4UDRkbHRsdTN2Vk5lSU51dVpqYk1OY0xuNkZ3NVY2QllkUlFGUzZ5ZTk5MU51d1NTR3Y1bWY0dEZaeTJGc0FaOXFPbGF4ZHJmTmdKTDV0SmVLeWNETFRaMWhVS2V6ODh6SHBsY0I0OWFnaWNSOVE?oc=5",
-      "publisher": "PR Newswire UK",
-      "published_at": "Fri, 25 Sep 2026 06:00:00 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "Ulike Brings Science, Innovation and Support Together at London Forum on PMOS - Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUW5xemdJNWlELWNUQWxjQ25lbmlOTC15T29oQnZsXzZlakdTRnVMbm94ZGNuR0FKTjBuM0tTRlhScXVud2lVbERhdVFNWTJWajY0VWFBUjIzMERpYldsdlduaFd6NWU2TUliT1FTTFB5SElRX1g4OFRnNzhwbHFZdy1jMVJRdHdGeWRPd2IwaUlOdkR0bTZKQUlZaXIyZmk2WUE?oc=5",
-      "publisher": "Yahoo Finance",
-      "published_at": "Fri, 25 Sep 2026 06:00:00 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-26T09:54:52.815248+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "CMG joins hands with Nanjing to empower young science and technology innovators to take center stage in this era. - irishsun.com",
-      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPU3JacUxYRE9ta3V4SE85VFBsSzJoNnU2cVBRZmphb25iMGFrSUpzdENEX2tHWHZoZnIwSUx5aVFRT0owVFJGbjk1UFhZTmp1WHJtZk5sZjFkdzkwdlVwOF9rZmFXZGVMVDg1SVRpZnJJNEVmYmtHSXAzQ05jOHdRTDJ3eUNCSWRvdFpiblJCUGUxSlRCVlZtcEhaZ0VsVGdzejVPNVNsQWFWZk96YW0tS0VUSXBEU09qd1VoYjZfYjRDaC1wal9ycWVKcEhwcEE3ZUN4NU5mWkZPX3c5T0R4LVlqU1FKV0U?oc=5",
-      "publisher": "irishsun.com",
-      "published_at": "Fri, 25 Sep 2026 05:23:00 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-25T10:13:56.838760+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "Just one week left to submit your entries for the industry leading 2026 RTIH Technology Innovation Awards - Retail Technology Innovation Hub",
-      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxObWdxMWVHR3FwN3piVTlYbC1fR29vcTV1bkx1eDg2RFE0UWxKa1hTYjBFSVRoUmxub2VZa1N5NGxkX0czYUVyOXJtQ2xJR2hva3ZBVGhlSmw0YVlhdDI0QjJtRG9pWEtzc2FMTzV2YWI3aHF0SlZIRFdWamhaQXZldXRkdTVhMzAwbUR2Z2NTcHc1bU1iT3VJOFo0T0RwTjI1MWRaaWVhS01yMW1uMUsycHlBcEpKcnQyXzE5ZE1yNXdjVGVBQ2kxNHlDYzNfTzNieDJOdE5uRFZwNTBhRl9leTlzbnVrQ2pwVXMw?oc=5",
-      "publisher": "Retail Technology Innovation Hub",
-      "published_at": "Fri, 25 Sep 2026 05:06:50 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Plan Ahead",
-      "title": "Two of London’s busiest tube lines will be down this weekend - Time Out Worldwide",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPYlViMHp1bmNmUEZJRkZvdFBXTmNhaHU1WVh2WHdaQlcwT0t2S1FSME9LeUJCdFFLVlIyNndTRURteHlmYldwc0V5UlZLNWJXbW5QZi1ZaTh2ZGZTaUVMUnVnLW9NRWlXbUc0SVFsTWR1VmVBMnp0NXJDUmVsTjUtaEtsR3VZSjI1UGJEdUwzblE?oc=5",
-      "publisher": "Time Out Worldwide",
-      "publisher_url": "https://www.timeout.com",
-      "published_at": "Fri, 25 Sep 2026 04:51:58 GMT",
-      "summary": "",
-      "discovered_at": "2026-10-01T11:38:50.155720+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London AI",
-      "title": "3 British AI Stocks With P S Under 20 - simplywall.st",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOd1hNUy1wVkZOV2N1TVRWQmRFSV91VWZqY2x2Tm15SE5iQUpHTTZQcXpRX21raDdkcXg1TE9uVzBWMm1lQVg2QnVfNW9HQ2NZYUFmcGlJWGZlYkI1ZllUNksyeVczNkc4d0hMVGtNSnVGWkVjaVVtQjNNclVEUURvajNTMzZEZkFwcWtOV29DVENkbG9FUGQyUGlpV05haHY2a2wyMmx3aWpIMExwYlFRRUQ4dlVURzhIZ2pN0gG7AUFVX3lxTE53WE1TLXBWRk5XY3VNVFZCZEVJX3VVZmpjbHZObXlITmJBSkdNNlBxelFfbWtoN2RxeDVMT25XMFYybWVBWDZCdV81b0dDY1lhQWZwaUlYZmViQjVmWVQ2SzJ5VzM2Rzh3SExUa01KdUZaRWNpVW1CM01yVURRRG9qM1MzNkRmQXBxa05Xb0NUQ2Rsb0VQZDJQaWlXTmFodjZrbDIybHdpakgwTHBiUVFFRDh2VVRHOEhnak0?oc=5",
-      "publisher": "simplywall.st",
-      "published_at": "Fri, 25 Sep 2026 04:50:30 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London AI",
-      "title": "London's Met Police criticizes bail decision after man sentenced for AI-generated child abuse images - Anadolu Ajansı",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQZVZIT0dwU2NmaTNyWFE5V2NrdjhJNmRHcE1sNHV5MnNxU0xXU0FHMWo5bkkyX1YwdFZXdmQ3SXM4ZTlEMUREcTk4dkZlYjRqd1pLX0o5ZDNrQWE0c2pPWHZYOE1zTHJaQUlGUzR4Q1JXcnUxdzFSVTNaSXoyMVltS1lzVU5neWF1bzc4R0lBZTZiX1dQaEZYM0x0U25MSnFncXZ6RllIbnhmT0tnVy00N192aGRqa0FCWFp5aG5RbFdHRVVHeFdaRnJaWE5sWk9mWDNraA?oc=5",
-      "publisher": "Anadolu Ajansı",
-      "published_at": "Fri, 25 Sep 2026 04:42:56 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "Can quantum turn ‘magic’ into money? - ft.com",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOM3U1MXR0THpmZ0dNNXdXWnpfSEt4dXJZQWRkTTRpd2UwOExSMXFNMEZWaHJhdzJrY2VBUnVsWE1iMlFpRWI4SVhTVmJjVEcxTjhXX1dsNndPa09xMkc2UkV4WHZBajlKclAwMTE1aUE4cXhWZ01YTmtvYjBpV0VjZE5WSVM?oc=5",
-      "publisher": "ft.com",
-      "publisher_url": "https://www.ft.com",
-      "published_at": "Fri, 25 Sep 2026 04:00:54 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-28T11:43:48.583981+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "Cosmic lockdown: How the environment can isolate quantum fields - Phys.org",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPdHN0dnVNQ1hCRVFzZ0R6WnlGdFFYcFJpSDdZeUZWYzY1WnY4aXFxdmxkbUpGWjY1UWpwQnlSM09yazF5M0RFMlRDaV9EbjZVWWZLWE9ZV3ZfYnFPX1FCZHZaM3NqYjhnb3lIVmpMb0tibGs0SU1ROVFycnhrcDBlTjJsYmM?oc=5",
-      "publisher": "Phys.org",
-      "published_at": "Fri, 25 Sep 2026 04:00:01 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-25T10:13:56.838760+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London AI",
-      "title": "Edwards scientist appointed Visiting Professor at King’s College London - World Pumps",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTU16SmpLTzRTcjB0QjRzS0ZjMXI0X2plQTRQVXJSR2dwZWxOY0FqQjZWREM3dGpMaXVzRjA1RVJFVlJlZmp4WlJQYkpVNUtsckdKUDA3c3E3TmtzUjVnZFhmN2pIMzFEd0hBVUprdUV0V0pWNjVjNC03U25oOVJTeS1KT2YtSGliVFBCb0lTdzc4c2l5NXJzaDRzekluLWlnaVpKMUxqeXBnVV9mY1ZJcA?oc=5",
-      "publisher": "World Pumps",
-      "published_at": "Fri, 25 Sep 2026 01:18:33 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-25T10:13:56.838760+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Work",
-      "title": "St Helen’s Bishopsgate grounds its flying bishop - Anglican Ink",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQTlZaa3ZBMHlTT09HMzBwZTU4dElXUUZiY1VZVFRMTldhNFliWWZwUUdZQURkMlB6R2JPbkFBcFBTcVN2V0VLVkg3MWJYb255RVpVU0NseWUxWU1VUXI1MmhZMkFpSF81MjB2WTd0OXdYM21NSlYwNkNoQ2JyN2NueXZFUkw2OVk?oc=5",
-      "publisher": "Anglican Ink",
-      "published_at": "Fri, 25 Sep 2026 00:56:18 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "Weekly Data Sheet - 25 September 2026 - IPE Real Assets",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQV25xQm9sUzd2RHRVYm9BckEyNU50THIzNzNRRHV2S0ZuM1htcWhYdXVWNEt2Z2tRanpLTG5RRmNaWXVZZ1owY1l1VW5ZSTU5WGt0aDVUbzAzeWNGSi1aSFdnRlVsMkM3cHNYVVFVYzc1QllUMUlMbXk5bTlQc3hMWE15OGdFZVpadGhLaHhBbGVraFE?oc=5",
-      "publisher": "IPE Real Assets",
-      "published_at": "Fri, 25 Sep 2026 00:15:44 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-26T09:54:52.815248+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "Robotics roadmaps from around the world spotlight of the month: China - robohub.org",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMVlDUFFhM3NiZ2NKN29aZk5xeTR1OTdERElUb24yNDg0bEZGamVQS2dDVmVZVDk4dkVyajNjVjJOa2pRWnFqcVBwbWtNSlY1SUppNkpPZ2FMbXU0TUY4cEVieGV1cUdLNG5uMlpEZVVrUkt2TllrRkd6NVNiTXBYQUxVekpRWXNMTEI1UndnLW1peDg?oc=5",
-      "publisher": "robohub.org",
-      "published_at": "Fri, 25 Sep 2026 00:03:06 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-25T10:13:56.838760+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Work",
-      "title": "City of London churches sever ties with bishops - churchtimes.co.uk",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTW1paGZDWThSTk9MaEJRMGlSOFNUZnlSTkFiWkd1d3RmRXY0Rm94OWs5aXQzT1JmTjlOVUxzNmtPbDJ4ZHVMbWdzT2I4SkhnUi0yNzdnOE5NZnFIX3lHRDdIWHlibTNELW1aM1ZoRVBtTUxRSjZjZU5BTEhnTjR5d2t2c1htbmVtc3RycG1SczdpVk41SEprN0ZnXzVxNWxWb1lEeXpoSU80UWcwa1lsSjZB?oc=5",
-      "publisher": "churchtimes.co.uk",
-      "published_at": "Thu, 24 Sep 2026 23:16:13 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London AI",
-      "title": "Future Skills Hackathon: Thriving in the Age of GenAI - kcl.ac.uk",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQM2M3YUIxNG5lclB3VFFNNnRzeTdzeW9odWVMSzhUQWdmSXA0VGVySWxyRWNjLWFiWWowLXIwa0tvbHRRVEJjTEsybW5qenNTUTFiZXN4M3Z3aUtrbmNjVjYzSmZ1aGh6U0dzN2hKSXdrYkJUR3kwbm0tLWJ2c3FwTEVZdW9UOHdK?oc=5",
-      "publisher": "kcl.ac.uk",
-      "publisher_url": "https://www.kcl.ac.uk",
-      "published_at": "Thu, 24 Sep 2026 22:40:26 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-30T11:11:32.206001+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London AI",
-      "title": "Wellcome funds Imperial research to improve mental health screening in Nigeria using culturally grounded AI - Imperial College London",
-      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPbElSMGY5WHNUZy1sTkVHeENPVkwxbmRGdXR0aDEza3hKRmV2bVRBS3dZX1JMNVF0QXhEQkh5WnN4YXNhdzFibFU2TU1wdXlVZTZEY05hWjB6S2pZbXNqWTlfYU9xZndQV05vejh1VmpHQlJIWDBnbWRndHpmbFMyMzZpQjZNX1RWdDZwTVd2UkNPWUFkSnFqTG5UNGFGQUdCVDdWelZUU2QzbXNjYi1mUVFncFZza2o1WGRoVUMwazI3LXdpTG5TalgzS0pUU1laS0VZbkpBbTlJQ0VLeGNNdU8teVpSX3RrQVFnU2laTHcwOGlFX0x6eUI1S3pIbFhuTmZYUVgwaWQ?oc=5",
-      "publisher": "Imperial College London",
-      "publisher_url": "https://www.imperial.ac.uk",
-      "published_at": "Thu, 24 Sep 2026 21:02:21 GMT",
-      "summary": "",
-      "discovered_at": "2026-10-01T11:38:50.155720+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "Open seminar: Who decides? Human and machine judgement in war - Försvarshögskolan",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOTlNWN1hScHJUSzdsSHVucUFWdXFBZ0NDcXZWYmZDZThhOGlucVdSTUYtaF84SDBSX2h4RXg4UXZ2S04xMDR1LUM5Q0pUT3dxaVpCWjZkQWxKRHF4YkRCcnJHM0VUcGw4T0hWWjdLMUEwdFlIUFg4dmFLNnRPQ1U4QWc1ZEFtYkZJM0tUWUxFM0EzcmI5VUt6bUQ1ZDFnU2NCZmR4VlcwYk1wby1uUVVyMTVlX3d2N0Q1NkVFT0t2ZVZTaWpFRV8wVnNVbw?oc=5",
-      "publisher": "Försvarshögskolan",
-      "published_at": "Thu, 24 Sep 2026 20:53:49 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Work",
-      "title": "Lucian Hudson Receives Freedom Of City Of London - Mirage News",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNOEItbXFlYjY2a3F3cVdPUndoNnE4ei1STVRBNURkNTRCbHVXMmFfUkY3SDZaOUdZWWlpMEdDSjJWZUp3bUliZUkwWE5JQlEzaUxCODFvTjkzRi00ekRNdWlqQXF3ekRXdi1FbHpUQmJIZzRhN0EtQTZXQVRkbG0wdmd4TGRyRWNpRXlEdA?oc=5",
-      "publisher": "Mirage News",
-      "published_at": "Thu, 24 Sep 2026 20:02:00 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-25T10:13:56.838760+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "Vertical quantum sensor could reveal nanoscale magnetic patterns in quantum materials - phys.org",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNXzl2eVVJUFhoVE1Gc0VsMjNIRVhrb3o5QUxGa0FWSHMtRVhpeHNBQm1Ld2pzYmZXb3NQTkIxT2paNlI2N1A4NV9uQ195NGVWVWNFLTRTRUtWQXNNRWktOGFndmJmOGlNWmNSOVJwM2RYdzhHSkZ5VkZEczVJUXZMUA?oc=5",
-      "publisher": "phys.org",
-      "published_at": "Thu, 24 Sep 2026 19:20:06 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Work",
-      "title": "Soweto Kinch To Release “Soundtrack to the Apocalypse”, Celebrating His Six-Year Collaboration with the London Symphony Orchestra - London TV",
-      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQclZmN3lvRjZHMGdqUTBxQW5GYlJibVlXa3B2UVdLeVFPRjVscmpfYU5BMElZbnhPN2lPMHdtUmZVdlo1cDVKU2tOelBfamRQMDNoeVdtbVdTQ3JUZnBEazBMdHFhaHNQT3R2V21uNmRnb0hOWFo0WlZQTFBSa1p3SUpYendIUW1jbVJGWE5RY1ZGTE9WNS1jSXAyZFpvUGFrQV9OVzJCbWN0WHoxTFc4Yi1BeDJsY2tuVVRvVTczNk8ybnlCM2dTUUkxUktwYzFjSWgwdXpDZkJKb0ZYVzk5R0lqV3hnZw?oc=5",
-      "publisher": "London TV",
-      "published_at": "Thu, 24 Sep 2026 18:06:31 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Work",
-      "title": "Tigermilk Brings Hacienda Grandeur to the Heart of East London - Restaurant Industry Magazine",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQM2U2X2FROVdsVVV0dGh6ZmdpTEZJVjR1X1ZiY2pJOXNJMXRENjk3WnlTaGQ2Rm10T0tWMFNxMlV2cS1XVlJhZTJHeVV2ZXpYLWJHSUhtWm1kck96ejR3VFFmSldWM19ieWU0Y2N0Q3kwaDdNWG1CMTI1VTNUaGJkMERUMTFqM1ZhTFYwXzdfb2N4SUFlMmtQdmM0UEpULTE2ZzZpS05Xci1jMHM?oc=5",
-      "publisher": "Restaurant Industry Magazine",
-      "published_at": "Thu, 24 Sep 2026 17:47:35 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Plan Ahead",
-      "title": "Commuters face hours of MAJOR disruption after person hit by train - London Now",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQYU1jNjd5N09yZUQ3NEZmYVF0MFBDbU9vVnBYSVBicUs3ME1pNlR6TzEtQ2ZJclBfOWw5UGkwLWlmM256YnFKT0EzSzBKR2lST3lNZXotLWwzTnd5VkR6S3VLdVh1aHd5NldGeWZhOXA2dThYVUVzRTBWOEh6Z1M0S0I4QUNiT1ZLdnNhY08tRHpVZ0RVNE84SmNqbGU?oc=5",
-      "publisher": "London Now",
-      "publisher_url": "https://www.london-now.co.uk",
-      "published_at": "Thu, 24 Sep 2026 17:39:50 GMT",
-      "summary": "",
-      "discovered_at": "2026-10-01T11:38:50.155720+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "Durham hosted New Frontiers in Quantum-Enhanced Sensing and Metrology international workshop - Durham University",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTTEwNk1RYzNHZUE5UEN5WGpfMGlOQlBCQ3ZTTDNFZk9RazczaHhrdXBzaXlOTnNLa2Iwb1ppZy1oOXB0N25OMjJiRkQ2NHBrclZMd281cTBxWVR2RVZVT0cxZXdaTVVaV1RsTVdsRDN3ZXFFcFR5MzRzSWJiREdmRWdxRXNGbzczRWZGRDdFZ3lDSFdzblR5YWktSEZIa0o3MjFURXFHeS1zenRPWjBLZWlocmtUZw?oc=5",
-      "publisher": "Durham University",
-      "published_at": "Thu, 24 Sep 2026 17:26:37 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London AI",
-      "title": "Enfield sex offender used AI to create sexualised images of women and children - London Now",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVnlWbDM2eGkxT2FYS2JtaVd2Z2h6Mmdfalk4MEtBT1dPeHVvUVQ0VHlVYkgzRm5IejNDdlFOOGFKakZCR250dVgwYnhVRWVRTlR2LWMtWjR5RnJybV9SRnVmN3lua3Byd3ZLMDUtNDgxZFVxSTRGM3BidmxxdHh0VXhzSE1qeVRvcDRWenNmX0k0cDM0X2g1eDhHSHR0M2FXRnBLUg?oc=5",
-      "publisher": "London Now",
-      "published_at": "Thu, 24 Sep 2026 17:24:29 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-25T10:13:56.838760+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Work",
-      "title": "J.P. Morgan Agrees 465K SF Pre-Let With Jane Street: The London Deal Sheet - bisnow.com",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPTTRCenZHUnNYLVo4ZXR1b3VzMGdIeWZxQ3F6ZXF4UHJreXNHMUxmMTJFNDFlOERha1FJMzZpbW1PdnFZTmxVX1hmeEZScmRkSnJaallwTE1aR1VQdWJqdUVpUmVsMnpXOEZJWUZfZXlCSXVNaV9yTFhmbWU5MEhwT21tdzlISG40alluMGhXczB5WjVuSnNYaU10TFZlckRaX19NYVZPWU5keXlH?oc=5",
-      "publisher": "bisnow.com",
-      "published_at": "Thu, 24 Sep 2026 17:13:28 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Work",
-      "title": "City of London wins approval for skyscraper plan - ft.com",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQlFqU3RzWDVmLXZaU0MwMHJuWXBONm5HVW9SUTZGa1FQOXZTWHJleGk1M1N5V2J3OFU2dHJ1TkNrQTFrYU9EYm8ybEFnUFVoeUd1UFZwUDJ4ZmpWZERhQ0VPbW4wZ0l3djVENjJUMWlYUXlPeEZzbC1qVGQ1SFpWb2luNEk?oc=5",
-      "publisher": "ft.com",
-      "published_at": "Thu, 24 Sep 2026 16:39:33 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Work",
-      "title": "London close: FTSE falls amid US bond selloff - sharecast.com",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQbkR1SU9BZmY3VnFpVFU0RTBQRzFXLTdWRmZVcGd2VVllLUtpVFphV1pocnB5c01WM1BNWmdRYkhOLUNEVnRfQ1RIenRERDdOVGJ1OThXYzRKOEZZaEpJSDJzc2ZrMUJETnU1YlUza3NUQW9aclRXeXlsVk5PWXUwancxNnMtaVE2NFJxRjZSekU4dHMzWnRNYkE2Z0liZDJJek91alg5NldJR1Rzc1pz?oc=5",
-      "publisher": "sharecast.com",
-      "published_at": "Thu, 24 Sep 2026 16:02:53 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London",
-      "title": "The London Buzz – 24th Sept 2026",
-      "link": "https://www.ianvisits.co.uk/articles/the-london-buzz-24th-sept-2026-92759/",
-      "publisher": "ianVisits",
-      "published_at": "Thu, 24 Sep 2026 16:00:03 +0000",
-      "summary": "Today’s London news round-up: Read more ›",
-      "discovered_at": "2026-09-25T10:13:56.838760+00:00",
-      "discovery_source": "ianVisits"
-    },
-    {
-      "category_hint": "Near Work",
-      "title": "Hammersmith and Fulham £14m in red just 2 months into financial year - council told to 'come clean' - My London",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNeHJ6T1BscVNqY1pQMXY4LWNHcE5TREhBc3RqeUE2ODBlZi04c1hvX3BMOV8wcklXWUJNNUZlcW9rWFFNS1pqd1ZkT2JCMmVNUVhhMlRsRURETTI0bFpmUFBqQUpTU2xNNG9XRlR0NTRMSzZMMEo0RWF0UjZWazUtNVFoYXBxQzlYdmVudTRBdjdHUdIBlwFBVV95cUxNVXVzSWM5cUUzOEpkeHBVNVdpeHhXRHZlMnd3TlhZa21DblNlMjl0eGdSb1ZtMktfaGs1TjN6LXNvVG1mSW1Pb0JEemFZbEVyTDRuRXRDdS1QWjByUEpVMS0tNFh5em1OcmZrY29WYVVEalBKTHJfeDItQnhwVkw4ckoyeV9rUGh6UmQxZklXa2J5UTBqVGlR?oc=5",
-      "publisher": "My London",
-      "published_at": "Thu, 24 Sep 2026 15:22:17 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-25T10:13:56.838760+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London",
-      "title": "Restoration secured for London pipe organ smuggled out of France in 1904",
-      "link": "https://www.ianvisits.co.uk/articles/restoration-secured-for-london-pipe-organ-smuggled-out-of-france-in-1904-92602/",
-      "publisher": "ianVisits",
-      "published_at": "Thu, 24 Sep 2026 15:00:03 +0000",
-      "summary": "National Lottery funding will support a two-year restoration of one of only a handful of surviving Hippolyte Loret organs. Read more ›",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "ianVisits"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "Oxford Quantum Circuits Appoints Simon Phillips as Chief Product Officer - The Quantum Insider",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNSmNCTjUydWlfQUFEVUVlZEczaGVFRDdxQndnaXBmTkp6Y1FLa2hGLXVKc3QybVhWeVFHTjBWSHloYUlpZTNIZHc4eXg3X2I0NTgtYTRGejJ4Qmdyal9FUF8xZmdhS3A0d3d6LWFVcGdkYVJNU05WaWo2aEFiMkVTMW42b0FnanJBMkE?oc=5",
-      "publisher": "The Quantum Insider",
-      "published_at": "Thu, 24 Sep 2026 14:58:36 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "What we need to know about science and innovation over the next decade - NCUB",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQ2lreGJUSmZnV3d5cXJrY0oxc3d4dGJLLUQ4Z3FMaVRNOGdJMGNoY2Rnb3FuQmNjZGJfMGZMeWpPWkZHLWx6ZXlkXzBjU3h3blhBal9fWlBBam5vXy13dFo4N2d1bzBfZVBKYjJBNnV5Z1BuUHB2b2pkXy1TbHNPblBWa1lqenYxVTQ2anZmWVVlTTRPc3FWMUNETlgyVExsVnF6MQ?oc=5",
-      "publisher": "NCUB",
-      "published_at": "Thu, 24 Sep 2026 14:44:36 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London AI",
-      "title": "Why Paris Outpaces London as Europe’s Top AI City - AI Magazine",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNSkxJWW5ZcWhmeC12TDFfY3BkUzRITHUyaThhczRBZUNrVFNOZktlajJ5TDl6NkcwY05paTNRYmY0eEp0djU3RG9yTm1KcUdoQzhHRHJ4VFJZSHNUYjk0VGZBcTN4emw5YVQxQlZ2YUtTQUxhM0dadFRWZmE2RFQ2NEltVVpzZw?oc=5",
-      "publisher": "AI Magazine",
-      "published_at": "Thu, 24 Sep 2026 14:36:05 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Home",
-      "title": "Trans group seeks to intervene over Hampstead Heath ponds - Leigh Day",
-      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNNDZFWk52WmJpRzJiMF96aUtXNFRMcWZNa0dZUFVPLUNDeDN5dkx4UmRJNVB5U3R6MXlkNnlMeHJsaW5wSDhIRjJleUp1aDg5cG1Vd3BMc2p2RmEtTk1SdGZFbU54RUdvZGJUX0xGUmExN2NNZURkcmNyUjJWcEEzbGc5b0FvZUpSTW9Hc200d0VnZDB1c2xpdVhTVl9TMlNJWWo1UU1mR1pOTzdIVnFkdGRfN01Sa1VQRTMxblk0RGNTamxVbW8yRllmMGxwODlBTXhScHA2clotM3NsS1pJWHpBVVZOZw?oc=5",
-      "publisher": "Leigh Day",
-      "published_at": "Thu, 24 Sep 2026 14:25:59 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Home",
-      "title": "Nantwich dog trainer qualifies for 10th World Championships - Nantwich News",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZXNxczRCN2g0SVBvQmI4NnlFOXN5dGREVHU4UzRsUXYwVl9qLXZEOEstMmhZWVdPd0RVUEhRQlFLQ0paa09rY3VZT004ZHdrbE9NV1drelhOMjZLQm1sdFRMd1o0dGtiWE1oMXhHOEh1aS1KTzVyZ05aaDNENWhieW1ycWVhRmFieGpKclh5TEtwMFBCTEdRaVhEN1VUblR6NUY4?oc=5",
-      "publisher": "Nantwich News",
-      "published_at": "Thu, 24 Sep 2026 14:08:11 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Home",
-      "title": "Read This Next: Six books that celebrate the remarkable bond between people and dogs - Starts at 60",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOU2ZUT2plR3dFNUh3WWhiT3hHY0phQ2J1WVZQUVRsXzdCdkEyT0otdGpIeFJjUHVpek5ndDJGaWNMVDFjbXBVS2I4SzZiLWp3aDAydWtid1Ewc2xOYUdSS2swckNMLVBrUVNqWGxTdG9GRXVoZWpFbkE3WFFQcGJ4LUZQN2N3anZsMGZSeUZKTmdqdkhwNGJjSVg2SklGNzlaam9kTTBFUGJOUXVOdjF4VUZTRTdCWkQ2?oc=5",
-      "publisher": "Starts at 60",
-      "published_at": "Thu, 24 Sep 2026 14:03:08 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "QTREX Quantum Reports First Half 2026 Financial Results - The Quantum Insider",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSE9rZ1RYNHZWc1FpcjFLNXhoZFhtOTc1QmphRDB2dHY4cnRPU3RhcGJrMDFJRHhqOFFwcjNXY0FBZk1BVFQwZDVaTHIyRHJfaXdKcThIRHdUQy1oaGZlQW9objlVQ284Z2xtNU1oOWJSRkhmMmFLd0s5YWktYWk1aG5GbXhkVTBmdWhMSDdOc1EySGs?oc=5",
-      "publisher": "The Quantum Insider",
-      "published_at": "Thu, 24 Sep 2026 13:53:36 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-25T10:13:56.838760+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London AI",
-      "title": "London, Paris and Berlin lead Europe’s AI clusters, Colliers finds - BE News",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5CN3l1bGVOLUcwcG9NZHMzalFYV3FIdmozang4WkQ4b3o5NzJyLW9LM2VBNFhLXzhxSEFEbFJxMTJjTFU4SFFoaVptTDIzS182VEgycmtqV3JVeGt3X2dhOGE0ZWgzeVdfLUtWQk1CTXdXd00?oc=5",
-      "publisher": "BE News",
-      "published_at": "Thu, 24 Sep 2026 13:14:43 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Home",
-      "title": "Teenage girl killed in crash near north London school confirmed as Y12 pupil - hamhigh.co.uk",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTHpBWE5DejVucWQ5VnZ4dEVoWUVyLXVCOFUwOVd5TV82dnVkb293a0lHZXN6cEtMVUxnMFJrWWJFWE9ReWF1NERCLWY0UVhCcmlvTFhTVVdveWdZV3hYVUdidFl4eGc2NVFTRjVkMFBmekwxalhnQURjbTlmcHpGSVo3UUxGMzFOUEwyU2ZMS29rOUFrY3dFSQ?oc=5",
-      "publisher": "hamhigh.co.uk",
-      "published_at": "Thu, 24 Sep 2026 13:03:50 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Home",
-      "title": "Girl, 16, dies in crash in North London as man, 68, arrested - My London",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOcW1HNk03Nl91OGJWOUwxZEVvSEE1al9QUlVySzlYQlBaazV1MkE4eFl6ZmJpMjRLcF9RaVJFRVprR3l1cHBCcWlYT01mT08tZ1lyM29zcmNHMll1d0NUTC1iOHladVhrR3RUSExHNEpuRTltY0wzOWFha1RlUlNIWkhxblFacFlNTEHSAY8BQVVfeXFMTWhsU0xpY0xUZF9xZFlsNnZuNDlmdHdobFc5aGtNcU84V2pGWXdmQ3BYUkxfeThQY0Z0bDdUZGMzWDgxYUlJNEFiODV1ZEM4OXVPbE93My1xMmh1dEUzZk5MTlB6Z2F4V1Y2X1BlanNTeUx5YmJ6aVhVNjNKV1hGeVZTRjNzV2xyVGZaT2YxcTA?oc=5",
-      "publisher": "My London",
-      "published_at": "Thu, 24 Sep 2026 13:02:24 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Work",
-      "title": "Government clears path for City Plan 2040 as inspectors back heritage approach - City of London Corporation",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRDVQVUlROUpGQnJKS2tUc1BOa25IRTVRbmN2cDdoTE1RVks3QWJzSkloX1lwVlM0MDNTZF9RbHVLakpGVEl5bEtLZ2FsWjVJb1dSUWJkdUF0UFBGVFozdFF3QmRvS0hrVnRHYmQ2cUhsUm01akNQQVNrRE9FNjkwa0VScGJFS21TdVJEYi1MVTRhVFB1UnZQOG5LZVROSUFWY24wbVdGNlJ0VUkwV2FXVndR?oc=5",
-      "publisher": "City of London Corporation",
-      "published_at": "Thu, 24 Sep 2026 12:49:21 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London AI",
-      "title": "Understanding the effects of AI on administrative justice - King's College London",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZ3lRTnFISzZNYWtET3NNUEhjMkNwWFhtZHROWUVMMm8ydWdNTjRZRDM4QWJVUGVFcG5UdVp4SjFzQmNnWEhTMnJGTFpZQjNyZmxZa3ZkQzh0MTlUb05NUHlIYXpiNU5ZdVNEdVRlZjZHSTBSVEVadDNQNElXNkMwMjRHM3ZMUQ?oc=5",
-      "publisher": "King's College London",
-      "publisher_url": "https://www.kcl.ac.uk",
-      "published_at": "Thu, 24 Sep 2026 12:33:00 GMT",
-      "summary": "",
-      "discovered_at": "2026-10-01T11:38:50.155720+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London AI",
-      "title": "AI cluster expansion triggers new wave of European office demand - fmj.co.uk",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQbVBrTFNObTlkLVFoYkdKc09IbTZ4dW9aemdWZEZyV0tPNlZrQ2dsLWpzbVBzajM5YVU0cExrbUY5N0tUVEJXMHBGNWNFWDVCcnRMVWc1WXVxaFJpZjdOME01dEpaZEtEX0VGREJmbmdJWU9fQ3JoZmpQeFRGNm1PeUdaRmxOMG16YjVPajJrTGU?oc=5",
-      "publisher": "fmj.co.uk",
-      "published_at": "Thu, 24 Sep 2026 12:08:35 GMT",
-      "summary": "",
-      "discovered_at": "2026-09-27T10:34:38.382616+00:00",
       "discovery_source": "Google News RSS"
     }
   ]
