@@ -207,9 +207,11 @@ async function companions(page, viewportName) {
   await page.locator("#grid .poi").first().waitFor({ timeout: 30000 });
   const chip = page.locator("#filters button:not([disabled])").first();
   const category = await chip.locator("span").nth(1).textContent();
-  const selected = await chip.getAttribute("aria-pressed");
-  await chip.click();
   const sameCategory = page.locator("#filters button").filter({ has: page.getByText(category, { exact: true }) });
+  // Live source responses can enable an earlier chip between discovery and click.
+  // Keep the chosen category stable while testing its state change.
+  const selected = await sameCategory.getAttribute("aria-pressed");
+  await sameCategory.click();
   assert.equal(await sameCategory.getAttribute("aria-pressed"), String(selected !== "true"));
   await sameCategory.click();
   await page.getByRole("button", { name: "Show on map", exact: true }).first().click();

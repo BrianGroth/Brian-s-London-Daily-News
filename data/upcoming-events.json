@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-12",
+  "updatedAt": "2026-10-18",
   "events": [
     {
       "id": "2026-12-02-barbican-conservatory-plant-adoption",
@@ -30,62 +30,6 @@
       "endDate": "2026-11-07",
       "action": "Book",
       "actionUrl": "https://www.hampsteadtheatre.com/whats-on/2026/kimberly-akimbo/"
-    },
-    {
-      "id": "2026-10-17-heath-info-hut-17oct26",
-      "title": "Heath Info Hut open day",
-      "startDate": "2026-10-17",
-      "time": "10:00",
-      "section": "Near home",
-      "location": "Hampstead Heath",
-      "venue": "Heath Info Hut, near Parliament Hill tennis courts",
-      "sourceName": "Heath Hands",
-      "sourceUrl": "https://www.heath-hands.org.uk/whatson/heath-info-hut-17oct26",
-      "summary": "10:00–14:00. Visit the information hut for Heath maps, nature sheets and information about activities. The official listing invites visitors to drop in.",
-      "addedOn": "2026-10-02",
-      "action": "Walk"
-    },
-    {
-      "id": "2026-10-17-litter-pick-17oct26",
-      "title": "Litter pick",
-      "startDate": "2026-10-17",
-      "time": "12:00",
-      "section": "Near home",
-      "location": "Hampstead Heath",
-      "venue": "Heath Info Hut, near Parliament Hill tennis courts",
-      "sourceName": "Heath Hands",
-      "sourceUrl": "https://www.heath-hands.org.uk/whatson/litter-pick-17oct26",
-      "summary": "12:00–13:00. Drop-in litter pick around Parliament Hill. All welcome, equipment provided and no booking required; meet at the hut at the start.",
-      "addedOn": "2026-10-02",
-      "action": "Walk"
-    },
-    {
-      "id": "2026-10-17-wildabouthampsteadheath-171026",
-      "title": "Wild about Hampstead Heath",
-      "startDate": "2026-10-17",
-      "time": "14:00",
-      "section": "Near home",
-      "location": "Hampstead Heath",
-      "venue": "Parliament Hill area",
-      "sourceName": "Heath Hands",
-      "sourceUrl": "https://www.heath-hands.org.uk/whatson/wildabouthampsteadheath-171026",
-      "summary": "14:00–16:00. Free drop-in session with volunteer wildlife interpreters. Look for the Wild About Hampstead Heath bike; no booking required.",
-      "addedOn": "2026-10-02",
-      "action": "Walk"
-    },
-    {
-      "id": "2026-10-17-gardening-volunteering-171026",
-      "title": "Gardening Volunteering",
-      "startDate": "2026-10-17",
-      "time": "14:00",
-      "section": "Near home",
-      "location": "Hampstead Heath",
-      "venue": "The Hive, Nassington Road",
-      "sourceName": "Heath Hands",
-      "sourceUrl": "https://www.heath-hands.org.uk/whatson/gardening-volunteering-171026",
-      "summary": "14:00–15:00. Drop-in gardening and light conservation; equipment, tea and biscuits provided. No booking needed. Under-11s must be accompanied; 12–17-year-olds can be dropped off by an adult.",
-      "addedOn": "2026-10-02",
-      "action": "Walk"
     },
     {
       "id": "2026-10-21-gardening-volunteering-211026",
@@ -606,20 +550,6 @@
       "endDate": "2026-12-17"
     },
     {
-      "id": "2026-10-16-burgh-early-close",
-      "title": "Burgh House closes at 1pm",
-      "startDate": "2026-10-16",
-      "time": "13:00",
-      "section": "Near home",
-      "location": "New End Square, Hampstead",
-      "venue": "Burgh House",
-      "sourceName": "Burgh House",
-      "sourceUrl": "https://www.burghhouse.org.uk/visit/visit",
-      "summary": "Planned early house closure at 13:00. Normal house entry is free; café opening is separate. Arrange any museum visit before the closure.",
-      "addedOn": "2026-10-10",
-      "action": "Avoid"
-    },
-    {
       "id": "2026-10-23-burgh-early-close",
       "title": "Burgh House closes at 1pm",
       "startDate": "2026-10-23",
@@ -634,34 +564,6 @@
       "action": "Avoid"
     },
     {
-      "id": "2026-10-12-bank-museum-visit",
-      "title": "Bank of England Museum: Monday visiting",
-      "startDate": "2026-10-12",
-      "time": "10:00",
-      "section": "Near work",
-      "location": "Bartholomew Lane, City of London",
-      "venue": "Bank of England Museum",
-      "sourceName": "Bank of England",
-      "sourceUrl": "https://www.bankofengland.co.uk/museum/plan-your-visit",
-      "summary": "Regular public opening, not a special event: free entry without individual booking, 10:00–17:00, last entry 16:30. Enter on Bartholomew Lane; allow about an hour.",
-      "addedOn": "2026-10-10",
-      "action": "Walk"
-    },
-    {
-      "id": "2026-10-15-bank-museum-late",
-      "title": "Bank of England Museum late opening",
-      "startDate": "2026-10-15",
-      "time": "17:00",
-      "section": "Near work",
-      "location": "Bartholomew Lane, City of London",
-      "venue": "Bank of England Museum",
-      "sourceName": "Bank of England",
-      "sourceUrl": "https://www.bankofengland.co.uk/museum/plan-your-visit",
-      "summary": "Regular third-Thursday late opening: museum open until 20:00, last entry 19:30. Free individual entry without booking. Separate talks or special activities may need tickets.",
-      "addedOn": "2026-10-10",
-      "action": "Walk"
-    },
-    {
       "id": "2026-11-27-bank-museum-early-close",
       "title": "Bank of England Museum closes at 3pm",
       "startDate": "2026-11-27",
@@ -673,6 +575,76 @@
       "sourceUrl": "https://www.bankofengland.co.uk/museum/plan-your-visit",
       "summary": "Official planned early closure from 15:00. Arrange a free museum visit before this cutoff; individual admission normally needs no booking.",
       "addedOn": "2026-10-10",
+      "action": "Avoid"
+    },
+    {
+      "id": "2026-10-18-fenton-garden-tour",
+      "title": "Fenton House Garden Tour",
+      "startDate": "2026-10-18",
+      "section": "Near home",
+      "location": "Hampstead",
+      "venue": "Fenton House and Garden",
+      "sourceName": "National Trust",
+      "sourceUrl": "https://www.nationaltrust.org.uk/visit/london/fenton-house-and-garden/events/d43c778c-bf98-4ad8-a61a-912e8cd6a6c6",
+      "summary": "14:15–14:45. No booking; first come, first served. Tour free with donations requested; normal admission applies: adult garden-only £8.50, members free. Meet outside the house; gravel and steps.",
+      "addedOn": "2026-10-18",
+      "action": "Walk",
+      "time": "14:15"
+    },
+    {
+      "id": "2026-10-21-milein-cosman-hampstead-print",
+      "title": "Hampstead in Print: Milein Cosman and her Circle",
+      "startDate": "2026-10-21",
+      "section": "Near home",
+      "location": "Hampstead",
+      "venue": "Wells Room, Burgh House",
+      "sourceName": "Burgh House",
+      "sourceUrl": "https://www.burghhouse.org.uk/whats-on/whats-on/exhibition/hampstead-in-print-milein-cosman-and-her-circle",
+      "summary": "Free exhibition. Wednesday, Thursday, Friday and Sunday 10:00–16:00, subject to house closures; Friday 23 October closes 13:00. First-floor gallery inaccessible to wheelchair users.",
+      "addedOn": "2026-10-18",
+      "action": "Walk",
+      "endDate": "2027-03-18"
+    },
+    {
+      "id": "2026-10-20-ucl-quantum-idealondon",
+      "title": "Quantum Computing: The Race to Build the Winning Machine",
+      "startDate": "2026-10-20",
+      "section": "London technology",
+      "location": "Shoreditch",
+      "venue": "IDEALondon, 69 Wilson Street",
+      "sourceName": "UCL Engineering / Luma",
+      "sourceUrl": "https://luma.com/jmnunkvc",
+      "summary": "17:30–20:00. Free but EVENT FULL as checked 18 October; waitlist open. UCL page still says available. Join the waitlist only; attendance requires confirmation. Panel 18:00; Q&A 18:45.",
+      "addedOn": "2026-10-18",
+      "action": "Participate",
+      "time": "17:30",
+      "actionUrl": "https://luma.com/jmnunkvc"
+    },
+    {
+      "id": "2026-10-22-old-spitalfields-antiques",
+      "title": "Old Spitalfields Thursday Antiques Market",
+      "startDate": "2026-10-22",
+      "section": "Near work",
+      "location": "Spitalfields",
+      "venue": "Old Spitalfields Market, 16 Horner Square",
+      "sourceName": "Old Spitalfields Market",
+      "sourceUrl": "https://oldspitalfieldsmarket.com/journal/explore-our-thursday-antiques-market",
+      "summary": "Current official weekly Thursday antiques programme. Market-wide Thursday hours 08:00–18:00; individual traders vary. Arrive early for selection. No booking advertised.",
+      "addedOn": "2026-10-18",
+      "action": "Walk",
+      "time": "08:00"
+    },
+    {
+      "id": "2026-12-07-guildhall-opening-change",
+      "title": "Guildhall Art Gallery and Amphitheatre closed",
+      "startDate": "2026-12-07",
+      "section": "Near work",
+      "location": "Guildhall Yard",
+      "venue": "Guildhall Art Gallery / London’s Roman Amphitheatre",
+      "sourceName": "City of London",
+      "sourceUrl": "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/guildhall-art-gallery/visit-guildhall-art-gallery",
+      "summary": "Both spaces closed all day in the current official special-closures notice. Postpone gallery and amphitheatre visits.",
+      "addedOn": "2026-10-18",
       "action": "Avoid"
     }
   ]
