@@ -1,9 +1,10 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { quickPaths } from "./prepare_quick_brief.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const readJson = async (file) => JSON.parse(await readFile(path.join(root, file), "utf8"));
+const readJson = async (file) => JSON.parse(await readFile(path.resolve(root, file), "utf8"));
 const normalize = (value) => String(value ?? "").normalize("NFKC").toLowerCase();
 
 export function selectRecords(records, query) {
@@ -13,9 +14,9 @@ export function selectRecords(records, query) {
   return exact.length ? exact : records.filter((record) => normalize(JSON.stringify(record)).includes(term));
 }
 
-export async function lookup(kind, query) {
+export async function lookup(kind, query, { quick = false } = {}) {
   if (kind === "candidates") {
-    const brief = await readJson("data/daily-brief.json");
+    const brief = await readJson(quick ? quickPaths(root).brief : "data/daily-brief.json");
     const records = Object.entries(brief.candidateSections).flatMap(([section, items]) => items.flatMap(item => [{ section, ...item }, ...item.alternateLeads.map(alternate => ({ section, ...alternate }))]));
     const matched = selectRecords(records, query).map(({ alternateLeads, ...item }) => ({ ...item, alternativeIds: (alternateLeads || []).map(a => a.id) }));
     // One topic may appear in several sections; retain the first full record once.
@@ -45,11 +46,13 @@ export async function lookup(kind, query) {
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   try {
-    const args = process.argv.slice(3), limitAt = args.indexOf("--limit");
+    const args = process.argv.slice(3), quickAt = args.indexOf("--quick"), quick = quickAt >= 0;
+    if (quick) args.splice(quickAt, 1);
+    const limitAt = args.indexOf("--limit");
     const limit = limitAt < 0 ? 5 : Number(args[limitAt + 1]);
     if (!Number.isInteger(limit) || limit < 1 || limit > 50) throw new Error("--limit must be 1–50");
     if (limitAt >= 0) args.splice(limitAt, 2);
-    const result = await lookup(process.argv[2], args.join(" "));
+    const result = await lookup(process.argv[2], args.join(" "), { quick });
     console.log(JSON.stringify({ count: result.length, shown: Math.min(limit, result.length), records: result.slice(0, limit) }, null, 2));
   } catch (error) {
     console.error(error.message);

@@ -66,6 +66,8 @@ These are starting points, not a closed list and not permission to skip live ver
 
 Official activity adapters and the bounded evidence cache are documented in `docs/DAILY_RUN.md`. Direct discovery is not editorial verification. Broad catalogue discovery runs weekly; daily research remains focused on the ten choices.
 
+Quick updates follow `QUICK_NEWS_PROMPT.md` and the usual-source policy in `scripts/quick_sources.json`. They stop at a bounded shortlist/research budget and report any shortfall; they do not automatically broaden. Ten justified stories, live facts and rights checks, semantic duplicate review and full browser acceptance apply equally to both modes.
+
 The permanent, growing set of previously used sources lives in `resources.html`.
 The tested POI discovery stack is listed in the POI Resources section there. Candidates in `PotentialUnusedResources.html` remain outside the production workflow until deliberately promoted.
 

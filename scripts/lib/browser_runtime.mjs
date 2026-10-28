@@ -4,6 +4,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 // Reuse the exact pinned browser in a sibling workspace cache; no speculative downloads.
 export async function launchBrowser(options = {}) {
+  if (!options.channel && !options.executablePath && process.env.PLAYWRIGHT_CHANNEL) options = { ...options, channel: process.env.PLAYWRIGHT_CHANNEL };
   if (options.channel || options.executablePath) return chromium.launch(options);
   const expected = chromium.executablePath();
   const parts = expected.split(path.sep), at = parts.findIndex(part => /^chromium(?:_headless_shell)?-\d+$/.test(part));

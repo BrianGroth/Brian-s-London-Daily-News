@@ -21,6 +21,11 @@
     "daily:validate": "node --use-env-proxy scripts/daily_run.mjs validate",
     "daily:publish": "node --use-env-proxy scripts/daily_run.mjs publish",
     "daily:status": "node scripts/daily_run.mjs status",
+    "quick:prepare": "node --use-env-proxy scripts/daily_run.mjs prepare --quick",
+    "quick:apply": "node --use-env-proxy scripts/daily_run.mjs apply --quick",
+    "quick:validate": "node --use-env-proxy scripts/daily_run.mjs validate --quick",
+    "quick:publish": "node --use-env-proxy scripts/daily_run.mjs publish --quick",
+    "quick:status": "node scripts/daily_run.mjs status --quick",
     "weekly:maintain": "node --use-env-proxy scripts/daily_run.mjs maintain",
     "verify:public": "node --use-env-proxy scripts/verify_public.mjs",
     "check:images": "node --use-env-proxy scripts/check_image_library.mjs"

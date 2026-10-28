@@ -60,12 +60,12 @@ PUBLISHER_FEEDS = [
 ]
 
 
-def fetch_xml(url: str) -> ET.Element:
+def fetch_xml(url: str, timeout: float = 25) -> ET.Element:
     request = urllib.request.Request(
         url,
         headers={"User-Agent": "BrianLondonDailyNews/1.0 (+GitHub Pages)"},
     )
-    with urllib.request.urlopen(request, timeout=25) as response:
+    with urllib.request.urlopen(request, timeout=timeout) as response:
         root = ET.fromstring(response.read())
     if root.tag != "rss":
         raise ValueError("Expected an RSS document")
@@ -199,14 +199,18 @@ def deduplicate(items: list[dict]) -> list[dict]:
 
 
 def collect(existing: dict, now: datetime, fetcher=fetch_xml,
-            workers: int = MAX_WORKERS, per_host: int = MAX_PER_HOST) -> dict:
+            workers: int = MAX_WORKERS, per_host: int = MAX_PER_HOST,
+            quick: bool = False) -> dict:
     """Fetch in parallel, then merge in configured order regardless of completion order."""
     if workers < 1 or per_host < 1:
         raise ValueError("Concurrency limits must be positive")
     collected_at = now.isoformat()
+    policy = json.loads((ROOT / "scripts/quick_sources.json").read_text(encoding="utf-8")) if quick else None
+    searches = policy["rssSearches"] if quick else SEARCHES
     jobs = [(google_news_url(query), category, query, True)
-            for category, queries in SEARCHES.items() for query in queries]
-    jobs.extend((url, name, url, False) for name, url in PUBLISHER_FEEDS)
+            for category, queries in searches.items() for query in queries]
+    if not quick:
+        jobs.extend((url, name, url, False) for name, url in PUBLISHER_FEEDS)
     gates = {urllib.parse.urlsplit(url).hostname: BoundedSemaphore(per_host)
              for url, *_ in jobs}
     previous = {feed["url"]: feed for feed in existing.get("feeds", [])}
@@ -231,7 +235,8 @@ def collect(existing: dict, now: datetime, fetcher=fetch_xml,
     fresh = [item for items, _ in results for item in items]
     feeds = [health for _, health in results]
     cutoff = now - timedelta(days=RETENTION_DAYS)
-    retained = [item for item in existing.get("items", []) if still_recent(item, cutoff)]
+    # Quick runs never inherit the broad pool, including on a failed refresh.
+    retained = [] if quick else [item for item in existing.get("items", []) if still_recent(item, cutoff)]
     items = deduplicate(fresh + retained)
     successes = sum(feed["status"] == "ok" for feed in feeds)
     return {"generated_at": collected_at,
@@ -244,8 +249,12 @@ def main() -> int:
     started = time.perf_counter()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument("--quick", action="store_true", help="Only two usual-institution searches; no broad feeds or retention")
     args = parser.parse_args()
-    payload = collect(load_existing(args.output), datetime.now(timezone.utc))
+    if args.quick and args.output.resolve() == OUTPUT.resolve():
+        parser.error("--quick requires a separate --output; preserve normal discovery")
+    fetcher = (lambda url: fetch_xml(url, timeout=8)) if args.quick else fetch_xml
+    payload = collect(load_existing(args.output), datetime.now(timezone.utc), fetcher=fetcher, quick=args.quick)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(
         json.dumps(

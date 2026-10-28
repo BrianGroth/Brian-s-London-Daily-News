@@ -86,6 +86,29 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(collector.deduplicate([old, new, dict(old)]), [new, old])
         self.assertFalse(collector.still_recent(old, NOW))
 
+    def test_quick_mode_only_fetches_two_restricted_queries_without_broad_retention(self):
+        calls = []
+
+        def limited(url):
+            calls.append(url)
+            return feed(url)
+
+        existing = {"items": [{"title": "Broad old lead", "link": "https://unrelated.example", "published_at": "Sun, 27 Sep 2026 07:00:00 GMT"}]}
+        payload = collector.collect(existing, NOW, limited, quick=True)
+        self.assertEqual(len(calls), 2)
+        self.assertTrue(all("site:ucl.ac.uk" in collector.urllib.parse.unquote(url) for url in calls))
+        self.assertTrue(all("site:imperial.ac.uk" in collector.urllib.parse.unquote(url) for url in calls))
+        self.assertFalse(any(item["link"] == "https://unrelated.example" for item in payload["items"]))
+        self.assertEqual(len(collector.SEARCHES), 5)
+
+    def test_quick_failure_does_not_disguise_retained_broad_leads_as_new_discovery(self):
+        def fail(_):
+            raise TimeoutError("quick fixture timeout")
+
+        payload = collector.collect({"items": [{"title": "old", "link": "https://old.example"}]}, NOW, fail, quick=True)
+        self.assertEqual(payload["collection_status"], "failed")
+        self.assertEqual(payload["items"], [])
+
 
 if __name__ == "__main__":
     unittest.main()
