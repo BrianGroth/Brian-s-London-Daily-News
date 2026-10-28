@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-18",
+  "updatedAt": "2026-10-28",
   "images": {
     "keatsFlow": {
       "src": "https://images.squarespace-cdn.com/content/v1/5eff13e8f5beea28d1539c30/875184a4-51b9-4408-b706-ad86b12edec9/Keats+house+and+garden.jpg",
@@ -496,10 +496,222 @@
       "src": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Hampstead_Theatre_-_geograph.org.uk_-_485799.jpg",
       "alt": "Hampstead Theatre on Eton Avenue; archive exterior photograph, not The Urmetazoan production",
       "credit": "Archive photo: ceridwen / Wikimedia Commons / CC BY-SA 2.0"
+    },
+    "qOctTheatre": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Hampstead_Theatre_-_geograph.org.uk_-_485799.jpg",
+      "alt": "Hampstead Theatre on Eton Avenue; archive exterior, not the Kimberly Akimbo production",
+      "credit": "Archive photo: ceridwen / Wikimedia Commons / CC BY-SA 2.0 / https://creativecommons.org/licenses/by-sa/2.0/"
+    },
+    "qOctImperialLibrary": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Queen%27s_Tower_above_Imperial_College_Central_Library_in_Late_Autumn.jpg/960px-Queen%27s_Tower_above_Imperial_College_Central_Library_in_Late_Autumn.jpg",
+      "alt": "Imperial College London’s Queen’s Tower and Central Library in November 2019; archive campus photograph, not Machenta’s robots",
+      "credit": "Archive photo: Shadowssettle / Wikimedia Commons / CC BY-SA 4.0 / https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "qOctImperialTower": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Queen%27s_Tower_-_Imperial_College_-_geograph.org.uk_-_7508528.jpg/960px-Queen%27s_Tower_-_Imperial_College_-_geograph.org.uk_-_7508528.jpg",
+      "alt": "Queen’s Tower at Imperial College London in April 2023; archive campus photograph, not an AMPERA reactor",
+      "credit": "Archive photo: Mr Ignavy / Wikimedia Commons / CC BY-SA 2.0 / https://creativecommons.org/licenses/by-sa/2.0"
     }
   },
   "issues": {
     "today": {
+      "label": "London • Wednesday 28 October 2026",
+      "footer": "Wednesday 28 October 2026",
+      "morning": {
+        "mode": "Nearby POI",
+        "modeUrl": "poi/",
+        "temperature": "16° / 10° overnight",
+        "weatherUrl": "https://weather.metoffice.gov.uk/forecast/gcpvj0v07",
+        "rain": "Under 5% rain risk through this evening",
+        "pollen": "UV 1 · low",
+        "transit": [
+          [
+            "Northern",
+            "Good service",
+            "good",
+            "https://tfl.gov.uk/tube-dlr-overground/status/"
+          ],
+          [
+            "Overground",
+            "Mildmay severe delays; Suffragette part closure",
+            "check",
+            "https://tfl.gov.uk/tube-dlr-overground/status/"
+          ]
+        ]
+      },
+      "stories": [
+        {
+          "id": "2026-10-28-kimberly-tonight",
+          "section": "Near home",
+          "headline": "Book tonight’s Kimberly Akimbo—or its newly extended run",
+          "location": "Near NW3",
+          "imageKey": "qOctTheatre",
+          "brief": "Hampstead Theatre lists tonight’s Wednesday 28 October performance of Kimberly Akimbo at 7.30pm as selling fast. Maria Friedman leads the musical about a teenager whose body ages unusually quickly. The run now ends on 14 November, one week later than originally announced. Published standard Monday–Saturday ticket bands are £45–£110, subject to change; select a seat for the final price.",
+          "why": "This is a nearby evening option with a verified performance and booking route. The extension also creates extra chances to attend, so the old 7 November closing date should no longer drive your plans.",
+          "sources": [
+            [
+              "Hampstead Theatre",
+              "https://www.hampsteadtheatre.com/production/kimberly-akimbo/"
+            ]
+          ],
+          "action": "Book",
+          "actionUrl": "https://my.hampsteadtheatre.com/15424/15491"
+        },
+        {
+          "id": "2026-10-28-parliament-hill-litter",
+          "section": "Near home",
+          "headline": "Give Parliament Hill an hour on Saturday",
+          "location": "Near NW3",
+          "imageKey": "octHeath",
+          "brief": "Heath Hands’ next Saturday litter pick is on 31 October, from noon until 1pm. Meet at the Heath Info Hut, the former tennis-bookings hut near the Parliament Hill tennis courts. The organiser welcomes everyone, supplies the equipment and says no booking is necessary. You can email ahead if you want to help the team estimate attendance.",
+          "why": "A clearly timed, practical volunteering session makes an easy local commitment. It is distinct from a guided walk: the purpose is to help care for the Heath, with equipment already organised.",
+          "sources": [
+            [
+              "Heath Hands",
+              "https://www.heath-hands.org.uk/whatson/litter-pick-31oct26"
+            ]
+          ],
+          "action": "Participate",
+          "actionUrl": "https://www.heath-hands.org.uk/whatson/litter-pick-31oct26"
+        },
+        {
+          "id": "2026-10-28-wildlife-interpreters",
+          "section": "Near home",
+          "headline": "Find the wildlife bike on the Heath this Saturday",
+          "location": "Near NW3",
+          "imageKey": "octHeath",
+          "brief": "Volunteer wildlife interpreters will be in the Parliament Hill area on Saturday 31 October for Wild about Hampstead Heath. The official listing invites everyone to drop in between 2pm and 4pm, with no booking. Look for the large Wild About Hampstead Heath bike and ask about the plants and animals using the Heath’s green spaces.",
+          "why": "This offers a flexible nature stop rather than a fixed-length tour. It can fit around an afternoon walk, and the organisers explicitly welcome drop-ins without requiring you to commit to the full session.",
+          "sources": [
+            [
+              "Heath Hands",
+              "https://www.heath-hands.org.uk/whatson/wildabouthampsteadheath-311026"
+            ]
+          ],
+          "action": "Walk"
+        },
+        {
+          "id": "2026-10-28-fungi-sunday",
+          "section": "Near home",
+          "headline": "Register for Sunday’s Hampstead Heath fungi walk",
+          "location": "Near NW3",
+          "imageKey": "octHeath",
+          "brief": "The London Natural History Society’s introduction to fungi takes place on Hampstead Heath on Sunday 1 November, from 10.30am to 3pm, led by Mario Tortelli. The published meeting point is Hampstead Heath Overground station. Bring lunch. Places may be limited: email hampsteadbookings@lnhs.org.uk with your name and the walk’s date to register and confirm the meeting details.",
+          "why": "An autumn identification walk is a stronger reason to make time for the Heath than a general suggestion to wander. The organiser warns of limited places, so seek confirmation before treating attendance as secured.",
+          "sources": [
+            [
+              "Heath Hands / London Natural History Society",
+              "https://www.heath-hands.org.uk/whatson/lnhs-funginov"
+            ]
+          ],
+          "action": "Participate",
+          "actionUrl": "https://www.heath-hands.org.uk/whatson/lnhs-funginov"
+        },
+        {
+          "id": "2026-10-28-barbican-archive",
+          "section": "Near work",
+          "headline": "Explore the Barbican through its original plans and models",
+          "location": "Near EC2N",
+          "imageKey": "octBarbican",
+          "brief": "Concrete and Clay: Archiving the Barbican is a free installation on the Centre’s Mezzanine, Level G, continuing until 1 January 2027. Its changing archive display includes a rarely shown 1:22-scale model of the Centre and Estate. Architectural drawings, photographs and other original material explain the complex’s history, with a touchscreen connecting visitors to the digitised collection.",
+          "why": "This is an indoor cultural detour within reach of the office, without an exhibition-ticket purchase. The archive and scale model offer a concrete way to understand the Barbican’s buildings, rather than another generic architecture recommendation.",
+          "sources": [
+            [
+              "Barbican",
+              "https://www.barbican.org.uk/whats-on/2025/event/concrete-and-clay-archiving-the-barbican"
+            ]
+          ],
+          "action": "Walk"
+        },
+        {
+          "id": "2026-10-28-spitalfields-november-art",
+          "section": "Near work",
+          "headline": "Keep 6–8 November for Spitalfields’ free arts market",
+          "location": "Near EC2N",
+          "imageKey": "octSpitalfields",
+          "brief": "Spitalfields confirms that its next Arts Market runs on Market Street from Friday 6 to Sunday 8 November. Entry is free. The programme brings artists and makers together with paintings, prints, ceramics and photography. Although the page now leads with its 2027 return, its current-year dates still explicitly include this November weekend and 4–6 December.",
+          "why": "Friday gives you an office-area opportunity before the weekend crowds. The useful decision is when to visit; the updated headline does not mean the confirmed November 2026 market has disappeared.",
+          "sources": [
+            [
+              "Spitalfields Market",
+              "https://www.spitalfields.co.uk/upcoming-events/a-brush-with-creativity-spitalfields-arts-market/"
+            ]
+          ],
+          "action": "Walk"
+        },
+        {
+          "id": "2026-10-28-machenta-instant-learning",
+          "section": "London AI",
+          "headline": "Imperial spinout raises $40m for robots that learn by demonstration",
+          "location": "London-based",
+          "imageKey": "qOctImperialLibrary",
+          "brief": "Imperial reported on 27 October that its spinout Machenta has raised $40 million in seed funding, led by Creandum and Union Square Ventures. The company builds robot-learning models from research by Professor Edward Johns and colleagues. Its approach aims to teach new physical tasks from one demonstration, with the funding supporting expansion at an office and laboratory in King’s Cross.",
+          "why": "This is a London research-to-business development with a specific local team and expansion plan. The learning claims come from the university and company; investment is evidence of backing, not proof of dependable deployment across every real-world task.",
+          "sources": [
+            [
+              "Imperial College London",
+              "https://www.imperial.ac.uk/news/articles/2026/imperial-ai-spinout-machenta-raises-40-million-to-make-robots-instant-learners/"
+            ],
+            [
+              "Archive campus photo and licence",
+              "https://commons.wikimedia.org/wiki/File:Queen%27s_Tower_above_Imperial_College_Central_Library_in_Late_Autumn.jpg"
+            ]
+          ]
+        },
+        {
+          "id": "2026-10-28-imperial-ampera-digital-twins",
+          "section": "London technology",
+          "headline": "Imperial starts a £7m digital-twin partnership for energy systems",
+          "location": "London-based",
+          "imageKey": "qOctImperialTower",
+          "brief": "Imperial announced on 27 October a £7 million partnership with AMPERA to develop NeuralTwin, a digital-twinning platform for advanced energy systems. Researchers Christopher Pain and Jiansheng Xiang will contribute computational-modelling expertise. The planned platform combines detailed physics simulation with faster learned approximations, supporting the design and eventual operation of systems including AMPERA’s proposed microreactors.",
+          "why": "The concrete London contribution is engineering research, separate from Machenta’s robot-learning business. This is a development partnership with promised applications; it does not establish that a reactor has been deployed, licensed or proven commercially viable.",
+          "sources": [
+            [
+              "Imperial College London",
+              "https://www.imperial.ac.uk/news/articles/2026/imperial-and-ampera-join-forces-to-develop-digital-twin-platform-for-advanced-nuclear-energy-systems/"
+            ],
+            [
+              "Archive campus photo and licence",
+              "https://commons.wikimedia.org/wiki/File:Queen%27s_Tower_-_Imperial_College_-_geograph.org.uk_-_7508528.jpg"
+            ]
+          ]
+        },
+        {
+          "id": "2026-10-28-kenwood-dairy-saturday",
+          "section": "Plan ahead",
+          "headline": "Make Saturday’s limited Kenwood Dairy opening",
+          "location": "Near NW3",
+          "imageKey": "sunDairy",
+          "brief": "Kenwood Dairy’s Nature Interpretation Centre opens on Saturday 31 October from 11am to 3pm. Heath Hands invites visitors to see its wildlife specimens and interpretation displays, collect leaflets and find out about activities across the Heath. The published venue is the Dairy at Kenwood House, NW3 7JN. The listing does not advertise a booking requirement or a ticket price.",
+          "why": "This is a specific opening window to plan around, rather than an assumption that the interpretation centre is open every day. Allow extra walking time: Kenwood is on the northern side of the Heath.",
+          "sources": [
+            [
+              "Heath Hands",
+              "https://www.heath-hands.org.uk/whatson/kenwood-dairy-open-311026"
+            ]
+          ],
+          "action": "Walk"
+        },
+        {
+          "id": "2026-10-28-guildhall-november-hours",
+          "section": "Plan ahead",
+          "headline": "Plan an early Guildhall visit on Friday 13 November",
+          "location": "Near EC2N",
+          "imageKey": "sunGuildhall",
+          "brief": "The City’s current visitor notice says Guildhall Art Gallery and London’s Roman Amphitheatre will open only from 10am to 3.30pm on Friday 13 November. The upper Main Gallery closes earlier, at noon. Saturday 14 November starts later, at 11am, and runs to 5pm. Admission is normally free, but these special hours override the usual timetable.",
+          "why": "Save the date if you are arranging a City visit with guests. An afternoon arrival on 13 November would miss the upper gallery even before the rest of the site closes, so a morning slot is the useful choice.",
+          "sources": [
+            [
+              "City of London",
+              "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/guildhall-art-gallery/visit-guildhall-art-gallery"
+            ]
+          ],
+          "action": "Avoid"
+        }
+      ]
+    },
+    "yesterday": {
       "label": "London • Sunday 18 October 2026",
       "footer": "Sunday 18 October 2026",
       "morning": {
@@ -792,7 +1004,7 @@
         }
       ]
     },
-    "yesterday": {
+    "day-before": {
       "label": "London • Saturday 10 October 2026",
       "footer": "Saturday 10 October 2026",
       "morning": {
@@ -1078,285 +1290,6 @@
               "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
             ]
           ],
-          "action": "Walk"
-        }
-      ]
-    },
-    "day-before": {
-      "label": "London • Sunday 4 October 2026",
-      "footer": "Sunday 4 October 2026",
-      "morning": {
-        "mode": "Nearby POI",
-        "modeUrl": "poi/",
-        "temperature": "22° / 12° overnight",
-        "weatherUrl": "https://weather.metoffice.gov.uk/forecast/gcpvj0v07",
-        "rain": "Under 5% rain through this evening",
-        "pollen": "UV 3 · moderate",
-        "transit": [
-          [
-            "Northern",
-            "Good service",
-            "good",
-            "https://tfl.gov.uk/tube-dlr-overground/status/"
-          ],
-          [
-            "Overground",
-            "Mildmay reduced; Windrush part closed",
-            "check",
-            "https://tfl.gov.uk/tube-dlr-overground/status/"
-          ]
-        ]
-      },
-      "stories": [
-        {
-          "id": "2026-10-04-freud-forty-objects",
-          "section": "Near home",
-          "headline": "See forty objects from Freud’s collection this Sunday",
-          "location": "Near NW3",
-          "brief": "The Freud Museum’s anniversary exhibition, 40 Objects, 40 Years, brings antiquities, family treasures and objects from storage into focus at 20 Maresfield Gardens. It is open today, Sunday 4 October, from 10.30am to 5pm; adult admission without a donation is £14.90 and includes exhibitions and the audio guide. Drop-in visitors are welcome. The exhibition is upstairs, with no step-free access.",
-          "why": "This offers an indoor Sunday choice near Finchley Road, with material from a local household rather than another Heath walk. Allow at least an hour, bring headphones for the audio guide, and check accessibility before visiting if stairs would be difficult.",
-          "sources": [
-            [
-              "Freud Museum exhibition",
-              "https://www.freud.org.uk/exhibitions/40-objects-40-years/"
-            ],
-            [
-              "Hours, admission and access",
-              "https://www.freud.org.uk/visit/"
-            ],
-            [
-              "Image and attribution",
-              "https://commons.wikimedia.org/wiki/File:Study,_collection_of_antiquities,_Freud_Museum_London,_18M0141.jpg"
-            ],
-            [
-              "Image licence",
-              "https://creativecommons.org/licenses/by-sa/4.0"
-            ]
-          ],
-          "imageKey": "sunFreud",
-          "action": "Walk"
-        },
-        {
-          "id": "2026-10-04-monday-heath-health-walks",
-          "section": "Near home",
-          "headline": "Choose a gentle or longer Heath walk tomorrow",
-          "location": "Near NW3",
-          "brief": "Heath Hands runs two free Monday health walks, both starting at 10am. Tomorrow, 5 October, the gentler hour-long route meets at Parliament Hill Café; the longer walk meets opposite Hampstead Heath Overground at the Heath entrance and finishes around midday. There is no booking: introduce yourself to the volunteer leaders in hi-vis. Arrive five minutes early; the longer route can include uneven ground.",
-          "why": "The two meeting points let you choose the amount of walking rather than committing to one fixed pace. The shorter option suits a gentle start to the week, while the longer route needs sensible footwear and enough time for its café stop.",
-          "sources": [
-            [
-              "Heath Hands routes and joining instructions",
-              "https://www.heath-hands.org.uk/walkinghampsteadheath"
-            ],
-            [
-              "Image and attribution",
-              "https://commons.wikimedia.org/wiki/File:Parliament_Hill_and_Hampstead_Heath_-_geograph.org.uk_-_4273777.jpg"
-            ],
-            [
-              "Image licence",
-              "https://creativecommons.org/licenses/by-sa/2.0/"
-            ]
-          ],
-          "imageKey": "octHeath",
-          "action": "Walk"
-        },
-        {
-          "id": "2026-10-04-kimberly-monday-seats",
-          "section": "Near home",
-          "headline": "Monday’s Kimberly Akimbo has limited seats left",
-          "location": "Near NW3",
-          "brief": "Hampstead Theatre lists limited availability for Kimberly Akimbo tomorrow, Monday 5 October, at 7.30pm. The European premiere stars Maria Friedman, with music by Jeanine Tesori and book and lyrics by David Lindsay-Abaire. Its story follows a teenager whose rare condition makes her age rapidly. The run continues until 7 November; published Monday-to-Saturday full-price bands are £45–£110, with concessions subject to eligibility and remaining seats.",
-          "why": "This is a specific nearby evening to book, rather than assuming there is a Sunday performance. Use the dated ticket page to inspect seats and the final price. The age guidance is 14+, and a cheaper advertised headline price need not apply to Monday’s remaining allocation.",
-          "sources": [
-            [
-              "Hampstead Theatre programme and price bands",
-              "https://www.hampsteadtheatre.com/production/kimberly-akimbo/"
-            ],
-            [
-              "5 October ticket availability",
-              "https://my.hampsteadtheatre.com/15424/15465"
-            ],
-            [
-              "Image and attribution",
-              "https://commons.wikimedia.org/wiki/File:Hampstead_Theatre_-_geograph.org.uk_-_485799.jpg"
-            ],
-            [
-              "Image licence",
-              "https://creativecommons.org/licenses/by-sa/2.0/"
-            ]
-          ],
-          "imageKey": "sepTheatre",
-          "action": "Book",
-          "actionUrl": "https://my.hampsteadtheatre.com/15424/15465"
-        },
-        {
-          "id": "2026-10-04-hive-saturday-gardening",
-          "section": "Near home",
-          "headline": "Give the Hive an hour of gardening next Saturday",
-          "location": "Near NW3",
-          "brief": "Heath Hands’ next Saturday gardening session is on 10 October, from 2pm to 3pm, at the Hive on Nassington Road. Volunteers take on gardening and light conservation tasks around the site. Equipment, tea and biscuits are provided, and there is no need to book. The organiser asks everyone to arrive promptly for 2pm; children under 11 should be accompanied by a responsible adult.",
-          "why": "An hour is a manageable commitment if you want to help locally without taking on a regular volunteer role. This is a practical gardening session, with tools supplied, so you can put the start time in your calendar now and simply turn up next Saturday.",
-          "sources": [
-            [
-              "Heath Hands gardening session",
-              "https://www.heath-hands.org.uk/whatson/gardening-volunteering-101026"
-            ],
-            [
-              "Image and attribution",
-              "https://commons.wikimedia.org/wiki/File:Parliament_Hill_and_Hampstead_Heath_-_geograph.org.uk_-_4273777.jpg"
-            ],
-            [
-              "Image licence",
-              "https://creativecommons.org/licenses/by-sa/2.0/"
-            ]
-          ],
-          "imageKey": "octHeath",
-          "action": "Walk"
-        },
-        {
-          "id": "2026-10-04-guildhall-sunday-tour",
-          "section": "Near work",
-          "headline": "Join a free Guildhall Art Gallery tour today",
-          "location": "Near EC2N",
-          "brief": "Guildhall Art Gallery offers free introductory tours today, Sunday 4 October, at 12.15pm and 1.15pm. City Guides lead each tour for 30–45 minutes; no booking is required for individual visitors. Admission to the gallery and London’s Roman Amphitheatre is also free, and walk-ins are welcome. The live visitor notice lists no closure today, but both spaces will close all day on 21 October.",
-          "why": "This gives a Square Mile visit a useful structure without paying for admission or planning a full afternoon. Choose one of today’s two start times. Group visits need separate arrangements, and the later October closure matters if you postpone your visit.",
-          "sources": [
-            [
-              "City of London visitor and tour information",
-              "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/guildhall-art-gallery/visit-guildhall-art-gallery"
-            ],
-            [
-              "Image and attribution",
-              "https://commons.wikimedia.org/wiki/File:Guildhall_Art_Gallery_-_geograph.org.uk_-_1170380.jpg"
-            ],
-            [
-              "Image licence",
-              "https://creativecommons.org/licenses/by-sa/2.0"
-            ]
-          ],
-          "imageKey": "sunGuildhall",
-          "action": "Walk"
-        },
-        {
-          "id": "2026-10-04-black-book-marketplace",
-          "section": "Near work",
-          "headline": "Browse the Barbican’s free book-festival marketplace",
-          "location": "Near EC2N",
-          "brief": "The Black British Book Festival is at the Barbican today, Sunday 4 October. Its marketplace runs from 1pm to 7pm in the Level G Foyer, with books, handcrafted goods, live entertainment and brand activities. The organiser explicitly says marketplace entry is free and requires no ticket. Headline talks and the wider festival programme have separate paid passes and capacity limits; free marketplace entry does not include them.",
-          "why": "This offers a low-commitment City outing even if you have not bought a festival pass. Go for browsing and discoveries, then decide separately whether a paid session is worth pursuing. It avoids confusing access to the public marketplace with guaranteed entry to the authors’ talks.",
-          "sources": [
-            [
-              "Barbican festival programme and marketplace admission",
-              "https://www.barbican.org.uk/whats-on/2026/event/black-british-book-festival-2026"
-            ],
-            [
-              "Image and attribution",
-              "https://commons.wikimedia.org/wiki/File:Barbican_Centre.jpg"
-            ],
-            [
-              "Image licence",
-              "https://creativecommons.org/licenses/by-sa/3.0/"
-            ]
-          ],
-          "imageKey": "octBarbican",
-          "action": "Walk"
-        },
-        {
-          "id": "2026-10-04-dost-london-finance-ai",
-          "section": "London AI",
-          "headline": "Dost’s London expansion puts AI into invoice workflows",
-          "location": "London-based",
-          "brief": "In an interview published today, Dost co-founder Adam Barbera explains his move to London in early 2026 to lead the finance-software company’s UK expansion. He describes AI reading invoices, matching documents and handling approval workflows, rather than merely adding a chatbot. Barbera says the business raised $7.8 million in late 2025, led by Octopus Ventures; that funding is background, not a new round announced today.",
-          "why": "For London finance teams, the relevant question is whether software can complete routine work and manage exceptions under real operating conditions. Treat the founder’s performance claims as claims, then ask about controls, integration and human oversight before equating an impressive demonstration with reliable daily automation.",
-          "sources": [
-            [
-              "4 October founder interview",
-              "https://startupsmagazine.co.uk/the-southern-european-founder-who-picked-london-to-scale"
-            ],
-            [
-              "Dost product capabilities",
-              "https://www.dost.io/"
-            ],
-            [
-              "Image and attribution",
-              "https://commons.wikimedia.org/wiki/File:City_of_London_skyline_from_London_City_Hall_-_Oct_2008.jpg"
-            ],
-            [
-              "Image licence",
-              "https://creativecommons.org/licenses/by-sa/3.0"
-            ]
-          ],
-          "imageKey": "sunCity"
-        },
-        {
-          "id": "2026-10-04-charlton-data-centre-housing",
-          "section": "London technology",
-          "headline": "Charlton’s data-centre proposal tests London’s housing priorities",
-          "location": "Across London",
-          "brief": "A BBC Politics London report published today examines a proposed 100,000-square-metre data centre at Charlton Riverside, where Greenwich Council wants housing-led regeneration. The council opposes the idea before a planning application has been submitted. The project team argues that roads and green spaces could help unlock nearby homes. The report connects the dispute with London’s demand for computing infrastructure, electricity, water and scarce development land.",
-          "why": "London’s digital services depend on physical buildings, power and connections, so their growth also creates neighbourhood decisions. This is a contested proposal, not an approved development. Watch the eventual application and supporting evidence before treating either promised housing benefits or residents’ concerns as settled outcomes.",
-          "sources": [
-            [
-              "BBC Politics London: land-use dilemma",
-              "https://www.bbc.co.uk/news/articles/cj20709qxleyo"
-            ],
-            [
-              "Image and attribution",
-              "https://commons.wikimedia.org/wiki/File:Riverside,_Charlton_-_geograph.org.uk_-_1467013.jpg"
-            ],
-            [
-              "Image licence",
-              "https://creativecommons.org/licenses/by-sa/2.0"
-            ]
-          ],
-          "imageKey": "sunCharlton"
-        },
-        {
-          "id": "2026-10-04-national-gallery-tuesday-tour",
-          "section": "Plan ahead",
-          "headline": "Save Tuesday at 3pm for a free National Gallery tour",
-          "location": "Across London",
-          "brief": "The National Gallery’s free guided collection tours run on Tuesdays, Wednesdays and Thursdays, from 3pm to 4pm, excluding public holidays. The next is Tuesday 6 October, meeting in Central Hall. Individuals and small groups of up to four can join on a first-come, first-served basis; there is no advance reservation. Donations are welcome, and the gallery asks visitors to arrive in good time.",
-          "why": "A clear weekday slot makes it easier to plan a Trafalgar Square visit around work or other errands. Arrive before 3pm to find Central Hall and join the queue; free admission does not guarantee a place once the tour reaches capacity.",
-          "sources": [
-            [
-              "National Gallery tour schedule and admission",
-              "https://www.nationalgallery.org.uk/events/daily-guided-tour"
-            ],
-            [
-              "Image and attribution",
-              "https://commons.wikimedia.org/wiki/File:Exterior_of_the_National_Gallery,_London.jpg"
-            ],
-            [
-              "Image licence",
-              "https://creativecommons.org/licenses/by/4.0"
-            ]
-          ],
-          "imageKey": "sunNational",
-          "action": "Walk"
-        },
-        {
-          "id": "2026-10-04-kenwood-dairy-next-sunday",
-          "section": "Plan ahead",
-          "headline": "Visit Kenwood Dairy’s nature centre next Sunday",
-          "location": "Near NW3",
-          "brief": "Kenwood Dairy’s next open day is Sunday 11 October, from 11am to 3pm. Heath Hands invites visitors to its Nature Interpretation Centre to look at wildlife specimens, pick up a leaflet and learn about activities across the Heath’s green spaces. The live listing presents it as an open-day visit, with no booking link or ticket charge. It takes place at the Dairy, not inside Kenwood House.",
-          "why": "This is a reason to walk farther north across the Heath next weekend, with a wildlife stop at the end. Keep the four-hour opening window in mind, and use the venue details carefully: the Dairy is a separate building from the better-known house.",
-          "sources": [
-            [
-              "Heath Hands Dairy open day",
-              "https://www.heath-hands.org.uk/whatson/kenwood-dairy-open-111026"
-            ],
-            [
-              "Image and attribution",
-              "https://commons.wikimedia.org/wiki/File:Kenwood_Dairy_-_3_-_geograph.org.uk_-_4189693.jpg"
-            ],
-            [
-              "Image licence",
-              "https://creativecommons.org/licenses/by-sa/2.0"
-            ]
-          ],
-          "imageKey": "sunDairy",
           "action": "Walk"
         }
       ]

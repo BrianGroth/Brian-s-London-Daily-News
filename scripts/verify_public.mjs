@@ -4,9 +4,14 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { digest, publicFetch, boundedBody, mapLimit } from './lib/source_access.mjs';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+// GitHub's Linux checkout deploys LF text; Windows may check out the same text as CRLF.
+// Remote responses still have to match the manifest byte-for-byte.
+export function publicationDigest(file, bytes) {
+  return digest(/\.(html|css|js|json|webmanifest|svg)$/.test(file) ? bytes.toString('utf8').replace(/\r\n/g, '\n') : bytes);
+}
 export async function verifyPublic({ baseUrl, commit = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim(), attempts = 1 } = {}) {
   const base = new URL(baseUrl); if (!base.pathname.endsWith('/')) base.pathname += '/';
-  const localIndex = digest(await readFile(path.join(root, 'index.html')));
+  const localIndex = publicationDigest('index.html', await readFile(path.join(root, 'index.html')));
   let lastError;
   for (let attempt = 0; attempt < attempts; attempt++) {
     try {
@@ -17,7 +22,7 @@ export async function verifyPublic({ baseUrl, commit = execFileSync('git', ['rev
       const expected = manifest.files || { 'index.html': localIndex };
       const checks = await mapLimit(Object.entries(expected), 4, async ([file, sha]) => {
         if (file.includes('..') || file.startsWith('/') || /[?#]/.test(file)) throw new Error('Invalid manifest path');
-        const local = digest(await readFile(path.join(root, file)));
+        const local = publicationDigest(file, await readFile(path.join(root, file)));
         const { response } = await publicFetch(new URL(`${file}?revision=${commit}`, base).href);
         const bytes = await boundedBody(response);
         if (!response.ok || digest(bytes) !== sha || sha !== local) throw new Error(`Public asset mismatch: ${file}`);
