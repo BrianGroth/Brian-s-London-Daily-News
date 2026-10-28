@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "allowedDomains": ["heath-hands.org.uk", "hampsteadtheatre.com", "hampsteadtheatre.co.uk", "cityoflondon.gov.uk", "barbican.org.uk", "english-heritage.org.uk", "broadgate.co.uk", "spitalfields.co.uk", "ucl.ac.uk", "imperial.ac.uk", "turing.ac.uk"],
+  "activitySourceIds": ["heath-hands", "hampstead-theatre", "barbican", "city-events"],
+  "rssSearches": {
+    "London AI": ["(site:ucl.ac.uk OR site:imperial.ac.uk OR site:turing.ac.uk) (AI OR \"artificial intelligence\") when:3d"],
+    "London Technology": ["(site:ucl.ac.uk OR site:imperial.ac.uk OR site:turing.ac.uk) (technology OR science OR quantum OR engineering) when:3d"]
+  },
+  "candidateLimits": {"Near Home": 8, "Near Work": 4, "London AI": 3, "London Technology": 3, "Plan Ahead": 4},
+  "maxResearchMinutes": 12,
+  "maxCandidatesPerSource": 8,
+  "listingTimeoutMs": 8000,
+  "listingAttempts": 1,
+  "maxCalendarOpportunities": 12
+}

@@ -1,5 +1,7 @@
 # Daily generation prompt
 
+For “Make the quick update to the newspaper” and equivalent quick-update requests, follow `QUICK_NEWS_PROMPT.md` through publication. Its limited source list/research budget replaces this full prompt's broadening steps; all editorial and validation requirements remain.
+
 Brian's single normal request is: **Generate and publish today's edition of Brian's London Daily News, following DAILY_NEWS_PROMPT.md.** The agent performs every internal command; Brian does not run Python or npm separately.
 
 ## Prepare once, then research selected leads

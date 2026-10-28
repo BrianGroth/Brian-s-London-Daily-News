@@ -79,7 +79,8 @@ function updateVisibleDate(index, today) {
 }
 
 export function renderIndex(index, data) {
-  const withData = replaceGeneratedData(index, renderDataBlock(data));
+  const newline = index.includes("\r\n") ? "\r\n" : "\n";
+  const withData = replaceGeneratedData(index, renderDataBlock(data).replace(/\n/g, newline));
   return updateVisibleDate(withData, data.issues.today);
 }
 

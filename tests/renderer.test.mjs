@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import vm from "node:vm";
-import { renderDataBlock } from "../scripts/render_edition.mjs";
+import { renderDataBlock, renderIndex } from "../scripts/render_edition.mjs";
 
 test("renderer safely embeds source text containing closing script markup", () => {
   const text = '</script><script>alert("source text")</script>';
@@ -13,4 +13,13 @@ test("renderer safely embeds source text containing closing script markup", () =
   vm.runInNewContext(`${block}\nthis.result = issues.today.stories[0];`, context);
   assert.equal(context.result.headline, text);
   assert.equal(context.result.image.alt, text);
+});
+
+test("renderer preserves Windows line endings without reporting a false data mismatch", () => {
+  const issue = { label: "London • Wednesday 28 October 2026", stories: [{ imageKey: "venue" }] };
+  const data = { schemaVersion: 1, images: { venue: { src: "https://example.org/photo.jpg" } }, issues: { today: issue, yesterday: issue, "day-before": issue } };
+  const page = '<script>\r\n    /* GENERATED DAILY DATA: run npm run render:edition */\r\n    /* END GENERATED DAILY DATA */\r\n</script>';
+  const result = renderIndex(page, data);
+  assert.equal(result.replaceAll("\r\n", "").includes("\n"), false);
+  assert.equal(renderIndex(result, data), result);
 });

@@ -6,6 +6,13 @@ These instructions apply to the entire repository.
 
 This project is a self-contained, static, mobile-first personal London newspaper. Preserve its editorial reliability, three-edition archive, established visual system, companion event calendar, source directory, and Nearby POI app.
 
+## Quick update requests
+
+- “Make the quick update to the newspaper”, “Quick update the newspaper” and “Publish a quick newspaper update” invoke `QUICK_NEWS_PROMPT.md`. Natural equivalents with the same intent also apply.
+- A quick-update request authorizes the complete research, writing, validation and publication workflow, including commit, ordinary push and public verification, unless the user explicitly requests a preview only.
+- Read `QUICK_NEWS_PROMPT.md` and `NEWS_CONTEXT.md`; use `quick:prepare`, the bounded usual-source shortlist, `quick:apply`, `quick:validate` and `quick:publish -- --reviewed`. Do not automatically expand a quick request into full discovery.
+- Ten justified stories, live verification, archive rules, complete browser checks and append-only stores remain mandatory. Report a shortfall if the bounded sources cannot support the mix.
+
 ## Read before changing anything
 
 - Read `README.md` for the repository map and normal workflow.
@@ -28,6 +35,7 @@ This project is a self-contained, static, mobile-first personal London newspaper
 - A new `today` edition must contain exactly ten stories: four adjacent Near Home activities, two Near Work stories, one London AI story, one London Technology story, and two Plan Ahead stories, in that order.
 - Never rotate the archive twice on the same London date. Do not repeat yesterday's underlying stories, even under different headlines or sources.
 - Treat `data/rss_candidates.json` as unverified discovery output. Refresh it with `python scripts/collect_candidates.py`; never treat it as reporting by itself.
+- Quick mode uses two restricted queries and isolated `.daily-work/quick/` files instead of refreshing the full RSS pool. This is the explicit quick-mode exception; discovery still requires live verification.
 - Treat `resources.html` as append-only production data. Deduplicate normalized hostnames, never remove existing cards, and never use an entry marked `data-status="do-not-use"`.
 - Preserve all existing records in `data/upcoming-events.json` and `poi/data/editorial-pois.json` unless the governing daily prompt explicitly permits removal. Keep JSON valid, deduplicate additions, and use verified authoritative URLs.
 - If `upcoming-events.js` changes, update its cache-busting version in `upcoming-events.html`.

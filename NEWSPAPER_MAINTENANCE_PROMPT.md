@@ -23,6 +23,7 @@ Treat this as a whole-project engineering task, not a daily newspaper publicatio
    - `scripts/collect_candidates.py` creates the unverified discovery pool in `data/rss_candidates.json`;
    - `scripts/prepare_daily_brief.mjs` combines it with direct activity discovery into the full `data/daily-brief.json` and the small `data/reading-brief.json`;
    - `scripts/lookup_context.mjs` retrieves complete editorial records on demand;
+   - `QUICK_NEWS_PROMPT.md` defines the publishing phrase for limited usual-source updates; `scripts/quick_sources.json` shares its source/selection limits, and `scripts/prepare_quick_brief.mjs` stores separate ignored quick discovery;
    - `scripts/apply_edition.mjs` validates verified input and applies archive rotation and append-only bookkeeping, defaulting to a dry run;
    - `data/editions.json` is the editable source for images and the three newspaper editions;
    - `scripts/render_edition.mjs` embeds that data into the self-contained `index.html`;

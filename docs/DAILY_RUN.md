@@ -4,6 +4,8 @@ The editor still makes factual, novelty, geography and image-rights decisions. T
 
 ## Normal daily sequence
 
+For the phrase “Make the quick update to the newspaper”, use `QUICK_NEWS_PROMPT.md`. The commands below remain the full-update flow.
+
 ```text
 npm run daily:prepare
 npm run lookup:context -- candidates ID
@@ -28,6 +30,23 @@ Direct activity discovery uses the approved Heath Hands JSON listing, Hampstead 
 `daily:validate` refreshes finished brief context and checks data/render synchronization, Node/POI tests, collector tests, Python compilation, diff whitespace and the complete desktop/mobile live browser tour. Each successful check has a fingerprint. A resumed validation repeats failed or changed checks; live browser evidence expires after thirty minutes. Changed HTML, data, scripts, styles or tests invalidate dependent checks. Logs and screenshots stay under `.daily-work/runs/YYYY-MM-DD/`.
 
 `daily:publish --reviewed` is the explicit publication command after editorial and screenshot review. It requires today's London edition and valid checks, refuses existing staged changes or an advanced remote branch, stages the publication allowlist, commits if necessary, pushes without force and verifies the public manifest and critical asset hashes against local HEAD. Use `--paths path1,path2` only for a reviewed nonstandard publication; it never allows paths outside this repository. A push failure preserves the commit for retry. Public verification requires the GitHub Actions Pages pipeline. Full local live acceptance remains required; exact public asset checks avoid another full browser tour unless a deployment discrepancy needs diagnosis.
+
+## Quick sequence (includes publication)
+
+```text
+npm run quick:prepare
+npm run lookup:context -- candidates ID --quick
+npm run quick:apply -- --input .daily-work/quick-verified-edition.json
+npm run quick:apply -- --input .daily-work/quick-verified-edition.json --write
+npm run quick:validate
+npm run quick:publish -- --reviewed
+```
+
+The agent verifies and writes the ten stories between prepare and apply; these commands do not generate prose or certify facts. Four official listing adapters and two UCL/Imperial/Turing site-restricted RSS queries replace normal discovery. Quick listing requests have an eight-second timeout and one attempt; the normal request policy is unchanged. All quick discovery and reading files live in ignored `.daily-work/quick/YYYY-MM-DD/`; `lookup:context --quick` uses that day's quick brief and never falls back to broad discovery. The full tracked datasets remain untouched by quick preparation.
+
+`scripts/quick_sources.json` limits each listing to eight extracted leads, the reading shortlist to 8/4/3/3/4 candidates, the upcoming calendar to twelve usual-source opportunities and agent research to twelve minutes. These are selection limits, not a claim that every candidate qualifies. Up to one alternate per shortlisted topic remains available by ID within the same total editorial budget. Selected facts/actions/images and morning facts require live verification. Failed or insufficient sources lead to a reported shortfall, never automatic broadening. Verification links may lead to the selected venue's ticket provider, paper or licence evidence; they are not extra discovery sources.
+
+Quick state/logs are separate under `.daily-work/runs/YYYY-MM-DD/quick/`; `npm run quick:status` reports them. Both modes share the writer lock, publication protections, tests and complete live browser acceptance. Quick brief regeneration is checkpointed after data changes so validation/publishing does not rebuild it needlessly. A quick publish stages the publication allowlist excluding the four normal discovery/brief files; ignored quick discovery is not uploaded. A preview-only request ends before publishing. `--refresh` forces quick rechecks only. `weekly:maintain -- --quick` is refused.
 
 ## Runtime and the managed proxy
 

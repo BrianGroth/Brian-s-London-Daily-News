@@ -8,6 +8,8 @@ Everything required to research, produce, validate, and publish the newspaper is
 
 **Brian has one required action:** open this repository as a Codex task and send: **“Generate and publish today’s edition of Brian’s London Daily News, following DAILY_NEWS_PROMPT.md.”** The repository file is the executable workflow; there is no need to paste several pages each day.
 
+For the faster usual-source version, say **“Make the quick update to the newspaper.”** This follows [`QUICK_NEWS_PROMPT.md`](QUICK_NEWS_PROMPT.md) through publication: four familiar activity listings, two UCL/Imperial/Turing news queries, a maximum of 22 candidate reviews and a 12-minute research budget. It keeps the ten-story mix, live fact/image checks, full browser acceptance and public deployment verification. If the limited sources cannot support ten strong stories, it reports the shortfall instead of widening into a full search. Research time is bounded; validation and deployment time depend on their actual results.
+
 That one prompt instructs Codex to:
 
 - refresh the RSS candidate file;
@@ -37,6 +39,9 @@ The maintenance prompt does not publish a daily edition unless the request expli
 | --- | --- |
 | `index.html` | The published self-contained newspaper; its edition data block is generated |
 | `DAILY_NEWS_PROMPT.md` | The prompt Brian sends to Codex each day |
+| `QUICK_NEWS_PROMPT.md` | Phrase-invoked usual-source edition, including validation and publication |
+| `scripts/quick_sources.json` | Shared quick source list, request limits and editorial budget |
+| `scripts/prepare_quick_brief.mjs` | Separate bounded quick discovery/reading view |
 | `NEWSPAPER_MAINTENANCE_PROMPT.md` | Whole-project rediscovery, repair and feature-work prompt |
 | `NEWS_CONTEXT.md` | Stable editorial context, source seeds, and quality rules |
 | `data/rss_candidates.json` | Machine-collected leads; never treated as verified reporting |

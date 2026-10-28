@@ -5,11 +5,12 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { digest, readJson, saveJson } from './lib/source_access.mjs';
 import { londonDate } from './prepare_daily_brief.mjs';
+import { quickPaths } from './prepare_quick_brief.mjs';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const publicationFiles = ['data/editions.json', 'index.html', 'data/upcoming-events.json', 'poi/data/editorial-pois.json', 'resources.html', 'data/image-library.json', 'data/rss_candidates.json', 'data/direct-candidates.json', 'data/daily-brief.json', 'data/reading-brief.json'];
 export async function fingerprint(directory, files) {
   return digest(JSON.stringify(await Promise.all(files.map(async file => {
-    try { return [file, digest(await readFile(path.join(directory, file)))]; }
+    try { return [file, digest(await readFile(path.resolve(directory, file)))]; }
     catch (e) { if (e.code === 'ENOENT') return [file, null]; throw e; }
   }))));
 }
@@ -27,15 +28,20 @@ export function phaseFresh(phase, hash, outputHash, now, maxAgeMs = Infinity) {
 export async function main(args = process.argv.slice(2)) {
   const command = args[0], has = flag => args.includes(flag), option = flag => args[args.indexOf(flag) + 1];
   if (!['prepare', 'apply', 'validate', 'publish', 'maintain', 'status'].includes(command)) throw new Error('Use prepare, apply, validate, publish, maintain or status. See docs/DAILY_RUN.md.');
-  const day = londonDate(Date.now()), work = path.join(root, '.daily-work/runs', day), stateFile = path.join(work, 'state.json');
+  const quick = has('--quick');
+  if (quick && command === 'maintain') throw new Error('Weekly catalogue maintenance is outside quick-update scope.');
+  const day = londonDate(Date.now()), work = path.join(root, '.daily-work/runs', day, ...(quick ? ['quick'] : [])), stateFile = path.join(work, 'state.json');
+  const quickFiles = quickPaths(root, day);
   await mkdir(work, { recursive: true });
   if (command === 'status') { console.log(JSON.stringify(await readJson(stateFile, { day, phases: {} }), null, 2)); return; }
   const lock = path.join(root, '.daily-work/runner.lock');
   await mkdir(lock).catch(e => { if (e.code === 'EEXIST') throw new Error('Another runner owns .daily-work/runner.lock; inspect it before removing a stale lock.'); throw e; });
   await saveJson(path.join(lock, 'owner.json'), { pid: process.pid, day, command, startedAt: new Date().toISOString() });
-  const state = await readJson(stateFile, { schemaVersion: 1, day, phases: {}, note: 'Editorial truth and image rights are reviewed by the agent. Successful commands do not establish factual verification.' });
+  const state = await readJson(stateFile, { schemaVersion: 1, day, profile: quick ? 'quick' : 'full', phases: {}, note: 'Editorial truth and image rights are reviewed by the agent. Successful commands do not establish factual verification.' });
   const tools = ['package.json', 'package-lock.json', ...await treeFiles('scripts')];
   async function run(executable, parameters, logName) {
+    // npm.cmd cannot be spawned directly on Windows; use npm's current CLI via Node.
+    if (executable === 'npm' && process.env.npm_execpath) { parameters = [process.env.npm_execpath, ...parameters]; executable = process.execPath; }
     const started = performance.now(), chunks = [];
     const result = await new Promise((resolve, reject) => {
       const child = spawn(executable, parameters, { cwd: root, env: { ...process.env, NODE_USE_ENV_PROXY: '1', SMOKE_ARTIFACT_DIR: path.join(work, logName + '-browser') }, stdio: ['ignore', 'pipe', 'pipe'] });
@@ -69,12 +75,17 @@ export async function main(args = process.argv.slice(2)) {
       await run(...node('scripts/preflight.mjs'), 'preflight');
     }, 30 * 60000);
   }
-  async function brief() { await run(...node('scripts/prepare_daily_brief.mjs'), 'brief'); }
+  async function brief() { await run(...node(quick ? 'scripts/prepare_quick_brief.mjs' : 'scripts/prepare_daily_brief.mjs'), 'brief'); }
+  async function quickBrief() {
+    await phase('brief', [...contextFiles, quickFiles.rss, quickFiles.direct], [quickFiles.brief, quickFiles.reading], brief);
+  }
   async function validate() {
     await startup();
+    if (quick) await quickBrief();
     const assets = [...contextFiles, 'data/daily-brief.json', 'data/direct-candidates.json', 'data/reading-brief.json', 'data/image-library.json', 'README.md', 'NEWS_CONTEXT.md', 'DAILY_NEWS_PROMPT.md', 'NEWSPAPER_MAINTENANCE_PROMPT.md', 'index.html', 'about.html', 'secondary.css', 'upcoming-events.html', 'upcoming-events.js', 'upcoming-events.css', ...await treeFiles('docs'), ...await treeFiles('.github/workflows'), ...await treeFiles('poi'), ...await treeFiles('tests')];
+    if (quick) assets.push(quickFiles.rss, quickFiles.direct, quickFiles.brief, quickFiles.reading, 'QUICK_NEWS_PROMPT.md');
     await phase('validation', assets, [], async () => {
-      await brief();
+      if (!quick) await brief();
       await phase('node-tests', assets, [], () => run('npm', ['test'], 'node-tests'));
       await phase('collector-tests', ['scripts/collect_candidates.py', 'tests/collector_test.py'], [], () => run('npm', ['run', 'test:collector'], 'collector-tests'));
       await phase('python-compile', ['scripts/collect_candidates.py'], [], () => run('python', ['-m', 'py_compile', 'scripts/collect_candidates.py'], 'python-compile'));
@@ -93,14 +104,15 @@ export async function main(args = process.argv.slice(2)) {
     }
     if (command === 'prepare' || command === 'maintain') {
       await startup();
-      await phase('discovery', [...contextFiles], ['data/rss_candidates.json', 'data/direct-candidates.json'], async () => {
+      await phase('discovery', [...contextFiles], quick ? [quickFiles.rss, quickFiles.direct] : ['data/rss_candidates.json', 'data/direct-candidates.json'], async () => {
         let failures = [];
-        try { await run('python', ['scripts/collect_candidates.py'], 'rss-collection'); } catch (e) { failures.push(e.message); }
-        try { await run(...node('scripts/collect_sources.mjs', ...(has('--refresh') ? ['--refresh'] : [])), 'direct-collection'); } catch (e) { failures.push(e.message); }
+        try { await run('python', ['scripts/collect_candidates.py', ...(quick ? ['--quick', '--output', quickFiles.rss] : [])], 'rss-collection'); } catch (e) { failures.push(e.message); }
+        try { await run(...node('scripts/collect_sources.mjs', ...(quick ? ['--quick', '--output', quickFiles.direct] : []), ...(has('--refresh') ? ['--refresh'] : [])), 'direct-collection'); } catch (e) { failures.push(e.message); }
         state.discoveryFailures = failures;
-        if (failures.length) console.log('Discovery has gaps; use live fallback research. Details are in state.json.');
+        if (failures.length) console.log(quick ? 'Quick discovery has gaps; use only the remaining usual sources within budget or report a shortfall. Details are in state.json.' : 'Discovery has gaps; use live fallback research. Details are in state.json.');
       }, 2 * 3600000);
-      await phase('brief', [...contextFiles, 'data/rss_candidates.json', 'data/direct-candidates.json'], ['data/daily-brief.json', 'data/reading-brief.json'], brief);
+      if (quick) await quickBrief();
+      else await phase('brief', [...contextFiles, 'data/rss_candidates.json', 'data/direct-candidates.json'], ['data/daily-brief.json', 'data/reading-brief.json'], brief);
       if (command === 'maintain') {
         await phase(has('--write') ? 'housekeeping-write' : 'housekeeping-dry-run', ['data/upcoming-events.json'], ['data/upcoming-events.json'], async () => {
           await run(...node('scripts/calendar_housekeeping.mjs', ...(has('--write') ? ['--write'] : [])), 'calendar-housekeeping');
@@ -109,7 +121,7 @@ export async function main(args = process.argv.slice(2)) {
         console.log('Weekly discovery queue prepared. New events/places require editorial verification; only expired calendar entries can be removed mechanically.');
       }
       if (!state.research?.startedAt) state.research = { startedAt: new Date().toISOString(), note: 'Wall-clock editorial span includes idle time; not model compute or token usage.' };
-      console.log(`Read data/reading-brief.json; look up selected candidate IDs. State: ${stateFile}`);
+      console.log(`Read ${quick ? quickFiles.reading : 'data/reading-brief.json'}; look up selected candidate IDs${quick ? ' with --quick' : ''}. State: ${stateFile}`);
     }
     if (command === 'apply') {
       if (!has('--input')) throw new Error('apply requires --input PATH; --write applies after dry-run review.');
@@ -120,7 +132,8 @@ export async function main(args = process.argv.slice(2)) {
       console.log(summary);
       if (has('--write')) {
         if (state.research?.startedAt) state.research = { ...state.research, completedAt: new Date().toISOString(), elapsedWallMs: Date.now() - Date.parse(state.research.startedAt) };
-        delete state.phases.validation; await brief();
+        delete state.phases.validation;
+        if (quick) await quickBrief(); else await brief();
       }
     }
     if (command === 'validate') await validate();
@@ -136,7 +149,7 @@ export async function main(args = process.argv.slice(2)) {
       await run('git', ['fetch', 'origin', 'main'], 'git-fetch');
       const behind = execFileSync('git', ['rev-list', '--count', 'HEAD..origin/main'], { cwd: root, encoding: 'utf8' }).trim();
       if (behind !== '0') throw new Error('origin/main advanced; reconcile the changes and revalidate before publishing. No force push.');
-      const files = has('--paths') ? option('--paths').split(',') : publicationFiles;
+      const files = has('--paths') ? option('--paths').split(',') : publicationFiles.filter(file => !quick || !['data/rss_candidates.json', 'data/direct-candidates.json', 'data/daily-brief.json', 'data/reading-brief.json'].includes(file));
       for (const file of files) if (path.isAbsolute(file) || file.split(/[\\/]/).includes('..')) throw new Error('Publication paths must stay in the repository');
       await run('git', ['add', '--', ...files], 'git-stage');
       const diff = execFileSync('git', ['diff', '--cached', '--name-only'], { cwd: root, encoding: 'utf8' }).trim();
