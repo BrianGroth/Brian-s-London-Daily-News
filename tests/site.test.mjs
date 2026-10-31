@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import vm from "node:vm";
 import test from "node:test";
+import { assertStoryMix } from '../scripts/lib/edition_policy.mjs';
 
 const index = await readFile(new URL("../index.html", import.meta.url), "utf8");
 const resources = await readFile(new URL("../resources.html", import.meta.url), "utf8");
@@ -36,12 +37,11 @@ test("brand and required palette are present", () => {
   assert.match(about, /BRIAN'S LONDON DAILY NEWS/);
 });
 
-test("today has the ten-story local-first mix and archived issues remain valid and non-repeating", () => {
+test("editions retain the standard mix or an explicit short-edition explanation and remain non-repeating", () => {
   const issues = extractIssues();
   const order = ["today", "yesterday", "day-before"];
-  const expectedCounts = { today: 10, yesterday: 10, "day-before": 10 };
   for (const key of order) {
-    assert.equal(issues[key].stories.length, expectedCounts[key], `${key} preserves its expected story count`);
+    assertStoryMix(issues[key]);
     for (const story of issues[key].stories) {
       assert.match(story.id, /^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/);
       assert.ok(story.headline && story.brief && story.why);
@@ -58,17 +58,6 @@ test("today has the ten-story local-first mix and archived issues remain valid a
     assert.equal(repeats.length, 0);
   }
 
-  assert.deepEqual(
-    Array.from(issues.today.stories, ({ section }) => section.toLowerCase()),
-    [
-      "near home", "near home", "near home", "near home",
-      "near work", "near work",
-      "london ai",
-      "london technology",
-      "plan ahead", "plan ahead",
-    ],
-    "today has the required 4/2/1/1/2 adjacent section mix",
-  );
 });
 
 test("structured edition data is rendered into the self-contained homepage", () => {

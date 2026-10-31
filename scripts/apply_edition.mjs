@@ -5,9 +5,9 @@ import { isDeepStrictEqual } from "node:util";
 import { renderIndex } from "./render_edition.mjs";
 import { pruneCalendar } from "./calendar_housekeeping.mjs";
 import { CATEGORY_IDS } from "../poi/js/lib/categories.js";
+import { assertStoryMix } from './lib/edition_policy.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const sections = ["Near home", "Near home", "Near home", "Near home", "Near work", "Near work", "London AI", "London technology", "Plan ahead", "Plan ahead"];
 const normalize = (value) => value.normalize("NFKD").toLowerCase().replace(/[^a-z0-9]/g, "");
 const host = (value) => new URL(value).hostname.toLowerCase().replace(/^www\./, "");
 const json = (value) => JSON.stringify(value, null, 2) + "\n";
@@ -88,7 +88,6 @@ function validateMorning(morning, blocked) {
 }
 
 function validateStories(stories, images, issueDate, blocked) {
-  requireValue(Array.isArray(stories) && stories.length === 10, "Edition must contain exactly ten stories.");
   const ids = new Set();
   const headlines = new Set();
   stories.forEach((story, index) => {
@@ -96,7 +95,6 @@ function validateStories(stories, images, issueDate, blocked) {
     requireValue(typeof story.id === "string" && story.id.startsWith(`${issueDate}-`) && /^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/.test(story.id), "Story IDs must begin with the edition date.");
     requireValue(!ids.has(story.id), `Duplicate story ID ${story.id}.`);
     ids.add(story.id);
-    requireValue(typeof story.section === "string" && story.section.toLowerCase() === sections[index].toLowerCase(), "Stories must use the adjacent 4/2/1/1/2 section mix.");
     requireValue(["Near NW3", "Near EC2N", "London-based", "Across London"].includes(story.location), "Invalid story location.");
     for (const key of ["headline", "brief", "why"]) text(story[key], key);
     requireValue(!headlines.has(normalize(story.headline)), `Duplicate story headline ${story.headline}.`);
@@ -149,7 +147,8 @@ function appendRecords(existing, additions, validate, similar, label) {
 export function buildEditionUpdate(input, current) {
   fields(input, ["date", "edition"], ["images", "events", "pois", "resources", "pruneExpired"]);
   const issueDate = date(input.date);
-  fields(input.edition, ["morning", "stories"]);
+  fields(input.edition, ["morning", "stories"], ["shortEditionReason"]);
+  assertStoryMix(input.edition);
   requireValue(current.editions.schemaVersion === 1 && current.events.version === 1 && current.pois.schemaVersion === 1, "Unsupported store schema.");
   const entries = directory(current.resources);
   const blocked = new Set([...entries].filter(([, status]) => status === "do-not-use").map(([domain]) => domain));

@@ -7,6 +7,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { launchBrowser } from "./lib/browser_runtime.mjs";
 import { installBrowserNetwork } from "./lib/browser_network.mjs";
+import { assertStoryMix } from './lib/edition_policy.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const live = process.argv.includes("--live");
@@ -109,9 +110,10 @@ async function homepage(page, viewportName) {
     const panel = page.locator(`#${day}`);
     assert.ok(await panel.isVisible());
     assert.equal((await page.locator("#issue-line").textContent()).replace(/\s+/g, " ").trim(), issue.label);
-    assert.equal(await panel.locator(".story").count(), 10);
+    assert.equal(await panel.locator(".story").count(), issue.stories.length);
     assert.deepEqual(await panel.locator(".section-label").allTextContents(), issue.stories.map(({ section }) => section));
-    if (day === "today") assert.deepEqual(issue.stories.map(({ section }) => section.toLowerCase()), ["near home", "near home", "near home", "near home", "near work", "near work", "london ai", "london technology", "plan ahead", "plan ahead"]);
+    assertStoryMix(issue);
+    if (issue.shortEditionReason) assert.equal(await panel.locator('.edition-note').innerText(), issue.shortEditionReason);
     for (const story of issue.stories) {
       const article = panel.locator(`[data-story-id="${story.id}"]`);
       assert.equal(await article.locator("h2").innerText(), story.headline);

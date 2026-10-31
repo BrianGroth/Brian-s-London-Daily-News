@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-28",
+  "updatedAt": "2026-10-31",
   "events": [
     {
       "id": "2026-12-02-barbican-conservatory-plant-adoption",
@@ -30,20 +30,6 @@
       "endDate": "2026-11-14",
       "action": "Book",
       "actionUrl": "https://www.hampsteadtheatre.com/production/kimberly-akimbo/"
-    },
-    {
-      "id": "2026-10-28-drop-in-gardening-281026",
-      "title": "Drop-In Gardening",
-      "startDate": "2026-10-28",
-      "time": "14:00",
-      "section": "Near home",
-      "location": "Hampstead Heath",
-      "venue": "The Hive, Nassington Road",
-      "sourceName": "Heath Hands",
-      "sourceUrl": "https://www.heath-hands.org.uk/whatson/drop-in-gardening-281026",
-      "summary": "14:00–15:00. Drop-in gardening and light conservation; equipment, tea and biscuits provided. No booking needed. Under-11s must be accompanied; 12–17-year-olds can be dropped off by an adult.",
-      "addedOn": "2026-10-02",
-      "action": "Walk"
     },
     {
       "id": "2026-10-31-heath-info-hut-31oct26",
@@ -464,13 +450,13 @@
     },
     {
       "id": "2026-11-01-lnhs-fungi",
-      "title": "LNHS - Introduction to Fungi",
-      "startDate": "2026-11-01",
+      "title": "LNHS fungi walk — postponed to 6 November",
+      "startDate": "2026-11-06",
       "section": "Near home",
       "location": "Hampstead Heath",
-      "sourceName": "Heath Hands",
-      "sourceUrl": "https://www.heath-hands.org.uk/whatson/lnhs-funginov",
-      "summary": "Mario Tortelli leads a fungi walk; register by email and await confirmation. Bring lunch.",
+      "sourceName": "London Natural History Society",
+      "sourceUrl": "https://lnhs.org.uk/index.php/activities/full-programme/eventdetail/3632/-/hampstead-heath-introduction-to-fungi",
+      "summary": "Postponed from Sunday 1 November to Friday 6 November; same 10:30 meeting outside Hampstead Heath Overground station. Register by email and await confirmation; bring lunch.",
       "addedOn": "2026-10-28",
       "time": "10:30",
       "venue": "Hampstead Heath Overground station",
@@ -489,6 +475,47 @@
       "summary": "Free archive installation on the Mezzanine, Level G; includes a 1:22-scale model.",
       "addedOn": "2026-10-28",
       "action": "Walk"
+    },
+    {
+      "id": "2026-10-30-dogstar",
+      "title": "Dogstar",
+      "startDate": "2026-10-30",
+      "endDate": "2026-12-05",
+      "section": "Near home",
+      "location": "Swiss Cottage",
+      "sourceName": "Hampstead Theatre",
+      "sourceUrl": "https://www.hampsteadtheatre.com/production/dogstar/",
+      "summary": "Daisy Hall’s play downstairs; tickets advertised from £28. 31 October sold out; later performances show limited availability. Select a date in the booking system.",
+      "addedOn": "2026-10-31",
+      "venue": "Hampstead Theatre",
+      "action": "Book",
+      "actionUrl": "https://www.hampsteadtheatre.com/production/dogstar/#book-tickets"
+    },
+    {
+      "id": "2026-10-30-1327-city-london",
+      "title": "1327 and the City of London",
+      "startDate": "2026-10-30",
+      "endDate": "2027-04-29",
+      "section": "Near work",
+      "location": "Guildhall Yard",
+      "sourceName": "City of London",
+      "sourceUrl": "https://www.cityoflondon.gov.uk/events/1327-and-the-city-of-london-exhibition",
+      "summary": "Free display of charters, manuscripts and civic chronicles at Guildhall Art Gallery. Regular gallery hours 10am–5pm, last admission 4.45pm; special closures apply.",
+      "addedOn": "2026-10-31",
+      "venue": "Guildhall Art Gallery"
+    },
+    {
+      "id": "2026-11-02-kenwood-events-consultation",
+      "title": "Kenwood autumn events consultation",
+      "startDate": "2026-11-02",
+      "section": "Plan ahead",
+      "location": "Kenwood",
+      "sourceName": "Heath Hands / English Heritage",
+      "sourceUrl": "https://www.heath-hands.org.uk/whatson/kenwoodeventsconsultation",
+      "summary": "Old Kitchen consultation. RSVP to Kenwood.house@english-heritage.org.uk. East Lodge access from 18:00. Announcement says ends 20:00 but structured listing says 20:30; confirm with organiser.",
+      "addedOn": "2026-10-31",
+      "time": "18:30",
+      "venue": "Kenwood Old Kitchen"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-28",
+  "updatedAt": "2026-10-31",
   "images": {
     "keatsFlow": {
       "src": "https://images.squarespace-cdn.com/content/v1/5eff13e8f5beea28d1539c30/875184a4-51b9-4408-b706-ad86b12edec9/Keats+house+and+garden.jpg",
@@ -511,10 +511,178 @@
       "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Queen%27s_Tower_-_Imperial_College_-_geograph.org.uk_-_7508528.jpg/960px-Queen%27s_Tower_-_Imperial_College_-_geograph.org.uk_-_7508528.jpg",
       "alt": "Queen’s Tower at Imperial College London in April 2023; archive campus photograph, not an AMPERA reactor",
       "credit": "Archive photo: Mr Ignavy / Wikimedia Commons / CC BY-SA 2.0 / https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "oct31Theatre": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Hampstead_Theatre_-_geograph.org.uk_-_485799.jpg",
+      "alt": "Hampstead Theatre on Eton Avenue; archive exterior photograph, not the Dogstar production",
+      "credit": "Archive photo: ceridwen / Wikimedia Commons / CC BY-SA 2.0 / https://creativecommons.org/licenses/by-sa/2.0/"
+    },
+    "oct31UCL": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/UCL_Portico_Building.jpg",
+      "alt": "UCL’s Bloomsbury portico in 2007; archive institution photograph, not a bat-survey field site",
+      "credit": "Archive photo: LordHarris / Wikimedia Commons / CC BY-SA 3.0"
+    },
+    "oct31Kenwood": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Kenwood_House.jpg/1280px-Kenwood_House.jpg",
+      "alt": "Kenwood House; archive exterior photograph, not the Old Kitchen meeting room",
+      "credit": "Photo: Mikegr / Wikimedia Commons / https://creativecommons.org/licenses/by-sa/2.0/"
     }
   },
   "issues": {
     "today": {
+      "label": "London • Saturday 31 October 2026",
+      "footer": "Saturday 31 October 2026",
+      "morning": {
+        "mode": "Nearby POI",
+        "modeUrl": "poi/",
+        "temperature": "15° / 8° overnight",
+        "weatherUrl": "https://weather.metoffice.gov.uk/forecast/gcpvj0v07",
+        "rain": "Under 5% rain risk through 11pm",
+        "pollen": "Air pollution low · UV 2",
+        "transit": [
+          [
+            "Northern",
+            "Severe delays: train cancellations",
+            "check",
+            "https://tfl.gov.uk/tube-dlr-overground/status/"
+          ],
+          [
+            "Overground",
+            "Suffragette and Windrush part closures; Mildmay good",
+            "check",
+            "https://tfl.gov.uk/tube-dlr-overground/status/"
+          ]
+        ]
+      },
+      "stories": [
+        {
+          "id": "2026-10-31-info-hut-until-two",
+          "section": "Near home",
+          "headline": "Call at the Heath Info Hut before 2pm",
+          "location": "Near NW3",
+          "brief": "The Heath Info Hut at Parliament Hill is open today, Saturday 31 October, from 10am to 2pm. Heath Hands invites visitors to collect a free map or nature sheet, ask its team questions and find out about upcoming activities. Hampstead Heath books, cards and bags are also available to buy. This is a drop-in information stop rather than a booked walk.",
+          "why": "Make this the first stop on a lunchtime Heath walk if you want a paper map or practical local advice. The early closing time matters: an afternoon arrival after 2pm would miss the team.",
+          "sources": [
+            [
+              "Heath Hands opening details",
+              "https://www.heath-hands.org.uk/whatson/heath-info-hut-31oct26"
+            ]
+          ],
+          "imageKey": "octHeath",
+          "action": "Walk"
+        },
+        {
+          "id": "2026-10-31-dogstar-next-week",
+          "section": "Near home",
+          "headline": "Book Dogstar next week—tonight is sold out",
+          "location": "Near NW3",
+          "brief": "Daisy Hall’s Dogstar has opened downstairs at Hampstead Theatre and runs until 5 December, directed by Lucy Morrison. The theatre advertises tickets from £28. Its live booking system lists tonight, 31 October, as sold out, despite the programme page’s selling-fast label. Thursday 5 November at 7.45pm currently shows limited availability; the booking link opens that performance.",
+          "why": "Use the ticket system when choosing a date, because its availability is more specific than the programme banner. Next week offers a local evening out without relying on tonight’s unavailable seats; prices and remaining seats may change.",
+          "sources": [
+            [
+              "Hampstead Theatre production details",
+              "https://www.hampsteadtheatre.com/production/dogstar/"
+            ],
+            [
+              "Live performance availability",
+              "https://my.hampsteadtheatre.com/15994/16042"
+            ]
+          ],
+          "imageKey": "oct31Theatre",
+          "action": "Book",
+          "actionUrl": "https://my.hampsteadtheatre.com/15994/16042"
+        },
+        {
+          "id": "2026-10-31-guildhall-1327",
+          "section": "Near work",
+          "headline": "See the City’s medieval records in its new 1327 display",
+          "location": "Near EC2N",
+          "brief": "The new 1327 and the City of London exhibition runs from 30 October to 29 April 2027 at Guildhall Art Gallery. Free entry brings together Edward III’s charter confirming the City’s liberties, Andrew Horn’s legal collection and a civic chronicle opened at 1327. The gallery’s regular hours are 10am–5pm, with last admission at 4.45pm; walk-ins are welcome.",
+          "why": "This is a compact City-history detour within walking distance of the office, with original records rather than a general medieval overview. Allow time before last admission, and use the visitor page for any date-specific changes.",
+          "sources": [
+            [
+              "City of London exhibition",
+              "https://www.cityoflondon.gov.uk/events/1327-and-the-city-of-london-exhibition"
+            ],
+            [
+              "Gallery admission and hours",
+              "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/guildhall-art-gallery/visit-guildhall-art-gallery"
+            ]
+          ],
+          "imageKey": "sunGuildhall",
+          "action": "Walk"
+        },
+        {
+          "id": "2026-10-31-mohri-curve-weekend",
+          "section": "Near work",
+          "headline": "Make time for Yuko Mohri’s moving, sounding Curve",
+          "location": "Near EC2N",
+          "brief": "Yuko Mohri’s In Concert is open at the Barbican’s Curve, Tuesday–Sunday from 11am to 7pm, until 24 January 2027. Admission is free. The installation combines everyday objects with light, sound and kinetic sculpture, responding to changing atmospheric conditions. Find The Curve on Level G, opposite the Barbican Shop at the bottom of the Silk Street entrance ramp.",
+          "why": "This offers a free indoor choice for a City visit today or an after-work stop on an opening day. Leave large bags behind: the Barbican limits visitors to one reasonably sized bag and operates security checks.",
+          "sources": [
+            [
+              "Barbican exhibition, hours and access",
+              "https://www.barbican.org.uk/whats-on/2026/event/yuko-mohri-in-concert"
+            ]
+          ],
+          "imageKey": "octBarbican",
+          "action": "Walk"
+        },
+        {
+          "id": "2026-10-31-ucl-bat-survey",
+          "section": "London AI",
+          "headline": "UCL’s AI tools help turn woodland recordings into bat evidence",
+          "location": "London-based",
+          "brief": "UCL reported on 30 October that AI helped process 217 terabytes of audio for Britain’s largest passive acoustic woodland bat survey. Researchers worked with the Bat Conservation Trust and Forest Research on recordings from 310 English woodland sites. The survey detected over 98 million bat calls; a network of 19 experts checked a subset of the AI identifications rather than accepting every automated label unchecked.",
+          "why": "The concrete London contribution is UCL’s research expertise in acoustic identification. For anyone interested in Heath wildlife, it shows how machine learning can support conservation at scale while retaining human verification; it is not a survey of Hampstead Heath alone.",
+          "sources": [
+            [
+              "UCL research announcement",
+              "https://www.ucl.ac.uk/news/2026/oct/ai-helps-reveal-britains-bats-largest-ever-national-woodland-bat-survey"
+            ]
+          ],
+          "imageKey": "oct31UCL"
+        },
+        {
+          "id": "2026-10-31-kenwood-consultation-monday",
+          "section": "Plan ahead",
+          "headline": "RSVP for Kenwood’s Monday events consultation",
+          "location": "Across London",
+          "brief": "Kenwood and English Heritage invite the public to an autumn events consultation on Monday 2 November in the Old Kitchen. Heath Hands’ current announcement says 6.30–8pm, with grounds access through East Lodge from 6pm. It asks attendees to confirm by emailing Kenwood.house@english-heritage.org.uk. The page’s structured calendar ends at 8.30pm, so confirm the finishing time when you RSVP.",
+          "why": "This is a chance to ask about upcoming Kenwood events before committing to future visits. Plan the northern-Heath journey separately from a short local walk, and follow the specified evening entrance rather than assuming every gate will be open.",
+          "sources": [
+            [
+              "Consultation and attendance instructions",
+              "https://www.heath-hands.org.uk/whatson/kenwoodeventsconsultation"
+            ]
+          ],
+          "imageKey": "oct31Kenwood"
+        },
+        {
+          "id": "2026-10-31-fungi-postponed-six-november",
+          "section": "Plan ahead",
+          "headline": "Correction: the Heath fungi walk moves to Friday 6 November",
+          "location": "Near NW3",
+          "brief": "The London Natural History Society has postponed the Hampstead Heath fungi walk originally advertised for Sunday 1 November to Friday 6 November. Its organiser notice says the time and meeting place remain unchanged: 10.30am outside Hampstead Heath Overground station. Mario Tortelli leads the walk. Register through hampsteadbookings@lnhs.org.uk, putting the walk’s name and new date in the subject; places may be limited.",
+          "why": "Do not turn up on Sunday using the date in the previous edition. The calendar has been corrected to 6 November. Bring lunch and wait for registration confirmation rather than assuming the amended listing guarantees a place.",
+          "sources": [
+            [
+              "LNHS postponement notice",
+              "https://lnhs.org.uk/index.php/activities/full-programme/eventdetail/3632/-/hampstead-heath-introduction-to-fungi"
+            ],
+            [
+              "Heath Hands updated listing and registration",
+              "https://www.heath-hands.org.uk/whatson/lnhs-funginov"
+            ]
+          ],
+          "imageKey": "octHeath",
+          "action": "Participate",
+          "actionUrl": "https://www.heath-hands.org.uk/whatson/lnhs-funginov"
+        }
+      ],
+      "shortEditionReason": "Short edition: seven verified choices and corrections today. The usual local and technology mix is reduced; the fungi walk has moved to 6 November."
+    },
+    "yesterday": {
       "label": "London • Wednesday 28 October 2026",
       "footer": "Wednesday 28 October 2026",
       "morning": {
@@ -711,7 +879,7 @@
         }
       ]
     },
-    "yesterday": {
+    "day-before": {
       "label": "London • Sunday 18 October 2026",
       "footer": "Sunday 18 October 2026",
       "morning": {
@@ -990,296 +1158,6 @@
             [
               "Autumn walk date, meeting point and attendance",
               "https://www.heath-hands.org.uk/whatson/highgatewood-autumn"
-            ],
-            [
-              "Archive image and attribution",
-              "https://commons.wikimedia.org/wiki/File:Highgate_Wood,_August_2020.jpg"
-            ],
-            [
-              "Image licence",
-              "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
-            ]
-          ],
-          "action": "Walk"
-        }
-      ]
-    },
-    "day-before": {
-      "label": "London • Saturday 10 October 2026",
-      "footer": "Saturday 10 October 2026",
-      "morning": {
-        "mode": "Nearby POI",
-        "modeUrl": "poi/",
-        "temperature": "14° / 10° overnight",
-        "weatherUrl": "https://weather.metoffice.gov.uk/forecast/gcpvj0v07",
-        "rain": "Under 5% rain this evening; dry Sunday daytime",
-        "pollen": "UV 3 · moderate",
-        "transit": [
-          [
-            "Northern",
-            "Good service",
-            "good",
-            "https://tfl.gov.uk/tube-dlr-overground/status/"
-          ],
-          [
-            "Overground",
-            "Mildmay good; Lioness reduced; Weaver/Windrush minor delays",
-            "check",
-            "https://tfl.gov.uk/tube-dlr-overground/status/"
-          ]
-        ]
-      },
-      "stories": [
-        {
-          "id": "2026-10-10-constable-last-two-sundays",
-          "section": "Near home",
-          "headline": "See Constable’s Hampstead before the exhibition closes",
-          "location": "Near NW3",
-          "brief": "Burgh House’s free Constable in Hampstead exhibition closes on Sunday 18 October. Tomorrow, Sunday 11 October, the Wells Room is open from 10am to 4pm, with paintings, prints and letters exploring the artist’s relationship with the Heath. Admission is free. The house is closed on Saturdays; its café has separate opening hours, so this is a Sunday museum visit.",
-          "why": "There are only two Sundays left to see the exhibition. It connects a familiar local landscape with the artist who studied its clouds and cottages, and gives you a nearby indoor choice without a ticket purchase.",
-          "imageKey": "satBurgh",
-          "sources": [
-            [
-              "Burgh House exhibition",
-              "https://www.burghhouse.org.uk/whats-on/whats-on/exhibition/constable-in-hampstead"
-            ],
-            [
-              "Opening hours and closures",
-              "https://www.burghhouse.org.uk/visit/visit"
-            ],
-            [
-              "Archive image and attribution",
-              "https://commons.wikimedia.org/wiki/File:Burgh_House_in_New_End_Square_-_geograph.org.uk_-_674944.jpg"
-            ],
-            [
-              "Image licence",
-              "https://creativecommons.org/licenses/by-sa/2.0"
-            ]
-          ],
-          "action": "Walk"
-        },
-        {
-          "id": "2026-10-10-keats-free-garden",
-          "section": "Near home",
-          "headline": "Take a free Sunday pause in Keats’s garden",
-          "location": "Near NW3",
-          "brief": "Keats House welcomes free garden visits at 10 Keats Grove, close to Hampstead Heath station. The City’s directory lists Sunday opening sessions of 11am–1pm and 2–5pm, making tomorrow an easy local stop. The garden is where Keats wrote Ode to a Nightingale in 1819. Dogs may enter on a lead; food and drink should stay outside the house.",
-          "why": "This is a short, quiet outdoor alternative to a longer Heath outing. Garden entry does not require buying museum admission, and the midday break matters if you are fitting the stop around lunch or another Sunday visit.",
-          "imageKey": "satKeats",
-          "sources": [
-            [
-              "Garden access and visitor rules",
-              "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/keats-house/visit-keats-house"
-            ],
-            [
-              "Sunday opening sessions",
-              "https://www.fis.cityoflondon.gov.uk/whats-on/keats-house-2"
-            ],
-            [
-              "Archive image and attribution",
-              "https://commons.wikimedia.org/wiki/File:Keats_House.jpg"
-            ],
-            [
-              "Image licence",
-              "https://creativecommons.org/publicdomain/mark/1.0/"
-            ]
-          ],
-          "action": "Walk"
-        },
-        {
-          "id": "2026-10-10-larner-sunday-and-frieze",
-          "section": "Near home",
-          "headline": "See Liz Larner free on Sunday—or on extra opening days",
-          "location": "Near NW3",
-          "brief": "Camden Art Centre’s free Liz Larner exhibition, A hard line to bend, is open tomorrow from 11am to 6pm. Ceramic forms and discarded plastics connect sculpture with ecological concerns. The Arkwright Road gallery also opens exceptionally on Monday 12 and Tuesday 13 October, both 11am–6pm, for Frieze Week. The exhibition continues until 17 January 2027; the regular schedule is Wednesday to Sunday.",
-          "why": "The extra Monday and Tuesday sessions create two useful alternatives if Sunday becomes busy. This is a free indoor visit near Finchley Road, and the level entrance on Arkwright Road and gallery lifts make access easier than at some historic houses.",
-          "imageKey": "satCamden",
-          "sources": [
-            [
-              "Exhibition and free admission",
-              "https://camdenartcentre.org/whats-on/a-hard-line-to-bend"
-            ],
-            [
-              "Opening days and access",
-              "https://camdenartcentre.org/come-visit-us"
-            ],
-            [
-              "Archive image and attribution",
-              "https://commons.wikimedia.org/wiki/File:Camden_Arts_Centre_-_geograph.org.uk_-_8259285.jpg"
-            ],
-            [
-              "Image licence",
-              "https://creativecommons.org/licenses/by-sa/2.0"
-            ]
-          ],
-          "action": "Walk"
-        },
-        {
-          "id": "2026-10-10-heath-litter-next-saturday",
-          "section": "Near home",
-          "headline": "Give Parliament Hill an hour next Saturday",
-          "location": "Near NW3",
-          "brief": "Heath Hands’ next Parliament Hill litter pick is Saturday 17 October, noon to 1pm. Meet at the Heath Info Hut near the tennis courts on Highgate Road, formerly the Tennis Bookings Hut. Everyone is welcome, equipment is provided and advance booking is unnecessary. This afternoon’s session has already finished, so the useful date to put in your diary is next Saturday.",
-          "why": "This is a practical, nearby volunteering option with a clear one-hour commitment. You can turn up without navigating a booking form, help care for the area you walk through, and still leave most of Saturday free.",
-          "imageKey": "octHeath",
-          "sources": [
-            [
-              "Next Saturday’s official listing",
-              "https://www.heath-hands.org.uk/whatson/litter-pick-17oct26"
-            ],
-            [
-              "Archive image and attribution",
-              "https://commons.wikimedia.org/wiki/File:Parliament_Hill_and_Hampstead_Heath_-_geograph.org.uk_-_4273777.jpg"
-            ],
-            [
-              "Image licence",
-              "https://creativecommons.org/licenses/by-sa/2.0/"
-            ]
-          ],
-          "action": "Walk"
-        },
-        {
-          "id": "2026-10-10-spitalfields-sunday-farm",
-          "section": "Near work",
-          "headline": "Take a free Sunday walk to Spitalfields City Farm",
-          "location": "Near EC2N",
-          "brief": "Spitalfields City Farm is open tomorrow, Sunday 11 October, from 10am to 4.30pm, with free general entry. Its Buxton Street entrance is about twenty minutes’ walk from Liverpool Street, on the eastern side of Spitalfields. The date-specific visitor guide keeps summer hours until the clock change on 25 October. Wear sturdy shoes, supervise children and wash your hands after animal contact.",
-          "why": "This broadens your usual City walk beyond offices and shops without an admission cost. The farm’s detailed seasonal timetable gives a later closing time than its generic footer, so use the visitor guide when planning a Sunday afternoon stop.",
-          "imageKey": "satFarm",
-          "sources": [
-            [
-              "Dated opening hours and visitor rules",
-              "https://www.spitalfieldscityfarm.org/visit-us"
-            ],
-            [
-              "Free general admission",
-              "https://www.spitalfieldscityfarm.org/"
-            ],
-            [
-              "Archive image and attribution",
-              "https://commons.wikimedia.org/wiki/File:Spitalfields_City_Farm_-_geograph.org.uk_-_3807950.jpg"
-            ],
-            [
-              "Image licence",
-              "https://creativecommons.org/licenses/by-sa/2.0"
-            ]
-          ],
-          "action": "Walk"
-        },
-        {
-          "id": "2026-10-10-bank-museum-monday",
-          "section": "Near work",
-          "headline": "Plan a free Monday visit to the Bank of England Museum",
-          "location": "Near EC2N",
-          "brief": "The Bank of England Museum reopens on Monday 12 October at 10am, with free admission and no individual booking required. Enter from Bartholomew Lane, around the corner from the Bank’s Threadneedle Street frontage. It closes at 5pm, with last entry at 4.30pm; weekends are closed. The visitor guide suggests allowing about an hour and provides free printed guides at the information desk.",
-          "why": "This is close enough to fit around a City workday and costs nothing to enter. Use the museum entrance rather than the main Bank doors, arrive before the last-entry cutoff, and leave a full hour if you want an unhurried visit.",
-          "imageKey": "satBank",
-          "sources": [
-            [
-              "Official hours, admission and entrance",
-              "https://www.bankofengland.co.uk/museum/plan-your-visit"
-            ],
-            [
-              "Archive image and attribution",
-              "https://commons.wikimedia.org/wiki/File:London_-_Bank_of_England_Museum.jpg"
-            ],
-            [
-              "Image licence",
-              "https://creativecommons.org/licenses/by-sa/4.0"
-            ]
-          ],
-          "action": "Walk"
-        },
-        {
-          "id": "2026-10-10-met-foundry-misconduct",
-          "section": "London AI",
-          "headline": "Met dismissal shows AI monitoring’s disciplinary consequences",
-          "location": "London-based",
-          "brief": "The Met announced on 9 October that Special Chief Officer James Deller had been dismissed without notice after a misconduct hearing. The force says lawful business monitoring and Palantir’s Foundry system helped uncover his copying of intimate images onto a work phone. Sky’s 10 October report identifies the system’s AI role. Deller will enter the policing barred list; the Met is reviewing Special Constabulary leadership.",
-          "why": "This is a concrete London consequence of AI-assisted workplace scrutiny, involving the capital’s volunteer police leadership. The software helped investigators identify evidence; the disciplinary finding came from a hearing. Keeping that distinction clear matters when judging claims about automated accountability.",
-          "imageKey": "satMet",
-          "sources": [
-            [
-              "Met announcement and hearing outcome",
-              "https://news.met.police.uk/news/senior-met-special-constabulary-officer-dismissed-without-notice-513812"
-            ],
-            [
-              "Sky reporting on the AI role",
-              "https://news.sky.com/story/head-of-metropolitan-polices-volunteer-force-sacked-after-ai-finds-he-captured-sexual-images-on-work-phone-13597161"
-            ],
-            [
-              "Archive image and attribution",
-              "https://commons.wikimedia.org/wiki/File:New_New_Scotland_Yard_building_from_Gardens.jpg"
-            ],
-            [
-              "Image licence",
-              "https://creativecommons.org/licenses/by-sa/4.0"
-            ]
-          ]
-        },
-        {
-          "id": "2026-10-10-kings-courtauld-digital-research",
-          "section": "London technology",
-          "headline": "King’s and Courtauld fund five years of art-and-technology research",
-          "location": "London-based",
-          "brief": "King’s College London and the Courtauld announced a five-year collaboration on 8 October, backed by a £250,000 Denise Coates Foundation grant awarded to the Courtauld. Teams will combine art history, conservation and curation with engineering, computing and AI. King’s Institute for Artificial Intelligence will coordinate researchers exploring how digital tools can support art history and how cultural perspectives can inform technology’s ethical development.",
-          "why": "The London impact is a funded research programme joining technical and cultural expertise, rather than an incidental company address. It is worth following for practical work on digital collections and interpretation; the announcement establishes the programme, not a finished product or public launch date.",
-          "imageKey": "satKings",
-          "sources": [
-            [
-              "King’s primary announcement, 8 October",
-              "https://www.kcl.ac.uk/news/kings-and-courtauld-embark-on-five-year-arts-and-ai-initiative"
-            ],
-            [
-              "Archive image and attribution",
-              "https://commons.wikimedia.org/wiki/File:Kings_College,_The_Strand_-_geograph.org.uk_-_5980199.jpg"
-            ],
-            [
-              "Image licence",
-              "https://creativecommons.org/licenses/by-sa/2.0"
-            ]
-          ]
-        },
-        {
-          "id": "2026-10-10-medieval-display-monday",
-          "section": "Plan ahead",
-          "headline": "Plan Monday for a free look at medieval London records",
-          "location": "Across London",
-          "brief": "The London Archives’ Spotlight on Medieval London display is free to see during ordinary opening hours until Thursday 17 December. It includes two illuminated manuscripts, two watercolours of City aldermen from around 1450 and further medieval documents. The next weekday opening is Monday 12 October, 10am–4.30pm, at 40 Northampton Road. A History Card is not needed to visit exhibitions; Sunday is closed.",
-          "why": "This offers a specific Monday outing beyond the familiar City galleries. You can browse the display independently without a research registration, and choosing an opening day matters: the Archives generally closes on Fridays and Sundays.",
-          "imageKey": "satArchives",
-          "sources": [
-            [
-              "Display contents and closing date",
-              "https://www.thelondonarchives.org/whats-on/introducing-spotlight-on-medieval-london-august-copy"
-            ],
-            [
-              "Opening hours and exhibition access",
-              "https://www.thelondonarchives.org/visit-us/opening-times"
-            ],
-            [
-              "Archive image and attribution",
-              "https://commons.wikimedia.org/wiki/File:London_Metropolitan_Archives_front.JPG"
-            ],
-            [
-              "Image licence",
-              "https://creativecommons.org/licenses/by-sa/4.0"
-            ]
-          ],
-          "action": "Walk"
-        },
-        {
-          "id": "2026-10-10-highgate-tree-identification",
-          "section": "Plan ahead",
-          "headline": "Save Halloween morning for Highgate Wood’s tree walk",
-          "location": "Across London",
-          "brief": "Highgate Wood’s ranger-led Tree ID Walk takes place on Saturday 31 October, 11.30am–1pm. The official listing says guided walks are free and need no advance booking; meet at the information hut beside the café. This is a tree-identification session, distinct from the woodland’s 24 October autumn walk. Allow roughly an hour and a half for the guided outing.",
-          "why": "It is a useful autumn plan if you want to recognise trees on future walks rather than simply follow a route. Put the meeting point and start time in your diary; there is no ticket release or capacity deadline claimed here.",
-          "imageKey": "octHighgateWood",
-          "sources": [
-            [
-              "Tree walk date and attendance instructions",
-              "https://www.heath-hands.org.uk/whatson/highgatewood-treewalk"
             ],
             [
               "Archive image and attribution",

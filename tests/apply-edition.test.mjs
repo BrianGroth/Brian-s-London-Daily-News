@@ -242,3 +242,23 @@ test("a failure installing a later file rolls earlier replacements back", async 
   for (const [filename, value] of Object.entries(originals)) assert.equal(await readFile(path.join(repository, filename), "utf8"), value);
   assert.equal((await readdir(repository)).some((name) => name.startsWith(".edition-update-")), false);
 });
+
+
+test("short editions require a reason and preserve ordering, caps and source safeguards", () => {
+  const { current, input } = fixture();
+  input.edition.stories = input.edition.stories.filter((_, i) => [0, 1, 4, 5, 6, 8, 9].includes(i));
+  assert.throws(() => buildEditionUpdate(input, current), /ten stories/);
+  input.edition.shortEditionReason = "Short edition requested by the reader; seven verified choices.";
+  const result = buildEditionUpdate(input, current);
+  assert.equal(result.editions.issues.today.stories.length, 7);
+  assert.equal(result.editions.issues.today.shortEditionReason, input.edition.shortEditionReason);
+  const invalid = structuredClone(input);
+  invalid.edition.stories.reverse();
+  assert.throws(() => buildEditionUpdate(invalid, current), /section order/);
+  invalid.edition.stories = input.edition.stories;
+  invalid.edition.shortEditionReason = " ";
+  assert.throws(() => buildEditionUpdate(invalid, current), /explanation/);
+  invalid.edition.shortEditionReason = input.edition.shortEditionReason;
+  invalid.edition.stories[0].sources = [["Unsafe", "javascript:alert(1)"]];
+  assert.throws(() => buildEditionUpdate(invalid, current), /HTTP/);
+});
