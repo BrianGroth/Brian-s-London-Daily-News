@@ -1,128 +1,624 @@
 {
-  "generated_at": "2026-11-16T07:32:17.072465+00:00",
-  "last_success_at": "2026-11-16T07:32:17.072465+00:00",
-  "collection_status": "ok",
+  "generated_at": "2026-11-16T13:42:16.375339+00:00",
+  "last_success_at": "2026-11-16T13:42:16.375339+00:00",
+  "collection_status": "partial",
   "feeds": [
     {
       "url": "https://news.google.com/rss/search?q=%22Hampstead%20Heath%22%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "Near Home",
-      "attempted_at": "2026-11-16T07:32:17.072465+00:00",
-      "last_success_at": "2026-11-16T07:32:17.072465+00:00",
+      "attempted_at": "2026-11-16T13:42:16.375339+00:00",
+      "last_success_at": "2026-11-16T13:42:16.375339+00:00",
       "status": "ok",
-      "item_count": 10,
-      "duration_ms": 105
+      "item_count": 14,
+      "duration_ms": 346
     },
     {
       "url": "https://news.google.com/rss/search?q=%28Hampstead%20OR%20%22Belsize%20Park%22%20OR%20%22Swiss%20Cottage%22%20OR%20NW3%29%20London%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "Near Home",
-      "attempted_at": "2026-11-16T07:32:17.072465+00:00",
-      "last_success_at": "2026-11-16T07:32:17.072465+00:00",
+      "attempted_at": "2026-11-16T13:42:16.375339+00:00",
+      "last_success_at": "2026-11-16T13:42:16.375339+00:00",
       "status": "ok",
       "item_count": 15,
-      "duration_ms": 103
+      "duration_ms": 362
     },
     {
       "url": "https://news.google.com/rss/search?q=%28Gospel%20Oak%20OR%20%22Finchley%20Road%22%20OR%20%22South%20End%20Green%22%29%20London%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "Near Home",
-      "attempted_at": "2026-11-16T07:32:17.072465+00:00",
-      "last_success_at": "2026-11-16T07:32:17.072465+00:00",
+      "attempted_at": "2026-11-16T13:42:16.375339+00:00",
+      "last_success_at": "2026-11-16T13:42:16.375339+00:00",
       "status": "ok",
       "item_count": 6,
-      "duration_ms": 308
+      "duration_ms": 2271
     },
     {
       "url": "https://news.google.com/rss/search?q=%28%22City%20of%20London%22%20OR%20Bishopsgate%20OR%20Broadgate%20OR%20%22Liverpool%20Street%22%29%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "Near Work",
-      "attempted_at": "2026-11-16T07:32:17.072465+00:00",
-      "last_success_at": "2026-11-16T07:32:17.072465+00:00",
+      "attempted_at": "2026-11-16T13:42:16.375339+00:00",
+      "last_success_at": "2026-11-16T13:42:16.375339+00:00",
       "status": "ok",
       "item_count": 15,
-      "duration_ms": 340
+      "duration_ms": 2035
     },
     {
       "url": "https://news.google.com/rss/search?q=%28Spitalfields%20OR%20%22Square%20Mile%22%20OR%20Moorgate%20OR%20Barbican%29%20London%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "Near Work",
-      "attempted_at": "2026-11-16T07:32:17.072465+00:00",
-      "last_success_at": "2026-11-16T07:32:17.072465+00:00",
+      "attempted_at": "2026-11-16T13:42:16.375339+00:00",
+      "last_success_at": "2026-11-16T13:42:16.375339+00:00",
       "status": "ok",
       "item_count": 15,
-      "duration_ms": 41
+      "duration_ms": 329
     },
     {
       "url": "https://news.google.com/rss/search?q=London%20artificial%20intelligence%20AI%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "London AI",
-      "attempted_at": "2026-11-16T07:32:17.072465+00:00",
-      "last_success_at": "2026-11-16T07:32:17.072465+00:00",
+      "attempted_at": "2026-11-16T13:42:16.375339+00:00",
+      "last_success_at": "2026-11-16T13:42:16.375339+00:00",
       "status": "ok",
       "item_count": 15,
-      "duration_ms": 41
+      "duration_ms": 441
     },
     {
       "url": "https://news.google.com/rss/search?q=%28UCL%20OR%20Imperial%20OR%20%22King%27s%20College%20London%22%20OR%20%22Queen%20Mary%22%29%20AI%20when%3A7d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "London AI",
-      "attempted_at": "2026-11-16T07:32:17.072465+00:00",
-      "last_success_at": "2026-11-16T07:32:17.072465+00:00",
+      "attempted_at": "2026-11-16T13:42:16.375339+00:00",
+      "last_success_at": "2026-11-16T13:42:16.375339+00:00",
       "status": "ok",
       "item_count": 15,
-      "duration_ms": 67
+      "duration_ms": 457
     },
     {
       "url": "https://news.google.com/rss/search?q=London%20technology%20science%20innovation%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "London Technology",
-      "attempted_at": "2026-11-16T07:32:17.072465+00:00",
-      "last_success_at": "2026-11-16T07:32:17.072465+00:00",
+      "attempted_at": "2026-11-16T13:42:16.375339+00:00",
+      "last_success_at": "2026-11-16T13:42:16.375339+00:00",
       "status": "ok",
       "item_count": 15,
-      "duration_ms": 60
+      "duration_ms": 354
     },
     {
       "url": "https://news.google.com/rss/search?q=%28London%20startup%20OR%20%22London%20tech%22%20OR%20robotics%20OR%20quantum%20OR%20biotech%29%20when%3A5d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "London Technology",
-      "attempted_at": "2026-11-16T07:32:17.072465+00:00",
-      "last_success_at": "2026-11-16T07:32:17.072465+00:00",
+      "attempted_at": "2026-11-16T13:42:16.375339+00:00",
+      "last_success_at": "2026-11-16T13:42:16.375339+00:00",
       "status": "ok",
       "item_count": 15,
-      "duration_ms": 76
+      "duration_ms": 538
     },
     {
       "url": "https://news.google.com/rss/search?q=London%20event%20tickets%20opening%20closing%20disruption%20when%3A7d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "Plan Ahead",
-      "attempted_at": "2026-11-16T07:32:17.072465+00:00",
-      "last_success_at": "2026-11-16T07:32:17.072465+00:00",
+      "attempted_at": "2026-11-16T13:42:16.375339+00:00",
+      "last_success_at": "2026-11-16T13:42:16.375339+00:00",
       "status": "ok",
-      "item_count": 13,
-      "duration_ms": 80
+      "item_count": 14,
+      "duration_ms": 336
     },
     {
       "url": "https://news.google.com/rss/search?q=%28London%20exhibition%20OR%20festival%20OR%20%22ticket%20release%22%29%20when%3A10d&hl=en-GB&gl=GB&ceid=GB:en",
       "name": "Plan Ahead",
-      "attempted_at": "2026-11-16T07:32:17.072465+00:00",
-      "last_success_at": "2026-11-16T07:32:17.072465+00:00",
+      "attempted_at": "2026-11-16T13:42:16.375339+00:00",
+      "last_success_at": "2026-11-16T13:42:16.375339+00:00",
       "status": "ok",
       "item_count": 15,
-      "duration_ms": 61
+      "duration_ms": 407
     },
     {
       "url": "https://www.ianvisits.co.uk/articles/feed/",
       "name": "ianVisits",
-      "attempted_at": "2026-11-16T07:32:17.072465+00:00",
+      "attempted_at": "2026-11-16T13:42:16.375339+00:00",
       "last_success_at": "2026-11-16T07:32:17.072465+00:00",
-      "status": "ok",
-      "item_count": 5,
-      "duration_ms": 83
+      "status": "error",
+      "item_count": 0,
+      "error": "mismatched tag: line 93, column 2",
+      "duration_ms": 479
     }
   ],
-  "count": 146,
+  "count": 203,
   "items": [
     {
       "category_hint": "London AI",
+      "title": "King’s College London launches Master of Digital Health course - Home | Digital Health",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQYnY0MW1kaUtMeFpkdmJLSWxrZ1MzaXBzNGcyZV9ULWVyMmZocGlYM0t3eWJnVW1MREJ5bVRycENkYW1TRDgzZ2NGSWxTRkU2cm4zaWNlMlhPYnJZTVdTQU1yOXV2Y21ZdnlJSXRIeVh5ZUpHUGNjQlFFbmZyX19UNWNDUkw4Z0JBZl9HaXFsMDJORnk3Ml9QUVllcmVTb1Zna1E?oc=5",
+      "publisher": "Home | Digital Health",
+      "publisher_url": "https://www.digitalhealth.net",
+      "published_at": "Mon, 16 Nov 2026 13:32:58 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London AI",
+      "title": "AI systems are easy to pressure into giving false climate information - Phys.org",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE45UUN6YVBSQmh5MEJGemlZV2xhLUlkTW9Ba3dBdDlfMnJpdkdwSElRclZmb2FGeDF2V3ZQS1lmY2hpeXlYNC05UHN3ZjlBcDkzbGZ5bGpvZGRSQTdrWllKR3RkSnNOUk95eGNLcHd6cFBucHc?oc=5",
+      "publisher": "Phys.org",
+      "publisher_url": "https://phys.org",
+      "published_at": "Mon, 16 Nov 2026 13:30:02 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London Technology",
+      "title": "London Quantum Cluster Wins £12m to Commercialise Tech - Mirage News",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBiSFZ0cEQ5NWV5ZkdXVFRvSUZGVzlnRXduWm5xcDNOb3pfY0twYmFLTTBYMkdPWHlmM2JTUEhwcnJZcno3R1d0YlZIbUtZdFJocUtHdjEycFpyaWF5Z2JydDZELWhudGRjX2U4QjdiZUQ5dnhyZlg1eGNB?oc=5",
+      "publisher": "Mirage News",
+      "publisher_url": "https://www.miragenews.com",
+      "published_at": "Mon, 16 Nov 2026 13:21:00 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London Technology",
+      "title": "Kadans and CWG secure £368m for flagship Canary Wharf life sciences scheme - Property Week",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNnRrY28wR0FCSzZVYU1PWlBucFdFVWtDc0pWWUNXcllybnk2VGRHRlB5clZkVXNRM19HblQ2WjVSTTJ4YkJDd1NfSzBEczZIRTJGLWk0dENpT2tOTGhLbXVsYmlxU1V5eGtYTlhKNEdZeFpBREFtNU9xclB0Wm9EdVcyZXc5WjlXZ0d0UTdUMXRMZnk4dGhHQ28xbXlCNWNWd3RXUE9QMGZ2WFp4N19R?oc=5",
+      "publisher": "Property Week",
+      "publisher_url": "https://www.propertyweek.com",
+      "published_at": "Mon, 16 Nov 2026 13:18:10 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Work",
+      "title": "City of London young historians uncover lost lives of former pupils killed in World Wars - The Jewish Chronicle",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOY1VWaFhqV01uYmlDTVdvVHlPVjFSMlFUbGVYNU5hbktlQVdEQ2d0dmtYNU1PMDNSQy1NSXZkamtuRG50dTNmVlIyd0d4S051Uk80SklJZ01pLWJfaWcyaTBRdXd6NGlrUm01NHZtRTFhU0lDUDlFTVRGakpXbG1lanFRMFJacjhMa0ZKd3VBV2psMEtyMU5qNDg0ZVQ3U0lQcngtSFNVRFJHLWZEY214VUc2U19oYS0zRDZiSmVyUVNIX3BKQnIzMnRVQzlTTlpUUGhtQ1RmQQ?oc=5",
+      "publisher": "The Jewish Chronicle",
+      "publisher_url": "https://www.thejc.com",
+      "published_at": "Mon, 16 Nov 2026 13:05:01 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London Technology",
+      "title": "‘Experimental’ public sector framework would stimulate robotics adoption - Construction News",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9KSC1oVU9KT2hJWVU5cGxmMHNoemJxUHE0Q0loSmNJQzhxZ0pYbDRXa2ZvME5IRzZFZHVXbDNjbWo3eHFYTjBRdWNqRGNvaVUxLUpLeHVEOA?oc=5",
+      "publisher": "Construction News",
+      "publisher_url": "https://www.constructionnews.co.uk",
+      "published_at": "Mon, 16 Nov 2026 12:48:06 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London Technology",
+      "title": "Classiq and Ventum Consulting Partner on Enterprise Quantum Computing in Germany - The Quantum Insider",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOX2tHcUF6X09IZl9IcnR1VlhIVFVwSlhJNUhUTXZQc2gxVVlrU01DTTFqdHk2ZWw3RkptN0J2NXM2dm1QcllfQnBjNGxydUJFcDV6RWhwczhkVHNpX3hVSlZzNFBaaDMxbjQ0WjA5d3Q3YS1vbUkyS0U2UUpkMl84a3A3TGtqdlV6dTU1azY5cmVtYXM2bUlpZ0FkMDNDZkpITk5IaEs3bw?oc=5",
+      "publisher": "The Quantum Insider",
+      "publisher_url": "https://thequantuminsider.com",
+      "published_at": "Mon, 16 Nov 2026 12:46:15 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Work",
+      "title": "Duck & Dry to Open First City of London Salon at Liverpool Street - 365 Retail",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQb3FtVVZER2JETm5MWDZtZk9QWjBnZ1FYRDhOcmN6Y1RlNFlvYzlzbXpXZnBJMWQtcXZ0dlhRZUt0YVluQ0FCc1pHVmNlakNHdk9qLURCbXZKYmZRV0w5RFdOZXN3ZV8yNWxXOVltQW9VNC1ya0xUNllXQ3poc2dUMVZqeE9MRHlZ?oc=5",
+      "publisher": "365 Retail",
+      "publisher_url": "https://365retail.co.uk",
+      "published_at": "Mon, 16 Nov 2026 12:32:18 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London Technology",
+      "title": "MHRA Strategy 2030 - Executive summary - GOV.UK",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQaFpPaXI4QXFwejhwbm1NdEFrVXZoNU9iZWp1RU5reUctN2pMcm1iak9UdVdTeXFoOUttQnRuWGdZUzRVbl8ybl93cmxtTzd0U19yemdrRlVFNnB3bkV6Q28wNDc4ZEx5RjMyaVZacTQxNUlfWnl2R2ViWm9zQnhhUUt3eFQxd1gxbHdCcFZZQnZUWDlHZTM0RVhNT1RGRk0?oc=5",
+      "publisher": "GOV.UK",
+      "publisher_url": "https://www.gov.uk",
+      "published_at": "Mon, 16 Nov 2026 12:23:17 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London Technology",
+      "title": "CWG and Kadans secure £147m from National Wealth Fund for One North Quay scheme - BE News",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5RMDBkSUhQYTloZDQ3Wm9CVWduZnN1YUI4cWlYN2hFd3gyQTRDRzBJM2t1QUpWX3huNjNOZWtyUVVjQmZadGwzbkNldFhhRHRsd2c5UUNNNDM1OHBBd0I3UTlRYWo?oc=5",
+      "publisher": "BE News",
+      "publisher_url": "https://benews.co.uk",
+      "published_at": "Mon, 16 Nov 2026 12:23:07 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London Technology",
+      "title": "15 Finalists Named in Global Quantum + AI Challenge - The Quantum Insider",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSnRRbzJFaWNCM3VPQ1pMYXFKOFNRVEJtWURpeVF6MDBZdjBoTHppWnBZdmFBZ3hjYnJ5SzhaUVRvcXZzZGVHb052YVA5YjVWUm91d0p2VElGbU84a2JsQUljUnZTaWhSeThzZWx5YzZPMDQtUkZ6eVRyLVNMeFc5U0tiYy1Jc3RtSVNEUk1EX3pVdlhDVFE?oc=5",
+      "publisher": "The Quantum Insider",
+      "publisher_url": "https://thequantuminsider.com",
+      "published_at": "Mon, 16 Nov 2026 12:01:15 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London Technology",
+      "title": "Detector Counts Photon Numbers for Optical Quantum Computing Calculations | Research & Technology | Nov 2026 - Photonics Spectra",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNZkxHR2RJMktnNWxodk15Si1IcEZURVVMTzU4Y294R0JRZWpNcWMzd3lQMnFfY2RoVWhHT0RobC14VHFJTEllWlhRMEE3TkJxb0JhUG1wRjZmYlRJaTI3c2VQWGEzRUE5RlZ6bkZZODFsbUxaNVQ2OWxSQ0tBZ1ZYZmJKTmFUUWs4ck9tb0NZQng?oc=5",
+      "publisher": "Photonics Spectra",
+      "publisher_url": "https://www.photonics.com",
+      "published_at": "Mon, 16 Nov 2026 12:00:00 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London Technology",
+      "title": "The Quantum Era Approaches Financial Markets - Finance Magnates",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORzZZX2xkZGw5TF8tc1NUZ3RHY2lTVjkyaUxJSWptS01OMWVsaGIwRFhkUG1Zb01oUTN2ZU1fNnRsZXgwYUM3TkFjTDUxX3NiSURpRDRNNUpOTmlDQVhuY3BYS1haTHE5UmN2M3RHM0I3dk9ObW1TTjFSYzQxNVRCZENoVHZmYVk1NTJ6MUUzU01jeUdMV0N6R2ZB?oc=5",
+      "publisher": "Finance Magnates",
+      "publisher_url": "https://www.financemagnates.com",
+      "published_at": "Mon, 16 Nov 2026 12:00:00 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Work",
+      "title": "London train services to double from December with trains every 15 minutes - London Now",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPX2VXV1RkZF9SbEVaUVRxUmVYMHhhRjNTZlBoXzRUemtBYzByNHR3NUx1d1FMeEdwX0htVS1wbHFuQlU4Wi16TVZiekZTWTVnZEJZLVRLRWY5ZW9WaEJ1RDdNbTA1Q01uOENBMWIyZjlFZzN5NFpyb1VQM2N5VUpXWDJzcGtCVnFESTJFemd2S3U1eVdRTC11Rm8weTVzLWs?oc=5",
+      "publisher": "London Now",
+      "publisher_url": "https://www.thisislocallondon.co.uk",
+      "published_at": "Mon, 16 Nov 2026 11:33:32 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Work",
+      "title": "Duck & Dry is opening its first City of London salon on Tuesday 1 December - Retail Times",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVEpiOU5mNWNwZEN0Wi1ZQkc2bG9ycU5Ha1F5VDNYdEx5ZEc5blRiS1A2RlZqVUM3cEFqLTFsa0xkVDNlSFFTbTRrcllxQk5pbGRFcDMzcjJBTjJaZWhiSE42bXJtRmpuT2F1cjg4bU1kX09uQnNDaWw1eEY1ZWl3cXhIVU9nZmJBSUZhaTM4RnlJNkx3QzFoNWpVa0c2RVRw?oc=5",
+      "publisher": "Retail Times",
+      "publisher_url": "https://retailtimes.co.uk",
+      "published_at": "Mon, 16 Nov 2026 11:32:57 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Home",
+      "title": "Devastated Hampstead Heath cafe owners end legal fight - 'feels like a bereavement' - HamHigh",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOY0NDbjZ0ejVrQlFxUFE1WGVLQVZOVHRDZkp1UnRBOUpoVlY2RWdsU0RFUHB3U24xazVLdGg0SFFLbHE4MHdFMVZyQkJoN0REU2l0RDZSdE95YkQ5QjJlcmZxOGtzUTlNQlVoS1dMRzBGQTJjN2xWcG1xLW1NV2c2ZDdwMDJVWDVzaE4tQnkzaVVYY3VlMHluVER2TWE?oc=5",
+      "publisher": "HamHigh",
+      "publisher_url": "https://www.hamhigh.co.uk",
+      "published_at": "Mon, 16 Nov 2026 11:30:00 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Home",
+      "title": "Devastated Hampstead Heath cafe owners end legal fight - 'feels like a bereavement' - London Now",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNTHlxVmFEdEFhT01uWnJCcWVmY0hBZEZlOG10WWk2WVZhX0FmX1VKWXJVWl9JeTZjZHFCckZaSDdSQzdPWUZBUjd2MV9vb0dUMmt5TnRZQWdjWHo3RnNDbVp6ZGNUek02Y21lMXJ3a3FMMzctRS16Y3RYdXJtczVQS0pSWWQwVnFZYlNWMnBXSk9iQ1JHdGlBU25NZ1p3eWpEazdGVnN2bjk?oc=5",
+      "publisher": "London Now",
+      "publisher_url": "http://www.thisislocallondon.co.uk",
+      "published_at": "Mon, 16 Nov 2026 11:30:00 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London Technology",
+      "title": "Ellipses Pharma: Celebrity-backed cancer drug venture targets London listing - AOL.co.uk",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPYkxkNGpFbmxUZDdHZXFJb1NfdnVXcGJ1V0FhN3VwWTJPekRWdk1zQ3VWbFcySnBjeVVES1F4V1ZsM0pIY0JvMExhaXp0RDRvRDNsU00wU19PV2o5SXJ0dUlSYUU2MEpXZ3RtYmctUHVQc2NNR05KZVplMkl1YWphbFJZYTlYQ090ckFFOTdR?oc=5",
+      "publisher": "AOL.co.uk",
+      "publisher_url": "https://www.aol.co.uk",
+      "published_at": "Mon, 16 Nov 2026 11:30:00 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Home",
+      "title": "Hampstead Heath cafés will be taken over by trendy Australian-inspired brunch chain - after bosses give up legal battle despite backing from Benedict Cumberbatch and James McAvoy - Daily Mail",
+      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNVHNRQ09jeThMRzFVa2U4dzk5WTlabEhaeFMzSVRLVzUwSDRuMFd4RU5YQzFidzRnd29UZ1AtNzRDQUFjaUQwd0wxMnhYaXd4dk9tR2dxTHVuMlVWd1RNU3U2SDRBSmowSG1vOVA3d2ZBWmUxeUR5cjlCVHBQYlA2X1FsQVhxTWROUnh3UU1hS2ZLMmo3bVU2OVZHZlZYZkcyQmF2ZlE4S2V6YVB3b3FYdWxhWi1fZUZkakVFTW1UUUlzdFZRdVgxUVFrS0Rwa3cwWTM5a0RKd0ZqTlloVHY3WERndFZuUTA0eWZaYTVIbVnSAfYBQVVfeXFMTXBWUkxnMEJYVU5IeTBBTGJ6ZTh6TkVxZHZqdm1rTFhEVkZBQTZGYTI5U2ZCU1hHeEVGdUJhS2YtRDlaZmdGMHNGbHQtRWxnejhLSkJ0TEpMdUd2LTBSWGh3NkI2SnFrMzE1X1pMMVVyMzFiQ2tFbE1lYTBDRG0tS2Nxc1JPdXR0ZTBHRHJZM0xxWEdFdW1sLUEyNkR3bm9ad0ZGM216VFl5UHNoSEhwN0RpdGwxdDdrdlRnM195VkI5eXhlbGhPamZkZU0yNVozRmlPcEh1azNQQUJxQUJZY2RIMXBRelpURkVlVFZYOXV5RFc0UjN3?oc=5",
+      "publisher": "Daily Mail",
+      "publisher_url": "https://www.dailymail.com",
+      "published_at": "Mon, 16 Nov 2026 11:27:51 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London Technology",
+      "title": "Stanhope expands team with four hires - Portfolio Adviser",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1FWnVhMGFIUjdhLUxoUmxDODQ1dFpCT3ZqMTFtUE5BUE90NUgtVVpYcmZ6V1IzU0ZZWVVUT2x4NzJZT29JRU1SZEJETHFkV3luMGJSMVl5TkdNVDc5Vnh4UmlvMWREdkVQeVRSbjlkd1VDdkFnOUhN?oc=5",
+      "publisher": "Portfolio Adviser",
+      "publisher_url": "https://portfolio-adviser.com",
+      "published_at": "Mon, 16 Nov 2026 11:25:16 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London Technology",
+      "title": "Innovation, Research & Smart Cities: Mid-November 2026 Funding Opportunities (28 new opportunities) - Substack",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNVkJaYjNqSmVCVVJjYVkwUVJfRS13WFN2UHZQU3R6dF95bDRjVU9vcW9UMXBfZTh2T1hsQXY4Y0o0MzZEQUstdEdoNTNKT0JaTFhTX0FYM3FRMUpqVW9wMVJmQVNpRUlxWGV4dTItREVEWVo0a2NVNUtfZk12SEtlSmRXQQ?oc=5",
+      "publisher": "Substack",
+      "publisher_url": "https://impactfunding.substack.com",
+      "published_at": "Mon, 16 Nov 2026 11:14:59 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Home",
+      "title": "London volunteers turned a forgotten potato patch into a 55-litre wildlife pond; within a year, frogs, ne - The Times of India",
+      "link": "https://news.google.com/rss/articles/CBMizgJBVV95cUxPZTlzOXR1LTRPaVE0S2VnRUtueVJaQVlEUjE5Q1hYVnNVamktZjV6SjN0Vl94ZzhKWElweUhxanlFQkN5RlVGYldVNW9zR3llOUxpUUNDaHVFc0RQWldwMENidWljNUxvTVZEQWJqdG1rWWpEOFJTQ1NlMlRsTV9mSXVfd3Q5a0RwbUktWGo4clRIclY2ZWNOWkVBZkUtZ01ndDJMdkZoaGh4Wk1BN3pmUkMtcERhbEwxRjNWZjNrdFFIZEpEMlVpSEZQbE9YbVFBRGJuUmlnQnk1eXVzV3g4ZjVfVFJONVYweTRhUVJmaDFLMzlpWEZ0ZmpWUDNZWkJMMTBDZnJlRk51OWVJQlFqb3VzbjNvZnlkNnh1cXhaLVBmdk1yTTNFOGNCVEp5ekdoSzdmcFo4akpDZmU5amRZSnpyQlBhXzNGb2hOamhn0gHTAkFVX3lxTE01X21rVnoyeUxfNnhCOFkwWWs0UFRqVEFvUmtFWGJTTlBLTVNnRFI3cnN1dlphQ0phWEtMNVhHdExjdjF5WEZuWFg5STEyZElVak5Yb20tbkNsOHBDb1Q0S3Iwa3J2dkVueU5uZGRrcHVsdl9sXzZrN3R1YW1mU1Y0S0xFRGs4VTN0THpNdFc3VkZtMDlrUmFxS1o0eGZiRzgwY3ZZYXJjdm92SnRvaUZMNW8zdTFfS2NKdzFJd2ZiMUdOVml3c3Fnb2h0WVVTX3kwZkFfeVJjQVo2RnIyUHhnQkQxQUszOVdHNmEzM2NrTlEwVERGZkxTX1plVWs5amV2Q2p2ZFVZMTQ1X1p6UzlFVVdOaWNLRDZrdTdnX3JpVlhGTmJvWGZ2eHl2Q3djVy1sOHFvYUZVM2xRMGNFVlh6Nk1IdV9JR01HY3pEN25fMXVGRQ?oc=5",
+      "publisher": "The Times of India",
+      "publisher_url": "https://timesofindia.indiatimes.com",
+      "published_at": "Mon, 16 Nov 2026 11:10:00 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London Technology",
+      "title": "Flagship commits £100M to set up AI-focused biotech incubation outpost in London - Fierce Biotech",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcTVWT195ei1nOUYxQmctSDRKRXBLZ2tWeFJPQzFYbTA0VS04R3oxdDdjanNGRWgwVndmWUNfNUlHaVdldl9oQXZ2QnhKLVFGSjNiLWlhUXVQTGtBc1JkTHhLOXBnLXRFNDdUY21wM1hRNzhJalAwTVV5OURhMktBbWdQZGNPenFqczNLQjl3UC1QRl9kd28zcUNmOHFrbGZMdld4aUNRcnZFSC1nR005X0Fsck8tRGx0?oc=5",
+      "publisher": "Fierce Biotech",
+      "publisher_url": "https://www.fiercebiotech.com",
+      "published_at": "Mon, 16 Nov 2026 11:09:32 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Home",
+      "title": "The Hampstead area plagued by violence and sex attacks where women don't feel safe - HamHigh",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPS3NJU1liSnRiVmVGLWRWbzFOSTFGQlZvVGRkRDdJcFp1R1V2TDB4NFRINzB1azJxdnBsXzg5eFFVTzk0SmRRS0tBbWI4d2VsQUhhUzBSVm5fMmJFVkt5cWxNVDlLcjloTG9VQWFQMk03NkNGaFBnLWJ1Y3M1d0JudHd3VGkzWmoyX1A1RVB3?oc=5",
+      "publisher": "HamHigh",
+      "publisher_url": "https://www.hamhigh.co.uk",
+      "published_at": "Mon, 16 Nov 2026 11:00:00 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Home",
+      "title": "The Hampstead area plagued by violence and sex attacks where women don't feel safe - London Now",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMXQwU19LTG44QlEyb290bTFOdWFudjhSUFlJTXhOdS1MaTlFckZuaGJQRzBMcHJGdWlMOEY5RlAwY1pLeUdqSk1Vc19BRVhkSHhXVEFvWV9ZWV9weVdvc0F1RVZ3d3dBZ3pjbkc3OTdYSUZPMVZkbkVYRlVxaWM2WjU2bmR3R2ZBVWxwNDl4Y19PMXZ4WDBtU1RR?oc=5",
+      "publisher": "London Now",
+      "publisher_url": "http://www.thisislocallondon.co.uk",
+      "published_at": "Mon, 16 Nov 2026 11:00:00 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London Technology",
+      "title": "Moth sets new quantum data encoding record - Derbyshire Times",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVFNFa3FjaTN6YXJDN1E1VjV6Y2NWWkRLTTVETUc1QWNlZWtSZFRxamN5emZZcHRrS0ZfbGRaaTlteHBjQkswU3RKa3lkVzNLZVk5WlFPVXRQbjc1bHZ0eThvMEZWaUJDNmVUemxtUkV1N2g4ZXMxLUVnSGR2RTNkYmpYYTlWYzVyNTF0Vk5OTjkxMHh0REE?oc=5",
+      "publisher": "Derbyshire Times",
+      "publisher_url": "http://www.bakewelltoday.co.uk",
+      "published_at": "Mon, 16 Nov 2026 10:59:00 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Work",
+      "title": "Burnham to Tell City of London Audience Brexit Has Not Worked - Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTjNQRzlwOHVNcFQtOXQxQXF6ajVwczFKdDhBUzNaU2pvLTJkZTRhcFVKYXR2RE5uLUVZZkVlbDAxcWFVTTFQOHN6ZEdhdzJoandmMEd4WUZXUFpBXy1LQ2NzbW4xSjQxMERnaV9VN2hMSnNtYlFCNGVodXp5U2dONXBFY3hlWEpfZERIb1FVb010MUluZ0lQWVRBMHpjMXB3bnJiWmJYenpmQmRhMmEzcHV3?oc=5",
+      "publisher": "Bloomberg.com",
+      "publisher_url": "https://www.bloomberg.com",
+      "published_at": "Mon, 16 Nov 2026 10:43:07 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Home",
+      "title": "Hampstead Heath cafe operators abandon legal challenge and say they will vacate 3 sites - My London",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNbGFfMU04NWl0RnRLbHpmdzhmcXpLOWx4SlZxRUhkU1Y5NTZUSmRuRlRZdE15RTluOGR1UmdhbF9zOTZaMGFkTjdEanJWS2dYRXl5ZnN5b2RhZmU2bWFWbXFKb0xoVldSdHhNWUR2V3ZRZExHZEdOc1pxbTN0RmJFY2o5dXRVVU1fZ2dYNEN3VUNENi1CQ0HSAZYBQVVfeXFMTWxhXzFNODVpdEZ0S2x6Znc4ZnF6SzlseEpWcUVIZFNWOTU2VEpkbkZUWXRNeUU5bjhkdVJnYWxfczk2WjBhZE43RGpyVktnWEV5eWZzeW9kYWZlNm1hVm1xSm9MaFZXUnR4TVlEdld2UWRMR2RHTnNacW0zdEZiRWNqOXV0VVVNX2dnWDRDd1VDRDYtQkNB?oc=5",
+      "publisher": "My London",
+      "publisher_url": "https://www.mylondon.news",
+      "published_at": "Mon, 16 Nov 2026 10:35:13 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Work",
+      "title": "The free London toilets ranked among Britain's best might surprise you - London Now",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMERfekktNVFaQ0NnMWh1S1B6ZUs5N0lYZFdtd1RSQkVfZ083bUxSMld5MVJfSmtSQWd5RDI0LVFkeXR5bWN3VXVjLWxMWGdqcG9KRXBtT1E5bkJhQ2x5V1NPWEItNlNiN09hYTFlOEw2QzBYUFlWUnBCNXVIQjJ2dWlHR25ORks2bE9NaFljQUFWTld1b0E3U3NGeXZETTAzTjUxOHRjb19NQXo4?oc=5",
+      "publisher": "London Now",
+      "publisher_url": "http://www.thisislocallondon.co.uk",
+      "published_at": "Mon, 16 Nov 2026 10:31:47 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London AI",
+      "title": "At IFM, students are exploring new frontiers of creativity with the support of AI - FashionNetwork France",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQRFpHcEJlUmlTd1dDZ3Y4UGo0QmtsRVYwQklCcUEwVzNtOW1QZnRVc21vTjNZaFA3VUQtcGFkZGVSVS1Oc0tIc0hqZEpRdHJ2NVVaQTVFOC1ZS2RjSGRKSHFsTE5iM3RjaGEycjJaTHlJZlVBQm53TUZEdTRXczV2OWY0VEpvbm56Y0xXRTFGR1p1ellaYWZlNUQzT3BkUE9WR3BWUHhQc3lGdTdTRUpVNjYwZVFmeVdXZHduNEJSZ1BGSGEyM0Rr?oc=5",
+      "publisher": "FashionNetwork France",
+      "publisher_url": "https://uk.fashionnetwork.com",
+      "published_at": "Mon, 16 Nov 2026 10:23:40 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Home",
+      "title": "Park cafe managers drop legal case over takeover - BBC",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5JbUlOYUhaSGFVeDRkeEQ4ampPbXpqM0Y4SndqNlZYaENBaUtlZTNPUk9IZFI0ZkJkVHhyWGpjV0xULWZQZWtsNEdUWVBaLTcyM2swYjRUdThIMVU?oc=5",
+      "publisher": "BBC",
+      "publisher_url": "https://www.bbc.com",
+      "published_at": "Mon, 16 Nov 2026 10:22:36 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Home",
+      "title": "Hampstead Heath cafe managers drop legal case over takeover - BBC",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBCSHhkNnpxd1RqVXZPNzg0ZkY2MEpDbi1ud2tjT1IwYkRWZDE0QXh5Wm9zcWhGSEJWc3BaOUswZTZ0ei0zV3ZjRTY0RTBFWWVYMWJyVzlSYTVtR1JER1E?oc=5",
+      "publisher": "BBC",
+      "publisher_url": "http://news.bbc.co.uk",
+      "published_at": "Mon, 16 Nov 2026 10:22:36 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London AI",
+      "title": "AI demand drives nuclear power expansion as reactors under construction hit 40-year high - 联合早报",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVjFtVV94Mm80eUZ2RWd3R1pSSXFwLWdDOFBRRU1Rdm9EUWJEeHgwYzU5V0U1a0lzamp6MnVYTGNUd2k0VExwbkE4aUYwdUZGamRrNjFIY1pFa1JMbFMtTVp4ZzFHWndsRVBncDBfZ3lJcE8wbDJkQWt4YjJ4NkNPUWlFQjBKdUh0R2cwcU5CU0Y4cEJtWmMyX0dpQ0czZUM1X215WEJKWXM2c0ctWHZtbUh4dHpzSE1zcjNDN3F1dWtpd0k?oc=5",
+      "publisher": "联合早报",
+      "publisher_url": "https://www.zaobao.com.sg",
+      "published_at": "Mon, 16 Nov 2026 10:20:34 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London Technology",
+      "title": "Biotech Venture Firm Flagship Invests £100 Million in New UK Lab - Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcXRMZlNsQnM1Qkx6YWRXcXVSZThtX0dpem9VU0N6VGpwc3U0ZVRaSlVmdXpXbV9rQ0Z3Y2lvZEJNV1lFbGVoSVoxOGJGSTMwV0t6UGhrVmlfeTI3eWdXMVF3bWV3UGdrdEUyMkExU3FERG9yckZmakFVbVR2TnROOTlkUktQdHZEZjJlenhtMTlPaGk0U3k5MEFuSlNrcFZ3cVBsMVVoaEE2N1FuaGZWRDZXY2w?oc=5",
+      "publisher": "Bloomberg.com",
+      "publisher_url": "https://www.bloomberg.com",
+      "published_at": "Mon, 16 Nov 2026 10:14:53 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London AI",
+      "title": "Moderna creator Flagship Pioneering brings £100M AI lab to London - European Biotechnology Magazine",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPeDRlTzJhWmxScldnSEVlWkJsWnJvMV82andveEZSbWdtaDFYZnp2ZEt3dXg3S2tCejUyWGdYTUUtVXJxZmNfUXBpVktlUUVfVWZrMzR3ZE5tM042RDk4Q3Jha1V4Unh0Q0UxTXh0NWpGSTdULWZoTF9IQnAwaGk0MXdJSmdSY2dmRTA3dkRTUTNKSjR2WnVIcmJLUnVVUXhnY3IzR3NSSEREZm1GTTdxTkZR?oc=5",
+      "publisher": "European Biotechnology Magazine",
+      "publisher_url": "https://european-biotechnology.com",
+      "published_at": "Mon, 16 Nov 2026 10:08:33 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Home",
+      "title": "From 25% to 72% of household income: what a mortgage really costs in Britain's most coveted suburbs - Mortgage Professional America",
+      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPblFJUWNJOVptbEpBQUFmdGtHajI5QWxhdGhtMzg3bzdpY3JBNlBCNVJBd2pkVE1nZnNhcWxEVnA1STNHVU44bGlVTjFPR2xVSWlBTXZvclJuZ0MwTnh2bmdtZ1Aydnlmc0I0SnFlNGZ0SDI5V0dyaXFYZVd3MkZIc1dBZkJwWVVEUGpySEVvMTlBd1dwd093bjR1aHpvaGVkc0RCNFNQX2t2azI3OXNKX3VoSjZUM2R3UWdhV3ZUN2RxUjVvR2dPLXQxamVrX3BxbUh6OFRZYjhEd3g4Z3FSRVRLbTY1c01RZ1NZ?oc=5",
+      "publisher": "Mortgage Professional America",
+      "publisher_url": "https://www.mpamag.com",
+      "published_at": "Mon, 16 Nov 2026 10:02:33 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Plan Ahead",
+      "title": "Noah Kahan at London O2 Arena 2026: Stage Times, Last Minute Tickets and Ultimate Guide - Time Out Worldwide",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOcG9GU1dVV3RXamt2SnpZaVNLbDZ1d1VzUHBQQy04R0l5S0VHS2IxLV9Td3BIQ0NsaVVjSTdEZWxZbVhBYmZxUlU4WmwzbWdmMC1Cd2RIWGVfU2pYN2VsYmJodHRlaWx5SDROcTdzTmpINzZITG4tNGtGMFFhU2JNdkQ4OEZ0RU1JWUlJT0VESnp1djRHMHRtZw?oc=5",
+      "publisher": "Time Out Worldwide",
+      "publisher_url": "https://www.timeout.com",
+      "published_at": "Mon, 16 Nov 2026 09:14:00 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Home",
+      "title": "West Hampstead Motors prepares local drivers for colder months - HamHigh",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPQzBENF93enpCUnh1dTEyVzdiMjdRMTNLa29Nc3pla0RSTDgwZktSNVJESTMwSjlzUDhCWUw2eDN1b3FialNaTFNFT0FaU1FZX2N2bEM4NnBmOGVaOTB2d1NDUDEtZ2ZMaXJWcmtFbXZLNVhGZHFJUk5sRm9rTU9rNTJ5anQ1eHJiMFFoT1k4UGNwcHJFWmNsaldCbngyNW05?oc=5",
+      "publisher": "HamHigh",
+      "publisher_url": "https://www.hamhigh.co.uk",
+      "published_at": "Mon, 16 Nov 2026 09:13:39 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London AI",
+      "title": "UKRI invests in 20 Turing AI Fellows to strengthen UK capability - UKRI – UK Research and Innovation",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQSnZnY1NlWGNBR2I5b0d4a2FfejdEOENzZ28yanJPMXdBQnJ6MGpNdE03bjRxdlJxNDNuMC1TRjVPYk15SHhKb29LZWVobDUzUU92dGpwdHlTdzJ3VDdRZlhYUTlWSS1vejhpNlRVMWJXMDNzMDNJQmZQZlU3RXRmckxobFZPeVYwTW5kWnlpV3cyYkxxQXc?oc=5",
+      "publisher": "UKRI – UK Research and Innovation",
+      "publisher_url": "https://www.ukri.org",
+      "published_at": "Mon, 16 Nov 2026 09:02:50 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Home",
+      "title": "Couple drop legal battle to stop handover of London park cafes to huge chain - London Evening Standard",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOUVuSWxoQW9mWWxGSjNjUEJZalZrTzg0X2R3bTl0ZjVEOG92U2RxVWNzVWF4dnJLd0FqMXpROVVpOXQ3RmoyOGFiU1IzUERwdG5wcWxJYWRwUXJvdzJWaEZUQnVMWjNnWTA1ZzVVYUFpSnV5V2R4dzFmenVNYUt5eV9QaE1ET0pfdXFENWRIdnE0OFdIMDIwYUpGTDFMMkRsaVhZOTJYVE81cnl0b3M5YWR2WQ?oc=5",
+      "publisher": "London Evening Standard",
+      "publisher_url": "https://www.standard.co.uk",
+      "published_at": "Mon, 16 Nov 2026 09:00:38 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Work",
+      "title": "Best pictures as historic Lord Mayor’s Show parade takes over London’s Square Mile - London Evening Standard",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNVBvX0FqcTdHUVA0QW9mRkdFNXZXanNXWWV4WWUxNTJQYWdoemhrQ0FMaTdnVk1tRXFOQzlXVEZJYUNMTWVrWTBEOE1yWHA4eUJGQVRLY3VZMmlTQTB6MWdLOVJpLUZkallYeWxaZ1pYZ0diYXl5SFRvMGZ1ZDdFOE5zSTJjTEhHUFVXcnJOMFhXTnFhUVpDVGhlLWEyOVlUVU05cGlmeGNKQQ?oc=5",
+      "publisher": "London Evening Standard",
+      "publisher_url": "https://www.standard.co.uk",
+      "published_at": "Mon, 16 Nov 2026 08:54:02 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Plan Ahead",
+      "title": "Train lines are closed between Brighton and Haywards Heath - BBC",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8teXV3MWs0ZXViSXJVREFfelVjN1A1eVpsQ2dYS1Z4SU1zb29yRlh0OHlQS2ZHZWE5Z3NDSjJ4TU5aV1F4X2VBa1dqS19fZzU3bTFoOWxCUERWdnpYYWc?oc=5",
+      "publisher": "BBC",
+      "publisher_url": "https://www.bbc.co.uk",
+      "published_at": "Mon, 16 Nov 2026 08:51:33 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London AI",
+      "title": "Gen Z workers hiding AI use from bosses, new research finds, as Imperial Lifelong Learning launched - TECHNOLOGY RESELLER",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUnJaeEVERUh4ODlYa19mVXR1WGM1ZmxOT3ZISl9tRWNnVTZidTVTVjBKel9Uc3RlOEdVdm9oUVBhVEhING56aERMSVNTYW1ycXpfYm5KVU5CcEVZUDNBbU5NeGpDRXMzMElEcXhScV93SGxSSXFYdXZuRVhoaFB3Z0xfZzJRM211bGg1RVhETTg3ZnBpTUxzVVpra0Zkc2x3MkdvU0xIN2VBYTNTdHd3TkJhQ0owbzVqOWNnT0hzRXhqOFg2RE4w?oc=5",
+      "publisher": "TECHNOLOGY RESELLER",
+      "publisher_url": "https://technologyreseller.uk",
+      "published_at": "Mon, 16 Nov 2026 08:38:32 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London Technology",
+      "title": "Opinion: The Quantum Ghost in the Machine - https://politicsuk.com/",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9tWEQyRlRwS3h0MTFJSENaQ0xueWhZRExMeHJhTXhFQW11VndRQ2Rfelptb2dXY2ZGWFlrWnp3S3dpUURFNkJBNXltNHQxS2lSZEdfbXhvbWJGYnRIb0F6NTVwRzJJdmtGY1NhdEFR?oc=5",
+      "publisher": "https://politicsuk.com/",
+      "publisher_url": "https://www.politicsuk.com",
+      "published_at": "Mon, 16 Nov 2026 08:30:51 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Work",
+      "title": "City of London financial district - The Daily News | Texas' Oldest Newspaper",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPT2pRZlJyZkJTQWJva2o5M1VLUUM0TkRDbDkxc3RQcGQyak9vNGpsRXVCNkdmR1dHVlBOSkZBdVRnYkVPekd3WUVYRFlTd2xfbGxLQVBHRjFkOFBXeEZ1c2tGeDY0VWwwWndrak4zLURVd19hUnhEZTZWNVZGSTdEano2OGM1ZUVCSkxzT0ZfcE9Pcld5OFBXSkh5TWJZSDJreEJUakduZmVYczFlQXM0R1JfY2ZqVG90aFNBTGpERzI3TUdHbElN?oc=5",
+      "publisher": "The Daily News | Texas' Oldest Newspaper",
+      "publisher_url": "https://www.galvnews.com",
+      "published_at": "Mon, 16 Nov 2026 07:52:47 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London Technology",
       "title": "Flagship Pioneering Launches London Lab to Build AI-Native Companies - Unite.AI",
       "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdndpOWo5SWxoa004VlFYYTMyQmlNLUhUQUhOYlJ3RktpZHBtX1RDLWFHMmFFM0FyMTBLNnUzaEFBRjJMVUhiRGl6QlNlZHlneTZqSDFXZFIweGNmWExJVWhlTFY3NzdGQ2h0a09vbTZZWFZxUERMR2JzY2RWLXZsRXNqaDE3TjNFYWl0T0ZDVEVYeUFW?oc=5",
       "publisher": "Unite.AI",
       "publisher_url": "https://www.unite.ai",
       "published_at": "Mon, 16 Nov 2026 07:17:04 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -133,7 +629,7 @@
       "publisher_url": "https://www.securities.io",
       "published_at": "Mon, 16 Nov 2026 07:17:01 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -144,7 +640,7 @@
       "publisher_url": "https://www.estatesgazette.co.uk",
       "published_at": "Mon, 16 Nov 2026 07:16:29 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -155,7 +651,7 @@
       "publisher_url": "https://www.reuters.com",
       "published_at": "Mon, 16 Nov 2026 07:09:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -167,6 +663,17 @@
       "published_at": "Mon, 16 Nov 2026 07:07:05 GMT",
       "summary": "",
       "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London Technology",
+      "title": "VC Firm Plural Closes On $1.1B To Invest In European Startups With Potential For ‘GDP-Level Impact’ - Crunchbase News",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQRHI2RHItVURSZ0pjb0V4T2pjZFphdXBtMkFDU2U0LTJROG9QRjNxV2l6Q3VyZXFnTFVoWEhsZHEzRngtY2JhTm9WN3ZzX1U3WnlGLWpIMzVMVy1RTnAwbkU4WkZqNjRvZkRDazNtNkxWSURjSFZiak81NFZnQi1ES2dXVjZDY3lRMFVZVUtpQWJIeV9tLXJDbXJrUXdLcVNLbFRsRlJqZG9vSjV4b1ZrLUYzelJuSHc?oc=5",
+      "publisher": "Crunchbase News",
+      "publisher_url": "https://news.crunchbase.com",
+      "published_at": "Mon, 16 Nov 2026 07:00:39 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -187,7 +694,7 @@
       "publisher_url": "https://www.prnewswire.co.uk",
       "published_at": "Mon, 16 Nov 2026 07:00:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -202,14 +709,14 @@
       "discovery_source": "Google News RSS"
     },
     {
-      "category_hint": "London Technology",
+      "category_hint": "London AI",
       "title": "AI and robotics transforming daily life and society - Ticker News",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvbGVDZHRQMkpkOG50dXpjLWVjYzhfSGh0TXFZLXBTbE5uLU41Z2N6a2tZRU16UWV4VjlvYU5mcVFsSnhlTTZNMVBaQTVVNllIRVVEWmRrbHRROUEzSDhHTGFJNW93LVFqcjllZW1CNUppNDB4OVBIZU9IZDJ6blE?oc=5",
       "publisher": "Ticker News",
       "publisher_url": "https://tickernews.co",
       "published_at": "Mon, 16 Nov 2026 05:24:17 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -220,18 +727,7 @@
       "publisher_url": "https://sifted.eu",
       "published_at": "Mon, 16 Nov 2026 05:03:02 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "London Technology",
-      "title": "Biotech Venture Firm Flagship Invests £100 Million in New UK Lab - Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPSUdpeDlSZDJENVlnNUdsaDZOd2cxYWF4c1hXVTRGa1B0TDB3MGJqckU0WmpCWTMxcUJqUTJsQzh2eE5xbTliakdpY24xNXY0TlhXWGx4UVdvVnRHS3lfSUZJLUFoRjExYXhCbmZHZmRQMmJDd0NrNWw5R1hoUERIRTUybzBaZ2RzcHJPUnVWdGJzUEF6cndkR1Y0cjZNMW82RW51MFVDeXpLcUxYb0F4NnkxRk8yb2lwQzVleDQ3TWVnd2d3X29TenhhSQ?oc=5",
-      "publisher": "Bloomberg.com",
-      "publisher_url": "https://www.bloomberg.com",
-      "published_at": "Mon, 16 Nov 2026 05:01:00 GMT",
-      "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -242,7 +738,29 @@
       "publisher_url": "https://tickernews.co",
       "published_at": "Mon, 16 Nov 2026 04:20:54 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London AI",
+      "title": "Two-in-five UK workers avoid AI due to its inaccurate output - Consultancy.uk",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNLV9YSEtfOWltN1d4OVprYXNBNDBYa2EyRFNyM09QNHJ6NzdYaG0tZklYM2dUVGR3SW5STnUwUUhlcE50RW9rbFpxa1VXTkU0dzJwRWoyNUtmbG45a1RmLUM4NGxmUmhTYlpfRkJJSWVpb194Q1R5dUFBSVAwRlR0Wk9fTmpYaWk2bkJ5WjE3clRNUGhpMVAxQ2RiOGY4Uk3SAaQBQVVfeXFMTktlZ3Z6cWVIRGI0YlVBTmNxRTRuOEgtX2hXbU83X2pkYVdPRDl2cHh0MktyQzB2LUFSRXg2cWJwaE82QllZQzAyZ0RneE0yVzRBOFlVSmkyNUJTbGtGejhHbm5FSVlfLWVyU19pQ19xN1FlVXpURjRQdUpVMkNmaDA2dnozYURkLWdrX0VHblQ5NTh4Z2NQY3hCM195bXV4dERrazE?oc=5",
+      "publisher": "Consultancy.uk",
+      "publisher_url": "https://www.consultancy.uk",
+      "published_at": "Mon, 16 Nov 2026 04:07:14 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London Technology",
+      "title": "Tinubu’s reforms halted Nigeria’s economic collapse, says Mbah - The Guardian Nigeria News",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNNzNkdy1QVHA0a0l6ek5sYTQtSTZzM0swbkQ3WmNTaUwzUXI4ejVvU3dkZlFhSnFYbi1RY3dpcmRiLXh6ZUVzNDhYc3libUJSdV9vYy1CRlNZazRMZ095djhpMlVQLUp1OWtfMDFIODF0dkV5TzBqNkh1dVBJam0xRkRqMEFiNUw2SXJMSlBnYjIwMzg?oc=5",
+      "publisher": "The Guardian Nigeria News",
+      "publisher_url": "https://guardian.ng",
+      "published_at": "Mon, 16 Nov 2026 03:26:43 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -253,7 +771,7 @@
       "publisher_url": "https://www.politico.eu",
       "published_at": "Mon, 16 Nov 2026 03:00:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -286,7 +804,7 @@
       "publisher_url": "https://www.timeshighereducation.com",
       "published_at": "Mon, 16 Nov 2026 00:12:56 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -297,7 +815,7 @@
       "publisher_url": "https://www.ft.com",
       "published_at": "Sun, 15 Nov 2026 23:54:31 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -308,7 +826,7 @@
       "publisher_url": "https://www.express.co.uk",
       "published_at": "Sun, 15 Nov 2026 23:51:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -319,7 +837,7 @@
       "publisher_url": "https://www.breitbart.com",
       "published_at": "Sun, 15 Nov 2026 23:17:36 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -329,17 +847,6 @@
       "publisher": "CommBank",
       "publisher_url": "https://www.commbank.com.au",
       "published_at": "Sun, 15 Nov 2026 23:06:51 GMT",
-      "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
-      "discovery_source": "Google News RSS"
-    },
-    {
-      "category_hint": "Near Work",
-      "title": "Burnham to Tell City of London Audience Brexit Has Not Worked - Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTjNQRzlwOHVNcFQtOXQxQXF6ajVwczFKdDhBUzNaU2pvLTJkZTRhcFVKYXR2RE5uLUVZZkVlbDAxcWFVTTFQOHN6ZEdhdzJoandmMEd4WUZXUFpBXy1LQ2NzbW4xSjQxMERnaV9VN2hMSnNtYlFCNGVodXp5U2dONXBFY3hlWEpfZERIb1FVb010MUluZ0lQWVRBMHpjMXB3bnJiWmJYenpmQmRhMmEzcHV3?oc=5",
-      "publisher": "Bloomberg.com",
-      "publisher_url": "https://www.bloomberg.com",
-      "published_at": "Sun, 15 Nov 2026 22:30:00 GMT",
       "summary": "",
       "discovered_at": "2026-11-16T07:32:17.072465+00:00",
       "discovery_source": "Google News RSS"
@@ -357,13 +864,24 @@
     },
     {
       "category_hint": "Near Work",
+      "title": "Only Murders In The Building Season 6 Role Details Clarified By David Tennant - ScreenRant",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNaTF5dWhDc1puRU9DZk9qMlR1eExiWDBsMWhOaWdvQjVIZ2dzNm45cnFHUUcydms4bFBLVmZWZUdWTVNqWXF5V3FYbXNZV3A4SEZjOXZSS1Q3ZUE1SmUteHNqdVBUS09kdlJ3UlZCYnRwSjJrX3pKS0tBU0RrcDlEXzBITFREUzVnY1VYOS1MTGVGNHY5blE?oc=5",
+      "publisher": "ScreenRant",
+      "publisher_url": "https://screenrant.com",
+      "published_at": "Sun, 15 Nov 2026 20:55:54 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Work",
       "title": "Hamlet Hail to the Thief at Barbican Theatre - Plays International",
       "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQcVhsUWpldHdxMzNuRjBkYncxREVEZ2h1RmMzcjlSU1ZMRExyODhGbVFOdC1LLXNPV0pYa01sZVNRYldqT25BRThhc0pnZEZqMmprUXBGbE5jZUtpTFhkcUhKcXM0ZTg5OXYwMmdINEstYU5EdG42c19mcGd5VDU3aUJR?oc=5",
       "publisher": "Plays International",
       "publisher_url": "https://playsinternational.org.uk",
       "published_at": "Sun, 15 Nov 2026 19:36:30 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -385,7 +903,7 @@
       "publisher_url": "https://www.dailymail.com",
       "published_at": "Sun, 15 Nov 2026 17:06:27 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -396,7 +914,7 @@
       "publisher_url": "http://www.thisislocallondon.co.uk",
       "published_at": "Sun, 15 Nov 2026 17:00:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -407,7 +925,7 @@
       "publisher_url": "http://www.thisislocallondon.co.uk",
       "published_at": "Sun, 15 Nov 2026 16:00:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -451,7 +969,7 @@
       "publisher_url": "https://www.thesun.co.uk",
       "published_at": "Sun, 15 Nov 2026 14:09:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -485,6 +1003,17 @@
       "published_at": "Sun, 15 Nov 2026 11:25:11 GMT",
       "summary": "",
       "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London AI",
+      "title": "Fashion’s AI era: face swaps and digital clones - BusinessWorld Online",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeURCSXp1TUFlVlJiUVR1ZE5zeF9sVjlrcmphc0NEZ216RkdxQTFQaHZFR25TSDhDaHp6YVlhY3F1NzRINThMSUVGdW1CNTE3c093SDUta1hTSGluTEV6QzZMcWVsSF9ZUk83Q2VrbFpsUjBpTDBXM0xIYWFXTVBlU3lIWE1WakdMZU1jdmNpckg0LW13eE5qbzFkbm1GUlBDdWg2WGdUZXpxdw?oc=5",
+      "publisher": "BusinessWorld Online",
+      "publisher_url": "https://bworldonline.com",
+      "published_at": "Sun, 15 Nov 2026 11:19:24 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -527,7 +1056,7 @@
       "publisher_url": "https://www.mylondon.news",
       "published_at": "Sun, 15 Nov 2026 09:21:26 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -549,7 +1078,7 @@
       "publisher_url": "https://www.timeout.com",
       "published_at": "Sun, 15 Nov 2026 08:10:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -571,7 +1100,7 @@
       "publisher_url": "https://www.medicalnewstoday.com",
       "published_at": "Sun, 15 Nov 2026 06:35:06 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -582,7 +1111,7 @@
       "publisher_url": "https://liamodell.com",
       "published_at": "Sun, 15 Nov 2026 06:00:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -593,7 +1122,7 @@
       "publisher_url": "https://www.zawya.com",
       "published_at": "Sun, 15 Nov 2026 05:39:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -604,7 +1133,18 @@
       "publisher_url": "https://www.london-now.co.uk",
       "published_at": "Sun, 15 Nov 2026 05:00:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London Technology",
+      "title": "Udeh Unveils Tinubu, Mbah Re-election Support Group, Targets 20 Members per Polling Unit - The Guardian Nigeria News",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTmdqTjNwa2NyTEpIM1Bsa2RIYktGajF1SDVQTXI0YUlPaTF1RE8zcHVYaVQ2Y052UTB3Qzl4eWNCcFpOc1FnbDlTOENkSTRQZlNqU09HT1RUalU3NEdnZzZ0MFR4YmFDWHBmMW5fWXB3cm9wTE11dnJYZXNPcU9UYnlMdWtMOGFnZnJYdWNfek9UdTZtNFdxSlNibGk5dl9pMi1OTG91bzlmUEFualRKb1pB?oc=5",
+      "publisher": "The Guardian Nigeria News",
+      "publisher_url": "https://guardian.ng",
+      "published_at": "Sun, 15 Nov 2026 04:26:43 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -615,7 +1155,7 @@
       "publisher_url": "https://www.thetimestribune.com",
       "published_at": "Sun, 15 Nov 2026 01:07:04 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -626,7 +1166,7 @@
       "publisher_url": "https://www.globaltimes.cn",
       "published_at": "Sun, 15 Nov 2026 00:14:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -642,13 +1182,24 @@
     },
     {
       "category_hint": "Near Work",
+      "title": "Hamlet Hail to the Thief at Barbican Review - Theatre and Tonic",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTHdSX09vdVkzaGVtYk9FUXcwN2ZqcXZ1QkdZdWY3UnNVV2V2QklpVDhpY0w5Z3hQVGpxVkFXbFl0SWUzWUl2dy1zMFdfRGhXd204RWFlbHN3bi1iWTM1ZWJxQzBSVnQxZ1FXQ2Rrdjc4Q0Z0YVEzNE5VS1R1bmF2SUZRUXQ?oc=5",
+      "publisher": "Theatre and Tonic",
+      "publisher_url": "https://theatreandtonic.co.uk",
+      "published_at": "Sat, 14 Nov 2026 19:37:06 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Near Work",
       "title": "Laura Misch Turns London's Barbican Into A Living Soundscape On 'Lithic (Live at the Barbican)' - That Eric Alper",
       "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNTTFweE91dEpka212ZHRiNk9OVl9yN3ZuRmNNLUd5UzJhMVZoRnVLSVhRZ3ZPSnBwNGFkUUU0NWpNZzRfb1VqZlB3NTF4emRocjdYbHNDcWVXUmJ6OVdTMG15aWpuWlFHeHZxRlF3UVdJSFExb1A4SWhKMmsxQ2hEbWpDY1pqRTlnZllXcFFLODdtdVNvdFFiNTFtVXhKaXRPRUtudmdIQmZHWU1HbFlMMmhTMzFpd3JYM0lYZ2MwbkY2aTM1S0tNMWJ5NzY?oc=5",
       "publisher": "That Eric Alper",
       "publisher_url": "https://www.thatericalper.com",
       "published_at": "Sat, 14 Nov 2026 19:12:53 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -659,7 +1210,7 @@
       "publisher_url": "https://musicaltheatrereview.com",
       "published_at": "Sat, 14 Nov 2026 19:00:04 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -681,29 +1232,29 @@
       "publisher_url": "https://www.bbc.co.uk",
       "published_at": "Sat, 14 Nov 2026 17:56:24 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
       "category_hint": "Near Work",
-      "title": "Best pictures as historic Lord Mayor’s Show parade takes over London’s Square Mile - London Evening Standard",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNVBvX0FqcTdHUVA0QW9mRkdFNXZXanNXWWV4WWUxNTJQYWdoemhrQ0FMaTdnVk1tRXFOQzlXVEZJYUNMTWVrWTBEOE1yWHA4eUJGQVRLY3VZMmlTQTB6MWdLOVJpLUZkallYeWxaZ1pYZ0diYXl5SFRvMGZ1ZDdFOE5zSTJjTEhHUFVXcnJOMFhXTnFhUVpDVGhlLWEyOVlUVU05cGlmeGNKQQ?oc=5",
-      "publisher": "London Evening Standard",
-      "publisher_url": "https://www.standard.co.uk",
-      "published_at": "Sat, 14 Nov 2026 16:36:25 GMT",
+      "title": "London council saves roots of historic fallen willow tree - AOL.co.uk",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObkktYzBBQUR1aVN5VzlKdnNKdzFwWXUxQzhpdXp0NVlqLW9icEtkOWg4LUJuZ1hjZG5xMGZQTklxOVlfMWRqbzNGa1U3TEd2T0owQ0dCd3ZTdVNKZWRsYl9uUXlKVm94aVlZeklLbjdheFNBU3NfbzBFOFp3Vjg0TW9vTWJDWHEt?oc=5",
+      "publisher": "AOL.co.uk",
+      "publisher_url": "https://www.aol.co.uk",
+      "published_at": "Sat, 14 Nov 2026 15:00:09 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
       "category_hint": "Near Work",
       "title": "Lord Mayor’s Show takes place through City of London streets - BBC",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBpUk5EaFZNOF9jdjNtYVdLT0xaWjY5elJpNklUcmp5Q1daY0hwdW8xdWZNdk9tWDNfUFB3NTBXcWNydFVWekFSVXlRYWtQdmNGandUbGVqd2YxZWNC?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9Bc3FUUEE2b3QyZTFFc21fRTJackpZSzhNZWROQTZzd1lTbXhmcUZpdlY3TjVuNkRzTWFBLXdCX1hxWUJ6dC1ya1lLX0RHZGJBLWxrSU5iTUNhbjAtakE?oc=5",
       "publisher": "BBC",
-      "publisher_url": "http://www.bbc.co.uk",
+      "publisher_url": "https://www.bbc.co.uk",
       "published_at": "Sat, 14 Nov 2026 14:11:04 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -714,7 +1265,7 @@
       "publisher_url": "https://www.barkinganddagenhampost.co.uk",
       "published_at": "Sat, 14 Nov 2026 14:06:33 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -725,7 +1276,7 @@
       "publisher_url": "https://fastcompanyme.com",
       "published_at": "Sat, 14 Nov 2026 12:33:25 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -736,7 +1287,7 @@
       "publisher_url": "https://www.hamhigh.co.uk",
       "published_at": "Sat, 14 Nov 2026 12:30:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -769,7 +1320,18 @@
       "publisher_url": "https://southlondon.co.uk",
       "published_at": "Sat, 14 Nov 2026 08:57:30 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Plan Ahead",
+      "title": "Big Issue: Saatchi Gallery exhibition explores magazine's iconic moments - BBC",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5tcS1YOHFoWE9ZYXljeEZNWlZsVTQ0c2JwQzlZQXBNTHlISEZmdlEzVnFFaUZyd1Y1OVlDYlFGS3FWNlcxYlppMjJ3Vm9FVWh2d1RnTE5JSjZoRjcyb1E?oc=5",
+      "publisher": "BBC",
+      "publisher_url": "https://www.bbc.co.uk",
+      "published_at": "Sat, 14 Nov 2026 08:34:27 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -813,7 +1375,18 @@
       "publisher_url": "https://www.datacentre.solutions",
       "published_at": "Sat, 14 Nov 2026 03:53:04 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "London AI",
+      "title": "WeFetch AI Corp. Is the New Name of GreenCore Solutions Corp. - aapnews.aap.com.au",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1wN0JTVXZoUUQ4amgyMl82SWU2VFNSbFJYTzRwb3dQV0xmRWpoZkJIdUFvczQ5ZzFyUF9kWFpXdzN5aEdVTVk0SDQ5WUJOTTVYdWlidmZ1WERXNFE5OWJMRHI4QQ?oc=5",
+      "publisher": "aapnews.aap.com.au",
+      "publisher_url": "https://aapnews.aap.com.au",
+      "published_at": "Sat, 14 Nov 2026 02:25:11 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -824,7 +1397,7 @@
       "publisher_url": "https://www.geomechanics.io",
       "published_at": "Sat, 14 Nov 2026 00:17:08 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -846,7 +1419,7 @@
       "publisher_url": "https://www.ucl.ac.uk",
       "published_at": "Fri, 13 Nov 2026 22:44:05 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -857,7 +1430,7 @@
       "publisher_url": "https://afloat.ie",
       "published_at": "Fri, 13 Nov 2026 22:08:53 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -879,7 +1452,7 @@
       "publisher_url": "https://www.thisislocallondon.co.uk",
       "published_at": "Fri, 13 Nov 2026 20:42:09 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -901,7 +1474,7 @@
       "publisher_url": "https://futurism.com",
       "published_at": "Fri, 13 Nov 2026 20:01:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -916,6 +1489,17 @@
       "discovery_source": "Google News RSS"
     },
     {
+      "category_hint": "London AI",
+      "title": "The Artificial Intelligence (AI) Market in Aviation is Projected to Grow at a 27.4% CAGR Through 2030 - EIN Presswire",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPUXBwMzZBOWVHTHpHZDRzMEtFVFlGWF82UXp1UWF0V3FjVWJsMnhZSHZvU1NhUm45MXdnQzJIRXBnT1pxTGhUSXpKSk15M08xeC1KTXdaR2RGeVhNOFdqMUNiTnJYajJlRWR2bHZieDF4NFJCM2htbDFrbWlVc2JkNW9vd1FQVm11Q1ozQmQtU2JMUHllT0xnbzUxOWtzbVVIOXVVXy0xdmlfTVdRUUNUX1pkeHNCLWhaeTZrenZSTjF1UDRHdzB3S09nc3JaNkszbUNGUWpJZS1hRFlHeXc?oc=5",
+      "publisher": "EIN Presswire",
+      "publisher_url": "https://www.einpresswire.com",
+      "published_at": "Fri, 13 Nov 2026 17:30:00 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
       "category_hint": "Near Work",
       "title": "London close: FTSE ends up as investors shrug off Nvidia saga, Microsoft chaos - Sharecast.com",
       "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZlRYVkE4TXdxODdVRWZ4SC1BcV9LcU5POU9ibjNsWVVXaTdNWE53dHVRZDFJM3FobjdsQ1o1a2l3d29KellZZDFXYjBQamRXMkNkVVNUVVZKSnhCOUx5MktlczVSOExnTGtBUWR4bDFuSTdwWU1XWGlXM21iOTVlYm5GTGFZanA3anBrbkdRWVVSdkNBb1RaZmk5Mk51MTY4a1ZzMkQ2Z1UzejQtTFF0SlU1NEhzYnpxM2c?oc=5",
@@ -923,7 +1507,7 @@
       "publisher_url": "https://www.sharecast.com",
       "published_at": "Fri, 13 Nov 2026 17:22:09 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -934,7 +1518,7 @@
       "publisher_url": "https://camdennewjournal.co.uk",
       "published_at": "Fri, 13 Nov 2026 17:16:51 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -945,7 +1529,7 @@
       "publisher_url": "https://www.camdennewjournal.co.uk",
       "published_at": "Fri, 13 Nov 2026 16:30:18 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1000,7 +1584,7 @@
       "publisher_url": "https://stupiddope.com",
       "published_at": "Fri, 13 Nov 2026 15:32:03 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1011,7 +1595,7 @@
       "publisher_url": "https://www.thereviewshub.com",
       "published_at": "Fri, 13 Nov 2026 15:19:13 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1022,7 +1606,7 @@
       "publisher_url": "https://www.timeout.com",
       "published_at": "Fri, 13 Nov 2026 14:26:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1033,7 +1617,7 @@
       "publisher_url": "https://www.timeout.com",
       "published_at": "Fri, 13 Nov 2026 14:16:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1047,14 +1631,14 @@
       "discovery_source": "ianVisits"
     },
     {
-      "category_hint": "Near Home",
+      "category_hint": "Near Work",
       "title": "Hamlet Hail to the Thief review at the Barbican Theatre, London - The Stage",
       "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZHVOTVktOHNpUHpyUUV2c0Rmby1Kc2k5SE9wSHl4bGNsSWJ1RGNpdlhUZ25KTE9PYkpaOEVGNEEwMXc5cWhEbGdGSEx0Nk9RRzRhRlg0SnlXcHRQcFJEdGZoTGFWdFVycDFWZkRqaVY5eTBZV3NtU1lDOGVyY2JQbDhya3dNRElrQmo5bUpLXzlnQkpnb3hyOVNGTzZtV0lvYmc?oc=5",
       "publisher": "The Stage",
       "publisher_url": "https://www.thestage.co.uk",
       "published_at": "Fri, 13 Nov 2026 13:50:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1098,7 +1682,7 @@
       "publisher_url": "https://www.london-now.co.uk",
       "published_at": "Fri, 13 Nov 2026 12:45:20 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1175,6 +1759,17 @@
       "published_at": "Fri, 13 Nov 2026 11:42:54 GMT",
       "summary": "",
       "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Plan Ahead",
+      "title": "Muse at London O2 Arena November 2026: stage times, last-minute tickets and ultimate guide - Time Out Worldwide",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbU9vdEM4cTFjYjd3ZjFCaXJKd19XY3J5b25hYWQzM0phNHZxZXZYSTZueE8tY1NBLTIydmFqSVpQU3ZXYkYtVTVocER5RGlyYTB2TnlYR092Ul8tWS1TT2NkalNGVFZHRHBHc1JQc2tLTFR1QkhVdm4xZHRLVXJ5N2xMTUhnYUNsc1dBTTdURQ?oc=5",
+      "publisher": "Time Out Worldwide",
+      "publisher_url": "https://www.timeout.com",
+      "published_at": "Fri, 13 Nov 2026 11:39:00 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1262,7 +1857,7 @@
       "publisher_url": "https://www.cntravellerme.com",
       "published_at": "Fri, 13 Nov 2026 08:40:43 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1317,7 +1912,7 @@
       "publisher_url": "https://www.timeout.com",
       "published_at": "Fri, 13 Nov 2026 07:00:45 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1338,7 +1933,7 @@
       "publisher_url": "https://www.edtechinnovationhub.com",
       "published_at": "Fri, 13 Nov 2026 01:18:57 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1349,7 +1944,7 @@
       "publisher_url": "https://www.kcl.ac.uk",
       "published_at": "Thu, 12 Nov 2026 21:40:03 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1360,7 +1955,7 @@
       "publisher_url": "https://www.nationthailand.com",
       "published_at": "Thu, 12 Nov 2026 16:09:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1371,7 +1966,18 @@
       "publisher_url": "https://www.greatbritishlife.co.uk",
       "published_at": "Thu, 12 Nov 2026 16:00:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Plan Ahead",
+      "title": "Studley BTCC racing team's £350k car stolen from ExCel London - BBC",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0tVHEzcW4yWlI3RmxCdVo2YTBuazh1SlN3MFMtcmVDT1dISlBkU0lOS0FBWUpUZU9vTDE2OVhpU0V0MFg3S2U5clZybVF0c3RGVk5yRkNEVzNkd1E?oc=5",
+      "publisher": "BBC",
+      "publisher_url": "https://www.bbc.com",
+      "published_at": "Thu, 12 Nov 2026 15:55:25 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1382,7 +1988,7 @@
       "publisher_url": "https://www.imperial.ac.uk",
       "published_at": "Thu, 12 Nov 2026 14:23:06 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1404,7 +2010,7 @@
       "publisher_url": "https://www.standard.co.uk",
       "published_at": "Thu, 12 Nov 2026 14:04:26 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1426,7 +2032,7 @@
       "publisher_url": "https://www.ianvisits.co.uk",
       "published_at": "Thu, 12 Nov 2026 12:01:30 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1437,7 +2043,7 @@
       "publisher_url": "https://www.ucl.ac.uk",
       "published_at": "Thu, 12 Nov 2026 10:50:49 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1459,7 +2065,7 @@
       "publisher_url": "https://www.birmingham-now.co.uk",
       "published_at": "Wed, 11 Nov 2026 18:42:33 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1470,7 +2076,7 @@
       "publisher_url": "https://www.imperial.ac.uk",
       "published_at": "Wed, 11 Nov 2026 15:42:40 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1481,7 +2087,7 @@
       "publisher_url": "https://www.standard.co.uk",
       "published_at": "Wed, 11 Nov 2026 15:33:18 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1492,7 +2098,7 @@
       "publisher_url": "https://www.hrmagazine.co.uk",
       "published_at": "Wed, 11 Nov 2026 11:47:26 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1503,7 +2109,7 @@
       "publisher_url": "https://www.jazzwise.com",
       "published_at": "Wed, 11 Nov 2026 09:45:36 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1514,7 +2120,7 @@
       "publisher_url": "https://socanews.com",
       "published_at": "Wed, 11 Nov 2026 08:59:20 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1525,7 +2131,7 @@
       "publisher_url": "https://www.kcl.ac.uk",
       "published_at": "Wed, 11 Nov 2026 08:00:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1536,7 +2142,7 @@
       "publisher_url": "https://www.microsoft.com",
       "published_at": "Wed, 11 Nov 2026 00:23:16 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1547,7 +2153,18 @@
       "publisher_url": "https://www.personneltoday.com",
       "published_at": "Wed, 11 Nov 2026 00:01:53 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Plan Ahead",
+      "title": "Light+Flight Festival - Time Out Worldwide",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5jN2h1YTlRczJpekcwVGVJTHBtSm02eGdnY1MxSlpMbnN5NVVQMi1ES0lMOXZ4TXY4QXdZTWFPenIwZDRMdWs5SVBnZ2pXbWNwZTh5X2QwX25McF9VUm5RTnBYTS0zdHl1eS1zbHpnYkVDcUk?oc=5",
+      "publisher": "Time Out Worldwide",
+      "publisher_url": "https://www.timeout.com",
+      "published_at": "Wed, 11 Nov 2026 00:00:00 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1558,7 +2175,7 @@
       "publisher_url": "https://www.timeout.com",
       "published_at": "Wed, 11 Nov 2026 00:00:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1569,7 +2186,7 @@
       "publisher_url": "https://www.london-now.co.uk",
       "published_at": "Tue, 10 Nov 2026 15:18:44 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1580,7 +2197,7 @@
       "publisher_url": "https://www.london-now.co.uk",
       "published_at": "Tue, 10 Nov 2026 14:25:07 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1591,7 +2208,7 @@
       "publisher_url": "https://filmlondon.org.uk",
       "published_at": "Tue, 10 Nov 2026 14:24:50 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1602,7 +2219,18 @@
       "publisher_url": "https://www.theartnewspaper.com",
       "published_at": "Tue, 10 Nov 2026 13:25:39 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
+      "discovery_source": "Google News RSS"
+    },
+    {
+      "category_hint": "Plan Ahead",
+      "title": "London festival RALLY unveils first names for 2027 · News ⟋ RA - Resident Advisor",
+      "link": "https://news.google.com/rss/articles/CBMiPEFVX3lxTE0ydEN5M3ZqYzNNN1BoNEo4Mmc1eUtMZTRhNlhkRFN2UDd6ZWllbXlpTVZxSzJlTlFXaFItdA?oc=5",
+      "publisher": "Resident Advisor",
+      "publisher_url": "https://ra.co",
+      "published_at": "Tue, 10 Nov 2026 12:05:23 GMT",
+      "summary": "",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1613,7 +2241,7 @@
       "publisher_url": "https://www.timeout.com",
       "published_at": "Tue, 10 Nov 2026 12:01:34 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1624,7 +2252,7 @@
       "publisher_url": "https://discover.ticketmaster.co.uk",
       "published_at": "Tue, 10 Nov 2026 08:00:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1646,7 +2274,7 @@
       "publisher_url": "https://www.mixtapemadness.com",
       "published_at": "Mon, 09 Nov 2026 14:57:39 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {
@@ -1679,7 +2307,7 @@
       "publisher_url": "https://www.lissongallery.com",
       "published_at": "Sat, 07 Nov 2026 08:00:00 GMT",
       "summary": "",
-      "discovered_at": "2026-11-16T07:32:17.072465+00:00",
+      "discovered_at": "2026-11-16T13:42:16.375339+00:00",
       "discovery_source": "Google News RSS"
     },
     {

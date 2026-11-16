@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated_at": "2026-11-16T07:32:17.622Z",
+  "generated_at": "2026-11-16T13:42:18.701Z",
   "londonDate": "2026-11-16",
   "collection_status": "ok",
   "feeds": [
@@ -8,44 +8,44 @@
       "id": "heath-hands",
       "url": "https://www.heath-hands.org.uk/whatson?format=json",
       "status": "ok",
-      "checkedAt": "2026-11-16T07:31:15.708Z",
-      "cacheState": "cached-needs-reverification",
-      "durationMs": 119,
-      "itemCount": 18
+      "checkedAt": "2026-11-16T13:42:20.202Z",
+      "cacheState": "fetched",
+      "durationMs": 1499,
+      "itemCount": 19
     },
     {
       "id": "hampstead-theatre",
       "url": "https://www.hampsteadtheatre.com/whats-on/",
       "status": "ok",
-      "checkedAt": "2026-11-16T07:31:15.677Z",
-      "cacheState": "cached-needs-reverification",
-      "durationMs": 87,
-      "itemCount": 14
+      "checkedAt": "2026-11-16T13:42:19.407Z",
+      "cacheState": "fetched",
+      "durationMs": 671,
+      "itemCount": 13
     },
     {
       "id": "barbican",
       "url": "https://www.barbican.org.uk/whats-on",
       "status": "ok",
-      "checkedAt": "2026-11-16T07:31:15.673Z",
-      "cacheState": "cached-needs-reverification",
-      "durationMs": 202,
-      "itemCount": 17
+      "checkedAt": "2026-11-16T13:42:19.332Z",
+      "cacheState": "fetched",
+      "durationMs": 595,
+      "itemCount": 18
     },
     {
       "id": "city-events",
       "url": "https://www.cityoflondon.gov.uk/events",
       "status": "ok",
-      "checkedAt": "2026-11-16T07:31:15.837Z",
-      "cacheState": "cached-needs-reverification",
-      "durationMs": 150,
+      "checkedAt": "2026-11-16T13:42:19.891Z",
+      "cacheState": "fetched",
+      "durationMs": 552,
       "itemCount": 9
     }
   ],
   "metrics": {
-    "requests": 0,
-    "cacheHits": 4,
+    "requests": 4,
+    "cacheHits": 0,
     "failures": 0,
-    "bytes": 0
+    "bytes": 1780301
   },
   "items": [
     {
@@ -59,10 +59,10 @@
       "publisher": "Heath Hands",
       "publisher_url": "https://www.heath-hands.org.uk/whatson?format=json",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.708Z",
+      "discovered_at": "2026-11-16T13:42:20.202Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.708Z",
-      "evidence_file": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+      "checked_at": "2026-11-16T13:42:20.202Z",
+      "evidence_file": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
       "needs_live_verification": true
     },
     {
@@ -76,10 +76,10 @@
       "publisher": "Heath Hands",
       "publisher_url": "https://www.heath-hands.org.uk/whatson?format=json",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.708Z",
+      "discovered_at": "2026-11-16T13:42:20.202Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.708Z",
-      "evidence_file": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+      "checked_at": "2026-11-16T13:42:20.202Z",
+      "evidence_file": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
       "needs_live_verification": true
     },
     {
@@ -94,10 +94,10 @@
       "publisher": "Heath Hands",
       "publisher_url": "https://www.heath-hands.org.uk/whatson?format=json",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.708Z",
+      "discovered_at": "2026-11-16T13:42:20.202Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.708Z",
-      "evidence_file": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+      "checked_at": "2026-11-16T13:42:20.202Z",
+      "evidence_file": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
       "needs_live_verification": true
     },
     {
@@ -111,10 +111,10 @@
       "publisher": "Heath Hands",
       "publisher_url": "https://www.heath-hands.org.uk/whatson?format=json",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.708Z",
+      "discovered_at": "2026-11-16T13:42:20.202Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.708Z",
-      "evidence_file": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+      "checked_at": "2026-11-16T13:42:20.202Z",
+      "evidence_file": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
       "needs_live_verification": true
     },
     {
@@ -129,10 +129,10 @@
       "publisher": "Heath Hands",
       "publisher_url": "https://www.heath-hands.org.uk/whatson?format=json",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.708Z",
+      "discovered_at": "2026-11-16T13:42:20.202Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.708Z",
-      "evidence_file": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+      "checked_at": "2026-11-16T13:42:20.202Z",
+      "evidence_file": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
       "needs_live_verification": true
     },
     {
@@ -146,10 +146,10 @@
       "publisher": "Heath Hands",
       "publisher_url": "https://www.heath-hands.org.uk/whatson?format=json",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.708Z",
+      "discovered_at": "2026-11-16T13:42:20.202Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.708Z",
-      "evidence_file": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+      "checked_at": "2026-11-16T13:42:20.202Z",
+      "evidence_file": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
       "needs_live_verification": true
     },
     {
@@ -164,10 +164,10 @@
       "publisher": "Heath Hands",
       "publisher_url": "https://www.heath-hands.org.uk/whatson?format=json",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.708Z",
+      "discovered_at": "2026-11-16T13:42:20.202Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.708Z",
-      "evidence_file": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+      "checked_at": "2026-11-16T13:42:20.202Z",
+      "evidence_file": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
       "needs_live_verification": true
     },
     {
@@ -181,10 +181,10 @@
       "publisher": "Heath Hands",
       "publisher_url": "https://www.heath-hands.org.uk/whatson?format=json",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.708Z",
+      "discovered_at": "2026-11-16T13:42:20.202Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.708Z",
-      "evidence_file": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+      "checked_at": "2026-11-16T13:42:20.202Z",
+      "evidence_file": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
       "needs_live_verification": true
     },
     {
@@ -199,10 +199,10 @@
       "publisher": "Heath Hands",
       "publisher_url": "https://www.heath-hands.org.uk/whatson?format=json",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.708Z",
+      "discovered_at": "2026-11-16T13:42:20.202Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.708Z",
-      "evidence_file": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+      "checked_at": "2026-11-16T13:42:20.202Z",
+      "evidence_file": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
       "needs_live_verification": true
     },
     {
@@ -217,10 +217,10 @@
       "publisher": "Heath Hands",
       "publisher_url": "https://www.heath-hands.org.uk/whatson?format=json",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.708Z",
+      "discovered_at": "2026-11-16T13:42:20.202Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.708Z",
-      "evidence_file": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+      "checked_at": "2026-11-16T13:42:20.202Z",
+      "evidence_file": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
       "needs_live_verification": true
     },
     {
@@ -235,10 +235,10 @@
       "publisher": "Heath Hands",
       "publisher_url": "https://www.heath-hands.org.uk/whatson?format=json",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.708Z",
+      "discovered_at": "2026-11-16T13:42:20.202Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.708Z",
-      "evidence_file": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+      "checked_at": "2026-11-16T13:42:20.202Z",
+      "evidence_file": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
       "needs_live_verification": true
     },
     {
@@ -253,10 +253,10 @@
       "publisher": "Heath Hands",
       "publisher_url": "https://www.heath-hands.org.uk/whatson?format=json",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.708Z",
+      "discovered_at": "2026-11-16T13:42:20.202Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.708Z",
-      "evidence_file": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+      "checked_at": "2026-11-16T13:42:20.202Z",
+      "evidence_file": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
       "needs_live_verification": true
     },
     {
@@ -270,10 +270,10 @@
       "publisher": "Heath Hands",
       "publisher_url": "https://www.heath-hands.org.uk/whatson?format=json",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.708Z",
+      "discovered_at": "2026-11-16T13:42:20.202Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.708Z",
-      "evidence_file": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+      "checked_at": "2026-11-16T13:42:20.202Z",
+      "evidence_file": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
       "needs_live_verification": true
     },
     {
@@ -288,10 +288,10 @@
       "publisher": "Heath Hands",
       "publisher_url": "https://www.heath-hands.org.uk/whatson?format=json",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.708Z",
+      "discovered_at": "2026-11-16T13:42:20.202Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.708Z",
-      "evidence_file": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+      "checked_at": "2026-11-16T13:42:20.202Z",
+      "evidence_file": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
       "needs_live_verification": true
     },
     {
@@ -306,10 +306,10 @@
       "publisher": "Heath Hands",
       "publisher_url": "https://www.heath-hands.org.uk/whatson?format=json",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.708Z",
+      "discovered_at": "2026-11-16T13:42:20.202Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.708Z",
-      "evidence_file": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+      "checked_at": "2026-11-16T13:42:20.202Z",
+      "evidence_file": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
       "needs_live_verification": true
     },
     {
@@ -324,10 +324,10 @@
       "publisher": "Heath Hands",
       "publisher_url": "https://www.heath-hands.org.uk/whatson?format=json",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.708Z",
+      "discovered_at": "2026-11-16T13:42:20.202Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.708Z",
-      "evidence_file": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+      "checked_at": "2026-11-16T13:42:20.202Z",
+      "evidence_file": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
       "needs_live_verification": true
     },
     {
@@ -342,10 +342,10 @@
       "publisher": "Heath Hands",
       "publisher_url": "https://www.heath-hands.org.uk/whatson?format=json",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.708Z",
+      "discovered_at": "2026-11-16T13:42:20.202Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.708Z",
-      "evidence_file": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+      "checked_at": "2026-11-16T13:42:20.202Z",
+      "evidence_file": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
       "needs_live_verification": true
     },
     {
@@ -360,26 +360,28 @@
       "publisher": "Heath Hands",
       "publisher_url": "https://www.heath-hands.org.uk/whatson?format=json",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.708Z",
+      "discovered_at": "2026-11-16T13:42:20.202Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.708Z",
-      "evidence_file": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+      "checked_at": "2026-11-16T13:42:20.202Z",
+      "evidence_file": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
       "needs_live_verification": true
     },
     {
-      "title": "Find out more about Kimberly Akimbo",
-      "link": "https://www.hampsteadtheatre.com/production/kimberly-akimbo/",
-      "summary": "",
-      "event_start": null,
-      "id": "direct-7e962ba2890c2dfd",
+      "title": "Wreath Making - Parliament Hill",
+      "link": "https://www.heath-hands.org.uk/whatson/wreath-making-hive-121226",
+      "event_start": "2026-12-12T13:30:00.043Z",
+      "event_end": "2026-12-12T14:30:00.043Z",
+      "summary": "Join us for a workshop on Hampstead Heath to make your own festive wreath from natural materials. This workshop will take place in the Parliament Hill area. Once you’ve booked on (below) we will send you joining details for the workshop, including a detailed meeting point. There is a £25 donation, click below to book, to cover our costs for this workshop, which includes: All the materials you will need; Instructions from our friendly team; Hot drinks, Mince pies and other treats. Please note that our wreath-making workshops are outdoors - shelter will be provided in the event of rain, but do dress up for the weather! Cancellations: if you can no longer attend, please let us know at least 72H before the event so that we can offer your space to someone else. We will not be able to issue refunds nearer to the workshop date. Are you interested in joining more events? Why not join as a Friend of Heath Hands - individual membership is £40 and includes free access to all our paid-for workshops, additional member-only activities, a monthly newsletter to keep you up-to-date on our activities and discounts in our webshop . Book here",
+      "venue": "The Hive",
+      "id": "direct-b408a6fb1e29faf5",
       "category_hint": "Near Home",
-      "publisher": "Hampstead Theatre",
-      "publisher_url": "https://www.hampsteadtheatre.com/whats-on/",
+      "publisher": "Heath Hands",
+      "publisher_url": "https://www.heath-hands.org.uk/whatson?format=json",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.677Z",
+      "discovered_at": "2026-11-16T13:42:20.202Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.677Z",
-      "evidence_file": ".daily-work\\evidence\\b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
+      "checked_at": "2026-11-16T13:42:20.202Z",
+      "evidence_file": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
       "needs_live_verification": true
     },
     {
@@ -392,10 +394,10 @@
       "publisher": "Hampstead Theatre",
       "publisher_url": "https://www.hampsteadtheatre.com/whats-on/",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.677Z",
+      "discovered_at": "2026-11-16T13:42:19.407Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.677Z",
-      "evidence_file": ".daily-work\\evidence\\b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
+      "checked_at": "2026-11-16T13:42:19.407Z",
+      "evidence_file": ".daily-work/evidence/b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
       "needs_live_verification": true
     },
     {
@@ -408,10 +410,10 @@
       "publisher": "Hampstead Theatre",
       "publisher_url": "https://www.hampsteadtheatre.com/whats-on/",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.677Z",
+      "discovered_at": "2026-11-16T13:42:19.407Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.677Z",
-      "evidence_file": ".daily-work\\evidence\\b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
+      "checked_at": "2026-11-16T13:42:19.407Z",
+      "evidence_file": ".daily-work/evidence/b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
       "needs_live_verification": true
     },
     {
@@ -424,10 +426,10 @@
       "publisher": "Hampstead Theatre",
       "publisher_url": "https://www.hampsteadtheatre.com/whats-on/",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.677Z",
+      "discovered_at": "2026-11-16T13:42:19.407Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.677Z",
-      "evidence_file": ".daily-work\\evidence\\b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
+      "checked_at": "2026-11-16T13:42:19.407Z",
+      "evidence_file": ".daily-work/evidence/b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
       "needs_live_verification": true
     },
     {
@@ -440,10 +442,10 @@
       "publisher": "Hampstead Theatre",
       "publisher_url": "https://www.hampsteadtheatre.com/whats-on/",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.677Z",
+      "discovered_at": "2026-11-16T13:42:19.407Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.677Z",
-      "evidence_file": ".daily-work\\evidence\\b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
+      "checked_at": "2026-11-16T13:42:19.407Z",
+      "evidence_file": ".daily-work/evidence/b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
       "needs_live_verification": true
     },
     {
@@ -456,10 +458,10 @@
       "publisher": "Hampstead Theatre",
       "publisher_url": "https://www.hampsteadtheatre.com/whats-on/",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.677Z",
+      "discovered_at": "2026-11-16T13:42:19.407Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.677Z",
-      "evidence_file": ".daily-work\\evidence\\b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
+      "checked_at": "2026-11-16T13:42:19.407Z",
+      "evidence_file": ".daily-work/evidence/b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
       "needs_live_verification": true
     },
     {
@@ -472,10 +474,10 @@
       "publisher": "Hampstead Theatre",
       "publisher_url": "https://www.hampsteadtheatre.com/whats-on/",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.677Z",
+      "discovered_at": "2026-11-16T13:42:19.407Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.677Z",
-      "evidence_file": ".daily-work\\evidence\\b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
+      "checked_at": "2026-11-16T13:42:19.407Z",
+      "evidence_file": ".daily-work/evidence/b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
       "needs_live_verification": true
     },
     {
@@ -488,10 +490,10 @@
       "publisher": "Hampstead Theatre",
       "publisher_url": "https://www.hampsteadtheatre.com/whats-on/",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.677Z",
+      "discovered_at": "2026-11-16T13:42:19.407Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.677Z",
-      "evidence_file": ".daily-work\\evidence\\b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
+      "checked_at": "2026-11-16T13:42:19.407Z",
+      "evidence_file": ".daily-work/evidence/b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
       "needs_live_verification": true
     },
     {
@@ -504,10 +506,10 @@
       "publisher": "Hampstead Theatre",
       "publisher_url": "https://www.hampsteadtheatre.com/whats-on/",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.677Z",
+      "discovered_at": "2026-11-16T13:42:19.407Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.677Z",
-      "evidence_file": ".daily-work\\evidence\\b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
+      "checked_at": "2026-11-16T13:42:19.407Z",
+      "evidence_file": ".daily-work/evidence/b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
       "needs_live_verification": true
     },
     {
@@ -520,10 +522,10 @@
       "publisher": "Hampstead Theatre",
       "publisher_url": "https://www.hampsteadtheatre.com/whats-on/",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.677Z",
+      "discovered_at": "2026-11-16T13:42:19.407Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.677Z",
-      "evidence_file": ".daily-work\\evidence\\b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
+      "checked_at": "2026-11-16T13:42:19.407Z",
+      "evidence_file": ".daily-work/evidence/b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
       "needs_live_verification": true
     },
     {
@@ -536,10 +538,10 @@
       "publisher": "Hampstead Theatre",
       "publisher_url": "https://www.hampsteadtheatre.com/whats-on/",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.677Z",
+      "discovered_at": "2026-11-16T13:42:19.407Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.677Z",
-      "evidence_file": ".daily-work\\evidence\\b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
+      "checked_at": "2026-11-16T13:42:19.407Z",
+      "evidence_file": ".daily-work/evidence/b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
       "needs_live_verification": true
     },
     {
@@ -552,10 +554,10 @@
       "publisher": "Hampstead Theatre",
       "publisher_url": "https://www.hampsteadtheatre.com/whats-on/",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.677Z",
+      "discovered_at": "2026-11-16T13:42:19.407Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.677Z",
-      "evidence_file": ".daily-work\\evidence\\b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
+      "checked_at": "2026-11-16T13:42:19.407Z",
+      "evidence_file": ".daily-work/evidence/b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
       "needs_live_verification": true
     },
     {
@@ -568,10 +570,10 @@
       "publisher": "Hampstead Theatre",
       "publisher_url": "https://www.hampsteadtheatre.com/whats-on/",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.677Z",
+      "discovered_at": "2026-11-16T13:42:19.407Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.677Z",
-      "evidence_file": ".daily-work\\evidence\\b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
+      "checked_at": "2026-11-16T13:42:19.407Z",
+      "evidence_file": ".daily-work/evidence/b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
       "needs_live_verification": true
     },
     {
@@ -584,10 +586,10 @@
       "publisher": "Hampstead Theatre",
       "publisher_url": "https://www.hampsteadtheatre.com/whats-on/",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.677Z",
+      "discovered_at": "2026-11-16T13:42:19.407Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.677Z",
-      "evidence_file": ".daily-work\\evidence\\b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
+      "checked_at": "2026-11-16T13:42:19.407Z",
+      "evidence_file": ".daily-work/evidence/b88462c0e58d4bbde38c546eb756b969baa2a265fff3fa9ae31ece49dca4e218.body",
       "needs_live_verification": true
     },
     {
@@ -600,10 +602,10 @@
       "publisher": "Barbican",
       "publisher_url": "https://www.barbican.org.uk/whats-on",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.673Z",
+      "discovered_at": "2026-11-16T13:42:19.332Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.673Z",
-      "evidence_file": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+      "checked_at": "2026-11-16T13:42:19.332Z",
+      "evidence_file": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
       "needs_live_verification": true
     },
     {
@@ -616,10 +618,10 @@
       "publisher": "Barbican",
       "publisher_url": "https://www.barbican.org.uk/whats-on",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.673Z",
+      "discovered_at": "2026-11-16T13:42:19.332Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.673Z",
-      "evidence_file": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+      "checked_at": "2026-11-16T13:42:19.332Z",
+      "evidence_file": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
       "needs_live_verification": true
     },
     {
@@ -632,10 +634,10 @@
       "publisher": "Barbican",
       "publisher_url": "https://www.barbican.org.uk/whats-on",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.673Z",
+      "discovered_at": "2026-11-16T13:42:19.332Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.673Z",
-      "evidence_file": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+      "checked_at": "2026-11-16T13:42:19.332Z",
+      "evidence_file": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
       "needs_live_verification": true
     },
     {
@@ -648,10 +650,10 @@
       "publisher": "Barbican",
       "publisher_url": "https://www.barbican.org.uk/whats-on",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.673Z",
+      "discovered_at": "2026-11-16T13:42:19.332Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.673Z",
-      "evidence_file": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+      "checked_at": "2026-11-16T13:42:19.332Z",
+      "evidence_file": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
       "needs_live_verification": true
     },
     {
@@ -664,10 +666,10 @@
       "publisher": "Barbican",
       "publisher_url": "https://www.barbican.org.uk/whats-on",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.673Z",
+      "discovered_at": "2026-11-16T13:42:19.332Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.673Z",
-      "evidence_file": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+      "checked_at": "2026-11-16T13:42:19.332Z",
+      "evidence_file": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
       "needs_live_verification": true
     },
     {
@@ -680,10 +682,10 @@
       "publisher": "Barbican",
       "publisher_url": "https://www.barbican.org.uk/whats-on",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.673Z",
+      "discovered_at": "2026-11-16T13:42:19.332Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.673Z",
-      "evidence_file": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+      "checked_at": "2026-11-16T13:42:19.332Z",
+      "evidence_file": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
       "needs_live_verification": true
     },
     {
@@ -696,10 +698,10 @@
       "publisher": "Barbican",
       "publisher_url": "https://www.barbican.org.uk/whats-on",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.673Z",
+      "discovered_at": "2026-11-16T13:42:19.332Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.673Z",
-      "evidence_file": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+      "checked_at": "2026-11-16T13:42:19.332Z",
+      "evidence_file": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
       "needs_live_verification": true
     },
     {
@@ -712,26 +714,10 @@
       "publisher": "Barbican",
       "publisher_url": "https://www.barbican.org.uk/whats-on",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.673Z",
+      "discovered_at": "2026-11-16T13:42:19.332Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.673Z",
-      "evidence_file": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
-      "needs_live_verification": true
-    },
-    {
-      "title": "Information about Spiritland: Live events",
-      "link": "https://www.barbican.org.uk/whats-on/2026/event/spiritland-live-events",
-      "summary": "",
-      "event_start": null,
-      "id": "direct-fbf340ad396fac2e",
-      "category_hint": "Near Work",
-      "publisher": "Barbican",
-      "publisher_url": "https://www.barbican.org.uk/whats-on",
-      "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.673Z",
-      "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.673Z",
-      "evidence_file": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+      "checked_at": "2026-11-16T13:42:19.332Z",
+      "evidence_file": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
       "needs_live_verification": true
     },
     {
@@ -744,10 +730,10 @@
       "publisher": "Barbican",
       "publisher_url": "https://www.barbican.org.uk/whats-on",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.673Z",
+      "discovered_at": "2026-11-16T13:42:19.332Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.673Z",
-      "evidence_file": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+      "checked_at": "2026-11-16T13:42:19.332Z",
+      "evidence_file": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
       "needs_live_verification": true
     },
     {
@@ -760,10 +746,10 @@
       "publisher": "Barbican",
       "publisher_url": "https://www.barbican.org.uk/whats-on",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.673Z",
+      "discovered_at": "2026-11-16T13:42:19.332Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.673Z",
-      "evidence_file": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+      "checked_at": "2026-11-16T13:42:19.332Z",
+      "evidence_file": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
       "needs_live_verification": true
     },
     {
@@ -776,10 +762,10 @@
       "publisher": "Barbican",
       "publisher_url": "https://www.barbican.org.uk/whats-on",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.673Z",
+      "discovered_at": "2026-11-16T13:42:19.332Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.673Z",
-      "evidence_file": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+      "checked_at": "2026-11-16T13:42:19.332Z",
+      "evidence_file": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
       "needs_live_verification": true
     },
     {
@@ -792,10 +778,26 @@
       "publisher": "Barbican",
       "publisher_url": "https://www.barbican.org.uk/whats-on",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.673Z",
+      "discovered_at": "2026-11-16T13:42:19.332Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.673Z",
-      "evidence_file": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+      "checked_at": "2026-11-16T13:42:19.332Z",
+      "evidence_file": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+      "needs_live_verification": true
+    },
+    {
+      "title": "Information about Spiritland: Live events",
+      "link": "https://www.barbican.org.uk/whats-on/2026/event/spiritland-live-events",
+      "summary": "",
+      "event_start": null,
+      "id": "direct-fbf340ad396fac2e",
+      "category_hint": "Near Work",
+      "publisher": "Barbican",
+      "publisher_url": "https://www.barbican.org.uk/whats-on",
+      "published_at": "",
+      "discovered_at": "2026-11-16T13:42:19.332Z",
+      "discovery_source": "Official activity listing",
+      "checked_at": "2026-11-16T13:42:19.332Z",
+      "evidence_file": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
       "needs_live_verification": true
     },
     {
@@ -808,10 +810,10 @@
       "publisher": "Barbican",
       "publisher_url": "https://www.barbican.org.uk/whats-on",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.673Z",
+      "discovered_at": "2026-11-16T13:42:19.332Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.673Z",
-      "evidence_file": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+      "checked_at": "2026-11-16T13:42:19.332Z",
+      "evidence_file": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
       "needs_live_verification": true
     },
     {
@@ -824,10 +826,10 @@
       "publisher": "Barbican",
       "publisher_url": "https://www.barbican.org.uk/whats-on",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.673Z",
+      "discovered_at": "2026-11-16T13:42:19.332Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.673Z",
-      "evidence_file": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+      "checked_at": "2026-11-16T13:42:19.332Z",
+      "evidence_file": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
       "needs_live_verification": true
     },
     {
@@ -840,10 +842,10 @@
       "publisher": "Barbican",
       "publisher_url": "https://www.barbican.org.uk/whats-on",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.673Z",
+      "discovered_at": "2026-11-16T13:42:19.332Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.673Z",
-      "evidence_file": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+      "checked_at": "2026-11-16T13:42:19.332Z",
+      "evidence_file": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
       "needs_live_verification": true
     },
     {
@@ -856,10 +858,26 @@
       "publisher": "Barbican",
       "publisher_url": "https://www.barbican.org.uk/whats-on",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.673Z",
+      "discovered_at": "2026-11-16T13:42:19.332Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.673Z",
-      "evidence_file": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+      "checked_at": "2026-11-16T13:42:19.332Z",
+      "evidence_file": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+      "needs_live_verification": true
+    },
+    {
+      "title": "Information about I Am Furious Black: Losing Ground + Introduction",
+      "link": "https://www.barbican.org.uk/whats-on/2026/event/i-am-furious-black-losing-ground-introduction",
+      "summary": "",
+      "event_start": null,
+      "id": "direct-42073272a49140d1",
+      "category_hint": "Near Work",
+      "publisher": "Barbican",
+      "publisher_url": "https://www.barbican.org.uk/whats-on",
+      "published_at": "",
+      "discovered_at": "2026-11-16T13:42:19.332Z",
+      "discovery_source": "Official activity listing",
+      "checked_at": "2026-11-16T13:42:19.332Z",
+      "evidence_file": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
       "needs_live_verification": true
     },
     {
@@ -872,10 +890,10 @@
       "publisher": "City of London",
       "publisher_url": "https://www.cityoflondon.gov.uk/events",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.837Z",
+      "discovered_at": "2026-11-16T13:42:19.891Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.837Z",
-      "evidence_file": ".daily-work\\evidence\\9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
+      "checked_at": "2026-11-16T13:42:19.891Z",
+      "evidence_file": ".daily-work/evidence/9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
       "needs_live_verification": true
     },
     {
@@ -888,10 +906,10 @@
       "publisher": "City of London",
       "publisher_url": "https://www.cityoflondon.gov.uk/events",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.837Z",
+      "discovered_at": "2026-11-16T13:42:19.891Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.837Z",
-      "evidence_file": ".daily-work\\evidence\\9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
+      "checked_at": "2026-11-16T13:42:19.891Z",
+      "evidence_file": ".daily-work/evidence/9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
       "needs_live_verification": true
     },
     {
@@ -904,10 +922,10 @@
       "publisher": "City of London",
       "publisher_url": "https://www.cityoflondon.gov.uk/events",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.837Z",
+      "discovered_at": "2026-11-16T13:42:19.891Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.837Z",
-      "evidence_file": ".daily-work\\evidence\\9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
+      "checked_at": "2026-11-16T13:42:19.891Z",
+      "evidence_file": ".daily-work/evidence/9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
       "needs_live_verification": true
     },
     {
@@ -920,10 +938,10 @@
       "publisher": "City of London",
       "publisher_url": "https://www.cityoflondon.gov.uk/events",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.837Z",
+      "discovered_at": "2026-11-16T13:42:19.891Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.837Z",
-      "evidence_file": ".daily-work\\evidence\\9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
+      "checked_at": "2026-11-16T13:42:19.891Z",
+      "evidence_file": ".daily-work/evidence/9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
       "needs_live_verification": true
     },
     {
@@ -936,10 +954,10 @@
       "publisher": "City of London",
       "publisher_url": "https://www.cityoflondon.gov.uk/events",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.837Z",
+      "discovered_at": "2026-11-16T13:42:19.891Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.837Z",
-      "evidence_file": ".daily-work\\evidence\\9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
+      "checked_at": "2026-11-16T13:42:19.891Z",
+      "evidence_file": ".daily-work/evidence/9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
       "needs_live_verification": true
     },
     {
@@ -952,10 +970,10 @@
       "publisher": "City of London",
       "publisher_url": "https://www.cityoflondon.gov.uk/events",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.837Z",
+      "discovered_at": "2026-11-16T13:42:19.891Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.837Z",
-      "evidence_file": ".daily-work\\evidence\\9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
+      "checked_at": "2026-11-16T13:42:19.891Z",
+      "evidence_file": ".daily-work/evidence/9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
       "needs_live_verification": true
     },
     {
@@ -968,10 +986,10 @@
       "publisher": "City of London",
       "publisher_url": "https://www.cityoflondon.gov.uk/events",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.837Z",
+      "discovered_at": "2026-11-16T13:42:19.891Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.837Z",
-      "evidence_file": ".daily-work\\evidence\\9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
+      "checked_at": "2026-11-16T13:42:19.891Z",
+      "evidence_file": ".daily-work/evidence/9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
       "needs_live_verification": true
     },
     {
@@ -984,10 +1002,10 @@
       "publisher": "City of London",
       "publisher_url": "https://www.cityoflondon.gov.uk/events",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.837Z",
+      "discovered_at": "2026-11-16T13:42:19.891Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.837Z",
-      "evidence_file": ".daily-work\\evidence\\9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
+      "checked_at": "2026-11-16T13:42:19.891Z",
+      "evidence_file": ".daily-work/evidence/9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
       "needs_live_verification": true
     },
     {
@@ -1000,10 +1018,10 @@
       "publisher": "City of London",
       "publisher_url": "https://www.cityoflondon.gov.uk/events",
       "published_at": "",
-      "discovered_at": "2026-11-16T07:31:15.837Z",
+      "discovered_at": "2026-11-16T13:42:19.891Z",
       "discovery_source": "Official activity listing",
-      "checked_at": "2026-11-16T07:31:15.837Z",
-      "evidence_file": ".daily-work\\evidence\\9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
+      "checked_at": "2026-11-16T13:42:19.891Z",
+      "evidence_file": ".daily-work/evidence/9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
       "needs_live_verification": true
     }
   ]
