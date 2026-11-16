@@ -1,127 +1,124 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-15T12:46:35.323Z",
-  "londonDate": "2026-11-15",
-  "sourceCollectedAt": "2026-11-15T12:46:32.243418+00:00",
+  "generatedAt": "2026-11-16T07:44:24.473Z",
+  "londonDate": "2026-11-16",
+  "sourceCollectedAt": "2026-11-16T07:32:17.072465+00:00",
   "collectionHealth": {
-    "status": "partial",
-    "lastSuccessAt": "2026-11-15T12:46:32.243418+00:00",
+    "status": "ok",
+    "lastSuccessAt": "2026-11-16T07:32:17.072465+00:00",
     "feeds": [
       {
         "url": "https://news.google.com/rss/search?q=%22Hampstead%20Heath%22%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Near Home",
-        "attempted_at": "2026-11-15T12:46:32.243418+00:00",
-        "last_success_at": "2026-11-15T12:46:32.243418+00:00",
+        "attempted_at": "2026-11-16T07:32:17.072465+00:00",
+        "last_success_at": "2026-11-16T07:32:17.072465+00:00",
         "status": "ok",
-        "item_count": 11,
-        "duration_ms": 317
+        "item_count": 10,
+        "duration_ms": 105
       },
       {
         "url": "https://news.google.com/rss/search?q=%28Hampstead%20OR%20%22Belsize%20Park%22%20OR%20%22Swiss%20Cottage%22%20OR%20NW3%29%20London%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Near Home",
-        "attempted_at": "2026-11-15T12:46:32.243418+00:00",
-        "last_success_at": "2026-11-15T12:46:32.243418+00:00",
+        "attempted_at": "2026-11-16T07:32:17.072465+00:00",
+        "last_success_at": "2026-11-16T07:32:17.072465+00:00",
         "status": "ok",
         "item_count": 15,
-        "duration_ms": 385
+        "duration_ms": 103
       },
       {
         "url": "https://news.google.com/rss/search?q=%28Gospel%20Oak%20OR%20%22Finchley%20Road%22%20OR%20%22South%20End%20Green%22%29%20London%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Near Home",
-        "attempted_at": "2026-11-15T12:46:32.243418+00:00",
-        "last_success_at": "2026-11-15T12:46:32.243418+00:00",
+        "attempted_at": "2026-11-16T07:32:17.072465+00:00",
+        "last_success_at": "2026-11-16T07:32:17.072465+00:00",
         "status": "ok",
         "item_count": 6,
-        "duration_ms": 2064
+        "duration_ms": 308
       },
       {
         "url": "https://news.google.com/rss/search?q=%28%22City%20of%20London%22%20OR%20Bishopsgate%20OR%20Broadgate%20OR%20%22Liverpool%20Street%22%29%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Near Work",
-        "attempted_at": "2026-11-15T12:46:32.243418+00:00",
-        "last_success_at": "2026-11-15T12:46:32.243418+00:00",
+        "attempted_at": "2026-11-16T07:32:17.072465+00:00",
+        "last_success_at": "2026-11-16T07:32:17.072465+00:00",
         "status": "ok",
         "item_count": 15,
-        "duration_ms": 1818
+        "duration_ms": 340
       },
       {
         "url": "https://news.google.com/rss/search?q=%28Spitalfields%20OR%20%22Square%20Mile%22%20OR%20Moorgate%20OR%20Barbican%29%20London%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Near Work",
-        "attempted_at": "2026-11-15T12:46:32.243418+00:00",
-        "last_success_at": "2026-11-15T12:46:32.243418+00:00",
+        "attempted_at": "2026-11-16T07:32:17.072465+00:00",
+        "last_success_at": "2026-11-16T07:32:17.072465+00:00",
         "status": "ok",
         "item_count": 15,
-        "duration_ms": 332
+        "duration_ms": 41
       },
       {
         "url": "https://news.google.com/rss/search?q=London%20artificial%20intelligence%20AI%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "London AI",
-        "attempted_at": "2026-11-15T12:46:32.243418+00:00",
-        "last_success_at": "2026-11-15T12:46:32.243418+00:00",
+        "attempted_at": "2026-11-16T07:32:17.072465+00:00",
+        "last_success_at": "2026-11-16T07:32:17.072465+00:00",
         "status": "ok",
         "item_count": 15,
-        "duration_ms": 378
+        "duration_ms": 41
       },
       {
         "url": "https://news.google.com/rss/search?q=%28UCL%20OR%20Imperial%20OR%20%22King%27s%20College%20London%22%20OR%20%22Queen%20Mary%22%29%20AI%20when%3A7d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "London AI",
-        "attempted_at": "2026-11-15T12:46:32.243418+00:00",
-        "last_success_at": "2026-11-15T12:46:32.243418+00:00",
+        "attempted_at": "2026-11-16T07:32:17.072465+00:00",
+        "last_success_at": "2026-11-16T07:32:17.072465+00:00",
         "status": "ok",
         "item_count": 15,
-        "duration_ms": 321
+        "duration_ms": 67
       },
       {
         "url": "https://news.google.com/rss/search?q=London%20technology%20science%20innovation%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "London Technology",
-        "attempted_at": "2026-11-15T12:46:32.243418+00:00",
-        "last_success_at": "2026-11-15T12:46:32.243418+00:00",
+        "attempted_at": "2026-11-16T07:32:17.072465+00:00",
+        "last_success_at": "2026-11-16T07:32:17.072465+00:00",
         "status": "ok",
         "item_count": 15,
-        "duration_ms": 365
+        "duration_ms": 60
       },
       {
         "url": "https://news.google.com/rss/search?q=%28London%20startup%20OR%20%22London%20tech%22%20OR%20robotics%20OR%20quantum%20OR%20biotech%29%20when%3A5d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "London Technology",
-        "attempted_at": "2026-11-15T12:46:32.243418+00:00",
-        "last_success_at": "2026-11-15T12:46:32.243418+00:00",
+        "attempted_at": "2026-11-16T07:32:17.072465+00:00",
+        "last_success_at": "2026-11-16T07:32:17.072465+00:00",
         "status": "ok",
         "item_count": 15,
-        "duration_ms": 538
+        "duration_ms": 76
       },
       {
         "url": "https://news.google.com/rss/search?q=London%20event%20tickets%20opening%20closing%20disruption%20when%3A7d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Plan Ahead",
-        "attempted_at": "2026-11-15T12:46:32.243418+00:00",
-        "last_success_at": "2026-11-15T12:46:32.243418+00:00",
+        "attempted_at": "2026-11-16T07:32:17.072465+00:00",
+        "last_success_at": "2026-11-16T07:32:17.072465+00:00",
         "status": "ok",
         "item_count": 13,
-        "duration_ms": 300
+        "duration_ms": 80
       },
       {
         "url": "https://news.google.com/rss/search?q=%28London%20exhibition%20OR%20festival%20OR%20%22ticket%20release%22%29%20when%3A10d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Plan Ahead",
-        "attempted_at": "2026-11-15T12:46:32.243418+00:00",
-        "last_success_at": "2026-11-15T12:46:32.243418+00:00",
+        "attempted_at": "2026-11-16T07:32:17.072465+00:00",
+        "last_success_at": "2026-11-16T07:32:17.072465+00:00",
         "status": "ok",
         "item_count": 15,
-        "duration_ms": 369
+        "duration_ms": 61
       },
       {
         "url": "https://www.ianvisits.co.uk/articles/feed/",
         "name": "ianVisits",
-        "attempted_at": "2026-11-15T12:46:32.243418+00:00",
-        "last_success_at": "2026-11-14T12:14:07.084325+00:00",
-        "status": "error",
-        "item_count": 0,
-        "error": "mismatched tag: line 93, column 2",
-        "duration_ms": 458
+        "attempted_at": "2026-11-16T07:32:17.072465+00:00",
+        "last_success_at": "2026-11-16T07:32:17.072465+00:00",
+        "status": "ok",
+        "item_count": 5,
+        "duration_ms": 83
       }
     ]
   },
-  "warnings": [
-    "Feed collection partial; inspect collectionHealth and research failed sections live."
-  ],
-  "sourceCandidateCount": 962,
+  "warnings": [],
+  "sourceCandidateCount": 204,
   "directCollectionHealth": {
     "status": "ok",
     "feeds": [
@@ -129,108 +126,52 @@
         "id": "heath-hands",
         "url": "https://www.heath-hands.org.uk/whatson?format=json",
         "status": "ok",
-        "checkedAt": "2026-11-15T12:46:34.798Z",
-        "cacheState": "fetched",
-        "durationMs": 412,
-        "itemCount": 20
+        "checkedAt": "2026-11-16T07:31:15.708Z",
+        "cacheState": "cached-needs-reverification",
+        "durationMs": 119,
+        "itemCount": 18
       },
       {
         "id": "hampstead-theatre",
         "url": "https://www.hampsteadtheatre.com/whats-on/",
         "status": "ok",
-        "checkedAt": "2026-11-15T12:46:35.202Z",
-        "cacheState": "fetched",
-        "durationMs": 710,
+        "checkedAt": "2026-11-16T07:31:15.677Z",
+        "cacheState": "cached-needs-reverification",
+        "durationMs": 87,
         "itemCount": 14
       },
       {
         "id": "barbican",
         "url": "https://www.barbican.org.uk/whats-on",
         "status": "ok",
-        "checkedAt": "2026-11-15T12:46:34.735Z",
-        "cacheState": "fetched",
-        "durationMs": 242,
-        "itemCount": 20
+        "checkedAt": "2026-11-16T07:31:15.673Z",
+        "cacheState": "cached-needs-reverification",
+        "durationMs": 202,
+        "itemCount": 17
       },
       {
         "id": "city-events",
         "url": "https://www.cityoflondon.gov.uk/events",
         "status": "ok",
-        "checkedAt": "2026-11-15T12:46:35.269Z",
-        "cacheState": "fetched",
-        "durationMs": 525,
+        "checkedAt": "2026-11-16T07:31:15.837Z",
+        "cacheState": "cached-needs-reverification",
+        "durationMs": 150,
         "itemCount": 9
       }
     ]
   },
-  "deduplicatedCandidateCount": 962,
+  "deduplicatedCandidateCount": 204,
   "candidatesPerSection": 10,
   "notice": "Discovery shortlist only. Open destination pages, verify every volatile claim live, and prefer primary sources before publication.",
   "candidateSections": {
     "Near Home": [
       {
-        "id": "direct-7225c3ac1b58027d",
-        "title": "Wild about Hampstead Heath - CANCELLED",
-        "eventStart": "2026-11-15T13:00:00.328Z",
-        "eventEnd": "2026-11-15T15:00:00.328Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-15T12:46:34.798Z",
-        "publisher": "Heath Hands",
-        "publishedAt": "",
-        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/wildabouthampsteadheath-151126",
-        "discoverySource": "Official activity listing",
-        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-        "summary": "We’ve had to cancel this session due to train engineering works. Come and find out about nature on our green spaces with our volunteer wildlife interpreters. All welcome, drop in anytime between 1-3pm, no need to book. Look out for the big Wild About Hampstead Heath bike, in the Parliament Hill area.",
-        "needsDestinationResolution": false,
-        "datedActivitySignal": true,
-        "score": 91.99,
-        "ageHours": null,
-        "activitySignal": true,
-        "primarySourceSignal": true,
-        "signals": [
-          "approved primary-source lead",
-          "source lists an upcoming date: reverify availability",
-          "activity/action wording: verify upcoming date",
-          "collector category",
-          "hampstead"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "direct-de2c6c4d47faaf5e",
-        "title": "Keats House: Place-Based Writing Workshop",
-        "eventStart": "2026-11-15T14:00:00.040Z",
-        "eventEnd": "2026-11-15T16:30:00.040Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-15T12:46:34.798Z",
-        "publisher": "Heath Hands",
-        "publishedAt": "",
-        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/keats-writingplace",
-        "discoverySource": "Official activity listing",
-        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-        "summary": "How do we translate a physical landscape into an invisible feeling? Join critically acclaimed songwriter Étáin for an immersive, two-hour creative writing workshop in the historic grounds of Keats House. The workshop will be followed by a 30-minute performance by Étáin. This event and any associated ticketing and personal data capture is managed directly by the City of London Corporation. Learn mo",
-        "needsDestinationResolution": false,
-        "datedActivitySignal": true,
-        "score": 86.95,
-        "ageHours": null,
-        "activitySignal": true,
-        "primarySourceSignal": true,
-        "signals": [
-          "approved primary-source lead",
-          "source lists an upcoming date: reverify availability",
-          "activity/action wording: verify upcoming date",
-          "collector category",
-          "keats"
-        ],
-        "alternateLeads": []
-      },
-      {
         "id": "direct-7b8d9bb3b3ad342f",
         "title": "Heath Info Hut open day",
         "eventStart": "2026-11-21T10:00:00.825Z",
         "eventEnd": "2026-11-21T14:00:00.825Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-15T12:46:34.798Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-16T07:31:15.708Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/heath-info-hut-211126",
@@ -239,7 +180,7 @@
         "summary": "The Heath Info Hut Pop by the Heath Info Hut at Parliament Hill for information about Hampstead Heath and what’s coming up. Click here for the location. You can: pick up a free map or nature sheet find out about upcoming events and activities ask questions of our friendly team buy Hampstead Heath-related goodies (e.g. books, cards, bags)",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 86.12,
+        "score": 86.91,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -256,8 +197,8 @@
             "title": "Heath Info Hut open day",
             "eventStart": "2026-11-28T10:00:00.003Z",
             "eventEnd": "2026-11-28T14:00:00.003Z",
-            "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-            "checkedAt": "2026-11-15T12:46:34.798Z",
+            "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+            "checkedAt": "2026-11-16T07:31:15.708Z",
             "publisher": "Heath Hands",
             "publishedAt": "",
             "discoveryUrl": "https://www.heath-hands.org.uk/whatson/heath-info-hut-281126",
@@ -266,7 +207,7 @@
             "summary": "The Heath Info Hut Pop by the Heath Info Hut at Parliament Hill for information about Hampstead Heath and what’s coming up. Click here for the location. You can: pick up a free map or nature sheet find out about upcoming events and activities ask questions of our friendly team buy Hampstead Heath-related goodies (e.g. books, cards, bags)",
             "needsDestinationResolution": false,
             "datedActivitySignal": true,
-            "score": 79.12,
+            "score": 79.91,
             "ageHours": null,
             "activitySignal": true,
             "primarySourceSignal": true,
@@ -285,8 +226,8 @@
         "title": "Litter pick",
         "eventStart": "2026-11-21T12:00:00.801Z",
         "eventEnd": "2026-11-21T13:00:00.801Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-15T12:46:34.798Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-16T07:31:15.708Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/litter-pick-211126",
@@ -295,7 +236,7 @@
         "summary": "Join us for a Saturday afternoon litter pick. All welcome and all equipment provided. Meet at 12pm at the Heath Info Hut (the former Tennis Bookings Hut), Hampstead Heath, near the Parliament Hill tennis courts - no need to book, although you can let us know that you’re planning to come along so that we know roughly how many to expect.",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 86.03,
+        "score": 86.82,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -312,8 +253,8 @@
             "title": "Litter pick",
             "eventStart": "2026-11-28T12:00:00.801Z",
             "eventEnd": "2026-11-28T13:00:00.801Z",
-            "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-            "checkedAt": "2026-11-15T12:46:34.798Z",
+            "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+            "checkedAt": "2026-11-16T07:31:15.708Z",
             "publisher": "Heath Hands",
             "publishedAt": "",
             "discoveryUrl": "https://www.heath-hands.org.uk/whatson/litter-pick-281126",
@@ -322,7 +263,7 @@
             "summary": "Join us for a Saturday afternoon litter pick. All welcome and all equipment provided. Meet at 12pm at the Heath Info Hut (the former Tennis Bookings Hut), Hampstead Heath, near the Parliament Hill tennis courts - no need to book, although you can let us know that you’re planning to come along so that we know roughly how many to expect.",
             "needsDestinationResolution": false,
             "datedActivitySignal": true,
-            "score": 79.03,
+            "score": 79.82,
             "ageHours": null,
             "activitySignal": true,
             "primarySourceSignal": true,
@@ -341,8 +282,8 @@
         "title": "Nature Journaling Workshop",
         "eventStart": "2026-11-18T12:30:00.637Z",
         "eventEnd": "2026-11-18T14:00:00.637Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-15T12:46:34.798Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-16T07:31:15.708Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/naturejournaling-181126",
@@ -351,7 +292,7 @@
         "summary": "Join us for a guided walk and nature journaling workshop on the Kenwood Estate . Nature journaling is a method of recording and collecting your observations in a variety of ways - note making, sketching, writing or whatever method works best for you. Nature journaling can enrich your experience of the natural world, deepen your relationship with the local environment and help develop your identifi",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 86.01,
+        "score": 86.8,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -369,8 +310,8 @@
         "title": "Wild about Hampstead Heath",
         "eventStart": "2026-11-21T13:00:00.297Z",
         "eventEnd": "2026-11-21T15:00:00.297Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-15T12:46:34.798Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-16T07:31:15.708Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/wildabouthampsteadheath-211126",
@@ -379,7 +320,7 @@
         "summary": "Come and find out about nature on our green spaces with our volunteer wildlife interpreters. All welcome, drop in anytime between 1-3pm, no need to book. Look out for the big Wild About Hampstead Heath bike, in the Parliament Hill area.",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 85.99,
+        "score": 86.78,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -396,8 +337,8 @@
             "title": "Wild about Hampstead Heath",
             "eventStart": "2026-11-29T13:00:00.328Z",
             "eventEnd": "2026-11-29T15:00:00.328Z",
-            "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-            "checkedAt": "2026-11-15T12:46:34.798Z",
+            "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+            "checkedAt": "2026-11-16T07:31:15.708Z",
             "publisher": "Heath Hands",
             "publishedAt": "",
             "discoveryUrl": "https://www.heath-hands.org.uk/whatson/wildabouthampsteadheath-291126",
@@ -406,7 +347,7 @@
             "summary": "Come and find out about nature on our green spaces with our volunteer wildlife interpreters. All welcome, drop in anytime between 1-3pm, no need to book. Look out for the big Wild About Hampstead Heath bike, in the Parliament Hill area.",
             "needsDestinationResolution": false,
             "datedActivitySignal": true,
-            "score": 78,
+            "score": 78.78,
             "ageHours": null,
             "activitySignal": true,
             "primarySourceSignal": true,
@@ -425,8 +366,8 @@
         "title": "Hedgeplanting with Hampstead Heath Eco Club",
         "eventStart": "2026-11-21T13:30:00.910Z",
         "eventEnd": "2026-11-21T15:30:00.910Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-15T12:46:34.798Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-16T07:31:15.708Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/hhechedgeplanting",
@@ -435,7 +376,7 @@
         "summary": "Join us for the second event of our new Youth programme: Hampstead Heath Eco Club . This time, we’ll be planting new hedges around the Parliament Hill area! Join us to find out about the importance of hedges for wildlife and biodiversity and make a real difference by planting your own little trees on Hampstead Heath! This is a youth event , open to children age 10-17 only . Booking is required (cl",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 85.97,
+        "score": 86.76,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -453,8 +394,8 @@
         "title": "Hampstead Heath Photo Exhibition",
         "eventStart": "2026-11-26T10:00:00.887Z",
         "eventEnd": "2026-11-28T15:00:00.887Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-15T12:46:34.798Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-16T07:31:15.708Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/photo-exhibition-dairy-2026",
@@ -463,7 +404,7 @@
         "summary": "Join us at The Kenwood Dairy for an exhibition of this year’s top Hampstead Heath photo competition entries. The exhibition will include spectacular photographs of Hampstead Heath, including this year’s winning entry, a beautiful image by Joe Hayman, and the winning under 18s entry, a great shot by Milo Dawes, aged 13. No need to book, stop by between 10am-3pm from the 26th-28th of November. Teas ",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 85.12,
+        "score": 85.91,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -481,8 +422,8 @@
         "title": "Wreath Making - Kenwood",
         "eventStart": "2026-12-01T10:00:00.135Z",
         "eventEnd": "2026-12-01T11:30:00.135Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-15T12:46:34.798Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-16T07:31:15.708Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/wreath-making-011226",
@@ -508,8 +449,8 @@
             "title": "Wreath Making - Kenwood",
             "eventStart": "2026-12-03T10:00:00.595Z",
             "eventEnd": "2026-12-03T11:30:00.595Z",
-            "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-            "checkedAt": "2026-11-15T12:46:34.798Z",
+            "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+            "checkedAt": "2026-11-16T07:31:15.708Z",
             "publisher": "Heath Hands",
             "publishedAt": "",
             "discoveryUrl": "https://www.heath-hands.org.uk/whatson/wreath-making-11dec25-3g6xr",
@@ -537,8 +478,8 @@
         "title": "Wreath Making - Parliament Hill Cafe",
         "eventStart": "2026-12-10T10:00:00.043Z",
         "eventEnd": "2026-12-10T11:30:00.043Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-15T12:46:34.798Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-16T07:31:15.708Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/wreath-making-daisy-green-101226am",
@@ -564,8 +505,8 @@
             "title": "Wreath Making - Parliament Hill Cafe",
             "eventStart": "2026-12-10T13:00:00.043Z",
             "eventEnd": "2026-12-10T14:30:00.043Z",
-            "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-            "checkedAt": "2026-11-15T12:46:34.798Z",
+            "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+            "checkedAt": "2026-11-16T07:31:15.708Z",
             "publisher": "Heath Hands",
             "publishedAt": "",
             "discoveryUrl": "https://www.heath-hands.org.uk/whatson/wreath-making-daisy-green-101226pm1",
@@ -587,25 +528,23 @@
             ]
           }
         ]
-      }
-    ],
-    "Near Work": [
+      },
       {
-        "id": "direct-de2c6c4d47faaf5e",
-        "title": "Keats House: Place-Based Writing Workshop",
-        "eventStart": "2026-11-15T14:00:00.040Z",
-        "eventEnd": "2026-11-15T16:30:00.040Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-15T12:46:34.798Z",
+        "id": "direct-af3abbdcd0834a1d",
+        "title": "Wreath Making - Parliament Hill",
+        "eventStart": "2026-12-05T13:30:00.515Z",
+        "eventEnd": "2026-12-05T15:00:00.515Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-16T07:31:15.708Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
-        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/keats-writingplace",
+        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/wreath-making-hive-051226",
         "discoverySource": "Official activity listing",
         "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-        "summary": "How do we translate a physical landscape into an invisible feeling? Join critically acclaimed songwriter Étáin for an immersive, two-hour creative writing workshop in the historic grounds of Keats House. The workshop will be followed by a 30-minute performance by Étáin. This event and any associated ticketing and personal data capture is managed directly by the City of London Corporation. Learn mo",
+        "summary": "Join us for a workshop on Hampstead Heath to make your own festive wreath from natural materials. This workshop will take place in the Parliament Hill area. Once you’ve booked on (below) we will send you joining details for the workshop, including a detailed meeting point. There is a £25 donation, click below to book, to cover our costs for this workshop, which includes: All the materials you will",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 83.95,
+        "score": 78,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -613,16 +552,47 @@
           "approved primary-source lead",
           "source lists an upcoming date: reverify availability",
           "activity/action wording: verify upcoming date",
-          "city of london"
+          "collector category",
+          "hampstead"
         ],
         "alternateLeads": []
       },
       {
+        "id": "direct-a1b0fa86facfd035",
+        "title": "Kenwood Dairy open day",
+        "eventStart": "2026-11-28T11:00:00.025Z",
+        "eventEnd": "2026-11-28T15:00:00.025Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-16T07:31:15.708Z",
+        "publisher": "Heath Hands",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/kenwood-dairy-open-281126",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
+        "summary": "Come and view our Nature Interpretation Centre to find out more about the wildlife across the Heath’s green spaces. Pick up a leaflet, check out our specimens and find out what’s coming up! Interpretation centre displays.",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": true,
+        "score": 76.86,
+        "ageHours": null,
+        "activitySignal": true,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "source lists an upcoming date: reverify availability",
+          "activity/action wording: verify upcoming date",
+          "collector category",
+          "heath"
+        ],
+        "alternateLeads": []
+      }
+    ],
+    "Near Work": [
+      {
         "id": "direct-c0ec38c8c77a18eb",
         "title": "Information about Ghost Tours: The Barbican After Dark",
         "eventStart": null,
-        "evidenceFile": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
-        "checkedAt": "2026-11-15T12:46:34.735Z",
+        "evidenceFile": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+        "checkedAt": "2026-11-16T07:31:15.673Z",
         "publisher": "Barbican",
         "publishedAt": "",
         "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/ghost-tours-the-barbican-after-dark",
@@ -647,8 +617,8 @@
         "id": "direct-1f7b075839cdd58f",
         "title": "30 Oct - 29 Apr 1327 and the City of London Exhibition",
         "eventStart": null,
-        "evidenceFile": ".daily-work/evidence/9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
-        "checkedAt": "2026-11-15T12:46:35.269Z",
+        "evidenceFile": ".daily-work\\evidence\\9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
+        "checkedAt": "2026-11-16T07:31:15.837Z",
         "publisher": "City of London",
         "publishedAt": "",
         "discoveryUrl": "https://www.cityoflondon.gov.uk/events/1327-and-the-city-of-london-exhibition",
@@ -672,8 +642,8 @@
         "id": "direct-feeefc3e62916928",
         "title": "Information about Architecture Tours",
         "eventStart": null,
-        "evidenceFile": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
-        "checkedAt": "2026-11-15T12:46:34.735Z",
+        "evidenceFile": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+        "checkedAt": "2026-11-16T07:31:15.673Z",
         "publisher": "Barbican",
         "publishedAt": "",
         "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/architecture-tours",
@@ -694,14 +664,14 @@
         "alternateLeads": []
       },
       {
-        "id": "direct-d21b608bfe25e24f",
-        "title": "Information about Members' Screening: Wild Horse Nine",
+        "id": "direct-16def1ad1fa68249",
+        "title": "Information about Parent & Baby Screening: Wild Horse Nine",
         "eventStart": null,
-        "evidenceFile": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
-        "checkedAt": "2026-11-15T12:46:34.735Z",
+        "evidenceFile": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+        "checkedAt": "2026-11-16T07:31:15.673Z",
         "publisher": "Barbican",
         "publishedAt": "",
-        "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/members-screening-wild-horse-nine",
+        "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/parent-baby-screening-wild-horse-nine",
         "discoverySource": "Official activity listing",
         "publisherUrl": "https://www.barbican.org.uk/whats-on",
         "summary": "",
@@ -716,62 +686,14 @@
           "activity/action wording: verify upcoming date",
           "collector category"
         ],
-        "alternateLeads": [
-          {
-            "id": "direct-16def1ad1fa68249",
-            "title": "Information about Parent & Baby Screening: Wild Horse Nine",
-            "eventStart": null,
-            "evidenceFile": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
-            "checkedAt": "2026-11-15T12:46:34.735Z",
-            "publisher": "Barbican",
-            "publishedAt": "",
-            "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/parent-baby-screening-wild-horse-nine",
-            "discoverySource": "Official activity listing",
-            "publisherUrl": "https://www.barbican.org.uk/whats-on",
-            "summary": "",
-            "needsDestinationResolution": false,
-            "datedActivitySignal": false,
-            "score": 43,
-            "ageHours": null,
-            "activitySignal": true,
-            "primarySourceSignal": true,
-            "signals": [
-              "approved primary-source lead",
-              "activity/action wording: verify upcoming date",
-              "collector category"
-            ]
-          },
-          {
-            "id": "direct-d17b5ee1e652c27d",
-            "title": "Information about Wild Horse Nine",
-            "eventStart": null,
-            "evidenceFile": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
-            "checkedAt": "2026-11-15T12:46:34.735Z",
-            "publisher": "Barbican",
-            "publishedAt": "",
-            "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/wild-horse-nine",
-            "discoverySource": "Official activity listing",
-            "publisherUrl": "https://www.barbican.org.uk/whats-on",
-            "summary": "",
-            "needsDestinationResolution": false,
-            "datedActivitySignal": false,
-            "score": 29,
-            "ageHours": null,
-            "activitySignal": false,
-            "primarySourceSignal": true,
-            "signals": [
-              "approved primary-source lead",
-              "collector category"
-            ]
-          }
-        ]
+        "alternateLeads": []
       },
       {
         "id": "direct-ccc8afb4366c37b6",
         "title": "Information about Relaxed Screening: Night is Short, Walk on Girl",
         "eventStart": null,
-        "evidenceFile": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
-        "checkedAt": "2026-11-15T12:46:34.735Z",
+        "evidenceFile": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+        "checkedAt": "2026-11-16T07:31:15.673Z",
         "publisher": "Barbican",
         "publishedAt": "",
         "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/relaxed-screening-night-is-short-walk-on-girl",
@@ -795,8 +717,8 @@
         "id": "direct-bdf27c5329205b3c",
         "title": "Information about Yuko Mohri: In Concert",
         "eventStart": null,
-        "evidenceFile": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
-        "checkedAt": "2026-11-15T12:46:34.735Z",
+        "evidenceFile": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+        "checkedAt": "2026-11-16T07:31:15.673Z",
         "publisher": "Barbican",
         "publishedAt": "",
         "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/yuko-mohri-in-concert",
@@ -817,34 +739,11 @@
         "alternateLeads": []
       },
       {
-        "id": "lead-503acc1380075e31",
-        "title": "Historic east London landmark saved from Heritage at Risk Register after careful restoration - Newsroom City of London",
-        "publisher": "Newsroom City of London",
-        "publishedAt": "Thu, 05 Nov 2026 09:33:02 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOcVNQNmhMNWdwWm9ZQzVQOHU3WUlIX2tBZGJ1VzU2SzJWc0w4bnpTRUI4bWNZeXo0SnhBMlZlWi1RS2MxaW5BUkRlc1JXRGZQSExISnc3LVZBR1VnaVplRWxhQzk5VkdKTWd0eDN2Sk9zN1BhUEcyaDdDWGR0V0U4SV9ROXZJTWJKU1FKVmo2eUN3clBwTlVYcm9xMWlhelkyUEI3NGc2Yk5LZUVyalBOSmhvLVc3YVFJc05OV2VIVF92UmVP?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://news.cityoflondon.gov.uk",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 34,
-        "ageHours": 243.2,
-        "activitySignal": true,
-        "primarySourceSignal": true,
-        "signals": [
-          "approved primary-source lead",
-          "activity/action wording: verify upcoming date",
-          "collector category",
-          "city of london"
-        ],
-        "alternateLeads": []
-      },
-      {
         "id": "direct-05bf2b48c0ff025a",
         "title": "Information about Concrete and Clay: Archiving the Barbican",
         "eventStart": null,
-        "evidenceFile": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
-        "checkedAt": "2026-11-15T12:46:34.735Z",
+        "evidenceFile": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+        "checkedAt": "2026-11-16T07:31:15.673Z",
         "publisher": "Barbican",
         "publishedAt": "",
         "discoveryUrl": "https://www.barbican.org.uk/whats-on/2025/event/concrete-and-clay-archiving-the-barbican",
@@ -865,14 +764,62 @@
         "alternateLeads": []
       },
       {
-        "id": "direct-69e57d243fa573f0",
-        "title": "Information about Anouar Brahem: After the Last Sky",
+        "id": "direct-3456e749d9c3ce3e",
+        "title": "Information about Hamlet Hail to the Thief",
         "eventStart": null,
-        "evidenceFile": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
-        "checkedAt": "2026-11-15T12:46:34.735Z",
+        "evidenceFile": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+        "checkedAt": "2026-11-16T07:31:15.673Z",
         "publisher": "Barbican",
         "publishedAt": "",
-        "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/anouar-brahem-after-the-last-sky",
+        "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/hamlet-hail-to-the-thief",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.barbican.org.uk/whats-on",
+        "summary": "",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": false,
+        "score": 29,
+        "ageHours": null,
+        "activitySignal": false,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "collector category"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "id": "direct-588e43269dd2d919",
+        "title": "Information about La Bola Negra",
+        "eventStart": null,
+        "evidenceFile": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+        "checkedAt": "2026-11-16T07:31:15.673Z",
+        "publisher": "Barbican",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/la-bola-negra",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.barbican.org.uk/whats-on",
+        "summary": "",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": false,
+        "score": 29,
+        "ageHours": null,
+        "activitySignal": false,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "collector category"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "id": "direct-1b169ecf2939e2a5",
+        "title": "Information about LPFF: Shorts Programme: From Ground Zero+",
+        "eventStart": null,
+        "evidenceFile": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+        "checkedAt": "2026-11-16T07:31:15.673Z",
+        "publisher": "Barbican",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/lpff-shorts-programme-from-ground-zero",
         "discoverySource": "Official activity listing",
         "publisherUrl": "https://www.barbican.org.uk/whats-on",
         "summary": "",
@@ -891,23 +838,165 @@
     ],
     "London AI": [
       {
-        "id": "lead-6910bfed5c865134",
-        "title": "Fashion’s AI era: face swaps and digital clones - BusinessWorld Online",
-        "publisher": "BusinessWorld Online",
-        "publishedAt": "Sun, 15 Nov 2026 11:19:24 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeURCSXp1TUFlVlJiUVR1ZE5zeF9sVjlrcmphc0NEZ216RkdxQTFQaHZFR25TSDhDaHp6YVlhY3F1NzRINThMSUVGdW1CNTE3c093SDUta1hTSGluTEV6QzZMcWVsSF9ZUk83Q2VrbFpsUjBpTDBXM0xIYWFXTVBlU3lIWE1WakdMZU1jdmNpckg0LW13eE5qbzFkbm1GUlBDdWg2WGdUZXpxdw?oc=5",
+        "id": "lead-d18df50ac3e13529",
+        "title": "Flagship Pioneering Launches London AI Lab With £100 Million - Securities.io",
+        "publisher": "Securities.io",
+        "publishedAt": "Mon, 16 Nov 2026 07:17:01 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZk5ZMEFBNlBGcTFZNTZHUV9qdkk0cGlWajVhc1hqRmJLX1hsaFJHZUZXZG1zYWlFdlpfX2NBQTR5Z0JrMWxBb3FjS3VNMk9SOEdxdXdCUTBnY1EwWmc0ekl0Ny1OTkdIZ3E2dTZ4cTdvS3RwelBzTDVsUWlfNFZiRkpYWThGeUNPNVJJT25aVQ?oc=5",
         "discoverySource": "Google News RSS",
-        "publisherUrl": "https://bworldonline.com",
+        "publisherUrl": "https://www.securities.io",
         "summary": "",
         "needsDestinationResolution": true,
         "datedActivitySignal": false,
-        "score": 21.76,
-        "ageHours": 1.5,
+        "score": 23.92,
+        "ageHours": 0.5,
         "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
           "collector category",
           "ai"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "id": "lead-46df74a6e8707eb6",
+        "title": "London’s $7 Billion AI boom reshapes global investment - Ticker News",
+        "publisher": "Ticker News",
+        "publishedAt": "Mon, 16 Nov 2026 04:20:54 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSkh3SXFzNWZuOXZDSDdoRWk0N1hPSmFmYWpxQllhclhkSDJnVTRSenVxS2xrYlRhMEZCMVIxSVpBZTJ2blpKazN0Ry05SjZzaHhoZG5WM1ExbURSWnBobXBqLXdXQ0NBdGRLelZQWUE4R2xmTTFLVF9nX3FvY01adg?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://tickernews.co",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 23.43,
+        "ageHours": 3.4,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "ai"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "id": "lead-2a0b6b4ff86f43b6",
+        "title": "‘They know where our bombers are’ as Chinese AI firm exposes US warplanes at British airbase - London Business News",
+        "publisher": "London Business News",
+        "publishedAt": "Sun, 15 Nov 2026 14:55:37 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPNGtFdlBMUEtmNjRGcS1qTjBVbUxLOTM3X3lud200STFkaE5CenJNWFdZVEhYUEwyS0VsbjNXMGh0dlpocmVLN0tkWjZEb3FFZDh4MWVXdjZrb3A4S0ZjelE3aUw5Z1A2ampiaHY5bVkxc2FhOUVjcWw2U1g3bnNBcEppbVdrUEY5OXRodkVJMTJuaFpLVThFeklhaTNlUGwxdWh5UVpRU0ZFUm9GWHFSeF9jYkNuTHJBTERPWkR2Vl8?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://londonlovesbusiness.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 21.2,
+        "ageHours": 16.8,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "ai"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "id": "lead-c257c325d466854f",
+        "title": "‘I can speak to students 24-hours-a-day’: the rise of AI avatars - Times Higher Education",
+        "publisher": "Times Higher Education",
+        "publishedAt": "Mon, 16 Nov 2026 00:12:56 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNN1F1WmQzc2dRNmV4UHJuR29lYWsyXzEtSEpVbElmUkY3dmVzTTBXdEdTaHotbS1MVktEZmJrRE02dV9kNl9qak44eVZKTmpIQldxOU9fMjNaSnEwRWFqZ09Sa2FyY05UTXJTZ2lVakZBR280Nmtucy1NNkM3ZkFSVjU4RmozNktuaEsyd0RGSEw0SlByQnc?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.timeshighereducation.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 20.75,
+        "ageHours": 7.5,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "ai"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "id": "lead-e5202ccd94f63064",
+        "title": "Flagship Pioneering Launches London Lab to Build AI-Native Companies - Unite.AI",
+        "publisher": "Unite.AI",
+        "publishedAt": "Mon, 16 Nov 2026 07:17:04 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdndpOWo5SWxoa004VlFYYTMyQmlNLUhUQUhOYlJ3RktpZHBtX1RDLWFHMmFFM0FyMTBLNnUzaEFBRjJMVUhiRGl6QlNlZHlneTZqSDFXZFIweGNmWExJVWhlTFY3NzdGQ2h0a09vbTZZWFZxUERMR2JzY2RWLXZsRXNqaDE3TjNFYWl0T0ZDVEVYeUFW?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.unite.ai",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 19.92,
+        "ageHours": 0.5,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "id": "lead-2ad7bdb76c0154eb",
+        "title": "Flagship Pioneering Launches Flagship Origination Lab in London to Create AI-Native Platform Companies in the U.K. - Press Release Hub",
+        "publisher": "Press Release Hub",
+        "publishedAt": "Mon, 16 Nov 2026 07:07:05 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPMlVQNmlsWkRIcW1lMWlwYXlKNFZNcElDYVBUdFM0YjNtdHpvZUNLd1l4QWlhMHRvZXQ0UEdWODN6d0MwN1B1b2V1SHRzb1hLb3dnRDZ4VUcwME5hWmx3UzhuRHN3R2RDaFE1WXBXSUY1Uk5mdkxMMmFqemFwUXFyT0tOcEl6cTlxeUJfWkY0MTZqMVJRTkJSSzNmai1SNFZfeWxQSWlXcEQwczVLMWxBbEZpTEJWUDBZQldQcVc4a1UwcEpYMW9PNmdoam9KUEFNTWRCNW84VGlUSzNUSDY2Mkk4aVk0bWZuVndQYXIzZUZvbWhmSjU4?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://pressreleasehub.pa.media",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 19.9,
+        "ageHours": 0.6,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category"
+        ],
+        "alternateLeads": [
+          {
+            "id": "lead-b341892de8ccc0ff",
+            "title": "Flagship Pioneering Launches Flagship Origination Lab in London to Create AI-Native Platform Companies in the U.K. - PR Newswire UK",
+            "publisher": "PR Newswire UK",
+            "publishedAt": "Mon, 16 Nov 2026 07:00:00 GMT",
+            "discoveryUrl": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPNE45ME8tMkVNVUIzRHoySWNmQm9UT016c2dZTlFPM2xIWl9KN01XUmVEd3EtaTY4dUplek1qSjJaWEpoN2JHZGI5eTdIaFpjQzkxRHJReWhTejdzNXNTcGRhTk13T3RUSmJBWnFpUXRNcEhadzZPb1Q4clkwZzZmMXhjNS1JbktIV3p1b2dNTWZmQk5Lb1NLSGN3YUY3YmViQzlheEItY1RaaWdzd0htZkdTZ25LQ2ZKQ29fb3YxRE9rcE5MSnRvQkphNjI1MWpoR0lGczA4LXV6bHViTGFycXdQSEcxdG1PTzVOQ0FPWTJ3TUVrOEU2dko1RTlRa1k?oc=5",
+            "discoverySource": "Google News RSS",
+            "publisherUrl": "https://www.prnewswire.co.uk",
+            "summary": "",
+            "needsDestinationResolution": true,
+            "datedActivitySignal": false,
+            "score": 13.88,
+            "ageHours": 0.7,
+            "activitySignal": false,
+            "primarySourceSignal": false,
+            "signals": []
+          }
+        ]
+      },
+      {
+        "id": "lead-9156aff247d36985",
+        "title": "AI and robotics transforming daily life and society - Ticker News",
+        "publisher": "Ticker News",
+        "publishedAt": "Mon, 16 Nov 2026 05:24:17 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvbGVDZHRQMkpkOG50dXpjLWVjYzhfSGh0TXFZLXBTbE5uLU41Z2N6a2tZRU16UWV4VjlvYU5mcVFsSnhlTTZNMVBaQTVVNllIRVVEWmRrbHRROUEzSDhHTGFJNW93LVFqcjllZW1CNUppNDB4OVBIZU9IZDJ6blE?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://tickernews.co",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 19.61,
+        "ageHours": 2.3,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "ai",
+          "robotics"
         ],
         "alternateLeads": []
       },
@@ -922,8 +1011,8 @@
         "summary": "",
         "needsDestinationResolution": true,
         "datedActivitySignal": false,
-        "score": 20.97,
-        "ageHours": 6.2,
+        "score": 17.81,
+        "ageHours": 25.2,
         "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
@@ -943,8 +1032,8 @@
         "summary": "",
         "needsDestinationResolution": true,
         "datedActivitySignal": false,
-        "score": 19.96,
-        "ageHours": 24.2,
+        "score": 16.8,
+        "ageHours": 43.2,
         "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
@@ -954,149 +1043,22 @@
         "alternateLeads": []
       },
       {
-        "id": "lead-2c28e6a73ec10f94",
-        "title": "ElevateHer: Women Entrepreneurs Breaking New Ground with AI - UCL | University College London",
-        "publisher": "UCL | University College London",
-        "publishedAt": "Fri, 13 Nov 2026 06:23:41 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNR0FKaFFYQldzMmpMbmpCMWVDbHREd0VVR0VxSXlDREZBYzRPd3Zxc29RNzJ0YWVlM3lLbENWT2hoTXJRY1djTW9oWjJqVnBkdmRpeEwtTlZBbmY5cm12S3F2NEJRdTVQRDlnQVdsTFR2V1dOVHhpeFdwMDdPTzAzYW9XVGo0QWhic1UzWG1pY3ptbS1nakVrcTFJVGVQTkxJUHJiRA?oc=5",
+        "id": "lead-438a1c02a5fc0b77",
+        "title": "Exclusive: Italian robotics startup Mosaico raises €7.5m to tackle AI’s data problem - Sifted",
+        "publisher": "Sifted",
+        "publishedAt": "Mon, 16 Nov 2026 05:03:02 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9xWDdmeC1RV2tQN3VDU0cxSXJQRG93aXAtQnJjNm9VUDFFbkNrUlhpNmlzR0YyS0xYdmJlc1JfenAwaTJfM2VZZnptZ3lOX2g2c1A4WXp5OXRMVkxFOVNqSkM0bXI2RmxoVjdYOFZITDhuZXZBV3dJZA?oc=5",
         "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.ucl.ac.uk",
+        "publisherUrl": "https://sifted.eu",
         "summary": "",
         "needsDestinationResolution": true,
         "datedActivitySignal": false,
-        "score": 19.94,
-        "ageHours": 54.4,
-        "activitySignal": false,
-        "primarySourceSignal": true,
-        "signals": [
-          "approved primary-source lead",
-          "collector category",
-          "ai"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-f92c7da1849926d8",
-        "title": "UCL EEE announces nine fully funded EPSRC PhD Studentships - UCL | University College London",
-        "publisher": "UCL | University College London",
-        "publishedAt": "Fri, 13 Nov 2026 22:44:05 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNczhNcGJDZVczcGdpN213UUI0bzNMVFZ1Y2J3LS1ERmw1RWR3QnBWc0ZvSEhtU0p3SjFWcENGX0RuS1FjOURlRE5KOVZiam1PR3ZRQmFfSFY0QjdrMGhLOTJDeFJwY2ZqVm5QQWZHRjgwS1l6ZXlqODRMdTVScUdqMWg2RzZFNG9ieUp3aTdxM0VTYnhfSXFheUJ0aGE3VGliTHVBZHFxSDY3Zw?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.ucl.ac.uk",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 18.66,
-        "ageHours": 38,
-        "activitySignal": false,
-        "primarySourceSignal": true,
-        "signals": [
-          "approved primary-source lead",
-          "collector category"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-7eb76d6db4152467",
-        "title": "WTM 2026: When Africa stormed London seeking global tourism spotlight - The Sun Nigeria",
-        "publisher": "The Sun Nigeria",
-        "publishedAt": "Sun, 15 Nov 2026 00:22:05 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNTRDZ2p6TGlTNDdlLUYzX3JpYlBrY0kyX3lBc1dfV2pyUkRObkg4SS1DYzF1RkQ4WkJqVTBWUUlKVnQ3eklscFJpcmdlT19rakt4TlFDcmx2QWJOeEVyR2RyX2liZ3ZkTHpYcWd3bDFEMTBIWG5kMzJtLXdpWmFlMXgweDZnYjIzRGFIbjlNdTA?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://thesun.ng",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 17.93,
-        "ageHours": 12.4,
+        "score": 15.55,
+        "ageHours": 2.7,
         "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
-          "collector category"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-6218ec8cdd0aa52a",
-        "title": "The Artificial Intelligence (AI) Market in Aviation is Projected to Grow at a 27.4% CAGR Through 2030 - EIN News",
-        "publisher": "EIN News",
-        "publishedAt": "Fri, 13 Nov 2026 17:30:00 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPQkF4YzhwMndQUGxXUlpaOUJXa1JWa042dEFsRXFMVVFmUEZWMXM3Vl95VlQ4OXRSdEkyM29LNFZlWWpSUkZKcWRUN0V3WDNGQmpqSU5NUDNWRGxxWUctYy1KRVFxT0FMX2Q2eWx3R1ZDZ0pBR04zZ3RMSDdPWUctQ2owV204bEZXMGdXc2pHb1hwTWZxX0t1aFd0T05MeVpKc3htRFVDa3hfOXdsS3JQcndRRGZleGhnN1VTLVowbEc5WW9QX0h6M0x0VkFxUTVWbi1nZmhhSQ?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.einnews.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 17.79,
-        "ageHours": 43.3,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "artificial intelligence"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-03383e04e8f848e7",
-        "title": "AI should be for benefit rather than ‘ruination’ of mankind – Irish premier - London Now",
-        "publisher": "London Now",
-        "publishedAt": "Fri, 13 Nov 2026 20:42:09 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQeUIxWlVReERmbTJfTDBZVXhEVTgtLTFOWE5wQVJnTEFSZ2R6SEN1R2RvRWdZWkR2MzJPMEhRaVZlNFlCaS1KdnROdHZYMWl6ZjItNl9zTmFaNXZKRDN6Rk5ORGFCeG93NnIzNHNSRVk0MzY5cFptYWlEZmpZSjlBdnBQU2FtamJMVHFpMkpjTjd3TnNRbDh3ZWlQckNfWmlhZGpZMU51QUZRRGhaX0l5NQ?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.thisislocallondon.co.uk",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 17.32,
-        "ageHours": 40.1,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "ai"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-b3118e8aff0bdde1",
-        "title": "Imperial Lifelong Learning launches to the public with new report on AI and skills - Imperial College London",
-        "publisher": "Imperial College London",
-        "publishedAt": "Thu, 12 Nov 2026 14:23:06 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPTURvUTJ4NEYxNDNlN3BsdGtIWHVVUWpTN0VtYmNzM0NENFBHUjRsRWFNYjAwbUVsUFB0eUF5R1lwS2prMVZHQmMtQy1lUmJqNlZPc3A1LUwxdzVzY1ZuNkp4QmlFei1Iekhrd0ZrUEVvSW1WMnk4WE9rM3dhdU5hMnhOVjQ5Q1lnVl9pb21MdmVEcHozWU9fam1OTGgtZ1ptVGJIdGZ0UU1MTU44LVlMZjhyMjFEVzRBdXpmWGkxUkwxOTd0amQtaTRHLUU1aEJaZ1ltYmVQY0lhNC1PakFDTw?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.imperial.ac.uk",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 17.27,
-        "ageHours": 70.4,
-        "activitySignal": false,
-        "primarySourceSignal": true,
-        "signals": [
-          "approved primary-source lead",
-          "collector category",
-          "ai"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-4f3eb7ed7c97a736",
-        "title": "South Korea's FSC Chairman Lee Eok-won Tours Three European Countries, Finalizing Bank Supervision MOU with ECB - BigGo Finance",
-        "publisher": "BigGo Finance",
-        "publishedAt": "Sun, 15 Nov 2026 05:25:00 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBXQ0lDaW1ZSUxxT2NFNVlJcUpBVldZREVaVTFFdVVkb2JwX0F1NWRXdy1aOUNvYUhIWmJ4VGtnUnlkT0F3UTFxQjI1bGw1QW00SDJEbkN4OElLQWpQdWVYZzAxTnp4c0d1eWRmQUk3MWt5RnFvaVE?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://finance.biggo.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 16.77,
-        "ageHours": 7.4,
-        "activitySignal": true,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category"
+          "robotics"
         ],
         "alternateLeads": []
       }
@@ -1113,8 +1075,8 @@
         "summary": "",
         "needsDestinationResolution": true,
         "datedActivitySignal": false,
-        "score": 27.81,
-        "ageHours": 7.1,
+        "score": 24.65,
+        "ageHours": 26.1,
         "activitySignal": true,
         "primarySourceSignal": false,
         "signals": [
@@ -1125,91 +1087,187 @@
         "alternateLeads": []
       },
       {
-        "id": "lead-ec24d22d887d37ac",
-        "title": "Quantum biology and how it could transform the medical world - Technology Org",
-        "publisher": "Technology Org",
-        "publishedAt": "Sun, 15 Nov 2026 05:00:00 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVzMzYmEyYVljcVcyRDRuTVIxaVJNUnBCOXIzSEVDbkxZNWY4MEp2d2NMQjZkTW9lWDY0d2ljRjV0VWxGRmFSOHh2UnY0R3RJWUZtM0djUjVnbUNULW10Y2ZaZ19PQ256NjFHbjRFQ3N2UWFDRGNfZ3NMNFkzZzBiU2E4WEw3Y0l0U3hlWXpMc0FHekZYb3BaOVpyeXZCd0xL?oc=5",
+        "id": "lead-dabddb14581b61aa",
+        "title": "London Team Maps Multipartite Games To New Types Of Quantum Puzzles - Quantum Zeitgeist",
+        "publisher": "Quantum Zeitgeist",
+        "publishedAt": "Sun, 15 Nov 2026 21:33:11 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNY2I5eDlnVHcwbHlhdDZBZHNlSFRHcG84LWpzVUtZS0xkNS10bFFZU0FET3BDejZvb1J3ZmlPWTlPOVJ4YXdYVThYZ2laaXJ2UUZZMUhoVUpzY1BKREY2a0lPV09aaTlOZnRYYXNMT3M2d3ZRV2haZm1SQXNRX0NwLVl3NXkyaV81TmxZYWtTam9yTGxo?oc=5",
         "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.technology.org",
+        "publisherUrl": "https://quantumzeitgeist.com",
         "summary": "",
         "needsDestinationResolution": true,
         "datedActivitySignal": false,
-        "score": 27.7,
-        "ageHours": 7.8,
+        "score": 22.3,
+        "ageHours": 10.2,
         "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
           "collector category",
-          "technology",
           "quantum"
         ],
         "alternateLeads": []
       },
       {
-        "id": "lead-6e97ce590834efe3",
-        "title": "Making Quantum SDKs More Accessible: Lessons from Contributing to Qiskit - Quantum Computing Report",
-        "publisher": "Quantum Computing Report",
-        "publishedAt": "Sat, 14 Nov 2026 22:57:29 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPT0xvcllyZXRsRDlKck85UFNEeEVyRmk0OFo2V09FcXBaRkRudVNfeUJreXZZNU90dWFKemxic2RIajZZamsyVDJaSDU4VlFiaER1QjR0Q0poN1habEtkaWVsOTFqTmpDeFFtVkVnUV9XTXFRbmt4eENDaHRFR1oyRl9QMUlJRU5LWnkwR3BQdFlxZVRCenRQcDZsVUJmTUQ2aGhkNEpJeFpoQdIBrwFBVV95cUxON3hFWkFPRHpvRmhGYURfMnpHQ0QzWURhN25sYUhVd2hhemkyazZWeUhGT3UwZHFVT0ZVTDZsX2YxZEtvVS1GUVVpM1hNek5aWGlBOEpkcmI2cVRYdlJMSFFQelVsVUNJSlc3NjBiejNVTFZFWkFqZXJZQlotcExxRzktb0lleUIyUXJxWWVxMU9DSE84NlpNNF9IYmVENGRkcVRhTjdoaGdRNURMUVdF?oc=5",
+        "id": "lead-1166a47b5eaecbfe",
+        "title": "Sofinnova books biggest-ever $815M fund with an eye toward up-and-coming ‘global leaders’ - Fierce Biotech",
+        "publisher": "Fierce Biotech",
+        "publishedAt": "Mon, 16 Nov 2026 07:00:00 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPX0swX2FySHgyaXBaWDlGUDFLNUtiaXJjekhrbkpLQlB4YU1rNHNLMHB0TFdLczdGWU84WENfd3JUYl9VMFVBR2hfdkxjRXpucjJmR3d6TVdRTjhpS3U1WW00WTk4ZEEtSVBQNmNtSDJXLUJ3MFpMZzVmTEJ2VUtWNzg5MmN6UHBobFZwRGxZMERxNmhCZm5qUC0yYkZZMXBCWXFsWXVGM1VHdS1ZbXpXT2Rvbw?oc=5",
         "discoverySource": "Google News RSS",
-        "publisherUrl": "https://quantumcomputingreport.com",
+        "publisherUrl": "https://www.fiercebiotech.com",
         "summary": "",
         "needsDestinationResolution": true,
         "datedActivitySignal": false,
-        "score": 26.7,
-        "ageHours": 13.8,
+        "score": 21.88,
+        "ageHours": 0.7,
         "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
           "collector category",
-          "quantum",
-          "computing"
+          "biotech"
         ],
         "alternateLeads": []
       },
       {
-        "id": "lead-d2c96caaa99312eb",
-        "title": "Quantum XChange Phio TX Becomes First Post-Quantum Cryptographic Management Platform to Earn EUCC Certification - Quantum Computing Report",
-        "publisher": "Quantum Computing Report",
-        "publishedAt": "Sat, 14 Nov 2026 04:52:06 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOWmctUDBCNkFQN1gxWnJfY281OXVUMlR0WDducllhRHdUT01rMUFsMFBMMXR5anpVOUpRei1TZ2lNVHFGQ21rdF9ucTNZQVVpUXBnRFNXWWZVdEFKZ0FZeExadkdzWUJseVZ6c3c5TmpqVl9hdTFRQlFZSEFHNHB0cVJtaTA1TFphckVOUlppVVhydlJUUHlEN2dlZzB3bGh6VVJqVXF3dXJuNEpqRWVCV242LUstbnRrSnZYN2dsZVNMUHZWa0VwdjRTbGJaUGV5MkFEMmNReC1YU1dGc1FhcNIB5gFBVV95cUxPM2ctVmYxNk1ERkkwMlJVTGo0VTdObkRIQlpIV2kzTWxaUThjV3VGSlA2d0tCWGtJVVNqa1dYSGxYMlhNT2RQaXE5T3dua1hTamNlLU1JamNvakJNeEVaTDItRExpdzdOQUxkUF9jWHBWcGlqQngzeTRDaU92b3NybXhPTXE3dTZGYUpmXzZJZ3ZxS3JDaFFNSWNKTUlvV29aT3J0cXdmc1dwMnBoTEQ1aDFzQm15NHdZN0pJdzVyMG1mOGluTmctTmlqQXFUUmxZUVQtblJyU1NDc3Q5NHlfSXlYbWl5QQ?oc=5",
+        "id": "lead-438a1c02a5fc0b77",
+        "title": "Exclusive: Italian robotics startup Mosaico raises €7.5m to tackle AI’s data problem - Sifted",
+        "publisher": "Sifted",
+        "publishedAt": "Mon, 16 Nov 2026 05:03:02 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9xWDdmeC1RV2tQN3VDU0cxSXJQRG93aXAtQnJjNm9VUDFFbkNrUlhpNmlzR0YyS0xYdmJlc1JfenAwaTJfM2VZZnptZ3lOX2g2c1A4WXp5OXRMVkxFOVNqSkM0bXI2RmxoVjdYOFZITDhuZXZBV3dJZA?oc=5",
         "discoverySource": "Google News RSS",
-        "publisherUrl": "https://quantumcomputingreport.com",
+        "publisherUrl": "https://sifted.eu",
         "summary": "",
         "needsDestinationResolution": true,
         "datedActivitySignal": false,
-        "score": 23.68,
-        "ageHours": 31.9,
+        "score": 21.55,
+        "ageHours": 2.7,
         "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
           "collector category",
-          "quantum",
-          "computing"
+          "startup"
         ],
         "alternateLeads": []
       },
       {
-        "id": "lead-0320c8718e130686",
-        "title": "Research advances quantum computing that harnesses speed of light - Phys.org",
-        "publisher": "Phys.org",
-        "publishedAt": "Fri, 13 Nov 2026 03:40:01 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1BTFc0YTlxTl9qVXhnSmlVekFGSE4yT0tqbEVJblJPX3lESEloQ3Jud3BHQ0lHbVloazdwS1M4SWpLSGxDX25qMklYMEJCNVl5TENFVUFIaThqYzY1ZlNucWxfYldHalQ2d29CaDBn?oc=5",
+        "id": "lead-1f750531f5a32f29",
+        "title": "Biotech Venture Firm Flagship Invests £100 Million in New UK Lab - Bloomberg.com",
+        "publisher": "Bloomberg.com",
+        "publishedAt": "Mon, 16 Nov 2026 05:01:00 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPSUdpeDlSZDJENVlnNUdsaDZOd2cxYWF4c1hXVTRGa1B0TDB3MGJqckU0WmpCWTMxcUJqUTJsQzh2eE5xbTliakdpY24xNXY0TlhXWGx4UVdvVnRHS3lfSUZJLUFoRjExYXhCbmZHZmRQMmJDd0NrNWw5R1hoUERIRTUybzBaZ2RzcHJPUnVWdGJzUEF6cndkR1Y0cjZNMW82RW51MFVDeXpLcUxYb0F4NnkxRk8yb2lwQzVleDQ3TWVnd2d3X29TenhhSQ?oc=5",
         "discoverySource": "Google News RSS",
-        "publisherUrl": "https://phys.org",
+        "publisherUrl": "https://www.bloomberg.com",
         "summary": "",
         "needsDestinationResolution": true,
         "datedActivitySignal": false,
-        "score": 23.48,
-        "ageHours": 57.1,
+        "score": 21.55,
+        "ageHours": 2.7,
         "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
           "collector category",
-          "quantum",
-          "research",
-          "computing"
+          "biotech"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "id": "lead-4be417e7e4e7e0a4",
+        "title": "Southeast Asia’s role in the global quantum race - FutureCIO",
+        "publisher": "FutureCIO",
+        "publishedAt": "Mon, 16 Nov 2026 01:00:00 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9OQU9ybzJrVWJZaVA5TFBBOGxYODBQck1wZF9VaG9iUWllSVV2REVJb1k4X29UVWpwaVNZdlRWYTd3cmhhdjZwMkxkSnkzU1hsX0Exd1NxMmZxVW5JVmRkYzBiSDhZTVJ2dWotSUQ1NlFmMGl6XzU5bGRrRQ?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://futurecio.tech",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 20.88,
+        "ageHours": 6.7,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "quantum"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "id": "lead-1b63778b126d71ad",
+        "title": "Johnson & Johnson looking to buy eye disease biotech for up to $3.4bn - Financial Times",
+        "publisher": "Financial Times",
+        "publishedAt": "Sun, 15 Nov 2026 23:54:31 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWDRqWENmN2tjMWhudjdBR1NRdVVpOE5RWExub25YdTZya052VFRUWjF1UWk4cFQtcF9aakhVRVhnQVkyQjR4TUJvSEVnNk5DdERNXzFQUERZa1c1VlNiYkNHOHJ1elgxUzAxNEVvbjcya2hxYjZZeXM3REhya0JKWGtLWXg?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.ft.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 20.69,
+        "ageHours": 7.8,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "biotech"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "id": "lead-b341892de8ccc0ff",
+        "title": "Flagship Pioneering Launches Flagship Origination Lab in London to Create AI-Native Platform Companies in the U.K. - PR Newswire UK",
+        "publisher": "PR Newswire UK",
+        "publishedAt": "Mon, 16 Nov 2026 07:00:00 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPNE45ME8tMkVNVUIzRHoySWNmQm9UT016c2dZTlFPM2xIWl9KN01XUmVEd3EtaTY4dUplek1qSjJaWEpoN2JHZGI5eTdIaFpjQzkxRHJReWhTejdzNXNTcGRhTk13T3RUSmJBWnFpUXRNcEhadzZPb1Q4clkwZzZmMXhjNS1JbktIV3p1b2dNTWZmQk5Lb1NLSGN3YUY3YmViQzlheEItY1RaaWdzd0htZkdTZ25LQ2ZKQ29fb3YxRE9rcE5MSnRvQkphNjI1MWpoR0lGczA4LXV6bHViTGFycXdQSEcxdG1PTzVOQ0FPWTJ3TUVrOEU2dko1RTlRa1k?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.prnewswire.co.uk",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 19.88,
+        "ageHours": 0.7,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category"
+        ],
+        "alternateLeads": [
+          {
+            "id": "lead-2ad7bdb76c0154eb",
+            "title": "Flagship Pioneering Launches Flagship Origination Lab in London to Create AI-Native Platform Companies in the U.K. - Press Release Hub",
+            "publisher": "Press Release Hub",
+            "publishedAt": "Mon, 16 Nov 2026 07:07:05 GMT",
+            "discoveryUrl": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPMlVQNmlsWkRIcW1lMWlwYXlKNFZNcElDYVBUdFM0YjNtdHpvZUNLd1l4QWlhMHRvZXQ0UEdWODN6d0MwN1B1b2V1SHRzb1hLb3dnRDZ4VUcwME5hWmx3UzhuRHN3R2RDaFE1WXBXSUY1Uk5mdkxMMmFqemFwUXFyT0tOcEl6cTlxeUJfWkY0MTZqMVJRTkJSSzNmai1SNFZfeWxQSWlXcEQwczVLMWxBbEZpTEJWUDBZQldQcVc4a1UwcEpYMW9PNmdoam9KUEFNTWRCNW84VGlUSzNUSDY2Mkk4aVk0bWZuVndQYXIzZUZvbWhmSjU4?oc=5",
+            "discoverySource": "Google News RSS",
+            "publisherUrl": "https://pressreleasehub.pa.media",
+            "summary": "",
+            "needsDestinationResolution": true,
+            "datedActivitySignal": false,
+            "score": 13.9,
+            "ageHours": 0.6,
+            "activitySignal": false,
+            "primarySourceSignal": false,
+            "signals": []
+          }
+        ]
+      },
+      {
+        "id": "lead-f005f72c0af777d2",
+        "title": "FDA rejects cancer drug invented in China in blow to Beijing’s biotech sector - Financial Times",
+        "publisher": "Financial Times",
+        "publishedAt": "Sun, 15 Nov 2026 17:07:06 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSF81czliZUJkMnRRbzNpUENZS2NDTm5QNzd5UkI3Qk10R1hmcnIyNnJfQVY1SkJlZkJnc2RMUzhobDh5VTI4cUs2NjIwN3FPdVhHSV9taHRhaDBJWjlNZUFHLThTd01vZGZzVklhLVV4NlFOTlZZWjEzN2s4RW1peDF5N0w?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.ft.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 19.56,
+        "ageHours": 14.6,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "biotech"
         ],
         "alternateLeads": []
       },
@@ -1224,94 +1282,9 @@
         "summary": "",
         "needsDestinationResolution": true,
         "datedActivitySignal": false,
-        "score": 22.56,
-        "ageHours": 38.6,
+        "score": 19.4,
+        "ageHours": 57.6,
         "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "technology",
-          "science"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-5d509b143c76be46",
-        "title": "King’s College London Secures £10.8M Grant to Establish Cardiovascular Technology Hub - Bioengineer.org",
-        "publisher": "Bioengineer.org",
-        "publishedAt": "Sat, 14 Nov 2026 05:18:51 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbGZQd1NZNVFQTWlUV2YyNkhiSllkejlvd19veW5RZTByVzB5azFMby1pcmJ0V25tRi1pLV9QRzlJaXpiVUtabm51OXNxYjZxbnVEanQ3NHFjQVNMdFRrX19zZUFBSGxiXzlOOEh1LVNWTUliZ2VBUlBCakdSTDc4TmRZaFlmYTUwZ2dsT25BaGFxM3VXSG9mOThZdnAwSzNEVVFOaTEtYVJ4UUhm?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://bioengineer.org",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 21.76,
-        "ageHours": 31.5,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "technology"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-fdc373ddffc125fa",
-        "title": "Weizmann Institute Finds Dissipation Explains Quantum Hall-superconductor Junctions - Quantum Zeitgeist",
-        "publisher": "Quantum Zeitgeist",
-        "publishedAt": "Sun, 15 Nov 2026 10:48:12 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQcGQ2VElraWRaUkoxRUVJdXVLTEFXUmFtdkZuYTVuZlhjWkpFRFNjWkFtTXY3cDF3SFpmZnh3bEZmdjJ2alVpbGt5aGkxQkRSM1NpNjJyOWlKSncxUEpaWFhTdlRxeE9KUjFFdU5zcTd1U1V6YkdOZUVSc2UxbktpVjFfNnVpaHhXTnVoVjJyZw?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://quantumzeitgeist.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 21.67,
-        "ageHours": 2,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "quantum"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-4269aed8938ddde7",
-        "title": "Otter.ai’s CEO grew up with rationed food in China—now his AI startup makes $100 million a year - Fortune",
-        "publisher": "Fortune",
-        "publishedAt": "Sun, 15 Nov 2026 09:00:00 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNVHFUTkJBVks3dUwzZV9ZQ2RuaFBZUlY0VVB4dnAwc3J5YkZieVhuZXlNcXlqSnMtUlRNRkZrOTdYYnlQQ080WVFrSmoyU1N3Yk1wYW1OaGQ0ZE10WXQzRDl0eTZBOWhUS0xZMHNzYnhRMEZNOVRTVmhXZTRHQUM3UlBTVzQ1SmpEajRPLUtMWHJSaW5XQkROS0MzU2ZQdVZabFp5Tjdwb2x5U2ctTjR4MTRoOFBmREk3Y2UxZEFHYjBpalNPV0dmeFR1bHcwTlRUZWJaVHJGbGJYZ3V5eE4tVmRGcWZGWXhUUzJIQy1tcw?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://fortune.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 21.37,
-        "ageHours": 3.8,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "startup"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-fbed2ea7a527d27b",
-        "title": "30 judges complete evaluation of 100 projects at National Science, Technology and Innovation Festival - Zawya",
-        "publisher": "Zawya",
-        "publishedAt": "Fri, 13 Nov 2026 09:32:00 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNWFU1eHk0TExmWkhtdUFkV2VNV3gxaEpWUzFIb0FnMl9Cc0dfN2Z6emVpZVB2blJJaFVHUlJ5Rk5BVndnbjZzZGhHTUtoUmtuTW4xcVBwMWUxMGhGOGw3NEwzc1JiRUpqVFlDSjE1YlktSnRvVGl5T2FQX1M3RnFuVW5rSFk3eXpMbzRGS290V3haSmxEMDRJNWtjVmZVMmxGYlFwMUpvLTRMeEVjWEM3bWd1SlNpTG9aZzlhVk5LcXJiNHMtQVB0ZHhGWXVodkZLMC1SQnE3TkcwV1ZzVk1hZkVsbmJQQUZTbkJnUkJBSjBFZjlGRVE?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.zawya.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 20.46,
-        "ageHours": 51.2,
-        "activitySignal": true,
         "primarySourceSignal": false,
         "signals": [
           "collector category",
@@ -1323,40 +1296,12 @@
     ],
     "Plan Ahead": [
       {
-        "id": "direct-de2c6c4d47faaf5e",
-        "title": "Keats House: Place-Based Writing Workshop",
-        "eventStart": "2026-11-15T14:00:00.040Z",
-        "eventEnd": "2026-11-15T16:30:00.040Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-15T12:46:34.798Z",
-        "publisher": "Heath Hands",
-        "publishedAt": "",
-        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/keats-writingplace",
-        "discoverySource": "Official activity listing",
-        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-        "summary": "How do we translate a physical landscape into an invisible feeling? Join critically acclaimed songwriter Étáin for an immersive, two-hour creative writing workshop in the historic grounds of Keats House. The workshop will be followed by a 30-minute performance by Étáin. This event and any associated ticketing and personal data capture is managed directly by the City of London Corporation. Learn mo",
-        "needsDestinationResolution": false,
-        "datedActivitySignal": true,
-        "score": 87.95,
-        "ageHours": null,
-        "activitySignal": true,
-        "primarySourceSignal": true,
-        "signals": [
-          "approved primary-source lead",
-          "source lists an upcoming date: reverify availability",
-          "activity/action wording: verify upcoming date",
-          "ticket",
-          "performance"
-        ],
-        "alternateLeads": []
-      },
-      {
         "id": "direct-a075c4b671202471",
         "title": "Litter pick",
         "eventStart": "2026-11-21T12:00:00.801Z",
         "eventEnd": "2026-11-21T13:00:00.801Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-15T12:46:34.798Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-16T07:31:15.708Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/litter-pick-211126",
@@ -1365,7 +1310,7 @@
         "summary": "Join us for a Saturday afternoon litter pick. All welcome and all equipment provided. Meet at 12pm at the Heath Info Hut (the former Tennis Bookings Hut), Hampstead Heath, near the Parliament Hill tennis courts - no need to book, although you can let us know that you’re planning to come along so that we know roughly how many to expect.",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 77.03,
+        "score": 77.82,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -1382,8 +1327,8 @@
             "title": "Litter pick",
             "eventStart": "2026-11-28T12:00:00.801Z",
             "eventEnd": "2026-11-28T13:00:00.801Z",
-            "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-            "checkedAt": "2026-11-15T12:46:34.798Z",
+            "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+            "checkedAt": "2026-11-16T07:31:15.708Z",
             "publisher": "Heath Hands",
             "publishedAt": "",
             "discoveryUrl": "https://www.heath-hands.org.uk/whatson/litter-pick-281126",
@@ -1392,7 +1337,7 @@
             "summary": "Join us for a Saturday afternoon litter pick. All welcome and all equipment provided. Meet at 12pm at the Heath Info Hut (the former Tennis Bookings Hut), Hampstead Heath, near the Parliament Hill tennis courts - no need to book, although you can let us know that you’re planning to come along so that we know roughly how many to expect.",
             "needsDestinationResolution": false,
             "datedActivitySignal": true,
-            "score": 70.03,
+            "score": 70.82,
             "ageHours": null,
             "activitySignal": true,
             "primarySourceSignal": true,
@@ -1411,8 +1356,8 @@
         "title": "Hedgeplanting with Hampstead Heath Eco Club",
         "eventStart": "2026-11-21T13:30:00.910Z",
         "eventEnd": "2026-11-21T15:30:00.910Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-15T12:46:34.798Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-16T07:31:15.708Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/hhechedgeplanting",
@@ -1421,7 +1366,7 @@
         "summary": "Join us for the second event of our new Youth programme: Hampstead Heath Eco Club . This time, we’ll be planting new hedges around the Parliament Hill area! Join us to find out about the importance of hedges for wildlife and biodiversity and make a real difference by planting your own little trees on Hampstead Heath! This is a youth event , open to children age 10-17 only . Booking is required (cl",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 72.97,
+        "score": 73.76,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -1438,8 +1383,8 @@
         "title": "Hampstead Heath Photo Exhibition",
         "eventStart": "2026-11-26T10:00:00.887Z",
         "eventEnd": "2026-11-28T15:00:00.887Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-15T12:46:34.798Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-16T07:31:15.708Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/photo-exhibition-dairy-2026",
@@ -1448,7 +1393,7 @@
         "summary": "Join us at The Kenwood Dairy for an exhibition of this year’s top Hampstead Heath photo competition entries. The exhibition will include spectacular photographs of Hampstead Heath, including this year’s winning entry, a beautiful image by Joe Hayman, and the winning under 18s entry, a great shot by Milo Dawes, aged 13. No need to book, stop by between 10am-3pm from the 26th-28th of November. Teas ",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 71.12,
+        "score": 71.91,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -1465,8 +1410,8 @@
         "title": "Queen’s Park Trees and Ecology walk",
         "eventStart": "2026-11-27T14:00:00.128Z",
         "eventEnd": "2026-11-27T15:00:00.128Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-15T12:46:34.798Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-16T07:31:15.708Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/queensparktreesecology",
@@ -1475,7 +1420,7 @@
         "summary": "Join us for a guided walk of Queen’s Park, looking at trees and their ecological value. The walk will meet outside the Queen’s Park Cafe - further instructions to be provided on booking. All welcome, including children of any age - but anyone under 18 should be accompanied by a responsible adult. The walk is free (donations welcome) but booking is essential. Book here",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 66.95,
+        "score": 67.74,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -1492,8 +1437,8 @@
         "title": "Highgate Wood - Tree and fungi walk",
         "eventStart": "2026-11-28T11:30:00.873Z",
         "eventEnd": "2026-11-28T13:00:00.873Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-15T12:46:34.798Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-16T07:31:15.708Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/highgatewood-treefungi281106",
@@ -1502,7 +1447,7 @@
         "summary": "Enjoy an guided walk of trees and fungi found in Highgate Wood, led by their staff. All guided walks are free to attend with no booking required. They last approximately 1 to 1.5 hours. Meet at the information hut next to the café. For more information and to book click the link below . Learn more",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 66.05,
+        "score": 66.84,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -1518,8 +1463,8 @@
         "id": "direct-1f7b075839cdd58f",
         "title": "30 Oct - 29 Apr 1327 and the City of London Exhibition",
         "eventStart": null,
-        "evidenceFile": ".daily-work/evidence/9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
-        "checkedAt": "2026-11-15T12:46:35.269Z",
+        "evidenceFile": ".daily-work\\evidence\\9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
+        "checkedAt": "2026-11-16T07:31:15.837Z",
         "publisher": "City of London",
         "publishedAt": "",
         "discoveryUrl": "https://www.cityoflondon.gov.uk/events/1327-and-the-city-of-london-exhibition",
@@ -1544,8 +1489,8 @@
         "id": "direct-f2d565fbc4edeaa9",
         "title": "30 Oct - 26 Nov Black Sound Exhibition - Black History Month",
         "eventStart": null,
-        "evidenceFile": ".daily-work/evidence/9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
-        "checkedAt": "2026-11-15T12:46:35.269Z",
+        "evidenceFile": ".daily-work\\evidence\\9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
+        "checkedAt": "2026-11-16T07:31:15.837Z",
         "publisher": "City of London",
         "publishedAt": "",
         "discoveryUrl": "https://www.cityoflondon.gov.uk/events/black-sound-exhibition",
@@ -1570,8 +1515,8 @@
         "id": "direct-a041880cf9722c72",
         "title": "4 Nov - 25 Nov Layers of the City: art exhibition",
         "eventStart": null,
-        "evidenceFile": ".daily-work/evidence/9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
-        "checkedAt": "2026-11-15T12:46:35.269Z",
+        "evidenceFile": ".daily-work\\evidence\\9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
+        "checkedAt": "2026-11-16T07:31:15.837Z",
         "publisher": "City of London",
         "publishedAt": "",
         "discoveryUrl": "https://www.cityoflondon.gov.uk/events/layers-of-the-city",
@@ -1596,8 +1541,8 @@
         "id": "direct-83235aed761fef4f",
         "title": "21 Nov Gladiators to centurions tour with Dr Lane",
         "eventStart": null,
-        "evidenceFile": ".daily-work/evidence/9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
-        "checkedAt": "2026-11-15T12:46:35.269Z",
+        "evidenceFile": ".daily-work\\evidence\\9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
+        "checkedAt": "2026-11-16T07:31:15.837Z",
         "publisher": "City of London",
         "publishedAt": "",
         "discoveryUrl": "https://www.cityoflondon.gov.uk/events/gladiators-to-centurions-tour-with-dr-lane",
@@ -1615,6 +1560,31 @@
           "activity/action wording: verify upcoming date",
           "collector category",
           "tour"
+        ],
+        "alternateLeads": []
+      },
+      {
+        "id": "direct-3ec5a6aee26d15e8",
+        "title": "26 Sep - 6 Dec Highgate Wood guided walks",
+        "eventStart": null,
+        "evidenceFile": ".daily-work\\evidence\\9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
+        "checkedAt": "2026-11-16T07:31:15.837Z",
+        "publisher": "City of London",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.cityoflondon.gov.uk/events/highgate-wood-guided-walks",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.cityoflondon.gov.uk/events",
+        "summary": "",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": false,
+        "score": 43,
+        "ageHours": null,
+        "activitySignal": true,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "activity/action wording: verify upcoming date",
+          "collector category"
         ],
         "alternateLeads": []
       }
@@ -1738,23 +1708,109 @@
   ],
   "archiveDates": {
     "today": {
+      "date": "2026-11-16",
+      "label": "London • Monday 16 November 2026",
+      "storyCount": 10
+    },
+    "yesterday": {
       "date": "2026-10-31",
       "label": "London • Saturday 31 October 2026",
       "storyCount": 7
     },
-    "yesterday": {
+    "day-before": {
       "date": "2026-10-28",
       "label": "London • Wednesday 28 October 2026",
-      "storyCount": 10
-    },
-    "day-before": {
-      "date": "2026-10-18",
-      "label": "London • Sunday 18 October 2026",
       "storyCount": 10
     }
   },
   "adjacentEditionStories": {
     "today": [
+      {
+        "id": "2026-11-16-three-acts-wednesday",
+        "section": "Near home",
+        "headline": "See Three Acts at Burgh House from Wednesday",
+        "sourceUrls": [
+          "https://www.burghhouse.org.uk/whats-on/whats-on/exhibition/three-acts"
+        ]
+      },
+      {
+        "id": "2026-11-16-freud-wednesday-objects",
+        "section": "Near home",
+        "headline": "Take a Wednesday look at Freud’s rarely displayed objects",
+        "sourceUrls": [
+          "https://www.freud.org.uk/exhibitions/40-objects-40-years/",
+          "https://www.freud.org.uk/visit/"
+        ]
+      },
+      {
+        "id": "2026-11-16-nature-journal-five-places",
+        "section": "Near home",
+        "headline": "Book one of five remaining nature-journaling places",
+        "sourceUrls": [
+          "https://www.heath-hands.org.uk/whatson/naturejournaling-181126",
+          "https://heathhands.beaconforms.com/form/5be2f76e"
+        ]
+      },
+      {
+        "id": "2026-11-16-saturday-parliament-hill-cleanup",
+        "section": "Near home",
+        "headline": "Give Parliament Hill an hour this Saturday",
+        "sourceUrls": [
+          "https://www.heath-hands.org.uk/whatson/litter-pick-211126"
+        ]
+      },
+      {
+        "id": "2026-11-16-barbican-tours-today",
+        "section": "Near work",
+        "headline": "Take the Barbican’s 11am or 2pm architecture tour today",
+        "sourceUrls": [
+          "https://www.barbican.org.uk/whats-on/2026/event/architecture-tours"
+        ]
+      },
+      {
+        "id": "2026-11-16-thursday-spitalfields-antiques",
+        "section": "Near work",
+        "headline": "Browse Spitalfields’ antiques stalls on Thursday",
+        "sourceUrls": [
+          "https://oldspitalfieldsmarket.com/events/antiques-market"
+        ]
+      },
+      {
+        "id": "2026-11-16-imperial-gabor-ai-wednesday",
+        "section": "London AI",
+        "headline": "Reserve a free place for Imperial’s AI-and-economics lecture",
+        "sourceUrls": [
+          "https://www.imperial.ac.uk/events/214455/gabor2026/",
+          "https://www.eventbrite.co.uk/e/a-collectivist-economic-perspective-on-ai-professor-michael-i-jordan-tickets-2002918624523"
+        ]
+      },
+      {
+        "id": "2026-11-16-ucl-quantum-webinar-thursday",
+        "section": "London technology",
+        "headline": "See how UCL is training its next quantum researchers",
+        "sourceUrls": [
+          "https://www.ucl.ac.uk/mathematical-physical-sciences/quantum/study/phd-opportunities/quantum-doctoral-programmes",
+          "https://ucl.zoom.us/webinar/register/WN_fH3K2bhnRpuBiUwVXaq83g"
+        ]
+      },
+      {
+        "id": "2026-11-16-kenwood-photo-exhibition",
+        "section": "Plan ahead",
+        "headline": "Save 26–28 November for Heath photographs at the Dairy",
+        "sourceUrls": [
+          "https://www.heath-hands.org.uk/whatson/photo-exhibition-dairy-2026"
+        ]
+      },
+      {
+        "id": "2026-11-16-camden-winter-ceramics",
+        "section": "Plan ahead",
+        "headline": "Keep 28–29 November for Camden’s ceramics market",
+        "sourceUrls": [
+          "https://camdenartcentre.org/whats-on/winter-ceramics-market-2026"
+        ]
+      }
+    ],
+    "yesterday": [
       {
         "id": "2026-10-31-info-hut-until-two",
         "section": "Near home",
@@ -1812,90 +1868,6 @@
         "sourceUrls": [
           "https://lnhs.org.uk/index.php/activities/full-programme/eventdetail/3632/-/hampstead-heath-introduction-to-fungi",
           "https://www.heath-hands.org.uk/whatson/lnhs-funginov"
-        ]
-      }
-    ],
-    "yesterday": [
-      {
-        "id": "2026-10-28-kimberly-tonight",
-        "section": "Near home",
-        "headline": "Book tonight’s Kimberly Akimbo—or its newly extended run",
-        "sourceUrls": [
-          "https://www.hampsteadtheatre.com/production/kimberly-akimbo/"
-        ]
-      },
-      {
-        "id": "2026-10-28-parliament-hill-litter",
-        "section": "Near home",
-        "headline": "Give Parliament Hill an hour on Saturday",
-        "sourceUrls": [
-          "https://www.heath-hands.org.uk/whatson/litter-pick-31oct26"
-        ]
-      },
-      {
-        "id": "2026-10-28-wildlife-interpreters",
-        "section": "Near home",
-        "headline": "Find the wildlife bike on the Heath this Saturday",
-        "sourceUrls": [
-          "https://www.heath-hands.org.uk/whatson/wildabouthampsteadheath-311026"
-        ]
-      },
-      {
-        "id": "2026-10-28-fungi-sunday",
-        "section": "Near home",
-        "headline": "Register for Sunday’s Hampstead Heath fungi walk",
-        "sourceUrls": [
-          "https://www.heath-hands.org.uk/whatson/lnhs-funginov"
-        ]
-      },
-      {
-        "id": "2026-10-28-barbican-archive",
-        "section": "Near work",
-        "headline": "Explore the Barbican through its original plans and models",
-        "sourceUrls": [
-          "https://www.barbican.org.uk/whats-on/2025/event/concrete-and-clay-archiving-the-barbican"
-        ]
-      },
-      {
-        "id": "2026-10-28-spitalfields-november-art",
-        "section": "Near work",
-        "headline": "Keep 6–8 November for Spitalfields’ free arts market",
-        "sourceUrls": [
-          "https://www.spitalfields.co.uk/upcoming-events/a-brush-with-creativity-spitalfields-arts-market/"
-        ]
-      },
-      {
-        "id": "2026-10-28-machenta-instant-learning",
-        "section": "London AI",
-        "headline": "Imperial spinout raises $40m for robots that learn by demonstration",
-        "sourceUrls": [
-          "https://www.imperial.ac.uk/news/articles/2026/imperial-ai-spinout-machenta-raises-40-million-to-make-robots-instant-learners/",
-          "https://commons.wikimedia.org/wiki/File:Queen%27s_Tower_above_Imperial_College_Central_Library_in_Late_Autumn.jpg"
-        ]
-      },
-      {
-        "id": "2026-10-28-imperial-ampera-digital-twins",
-        "section": "London technology",
-        "headline": "Imperial starts a £7m digital-twin partnership for energy systems",
-        "sourceUrls": [
-          "https://www.imperial.ac.uk/news/articles/2026/imperial-and-ampera-join-forces-to-develop-digital-twin-platform-for-advanced-nuclear-energy-systems/",
-          "https://commons.wikimedia.org/wiki/File:Queen%27s_Tower_-_Imperial_College_-_geograph.org.uk_-_7508528.jpg"
-        ]
-      },
-      {
-        "id": "2026-10-28-kenwood-dairy-saturday",
-        "section": "Plan ahead",
-        "headline": "Make Saturday’s limited Kenwood Dairy opening",
-        "sourceUrls": [
-          "https://www.heath-hands.org.uk/whatson/kenwood-dairy-open-311026"
-        ]
-      },
-      {
-        "id": "2026-10-28-guildhall-november-hours",
-        "section": "Plan ahead",
-        "headline": "Plan an early Guildhall visit on Friday 13 November",
-        "sourceUrls": [
-          "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/guildhall-art-gallery/visit-guildhall-art-gallery"
         ]
       }
     ]
@@ -1994,12 +1966,94 @@
       "needsLiveReverification": true
     },
     {
+      "id": "2026-11-16-barbican-architecture-tours",
+      "title": "Barbican Architecture Tours",
+      "startDate": "2026-11-16",
+      "endDate": "2026-11-30",
+      "location": "Barbican",
+      "section": "Near work",
+      "sourceUrl": "https://www.barbican.org.uk/whats-on/2026/event/architecture-tours",
+      "needsLiveReverification": true
+    },
+    {
       "id": "2026-11-16-guildhall-opening-change",
       "title": "Guildhall Art Gallery and Amphitheatre closed",
       "startDate": "2026-11-16",
       "location": "Guildhall Yard",
       "section": "Near work",
       "sourceUrl": "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/guildhall-art-gallery/visit-guildhall-art-gallery",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-11-18-dennis-gabor-lecture",
+      "title": "Dennis Gabor Lecture: A Collectivist, Economic Perspective on AI",
+      "startDate": "2026-11-18",
+      "time": "16:30",
+      "location": "South Kensington",
+      "section": "London AI",
+      "sourceUrl": "https://www.imperial.ac.uk/events/214455/gabor2026/",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-11-18-nature-journaling",
+      "title": "Nature Journaling Workshop",
+      "startDate": "2026-11-18",
+      "time": "12:30",
+      "location": "Kenwood Estate",
+      "section": "Near home",
+      "sourceUrl": "https://www.heath-hands.org.uk/whatson/naturejournaling-181126",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-11-18-three-acts",
+      "title": "Three Acts",
+      "startDate": "2026-11-18",
+      "endDate": "2026-11-22",
+      "time": "10:00",
+      "location": "Hampstead",
+      "section": "Near home",
+      "sourceUrl": "https://www.burghhouse.org.uk/whats-on/whats-on/exhibition/three-acts",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-11-19-spitalfields-antiques",
+      "title": "Old Spitalfields Antiques Market",
+      "startDate": "2026-11-19",
+      "time": "08:00",
+      "location": "Spitalfields",
+      "section": "Near work",
+      "sourceUrl": "https://oldspitalfieldsmarket.com/events/antiques-market",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-11-19-ucl-quantum-webinar",
+      "title": "UCL Quantum PhD Application Webinar",
+      "startDate": "2026-11-19",
+      "time": "15:00",
+      "location": "Online, hosted by UCL",
+      "section": "London technology",
+      "sourceUrl": "https://www.ucl.ac.uk/mathematical-physical-sciences/quantum/study/phd-opportunities/quantum-doctoral-programmes",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-11-21-parliament-hill-litter",
+      "title": "Parliament Hill Litter Pick",
+      "startDate": "2026-11-21",
+      "time": "12:00",
+      "location": "Parliament Hill",
+      "section": "Near home",
+      "sourceUrl": "https://www.heath-hands.org.uk/whatson/litter-pick-211126",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-11-26-heath-photo-exhibition",
+      "title": "Hampstead Heath Photo Exhibition",
+      "startDate": "2026-11-26",
+      "endDate": "2026-11-28",
+      "time": "10:00",
+      "location": "Kenwood",
+      "section": "Plan ahead",
+      "sourceUrl": "https://www.heath-hands.org.uk/whatson/photo-exhibition-dairy-2026",
       "needsLiveReverification": true
     },
     {
@@ -2010,6 +2064,17 @@
       "location": "Bartholomew Lane, City of London",
       "section": "Near work",
       "sourceUrl": "https://www.bankofengland.co.uk/museum/plan-your-visit",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-11-28-camden-ceramics-market",
+      "title": "Camden Art Centre Winter Ceramics Market",
+      "startDate": "2026-11-28",
+      "endDate": "2026-11-29",
+      "time": "11:00",
+      "location": "Finchley Road",
+      "section": "Plan ahead",
+      "sourceUrl": "https://camdenartcentre.org/whats-on/winter-ceramics-market-2026",
       "needsLiveReverification": true
     },
     {
@@ -2520,6 +2585,7 @@
     "transformingfleetstreet.commonplace.is",
     "uber.com",
     "ucl.ac.uk",
+    "ucl.zoom.us",
     "visitlondon.com",
     "wallpaper.com",
     "wayve.ai",
