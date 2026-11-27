@@ -46,6 +46,28 @@ function poi(overrides = {}) {
   return { id: "venue", name: "Venue", category: "culture", lat: 51.55, lon: -0.16, description: "A permanent venue", url: "https://example.org/venue", sourceUrl: "https://example.org/venue-guide", addedOn: "2026-09-27", ...overrides };
 }
 
+test('optional snapshot time, existing calendar references and per-story image wording preserve shared assets', () => {
+  const { current, input } = fixture();
+  input.edition.morning.checkedAt = '2026-09-27T08:30:00Z';
+  input.events = [event()];
+  input.edition.stories[0].eventIds = [event().id];
+  input.edition.stories[0].imageAlt = 'Archive venue exterior';
+  input.edition.stories[0].imageCaption = 'Archive venue photograph, not the current installation';
+  const result = buildEditionUpdate(input, current);
+  assert.deepEqual(result.editions.images, current.editions.images);
+  assert.deepEqual(result.editions.issues.yesterday, current.editions.issues.today);
+  assert.equal(result.editions.issues.today.stories[0].imageAlt, 'Archive venue exterior');
+  input.edition.stories[0].eventIds = ['2026-09-28-missing'];
+  assert.throws(() => buildEditionUpdate(input, current), /Unknown calendar event/);
+  input.edition.stories[0].eventIds = [];
+  input.edition.morning.checkedAt = '2026-09-26T08:30:00Z';
+  assert.throws(() => buildEditionUpdate(input, current), /match the London edition date/);
+  input.edition.morning.checkedAt = '2026-09-26T23:30:00Z';
+  assert.doesNotThrow(() => buildEditionUpdate(input, current)); // BST: the check is on 27 September in London.
+  input.edition.morning.checkedAt = 'sometime today';
+  assert.throws(() => buildEditionUpdate(input, current), /ISO timestamp/);
+});
+
 test("rotates once, derives London labels, and preserves archives and unused images", () => {
   const { current, input } = fixture();
   const original = structuredClone(current);
@@ -64,7 +86,7 @@ test("rejects backward dates, impossible dates, invalid story count and wrong se
   for (const modify of [
     (input) => { input.date = "2026-09-23"; input.edition.stories = edition(input.date).stories; },
     (input) => { input.date = "2026-02-30"; },
-    (input) => { input.edition.stories.pop(); },
+    (input) => { input.edition.stories = []; },
     (input) => { input.edition.stories[0].section = "London AI"; },
   ]) {
     const { current, input } = fixture(); modify(input);
@@ -244,10 +266,10 @@ test("a failure installing a later file rolls earlier replacements back", async 
 });
 
 
-test("short editions require a reason and preserve ordering, caps and source safeguards", () => {
+test("short editions receive a visible note and preserve ordering, caps and source safeguards", () => {
   const { current, input } = fixture();
   input.edition.stories = input.edition.stories.filter((_, i) => [0, 1, 4, 5, 6, 8, 9].includes(i));
-  assert.throws(() => buildEditionUpdate(input, current), /ten stories/);
+  assert.match(buildEditionUpdate(input, current).editions.issues.today.shortEditionReason, /7 worthwhile picks/);
   input.edition.shortEditionReason = "Short edition requested by the reader; seven verified choices.";
   const result = buildEditionUpdate(input, current);
   assert.equal(result.editions.issues.today.stories.length, 7);

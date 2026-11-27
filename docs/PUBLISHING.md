@@ -81,9 +81,9 @@ are retained for seven days. The public artifact excludes discovery files,
 structured edition inputs, image-rights metadata, prompts, tests, package dependencies and operational
 documentation; it includes the calendar and POI runtime stores.
 
-The target is **GitHub Actions** as the single Pages source. Discovery-only commits (RSS, direct candidates, full brief and reading brief) are excluded. The Monday weekly discovery workflow additionally removes expired calendar entries and saves a reviewed-image queue; an actual calendar change triggers validation. Until activation is verified, legacy branch publication remains active.
+Use **GitHub Actions** as the single Pages source. The 16 November publication successfully used this pipeline; check current settings live rather than assuming they have remained unchanged. Discovery-only pushes are excluded, and scheduled daily discovery now uploads an artifact instead of committing. Weekly maintenance commits only expired-calendar cleanup, which triggers validation.
 
-Activation is an explicit hosting operation: publish and validate this workflow, then a repository administrator must select **Settings → Pages → Source → GitHub Actions** and dispatch `pages.yml` from main. Subsequent deployments automatically run when the current Pages source is `workflow`; setting the optional repository variable `PAGES_ACTIONS_ENABLED=false` pauses them. The workspace integration and workflow token both received HTTP 403 when requesting this source change, so activation cannot be completed with these credentials. Preparation and validation never change hosting settings.
+If a different repository or recovery environment requires activation, it is an explicit hosting operation: a repository administrator selects **Settings → Pages → Source → GitHub Actions** and dispatches `pages.yml` from main. Deployments run when the current Pages source is `workflow`; `PAGES_ACTIONS_ENABLED=false` pauses them. An older activation attempt received HTTP 403 with its credentials; that historical failure is not the current deployment status. Preparation and validation never change hosting settings.
 
 Only the deployment job receives `pages:write` and `id-token:write`; validation has
 read access and checkout does not persist credentials. Pull requests cannot deploy.

@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { prepareBrief, resourceContext, scoreForSection, likelySameTopic, londonDate, officialResearchSources } from "../scripts/prepare_daily_brief.mjs";
+import { prepareBrief, resourceContext, scoreForSection, likelySameTopic, londonDate, officialResearchSources, geographicEligibility, readingBrief } from "../scripts/prepare_daily_brief.mjs";
 
 const now = "2026-09-27T08:00:00Z";
 const lead = (title, link, extra = {}) => ({ title, link, publisher: "Publisher", published_at: now, category_hint: "Near Home", ...extra });
@@ -85,4 +85,53 @@ test("archive dates include all issues without exposing complete story bodies", 
   assert.equal(brief.archiveDates.today.date, "2026-09-27");
   assert.equal(brief.archiveDates.today.storyCount, 1);
   assert.equal(brief.adjacentEditionStories.today[0].brief, undefined);
+});
+
+test('operator boilerplate cannot move Hampstead into Near Work or fill missing London technology coverage', () => {
+  const home = lead('Kids at Keats: festive pine cones', 'https://heath-hands.org.uk/keats', { summary: 'At Keats House. Aimed at children under 5. Managed directly by the City of London Corporation.', event_start: '2026-10-01T14:00:00Z' });
+  const abroad = lead('Sussex quantum research', 'https://example.com/sussex', { category_hint: 'London Technology' });
+  const brief = prepareBrief(input([home, abroad]), now);
+  assert.equal(geographicEligibility(home, 'Near Work').eligible, false);
+  assert.equal(brief.candidateSections['Near Work'].length, 0);
+  assert.equal(brief.candidateSections['London Technology'].length, 0);
+  assert.equal(brief.verificationQueue['London Technology'][0].title, abroad.title);
+  assert.ok(brief.candidateSections['Near Home'][0].reviewFlags.some(flag => /child/.test(flag)));
+  assert.ok(brief.warnings.some(w => /London Technology/.test(w)));
+  assert.equal(geographicEligibility(lead('Barbican architecture tour', 'https://example.com/city'), 'Near Work').eligible, true);
+  assert.equal(geographicEligibility(lead('Global AI discovery - London Business News', 'https://example.com/global', { publisher: 'London Business News' }), 'London AI').eligible, false);
+});
+
+test('same-title occurrences survive grouping and URL deduplication on different dates', () => {
+  const a = lead('Hampstead litter pick', 'https://example.com/recurring', { event_start: '2026-09-28T12:00:00Z' });
+  const b = { ...a, event_start: '2026-10-05T12:00:00Z' };
+  assert.equal(likelySameTopic(a, b), false);
+  const brief = prepareBrief(input([a, b]), now);
+  assert.equal(brief.candidateSections['Near Home'].length, 2);
+  assert.notEqual(...brief.candidateSections['Near Home'].map(c => c.id));
+  assert.equal(likelySameTopic(a, { ...a, link: 'https://other.example/report' }), true);
+});
+
+test('upcoming London technical events use action time; undated or stale news does not qualify', () => {
+  const event = lead('UCL quantum application webinar', 'https://ucl.ac.uk/webinar', { published_at: '', event_start: '2026-10-01T15:00:00Z' });
+  const stale = lead('London quantum research', 'https://example.com/old', { published_at: '2026-09-01T00:00:00Z' });
+  const brief = prepareBrief(input([event, stale]), now);
+  assert.deepEqual(brief.candidateSections['London Technology'].map(c => c.title), [event.title]);
+});
+
+test('calendar brief promotes the nearest real decision over long-running displays', () => {
+  const data = input();
+  data.events.events = Array.from({ length: 15 }, (_, n) => ({ id: `long-${n}`, title: 'Long exhibition', startDate: '2025-01-01', endDate: '2027-01-01' }));
+  data.events.events.push({ id: 'tomorrow', title: 'Tomorrow closure', startDate: '2026-09-28' });
+  const brief = readingBrief(prepareBrief(data, now));
+  assert.equal(brief.upcoming[0].id, 'tomorrow');
+  assert.equal(brief.upcoming[0].nextActionDate, '2026-09-28');
+  assert.equal(brief.upcoming.length, 12);
+});
+
+test('candidate review flags prior canonical coverage without suppressing a material update', () => {
+  const data = input([lead('Hampstead exhibition extends', 'https://example.com/show?utm_source=feed')]);
+  data.editions.issues.today.stories = [{ id: 'prior', headline: 'Original show', sources: [['Host', 'https://example.com/show']] }];
+  const candidate = prepareBrief(data, now).candidateSections['Near Home'][0];
+  assert.deepEqual(candidate.priorStoryIds, ['prior']);
+  assert.match(candidate.reviewFlags[0], /Possible previous coverage/);
 });

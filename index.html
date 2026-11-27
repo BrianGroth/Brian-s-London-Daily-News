@@ -465,16 +465,41 @@
       outline-offset: 3px;
     }
 
-    .image-credit {
-      position: absolute;
-      right: 7px;
-      bottom: 6px;
-      padding: 3px 5px;
-      color: #fff;
-      background: rgb(0 0 0 / .58);
-      font-size: 8px;
-      line-height: 1;
-      letter-spacing: .03em;
+    .image-credit { padding: 7px 0; color: var(--muted); font-size: 12px; line-height: 1.4; overflow-wrap: anywhere; }
+    .skip-link { position: fixed; top: -100px; left: 16px; z-index: 30; padding: 14px; background: white; color: var(--navy); }
+    .skip-link:focus { top: 10px; }
+    .edition-status, .morning-snapshot { color: var(--muted); font-size: 12px; line-height: 1.5; }
+    .edition-status { margin: 18px 0; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+    .morning-snapshot { grid-column: 1 / -1; margin: 0; padding: 7px 0; }
+    .reading-tools, .section-jumps { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+    .reading-tools button, .section-jumps a, .headline-index a, .calendar-detail-link { min-height: 44px; display: inline-flex; align-items: center; }
+    .reading-tools button { border: 1px solid var(--rule); padding: 8px 14px; color: var(--ink); background: transparent; font: 600 13px var(--sans); cursor: pointer; }
+    .reading-tools button[aria-pressed="true"] { border-color: var(--navy); background: var(--navy); color: white; }
+    .reading-tools span, .section-jumps { font-size: 12px; }
+    .headline-index { margin: 18px 0; border-bottom: 1px solid var(--rule); padding-bottom: 12px; }
+    .headline-index summary { cursor: pointer; min-height: 44px; font-weight: 700; }
+    .headline-index ol { margin: 0; padding-left: 24px; }
+    .headline-index a { font-size: 15px; line-height: 1.4; padding: 5px 0; text-underline-offset: 3px; }
+    .section-name-short { display: none; }
+    .story { scroll-margin-top: 80px; }
+    .action-link { min-height: 44px; display: inline-flex; align-items: center; padding: 8px 12px; }
+    .calendar-detail-link { margin-left: 12px; font-size: 12px; color: var(--green); }
+    @media (max-width: 719px) {
+      .reading-tools { display: grid; grid-template-columns: 1fr 1fr; gap: 0; padding: 8px 0; }
+      .reading-tools > span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+      .reading-tools button { justify-content: center; }
+      .reading-tools button + button { border-left: 0; }
+      .section-jumps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; padding: 2px 0; }
+      .section-jumps a { justify-content: center; font-size: 12px; white-space: nowrap; }
+      .section-name-long { display: none; }
+      .section-name-short { display: inline; }
+      .headline-index { margin: 6px 0 12px; padding-bottom: 0; }
+      .headline-index summary { padding: 10px 0; }
+      body[data-reading-view="compact"] .story-body { order: 2; }
+      body[data-reading-view="compact"] .story-media { order: 3; }
+      body[data-reading-view="compact"] .story h2 { font-size: 30px; }
+      body[data-reading-view="compact"] .story-media { max-width: 180px; }
+      body[data-reading-view="compact"] .story { padding-block: 24px; }
     }
 
     @media (min-width: 720px) {
@@ -585,6 +610,8 @@
       }
     }
 
+    .story-media, .story:first-of-type .story-media { overflow: visible; aspect-ratio: auto; min-height: 0; background: transparent; }
+    .story-media img { display: block; height: auto; aspect-ratio: 1; object-fit: cover; }
     @media (max-width: 620px) {
       .site-footer-nav {
         grid-template-columns: 1fr;
@@ -607,19 +634,26 @@
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#briefings">Skip to briefing</a>
   <div class="shell">
     <header class="masthead">
-      <p class="brand">BRIAN'S LONDON DAILY NEWS</p>
+      <h1 class="brand">BRIAN'S LONDON DAILY NEWS</h1>
       <p class="issue-line" id="issue-line">London <span class="dot">•</span> Monday 16 November 2026</p>
-      <p class="issue-rolling">Rolling 3-day edition · today, yesterday, day before</p>
+      <p class="issue-rolling">Three editions · latest, previous, earlier</p>
       <nav class="date-nav" aria-label="Choose briefing date" role="tablist">
-        <button class="date-tab" id="tab-today" role="tab" aria-controls="today" aria-selected="true" data-day="today">Today 16 November</button>
-        <button class="date-tab" id="tab-yesterday" role="tab" aria-controls="yesterday" aria-selected="false" data-day="yesterday">Yesterday</button>
-        <button class="date-tab" id="tab-day-before" role="tab" aria-controls="day-before" aria-selected="false" data-day="day-before">Day Before</button>
+        <button class="date-tab" id="tab-today" role="tab" aria-controls="today" aria-selected="true" data-day="today">Latest · 16 November</button>
+        <button class="date-tab" id="tab-yesterday" role="tab" aria-controls="yesterday" aria-selected="false" data-day="yesterday">Previous · 31 October</button>
+        <button class="date-tab" id="tab-day-before" role="tab" aria-controls="day-before" aria-selected="false" data-day="day-before">Earlier · 28 October</button>
       </nav>
     </header>
 
-    <main id="briefings">
+    <main id="briefings" tabindex="-1">
+      <p id="editionStatus" class="edition-status" role="status" hidden></p>
+      <div class="reading-tools" aria-label="Reading view">
+        <span>Mobile reading view</span>
+        <button type="button" data-reading-view="full" aria-pressed="true">Full newspaper</button>
+        <button type="button" data-reading-view="compact" aria-pressed="false">Compact</button>
+      </div>
       <section class="briefing" id="today" role="tabpanel" aria-labelledby="tab-today"></section>
       <section class="briefing" id="yesterday" role="tabpanel" aria-labelledby="tab-yesterday" hidden></section>
       <section class="briefing" id="day-before" role="tabpanel" aria-labelledby="tab-day-before" hidden></section>
@@ -1750,7 +1784,19 @@
       "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
     })[char]);
 
-    function renderMorning(morning) {
+    function londonDateKey(now = new Date()) {
+      return new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/London', year: 'numeric', month: '2-digit', day: '2-digit' }).format(now);
+    }
+
+    function issueDate(issue) { return issue.stories[0]?.id.slice(0, 10) || ''; }
+    function snapshotLabel(morning, issue) {
+      if (morning.checkedAt && Number.isFinite(Date.parse(morning.checkedAt))) {
+        return 'Morning snapshot · checked ' + new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/London', day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' }).format(new Date(morning.checkedAt)) + ' London time';
+      }
+      return 'Morning snapshot · ' + issueDate(issue) + ' · check source links for current conditions';
+    }
+
+    function renderMorning(morning, issue) {
       if (!morning) return "";
 
       const facts = [
@@ -1779,11 +1825,12 @@
 
       return `
         <aside class="morning" aria-label="Your morning at a glance">
-          <h2 class="morning-title">Your morning</h2>
+          <h2 class="morning-title">Morning snapshot</h2>
           <div class="morning-facts">${facts}</div>
           <div class="morning-network">
             ${transit}
           </div>
+          <p class="morning-snapshot">${escapeHtml(snapshotLabel(morning, issue))}</p>
         </aside>
       `;
     }
@@ -1805,7 +1852,7 @@
         : "";
 
       return `
-        <article class="story" data-story-id="${escapeHtml(story.id)}">
+        <article class="story" id="${escapeHtml(story.id)}" tabindex="-1" data-story-id="${escapeHtml(story.id)}">
           <div class="story-copy">
             <header class="story-heading">
               <span class="story-index">${String(index + 1).padStart(2, "0")}</span>
@@ -1813,7 +1860,7 @@
               <h2>${escapeHtml(story.headline)}</h2>
               <div class="story-meta">
                 <span class="story-location">${escapeHtml(story.location)}</span>
-                ${action}
+                ${action}<span class="story-calendar-links" data-calendar-story="${escapeHtml(story.id)}"></span>
               </div>
             </header>
             <div class="story-body">
@@ -1823,8 +1870,8 @@
             </div>
           </div>
           <figure class="story-media">
-            <img src="${story.image.src}" alt="${escapeHtml(story.image.alt)}" loading="${index === 0 ? "eager" : "lazy"}" referrerpolicy="no-referrer">
-            <figcaption class="image-credit">${escapeHtml(story.image.credit)}</figcaption>
+            <img src="${story.image.src}" alt="${escapeHtml(story.imageAlt || story.image.alt)}" loading="${index === 0 ? "eager" : "lazy"}" referrerpolicy="no-referrer">
+            <figcaption class="image-credit">${story.imageCaption ? escapeHtml(story.imageCaption) + ' · ' : ''}${escapeHtml(story.image.credit)}</figcaption>
           </figure>
         </article>
       `;
@@ -1832,8 +1879,11 @@
 
     Object.entries(issues).forEach(([day, issue]) => {
       const panel = document.getElementById(day);
-      panel.innerHTML = renderMorning(issue.morning) +
-        (issue.shortEditionReason ? `<p class="edition-note" role="note">${escapeHtml(issue.shortEditionReason)}</p>` : "") +
+      const firstBySection = issue.stories.filter((story, i) => !i || story.section !== issue.stories[i - 1].section);
+      const shortSections = { 'near home': 'Home', 'near work': 'Work', 'london ai': 'AI', 'london technology': 'Tech', 'plan ahead': 'Plan ahead' };
+      panel.innerHTML = `<nav class="section-jumps" aria-label="Briefing sections">${firstBySection.map(story => `<a href="#${escapeHtml(story.id)}" aria-label="${escapeHtml(story.section)}"><span class="section-name-long">${escapeHtml(story.section)}</span><span class="section-name-short">${escapeHtml(shortSections[story.section.toLowerCase()] || story.section)}</span></a>`).join('')}</nav>` +
+        `<details class="headline-index"><summary>Headlines · ${issue.stories.length} stories</summary><ol>${issue.stories.map(story => `<li><a href="#${escapeHtml(story.id)}">${escapeHtml(story.headline)}</a></li>`).join('')}</ol></details>` + renderMorning(issue.morning, issue) +
+        ((issue.shortEditionReason || issue.stories.length < 10) ? `<p class="edition-note" role="note">${escapeHtml(issue.shortEditionReason || `${issue.stories.length} worthwhile picks in this edition. Only verified, useful choices are included.`)}</p>` : "") +
         issue.stories.map(renderStory).join("") +
         `<footer class="issue-footer">${escapeHtml(issue.footer)}</footer>`;
     });
@@ -1857,8 +1907,32 @@
     const tabs = [...document.querySelectorAll(".date-tab")];
     const panels = [...document.querySelectorAll(".briefing")];
     const issueLine = document.getElementById("issue-line");
+    let selectedDay = 'today';
+
+    function updateEditionStatus() {
+      const node = document.getElementById('editionStatus');
+      const date = issueDate(issues[selectedDay]);
+      const current = londonDateKey();
+      node.hidden = selectedDay === 'today' && date === current;
+      node.textContent = selectedDay !== 'today'
+        ? `Archive edition · ${date}. Stories and morning conditions are preserved from that publication.`
+        : `Latest edition · ${date}. No edition has been published for ${current}; availability and morning conditions may have changed.`;
+    }
+
+    function applyReadingView(mode) {
+      document.body.dataset.readingView = mode === 'compact' ? 'compact' : 'full';
+      document.querySelectorAll('button[data-reading-view]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.readingView === document.body.dataset.readingView)));
+    }
+    let savedView = 'full';
+    try { savedView = localStorage.getItem('london-news-reading-view') || 'full'; } catch {}
+    applyReadingView(savedView);
+    document.querySelectorAll('button[data-reading-view]').forEach(button => button.addEventListener('click', () => {
+      applyReadingView(button.dataset.readingView);
+      try { localStorage.setItem('london-news-reading-view', button.dataset.readingView); } catch {}
+    }));
 
     function selectDay(day, { focus = false } = {}) {
+      selectedDay = day;
       tabs.forEach(tab => {
         const selected = tab.dataset.day === day;
         tab.setAttribute("aria-selected", String(selected));
@@ -1867,6 +1941,7 @@
       });
       panels.forEach(panel => { panel.hidden = panel.id !== day; });
       issueLine.innerHTML = issues[day].label.replace(" • ", ' <span class="dot">•</span> ');
+      updateEditionStatus();
       history.replaceState(null, "", day === "today" ? location.pathname : `#${day}`);
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
@@ -1884,6 +1959,49 @@
 
     const initialDay = location.hash.slice(1);
     if (issues[initialDay]) selectDay(initialDay);
+    else updateEditionStatus();
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) updateEditionStatus(); });
+    setInterval(updateEditionStatus, 60000);
+    document.addEventListener('click', event => {
+      const link = event.target.closest('.section-jumps a, .headline-index a');
+      if (!link) return;
+      const target = document.getElementById(link.hash.slice(1));
+      if (target) { event.preventDefault(); target.focus({ preventScroll: true }); target.scrollIntoView(); }
+    });
+
+    function canonicalEventUrl(value) {
+      try {
+        const url = new URL(value);
+        if (!['https:', 'http:'].includes(url.protocol)) return '';
+        // Query parameters can identify different performances; never discard them.
+        return url.origin.replace('://www.', '://') + url.pathname.replace(/\/$/, '') + url.search;
+      } catch { return ''; }
+    }
+    function matchingEvents(story, events) {
+      if (story.eventIds?.length) return events.filter(event => story.eventIds.includes(event.id));
+      const urls = new Set(story.sources.map(([, url]) => canonicalEventUrl(url)).filter(Boolean));
+      return events.filter(event => urls.has(canonicalEventUrl(event.sourceUrl)) && Boolean(canonicalEventUrl(event.sourceUrl)));
+    }
+    async function linkCalendarStories() {
+      try {
+        const response = await fetch('data/upcoming-events.json');
+        if (!response.ok) return;
+        const payload = await response.json();
+        if (!Array.isArray(payload.events)) return;
+        for (const issue of Object.values(issues)) for (const story of issue.stories) {
+          const matches = matchingEvents(story, payload.events);
+          const holder = document.querySelector(`[data-calendar-story="${story.id}"]`);
+          for (const event of matches) {
+            const link = document.createElement('a');
+            link.className = 'calendar-detail-link';
+            link.href = 'upcoming-events.html#event=' + encodeURIComponent(event.id);
+            link.textContent = matches.length === 1 ? 'Calendar details' : `Calendar · ${event.startDate}`;
+            holder.appendChild(link);
+          }
+        }
+      } catch { /* The self-contained newspaper still reads normally if the calendar is unavailable. */ }
+    }
+    linkCalendarStories();
   </script>
 </body>
 </html>

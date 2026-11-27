@@ -8,14 +8,14 @@ Everything required to research, produce, validate, and publish the newspaper is
 
 **Brian has one required action:** open this repository as a Codex task and send: **“Generate and publish today’s edition of Brian’s London Daily News, following DAILY_NEWS_PROMPT.md.”** The repository file is the executable workflow; there is no need to paste several pages each day.
 
-For the faster usual-source version, say **“Make the quick update to the newspaper.”** This follows [`QUICK_NEWS_PROMPT.md`](QUICK_NEWS_PROMPT.md) through publication: four familiar activity listings, two UCL/Imperial/Turing news queries, a maximum of 22 candidate reviews and a 12-minute research budget. It keeps the ten-story mix, live fact/image checks, full browser acceptance and public deployment verification. If the limited sources cannot support ten strong stories, it reports the shortfall instead of widening into a full search. Research time is bounded; validation and deployment time depend on their actual results.
+For the faster usual-source version, say **“Make the quick update to the newspaper.”** It follows [`QUICK_NEWS_PROMPT.md`](QUICK_NEWS_PROMPT.md) through publication with four familiar activity listings, two institutional news queries, bounded candidate reviews and a 12-minute selection budget. Both modes publish one to ten worthwhile stories using section targets/caps of 4/2/1/1/2, with live verification and the complete browser/deployment checks. Weak sections remain unfilled; the helper explains a shorter issue. An empty verified selection stops publication. AI and technology welcome both news and useful upcoming events. Research is bounded in quick mode; total time depends on verification and deployment.
 
 That one prompt instructs Codex to:
 
 - refresh the RSS candidate file;
 - reduce hundreds of raw leads to a compact, ranked daily brief;
 - research and verify live sources;
-- select, analyse, categorise, and write the ten stories (four near home, two near work, one each for London AI and technology, and two plan-ahead items);
+- select, analyse, categorise and write up to ten justified stories, with section caps of four near home, two near work, one each for London AI and technology, and two plan-ahead items;
 - update weather and current TfL status;
 - update structured edition data, deterministically render `index.html`, and maintain the source directory;
 - run Python/Node validation and browser checks;
@@ -69,7 +69,7 @@ The maintenance prompt does not publish a daily edition unless the request expli
 
 ## Publishing
 
-The test-gated GitHub Actions Pages pipeline excludes discovery-only commits and verifies the staged public runtime by commit and asset hashes. Hosting activation is explicit; see `docs/PUBLISHING.md` for the current source and activation steps. The daily prompt authorizes publication, while `docs/DAILY_RUN.md` describes the resumable runner. A Monday workflow handles broad discovery, expired-event housekeeping and image review queues without inserting unverified editorial records.
+The test-gated GitHub Actions Pages pipeline verifies the staged public runtime by commit and asset hashes. Scheduled discovery uploads a provenance/hash-checked artifact instead of committing every morning; preparation can import a compatible same-day snapshot at most twelve hours old, then rebuild context locally. Its fallback is normal local discovery. Monday housekeeping commits only expired-calendar cleanup. Neither workflow invents editorial records. See `docs/DAILY_RUN.md` for Git readiness, evidence packets, checkpoints and attempt logs. Maintenance changes are local until publication is explicitly requested.
 
 Useful internal commands, normally run by Codex through the prompts, are:
 
@@ -99,7 +99,9 @@ npm run lookup:context -- resources "heath-hands.org.uk"
 npm run lookup:context -- images "keats"
 ```
 
-Exact IDs/domain names/image keys take precedence over case-insensitive text search. Lookup returns complete matching records, including image details for stories and status for resources. The helper never modifies data. Use the complete adjacent story summaries for semantic duplicate review; matching IDs alone is insufficient.
+Use `lookup:context -- candidates --ids ID1,ID2` for batches and `lookup:context -- package ID` for candidate/prior-coverage/calendar/image/evidence context. CLI output defaults compact; add `--format full` for detail. Image subjects search reviewed provenance first; `images --key KEY` explicitly retrieves a legacy exact key with its rights status. Unknown geography appears separately from eligible leads. The helper never modifies stores or replaces semantic duplicate review.
+
+The reader interface retains the broadsheet appearance, with actual-date archive tabs, a stale-issue notice, dated morning snapshots, section/headline navigation and an optional compact reading view. Calendar days open full event lists; search includes overflow results. Story calendar links open existing event records directly, and current captions can reuse stable reviewed photos without altering archive wording.
 
 Prepare verified additions using `docs/EDITION_INPUT.md`. The edition update helper defaults to a dry run, preserves the archive on same-day reruns, and rejects conflicting additions before writing. Keep temporary editorial input in ignored `.daily-work/`; do not commit unverified research. The helper cannot establish source accuracy, image rights or semantic novelty. Verified calendar corrections/removals still require the documented explicit manual path.
 

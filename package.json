@@ -2,6 +2,7 @@
   "name": "brians-london-daily-news",
   "version": "1.0.0",
   "private": true,
+  "engines": { "node": ">=24.11.0 <25" },
   "description": "A personal, mobile-first London newspaper generated with Codex.",
   "scripts": {
     "prepare:brief": "node scripts/prepare_daily_brief.mjs",
@@ -21,6 +22,8 @@
     "daily:validate": "node --use-env-proxy scripts/daily_run.mjs validate",
     "daily:publish": "node --use-env-proxy scripts/daily_run.mjs publish",
     "daily:status": "node scripts/daily_run.mjs status",
+    "daily:mark": "node scripts/daily_run.mjs mark",
+    "snapshot:pack": "node scripts/discovery_snapshot.mjs pack",
     "quick:prepare": "node --use-env-proxy scripts/daily_run.mjs prepare --quick",
     "quick:apply": "node --use-env-proxy scripts/daily_run.mjs apply --quick",
     "quick:validate": "node --use-env-proxy scripts/daily_run.mjs validate --quick",

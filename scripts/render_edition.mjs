@@ -62,7 +62,7 @@ function replaceGeneratedData(index, renderedBlock) {
   return index.slice(0, legacyStart) + renderedBlock + "\n\n" + index.slice(legacyEnd);
 }
 
-function updateVisibleDate(index, today) {
+function updateVisibleDate(index, today, issues) {
   const dateLabel = today.label.replace(/^London\s*•\s*/, "");
   const shortDate = dateLabel.match(/^[A-Za-z]+\s+(\d{1,2}\s+[A-Za-z]+)\s+\d{4}$/)?.[1];
   if (!shortDate) throw new Error(`Could not derive the Today tab date from ${today.label}.`);
@@ -74,14 +74,16 @@ function updateVisibleDate(index, today) {
     )
     .replace(
       /(<button class="date-tab" id="tab-today"[^>]*>)[^<]*(<\/button>)/,
-      `$1Today ${shortDate}$2`,
-    );
+      `$1Latest · ${shortDate}$2`,
+    )
+    .replace(/(<button class="date-tab" id="tab-yesterday"[^>]*>)[^<]*(<\/button>)/, `$1Previous · ${issues.yesterday.label.match(/(\d{1,2}\s+[A-Za-z]+)\s+\d{4}$/)?.[1] || 'edition'}$2`)
+    .replace(/(<button class="date-tab" id="tab-day-before"[^>]*>)[^<]*(<\/button>)/, `$1Earlier · ${issues['day-before'].label.match(/(\d{1,2}\s+[A-Za-z]+)\s+\d{4}$/)?.[1] || 'edition'}$2`);
 }
 
 export function renderIndex(index, data) {
   const newline = index.includes("\r\n") ? "\r\n" : "\n";
   const withData = replaceGeneratedData(index, renderDataBlock(data).replace(/\n/g, newline));
-  return updateVisibleDate(withData, data.issues.today);
+  return updateVisibleDate(withData, data.issues.today, data.issues);
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

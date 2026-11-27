@@ -16,7 +16,7 @@ The voice is informed, calm, compact, and specific. It should feel like a well-e
 
 ## Editorial mix
 
-Each edition contains exactly ten stories, run as adjacent section blocks in this order:
+Each edition contains one to ten justified stories, run as adjacent section blocks in this order. These are targets and maximum counts; sections may be unfilled:
 
 1–4. Near Home activities
 5–6. Near Work
@@ -24,7 +24,9 @@ Each edition contains exactly ten stories, run as adjacent section blocks in thi
 8. London Technology
 9–10. Plan Ahead
 
-Do not let two items cover the same announcement or event — this applies within a section block as much as across the whole edition. Do not fill a slot with a weak story merely to satisfy the category; keep researching.
+Do not let two items cover the same announcement or event. Do not fill a slot with a weak story merely to satisfy the category. A shorter edition is normal when evidence or useful choices are limited; the helper supplies a reader-facing note if one is not provided. Do not publish an empty edition. Quick mode stops within its existing budget; full mode broadens only to fill a genuine coverage gap, not a numerical quota.
+
+News and useful upcoming events are equally welcome in the AI and technology sections. Both must pass the concrete London test; use the news clock for developments and the action clock for events. Discovery eligibility is a heuristic, never proof of location or availability. Unknown geography belongs in the separate verification queue until confirmed.
 
 ## London test for AI and technology
 
@@ -66,7 +68,7 @@ These are starting points, not a closed list and not permission to skip live ver
 
 Official activity adapters and the bounded evidence cache are documented in `docs/DAILY_RUN.md`. Direct discovery is not editorial verification. Broad catalogue discovery runs weekly; daily research remains focused on the ten choices.
 
-Quick updates follow `QUICK_NEWS_PROMPT.md` and the usual-source policy in `scripts/quick_sources.json`. They stop at a bounded shortlist/research budget and report any shortfall; they do not automatically broaden. Ten justified stories, live facts and rights checks, semantic duplicate review and full browser acceptance apply equally to both modes.
+Quick updates follow `QUICK_NEWS_PROMPT.md` and the usual-source policy in `scripts/quick_sources.json`. They stop at a bounded shortlist/research budget, publish the justified selection up to ten, and report gaps; they do not automatically broaden. Live facts and rights checks, semantic duplicate review and full browser acceptance apply equally to both modes.
 
 The permanent, growing set of previously used sources lives in `resources.html`.
 The tested POI discovery stack is listed in the POI Resources section there. Candidates in `PotentialUnusedResources.html` remain outside the production workflow until deliberately promoted.
@@ -143,8 +145,8 @@ The reference concepts are:
 
 - London date and weather checked live.
 - Current Northern and Overground status checked live.
-- Exactly ten stories in the required 4 Near Home / 2 Near Work / 1 London AI / 1 London Technology / 2 Plan Ahead order.
-- Four useful, distinct Near Home activities, with strong Heath items prioritised when they exist.
+- One to ten justified stories in the required section order and within the 4/2/1/1/2 caps, with a visible note for a shorter issue.
+- Useful, distinct Near Home activities, with strong Heath items prioritised when they exist.
 - Near Home and Near Work are geographically honest.
 - AI and technology pass the London test.
 - Plan Ahead contains a real future decision.

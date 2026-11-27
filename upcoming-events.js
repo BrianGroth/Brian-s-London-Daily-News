@@ -3,8 +3,8 @@ const MONTHS = [
   "July", "August", "September", "October", "November", "December",
 ];
 const SHORT_MONTHS = MONTHS.map((month) => month.slice(0, 3));
-const today = new Date();
-today.setHours(0, 0, 0, 0);
+const londonToday = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/London', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+const today = localDate(londonToday);
 
 let events = [];
 let anchorYear = today.getFullYear();
@@ -28,6 +28,7 @@ const elements = {
   todayLabel: document.getElementById("todayLabel"),
   loadError: document.getElementById("loadError"),
   dialog: document.getElementById("eventDialog"),
+  stillOnList: document.getElementById('stillOnList'),
 };
 
 document.getElementById("previousMonth").addEventListener("click", () => shiftMonth(-1));
@@ -49,9 +50,18 @@ document.getElementById("eventSearch").addEventListener("input", (event) => {
   query = event.target.value.trim().toLowerCase();
   render();
 });
-document.getElementById("closeDialog").addEventListener("click", () => elements.dialog.close());
+function closeEvent() {
+  if (location.hash.startsWith('#event=')) history.replaceState(null, '', location.pathname + location.search);
+  elements.dialog.close();
+}
+document.getElementById("closeDialog").addEventListener("click", closeEvent);
+document.getElementById('closeDayDialog').addEventListener('click', () => document.getElementById('dayDialog').close());
+document.getElementById('dayDialog').addEventListener('click', event => { if (event.target.id === 'dayDialog') event.target.close(); });
+elements.dialog.addEventListener('cancel', event => { event.preventDefault(); closeEvent(); });
+window.addEventListener('hashchange', showHashEvent);
+window.addEventListener('popstate', showHashEvent);
 elements.dialog.addEventListener("click", (event) => {
-  if (event.target === elements.dialog) elements.dialog.close();
+  if (event.target === elements.dialog) closeEvent();
 });
 
 loadEvents();
@@ -74,6 +84,7 @@ async function loadEvents() {
       .filter(isValidEvent)
       .sort((a, b) => eventSortKey(a).localeCompare(eventSortKey(b)));
     render();
+    showHashEvent();
   } catch (error) {
     console.error("Unable to load upcoming events", error);
     elements.loadError.hidden = false;
@@ -103,7 +114,7 @@ function displayDate(dateString, options) {
 }
 
 function formatTime(time) {
-  if (!time) return "All day";
+  if (!time) return "Time in details";
   const [hour, minute] = time.split(":").map(Number);
   return new Intl.DateTimeFormat("en-GB", { hour: "numeric", minute: "2-digit" })
     .format(new Date(2000, 0, 1, hour, minute));
@@ -134,6 +145,19 @@ function futureEvents() {
   return events.filter((event) => (event.endDate || event.startDate) >= todayKey);
 }
 
+function priorityDate(event, key = dateKey(today)) {
+  // Ongoing ranges are not promised to open daily. Use the closing date as a
+  // planning deadline, and retain the source's schedule in the event details.
+  return event.startDate < key ? (event.endDate || event.startDate) : event.startDate;
+}
+function decisionOrder(a, b) {
+  return priorityDate(a).localeCompare(priorityDate(b)) || (a.time || '23:59').localeCompare(b.time || '23:59') || a.title.localeCompare(b.title);
+}
+function dayOrder(a, b, key) {
+  const rank = event => event.startDate === (event.endDate || event.startDate) ? 0 : event.endDate === key ? 1 : 2;
+  return rank(a) - rank(b) || (a.time || '23:59').localeCompare(b.time || '23:59') || a.title.localeCompare(b.title);
+}
+
 function shiftMonth(delta) {
   const date = new Date(anchorYear, anchorMonth + delta, 1);
   anchorYear = date.getFullYear();
@@ -157,12 +181,10 @@ function render() {
   elements.monthPicker.value = `${anchorYear}-${String(anchorMonth + 1).padStart(2, "0")}`;
   elements.todayLabel.textContent = new Intl.DateTimeFormat("en-GB", { weekday: "short", day: "numeric", month: "short" }).format(today);
 
-  const upcoming = futureEvents();
+  const upcoming = futureEvents().sort(decisionOrder);
   elements.eventCount.textContent = upcoming.length;
   const todayKey = dateKey(today);
-  const nextEventKey = upcoming.length && upcoming[0].startDate < todayKey
-    ? todayKey
-    : upcoming[0]?.startDate;
+  const nextEventKey = upcoming.length ? priorityDate(upcoming[0]) : null;
   elements.nextEventDate.textContent = upcoming.length
     ? displayDate(nextEventKey, { day: "numeric", month: "short" })
     : "—";
@@ -192,7 +214,7 @@ function renderMonth() {
     const date = new Date(start);
     date.setDate(start.getDate() + index);
     const key = dateKey(date);
-    const dayEvents = events.filter((event) => eventOccursOn(event, key));
+    const dayEvents = events.filter(event => eventOccursOn(event, key) && eventMatches(event)).sort((a, b) => dayOrder(a, b, key));
 
     const cell = document.createElement("div");
     cell.className = "day-cell";
@@ -202,11 +224,21 @@ function renderMonth() {
     cell.tabIndex = key === todayKey ? 0 : -1;
     cell.setAttribute("aria-label", displayDate(key, { weekday: "long", day: "numeric", month: "long", year: "numeric" }));
     cell.addEventListener("keydown", handleGridKeydown);
+    cell.addEventListener('click', event => { if (!event.target.closest('button')) openDay(key); });
+    cell.addEventListener('keydown', event => {
+      if (event.target === cell && ['Enter', ' '].includes(event.key)) { event.preventDefault(); openDay(key); }
+    });
 
-    const dayNumber = document.createElement("span");
+    const dayNumber = document.createElement("button");
+    dayNumber.type = 'button';
     dayNumber.className = "day-number";
     dayNumber.textContent = date.getDate();
+    dayNumber.setAttribute('aria-label', `Show ${dayEvents.length} events on ${displayDate(key, { day: 'numeric', month: 'long', year: 'numeric' })}`);
+    dayNumber.addEventListener('click', () => openDay(key));
     cell.appendChild(dayNumber);
+    const count = document.createElement('span');
+    count.className = 'day-count'; count.textContent = dayEvents.length ? String(dayEvents.length) : '';
+    count.setAttribute('aria-hidden', 'true'); cell.appendChild(count);
 
     if (dayEvents.length) {
       const wrap = document.createElement("div");
@@ -216,16 +248,17 @@ function renderMonth() {
         button.type = "button";
         button.className = "calendar-event";
         button.dataset.section = event.section || "";
-        if (!eventMatches(event)) button.classList.add("is-dimmed");
         button.textContent = `${event.time ? `${formatTime(event.time)} ` : ""}${event.title}`;
         button.setAttribute("aria-label", `${event.title}, ${dateRange(event)}`);
         button.addEventListener("click", () => openEvent(event));
         wrap.appendChild(button);
       });
       if (dayEvents.length > 3) {
-        const more = document.createElement("span");
+        const more = document.createElement("button");
+        more.type = 'button';
         more.className = "more-events";
         more.textContent = `+${dayEvents.length - 3} more`;
+        more.addEventListener('click', () => openDay(key));
         wrap.appendChild(more);
       }
       cell.appendChild(wrap);
@@ -258,14 +291,15 @@ function createEventRow(event, agenda = false) {
 
   const date = document.createElement("div");
   date.className = "event-date";
-  date.innerHTML = `${displayDate(event.startDate, { day: "numeric" })}<span>${SHORT_MONTHS[localDate(event.startDate).getMonth()]}</span>`;
+  const nextDate = priorityDate(event);
+  date.innerHTML = `${displayDate(nextDate, { day: "numeric" })}<span>${SHORT_MONTHS[localDate(nextDate).getMonth()]}</span>`;
 
   const copy = document.createElement("div");
   copy.className = "event-copy";
   const title = document.createElement("strong");
   title.textContent = event.title;
   const detail = document.createElement("span");
-  detail.textContent = [formatTime(event.time), event.location].filter(Boolean).join(" · ");
+  detail.textContent = [(event.startDate < dateKey(today) ? `Until ${displayDate(event.endDate || event.startDate, {day: 'numeric', month: 'short'})}` : formatTime(event.time)), event.location].filter(Boolean).join(" · ");
   copy.append(title, detail);
   item.append(date, copy);
 
@@ -288,14 +322,19 @@ function createEventRow(event, agenda = false) {
 
 function renderUpcoming() {
   elements.upcomingList.innerHTML = "";
-  const list = futureEvents().filter(eventMatches).slice(0, 6);
+  const all = futureEvents().filter(eventMatches);
+  const list = all.filter(event => event.startDate >= dateKey(today)).sort(decisionOrder).slice(0, 6);
+  const ongoing = all.filter(event => event.startDate < dateKey(today)).sort(decisionOrder);
+  elements.stillOnList.innerHTML = '';
+  if (!ongoing.length) renderEmpty(elements.stillOnList, 'No ongoing opportunities.');
+  else ongoing.forEach(event => elements.stillOnList.appendChild(createEventRow(event)));
   if (!list.length) return renderEmpty(elements.upcomingList, query ? "No matching dates." : "Nothing is currently in the diary.");
   list.forEach((event) => elements.upcomingList.appendChild(createEventRow(event)));
 }
 
 function renderAgenda() {
   elements.agendaList.innerHTML = "";
-  const list = futureEvents().filter(eventMatches);
+  const list = futureEvents().filter(eventMatches).sort(decisionOrder);
   if (!list.length) return renderEmpty(elements.agendaList, query ? "No matching dates." : "Nothing is currently in the diary.");
   list.forEach((event) => elements.agendaList.appendChild(createEventRow(event, true)));
 }
@@ -307,7 +346,17 @@ function renderEmpty(container, message) {
   container.appendChild(item);
 }
 
-function openEvent(event) {
+function openDay(key) {
+  const list = document.getElementById('dayAgendaList'); list.innerHTML = '';
+  document.getElementById('dayDialogTitle').textContent = displayDate(key, {weekday:'long',day:'numeric',month:'long',year:'numeric'});
+  const matches = events.filter(event => eventOccursOn(event, key) && eventMatches(event)).sort((a,b) => dayOrder(a,b,key));
+  if (!matches.length) renderEmpty(list, 'No matching events for this date.');
+  else matches.forEach(event => list.appendChild(createEventRow(event, true)));
+  document.getElementById('dayDialog').showModal();
+}
+
+function openEvent(event, { updateHash = true } = {}) {
+  document.getElementById('dayDialog').close();
   document.getElementById("dialogSection").textContent = event.section || "Upcoming event";
   document.getElementById("dialogTitle").textContent = event.title;
   document.getElementById("dialogDate").textContent = dateRange(event);
@@ -319,6 +368,18 @@ function openEvent(event) {
   if (event.actionUrl) links.appendChild(createLink(event.actionUrl, event.action || "Event details"));
   if (event.sourceUrl && event.sourceUrl !== event.actionUrl) links.appendChild(createLink(event.sourceUrl, event.sourceName || "Source"));
   elements.dialog.showModal();
+  if (updateHash) history.pushState({ calendarEvent: event.id }, '', '#event=' + encodeURIComponent(event.id));
+}
+
+function showHashEvent() {
+  if (!location.hash.startsWith('#event=')) { if (elements.dialog.open) elements.dialog.close(); return; }
+  let id;
+  try { id = decodeURIComponent(location.hash.slice(7)); } catch { id = ''; }
+  const event = events.find(event => event.id === id);
+  const notice = document.getElementById('eventLinkNotice');
+  notice.hidden = Boolean(event);
+  if (event) { if (elements.dialog.open) elements.dialog.close(); openEvent(event, { updateHash:false }); }
+  else { if (elements.dialog.open) elements.dialog.close(); notice.textContent = 'This event is no longer in the current diary. Browse the calendar or follow its original newspaper source.'; }
 }
 
 function createLink(url, label) {

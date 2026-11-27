@@ -2,6 +2,8 @@
 
 Status: accepted for local implementation; Pages activation requires authorized publication.
 
+The fixed ten-story success criterion is superseded by [ADR 002](002-quality-first-editions.md). Verification, preservation and free-first architecture decisions remain in force.
+
 ## Decision
 
 Keep the static site and its established visual system. Improve candidate selection, bounded feed fetching, freshness diagnostics and deterministic data updates. Give the editor compact context and targeted full-record lookup rather than repeatedly reading entire stores. Retain live verification of selected facts, source/booking links, image rights and semantic story novelty.

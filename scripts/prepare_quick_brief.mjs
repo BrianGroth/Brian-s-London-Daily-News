@@ -36,6 +36,7 @@ export function prepareQuickBrief(input, now = Date.now()) {
   for (const [section, limit] of Object.entries(quickPolicy.candidateLimits)) {
     full.candidateSections[section] = full.candidateSections[section].slice(0, limit)
       .map(candidate => ({ ...candidate, alternateLeads: candidate.alternateLeads.slice(0, 1) }));
+    full.verificationQueue[section] = full.verificationQueue[section].slice(0, Math.max(0, limit - full.candidateSections[section].length));
   }
   full.upcomingEvents = full.upcomingEvents.slice(0, quickPolicy.maxCalendarOpportunities);
   full.officialResearchSources = full.officialResearchSources.filter(source => quickSourceAllowed(source.url));
@@ -45,7 +46,7 @@ export function prepareQuickBrief(input, now = Date.now()) {
   const reading = readingBrief(full);
   // Keep the complete bounded shortlist visible; the normal brief has different limits.
   for (const [section, candidates] of Object.entries(full.candidateSections)) {
-    reading.candidates[section] = candidates.map(({ id, title, publisher, ageHours, eventStart }) => ({ id, title, publisher, ageHours, eventStart }));
+    reading.candidates[section] = candidates.map(({ id, title, publisher, ageHours, eventStart, reviewFlags, priorStoryIds, geography }) => ({ id, title, publisher, ageHours, eventStart, reviewFlags, priorStoryIds, geography }));
   }
   return { full, reading: { ...reading, profile: full.profile, researchBudget: full.researchBudget, allowedDomains: quickPolicy.allowedDomains } };
 }
