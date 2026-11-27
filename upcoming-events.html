@@ -13,14 +13,15 @@
   <link rel="stylesheet" href="upcoming-events.css">
 </head>
 <body>
+  <a class="skip-link" href="#calendarMain">Skip to calendar</a>
   <div class="page-shell">
     <header class="masthead">
       <a class="brand" href="index.html">BRIAN'S LONDON DAILY NEWS</a>
       <p class="issue-line">London <span>•</span> Upcoming events</p>
-      <a class="back-link" href="index.html">Back to today</a>
+      <a class="back-link" href="index.html">Back to latest edition</a>
     </header>
 
-    <main>
+    <main id="calendarMain" tabindex="-1">
       <section class="calendar-intro" aria-labelledby="page-title">
         <div>
           <h1 id="page-title">Upcoming Events</h1>
@@ -28,8 +29,8 @@
           <p class="calendar-updated">Calendar updated <time id="calendarUpdated">—</time></p>
         </div>
         <dl class="calendar-summary" aria-label="Calendar summary">
-          <div><dt id="eventCount">0</dt><dd>events ahead</dd></div>
-          <div><dt id="nextEventDate">—</dt><dd>next date</dd></div>
+          <div><dt id="eventCount">0</dt><dd>upcoming + ongoing</dd></div>
+          <div><dt id="nextEventDate">—</dt><dd>next start / close</dd></div>
         </dl>
       </section>
 
@@ -54,6 +55,7 @@
       </section>
 
       <div id="loadError" class="load-error" role="alert" hidden>Events could not be loaded. Please try again later.</div>
+      <p id="eventLinkNotice" role="status" class="load-error" hidden></p>
 
       <section id="monthWorkspace" class="calendar-workspace">
         <div class="month-panel" aria-label="Month calendar">
@@ -65,18 +67,20 @@
 
         <aside class="up-next" aria-labelledby="up-next-title">
           <header>
-            <h2 id="up-next-title">Up next</h2>
+            <h2 id="up-next-title">Coming up</h2>
             <p id="todayLabel"></p>
           </header>
           <ol id="upcomingList" class="event-list"></ol>
-          <p class="rail-note">Showing the next six dates</p>
+          <p class="rail-note">Next six opportunities starting today or later</p>
+          <header><h2>Still on</h2><p>Ongoing opportunities, nearest closing date first. Check details for opening days.</p></header>
+          <ol id="stillOnList" class="event-list"></ol>
         </aside>
       </section>
 
       <section id="agendaWorkspace" class="agenda-workspace" aria-labelledby="agenda-title" hidden>
         <header>
           <h2 id="agenda-title">The forward diary</h2>
-          <p>Every saved event in chronological order.</p>
+          <p>Upcoming starts and ongoing closing dates. Check details for opening days.</p>
         </header>
         <ol id="agendaList" class="agenda-list"></ol>
       </section>
@@ -99,7 +103,13 @@
     <p id="dialogSummary" class="dialog-summary"></p>
     <div id="dialogLinks" class="dialog-links"></div>
   </dialog>
+  <dialog id="dayDialog" class="event-dialog" aria-labelledby="dayDialogTitle">
+    <button id="closeDayDialog" class="dialog-close" type="button" aria-label="Close day agenda">×</button>
+    <h2 id="dayDialogTitle"></h2>
+    <p>Date ranges indicate an opportunity’s duration, not continuous daily opening. Check the event details and source.</p>
+    <ol id="dayAgendaList" class="agenda-list"></ol>
+  </dialog>
 
-  <script src="upcoming-events.js?v=2026-08-04-3"></script>
+  <script src="upcoming-events.js?v=2026-11-27-1"></script>
 </body>
 </html>

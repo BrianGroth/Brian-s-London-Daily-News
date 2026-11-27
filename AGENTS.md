@@ -11,7 +11,7 @@ This project is a self-contained, static, mobile-first personal London newspaper
 - “Make the quick update to the newspaper”, “Quick update the newspaper” and “Publish a quick newspaper update” invoke `QUICK_NEWS_PROMPT.md`. Natural equivalents with the same intent also apply.
 - A quick-update request authorizes the complete research, writing, validation and publication workflow, including commit, ordinary push and public verification, unless the user explicitly requests a preview only.
 - Read `QUICK_NEWS_PROMPT.md` and `NEWS_CONTEXT.md`; use `quick:prepare`, the bounded usual-source shortlist, `quick:apply`, `quick:validate` and `quick:publish -- --reviewed`. Do not automatically expand a quick request into full discovery.
-- Ten justified stories, live verification, archive rules, complete browser checks and append-only stores remain mandatory. Report a shortfall if the bounded sources cannot support the mix.
+- Publish one to ten justified stories; never pad a weak section. Live verification, archive rules, complete browser checks and append-only stores remain mandatory. An empty verified selection is a blocker.
 
 ## Read before changing anything
 
@@ -32,7 +32,7 @@ This project is a self-contained, static, mobile-first personal London newspaper
 ## Data and editorial invariants
 
 - `index.html` contains the published newspaper and its rolling edition archive. Preserve its data structure and archive rotation rules.
-- A new `today` edition must contain exactly ten stories: four adjacent Near Home activities, two Near Work stories, one London AI story, one London Technology story, and two Plan Ahead stories, in that order.
+- A new `today` edition contains one to ten justified stories, with adjacent section targets/caps of four Near Home activities, two Near Work, one London AI, one London Technology and two Plan Ahead, in that order. Sections may be unfilled. News and useful events are equally eligible for AI/technology under their respective freshness clocks. Shorter issues receive a visible explanation automatically; no separate approval is needed.
 - Never rotate the archive twice on the same London date. Do not repeat yesterday's underlying stories, even under different headlines or sources.
 - Treat `data/rss_candidates.json` as unverified discovery output. Refresh it with `python scripts/collect_candidates.py`; never treat it as reporting by itself.
 - Quick mode uses two restricted queries and isolated `.daily-work/quick/` files instead of refreshing the full RSS pool. This is the explicit quick-mode exception; discovery still requires live verification.

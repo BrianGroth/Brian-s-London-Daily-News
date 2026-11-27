@@ -23,3 +23,13 @@ test("renderer preserves Windows line endings without reporting a false data mis
   assert.equal(result.replaceAll("\r\n", "").includes("\n"), false);
   assert.equal(renderIndex(result, data), result);
 });
+
+test('archive tabs show publication dates rather than assuming consecutive days', () => {
+  const make = (label) => ({ label, stories: [{ imageKey: 'venue' }] });
+  const data = { schemaVersion: 1, images: { venue: {} }, issues: { today: make('London • Monday 16 November 2026'), yesterday: make('London • Saturday 31 October 2026'), 'day-before': make('London • Wednesday 28 October 2026') } };
+  const page = '<button class="date-tab" id="tab-today">Today</button><button class="date-tab" id="tab-yesterday">Yesterday</button><button class="date-tab" id="tab-day-before">Day Before</button><script>\n    /* GENERATED DAILY DATA: run npm run render:edition */\n    /* END GENERATED DAILY DATA */\n</script>';
+  const result = renderIndex(page, data);
+  assert.match(result, />Latest · 16 November</);
+  assert.match(result, />Previous · 31 October</);
+  assert.match(result, />Earlier · 28 October</);
+});

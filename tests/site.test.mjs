@@ -37,7 +37,7 @@ test("brand and required palette are present", () => {
   assert.match(about, /BRIAN'S LONDON DAILY NEWS/);
 });
 
-test("editions retain the standard mix or an explicit short-edition explanation and remain non-repeating", () => {
+test("editions retain section caps/order and remain non-repeating", () => {
   const issues = extractIssues();
   const order = ["today", "yesterday", "day-before"];
   for (const key of order) {

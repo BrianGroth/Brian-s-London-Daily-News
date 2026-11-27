@@ -110,6 +110,9 @@ async function homepage(page, viewportName) {
     const panel = page.locator(`#${day}`);
     assert.ok(await panel.isVisible());
     assert.equal((await page.locator("#issue-line").textContent()).replace(/\s+/g, " ").trim(), issue.label);
+    const tabLabel = { today: 'Latest', yesterday: 'Previous', 'day-before': 'Earlier' }[day];
+    assert.match(await page.locator(`#tab-${day}`).innerText(), new RegExp(tabLabel));
+    assert.match(await panel.locator('.morning-snapshot').innerText(), /Morning snapshot/);
     assert.equal(await panel.locator(".story").count(), issue.stories.length);
     assert.deepEqual(await panel.locator(".section-label").allTextContents(), issue.stories.map(({ section }) => section));
     assertStoryMix(issue);
@@ -143,6 +146,26 @@ async function homepage(page, viewportName) {
   const footer = page.locator("footer.site-footer");
   assert.deepEqual(await footer.locator("a").evaluateAll((links) => links.map((link) => link.getAttribute("href"))), ["upcoming-events.html", "about.html", "resources.html"]);
   assert.equal(await page.locator("#today .morning a[href='poi/']").count(), 1);
+  assert.equal(await page.locator('h1').count(), 1);
+  assert.ok(await page.locator('.skip-link').count());
+  await page.getByRole('button', { name: 'Compact', exact: true }).click();
+  assert.equal(await page.locator('body').getAttribute('data-reading-view'), 'compact');
+  if (viewportName === 'mobile') {
+    const positions = await page.locator('#today .story').first().evaluate(article => ({ body: article.querySelector('.story-body').getBoundingClientRect().top, image: article.querySelector('.story-media').getBoundingClientRect().top }));
+    assert.ok(positions.body < positions.image, 'compact mobile view puts the brief before the image');
+    await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
+    await healthy(page, `${viewportName}-compact-top`);
+    await page.locator('#today .story').first().evaluate(article => article.scrollIntoView({ block: 'start', behavior: 'instant' }));
+    await healthy(page, `${viewportName}-compact-story`);
+    const row = await page.locator('.reading-tools button').evaluateAll(buttons => buttons.map(button => button.getBoundingClientRect().top));
+    assert.equal(row[0], row[1], 'mobile reading controls share one row');
+  }
+  await page.reload({ waitUntil: 'domcontentloaded' });
+  assert.equal(await page.locator('body').getAttribute('data-reading-view'), 'compact', 'reading preference persists');
+  await page.getByRole('button', { name: 'Full newspaper', exact: true }).click();
+  const firstJump = page.locator('#today .section-jumps a').first();
+  await firstJump.click();
+  assert.equal(await page.evaluate(() => document.activeElement.classList.contains('story')), true);
   await footer.locator("a[href='upcoming-events.html']").click();
   assert.equal(new URL(page.url()).pathname, new URL(local("upcoming-events.html")).pathname);
 }
@@ -152,7 +175,8 @@ async function eventsPage(page, viewportName) {
   await page.waitForFunction(() => document.querySelector("#calendarUpdated").dateTime !== "");
   assert.equal(await page.locator("#calendarUpdated").getAttribute("datetime"), calendar.updatedAt);
   const today = await page.evaluate(() => new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/London", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date()));
-  const future = calendar.events.filter((event) => (event.endDate || event.startDate) >= today).sort((a, b) => `${a.startDate}T${a.time || "00:00"}`.localeCompare(`${b.startDate}T${b.time || "00:00"}`));
+  const decisionDate = event => event.startDate < today ? (event.endDate || event.startDate) : event.startDate;
+  const future = calendar.events.filter((event) => (event.endDate || event.startDate) >= today).sort((a, b) => decisionDate(a).localeCompare(decisionDate(b)) || (a.time || '23:59').localeCompare(b.time || '23:59') || a.title.localeCompare(b.title));
   assert.equal(Number(await page.locator("#eventCount").innerText()), future.length);
   assert.equal(await page.locator("#loadError").isVisible(), false);
   // Inspect every stored record in its start month; crowded cells expose a count.
@@ -165,13 +189,17 @@ async function eventsPage(page, viewportName) {
       const cell = page.getByRole("gridcell", { name: dayLabel, exact: true });
       assert.ok(await cell.count(), `${event.title}: start day is rendered`);
       const button = cell.getByRole("button", { name: `${event.title},`, exact: false });
-      if (await button.count()) {
+      if (await button.count() && await button.first().isVisible()) {
         await button.first().click();
         assert.equal(await page.locator("#dialogTitle").innerText(), event.title);
         assert.ok(await page.locator("#dialogLinks a").count());
         await page.locator("#closeDialog").click();
       } else {
-        assert.ok(await cell.locator(".more-events").count(), `${event.title}: represented in crowded-day overflow`);
+        await cell.locator('.day-number').click();
+        assert.ok(await page.locator('#dayDialog').isVisible(), 'full day agenda is available');
+        await page.locator('#dayAgendaList .event-row').filter({ has: page.locator('.event-copy strong', { hasText: event.title }) }).first().click();
+        assert.equal(await page.locator('#dialogTitle').innerText(), event.title, `${event.title}: reachable through full day agenda`);
+        await page.locator('#closeDialog').click();
       }
     }
   }
@@ -183,12 +211,33 @@ async function eventsPage(page, viewportName) {
   if (future.length) {
     await page.locator("#agendaList .event-row").first().press("Enter");
     assert.equal(await page.locator("#dialogTitle").innerText(), future[0].title);
+    assert.equal(new URL(page.url()).hash, '#event=' + encodeURIComponent(future[0].id));
+    await page.goBack();
+    await page.waitForFunction(() => !document.getElementById('eventDialog').open);
+    await page.goForward();
+    await page.waitForFunction(() => document.getElementById('eventDialog').open);
     await page.keyboard.press("Escape");
   }
   await page.locator("#eventSearch").fill("no-match-smoke-test-86b1c9");
   assert.equal(await page.locator("#agendaList .event-row").count(), 0);
   await page.locator("#eventSearch").fill("");
   await healthy(page, `${viewportName}-calendar-agenda`);
+  if (calendar.events.length) {
+    const target = calendar.events.at(-1);
+    await page.locator('#monthViewButton').click();
+    await page.locator('#monthPicker').evaluate((input, value) => { input.value = value; input.dispatchEvent(new Event('change', { bubbles: true })); }, target.startDate.slice(0,7));
+    await page.locator('#eventSearch').fill(target.title);
+    const label = new Intl.DateTimeFormat('en-GB', { timeZone:'Europe/London', weekday:'long',day:'numeric',month:'long',year:'numeric' }).format(new Date(target.startDate+'T12:00:00Z'));
+    await page.getByRole('gridcell', {name:label, exact:true}).locator('.day-number').click();
+    assert.ok((await page.locator('#dayAgendaList .event-copy strong').allTextContents()).includes(target.title), 'search finds matches before daily truncation');
+    await page.locator('#closeDayDialog').click();
+    await page.goto(local('upcoming-events.html') + '#event=' + encodeURIComponent(calendar.events[0].id));
+    await page.waitForFunction(() => document.getElementById('eventDialog').open);
+    assert.equal(await page.locator('#dialogTitle').innerText(), calendar.events[0].title);
+    await page.goto(local('upcoming-events.html') + '#event=unknown-event');
+    await page.waitForFunction(() => !document.getElementById('eventLinkNotice').hidden);
+    assert.equal(await page.locator('#eventDialog').isVisible(), false);
+  }
 }
 
 async function companions(page, viewportName) {

@@ -50,6 +50,45 @@ function hoursOld(item, referenceTime) {
   return Math.max(0, (referenceTime - published) / 3_600_000);
 }
 
+// These are discovery gates, never factual verification. An operator's name or
+// publisher address is not evidence of an event's physical location.
+export function geographicEligibility(item, section) {
+  const location = typeof item.address === 'object' ? Object.values(item.address).join(' ') : item.address || '';
+  const text = `${normalizedTitle({ ...item, title: item.title || '' })} ${item.venue || ''} ${location} ${item.summary || ''}`
+    .replace(/(?:managed|organised|organized|operated|owned|run|supported|funded)\s+(?:directly\s+)?by\s+(?:the\s+)?City of London(?: Corporation)?/gi, '')
+    .replace(/City of London Corporation/gi, '');
+  const home = /\b(?:hampstead|belsize|swiss cottage|gospel oak|south end green|finchley road|kenwood|keats house|NW3)\b/i.exec(text);
+  const work = /\b(?:city of london|liverpool street|bishopsgate|broadgate|spitalfields|square mile|moorgate|barbican|guildhall|bank station|EC[1234][A-Z0-9 ]*)\b/i.exec(text);
+  const london = /\b(?:london|UCL|Imperial(?: College)?|King['’ ]s College London|Queen Mary University|Alan Turing Institute)\b/i.exec(text);
+  const evidence = section === 'Near Home' ? home : section === 'Near Work' ? (!home && work) : london || home || work;
+  return { eligible: Boolean(evidence), evidence: evidence?.[0] || null,
+    reason: evidence ? 'Positive location context; verify the actual place live.' : 'Location unconfirmed or outside section; investigate before selection.' };
+}
+
+function canonicalUrl(value) {
+  try { const url = new URL(value); url.hash = ''; for (const key of [...url.searchParams.keys()]) if (/^(utm_|fbclid|gclid)/i.test(key)) url.searchParams.delete(key); return url.href.replace(/\/$/, ''); }
+  catch { return value; }
+}
+
+function candidateReview(item, prior) {
+  const text = `${item.title} ${item.summary || ''}`;
+  const priorStoryIds = prior.filter(story => (story.sources || []).some(([, url]) => canonicalUrl(url) === canonicalUrl(item.link)) || normalizedTitle({ title: story.headline }) === normalizedTitle(item)).map(story => story.id);
+  const reviewFlags = [];
+  if (priorStoryIds.length) reviewFlags.push('Possible previous coverage; compare the underlying development.');
+  if (/\b(?:children|kids|under[- ]?\d+|families|family event)\b/i.test(text)) reviewFlags.push('Family/child audience: check suitability.');
+  if (/\b(?:staff only|members only|students only|invitation only|invite.only)\b/i.test(text)) reviewFlags.push('Restricted audience: check eligibility.');
+  if (/\b(?:cancelled|canceled|postponed|sold out)\b/i.test(text)) reviewFlags.push('Cancellation/availability warning: verify live.');
+  return { reviewFlags, priorStoryIds };
+}
+
+export function calendarOpportunities(events, referenceDate) {
+  return events.filter(event => (event.endDate || event.startDate) >= referenceDate).map(event => {
+    const ongoing = event.startDate < referenceDate;
+    const nextActionDate = ongoing ? (event.endDate || referenceDate) : event.startDate;
+    return { ...event, nextActionDate, actionKind: ongoing ? 'closing' : 'starts', needsLiveReverification: true };
+  }).sort((a, b) => a.nextActionDate.localeCompare(b.nextActionDate) || a.id.localeCompare(b.id));
+}
+
 const activityPattern = /\b(walks?|tours?|workshops?|performances?|exhibitions?|festivals?|tickets?|bookings?|concerts?|volunteer|classes|screenings?|open day|guided|register)\b/i;
 const primarySeeds = new Set(["heath-hands.org.uk", "hampsteadtheatre.com", "english-heritage.org.uk", "barbican.org.uk", "turing.ac.uk"]);
 
@@ -146,8 +185,8 @@ function topicSignature(item) {
 }
 
 function sameTopicSignatures(a, b) {
-  if (a.title === b.title) return true;
   if (a.numbers !== b.numbers || a.actionDate !== b.actionDate) return false;
+  if (a.title === b.title) return true;
   let common = 0;
   for (const word of a.tokens) if (b.tokens.has(word)) common += 1;
   return common >= 5 && common / (a.tokens.size + b.tokens.size - common) >= 0.65;
@@ -173,25 +212,33 @@ export function prepareBrief({ rss, direct = { items: [] }, editions, events, po
   const seenLinks = new Set();
   for (const item of [...(direct.items || []), ...(rss.items || [])]) {
     const titleKey = normalizedTitle(item);
-    if (!titleKey || !item.link || seenLinks.has(item.link)) continue;
+    const occurrenceKey = `${canonicalUrl(item.link)}\n${item.event_start || ''}`;
+    if (!titleKey || !item.link || seenLinks.has(occurrenceKey)) continue;
     if (isBlockedDomain(hostname(item.link), blocked) || isBlockedDomain(hostname(item.publisher_url), blocked)) continue;
-    seenLinks.add(item.link);
+    seenLinks.add(occurrenceKey);
     deduplicated.push(item);
   }
 
+  const verificationQueue = {};
+  const prior = Object.values(editions.issues).flatMap(issue => issue.stories || []);
   const candidateSections = Object.fromEntries(sections.map((section) => {
     const ranked = deduplicated
-      .map((item) => ({ item, signature: topicSignature(item), ranking: scoreForSection(item, section, referenceTime, domains.activeResourceDomains) }))
-      .filter(({ item, ranking }) => !["London AI", "London Technology"].includes(section) || (item.published_at && ranking.ageHours <= 72))
+      .map((item) => ({ item, signature: topicSignature(item), ranking: { ...scoreForSection(item, section, referenceTime, domains.activeResourceDomains), ...candidateReview(item, prior), geography: geographicEligibility(item, section) } }))
+      .filter(({ item, ranking }) => {
+        if (!["London AI", "London Technology"].includes(section)) return true;
+        const topic = sectionTerms[section].some(term => ` ${item.title} ${item.summary || ''} `.toLowerCase().includes(term));
+        const upcoming = Date.parse(item.event_end || item.event_start || '') >= referenceTime;
+        return topic && (upcoming || (item.published_at && ranking.ageHours <= 72 && Date.parse(item.published_at) <= referenceTime + 300000));
+      })
       .sort((a, b) => b.ranking.score - a.ranking.score || a.ranking.ageHours - b.ranking.ageHours || a.item.link.localeCompare(b.item.link));
     const groups = [];
-    for (const candidate of ranked) {
+    for (const candidate of ranked.filter(c => c.ranking.geography.eligible)) {
       const group = groups.find(({ signature }) => sameTopicSignatures(signature, candidate.signature));
       if (group) group.alternates.push(candidate);
       else if (groups.length < candidatesPerSection) groups.push({ ...candidate, alternates: [] });
     }
     const compact = ({ item, ranking }) => ({
-        id: item.id || "lead-" + createHash("sha256").update(item.link).digest("hex").slice(0, 16),
+        id: item.id || "lead-" + createHash("sha256").update(item.link + (item.event_start ? '\n' + item.event_start : '')).digest("hex").slice(0, 16),
         title: item.title,
         eventStart: item.event_start, eventEnd: item.event_end,
         evidenceFile: item.evidence_file, checkedAt: item.checked_at,
@@ -204,13 +251,13 @@ export function prepareBrief({ rss, direct = { items: [] }, editions, events, po
         needsDestinationResolution: /news\.google\.com/i.test(item.link),
         ...ranking,
       });
+    verificationQueue[section] = ranked.filter(c => !c.ranking.geography.eligible && (c.item.category_hint === section || c.ranking.signals.some(signal => sectionTerms[section].includes(signal)))).slice(0, 5).map(compact);
     return [section, groups.slice(0, candidatesPerSection).map((group) => ({
       ...compact(group), alternateLeads: group.alternates.map(compact),
     }))];
   }));
 
-  const upcomingEvents = (events.events || [])
-    .filter((event) => (event.endDate || event.startDate) >= referenceDate)
+  const upcomingEvents = calendarOpportunities(events.events || [], referenceDate)
     .map((event) => ({
       id: event.id,
       title: event.title,
@@ -219,9 +266,10 @@ export function prepareBrief({ rss, direct = { items: [] }, editions, events, po
       time: event.time,
       location: event.location,
       section: event.section,
+      nextActionDate: event.nextActionDate, actionKind: event.actionKind,
       sourceUrl: event.sourceUrl,
       needsLiveReverification: true,
-    })).sort((a, b) => a.startDate.localeCompare(b.startDate) || a.id.localeCompare(b.id));
+    }));
 
   const warnings = [];
   const sourceAgeHours = (referenceTime - Date.parse(rss.generated_at)) / 3_600_000;
@@ -246,6 +294,7 @@ export function prepareBrief({ rss, direct = { items: [] }, editions, events, po
     candidatesPerSection,
     notice: "Discovery shortlist only. Open destination pages, verify every volatile claim live, and prefer primary sources before publication.",
     candidateSections,
+    verificationQueue,
     officialResearchSources: officialResearchSources(resourcesHtml, domains.activeResourceDomains),
     archiveDates: Object.fromEntries(Object.entries(editions.issues).map(([key, issue]) => [key, {
       date: issue.date || issue.stories[0]?.id?.match(/^\d{4}-\d{2}-\d{2}/)?.[0] || null,
@@ -270,13 +319,15 @@ export function readingBrief(brief) {
     id: c.id, title: c.title.slice(0, 150), publisher: c.publisher, ageHours: c.ageHours,
     ...(c.eventStart ? { eventStart: c.eventStart, eventEnd: c.eventEnd } : {}),
     primary: c.primarySourceSignal, alternatives: c.alternateLeads.length,
+    reviewFlags: c.reviewFlags || [], priorStoryIds: c.priorStoryIds || [], geography: c.geography,
   }))]));
   return { schemaVersion: 1, londonDate: brief.londonDate,
     notice: "Discovery only. Read selected full records with lookup:context candidates ID. Reverify facts live; alternatives and the full pool remain on disk.",
     health: { rss: brief.collectionHealth.status, direct: brief.directCollectionHealth?.status, rawCount: brief.sourceCandidateCount },
     warnings: brief.warnings, archiveDates: brief.archiveDates,
     adjacentStories: Object.fromEntries(Object.entries(brief.adjacentEditionStories).map(([key, stories]) => [key, stories.map(({ id, section, headline }) => ({ id, section, headline }))])),
-    candidates, upcoming: brief.upcomingEvents.slice(0, 12).map(({ id, title, startDate, endDate }) => ({ id, title, startDate, endDate })),
+    candidates, verificationQueue: Object.fromEntries(sections.map(section => [section, (brief.verificationQueue?.[section] || []).slice(0, 2).map(({ id, title, geography }) => ({ id, title, geography }))])),
+    upcoming: brief.upcomingEvents.slice(0, 12).map(({ id, title, startDate, endDate, nextActionDate, actionKind }) => ({ id, title, startDate, endDate, nextActionDate, actionKind })),
     counts: { calendar: brief.upcomingEvents.length, pois: brief.editorialPois.length, resources: brief.activeResourceDomains.length },
     blockedResourceDomains: brief.blockedResourceDomains,
     lookup: "Use editions, stories, candidates, images, events, pois or resources with an ID or search phrase. Never dump the full pool by default." };

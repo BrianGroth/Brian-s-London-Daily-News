@@ -33,9 +33,19 @@ test('quick brief filters broad sources, caps selection and calendar, and preser
   for (const [section, limit] of Object.entries(quickPolicy.candidateLimits)) {
     assert.ok(full.candidateSections[section].length <= limit);
     assert.ok(reading.candidates[section].length <= limit);
+    assert.ok(full.candidateSections[section].length + full.verificationQueue[section].length <= limit);
   }
   assert.equal(reading.adjacentStories.today[0].headline, 'Compare underlying story');
   assert.equal(reading.researchBudget.minutes, 12);
+});
+
+test('quick brief exposes unknown geography separately and retains audience and repeat flags', () => {
+  const input = { rss: { items: [{ title: 'Quantum seminar', link: 'https://www.imperial.ac.uk/events/unknown', category_hint: 'London Technology', published_at: new Date(now).toISOString() }], generated_at: new Date(now).toISOString(), collection_status: 'ok' }, direct: { items: [{ title: 'Hampstead children walk', link: 'https://heath-hands.org.uk/walk', category_hint: 'Near Home', event_start: '2026-10-29T10:00:00Z' }] }, editions: { issues: { today: { stories: [{ id: 'previous', headline: 'Previous walk', sources: [['Host','https://heath-hands.org.uk/walk']] }] }, yesterday: { stories: [] } } }, events: { events: [] }, pois: { items: [] }, resourcesHtml: resource('heath-hands.org.uk') + resource('imperial.ac.uk') };
+  const { reading } = prepareQuickBrief(input, now);
+  assert.equal(reading.candidates['London Technology'].length, 0);
+  assert.equal(reading.verificationQueue['London Technology'][0].geography.eligible, false);
+  assert.deepEqual(reading.candidates['Near Home'][0].priorStoryIds, ['previous']);
+  assert.ok(reading.candidates['Near Home'][0].reviewFlags.some(flag => /child/.test(flag)));
 });
 
 test('quick source restrictions never reactivate blocked domains or pad an empty section', () => {

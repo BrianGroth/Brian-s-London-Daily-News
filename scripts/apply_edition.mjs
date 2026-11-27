@@ -69,7 +69,9 @@ function directory(html) {
 }
 
 function validateMorning(morning, blocked) {
-  fields(morning, ["mode", "modeUrl", "temperature", "weatherUrl", "rain", "pollen", "transit"]);
+  fields(morning, ["mode", "modeUrl", "temperature", "weatherUrl", "rain", "pollen", "transit"], ["checkedAt"]);
+  if (morning.checkedAt !== undefined) requireValue(typeof morning.checkedAt === 'string' && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})$/.test(morning.checkedAt) && Number.isFinite(Date.parse(morning.checkedAt)), 'checkedAt must be an ISO timestamp with timezone.');
+  if (morning.checkedAt !== undefined) date(morning.checkedAt.slice(0, 10));
   requireValue(morning.mode === "Nearby POI" && morning.modeUrl === "poi/", "Morning strip must retain Nearby POI.");
   for (const key of ["temperature", "rain", "pollen"]) {
     text(morning[key], key);
@@ -91,7 +93,9 @@ function validateStories(stories, images, issueDate, blocked) {
   const ids = new Set();
   const headlines = new Set();
   stories.forEach((story, index) => {
-    fields(story, ["id", "section", "headline", "location", "brief", "why", "sources", "imageKey"], ["action", "actionUrl"]);
+    fields(story, ["id", "section", "headline", "location", "brief", "why", "sources", "imageKey"], ["action", "actionUrl", "eventIds", "imageAlt", "imageCaption"]);
+    for (const field of ['imageAlt', 'imageCaption']) if (story[field] !== undefined) text(story[field], field);
+    if (story.eventIds !== undefined) requireValue(Array.isArray(story.eventIds) && story.eventIds.every(id => typeof id === 'string' && /^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/.test(id)) && new Set(story.eventIds).size === story.eventIds.length, 'eventIds must contain unique stable event IDs.');
     requireValue(typeof story.id === "string" && story.id.startsWith(`${issueDate}-`) && /^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/.test(story.id), "Story IDs must begin with the edition date.");
     requireValue(!ids.has(story.id), `Duplicate story ID ${story.id}.`);
     ids.add(story.id);
@@ -163,6 +167,7 @@ export function buildEditionUpdate(input, current) {
     images[key] = structuredClone(image);
   }
   validateMorning(input.edition.morning, blocked);
+  if (input.edition.morning.checkedAt !== undefined) requireValue(new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/London' }).format(new Date(input.edition.morning.checkedAt)) === input.date, 'Morning checkedAt must match the London edition date.');
   validateStories(input.edition.stories, images, issueDate, blocked);
   const issues = current.editions.issues;
   for (const key of ["today", "yesterday", "day-before"]) requireValue(Array.isArray(issues?.[key]?.stories) && issues[key].stories.length > 0, `Missing ${key} archive.`);
@@ -177,6 +182,7 @@ export function buildEditionUpdate(input, current) {
   }
   const footer = new Intl.DateTimeFormat("en-GB", { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: "Europe/London" }).format(new Date(`${issueDate}T12:00:00Z`)).replace(",", "");
   const edition = { label: `London • ${footer}`, footer, ...structuredClone(input.edition) };
+  if (edition.stories.length < 10 && !edition.shortEditionReason) edition.shortEditionReason = `${edition.stories.length} worthwhile picks today. Only verified, useful choices are included.`;
   const nextIssues = { today: edition, yesterday: structuredClone(yesterday), "day-before": structuredClone(sameDay ? issues["day-before"] : issues.yesterday) };
   const allIds = Object.values(nextIssues).flatMap((issue) => issue.stories.map((story) => story.id));
   requireValue(new Set(allIds).size === allIds.length, "Story IDs must be unique across the archive.");
@@ -194,6 +200,7 @@ export function buildEditionUpdate(input, current) {
     if (event.venue !== undefined) text(event.venue, "venue");
     url(event.sourceUrl, "Event sourceUrl", blocked, true); action(event, blocked);
   }, (a, b) => a.startDate <= (b.endDate ?? b.startDate) && b.startDate <= (a.endDate ?? a.startDate) && (normalize(a.title) === normalize(b.title) || canonicalUrl(a.sourceUrl) === canonicalUrl(b.sourceUrl)), "Events");
+  for (const story of edition.stories) for (const id of story.eventIds || []) requireValue(events.records.some(event => event.id === id), `Unknown calendar event ${id}.`);
   const pois = appendRecords(current.pois.items, input.pois ?? [], (poi) => {
     fields(poi, ["id", "name", "category", "lat", "lon", "description", "url", "sourceUrl", "addedOn"]);
     requireValue(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(poi.id), "Invalid POI ID.");
