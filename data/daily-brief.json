@@ -1,137 +1,126 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T15:10:25.235Z",
+  "generatedAt": "2026-11-27T16:05:15.344Z",
   "londonDate": "2026-11-27",
-  "sourceCollectedAt": "2026-11-27T15:09:39.479494+00:00",
+  "sourceCollectedAt": "2026-11-27T15:50:58.358936+00:00",
   "collectionHealth": {
-    "status": "partial",
-    "lastSuccessAt": "2026-11-27T15:09:39.479494+00:00",
+    "status": "ok",
+    "lastSuccessAt": "2026-11-27T15:50:58.358936+00:00",
     "feeds": [
       {
         "url": "https://news.google.com/rss/search?q=%22Hampstead%20Heath%22%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Near Home",
-        "attempted_at": "2026-11-27T15:09:39.479494+00:00",
-        "last_success_at": "2026-11-26T15:21:48.003952+00:00",
-        "status": "error",
-        "item_count": 0,
-        "error": "HTTP Error 503: Service Unavailable",
-        "duration_ms": 10032
+        "attempted_at": "2026-11-27T15:50:58.358936+00:00",
+        "last_success_at": "2026-11-27T15:50:58.358936+00:00",
+        "status": "ok",
+        "item_count": 10,
+        "duration_ms": 404
       },
       {
         "url": "https://news.google.com/rss/search?q=%28Hampstead%20OR%20%22Belsize%20Park%22%20OR%20%22Swiss%20Cottage%22%20OR%20NW3%29%20London%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Near Home",
-        "attempted_at": "2026-11-27T15:09:39.479494+00:00",
-        "last_success_at": "2026-11-26T15:21:48.003952+00:00",
-        "status": "error",
-        "item_count": 0,
-        "error": "HTTP Error 503: Service Unavailable",
-        "duration_ms": 8481
+        "attempted_at": "2026-11-27T15:50:58.358936+00:00",
+        "last_success_at": "2026-11-27T15:50:58.358936+00:00",
+        "status": "ok",
+        "item_count": 14,
+        "duration_ms": 412
       },
       {
         "url": "https://news.google.com/rss/search?q=%28Gospel%20Oak%20OR%20%22Finchley%20Road%22%20OR%20%22South%20End%20Green%22%29%20London%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Near Home",
-        "attempted_at": "2026-11-27T15:09:39.479494+00:00",
-        "last_success_at": "2026-11-26T15:21:48.003952+00:00",
-        "status": "error",
-        "item_count": 0,
-        "error": "HTTP Error 503: Service Unavailable",
-        "duration_ms": 16761
+        "attempted_at": "2026-11-27T15:50:58.358936+00:00",
+        "last_success_at": "2026-11-27T15:50:58.358936+00:00",
+        "status": "ok",
+        "item_count": 4,
+        "duration_ms": 2336
       },
       {
         "url": "https://news.google.com/rss/search?q=%28%22City%20of%20London%22%20OR%20Bishopsgate%20OR%20Broadgate%20OR%20%22Liverpool%20Street%22%29%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Near Work",
-        "attempted_at": "2026-11-27T15:09:39.479494+00:00",
-        "last_success_at": "2026-11-26T15:21:48.003952+00:00",
-        "status": "error",
-        "item_count": 0,
-        "error": "HTTP Error 503: Service Unavailable",
-        "duration_ms": 17073
+        "attempted_at": "2026-11-27T15:50:58.358936+00:00",
+        "last_success_at": "2026-11-27T15:50:58.358936+00:00",
+        "status": "ok",
+        "item_count": 15,
+        "duration_ms": 2039
       },
       {
         "url": "https://news.google.com/rss/search?q=%28Spitalfields%20OR%20%22Square%20Mile%22%20OR%20Moorgate%20OR%20Barbican%29%20London%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Near Work",
-        "attempted_at": "2026-11-27T15:09:39.479494+00:00",
-        "last_success_at": "2026-11-26T15:21:48.003952+00:00",
-        "status": "error",
-        "item_count": 0,
-        "error": "HTTP Error 503: Service Unavailable",
-        "duration_ms": 15636
+        "attempted_at": "2026-11-27T15:50:58.358936+00:00",
+        "last_success_at": "2026-11-27T15:50:58.358936+00:00",
+        "status": "ok",
+        "item_count": 15,
+        "duration_ms": 510
       },
       {
         "url": "https://news.google.com/rss/search?q=London%20artificial%20intelligence%20AI%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "London AI",
-        "attempted_at": "2026-11-27T15:09:39.479494+00:00",
-        "last_success_at": "2026-11-25T15:40:16.722032+00:00",
-        "status": "error",
-        "item_count": 0,
-        "error": "HTTP Error 503: Service Unavailable",
-        "duration_ms": 16216
+        "attempted_at": "2026-11-27T15:50:58.358936+00:00",
+        "last_success_at": "2026-11-27T15:50:58.358936+00:00",
+        "status": "ok",
+        "item_count": 15,
+        "duration_ms": 501
       },
       {
         "url": "https://news.google.com/rss/search?q=%28UCL%20OR%20Imperial%20OR%20%22King%27s%20College%20London%22%20OR%20%22Queen%20Mary%22%29%20AI%20when%3A7d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "London AI",
-        "attempted_at": "2026-11-27T15:09:39.479494+00:00",
-        "last_success_at": "2026-11-26T15:21:48.003952+00:00",
-        "status": "error",
-        "item_count": 0,
-        "error": "HTTP Error 503: Service Unavailable",
-        "duration_ms": 12893
+        "attempted_at": "2026-11-27T15:50:58.358936+00:00",
+        "last_success_at": "2026-11-27T15:50:58.358936+00:00",
+        "status": "ok",
+        "item_count": 15,
+        "duration_ms": 392
       },
       {
         "url": "https://news.google.com/rss/search?q=London%20technology%20science%20innovation%20when%3A3d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "London Technology",
-        "attempted_at": "2026-11-27T15:09:39.479494+00:00",
-        "last_success_at": "2026-11-26T15:21:48.003952+00:00",
-        "status": "error",
-        "item_count": 0,
-        "error": "HTTP Error 429: Too Many Requests",
-        "duration_ms": 9675
+        "attempted_at": "2026-11-27T15:50:58.358936+00:00",
+        "last_success_at": "2026-11-27T15:50:58.358936+00:00",
+        "status": "ok",
+        "item_count": 15,
+        "duration_ms": 312
       },
       {
         "url": "https://news.google.com/rss/search?q=%28London%20startup%20OR%20%22London%20tech%22%20OR%20robotics%20OR%20quantum%20OR%20biotech%29%20when%3A5d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "London Technology",
-        "attempted_at": "2026-11-27T15:09:39.479494+00:00",
-        "last_success_at": "2026-11-26T15:21:48.003952+00:00",
-        "status": "error",
-        "item_count": 0,
-        "error": "HTTP Error 503: Service Unavailable",
-        "duration_ms": 20019
+        "attempted_at": "2026-11-27T15:50:58.358936+00:00",
+        "last_success_at": "2026-11-27T15:50:58.358936+00:00",
+        "status": "ok",
+        "item_count": 15,
+        "duration_ms": 454
       },
       {
         "url": "https://news.google.com/rss/search?q=London%20event%20tickets%20opening%20closing%20disruption%20when%3A7d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Plan Ahead",
-        "attempted_at": "2026-11-27T15:09:39.479494+00:00",
-        "last_success_at": "2026-11-26T15:21:48.003952+00:00",
-        "status": "error",
-        "item_count": 0,
-        "error": "HTTP Error 503: Service Unavailable",
-        "duration_ms": 8975
+        "attempted_at": "2026-11-27T15:50:58.358936+00:00",
+        "last_success_at": "2026-11-27T15:50:58.358936+00:00",
+        "status": "ok",
+        "item_count": 8,
+        "duration_ms": 393
       },
       {
         "url": "https://news.google.com/rss/search?q=%28London%20exhibition%20OR%20festival%20OR%20%22ticket%20release%22%29%20when%3A10d&hl=en-GB&gl=GB&ceid=GB:en",
         "name": "Plan Ahead",
-        "attempted_at": "2026-11-27T15:09:39.479494+00:00",
-        "last_success_at": "2026-11-26T15:21:48.003952+00:00",
-        "status": "error",
-        "item_count": 0,
-        "error": "HTTP Error 503: Service Unavailable",
-        "duration_ms": 7958
+        "attempted_at": "2026-11-27T15:50:58.358936+00:00",
+        "last_success_at": "2026-11-27T15:50:58.358936+00:00",
+        "status": "ok",
+        "item_count": 15,
+        "duration_ms": 361
       },
       {
         "url": "https://www.ianvisits.co.uk/articles/feed/",
         "name": "ianVisits",
-        "attempted_at": "2026-11-27T15:09:39.479494+00:00",
-        "last_success_at": "2026-11-27T15:09:39.479494+00:00",
+        "attempted_at": "2026-11-27T15:50:58.358936+00:00",
+        "last_success_at": "2026-11-27T15:50:58.358936+00:00",
         "status": "ok",
         "item_count": 4,
-        "duration_ms": 734
+        "duration_ms": 99
       }
     ]
   },
   "warnings": [
-    "Feed collection partial; inspect collectionHealth and research failed sections live."
+    "London Technology: fewer than 10 distinct leads; broaden research."
   ],
-  "sourceCandidateCount": 888,
+  "sourceCandidateCount": 965,
   "directCollectionHealth": {
     "status": "ok",
     "feeds": [
@@ -139,41 +128,41 @@
         "id": "heath-hands",
         "url": "https://www.heath-hands.org.uk/whatson?format=json",
         "status": "ok",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
         "cacheState": "fetched",
-        "durationMs": 414,
+        "durationMs": 319,
         "itemCount": 29
       },
       {
         "id": "hampstead-theatre",
         "url": "https://www.hampsteadtheatre.com/whats-on/",
         "status": "ok",
-        "checkedAt": "2026-11-27T15:10:24.644Z",
+        "checkedAt": "2026-11-27T15:51:01.217Z",
         "cacheState": "fetched",
-        "durationMs": 866,
+        "durationMs": 185,
         "itemCount": 8
       },
       {
         "id": "barbican",
         "url": "https://www.barbican.org.uk/whats-on",
         "status": "ok",
-        "checkedAt": "2026-11-27T15:10:24.036Z",
+        "checkedAt": "2026-11-27T15:51:01.274Z",
         "cacheState": "fetched",
-        "durationMs": 256,
+        "durationMs": 239,
         "itemCount": 23
       },
       {
         "id": "city-events",
         "url": "https://www.cityoflondon.gov.uk/events",
         "status": "ok",
-        "checkedAt": "2026-11-27T15:10:25.176Z",
+        "checkedAt": "2026-11-27T15:51:01.460Z",
         "cacheState": "fetched",
-        "durationMs": 1132,
+        "durationMs": 218,
         "itemCount": 9
       }
     ]
   },
-  "deduplicatedCandidateCount": 888,
+  "deduplicatedCandidateCount": 965,
   "candidatesPerSection": 10,
   "notice": "Discovery shortlist only. Open destination pages, verify every volatile claim live, and prefer primary sources before publication.",
   "candidateSections": {
@@ -183,8 +172,8 @@
         "title": "Hampstead Heath Photo Exhibition",
         "eventStart": "2026-11-26T10:00:00.887Z",
         "eventEnd": "2026-11-28T15:00:00.887Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/photo-exhibition-dairy-2026",
@@ -204,6 +193,17 @@
           "collector category",
           "hampstead"
         ],
+        "reviewFlags": [
+          "Possible previous coverage; compare the underlying development."
+        ],
+        "priorStoryIds": [
+          "2026-11-16-kenwood-photo-exhibition"
+        ],
+        "geography": {
+          "eligible": true,
+          "evidence": "hampstead",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       },
       {
@@ -211,8 +211,8 @@
         "title": "Wreath Making - Kenwood",
         "eventStart": "2026-12-01T10:00:00.135Z",
         "eventEnd": "2026-12-01T11:30:00.135Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/wreath-making-011226",
@@ -221,7 +221,7 @@
         "summary": "Join us for a workshop on Hampstead Heath to make your own festive wreath from natural materials. This workshop will take place on the Kenwood Estate. Once you’ve booked on (below) we will send you joining details for the workshop, including a detailed meeting point. There is a £25 donation, click below to book your space, to cover our costs for this workshop, which includes: All the materials you",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 92.22,
+        "score": 92.25,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -232,43 +232,22 @@
           "collector category",
           "hampstead"
         ],
-        "alternateLeads": [
-          {
-            "id": "direct-a0d132c2c04da962",
-            "title": "Wreath Making - Kenwood",
-            "eventStart": "2026-12-03T10:00:00.595Z",
-            "eventEnd": "2026-12-03T11:30:00.595Z",
-            "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-            "checkedAt": "2026-11-27T15:10:24.111Z",
-            "publisher": "Heath Hands",
-            "publishedAt": "",
-            "discoveryUrl": "https://www.heath-hands.org.uk/whatson/wreath-making-11dec25-3g6xr",
-            "discoverySource": "Official activity listing",
-            "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-            "summary": "Join us for a workshop on Hampstead Heath to make your own festive wreath from natural materials. This workshop will take place on the Kenwood Estate. Once you’ve booked on (below) we will send you joining details for the workshop, including a detailed meeting point. There is a £25 donation to cover our costs for this workshop, which includes: All the materials you will need; Instructions from our",
-            "needsDestinationResolution": false,
-            "datedActivitySignal": true,
-            "score": 90.22,
-            "ageHours": null,
-            "activitySignal": true,
-            "primarySourceSignal": true,
-            "signals": [
-              "approved primary-source lead",
-              "source lists an upcoming date: reverify availability",
-              "activity/action wording: verify upcoming date",
-              "collector category",
-              "hampstead"
-            ]
-          }
-        ]
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "kenwood",
+          "reason": "Positive location context; verify the actual place live."
+        },
+        "alternateLeads": []
       },
       {
         "id": "direct-5bdb0c2bdef3d5d5",
         "title": "Heath Info Hut open day",
         "eventStart": "2026-11-28T10:00:00.003Z",
         "eventEnd": "2026-11-28T14:00:00.003Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/heath-info-hut-281126",
@@ -277,7 +256,7 @@
         "summary": "The Heath Info Hut Pop by the Heath Info Hut at Parliament Hill for information about Hampstead Heath and what’s coming up. Click here for the location. You can: pick up a free map or nature sheet find out about upcoming events and activities ask questions of our friendly team buy Hampstead Heath-related goodies (e.g. books, cards, bags)",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 91.22,
+        "score": 91.25,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -288,6 +267,17 @@
           "collector category",
           "hampstead"
         ],
+        "reviewFlags": [
+          "Possible previous coverage; compare the underlying development."
+        ],
+        "priorStoryIds": [
+          "2026-11-27-saturday-info-hut"
+        ],
+        "geography": {
+          "eligible": true,
+          "evidence": "Hampstead",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       },
       {
@@ -295,8 +285,8 @@
         "title": "Litter pick",
         "eventStart": "2026-11-28T11:00:00.801Z",
         "eventEnd": "2026-11-28T12:00:00.801Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/litter-pick-281126",
@@ -305,7 +295,7 @@
         "summary": "Join us for a Saturday litter pick. All welcome and all equipment provided. Meet at 11am at the Heath Info Hut (the former Tennis Bookings Hut), Hampstead Heath, near the Parliament Hill tennis courts - no need to book, although you can let us know that you’re planning to come along so that we know roughly how many to expect.",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 91.17,
+        "score": 91.21,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -316,97 +306,57 @@
           "collector category",
           "hampstead"
         ],
-        "alternateLeads": [
-          {
-            "id": "direct-1d1f9a17dfce7c07",
-            "title": "Litter pick",
-            "eventStart": "2026-12-05T11:00:00.113Z",
-            "eventEnd": "2026-12-05T12:00:00.113Z",
-            "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-            "checkedAt": "2026-11-27T15:10:24.111Z",
-            "publisher": "Heath Hands",
-            "publishedAt": "",
-            "discoveryUrl": "https://www.heath-hands.org.uk/whatson/litter-pick-051226",
-            "discoverySource": "Official activity listing",
-            "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-            "summary": "Join us for a Saturday litter pick. All welcome and all equipment provided. Meet at 11am at the Heath Info Hut (the former Tennis Bookings Hut), Hampstead Heath, near the Parliament Hill tennis courts - no need to book, although you can let us know that you’re planning to come along so that we know roughly how many to expect.",
-            "needsDestinationResolution": false,
-            "datedActivitySignal": true,
-            "score": 84.17,
-            "ageHours": null,
-            "activitySignal": true,
-            "primarySourceSignal": true,
-            "signals": [
-              "approved primary-source lead",
-              "source lists an upcoming date: reverify availability",
-              "activity/action wording: verify upcoming date",
-              "collector category",
-              "hampstead"
-            ]
-          },
-          {
-            "id": "direct-037b4cf574575ad0",
-            "title": "Litter pick",
-            "eventStart": "2026-12-12T11:00:00.113Z",
-            "eventEnd": "2026-12-12T12:00:00.113Z",
-            "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-            "checkedAt": "2026-11-27T15:10:24.111Z",
-            "publisher": "Heath Hands",
-            "publishedAt": "",
-            "discoveryUrl": "https://www.heath-hands.org.uk/whatson/litter-pick-121226",
-            "discoverySource": "Official activity listing",
-            "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-            "summary": "Join us for a Saturday litter pick. All welcome and all equipment provided. Meet at 11am at the Heath Info Hut (the former Tennis Bookings Hut), Hampstead Heath, near the Parliament Hill tennis courts - no need to book, although you can let us know that you’re planning to come along so that we know roughly how many to expect.",
-            "needsDestinationResolution": false,
-            "datedActivitySignal": true,
-            "score": 78,
-            "ageHours": null,
-            "activitySignal": true,
-            "primarySourceSignal": true,
-            "signals": [
-              "approved primary-source lead",
-              "source lists an upcoming date: reverify availability",
-              "activity/action wording: verify upcoming date",
-              "collector category",
-              "hampstead"
-            ]
-          },
-          {
-            "id": "direct-bfa8c43697381c8f",
-            "title": "Litter pick",
-            "eventStart": "2026-12-19T11:00:00.801Z",
-            "eventEnd": "2026-12-19T12:00:00.801Z",
-            "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-            "checkedAt": "2026-11-27T15:10:24.111Z",
-            "publisher": "Heath Hands",
-            "publishedAt": "",
-            "discoveryUrl": "https://www.heath-hands.org.uk/whatson/litter-pick-191226",
-            "discoverySource": "Official activity listing",
-            "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-            "summary": "Join us for a Saturday litter pick. All welcome and all equipment provided. Meet at 11am at the Heath Info Hut (the former Tennis Bookings Hut), Hampstead Heath, near the Parliament Hill tennis courts - no need to book, although you can let us know that you’re planning to come along so that we know roughly how many to expect.",
-            "needsDestinationResolution": false,
-            "datedActivitySignal": true,
-            "score": 78,
-            "ageHours": null,
-            "activitySignal": true,
-            "primarySourceSignal": true,
-            "signals": [
-              "approved primary-source lead",
-              "source lists an upcoming date: reverify availability",
-              "activity/action wording: verify upcoming date",
-              "collector category",
-              "hampstead"
-            ]
-          }
-        ]
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "Hampstead",
+          "reason": "Positive location context; verify the actual place live."
+        },
+        "alternateLeads": []
+      },
+      {
+        "id": "direct-a0d132c2c04da962",
+        "title": "Wreath Making - Kenwood",
+        "eventStart": "2026-12-03T10:00:00.595Z",
+        "eventEnd": "2026-12-03T11:30:00.595Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
+        "publisher": "Heath Hands",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/wreath-making-11dec25-3g6xr",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
+        "summary": "Join us for a workshop on Hampstead Heath to make your own festive wreath from natural materials. This workshop will take place on the Kenwood Estate. Once you’ve booked on (below) we will send you joining details for the workshop, including a detailed meeting point. There is a £25 donation to cover our costs for this workshop, which includes: All the materials you will need; Instructions from our",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": true,
+        "score": 90.25,
+        "ageHours": null,
+        "activitySignal": true,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "source lists an upcoming date: reverify availability",
+          "activity/action wording: verify upcoming date",
+          "collector category",
+          "hampstead"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "kenwood",
+          "reason": "Positive location context; verify the actual place live."
+        },
+        "alternateLeads": []
       },
       {
         "id": "direct-71993b5cd150ad51",
         "title": "Wild about Hampstead Heath",
         "eventStart": "2026-11-29T13:00:00.328Z",
         "eventEnd": "2026-11-29T15:00:00.328Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/wildabouthampsteadheath-291126",
@@ -415,7 +365,7 @@
         "summary": "Come and find out about nature on our green spaces with our volunteer wildlife interpreters. All welcome, drop in anytime between 1-3pm, no need to book. Look out for the big Wild About Hampstead Heath bike, in the Parliament Hill area.",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 90.09,
+        "score": 90.13,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -426,43 +376,26 @@
           "collector category",
           "hampstead"
         ],
-        "alternateLeads": [
-          {
-            "id": "direct-14a35abcc8a4f01b",
-            "title": "Wild about Hampstead Heath",
-            "eventStart": "2026-12-12T13:00:00.328Z",
-            "eventEnd": "2026-12-12T15:00:00.328Z",
-            "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-            "checkedAt": "2026-11-27T15:10:24.111Z",
-            "publisher": "Heath Hands",
-            "publishedAt": "",
-            "discoveryUrl": "https://www.heath-hands.org.uk/whatson/wildabouthampsteadheath-121226",
-            "discoverySource": "Official activity listing",
-            "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-            "summary": "Come and find out about nature on our green spaces with our volunteer wildlife interpreters. All welcome, drop in anytime between 1-3pm, no need to book. Look out for the big Wild About Hampstead Heath bike, in the Parliament Hill area.",
-            "needsDestinationResolution": false,
-            "datedActivitySignal": true,
-            "score": 78,
-            "ageHours": null,
-            "activitySignal": true,
-            "primarySourceSignal": true,
-            "signals": [
-              "approved primary-source lead",
-              "source lists an upcoming date: reverify availability",
-              "activity/action wording: verify upcoming date",
-              "collector category",
-              "hampstead"
-            ]
-          }
-        ]
+        "reviewFlags": [
+          "Possible previous coverage; compare the underlying development."
+        ],
+        "priorStoryIds": [
+          "2026-11-27-sunday-wildlife-dropin"
+        ],
+        "geography": {
+          "eligible": true,
+          "evidence": "hampstead",
+          "reason": "Positive location context; verify the actual place live."
+        },
+        "alternateLeads": []
       },
       {
         "id": "direct-a1b0fa86facfd035",
         "title": "Kenwood Dairy open day",
         "eventStart": "2026-11-28T11:00:00.025Z",
         "eventEnd": "2026-11-28T15:00:00.025Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/kenwood-dairy-open-281126",
@@ -471,7 +404,7 @@
         "summary": "Come and view our Nature Interpretation Centre to find out more about the wildlife across the Heath’s green spaces. Pick up a leaflet, check out our specimens and find out what’s coming up! Interpretation centre displays.",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 88.17,
+        "score": 88.21,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -482,6 +415,13 @@
           "collector category",
           "heath"
         ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "kenwood",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       },
       {
@@ -489,8 +429,8 @@
         "title": "Father Christmas at Kenwood House",
         "eventStart": "2026-11-28T10:00:00.040Z",
         "eventEnd": "2026-12-20T16:00:00.040Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/kenwoodfatherchristmas",
@@ -499,7 +439,7 @@
         "summary": "WEEKENDS ONLY Join Father Christmas at Kenwood for a magical way to start the festive season. Father Christmas is taking time out of his busy festive schedule to tell some of his favourite seasonal stories. After the group storytelling session, you and your children will meet the man himself, with the chance to take photographs and make memories to treasure. Father Christmas will also give every c",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 84.22,
+        "score": 84.25,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -510,6 +450,50 @@
           "collector category",
           "kenwood"
         ],
+        "reviewFlags": [
+          "Family/child audience: check suitability."
+        ],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "kenwood",
+          "reason": "Positive location context; verify the actual place live."
+        },
+        "alternateLeads": []
+      },
+      {
+        "id": "direct-1d1f9a17dfce7c07",
+        "title": "Litter pick",
+        "eventStart": "2026-12-05T11:00:00.113Z",
+        "eventEnd": "2026-12-05T12:00:00.113Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
+        "publisher": "Heath Hands",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/litter-pick-051226",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
+        "summary": "Join us for a Saturday litter pick. All welcome and all equipment provided. Meet at 11am at the Heath Info Hut (the former Tennis Bookings Hut), Hampstead Heath, near the Parliament Hill tennis courts - no need to book, although you can let us know that you’re planning to come along so that we know roughly how many to expect.",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": true,
+        "score": 84.21,
+        "ageHours": null,
+        "activitySignal": true,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "source lists an upcoming date: reverify availability",
+          "activity/action wording: verify upcoming date",
+          "collector category",
+          "hampstead"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "Hampstead",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       },
       {
@@ -517,8 +501,8 @@
         "title": "Wreath Making - Parliament Hill",
         "eventStart": "2026-12-05T13:30:00.515Z",
         "eventEnd": "2026-12-05T15:00:00.515Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/wreath-making-hive-051226",
@@ -527,7 +511,7 @@
         "summary": "Join us for a workshop on Hampstead Heath to make your own festive wreath from natural materials. This workshop will take place in the Parliament Hill area. Once you’ve booked on (below) we will send you joining details for the workshop, including a detailed meeting point. There is a £25 donation, click below to book, to cover our costs for this workshop, which includes: All the materials you will",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 84.07,
+        "score": 84.11,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -538,179 +522,23 @@
           "collector category",
           "hampstead"
         ],
-        "alternateLeads": [
-          {
-            "id": "direct-b408a6fb1e29faf5",
-            "title": "Wreath Making - Parliament Hill",
-            "eventStart": "2026-12-12T13:30:00.043Z",
-            "eventEnd": "2026-12-12T14:30:00.043Z",
-            "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-            "checkedAt": "2026-11-27T15:10:24.111Z",
-            "publisher": "Heath Hands",
-            "publishedAt": "",
-            "discoveryUrl": "https://www.heath-hands.org.uk/whatson/wreath-making-hive-121226",
-            "discoverySource": "Official activity listing",
-            "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-            "summary": "Join us for a workshop on Hampstead Heath to make your own festive wreath from natural materials. This workshop will take place in the Parliament Hill area. Once you’ve booked on (below) we will send you joining details for the workshop, including a detailed meeting point. There is a £25 donation, click below to book, to cover our costs for this workshop, which includes: All the materials you will",
-            "needsDestinationResolution": false,
-            "datedActivitySignal": true,
-            "score": 78,
-            "ageHours": null,
-            "activitySignal": true,
-            "primarySourceSignal": true,
-            "signals": [
-              "approved primary-source lead",
-              "source lists an upcoming date: reverify availability",
-              "activity/action wording: verify upcoming date",
-              "collector category",
-              "hampstead"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "direct-4d18f0731c7aafa1",
-        "title": "Nature Journaling Workshop",
-        "eventStart": "2026-12-05T12:30:00.637Z",
-        "eventEnd": "2026-12-05T14:00:00.637Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
-        "publisher": "Heath Hands",
-        "publishedAt": "",
-        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/naturejournaling-051226",
-        "discoverySource": "Official activity listing",
-        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-        "summary": "Join us for a guided walk and nature journaling workshop on the Kenwood Estate . Nature journaling is a method of recording and collecting your observations in a variety of ways - note making, sketching, writing or whatever method works best for you. Nature journaling can enrich your experience of the natural world, deepen your relationship with the local environment and help develop your identifi",
-        "needsDestinationResolution": false,
-        "datedActivitySignal": true,
-        "score": 81.11,
-        "ageHours": null,
-        "activitySignal": true,
-        "primarySourceSignal": true,
-        "signals": [
-          "approved primary-source lead",
-          "source lists an upcoming date: reverify availability",
-          "activity/action wording: verify upcoming date",
-          "collector category",
-          "heath"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "direct-a1aac2fd80da4661",
-        "title": "Hampstead Heath Christmas Funfair",
-        "eventStart": "2026-12-11T11:00:00.515Z",
-        "eventEnd": "2027-01-03T17:00:00.515Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
-        "publisher": "Heath Hands",
-        "publishedAt": "",
-        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/christmasfair2026",
-        "discoverySource": "Official activity listing",
-        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-        "summary": "John Parnum Funfair and Zippos Circus bring traditional family fun to the Heath Fairground this Christmas. Join in the fun with rides, food stalls and games for all the family. Christmas trees will be for sale. Circus tickets can be purchased here . This event is managed by the City of London Corporation .",
-        "needsDestinationResolution": false,
-        "datedActivitySignal": true,
-        "score": 80.17,
-        "ageHours": null,
-        "activitySignal": true,
-        "primarySourceSignal": true,
-        "signals": [
-          "approved primary-source lead",
-          "source lists an upcoming date: reverify availability",
-          "activity/action wording: verify upcoming date",
-          "collector category",
-          "hampstead"
-        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "Hampstead",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       }
     ],
     "Near Work": [
       {
-        "id": "direct-a1aac2fd80da4661",
-        "title": "Hampstead Heath Christmas Funfair",
-        "eventStart": "2026-12-11T11:00:00.515Z",
-        "eventEnd": "2027-01-03T17:00:00.515Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
-        "publisher": "Heath Hands",
-        "publishedAt": "",
-        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/christmasfair2026",
-        "discoverySource": "Official activity listing",
-        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-        "summary": "John Parnum Funfair and Zippos Circus bring traditional family fun to the Heath Fairground this Christmas. Join in the fun with rides, food stalls and games for all the family. Christmas trees will be for sale. Circus tickets can be purchased here . This event is managed by the City of London Corporation .",
-        "needsDestinationResolution": false,
-        "datedActivitySignal": true,
-        "score": 70.17,
-        "ageHours": null,
-        "activitySignal": true,
-        "primarySourceSignal": true,
-        "signals": [
-          "approved primary-source lead",
-          "source lists an upcoming date: reverify availability",
-          "activity/action wording: verify upcoming date",
-          "city of london"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "direct-548f69f2719dd4c8",
-        "title": "Kids at Keats: Festive Pine Cones",
-        "eventStart": "2026-12-03T14:00:00.040Z",
-        "eventEnd": "2026-12-03T16:00:00.040Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
-        "publisher": "Heath Hands",
-        "publishedAt": "",
-        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/kidschristmasatkeats",
-        "discoverySource": "Official activity listing",
-        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-        "summary": "A free drop-in session at Keats House. Get into the festive spirit by decorating your own personal pine cone to take home. There will also be a selection of toys, books and colouring. Aimed at children under 5. This event and any associated ticketing and personal data capture is managed directly by the City of London Corporation. Learn more",
-        "needsDestinationResolution": false,
-        "datedActivitySignal": true,
-        "score": 64.05,
-        "ageHours": null,
-        "activitySignal": false,
-        "primarySourceSignal": true,
-        "signals": [
-          "approved primary-source lead",
-          "source lists an upcoming date: reverify availability",
-          "city of london"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "direct-b954641b371783ec",
-        "title": "Keats House: Festivity in Romantic Poetry",
-        "eventStart": "2026-12-18T18:30:00.040Z",
-        "eventEnd": "2026-12-18T20:30:00.040Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
-        "publisher": "Heath Hands",
-        "publishedAt": "",
-        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/keats-festive-romantic",
-        "discoverySource": "Official activity listing",
-        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-        "summary": "Join Keats House for an evening of discussion on Romantic Festivity with UCL's Gregory Dart. In 1817 Leigh Hunt complained that Christmas had become a 'dreary business'. But why? What were the causes of the Romantics' Christmas crisis? And how did they attempt to address it in their poetry? In this talk Gregory Dart will run through Romantic meditations on festivity, holidays and holydays, feasts ",
-        "needsDestinationResolution": false,
-        "datedActivitySignal": true,
-        "score": 56,
-        "ageHours": null,
-        "activitySignal": false,
-        "primarySourceSignal": true,
-        "signals": [
-          "approved primary-source lead",
-          "source lists an upcoming date: reverify availability",
-          "city of london"
-        ],
-        "alternateLeads": []
-      },
-      {
         "id": "direct-c0ec38c8c77a18eb",
         "title": "Information about Ghost Tours: The Barbican After Dark",
         "eventStart": null,
-        "evidenceFile": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
-        "checkedAt": "2026-11-27T15:10:24.036Z",
+        "evidenceFile": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+        "checkedAt": "2026-11-27T15:51:01.274Z",
         "publisher": "Barbican",
         "publishedAt": "",
         "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/ghost-tours-the-barbican-after-dark",
@@ -729,14 +557,21 @@
           "collector category",
           "barbican"
         ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "barbican",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       },
       {
         "id": "direct-1f7b075839cdd58f",
         "title": "30 Oct - 29 Apr 1327 and the City of London Exhibition",
         "eventStart": null,
-        "evidenceFile": ".daily-work/evidence/9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
-        "checkedAt": "2026-11-27T15:10:25.176Z",
+        "evidenceFile": ".daily-work\\evidence\\9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
+        "checkedAt": "2026-11-27T15:51:01.460Z",
         "publisher": "City of London",
         "publishedAt": "",
         "discoveryUrl": "https://www.cityoflondon.gov.uk/events/1327-and-the-city-of-london-exhibition",
@@ -754,162 +589,54 @@
           "activity/action wording: verify upcoming date",
           "city of london"
         ],
+        "reviewFlags": [
+          "Possible previous coverage; compare the underlying development."
+        ],
+        "priorStoryIds": [
+          "2026-10-31-guildhall-1327"
+        ],
+        "geography": {
+          "eligible": true,
+          "evidence": "city of london",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       },
       {
-        "id": "direct-feeefc3e62916928",
-        "title": "Information about Architecture Tours",
-        "eventStart": null,
-        "evidenceFile": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
-        "checkedAt": "2026-11-27T15:10:24.036Z",
-        "publisher": "Barbican",
-        "publishedAt": "",
-        "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/architecture-tours",
-        "discoverySource": "Official activity listing",
-        "publisherUrl": "https://www.barbican.org.uk/whats-on",
+        "id": "lead-b5b17d3febdad696",
+        "title": "‘Imperfection is everywhere. It is a great element’: Yuko Mohri on her exhibition of found objects at London's Barbican - The Art Newspaper",
+        "publisher": "The Art Newspaper",
+        "publishedAt": "Fri, 27 Nov 2026 13:28:47 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQVlZsZkdLVU5wanJRaHhvRXhzNFB6Mk1YN096ZGVZbEVBejNqZXhyR2xwUXhlSXNLeFFzRHRUNnRyU3N2M2ZOLUdvX245eDE0S05hQ0ZIWTNjWW04LXFtb0NBTERRZDFjR0gyMzV5Y3g2eUtaQlFDTjUxb3dwbHdTY1h5Q1FqeXlaLXhWTGZUVW1hZ0FwbmNlUzQzNjhTMlp3NEhoa2tVZjVPODUwcnh1U09YcmVJemtMVXh5bVgwOUtaNGROdXpmSHlRMWJBa2FjdFU1LTQzN095Y0h4SUpUcWk1WDVBN3lEYUxNdlp3?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.theartnewspaper.com",
         "summary": "",
-        "needsDestinationResolution": false,
+        "needsDestinationResolution": true,
         "datedActivitySignal": false,
-        "score": 43,
-        "ageHours": null,
+        "score": 37.57,
+        "ageHours": 2.6,
         "activitySignal": true,
-        "primarySourceSignal": true,
+        "primarySourceSignal": false,
         "signals": [
-          "approved primary-source lead",
           "activity/action wording: verify upcoming date",
-          "collector category"
+          "collector category",
+          "barbican"
         ],
-        "alternateLeads": []
-      },
-      {
-        "id": "direct-393d7590abb4049f",
-        "title": "Information about Jules Cunningham & Michael Clark Workshop",
-        "eventStart": null,
-        "evidenceFile": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
-        "checkedAt": "2026-11-27T15:10:24.036Z",
-        "publisher": "Barbican",
-        "publishedAt": "",
-        "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/jules-cunningham-michael-clark-workshop",
-        "discoverySource": "Official activity listing",
-        "publisherUrl": "https://www.barbican.org.uk/whats-on",
-        "summary": "",
-        "needsDestinationResolution": false,
-        "datedActivitySignal": false,
-        "score": 43,
-        "ageHours": null,
-        "activitySignal": true,
-        "primarySourceSignal": true,
-        "signals": [
-          "approved primary-source lead",
-          "activity/action wording: verify upcoming date",
-          "collector category"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "direct-10f812ac1f3ea701",
-        "title": "Information about Parent & Baby Screening: You Can See Everything",
-        "eventStart": null,
-        "evidenceFile": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
-        "checkedAt": "2026-11-27T15:10:24.036Z",
-        "publisher": "Barbican",
-        "publishedAt": "",
-        "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/parent-baby-screening-you-can-see-everything",
-        "discoverySource": "Official activity listing",
-        "publisherUrl": "https://www.barbican.org.uk/whats-on",
-        "summary": "",
-        "needsDestinationResolution": false,
-        "datedActivitySignal": false,
-        "score": 43,
-        "ageHours": null,
-        "activitySignal": true,
-        "primarySourceSignal": true,
-        "signals": [
-          "approved primary-source lead",
-          "activity/action wording: verify upcoming date",
-          "collector category"
-        ],
-        "alternateLeads": [
-          {
-            "id": "direct-d00f06c55cf826f6",
-            "title": "Information about Relaxed Screening: You Can See Everything",
-            "eventStart": null,
-            "evidenceFile": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
-            "checkedAt": "2026-11-27T15:10:24.036Z",
-            "publisher": "Barbican",
-            "publishedAt": "",
-            "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/relaxed-screening-you-can-see-everything",
-            "discoverySource": "Official activity listing",
-            "publisherUrl": "https://www.barbican.org.uk/whats-on",
-            "summary": "",
-            "needsDestinationResolution": false,
-            "datedActivitySignal": false,
-            "score": 43,
-            "ageHours": null,
-            "activitySignal": true,
-            "primarySourceSignal": true,
-            "signals": [
-              "approved primary-source lead",
-              "activity/action wording: verify upcoming date",
-              "collector category"
-            ]
-          },
-          {
-            "id": "direct-ee7ba9aa53a674c8",
-            "title": "Information about You Can See Everything",
-            "eventStart": null,
-            "evidenceFile": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
-            "checkedAt": "2026-11-27T15:10:24.036Z",
-            "publisher": "Barbican",
-            "publishedAt": "",
-            "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/you-can-see-everything",
-            "discoverySource": "Official activity listing",
-            "publisherUrl": "https://www.barbican.org.uk/whats-on",
-            "summary": "",
-            "needsDestinationResolution": false,
-            "datedActivitySignal": false,
-            "score": 29,
-            "ageHours": null,
-            "activitySignal": false,
-            "primarySourceSignal": true,
-            "signals": [
-              "approved primary-source lead",
-              "collector category"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "direct-bdf27c5329205b3c",
-        "title": "Information about Yuko Mohri: In Concert",
-        "eventStart": null,
-        "evidenceFile": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
-        "checkedAt": "2026-11-27T15:10:24.036Z",
-        "publisher": "Barbican",
-        "publishedAt": "",
-        "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/yuko-mohri-in-concert",
-        "discoverySource": "Official activity listing",
-        "publisherUrl": "https://www.barbican.org.uk/whats-on",
-        "summary": "",
-        "needsDestinationResolution": false,
-        "datedActivitySignal": false,
-        "score": 43,
-        "ageHours": null,
-        "activitySignal": true,
-        "primarySourceSignal": true,
-        "signals": [
-          "approved primary-source lead",
-          "activity/action wording: verify upcoming date",
-          "collector category"
-        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "barbican",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       },
       {
         "id": "direct-9b5c69b2a14d369d",
         "title": "Information about Guildhall School: Autumn Opera Scenes",
         "eventStart": null,
-        "evidenceFile": ".daily-work/evidence/0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
-        "checkedAt": "2026-11-27T15:10:24.036Z",
+        "evidenceFile": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+        "checkedAt": "2026-11-27T15:51:01.274Z",
         "publisher": "Barbican",
         "publishedAt": "",
         "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/guildhall-school-autumn-opera-scenes",
@@ -927,30 +654,329 @@
           "collector category",
           "guildhall"
         ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "guildhall",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
-      }
-    ],
-    "London AI": [
+      },
       {
-        "id": "lead-0b4e08e42f116df7",
-        "title": "Hamilton Morrin joins global commission on AI and mental wellbeing - King's College London",
-        "publisher": "King's College London",
-        "publishedAt": "Wed, 25 Nov 2026 16:09:06 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNeG1jSW9kX3I3NUNCT0R3R2h1UHBJQ3UxYjRMYkNGOTU1RlRYNkJiVDZnRGwxU3M3Q3VzYVUxV3pSWW9VR1lRZDQ2MnhReXVnQ3gzNWVDSWszdzdDZHE0Y3FJWk85M0U0cDFseGRtakx2a1JkLUd4d3JBTm53S3FPekRUQ29kSU5hdGNoRS03Y1FTZzNndHJYMA?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.kcl.ac.uk",
+        "id": "direct-05bf2b48c0ff025a",
+        "title": "Information about Concrete and Clay: Archiving the Barbican",
+        "eventStart": null,
+        "evidenceFile": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+        "checkedAt": "2026-11-27T15:51:01.274Z",
+        "publisher": "Barbican",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.barbican.org.uk/whats-on/2025/event/concrete-and-clay-archiving-the-barbican",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.barbican.org.uk/whats-on",
         "summary": "",
-        "needsDestinationResolution": true,
+        "needsDestinationResolution": false,
         "datedActivitySignal": false,
-        "score": 21.16,
-        "ageHours": 47,
+        "score": 33,
+        "ageHours": null,
         "activitySignal": false,
         "primarySourceSignal": true,
         "signals": [
           "approved primary-source lead",
           "collector category",
+          "barbican"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "barbican",
+          "reason": "Positive location context; verify the actual place live."
+        },
+        "alternateLeads": []
+      },
+      {
+        "id": "lead-8f6dabc56aef0679",
+        "title": "Katherine Grainger receives Freedom of the City of London - Newsroom City of London",
+        "publisher": "Newsroom City of London",
+        "publishedAt": "Fri, 27 Nov 2026 15:20:03 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQS2JWM3N2Q0xPUFFkdDk0NWRpRjlBb2NOWW91cFNRR3dGalF6MjFVQ0NqV1JyMjk1Y2JtZ2ZLa1o3Ri1UNEVTNTNTajZNV05tM2gtUmN4eG1SMGRCQW8xYV9CeVk5N0dhVFRXajlFaGJpd19yNjU0Sm9XWDE2cDBFVjhwMmRHc1pVXzZrVjZFdXF5MmZRLWc?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://news.cityoflondon.gov.uk",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 31.87,
+        "ageHours": 0.8,
+        "activitySignal": false,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "collector category",
+          "city of london"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "city of london",
+          "reason": "Positive location context; verify the actual place live."
+        },
+        "alternateLeads": []
+      },
+      {
+        "id": "lead-f1e7a01358e4814d",
+        "title": "Uprising In The Wake at the Barbican: a free exhibition from 25 January 2027 - London x London",
+        "publisher": "London x London",
+        "publishedAt": "Wed, 25 Nov 2026 08:15:39 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQQmJERGpRbzdVb0xGLXBSRFVVemJLMTNzUTZzRzJrWGV2MGJyMm1MNGt0NGVfblQ0S3hYTzN6ekdzMkI2LUpKN1Q4Vk9DRE43b2ZEczkzaE9QZjVnZWZRTG9mTTBWN0pnWE90WDhCTl9oR2k3VXRIMWU5WmFuMWFZR3p3?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.londonxlondon.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 28.7,
+        "ageHours": 55.8,
+        "activitySignal": true,
+        "primarySourceSignal": false,
+        "signals": [
+          "activity/action wording: verify upcoming date",
+          "collector category",
+          "barbican"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "barbican",
+          "reason": "Positive location context; verify the actual place live."
+        },
+        "alternateLeads": []
+      },
+      {
+        "id": "lead-abcfad105ef8ab25",
+        "title": "City of London’s Curtis: Takeover surge is a sign of value in the UK market - Trustnet",
+        "publisher": "Trustnet",
+        "publishedAt": "Fri, 27 Nov 2026 13:00:00 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaDB0RFhGcFJhTndJVWFOcU82OHN3TlBmRUU5V0RLcm9VODd5U3lIR0tmQ1VtT3ZJNmtTd1FWbnNwdnBFOEVBUHRhaUwwRFR1dFR3SUxZWHBETlREMzdBR1BwblNmN2Q5OEt4bmdzS2VHVi1ZeUg3U0dxb1Q4Nno4ZDVqU1E1djBNektqaFFDamU1TGZfRVpqX2xVOGFlNFdwRzNxdlRtOXVGYWtuNnN4REZn?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.trustnet.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 26.49,
+        "ageHours": 3.1,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "city of london"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "city of london",
+          "reason": "Positive location context; verify the actual place live."
+        },
+        "alternateLeads": []
+      },
+      {
+        "id": "lead-c59a2a96c8ed5f4b",
+        "title": "FTSE Small Cap Small Cap Value Stock: City of London Investment Group Dividend Outlook: Can Earnings Keep the Payout Growing? - kalkine.co.uk",
+        "publisher": "kalkine.co.uk",
+        "publishedAt": "Fri, 27 Nov 2026 10:39:00 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOUl9rUDhldEV6U3V6RlhPSTNEOWdsTWl0ZzlYbVp2V3UxeEs3aFotb2Z4M2d2bHhkU280NWtqTHVZaTNXZ3RZVElqYmp1X2xkQXE1NW9DYTNkMFFjM19fRUMwQmVVRGhlSVI4cXZzcTJvRXczdzg2c1lNOUlIRXpVckU4Rng3aEdtbzd2eDgzeFZ4M2hfUjN4eDBlaXVqaGsyNTNKNHRDVXhzUm1TcnRhcERYaUpyUjJOUHBZRXJxNmxSSGJFWHVObDdCS01oUGY0TExJQW9TUjdFS1NLNGlzVllwZGU2VGNfdzlZci1xZEpnN2ZQMXJoZQ?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://kalkine.co.uk",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 26.09,
+        "ageHours": 5.4,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "city of london"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "city of london",
+          "reason": "Positive location context; verify the actual place live."
+        },
+        "alternateLeads": []
+      },
+      {
+        "id": "lead-af9fcef4b1dd730b",
+        "title": "City of London Investment Group Plc (CLIUF) Seasonal returns chart - Yahoo Finance UK",
+        "publisher": "Yahoo Finance UK",
+        "publishedAt": "Thu, 26 Nov 2026 21:00:00 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBQcjBoLXlLdXFYNmk0WVViVE9zbXFCTWtTVnVSc2lhc01ad3ViSGtOYlo1elVRWWZ5Mkt1ZlVyVUtWUU0xU2dMWTdsZVVVNE9udG9hMHNhLTVlOXV0RnUtTHJkWQ?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://uk.finance.yahoo.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 23.82,
+        "ageHours": 19.1,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "city of london"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "city of london",
+          "reason": "Positive location context; verify the actual place live."
+        },
+        "alternateLeads": []
+      }
+    ],
+    "London AI": [
+      {
+        "id": "lead-ab50d9be44fd3986",
+        "title": "Why Did Asiamet Resources Limited LSE:ARS Rise 5.71% as London Shares Brush Off AI Worries? - kalkine.co.uk",
+        "publisher": "kalkine.co.uk",
+        "publishedAt": "Fri, 27 Nov 2026 12:25:00 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORmFTbXh1SngtMWhmNGVPT1FydTRJSV9YSW1hcUpuQVlNYmpydUotanpOWm80R0tVRllUUkpxUHlwRmpibmI3S0hHc1E2MFN4SmxfeEU2TGtHYVdKMXJGcHFza3c0QnFsQkZ0OENjenI0UnlNV3ZXUWEtTk1DUkthdWJ4QTlvZHU5a183WHZiU0RqdnI0TUV3YnBLZUdPLWtPcmVpMDhWcE9ZcWhsZDFQSjZOaDlEdkxnaHVGLVpn?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://kalkine.co.uk",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 23.39,
+        "ageHours": 3.7,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
           "ai"
         ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "london",
+          "reason": "Positive location context; verify the actual place live."
+        },
+        "alternateLeads": []
+      },
+      {
+        "id": "lead-b1c72a500d07b5bb",
+        "title": "Why Did Celsius Resources Limited LSE:CLA Fall 12.50% Despite London Shares Brushing Off AI Worries? - kalkine.co.uk",
+        "publisher": "kalkine.co.uk",
+        "publishedAt": "Fri, 27 Nov 2026 12:25:00 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQaEhfLTlIV3lyd0liNW9nUkh4dWlwcVp2VzhzRDE2UDUxcnhrMV82SXYwVkczQ3NscHZJZS14azFNcVRmZ3d1bGpOa1pncXFLY1dITDE3V1M4UW5fYWJUd1lOOUZOQ1NReDFNRTlfc1NvdjlNRldjT3hyNGIxQWhGMl90YUtJS2lrWTd0eFlBamZGd0U4bE1ZMnZYR3JVSDhqTTloSEZWRXZtZGdwMGZkOGxiX21ScmVyT195NXVfZ1NjM3d4ek15elV3?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://kalkine.co.uk",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 23.39,
+        "ageHours": 3.7,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "ai"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "london",
+          "reason": "Positive location context; verify the actual place live."
+        },
+        "alternateLeads": []
+      },
+      {
+        "id": "lead-96ef7359822f5385",
+        "title": "AI Data-Center Developer LIAN Picks London for $500 Million IPO - Bloomberg.com",
+        "publisher": "Bloomberg.com",
+        "publishedAt": "Fri, 27 Nov 2026 11:49:21 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNLXBRTGlkT1ByU1RmQXNuWFFvcUlzLW5Yclczdm9pQWM0SXZUZWhrT014Q1E4T2xtSkxlMlVqVXgtSlpJXzFwNTFRQ2ZUekZ0WmQ2cThac3VldzFKT2phcWl3Vk5CMUNBRHU0aVB6NUlYdHNEeDdpSUUtSXBSbVlXc3gwZllMRWJqQ3NfNGdmRUFjWDFRQ0RCR2E5WXRSZEZ3QWNOYUNZM2c1dWhEUjc2b0ZGUQ?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.bloomberg.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 23.29,
+        "ageHours": 4.3,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "ai"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "london",
+          "reason": "Positive location context; verify the actual place live."
+        },
+        "alternateLeads": []
+      },
+      {
+        "id": "lead-4d0ab5a5de48bc6d",
+        "title": "BT Boosts EE 5G Network Speeds in London Through Nationwide-First Ericsson AI Scheduler Deployment - The Fast Mode",
+        "publisher": "The Fast Mode",
+        "publishedAt": "Fri, 27 Nov 2026 00:04:52 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOdDZmSzJmbW9Rb2d3bnl2WnlRWUlGeXN6Q1lMSW9JazlpYjBXNUVSZHhMdno5MjYyaVdqUDExVUlFczJrQmY0R2VjYkZpYWZaZjhGRjU1a24yRjJVeW04QUl5VzA0R1BIeGxxTzVnUVBZdHpITm5rODl4dlNLeGxQclhJbnlRLWE5ODdwSFV5djNfQzBHU3dxVzliU1E4TjdDZ1Vsb2s1OVVZRkFmckJteFZadkRhNjhTaXcwTVRXZ1FfOXJyaWV6d01PWWRxck1zUmNlU1NjRVpGUzVmbGpDaVNNckJRN0lx?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.thefastmode.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 21.33,
+        "ageHours": 16,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "ai"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "london",
+          "reason": "Positive location context; verify the actual place live."
+        },
+        "alternateLeads": []
+      },
+      {
+        "id": "lead-e9fcf64e3e286473",
+        "title": "Imperial and Luxembourg's Ministry of Finance launch LIGHT, AI finance education for leaders - FelixOnline",
+        "publisher": "FelixOnline",
+        "publishedAt": "Fri, 27 Nov 2026 10:18:42 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZWw3Uy1LR0ZwZ25XSGZDY0k5Rzh4eFZ0S1UtSUg2TmpkVDQ5bjVuUVRyZDRFTmRJajJDaTkzbG41UUpDYmNadjBYTE92YWZ1ZmQtT0ktNGlyTVRJWC1xWkpZdkVYbDJRNGUtWGhPSHlIZWtZMmpxWldFWVhmSVAyQ2ItbU1jTEpJTnhlUnoxRm1iSkExcnc4aFViVy0yNURKRC1XRHJ1VXc?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://felixonline.co.uk",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 21.04,
+        "ageHours": 5.8,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "ai"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "imperial",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       },
       {
@@ -964,8 +990,8 @@
         "summary": "",
         "needsDestinationResolution": true,
         "datedActivitySignal": false,
-        "score": 20.43,
-        "ageHours": 51.4,
+        "score": 20.28,
+        "ageHours": 52.3,
         "activitySignal": false,
         "primarySourceSignal": true,
         "signals": [
@@ -973,27 +999,69 @@
           "collector category",
           "ai"
         ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "london",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       },
       {
-        "id": "lead-75da944a6219274c",
-        "title": "AI's economic versus organisational impact: insights from BTF by Colorintech - King's College London",
-        "publisher": "King's College London",
-        "publishedAt": "Wed, 25 Nov 2026 18:27:56 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQW9NdzEzRDF0Y1RVRnM1Z0ladzgtOXU3MkZuT2MyaHc3bHB3bU1rbkphcFlob0VZQ1FnTl9oZW9oSkZISThMamRYNGRGcWExRUNZTmJZS2dHN05yMWk4ZlhnWmJpUklmdlhDS2NzS18xeHVCQmloR2U5SFp0QS1VTTNiQ1JzMVNXSF9zdHJfMzA3SVRESjh0NHBCOUY?oc=5",
+        "id": "lead-5b099cc932be50d8",
+        "title": "EE UK boosts 5G mobile broadband network speeds in London via AI - ISPreview UK",
+        "publisher": "ISPreview UK",
+        "publishedAt": "Thu, 26 Nov 2026 09:19:00 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQXzUtbDJDNGFPY1owa0s2WnhjSHVTOUVaLXktbDl3a2M4QXdZdkxiVUxvLTA1eGhRcHdYZTRiSXRUUmdmaW1uaVZRWUdYeUpIcTZkVGdfSWVsSlJZSTVCMkdlSkNFdXJmT29fQmVTLV9ITk9xVFl6U1dnY2NmejU1YjBlak56amRwODB6U0p3ZWc2ZWltMlFqZ3k3blJ6dHE3UTJSZUZrRkpFZzRaZVZzQ3B3S3FBUQ?oc=5",
         "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.kcl.ac.uk",
+        "publisherUrl": "https://www.ispreview.co.uk",
         "summary": "",
         "needsDestinationResolution": true,
         "datedActivitySignal": false,
-        "score": 17.55,
-        "ageHours": 44.7,
+        "score": 18.87,
+        "ageHours": 30.8,
         "activitySignal": false,
-        "primarySourceSignal": true,
+        "primarySourceSignal": false,
         "signals": [
-          "approved primary-source lead",
-          "collector category"
+          "collector category",
+          "ai"
         ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "london",
+          "reason": "Positive location context; verify the actual place live."
+        },
+        "alternateLeads": []
+      },
+      {
+        "id": "lead-b533efce7ea54aeb",
+        "title": "Indivi acquires Imperial College London spinout Cogitat for its brain AI model - EdTech Innovation Hub",
+        "publisher": "EdTech Innovation Hub",
+        "publishedAt": "Thu, 26 Nov 2026 00:19:32 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVzJUYndpYjRtZ3JkSzZ1ME1GRDlPYndsVUZoSjRaRVYxOWNnMzQ4LWNrNXh6V1lVWmRiVGpnX29RZ3pSeElWZzdaYXYzdi1wVjZNTUlQR3B2a2FFX3J0cEUzb2hXeGhvd0JsMXAxVWo3azhrY0FFbHF4MG1FWlJwRnRmcEJVdDYwUnNBdEtFeDBwU1BKR2NQY1RCT19adFFKOTZZNW50amNILUpVa2NKYzZxTHVIX2tQRmJz?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.edtechinnovationhub.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 17.37,
+        "ageHours": 39.8,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "ai"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "imperial college",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       },
       {
@@ -1007,35 +1075,21 @@
         "summary": "",
         "needsDestinationResolution": true,
         "datedActivitySignal": false,
-        "score": 17.53,
-        "ageHours": 38.8,
+        "score": 17.37,
+        "ageHours": 39.8,
         "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
           "collector category",
           "ai"
         ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-874921ec14b846bb",
-        "title": "Air pollution mechanism that triggers asthma discovered - King's College London",
-        "publisher": "King's College London",
-        "publishedAt": "Wed, 25 Nov 2026 05:47:21 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOUDhiOTRSeDAwelY1TlUyZWllSWc1Z2haYjItVlVnOUxIZjFra3FZaFNtTWZzUHZTUDM4X0FPMEpTMGRBVjRjOER2YnBiRllsS0Z3SlNreWMzYWgwc1Z1TXpvOWZLSkdzbVlqVmltLWVDUk9wbzZXWlpZRlF1Y0tSbjV3NU9naG5ucFE?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.kcl.ac.uk",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 15.44,
-        "ageHours": 57.4,
-        "activitySignal": false,
-        "primarySourceSignal": true,
-        "signals": [
-          "approved primary-source lead",
-          "collector category"
-        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "imperial college",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       },
       {
@@ -1049,316 +1103,113 @@
         "summary": "",
         "needsDestinationResolution": true,
         "datedActivitySignal": false,
-        "score": 15.32,
-        "ageHours": 52.1,
+        "score": 15.16,
+        "ageHours": 53,
         "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
           "collector category",
           "ai"
         ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-c20026fd132184dd",
-        "title": "Anthifel launches London AI consultancy with Türkiye deals - IT Brief UK",
-        "publisher": "IT Brief UK",
-        "publishedAt": "Wed, 25 Nov 2026 09:30:00 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNUUZVWExNNXJzWVFOZHM4a3hoNTNOX0VydjFCUFhYcDFRZUU5dm45b29FQkNvNjZKNDNNM1FJNVFmZ19TTHpocGdIc1BpWlFYbEtzRG5OakZqMTMxbElOR21Dd0lka2Jub0tFM0xYZXpGZXloQ0F0RlV1U2ZWckkxbmlKQ0E2RmZfSnhhR0JBMA?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://itbrief.co.uk",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 15.05,
-        "ageHours": 53.7,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "ai"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-802e7ff47ad873d8",
-        "title": "PolyAI’s ex-machine learning chief raises $20m for new robotics startup - Sifted",
-        "publisher": "Sifted",
-        "publishedAt": "Wed, 25 Nov 2026 15:00:31 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQmtneEViWDB2VW41eWJ6NEhQZkZpMy1iVVN5VjZMWWVhS01WVXFUdmY4Sm9jaFVmbEROdkxEVFlNNlN2ZmRiYVhGQXVTM0ZKS0F0X1JFdDJVSGRHT3dfLWtWZExLMVdqOXkwT1l3QjZhZEFIUmE0ZVoxUmZEeFczRHpUWjZQcVd1ekRJUG1XNU0xcUZxWlBPM2VBd28?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://sifted.eu",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 14.97,
-        "ageHours": 48.2,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "machine learning",
-          "robotics"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-c26777aaed0efea4",
-        "title": "IPG partners with London Book Fair on AI training event - The Bookseller",
-        "publisher": "The Bookseller",
-        "publishedAt": "Wed, 25 Nov 2026 08:43:09 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPdjBkaENxaWo4MlRGZ05TUUtaZUkwMmRwZjAteWZSc25pRjg4VkxnUjNaaDBWNDZSUHRnMjRhMFJpbWlPTVlqS2d5TXNtazhLMzRvR2dIY2NIRkdGeG9mTDBpV3ktcDNOYmppTHBUVjZ5MGpTalZzLW1tMW41YVVmb3VuVF83QlhpQzZBZF9POTNMZjZh?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.thebookseller.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 14.92,
-        "ageHours": 54.5,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "ai"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-a99e08eda6939f85",
-        "title": "Transition Finance Council builds international momentum for finalised Guidelines at COP31 - Newsroom City of London",
-        "publisher": "Newsroom City of London",
-        "publishedAt": "Thu, 26 Nov 2026 11:54:43 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNYmlZS1loTWtGbGdpS3RNUTVWa1RYeE5GQXF0WGczbDZLamprQ0pVSzMxUEViaEhpOEhyeEl0Q2VQLUk3YjdTQlVTODJhNC15TEM1c2dKU0ZOYTFtSGk4LUluN0hhbmtoTGt4eGtFNkJmUXMzT09ZLUpWbXd2XzNsdXV3S2JaUWJzUXdaemswa05jbnlqSXJNTklGdTNjSmgtLVJWTENnR09QbEN2NG5SVVFWOFlfV1kyWlFQSnNGcHhXUQ?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://news.cityoflondon.gov.uk",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 14.46,
-        "ageHours": 27.3,
-        "activitySignal": false,
-        "primarySourceSignal": true,
-        "signals": [
-          "approved primary-source lead"
-        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "london",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       }
     ],
     "London Technology": [
       {
-        "id": "lead-e5234f12b1a030e3",
-        "title": "BioNTech founders in talks to raise $1B for mRNA cancer startup Arife - European Biotechnology Magazine",
-        "publisher": "European Biotechnology Magazine",
-        "publishedAt": "Wed, 25 Nov 2026 13:55:21 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQc0FjNzhGUWJxb2ZFUDFMWlFVNlJ2bUVjdHdjRE51cnJ2YmxSZllxaTdnSklCbFd5U2s5dXNHV2VvNFVKRWQzVWxCRzNIRjdaXzhWc1lNRjhrMjJXZnlaaVQ1ejljTDBJdkNmbjdTaFhzZ2hubWxuSmtwSWdNNjFSaUxBdGxjSkxoMnRlNHdfUkNLQldOcUpXODhXY1ViRGFVd1VVOEJaR3dDRU41SUVtRXRmbV9qcVk?oc=5",
+        "id": "lead-0cf075c20d207977",
+        "title": "Cyprus turns to London to help transform research into businesses - Cyprus Mail",
+        "publisher": "Cyprus Mail",
+        "publishedAt": "Wed, 25 Nov 2026 10:33:08 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRU5SRDRTVjF6TXdzb2lIa1dpTjl1NGhJTm5YU2lwZURVdS14UVM0RkRsSmFfVTlEMnhpdnhBM1hfZ2lSNG1HMDFkWjhjbTREVmlkOEpTOWY4RDRxWVpGUmFZQV84T3JqM2VaNTdzYVB0V05QSmlxbG5aTFFZaElxOExua0Q5SC04eVJkc1NleFlaVkFJWjc5SlJTU3hjaXpCb0E?oc=5",
         "discoverySource": "Google News RSS",
-        "publisherUrl": "https://european-biotechnology.com",
+        "publisherUrl": "https://cyprus-mail.com",
         "summary": "",
         "needsDestinationResolution": true,
         "datedActivitySignal": false,
-        "score": 24.79,
-        "ageHours": 49.3,
+        "score": 15.08,
+        "ageHours": 53.5,
         "activitySignal": false,
         "primarySourceSignal": false,
         "signals": [
           "collector category",
-          "technology",
-          "biotech",
+          "research"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "london",
+          "reason": "Positive location context; verify the actual place live."
+        },
+        "alternateLeads": []
+      },
+      {
+        "id": "lead-c65809c879acdce3",
+        "title": "Kazakhstan, Uzbekistan Launch Joint Startup Hub in London - The Astana Times",
+        "publisher": "The Astana Times",
+        "publishedAt": "Wed, 25 Nov 2026 07:39:09 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNaE5oTnBZYW1tbTN0YVhTZHBzZHYxY3BCaExHM1R5T1JyVjR3a0VJcjZzVE9DLXpGdHdid0RLdUVpYVFzR1dIMnpXX2ZYN2FUVnZqSVVFaE1JdmRtbnZwak8xMkRMSlRqNHJBMjRfME9sd0NwbFJBczlqb1FZMkk1aXpLRXNWdno4cWNqaHhVRHRjRU0?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://astanatimes.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 14.59,
+        "ageHours": 56.4,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
           "startup"
         ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "london",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       },
       {
-        "id": "lead-9f393545c108c074",
-        "title": "University of Sussex and Universal Quantum Demonstrate Laser-Free Axial-Mode Entangling Gate on Doppler-Cooled Trapped Ions - Quantum Computing Report",
-        "publisher": "Quantum Computing Report",
-        "publishedAt": "Thu, 26 Nov 2026 04:59:05 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNWnkxamFzbXFIZmlsLTEyTlhPbnhjb0NBZjY5cjMtY1N1Y2ptQW85dW1EYjlJN2lueDJuSFljTG1KcnhiTHRVX0xhUjEzYUNCOWxCZW1yMmZaNEpZTllVdjJSNFNQR2JVOHZ2TTdIQ2F4Y04zZEVSMFZsRzlOSVVYWkZMclBEUGRSNDRfQzVaVzFNeGczZ1dMZVNpOTBZWkpsUXhIbU9SU0pCZFE4d3NTc016WnBWeXNGSTBhUHlMWmg2eG1Gb3o0YUxWMndnajdYS0FpbUdickw4WWcySXVxTEYzSUlnSXdPWGZQdVg2REjSAfYBQVVfeXFMUFlxNlhyaE1xWUxvdlVHTFRsbjFXZkNMbHVsQ3ZHdmpEMVd1QXJrc2p3dGtWQ2dIV1cyc0Y2SExJYVEzYVZ1TFBhMnZwMDVRTXNRTmVfTXRKb21JSXNOSjhKQkJwakNfTWlTemRnamotMjVLdDY2Qzk2VWJxZmpYOWRHTzhPVjFOakdwRGtpSlV5LU51YTBPX1BwNFpRZm5BUDJrYU5lbHRTMUhSeHFudVpKbmFTQi05NUtEZTVRZTdPSUpIT29xMVhrMlBONHRZVEtfclVjUlhwdWdIb2xaSjNiYWpQdFlvYWhCTTZWTWJZbDU3NnZR?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://quantumcomputingreport.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 23.3,
-        "ageHours": 34.2,
-        "activitySignal": false,
-        "primarySourceSignal": false,
+        "id": "direct-4d18f0731c7aafa1",
+        "title": "Nature Journaling Workshop",
+        "eventStart": "2026-12-05T12:30:00.637Z",
+        "eventEnd": "2026-12-05T14:00:00.637Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
+        "publisher": "Heath Hands",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/naturejournaling-051226",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
+        "summary": "Join us for a guided walk and nature journaling workshop on the Kenwood Estate . Nature journaling is a method of recording and collecting your observations in a variety of ways - note making, sketching, writing or whatever method works best for you. Nature journaling can enrich your experience of the natural world, deepen your relationship with the local environment and help develop your identifi",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": true,
+        "score": 10,
+        "ageHours": null,
+        "activitySignal": true,
+        "primarySourceSignal": true,
         "signals": [
-          "collector category",
-          "quantum",
-          "computing"
+          "approved primary-source lead",
+          "technology"
         ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-5f55b0e3c120593e",
-        "title": "European Union proposes €50 billion tech equity fund to boost quantum technology - DW.com",
-        "publisher": "DW.com",
-        "publishedAt": "Wed, 25 Nov 2026 23:05:51 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQd0NTR0VFczJpLWs0aVdybWp3VmRUcWN4MmhuVklTQ3NEc2NtM1ZYWU9jQy0wZDlqNlIzc0xrNFF6cmdzNUwzRE5DQ2hGOUNuU2pjZU9GNzVqYVJRZV9ZcklaTmxaVC00ZzJZQkVXZnZtZjN6QUVXUkRBNE5IdU5kejNKR2c5aXNySmNRdk5MdWVXSFAtWVQxRndkUXMyVExNTlQ0T3NGREZ1aG_SAasBQVVfeXFMUDBOTG9iVEtsNWE1a1lyX21LMnNGQVV3eEtnMGt5ejhsYzZyY2xGcUxTYTN3M01kVDVkY2ZSR0xFcnZ6Q3BHai1YRF9reDJaV0R0YWpabEV4WE5Gc0wtNXU3VE1rVlI1T0ZaZkd1QU8zdzhPWWVVZExZcl9Od0ZWSUdSamh4bkNZeE95WVBVS2taSzhPbGV3SHE4RDE0X19nWTk1N184N3BkZ0ww?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.dw.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 22.32,
-        "ageHours": 40.1,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "technology",
-          "quantum"
+        "reviewFlags": [
+          "Family/child audience: check suitability."
         ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-c963f0d7e5a53aa3",
-        "title": "EU proposes Quantum Act to strengthen industrial capabilities, secure supply chains, advance post-quantum readiness - Industrial Cyber",
-        "publisher": "Industrial Cyber",
-        "publishedAt": "Thu, 26 Nov 2026 10:07:15 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNRUxGT0dmYS1qWjVSa1dwNVJMSFZ6YkljYkNYaUZZd2hrLWtaYlVvMHRkWTc3WjM4TzJVUGQycTRkSndrYW5iWW9PZ1p5Um5DQ0FMU0JpdjJqMVpZQ243ZTVlZWRMNEhBTG9qME0xRFF1MHJqNkc1V3pCUThvNXg3SXNDeDBqVU5ZUjh1c3piZ1VpUUlreUlhRzRVeXNhcHRWWE5yWThFZkJXclBOamZseGJ2VjV5T3E1TzMzMFdxejlLY2piM1A5SnprM1RrQ2huUV93SG5yZk5aQ2FQZXZjRmpVR0ZQY3Z2MnJ6Rk9LcDNCMzBNcXRqTjFYczVtbEcxOUtFcG5yNm8?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://industrialcyber.co",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 21.16,
-        "ageHours": 29.1,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "quantum",
-          "cyber"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-b5b6f8e57ebdb88a",
-        "title": "Quantum leap: computing's next frontier takes shape - France 24",
-        "publisher": "France 24",
-        "publishedAt": "Wed, 25 Nov 2026 14:55:19 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxQOURIdll0MzI3MnBMazNFWFh4eG5wTWw0b2JfN3Q0dV9tYTliYlVPa1N5amxsV3U4SGQxc0Y2UWhhb1J3X3lHdmpTalhicEZPQWtOWGg5LWk2WjFCRlEwZnV1bTdWVC1xSzVKejJ2VkpyN0p0bGxrT3cyMUhFdjZZTnpvc2huMEpCSUs1OUYwSFpIQU9jMXVrSzRQVkd5UQ?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.france24.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 20.96,
-        "ageHours": 48.3,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "quantum",
-          "computing"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-5d732502492b3230",
-        "title": "Europe plans €50 billion sovereign tech equity fund to boost quantum technology - Reuters",
-        "publisher": "Reuters",
-        "publishedAt": "Wed, 25 Nov 2026 12:23:29 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNQXB4bkpfdVM2Rkh0NTZKZmIxOHJkOEZGMnNkdy1mVHl5T2NTSmxzQVUzUHd4eHBKeFFKQU5DUnFmTG9neTRHakJCSkF2aTk3eUlPdEVZMWI2YUVGZjBoTTVjQkJqc3hmUW9ua2JQR3BsTHVKSDdoWU5oOE1qUC1hdkhYZVZRdFNMbEc2WWtQaXJHYkNxMmxPU2ZLU0EyQ0hxb2JEZjZUWEtRYXFSUUVKSm56MlZRdkMzWmlvRnBNbkc?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.reuters.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 20.54,
-        "ageHours": 50.8,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "technology",
-          "quantum"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-a9e4a423eff037ac",
-        "title": "IN BRIEF: RTW Biotech shares rise as portfolio firm gets key investor - London South East",
-        "publisher": "London South East",
-        "publishedAt": "Thu, 26 Nov 2026 11:01:00 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZjcxd3N2bzFhVE85T1JhR2RGX21BTFZwTW1rQ2RoMlk0c2NPYTRESVVvYzdlWDVXTjhuZjRkQmJZMjlnVWM1MmZoTVlzTjZJUkhEemF5c1FzMUVocGJaMS1kbExMcUxqbHRWTTFxbU5xUHBldkxVbzg0MThHaTBuMHQ0SlhUUGx2cElUX3IzUm9uWnNpV3cxWnZWMVEwbGtMN2FoTWRndW5UU0FvaFIxSE9qY0NrUjQ?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.lse.co.uk",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 19.31,
-        "ageHours": 28.2,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "biotech"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-d7e261d197bb32e2",
-        "title": "IN BRIEF: Quantum Helium shares plunge 62% on failed flow test - London South East",
-        "publisher": "London South East",
-        "publishedAt": "Thu, 26 Nov 2026 07:32:00 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQUi1wVzhTdzJIdlA0blR6Skh3dkV1N194QU5pbW1PYWQ4OFpGWmpfTkVUSEF2LWZWWkpJalpWeDdfeHBabXpZN3ozNnFudXZZV2puc3ZOc3hqNjRIeDJYUEc4aUlaNlVGSTFqbWVZVnY5aDRLTmlpODczVXNFS25US0ZzN3kwUHE2QzVvRzhhS3ZibFJFLWQ4STNsdUZ5dHVaSXB6UXEwZnhtaXhF?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.lse.co.uk",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 18.73,
-        "ageHours": 31.6,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "quantum"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-4c04de33e2ceba62",
-        "title": "Inside the Quantum Hiring Surge - AZoQuantum",
-        "publisher": "AZoQuantum",
-        "publishedAt": "Thu, 26 Nov 2026 14:25:42 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0yeTRkV0NmVmg1TWpzcER3VFJOd2Zna0NwYm5aX2NRc3pHYWZGU1N5cjNfaUo4S0FyVU1OOHBLcU5QOEw4cjMzdG04WjNaSF9COWR4ZF9pcUlxS2ZHV2FhdUtsaw?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://www.azoquantum.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 17.88,
-        "ageHours": 24.7,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "quantum"
-        ],
-        "alternateLeads": []
-      },
-      {
-        "id": "lead-e7370fbda56908bf",
-        "title": "Could AI Break RSA Before Quantum Computers Do? - Quantum Zeitgeist",
-        "publisher": "Quantum Zeitgeist",
-        "publishedAt": "Thu, 26 Nov 2026 13:53:07 GMT",
-        "discoveryUrl": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ZQnBqckxrX0V6MDFvaXZCZ0Y2d25ncWRJVjdncmtvS1p5Yy1OT2NTSGdzem4xdU5IMm5rTnEwdWktVVNUQ3ZtbjJWaFNFcmNDMHMzYW5fdHNRSWRJaURZYnljZFlUTU9QYUo1Uw?oc=5",
-        "discoverySource": "Google News RSS",
-        "publisherUrl": "https://quantumzeitgeist.com",
-        "summary": "",
-        "needsDestinationResolution": true,
-        "datedActivitySignal": false,
-        "score": 17.79,
-        "ageHours": 25.3,
-        "activitySignal": false,
-        "primarySourceSignal": false,
-        "signals": [
-          "collector category",
-          "quantum"
-        ],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "Kenwood",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       }
     ],
@@ -1368,8 +1219,8 @@
         "title": "Litter pick",
         "eventStart": "2026-11-28T11:00:00.801Z",
         "eventEnd": "2026-11-28T12:00:00.801Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/litter-pick-281126",
@@ -1378,7 +1229,7 @@
         "summary": "Join us for a Saturday litter pick. All welcome and all equipment provided. Meet at 11am at the Heath Info Hut (the former Tennis Bookings Hut), Hampstead Heath, near the Parliament Hill tennis courts - no need to book, although you can let us know that you’re planning to come along so that we know roughly how many to expect.",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 82.17,
+        "score": 82.21,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -1389,97 +1240,22 @@
           "booking",
           "bookings"
         ],
-        "alternateLeads": [
-          {
-            "id": "direct-1d1f9a17dfce7c07",
-            "title": "Litter pick",
-            "eventStart": "2026-12-05T11:00:00.113Z",
-            "eventEnd": "2026-12-05T12:00:00.113Z",
-            "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-            "checkedAt": "2026-11-27T15:10:24.111Z",
-            "publisher": "Heath Hands",
-            "publishedAt": "",
-            "discoveryUrl": "https://www.heath-hands.org.uk/whatson/litter-pick-051226",
-            "discoverySource": "Official activity listing",
-            "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-            "summary": "Join us for a Saturday litter pick. All welcome and all equipment provided. Meet at 11am at the Heath Info Hut (the former Tennis Bookings Hut), Hampstead Heath, near the Parliament Hill tennis courts - no need to book, although you can let us know that you’re planning to come along so that we know roughly how many to expect.",
-            "needsDestinationResolution": false,
-            "datedActivitySignal": true,
-            "score": 75.17,
-            "ageHours": null,
-            "activitySignal": true,
-            "primarySourceSignal": true,
-            "signals": [
-              "approved primary-source lead",
-              "source lists an upcoming date: reverify availability",
-              "activity/action wording: verify upcoming date",
-              "booking",
-              "bookings"
-            ]
-          },
-          {
-            "id": "direct-037b4cf574575ad0",
-            "title": "Litter pick",
-            "eventStart": "2026-12-12T11:00:00.113Z",
-            "eventEnd": "2026-12-12T12:00:00.113Z",
-            "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-            "checkedAt": "2026-11-27T15:10:24.111Z",
-            "publisher": "Heath Hands",
-            "publishedAt": "",
-            "discoveryUrl": "https://www.heath-hands.org.uk/whatson/litter-pick-121226",
-            "discoverySource": "Official activity listing",
-            "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-            "summary": "Join us for a Saturday litter pick. All welcome and all equipment provided. Meet at 11am at the Heath Info Hut (the former Tennis Bookings Hut), Hampstead Heath, near the Parliament Hill tennis courts - no need to book, although you can let us know that you’re planning to come along so that we know roughly how many to expect.",
-            "needsDestinationResolution": false,
-            "datedActivitySignal": true,
-            "score": 69,
-            "ageHours": null,
-            "activitySignal": true,
-            "primarySourceSignal": true,
-            "signals": [
-              "approved primary-source lead",
-              "source lists an upcoming date: reverify availability",
-              "activity/action wording: verify upcoming date",
-              "booking",
-              "bookings"
-            ]
-          },
-          {
-            "id": "direct-bfa8c43697381c8f",
-            "title": "Litter pick",
-            "eventStart": "2026-12-19T11:00:00.801Z",
-            "eventEnd": "2026-12-19T12:00:00.801Z",
-            "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-            "checkedAt": "2026-11-27T15:10:24.111Z",
-            "publisher": "Heath Hands",
-            "publishedAt": "",
-            "discoveryUrl": "https://www.heath-hands.org.uk/whatson/litter-pick-191226",
-            "discoverySource": "Official activity listing",
-            "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-            "summary": "Join us for a Saturday litter pick. All welcome and all equipment provided. Meet at 11am at the Heath Info Hut (the former Tennis Bookings Hut), Hampstead Heath, near the Parliament Hill tennis courts - no need to book, although you can let us know that you’re planning to come along so that we know roughly how many to expect.",
-            "needsDestinationResolution": false,
-            "datedActivitySignal": true,
-            "score": 69,
-            "ageHours": null,
-            "activitySignal": true,
-            "primarySourceSignal": true,
-            "signals": [
-              "approved primary-source lead",
-              "source lists an upcoming date: reverify availability",
-              "activity/action wording: verify upcoming date",
-              "booking",
-              "bookings"
-            ]
-          }
-        ]
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "Hampstead",
+          "reason": "Positive location context; verify the actual place live."
+        },
+        "alternateLeads": []
       },
       {
         "id": "direct-fe5b48a57acaed06",
         "title": "Hampstead Heath Photo Exhibition",
         "eventStart": "2026-11-26T10:00:00.887Z",
         "eventEnd": "2026-11-28T15:00:00.887Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/photo-exhibition-dairy-2026",
@@ -1498,6 +1274,17 @@
           "activity/action wording: verify upcoming date",
           "exhibition"
         ],
+        "reviewFlags": [
+          "Possible previous coverage; compare the underlying development."
+        ],
+        "priorStoryIds": [
+          "2026-11-16-kenwood-photo-exhibition"
+        ],
+        "geography": {
+          "eligible": true,
+          "evidence": "hampstead",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       },
       {
@@ -1505,8 +1292,8 @@
         "title": "Father Christmas at Kenwood House",
         "eventStart": "2026-11-28T10:00:00.040Z",
         "eventEnd": "2026-12-20T16:00:00.040Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/kenwoodfatherchristmas",
@@ -1515,7 +1302,7 @@
         "summary": "WEEKENDS ONLY Join Father Christmas at Kenwood for a magical way to start the festive season. Father Christmas is taking time out of his busy festive schedule to tell some of his favourite seasonal stories. After the group storytelling session, you and your children will meet the man himself, with the chance to take photographs and make memories to treasure. Father Christmas will also give every c",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 78.22,
+        "score": 78.25,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -1525,33 +1312,15 @@
           "activity/action wording: verify upcoming date",
           "ticket"
         ],
-        "alternateLeads": []
-      },
-      {
-        "id": "direct-e844db69e26e27ae",
-        "title": "Highgate Wood - Tree and fungi walk",
-        "eventStart": "2026-11-28T11:30:00.873Z",
-        "eventEnd": "2026-11-28T13:00:00.873Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
-        "publisher": "Heath Hands",
-        "publishedAt": "",
-        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/highgatewood-treefungi281106",
-        "discoverySource": "Official activity listing",
-        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-        "summary": "Enjoy an guided walk of trees and fungi found in Highgate Wood, led by their staff. All guided walks are free to attend with no booking required. They last approximately 1 to 1.5 hours. Meet at the information hut next to the café. For more information and to book click the link below . Learn more",
-        "needsDestinationResolution": false,
-        "datedActivitySignal": true,
-        "score": 78.15,
-        "ageHours": null,
-        "activitySignal": true,
-        "primarySourceSignal": true,
-        "signals": [
-          "approved primary-source lead",
-          "source lists an upcoming date: reverify availability",
-          "activity/action wording: verify upcoming date",
-          "booking"
+        "reviewFlags": [
+          "Family/child audience: check suitability."
         ],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "kenwood",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       },
       {
@@ -1559,8 +1328,8 @@
         "title": "Kenwood Christmas Wreath Trail",
         "eventStart": "2026-12-05T10:00:00.040Z",
         "eventEnd": "2027-01-03T16:00:00.040Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/kenwoodwreathtrail",
@@ -1569,7 +1338,7 @@
         "summary": "Visit Kenwood House’s community wreath trail this December. Featuring wreaths made by over twenty different groups, the trail celebrates the people who bring their communities closer together. Plus, they're a fantastic fresh-air way to get into the festive spirit. There is no booking required, but be sure to check opening times over Christmas to plan your visit. Learn more",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 75.22,
+        "score": 75.25,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -1580,24 +1349,31 @@
           "booking",
           "opening"
         ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "kenwood",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       },
       {
-        "id": "direct-8b8f16eb6e242454",
-        "title": "Highgate Wood - Winter Walk",
-        "eventStart": "2026-12-06T11:30:00.873Z",
-        "eventEnd": "2026-12-06T13:00:00.873Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
+        "id": "direct-1d1f9a17dfce7c07",
+        "title": "Litter pick",
+        "eventStart": "2026-12-05T11:00:00.113Z",
+        "eventEnd": "2026-12-05T12:00:00.113Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
-        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/highgatewood-winterwalk",
+        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/litter-pick-051226",
         "discoverySource": "Official activity listing",
         "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-        "summary": "Enjoy a guided walk of Highgate Wood in winter, led by their staff. All guided walks are free to attend with no booking required. They last approximately 1 to 1.5 hours. Meet at the information hut next to the café. For more information and to book click the link below . Learn more",
+        "summary": "Join us for a Saturday litter pick. All welcome and all equipment provided. Meet at 11am at the Heath Info Hut (the former Tennis Bookings Hut), Hampstead Heath, near the Parliament Hill tennis courts - no need to book, although you can let us know that you’re planning to come along so that we know roughly how many to expect.",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 70.15,
+        "score": 75.21,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -1605,8 +1381,86 @@
           "approved primary-source lead",
           "source lists an upcoming date: reverify availability",
           "activity/action wording: verify upcoming date",
-          "booking"
+          "booking",
+          "bookings"
         ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "Hampstead",
+          "reason": "Positive location context; verify the actual place live."
+        },
+        "alternateLeads": []
+      },
+      {
+        "id": "direct-037b4cf574575ad0",
+        "title": "Litter pick",
+        "eventStart": "2026-12-12T11:00:00.113Z",
+        "eventEnd": "2026-12-12T12:00:00.113Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
+        "publisher": "Heath Hands",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/litter-pick-121226",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
+        "summary": "Join us for a Saturday litter pick. All welcome and all equipment provided. Meet at 11am at the Heath Info Hut (the former Tennis Bookings Hut), Hampstead Heath, near the Parliament Hill tennis courts - no need to book, although you can let us know that you’re planning to come along so that we know roughly how many to expect.",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": true,
+        "score": 69,
+        "ageHours": null,
+        "activitySignal": true,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "source lists an upcoming date: reverify availability",
+          "activity/action wording: verify upcoming date",
+          "booking",
+          "bookings"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "Hampstead",
+          "reason": "Positive location context; verify the actual place live."
+        },
+        "alternateLeads": []
+      },
+      {
+        "id": "direct-bfa8c43697381c8f",
+        "title": "Litter pick",
+        "eventStart": "2026-12-19T11:00:00.801Z",
+        "eventEnd": "2026-12-19T12:00:00.801Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
+        "publisher": "Heath Hands",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/litter-pick-191226",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
+        "summary": "Join us for a Saturday litter pick. All welcome and all equipment provided. Meet at 11am at the Heath Info Hut (the former Tennis Bookings Hut), Hampstead Heath, near the Parliament Hill tennis courts - no need to book, although you can let us know that you’re planning to come along so that we know roughly how many to expect.",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": true,
+        "score": 69,
+        "ageHours": null,
+        "activitySignal": true,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "source lists an upcoming date: reverify availability",
+          "activity/action wording: verify upcoming date",
+          "booking",
+          "bookings"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "Hampstead",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       },
       {
@@ -1614,8 +1468,8 @@
         "title": "Hampstead Heath Christmas Funfair",
         "eventStart": "2026-12-11T11:00:00.515Z",
         "eventEnd": "2027-01-03T17:00:00.515Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/christmasfair2026",
@@ -1624,7 +1478,7 @@
         "summary": "John Parnum Funfair and Zippos Circus bring traditional family fun to the Heath Fairground this Christmas. Join in the fun with rides, food stalls and games for all the family. Christmas trees will be for sale. Circus tickets can be purchased here . This event is managed by the City of London Corporation .",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 67.17,
+        "score": 67.21,
         "ageHours": null,
         "activitySignal": true,
         "primarySourceSignal": true,
@@ -1634,6 +1488,13 @@
           "activity/action wording: verify upcoming date",
           "ticket"
         ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "hampstead",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       },
       {
@@ -1641,8 +1502,8 @@
         "title": "Woodworking and Wreath making with Hampstead Heath Eco Club",
         "eventStart": "2026-12-19T13:00:00.910Z",
         "eventEnd": "2026-12-19T14:30:00.910Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/hhecwoodworking",
@@ -1661,6 +1522,15 @@
           "activity/action wording: verify upcoming date",
           "booking"
         ],
+        "reviewFlags": [
+          "Family/child audience: check suitability."
+        ],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "hampstead",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
       },
       {
@@ -1668,8 +1538,8 @@
         "title": "Kids at Keats: Festive Pine Cones",
         "eventStart": "2026-12-03T14:00:00.040Z",
         "eventEnd": "2026-12-03T16:00:00.040Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
         "discoveryUrl": "https://www.heath-hands.org.uk/whatson/kidschristmasatkeats",
@@ -1678,7 +1548,7 @@
         "summary": "A free drop-in session at Keats House. Get into the festive spirit by decorating your own personal pine cone to take home. There will also be a selection of toys, books and colouring. Aimed at children under 5. This event and any associated ticketing and personal data capture is managed directly by the City of London Corporation. Learn more",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
-        "score": 61.05,
+        "score": 61.09,
         "ageHours": null,
         "activitySignal": false,
         "primarySourceSignal": true,
@@ -1687,21 +1557,166 @@
           "source lists an upcoming date: reverify availability",
           "ticket"
         ],
+        "reviewFlags": [
+          "Family/child audience: check suitability."
+        ],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": true,
+          "evidence": "Keats House",
+          "reason": "Positive location context; verify the actual place live."
+        },
         "alternateLeads": []
-      },
+      }
+    ]
+  },
+  "verificationQueue": {
+    "Near Home": [
       {
-        "id": "direct-b954641b371783ec",
-        "title": "Keats House: Festivity in Romantic Poetry",
-        "eventStart": "2026-12-18T18:30:00.040Z",
-        "eventEnd": "2026-12-18T20:30:00.040Z",
-        "evidenceFile": ".daily-work/evidence/7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
-        "checkedAt": "2026-11-27T15:10:24.111Z",
+        "id": "direct-e844db69e26e27ae",
+        "title": "Highgate Wood - Tree and fungi walk",
+        "eventStart": "2026-11-28T11:30:00.873Z",
+        "eventEnd": "2026-11-28T13:00:00.873Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
         "publisher": "Heath Hands",
         "publishedAt": "",
-        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/keats-festive-romantic",
+        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/highgatewood-treefungi281106",
         "discoverySource": "Official activity listing",
         "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
-        "summary": "Join Keats House for an evening of discussion on Romantic Festivity with UCL's Gregory Dart. In 1817 Leigh Hunt complained that Christmas had become a 'dreary business'. But why? What were the causes of the Romantics' Christmas crisis? And how did they attempt to address it in their poetry? In this talk Gregory Dart will run through Romantic meditations on festivity, holidays and holydays, feasts ",
+        "summary": "Enjoy an guided walk of trees and fungi found in Highgate Wood, led by their staff. All guided walks are free to attend with no booking required. They last approximately 1 to 1.5 hours. Meet at the information hut next to the café. For more information and to book click the link below . Learn more",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": true,
+        "score": 80.19,
+        "ageHours": null,
+        "activitySignal": true,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "source lists an upcoming date: reverify availability",
+          "activity/action wording: verify upcoming date",
+          "collector category"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      },
+      {
+        "id": "direct-8b8f16eb6e242454",
+        "title": "Highgate Wood - Winter Walk",
+        "eventStart": "2026-12-06T11:30:00.873Z",
+        "eventEnd": "2026-12-06T13:00:00.873Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
+        "publisher": "Heath Hands",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/highgatewood-winterwalk",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
+        "summary": "Enjoy a guided walk of Highgate Wood in winter, led by their staff. All guided walks are free to attend with no booking required. They last approximately 1 to 1.5 hours. Meet at the information hut next to the café. For more information and to book click the link below . Learn more",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": true,
+        "score": 72.19,
+        "ageHours": null,
+        "activitySignal": true,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "source lists an upcoming date: reverify availability",
+          "activity/action wording: verify upcoming date",
+          "collector category"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      },
+      {
+        "id": "direct-f8f5c0601092079d",
+        "title": "Parliament Hill Cafe Kids Crafts",
+        "eventStart": "2026-12-06T10:00:00.043Z",
+        "eventEnd": "2026-12-06T16:00:00.043Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
+        "publisher": "Heath Hands",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/parlihillcafecafecraft0612",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
+        "summary": "Join the team at Daisy Green for a kids playspace day at the Parliament Hill Cafe . This week’s craft: Christmas Snowmen",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": true,
+        "score": 58.25,
+        "ageHours": null,
+        "activitySignal": false,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "source lists an upcoming date: reverify availability",
+          "collector category"
+        ],
+        "reviewFlags": [
+          "Family/child audience: check suitability."
+        ],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      },
+      {
+        "id": "direct-21edb803de6d3a89",
+        "title": "Queen’s Park Carols",
+        "eventStart": "2026-12-06T15:30:00.128Z",
+        "eventEnd": "2026-12-06T16:30:00.128Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
+        "publisher": "Heath Hands",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/queensparkcarols",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
+        "summary": "Join the Queen’s Park Singers from 3:30pm for ‘Carols around the Tree’ in front of the café in Queen’s Park, with mulled wine & mince pies. All welcome!",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": true,
+        "score": 58.02,
+        "ageHours": null,
+        "activitySignal": false,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "source lists an upcoming date: reverify availability",
+          "collector category"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      },
+      {
+        "id": "direct-7b794752166a4327",
+        "title": "Parliament Hill Cafe Kids Crafts",
+        "eventStart": "2026-12-19T10:00:00.043Z",
+        "eventEnd": "2026-12-19T16:00:00.043Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
+        "publisher": "Heath Hands",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/parlihillcafecafecraft191226",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
+        "summary": "Join the team at Daisy Green for a kids playspace day at the Parliament Hill Cafe . This week’s craft: Christmas Cards Book here",
         "needsDestinationResolution": false,
         "datedActivitySignal": true,
         "score": 53,
@@ -1711,9 +1726,639 @@
         "signals": [
           "approved primary-source lead",
           "source lists an upcoming date: reverify availability",
-          "ticket"
+          "collector category"
         ],
-        "alternateLeads": []
+        "reviewFlags": [
+          "Family/child audience: check suitability."
+        ],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      }
+    ],
+    "Near Work": [
+      {
+        "id": "direct-a1aac2fd80da4661",
+        "title": "Hampstead Heath Christmas Funfair",
+        "eventStart": "2026-12-11T11:00:00.515Z",
+        "eventEnd": "2027-01-03T17:00:00.515Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
+        "publisher": "Heath Hands",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/christmasfair2026",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
+        "summary": "John Parnum Funfair and Zippos Circus bring traditional family fun to the Heath Fairground this Christmas. Join in the fun with rides, food stalls and games for all the family. Christmas trees will be for sale. Circus tickets can be purchased here . This event is managed by the City of London Corporation .",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": true,
+        "score": 70.21,
+        "ageHours": null,
+        "activitySignal": true,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "source lists an upcoming date: reverify availability",
+          "activity/action wording: verify upcoming date",
+          "city of london"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      },
+      {
+        "id": "direct-548f69f2719dd4c8",
+        "title": "Kids at Keats: Festive Pine Cones",
+        "eventStart": "2026-12-03T14:00:00.040Z",
+        "eventEnd": "2026-12-03T16:00:00.040Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
+        "publisher": "Heath Hands",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/kidschristmasatkeats",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
+        "summary": "A free drop-in session at Keats House. Get into the festive spirit by decorating your own personal pine cone to take home. There will also be a selection of toys, books and colouring. Aimed at children under 5. This event and any associated ticketing and personal data capture is managed directly by the City of London Corporation. Learn more",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": true,
+        "score": 64.09,
+        "ageHours": null,
+        "activitySignal": false,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "source lists an upcoming date: reverify availability",
+          "city of london"
+        ],
+        "reviewFlags": [
+          "Family/child audience: check suitability."
+        ],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      },
+      {
+        "id": "direct-b954641b371783ec",
+        "title": "Keats House: Festivity in Romantic Poetry",
+        "eventStart": "2026-12-18T18:30:00.040Z",
+        "eventEnd": "2026-12-18T20:30:00.040Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
+        "publisher": "Heath Hands",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/keats-festive-romantic",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
+        "summary": "Join Keats House for an evening of discussion on Romantic Festivity with UCL's Gregory Dart. In 1817 Leigh Hunt complained that Christmas had become a 'dreary business'. But why? What were the causes of the Romantics' Christmas crisis? And how did they attempt to address it in their poetry? In this talk Gregory Dart will run through Romantic meditations on festivity, holidays and holydays, feasts ",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": true,
+        "score": 56,
+        "ageHours": null,
+        "activitySignal": false,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "source lists an upcoming date: reverify availability",
+          "city of london"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      },
+      {
+        "id": "direct-feeefc3e62916928",
+        "title": "Information about Architecture Tours",
+        "eventStart": null,
+        "evidenceFile": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+        "checkedAt": "2026-11-27T15:51:01.274Z",
+        "publisher": "Barbican",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/architecture-tours",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.barbican.org.uk/whats-on",
+        "summary": "",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": false,
+        "score": 43,
+        "ageHours": null,
+        "activitySignal": true,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "activity/action wording: verify upcoming date",
+          "collector category"
+        ],
+        "reviewFlags": [
+          "Possible previous coverage; compare the underlying development."
+        ],
+        "priorStoryIds": [
+          "2026-11-16-barbican-tours-today"
+        ],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      },
+      {
+        "id": "direct-393d7590abb4049f",
+        "title": "Information about Jules Cunningham & Michael Clark Workshop",
+        "eventStart": null,
+        "evidenceFile": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+        "checkedAt": "2026-11-27T15:51:01.274Z",
+        "publisher": "Barbican",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/jules-cunningham-michael-clark-workshop",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.barbican.org.uk/whats-on",
+        "summary": "",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": false,
+        "score": 43,
+        "ageHours": null,
+        "activitySignal": true,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "activity/action wording: verify upcoming date",
+          "collector category"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      }
+    ],
+    "London AI": [
+      {
+        "id": "lead-053dcf8b474b5f33",
+        "title": "AI use risks eroding police skills, report warns - BBC",
+        "publisher": "BBC",
+        "publishedAt": "Fri, 27 Nov 2026 13:39:31 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1PMzEwbHI1X3ptV0dBbHg1RVA3M3EtMGwyQ29hWkhGc1dBLW5JLTktbFg4S3JhMjN5QWpHUlMwdmZJVFF4QnBnWnRnQm9RUGx0dmFRbE9jcERwcjA?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.bbc.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 21.6,
+        "ageHours": 2.4,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "ai"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      },
+      {
+        "id": "lead-0b4e08e42f116df7",
+        "title": "Hamilton Morrin joins global commission on AI and mental wellbeing - King's College London",
+        "publisher": "King's College London",
+        "publishedAt": "Wed, 25 Nov 2026 16:09:06 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNeG1jSW9kX3I3NUNCT0R3R2h1UHBJQ3UxYjRMYkNGOTU1RlRYNkJiVDZnRGwxU3M3Q3VzYVUxV3pSWW9VR1lRZDQ2MnhReXVnQ3gzNWVDSWszdzdDZHE0Y3FJWk85M0U0cDFseGRtakx2a1JkLUd4d3JBTm53S3FPekRUQ29kSU5hdGNoRS03Y1FTZzNndHJYMA?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.kcl.ac.uk",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 21.01,
+        "ageHours": 47.9,
+        "activitySignal": false,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "collector category",
+          "ai"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      },
+      {
+        "id": "lead-b505fbfb9adbf4a0",
+        "title": "AI should be used to optimise grad roles, rather than to cut them. - South West Londoner",
+        "publisher": "South West Londoner",
+        "publishedAt": "Thu, 26 Nov 2026 16:42:38 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMDlDV1NEUnJZR01pc09HV1F2a2RqV2J3Ukg1ZWpRbkZXeEFxMVRtbWNrdHVSSkhPYjRadWdwd2V5SHEtd1JfQnZTbVBRUnhzRGt4dFItbkh6OGluY25meHJvdXBGMng4XzM2V1JXeW9uRWJtSkpIdjB2eWlHbTRSNzlKYklEMDBMa0s5TDBuSmZpb3VFd2dxaWhxaHdsOXViN0dlRW9sZUtra3NMYlJMMGxR?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.swlondoner.co.uk",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 20.1,
+        "ageHours": 23.4,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "ai"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      },
+      {
+        "id": "lead-5bbdb0aed1d5b119",
+        "title": "Responsible AI in Legal Services: Opportunities,Risks & Use Cases - Superpower Daily",
+        "publisher": "Superpower Daily",
+        "publishedAt": "Thu, 26 Nov 2026 20:42:44 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNSVRpczFoSUJWejBvTnEwdUtvOTgyeFNkQXVQUFBSWjNqUElveXZLMzhuelp4Zk1fekl3eDdRZDNHYTYyREpBczBLOVJPclNPVWcwLTZXb0FDWmR3SXBpallGQk84Y2NiYTNkblJ2M0hwcDFhZzJ4VFhPUUdfWE1ZZ2tIazFDc1pET3Jtd0xSeXdtRHJUdk95VUVIX1VuNzd1UFc3Sy1JMy1EUGNZX1BfaTFkZHJWTEF6SmRUZjlnaUhXMHd3eGcxOWxYZFQzZWc?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://superpowerdaily.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 18.77,
+        "ageHours": 19.4,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "ai"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      },
+      {
+        "id": "lead-e1be119251c22896",
+        "title": "UK Economy May Be Better Placed to Benefit From AI - Mirage News",
+        "publisher": "Mirage News",
+        "publishedAt": "Thu, 26 Nov 2026 14:26:00 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTTlDOFRuWXp5WGlEMmJRTUZVbnFhekJ6akVRbVlYREtMczBGWXc3Skp5OXFCQkk0d0ZhWGZaYUo0RGNhUUVEdl9CNkVPOTZJbmVZXzRUc2ZkQVpuXzZqXzFIcDltbFFSVU1BMzgtdGNmc3c3N29MS2kzaFZWOXcxbUd3RklnazV1V0hV?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.miragenews.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 17.72,
+        "ageHours": 25.7,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "ai"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      }
+    ],
+    "London Technology": [
+      {
+        "id": "lead-c86abbe0c9b1743b",
+        "title": "SAP and planqc Demonstrate Enterprise Software Integration and Quantum Agents at Quantum Day Munich - Quantum Computing Report",
+        "publisher": "Quantum Computing Report",
+        "publishedAt": "Fri, 27 Nov 2026 11:10:09 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNWgwaTVHTDlsMjdxeG1IcEpQMk04NEZpdl9iRDVLb0JIU1pNQzV4TFZFaDZLdTNWdUJMODdnQ2ZJSzJzc3A2SDdXSXN4eEUyMUFrZ2dqZUUyaC1ndnAxejFDXzMwNGFNdEQ1N2JaQVRSNjhDejJ0TjZMYjBweWdiYUtRREFwd2xSZ0JyRHlOZm5YUjhpY0UtUzA0ZUk4dmpYa1BJT2ZiN1ZhTFF0RmY4dFdWclItM3BRMC1iNW1SUkwtRGxvSklSVThKTEE2NE9t0gHWAUFVX3lxTE9OTGdPYlV3em9DWHEtVmJ6QWt1UWVfN1VSdWRWTlY4Wk94aW53RGk3WTZFQU5MSUhVR0xVWnc0d0Qxbzc1ZWR4OFFGNDFpSWd2OXo3OTBwTHdiSVpUZkJHbHZnT0JIQUJsVTFLTVJYUW5Iem9wMUVBVE5vek5zdTRkcDFmZzBlODVtYkZQbzMxTXhDdlo4X0ZBNWNjT2RqNU1Fc0xNM2VfUWJkc1VDVVF6aXp5UURJVngzYTgtOHh0UWRJbGxNRFVuOWtybzIyakpSaFBZcFE?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://quantumcomputingreport.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 32.18,
+        "ageHours": 4.9,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "quantum",
+          "computing",
+          "software"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      },
+      {
+        "id": "lead-0233d640b7e7461e",
+        "title": "Standard Chartered expands quantum computing research program - FX News Group",
+        "publisher": "FX News Group",
+        "publishedAt": "Fri, 27 Nov 2026 06:26:42 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbHpvb3RTMXNld1AxNVRRVjFfODc1enpuSUk3YTJScTB3VDZKaUNZczhzdldGQU1rZFkwWlJjbWxlWTVfWEpVdkFNMV9BaVpJNUhCNVRldkdPYUhoT0haQmtJdi1PS2wwRlNOUlplTnpmM2R0bEhKbmdFM3YtYVo0ZlJpQWtfQ2t0YUt1RW94SlVkbDIxWHlTNy1SZlpKRjZ1U1lXUUtmUFJmQWF3cm5tNA?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://fxnewsgroup.com",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 31.39,
+        "ageHours": 9.6,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "quantum",
+          "research",
+          "computing"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      },
+      {
+        "id": "lead-e7b0cfa5e5f9277e",
+        "title": "UK quantum computing investment reaches record $621m in 2026 - New Electronics",
+        "publisher": "New Electronics",
+        "publishedAt": "Fri, 27 Nov 2026 08:16:22 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUkpRaC1ubTcwaFBuT1doT1lJRHBTVEp2NmxILUJkaUJPdkRGNjdFWVhCQjExZVlCVnNFWGs2UFU1WmRudG94TWVuNkNKVExoT3liZmtOTkxZb0JSM1RuOWNadDNRd2xtZFA0a0pkZUl2OU1zSThKSzd5QU4zZUpLcWVKbXRZX2xrN0tRSHFhR09rbDNKZmJLWE5XY3lqVmlPY0lVZEwwam4?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://www.newelectronics.co.uk",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 27.7,
+        "ageHours": 7.8,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "quantum",
+          "computing"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      },
+      {
+        "id": "lead-eafacedcd4fc7e59",
+        "title": "Quantum Act addresses research fragmentation and industrial weaknesses - Science|Business",
+        "publisher": "Science|Business",
+        "publishedAt": "Thu, 26 Nov 2026 20:22:46 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMDB0VjJOTy1iWUUzbXlIeUlKLUZRcHR3TXMzUGNtaTMxUVQ2dktWRF9LZ2ZrWGp1ZzMwNFhWdHVqSmg4Nkk2QWdYUXhqQVNZaFoxMlZHZmpRYXhIRVg2Y19SN1BHdk1lR0hqT0I3QjZIdWdpSUxuOEFkclU4cWVSOHRaU1Z1ZDNiMUN2VVAyakNNSFhLV3h2dGVhbGNBY1pGYUl2RjBRbU54YnRmbVg2VFF3?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://sciencebusiness.net",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 26.72,
+        "ageHours": 19.7,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "science",
+          "quantum",
+          "research"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      },
+      {
+        "id": "lead-41c8e12547adee74",
+        "title": "UK DSIT Publishes Baseline Evaluation of AI Research Resource Supercomputing Programme - CASRAI",
+        "publisher": "CASRAI",
+        "publishedAt": "Thu, 26 Nov 2026 21:05:36 GMT",
+        "discoveryUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPOFczcGZKN0Fldl9kdjZRSzdSdTRKdnBGY25uWFY3RkdsZWdnV2RkSEVOeGZFN25jMXhYR1c0YUYyNmlCejRhVTA2eGlyZFN3UEo0NndvSXF4MTFkbVJ2WEdIRTFuNTdrNElUY01PeTl5TUNaTnM3ci1wRGJNVWI1ZEl2VmZkNEFqVmppaHFmcVlhZjZOb1Z4dA?oc=5",
+        "discoverySource": "Google News RSS",
+        "publisherUrl": "https://casrai.org",
+        "summary": "",
+        "needsDestinationResolution": true,
+        "datedActivitySignal": false,
+        "score": 25.83,
+        "ageHours": 19,
+        "activitySignal": false,
+        "primarySourceSignal": false,
+        "signals": [
+          "collector category",
+          "research",
+          "computing"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      }
+    ],
+    "Plan Ahead": [
+      {
+        "id": "direct-e844db69e26e27ae",
+        "title": "Highgate Wood - Tree and fungi walk",
+        "eventStart": "2026-11-28T11:30:00.873Z",
+        "eventEnd": "2026-11-28T13:00:00.873Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
+        "publisher": "Heath Hands",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/highgatewood-treefungi281106",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
+        "summary": "Enjoy an guided walk of trees and fungi found in Highgate Wood, led by their staff. All guided walks are free to attend with no booking required. They last approximately 1 to 1.5 hours. Meet at the information hut next to the café. For more information and to book click the link below . Learn more",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": true,
+        "score": 78.19,
+        "ageHours": null,
+        "activitySignal": true,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "source lists an upcoming date: reverify availability",
+          "activity/action wording: verify upcoming date",
+          "booking"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      },
+      {
+        "id": "direct-8b8f16eb6e242454",
+        "title": "Highgate Wood - Winter Walk",
+        "eventStart": "2026-12-06T11:30:00.873Z",
+        "eventEnd": "2026-12-06T13:00:00.873Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
+        "publisher": "Heath Hands",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/highgatewood-winterwalk",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
+        "summary": "Enjoy a guided walk of Highgate Wood in winter, led by their staff. All guided walks are free to attend with no booking required. They last approximately 1 to 1.5 hours. Meet at the information hut next to the café. For more information and to book click the link below . Learn more",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": true,
+        "score": 70.19,
+        "ageHours": null,
+        "activitySignal": true,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "source lists an upcoming date: reverify availability",
+          "activity/action wording: verify upcoming date",
+          "booking"
+        ],
+        "reviewFlags": [],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      },
+      {
+        "id": "direct-3ec5a6aee26d15e8",
+        "title": "26 Sep - 6 Dec Highgate Wood guided walks",
+        "eventStart": null,
+        "evidenceFile": ".daily-work\\evidence\\9a7fff3ec5ec40ea69f916465685dc1ca5acd28014d910498b8e43e6ba338bdd.body",
+        "checkedAt": "2026-11-27T15:51:01.460Z",
+        "publisher": "City of London",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.cityoflondon.gov.uk/events/highgate-wood-guided-walks",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.cityoflondon.gov.uk/events",
+        "summary": "",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": false,
+        "score": 43,
+        "ageHours": null,
+        "activitySignal": true,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "activity/action wording: verify upcoming date",
+          "collector category"
+        ],
+        "reviewFlags": [
+          "Possible previous coverage; compare the underlying development."
+        ],
+        "priorStoryIds": [
+          "2026-11-27-saturday-highgate-fungi"
+        ],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      },
+      {
+        "id": "direct-feeefc3e62916928",
+        "title": "Information about Architecture Tours",
+        "eventStart": null,
+        "evidenceFile": ".daily-work\\evidence\\0e9dc07fd0808c0e4aaa25381388c6cccf6778bbb8734b5a80246c7ae21121b7.body",
+        "checkedAt": "2026-11-27T15:51:01.274Z",
+        "publisher": "Barbican",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.barbican.org.uk/whats-on/2026/event/architecture-tours",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.barbican.org.uk/whats-on",
+        "summary": "",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": false,
+        "score": 41,
+        "ageHours": null,
+        "activitySignal": true,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "activity/action wording: verify upcoming date",
+          "tour"
+        ],
+        "reviewFlags": [
+          "Possible previous coverage; compare the underlying development."
+        ],
+        "priorStoryIds": [
+          "2026-11-16-barbican-tours-today"
+        ],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
+      },
+      {
+        "id": "direct-a03c5ad9cfef8d23",
+        "title": "Queen’s Park Trees and Ecology walk",
+        "eventStart": "2026-11-27T14:00:00.128Z",
+        "eventEnd": "2026-11-27T15:00:00.128Z",
+        "evidenceFile": ".daily-work\\evidence\\7b6515f9ebd39d0b6a1947c7f4ce0152b7313a79465a7415f80dd6fb70c5f7a2.body",
+        "checkedAt": "2026-11-27T15:51:01.263Z",
+        "publisher": "Heath Hands",
+        "publishedAt": "",
+        "discoveryUrl": "https://www.heath-hands.org.uk/whatson/queensparktreesecology",
+        "discoverySource": "Official activity listing",
+        "publisherUrl": "https://www.heath-hands.org.uk/whatson?format=json",
+        "summary": "Join us for a guided walk of Queen’s Park, looking at trees and their ecological value. The walk will meet outside the Queen’s Park Cafe - further instructions to be provided on booking. All welcome, including children of any age - but anyone under 18 should be accompanied by a responsible adult. The walk is free (donations welcome) but booking is essential. Book here",
+        "needsDestinationResolution": false,
+        "datedActivitySignal": false,
+        "score": 41,
+        "ageHours": null,
+        "activitySignal": true,
+        "primarySourceSignal": true,
+        "signals": [
+          "approved primary-source lead",
+          "activity/action wording: verify upcoming date",
+          "booking"
+        ],
+        "reviewFlags": [
+          "Family/child audience: check suitability."
+        ],
+        "priorStoryIds": [],
+        "geography": {
+          "eligible": false,
+          "evidence": null,
+          "reason": "Location unconfirmed or outside section; investigate before selection."
+        }
       }
     ]
   },
@@ -1835,23 +2480,74 @@
   ],
   "archiveDates": {
     "today": {
+      "date": "2026-11-27",
+      "label": "London • Friday 27 November 2026",
+      "storyCount": 6
+    },
+    "yesterday": {
       "date": "2026-11-16",
       "label": "London • Monday 16 November 2026",
       "storyCount": 10
     },
-    "yesterday": {
+    "day-before": {
       "date": "2026-10-31",
       "label": "London • Saturday 31 October 2026",
       "storyCount": 7
-    },
-    "day-before": {
-      "date": "2026-10-28",
-      "label": "London • Wednesday 28 October 2026",
-      "storyCount": 10
     }
   },
   "adjacentEditionStories": {
     "today": [
+      {
+        "id": "2026-11-27-saturday-info-hut",
+        "section": "Near home",
+        "headline": "Pick up a Heath map at Saturday’s Info Hut",
+        "sourceUrls": [
+          "https://www.heath-hands.org.uk/whatson/heath-info-hut-281126"
+        ]
+      },
+      {
+        "id": "2026-11-27-sunday-wildlife-dropin",
+        "section": "Near home",
+        "headline": "Find the wildlife interpreters on Sunday afternoon",
+        "sourceUrls": [
+          "https://www.heath-hands.org.uk/whatson/wildabouthampsteadheath-291126"
+        ]
+      },
+      {
+        "id": "2026-11-27-december-vinyl-friday",
+        "section": "Near work",
+        "headline": "Save next Friday for Spitalfields’ vinyl market",
+        "sourceUrls": [
+          "https://oldspitalfieldsmarket.com/events/vinyl-market",
+          "https://oldspitalfieldsmarket.com/journal/whats-on-this-christmas-in-the-market"
+        ]
+      },
+      {
+        "id": "2026-11-27-kings-ai-mental-wellbeing",
+        "section": "London AI",
+        "headline": "King’s brings clinical AI research to a wellbeing commission",
+        "sourceUrls": [
+          "https://www.kcl.ac.uk/news/hamilton-morrin-joins-global-commission-on-ai-and-mental-wellbeing"
+        ]
+      },
+      {
+        "id": "2026-11-27-ucl-live-embryo-imaging",
+        "section": "London technology",
+        "headline": "UCL’s live imaging captures how developing spines close",
+        "sourceUrls": [
+          "https://www.ucl.ac.uk/news/2026/nov/world-first-images-show-how-babies-spines-zip-together-prevent-spina-bifida"
+        ]
+      },
+      {
+        "id": "2026-11-27-saturday-highgate-fungi",
+        "section": "Plan ahead",
+        "headline": "Join Saturday’s tree-and-fungi walk in Highgate Wood",
+        "sourceUrls": [
+          "https://www.cityoflondon.gov.uk/events/highgate-wood-guided-walks"
+        ]
+      }
+    ],
+    "yesterday": [
       {
         "id": "2026-11-16-three-acts-wednesday",
         "section": "Near home",
@@ -1936,170 +2632,19 @@
           "https://camdenartcentre.org/whats-on/winter-ceramics-market-2026"
         ]
       }
-    ],
-    "yesterday": [
-      {
-        "id": "2026-10-31-info-hut-until-two",
-        "section": "Near home",
-        "headline": "Call at the Heath Info Hut before 2pm",
-        "sourceUrls": [
-          "https://www.heath-hands.org.uk/whatson/heath-info-hut-31oct26"
-        ]
-      },
-      {
-        "id": "2026-10-31-dogstar-next-week",
-        "section": "Near home",
-        "headline": "Book Dogstar next week—tonight is sold out",
-        "sourceUrls": [
-          "https://www.hampsteadtheatre.com/production/dogstar/",
-          "https://my.hampsteadtheatre.com/15994/16042"
-        ]
-      },
-      {
-        "id": "2026-10-31-guildhall-1327",
-        "section": "Near work",
-        "headline": "See the City’s medieval records in its new 1327 display",
-        "sourceUrls": [
-          "https://www.cityoflondon.gov.uk/events/1327-and-the-city-of-london-exhibition",
-          "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/guildhall-art-gallery/visit-guildhall-art-gallery"
-        ]
-      },
-      {
-        "id": "2026-10-31-mohri-curve-weekend",
-        "section": "Near work",
-        "headline": "Make time for Yuko Mohri’s moving, sounding Curve",
-        "sourceUrls": [
-          "https://www.barbican.org.uk/whats-on/2026/event/yuko-mohri-in-concert"
-        ]
-      },
-      {
-        "id": "2026-10-31-ucl-bat-survey",
-        "section": "London AI",
-        "headline": "UCL’s AI tools help turn woodland recordings into bat evidence",
-        "sourceUrls": [
-          "https://www.ucl.ac.uk/news/2026/oct/ai-helps-reveal-britains-bats-largest-ever-national-woodland-bat-survey"
-        ]
-      },
-      {
-        "id": "2026-10-31-kenwood-consultation-monday",
-        "section": "Plan ahead",
-        "headline": "RSVP for Kenwood’s Monday events consultation",
-        "sourceUrls": [
-          "https://www.heath-hands.org.uk/whatson/kenwoodeventsconsultation"
-        ]
-      },
-      {
-        "id": "2026-10-31-fungi-postponed-six-november",
-        "section": "Plan ahead",
-        "headline": "Correction: the Heath fungi walk moves to Friday 6 November",
-        "sourceUrls": [
-          "https://lnhs.org.uk/index.php/activities/full-programme/eventdetail/3632/-/hampstead-heath-introduction-to-fungi",
-          "https://www.heath-hands.org.uk/whatson/lnhs-funginov"
-        ]
-      }
     ]
   },
   "upcomingEvents": [
     {
-      "id": "2025-02-10-concrete-clay",
-      "title": "Concrete and Clay: Archiving the Barbican",
-      "startDate": "2025-02-10",
-      "endDate": "2027-01-01",
-      "location": "Barbican Centre",
+      "id": "2026-11-27-bank-museum-early-close",
+      "title": "Bank of England Museum closes at 3pm",
+      "startDate": "2026-11-27",
+      "time": "15:00",
+      "location": "Bartholomew Lane, City of London",
       "section": "Near work",
-      "sourceUrl": "https://www.barbican.org.uk/whats-on/2025/event/concrete-and-clay-archiving-the-barbican",
-      "needsLiveReverification": true
-    },
-    {
-      "id": "2026-07-06-medieval-london-display",
-      "title": "Spotlight on Medieval London",
-      "startDate": "2026-07-06",
-      "endDate": "2026-12-17",
-      "location": "40 Northampton Road, EC1R",
-      "section": "Plan ahead",
-      "sourceUrl": "https://www.thelondonarchives.org/whats-on/introducing-spotlight-on-medieval-london-august-copy",
-      "needsLiveReverification": true
-    },
-    {
-      "id": "2026-08-19-freud-forty-objects",
-      "title": "40 Objects, 40 Years",
-      "startDate": "2026-08-19",
-      "endDate": "2027-02-14",
-      "time": "10:30",
-      "location": "Hampstead",
-      "section": "Near home",
-      "sourceUrl": "https://www.freud.org.uk/exhibitions/40-objects-40-years/",
-      "needsLiveReverification": true
-    },
-    {
-      "id": "2026-09-11-liz-larner",
-      "title": "Liz Larner: A hard line to bend",
-      "startDate": "2026-09-11",
-      "endDate": "2027-01-17",
-      "time": "11:00",
-      "location": "Arkwright Road, NW3",
-      "section": "Near home",
-      "sourceUrl": "https://camdenartcentre.org/whats-on/a-hard-line-to-bend",
-      "needsLiveReverification": true
-    },
-    {
-      "id": "2026-10-01-yuko-mohri-in-concert",
-      "title": "Yuko Mohri: In Concert",
-      "startDate": "2026-10-01",
-      "endDate": "2027-01-24",
-      "location": "Barbican",
-      "section": "Near work",
-      "sourceUrl": "https://www.barbican.org.uk/whats-on/2026/event/yuko-mohri-in-concert",
-      "needsLiveReverification": true
-    },
-    {
-      "id": "2026-10-08-robert-ryman",
-      "title": "Robert Ryman: The Real Thing",
-      "startDate": "2026-10-08",
-      "endDate": "2027-02-28",
-      "location": "Barbican",
-      "section": "Plan ahead",
-      "sourceUrl": "https://www.barbican.org.uk/whats-on/2026/event/robert-ryman-the-real-thing",
-      "needsLiveReverification": true
-    },
-    {
-      "id": "2026-10-21-milein-cosman-hampstead-print",
-      "title": "Hampstead in Print: Milein Cosman and her Circle",
-      "startDate": "2026-10-21",
-      "endDate": "2027-03-18",
-      "location": "Hampstead",
-      "section": "Near home",
-      "sourceUrl": "https://www.burghhouse.org.uk/whats-on/whats-on/exhibition/hampstead-in-print-milein-cosman-and-her-circle",
-      "needsLiveReverification": true
-    },
-    {
-      "id": "2026-10-30-1327-city-london",
-      "title": "1327 and the City of London",
-      "startDate": "2026-10-30",
-      "endDate": "2027-04-29",
-      "location": "Guildhall Yard",
-      "section": "Near work",
-      "sourceUrl": "https://www.cityoflondon.gov.uk/events/1327-and-the-city-of-london-exhibition",
-      "needsLiveReverification": true
-    },
-    {
-      "id": "2026-10-30-dogstar",
-      "title": "Dogstar",
-      "startDate": "2026-10-30",
-      "endDate": "2026-12-05",
-      "location": "Swiss Cottage",
-      "section": "Near home",
-      "sourceUrl": "https://www.hampsteadtheatre.com/production/dogstar/",
-      "needsLiveReverification": true
-    },
-    {
-      "id": "2026-11-16-barbican-architecture-tours",
-      "title": "Barbican Architecture Tours",
-      "startDate": "2026-11-16",
-      "endDate": "2026-11-30",
-      "location": "Barbican",
-      "section": "Near work",
-      "sourceUrl": "https://www.barbican.org.uk/whats-on/2026/event/architecture-tours",
+      "nextActionDate": "2026-11-27",
+      "actionKind": "starts",
+      "sourceUrl": "https://www.bankofengland.co.uk/museum/plan-your-visit",
       "needsLiveReverification": true
     },
     {
@@ -2110,17 +2655,9 @@
       "time": "10:00",
       "location": "Kenwood",
       "section": "Plan ahead",
+      "nextActionDate": "2026-11-28",
+      "actionKind": "closing",
       "sourceUrl": "https://www.heath-hands.org.uk/whatson/photo-exhibition-dairy-2026",
-      "needsLiveReverification": true
-    },
-    {
-      "id": "2026-11-27-bank-museum-early-close",
-      "title": "Bank of England Museum closes at 3pm",
-      "startDate": "2026-11-27",
-      "time": "15:00",
-      "location": "Bartholomew Lane, City of London",
-      "section": "Near work",
-      "sourceUrl": "https://www.bankofengland.co.uk/museum/plan-your-visit",
       "needsLiveReverification": true
     },
     {
@@ -2131,7 +2668,21 @@
       "time": "11:00",
       "location": "Finchley Road",
       "section": "Plan ahead",
+      "nextActionDate": "2026-11-28",
+      "actionKind": "starts",
       "sourceUrl": "https://camdenartcentre.org/whats-on/winter-ceramics-market-2026",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-11-28-heath-info-hut",
+      "title": "Heath Info Hut open day",
+      "startDate": "2026-11-28",
+      "time": "10:00",
+      "location": "Parliament Hill",
+      "section": "Near home",
+      "nextActionDate": "2026-11-28",
+      "actionKind": "starts",
+      "sourceUrl": "https://www.heath-hands.org.uk/whatson/heath-info-hut-281126",
       "needsLiveReverification": true
     },
     {
@@ -2141,7 +2692,33 @@
       "time": "11:30",
       "location": "Highgate Wood",
       "section": "Plan ahead",
+      "nextActionDate": "2026-11-28",
+      "actionKind": "starts",
       "sourceUrl": "https://www.cityoflondon.gov.uk/events/highgate-wood-guided-walks",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-11-29-wild-about-heath",
+      "title": "Wild About Hampstead Heath",
+      "startDate": "2026-11-29",
+      "time": "13:00",
+      "location": "Parliament Hill",
+      "section": "Near home",
+      "nextActionDate": "2026-11-29",
+      "actionKind": "starts",
+      "sourceUrl": "https://www.heath-hands.org.uk/whatson/wildabouthampsteadheath-291126",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-11-16-barbican-architecture-tours",
+      "title": "Barbican Architecture Tours",
+      "startDate": "2026-11-16",
+      "endDate": "2026-11-30",
+      "location": "Barbican",
+      "section": "Near work",
+      "nextActionDate": "2026-11-30",
+      "actionKind": "closing",
+      "sourceUrl": "https://www.barbican.org.uk/whats-on/2026/event/architecture-tours",
       "needsLiveReverification": true
     },
     {
@@ -2150,6 +2727,8 @@
       "startDate": "2026-12-02",
       "location": "Barbican Centre",
       "section": "Near work",
+      "nextActionDate": "2026-12-02",
+      "actionKind": "starts",
       "sourceUrl": "https://www.barbican.org.uk/whats-on/2026/event/conservatory-plant-adoption",
       "needsLiveReverification": true
     },
@@ -2160,7 +2739,33 @@
       "endDate": "2026-12-06",
       "location": "Spitalfields",
       "section": "Near work",
+      "nextActionDate": "2026-12-04",
+      "actionKind": "starts",
       "sourceUrl": "https://www.spitalfields.co.uk/upcoming-events/a-brush-with-creativity-spitalfields-arts-market/",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-12-04-spitalfields-vinyl-market",
+      "title": "Spitalfields Vinyl Market",
+      "startDate": "2026-12-04",
+      "time": "10:00",
+      "location": "Spitalfields",
+      "section": "Near work",
+      "nextActionDate": "2026-12-04",
+      "actionKind": "starts",
+      "sourceUrl": "https://oldspitalfieldsmarket.com/events/vinyl-market",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-10-30-dogstar",
+      "title": "Dogstar",
+      "startDate": "2026-10-30",
+      "endDate": "2026-12-05",
+      "location": "Swiss Cottage",
+      "section": "Near home",
+      "nextActionDate": "2026-12-05",
+      "actionKind": "closing",
+      "sourceUrl": "https://www.hampsteadtheatre.com/production/dogstar/",
       "needsLiveReverification": true
     },
     {
@@ -2170,6 +2775,8 @@
       "time": "11:30",
       "location": "Highgate Wood",
       "section": "Plan ahead",
+      "nextActionDate": "2026-12-06",
+      "actionKind": "starts",
       "sourceUrl": "https://www.cityoflondon.gov.uk/events/highgate-wood-guided-walks",
       "needsLiveReverification": true
     },
@@ -2179,7 +2786,130 @@
       "startDate": "2026-12-07",
       "location": "Guildhall Yard",
       "section": "Near work",
+      "nextActionDate": "2026-12-07",
+      "actionKind": "starts",
       "sourceUrl": "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/guildhall-art-gallery/visit-guildhall-art-gallery",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-12-07-ucl-human-ingenuity-ai",
+      "title": "Human Ingenuity in the Age of Artificial Intelligence",
+      "startDate": "2026-12-07",
+      "time": "17:15",
+      "location": "Bloomsbury",
+      "section": "London AI",
+      "nextActionDate": "2026-12-07",
+      "actionKind": "starts",
+      "sourceUrl": "https://www.eventbrite.co.uk/e/human-ingenuity-in-the-age-of-artificial-intelligence-tickets-2004231389037",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-12-13-spitalfields-father-christmas",
+      "title": "Free Father Christmas meet and greet",
+      "startDate": "2026-12-13",
+      "time": "12:00",
+      "location": "Spitalfields",
+      "section": "Plan ahead",
+      "nextActionDate": "2026-12-13",
+      "actionKind": "starts",
+      "sourceUrl": "https://oldspitalfieldsmarket.com/journal/whats-on-this-christmas-in-the-market",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-07-06-medieval-london-display",
+      "title": "Spotlight on Medieval London",
+      "startDate": "2026-07-06",
+      "endDate": "2026-12-17",
+      "location": "40 Northampton Road, EC1R",
+      "section": "Plan ahead",
+      "nextActionDate": "2026-12-17",
+      "actionKind": "closing",
+      "sourceUrl": "https://www.thelondonarchives.org/whats-on/introducing-spotlight-on-medieval-london-august-copy",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-12-18-spitalfields-vinyl-market",
+      "title": "Spitalfields Vinyl Market",
+      "startDate": "2026-12-18",
+      "time": "10:00",
+      "location": "Spitalfields",
+      "section": "Near work",
+      "nextActionDate": "2026-12-18",
+      "actionKind": "starts",
+      "sourceUrl": "https://oldspitalfieldsmarket.com/events/vinyl-market",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2025-02-10-concrete-clay",
+      "title": "Concrete and Clay: Archiving the Barbican",
+      "startDate": "2025-02-10",
+      "endDate": "2027-01-01",
+      "location": "Barbican Centre",
+      "section": "Near work",
+      "nextActionDate": "2027-01-01",
+      "actionKind": "closing",
+      "sourceUrl": "https://www.barbican.org.uk/whats-on/2025/event/concrete-and-clay-archiving-the-barbican",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-09-11-liz-larner",
+      "title": "Liz Larner: A hard line to bend",
+      "startDate": "2026-09-11",
+      "endDate": "2027-01-17",
+      "time": "11:00",
+      "location": "Arkwright Road, NW3",
+      "section": "Near home",
+      "nextActionDate": "2027-01-17",
+      "actionKind": "closing",
+      "sourceUrl": "https://camdenartcentre.org/whats-on/a-hard-line-to-bend",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-10-01-yuko-mohri-in-concert",
+      "title": "Yuko Mohri: In Concert",
+      "startDate": "2026-10-01",
+      "endDate": "2027-01-24",
+      "location": "Barbican",
+      "section": "Near work",
+      "nextActionDate": "2027-01-24",
+      "actionKind": "closing",
+      "sourceUrl": "https://www.barbican.org.uk/whats-on/2026/event/yuko-mohri-in-concert",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2027-01-31-ai-wellbeing-evidence-deadline",
+      "title": "Consumer AI and Mental Wellbeing Commission evidence deadline",
+      "startDate": "2027-01-31",
+      "location": "Online",
+      "section": "London AI",
+      "nextActionDate": "2027-01-31",
+      "actionKind": "starts",
+      "sourceUrl": "https://www.kcl.ac.uk/news/hamilton-morrin-joins-global-commission-on-ai-and-mental-wellbeing",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-08-19-freud-forty-objects",
+      "title": "40 Objects, 40 Years",
+      "startDate": "2026-08-19",
+      "endDate": "2027-02-14",
+      "time": "10:30",
+      "location": "Hampstead",
+      "section": "Near home",
+      "nextActionDate": "2027-02-14",
+      "actionKind": "closing",
+      "sourceUrl": "https://www.freud.org.uk/exhibitions/40-objects-40-years/",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-10-08-robert-ryman",
+      "title": "Robert Ryman: The Real Thing",
+      "startDate": "2026-10-08",
+      "endDate": "2027-02-28",
+      "location": "Barbican",
+      "section": "Plan ahead",
+      "nextActionDate": "2027-02-28",
+      "actionKind": "closing",
+      "sourceUrl": "https://www.barbican.org.uk/whats-on/2026/event/robert-ryman-the-real-thing",
       "needsLiveReverification": true
     },
     {
@@ -2189,7 +2919,33 @@
       "endDate": "2027-03-07",
       "location": "Spitalfields",
       "section": "Near work",
+      "nextActionDate": "2027-03-05",
+      "actionKind": "starts",
       "sourceUrl": "https://www.spitalfields.co.uk/upcoming-events/a-brush-with-creativity-spitalfields-arts-market/",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-10-21-milein-cosman-hampstead-print",
+      "title": "Hampstead in Print: Milein Cosman and her Circle",
+      "startDate": "2026-10-21",
+      "endDate": "2027-03-18",
+      "location": "Hampstead",
+      "section": "Near home",
+      "nextActionDate": "2027-03-18",
+      "actionKind": "closing",
+      "sourceUrl": "https://www.burghhouse.org.uk/whats-on/whats-on/exhibition/hampstead-in-print-milein-cosman-and-her-circle",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-11-07-barbican-ghost-tours",
+      "title": "Ghost Tours: The Barbican After Dark",
+      "startDate": "2026-11-07",
+      "endDate": "2027-03-27",
+      "location": "Barbican",
+      "section": "Near work",
+      "nextActionDate": "2027-03-27",
+      "actionKind": "closing",
+      "sourceUrl": "https://www.barbican.org.uk/whats-on/2026/event/ghost-tours-the-barbican-after-dark",
       "needsLiveReverification": true
     },
     {
@@ -2199,7 +2955,21 @@
       "endDate": "2027-04-04",
       "location": "Spitalfields",
       "section": "Near work",
+      "nextActionDate": "2027-04-02",
+      "actionKind": "starts",
       "sourceUrl": "https://www.spitalfields.co.uk/upcoming-events/a-brush-with-creativity-spitalfields-arts-market/",
+      "needsLiveReverification": true
+    },
+    {
+      "id": "2026-10-30-1327-city-london",
+      "title": "1327 and the City of London",
+      "startDate": "2026-10-30",
+      "endDate": "2027-04-29",
+      "location": "Guildhall Yard",
+      "section": "Near work",
+      "nextActionDate": "2027-04-29",
+      "actionKind": "closing",
+      "sourceUrl": "https://www.cityoflondon.gov.uk/events/1327-and-the-city-of-london-exhibition",
       "needsLiveReverification": true
     },
     {
@@ -2209,6 +2979,8 @@
       "endDate": "2027-05-09",
       "location": "Spitalfields",
       "section": "Near work",
+      "nextActionDate": "2027-05-07",
+      "actionKind": "starts",
       "sourceUrl": "https://www.spitalfields.co.uk/upcoming-events/a-brush-with-creativity-spitalfields-arts-market/",
       "needsLiveReverification": true
     },
@@ -2219,6 +2991,8 @@
       "endDate": "2027-06-06",
       "location": "Spitalfields",
       "section": "Near work",
+      "nextActionDate": "2027-06-04",
+      "actionKind": "starts",
       "sourceUrl": "https://www.spitalfields.co.uk/upcoming-events/a-brush-with-creativity-spitalfields-arts-market/",
       "needsLiveReverification": true
     },
@@ -2229,6 +3003,8 @@
       "endDate": "2027-07-04",
       "location": "Spitalfields",
       "section": "Near work",
+      "nextActionDate": "2027-07-02",
+      "actionKind": "starts",
       "sourceUrl": "https://www.spitalfields.co.uk/upcoming-events/a-brush-with-creativity-spitalfields-arts-market/",
       "needsLiveReverification": true
     },
@@ -2239,6 +3015,8 @@
       "endDate": "2027-08-08",
       "location": "Spitalfields",
       "section": "Near work",
+      "nextActionDate": "2027-08-06",
+      "actionKind": "starts",
       "sourceUrl": "https://www.spitalfields.co.uk/upcoming-events/a-brush-with-creativity-spitalfields-arts-market/",
       "needsLiveReverification": true
     },
@@ -2249,6 +3027,8 @@
       "endDate": "2027-09-05",
       "location": "Spitalfields",
       "section": "Near work",
+      "nextActionDate": "2027-09-03",
+      "actionKind": "starts",
       "sourceUrl": "https://www.spitalfields.co.uk/upcoming-events/a-brush-with-creativity-spitalfields-arts-market/",
       "needsLiveReverification": true
     },
@@ -2259,6 +3039,8 @@
       "endDate": "2027-10-03",
       "location": "Spitalfields",
       "section": "Near work",
+      "nextActionDate": "2027-10-01",
+      "actionKind": "starts",
       "sourceUrl": "https://www.spitalfields.co.uk/upcoming-events/a-brush-with-creativity-spitalfields-arts-market/",
       "needsLiveReverification": true
     },
@@ -2269,6 +3051,8 @@
       "endDate": "2027-11-07",
       "location": "Spitalfields",
       "section": "Near work",
+      "nextActionDate": "2027-11-05",
+      "actionKind": "starts",
       "sourceUrl": "https://www.spitalfields.co.uk/upcoming-events/a-brush-with-creativity-spitalfields-arts-market/",
       "needsLiveReverification": true
     },
@@ -2279,6 +3063,8 @@
       "endDate": "2027-12-05",
       "location": "Spitalfields",
       "section": "Near work",
+      "nextActionDate": "2027-12-03",
+      "actionKind": "starts",
       "sourceUrl": "https://www.spitalfields.co.uk/upcoming-events/a-brush-with-creativity-spitalfields-arts-market/",
       "needsLiveReverification": true
     }

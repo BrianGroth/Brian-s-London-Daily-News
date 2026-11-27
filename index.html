@@ -638,12 +638,12 @@
   <div class="shell">
     <header class="masthead">
       <h1 class="brand">BRIAN'S LONDON DAILY NEWS</h1>
-      <p class="issue-line" id="issue-line">London <span class="dot">•</span> Monday 16 November 2026</p>
+      <p class="issue-line" id="issue-line">London <span class="dot">•</span> Friday 27 November 2026</p>
       <p class="issue-rolling">Three editions · latest, previous, earlier</p>
       <nav class="date-nav" aria-label="Choose briefing date" role="tablist">
-        <button class="date-tab" id="tab-today" role="tab" aria-controls="today" aria-selected="true" data-day="today">Latest · 16 November</button>
-        <button class="date-tab" id="tab-yesterday" role="tab" aria-controls="yesterday" aria-selected="false" data-day="yesterday">Previous · 31 October</button>
-        <button class="date-tab" id="tab-day-before" role="tab" aria-controls="day-before" aria-selected="false" data-day="day-before">Earlier · 28 October</button>
+        <button class="date-tab" id="tab-today" role="tab" aria-controls="today" aria-selected="true" data-day="today">Latest · 27 November</button>
+        <button class="date-tab" id="tab-yesterday" role="tab" aria-controls="yesterday" aria-selected="false" data-day="yesterday">Previous · 16 November</button>
+        <button class="date-tab" id="tab-day-before" role="tab" aria-controls="day-before" aria-selected="false" data-day="day-before">Earlier · 31 October</button>
       </nav>
     </header>
 
@@ -1220,6 +1220,153 @@
 
     const issues = {
       "today": {
+        "label": "London • Friday 27 November 2026",
+        "footer": "Friday 27 November 2026",
+        "morning": {
+          "mode": "Nearby POI",
+          "modeUrl": "poi/",
+          "temperature": "4° / 4° overnight",
+          "weatherUrl": "https://weather.metoffice.gov.uk/forecast/gcpvj0v07",
+          "rain": "Light rain this afternoon; rain risk increases this evening",
+          "pollen": "UV 1 · Low",
+          "checkedAt": "2026-11-27T15:57:29.2104784+00:00",
+          "transit": [
+            [
+              "Northern",
+              "Severe delays due to strike action",
+              "check",
+              "https://tfl.gov.uk/tube-dlr-overground/status/"
+            ],
+            [
+              "Overground",
+              "Good service on all six lines",
+              "good",
+              "https://tfl.gov.uk/tube-dlr-overground/status/"
+            ]
+          ]
+        },
+        "stories": [
+          {
+            "id": "2026-11-27-saturday-info-hut",
+            "section": "Near home",
+            "headline": "Pick up a Heath map at Saturday’s Info Hut",
+            "location": "Near NW3",
+            "brief": "Heath Hands opens its Parliament Hill Info Hut on Saturday 28 November, 10am–2pm. Drop by for a free map or nature sheet, ask the volunteer team about the Heath and upcoming activities, or browse its Heath-related books, cards and bags. The organiser’s current listing still advertises the session; this is a staffed information stop rather than a guided walk.",
+            "why": "Make this a short stop on a southern-Heath walk if you want route ideas or local advice. The four-hour opening gives you flexibility, but arrive before 2pm rather than expecting an all-day visitor centre.",
+            "sources": [
+              [
+                "Heath Hands: Saturday opening and activities",
+                "https://www.heath-hands.org.uk/whatson/heath-info-hut-281126"
+              ]
+            ],
+            image: images["octHeath"],
+            "action": "Walk",
+            "eventIds": [
+              "2026-11-28-heath-info-hut"
+            ],
+            "imageCaption": "Parliament Hill and Hampstead Heath; archive landscape photograph, not the Info Hut itself."
+          },
+          {
+            "id": "2026-11-27-sunday-wildlife-dropin",
+            "section": "Near home",
+            "headline": "Find the wildlife interpreters on Sunday afternoon",
+            "location": "Near NW3",
+            "brief": "Wild About Hampstead Heath returns to the Parliament Hill area on Sunday 29 November, 1–3pm. Heath Hands’ volunteer wildlife interpreters will help visitors find out about nature on the green space. The current listing welcomes everyone and explicitly says to drop in without booking. Look for the large Wild About Hampstead Heath bicycle rather than a fixed indoor venue.",
+            "why": "This gives a Sunday walk a nature-focused stopping point without committing to a timed tour. Keep the afternoon window in mind and look for the bicycle in the Parliament Hill area; the listing does not specify a more precise meeting point.",
+            "sources": [
+              [
+                "Heath Hands: Sunday drop-in details",
+                "https://www.heath-hands.org.uk/whatson/wildabouthampsteadheath-291126"
+              ]
+            ],
+            image: images["octHeath"],
+            "action": "Walk",
+            "eventIds": [
+              "2026-11-29-wild-about-heath"
+            ],
+            "imageCaption": "Parliament Hill and Hampstead Heath; archive landscape photograph, not this Sunday’s activity."
+          },
+          {
+            "id": "2026-11-27-december-vinyl-friday",
+            "section": "Near work",
+            "headline": "Save next Friday for Spitalfields’ vinyl market",
+            "location": "Near EC2N",
+            "brief": "Old Spitalfields Market’s vinyl traders return on Friday 4 December, with another December date on Friday 18. The operator’s Christmas programme confirms both dates, while the dedicated listing gives the first-and-third-Friday hours as 10am–5pm. Expect specialist dealers in rare, collectable and newer records across different musical styles. This is the record fair, distinct from the Thursday antiques market.",
+            "why": "A lunchtime browse fits naturally around a Bishopsgate or Liverpool Street workday. Put 4 December in the diary and use the record fair’s 5pm finish, rather than assuming its traders stay as late as the market’s restaurants.",
+            "sources": [
+              [
+                "Vinyl market hours and traders",
+                "https://oldspitalfieldsmarket.com/events/vinyl-market"
+              ],
+              [
+                "Operator’s December dates",
+                "https://oldspitalfieldsmarket.com/journal/whats-on-this-christmas-in-the-market"
+              ]
+            ],
+            image: images["octSpitalfields"],
+            "action": "Walk",
+            "eventIds": [
+              "2026-12-04-spitalfields-vinyl-market",
+              "2026-12-18-spitalfields-vinyl-market"
+            ],
+            "imageCaption": "Old Spitalfields Market; archive venue photograph, not the December record stalls."
+          },
+          {
+            "id": "2026-11-27-kings-ai-mental-wellbeing",
+            "section": "London AI",
+            "headline": "King’s brings clinical AI research to a wellbeing commission",
+            "location": "London-based",
+            "brief": "King’s College London announced on 25 November that researcher Hamilton Morrin has joined the Consumer AI and Mental Wellbeing Commission. The international group will examine evidence about the benefits and risks of consumer AI used for mental-health support, including general-purpose chatbots. His appointment connects the commission with King’s research into how chatbot responses may reinforce delusional content in vulnerable users.",
+            "why": "This is a concrete London contribution to scrutiny of everyday AI use. Follow the commission for evidence and oversight proposals; the appointment itself does not establish that any particular chatbot is safe, effective or appropriate for mental-health care.",
+            "sources": [
+              [
+                "King’s announcement, 25 November",
+                "https://www.kcl.ac.uk/news/hamilton-morrin-joins-global-commission-on-ai-and-mental-wellbeing"
+              ]
+            ],
+            image: images["satKings"],
+            "imageCaption": "King’s College London on the Strand; archive institution photograph, not the commission’s meeting venue."
+          },
+          {
+            "id": "2026-11-27-ucl-live-embryo-imaging",
+            "section": "London technology",
+            "headline": "UCL’s live imaging captures how developing spines close",
+            "location": "London-based",
+            "brief": "UCL researchers report today, 27 November, that customised live-imaging technology has revealed how cells coordinate spinal-cord closure in mouse embryos. The work at the UCL Great Ormond Street Institute of Child Health combines rapid three-dimensional fluorescence imaging with methods that keep embryos developing during observation. Published in PLOS Biology, it maps the steps by which cells meet and form a continuous covering.",
+            "why": "The London advance is a tool for observing development and testing what disrupts it. These are laboratory findings in mice, with potential to guide further research; they are not a new treatment or a demonstrated way to prevent human birth defects.",
+            "sources": [
+              [
+                "UCL research report, 27 November",
+                "https://www.ucl.ac.uk/news/2026/nov/world-first-images-show-how-babies-spines-zip-together-prevent-spina-bifida"
+              ]
+            ],
+            image: images["novUCLCampus"],
+            "imageAlt": "UCL’s Bloomsbury portico in 2007; archive institution photograph, not the imaging laboratory",
+            "imageCaption": "UCL’s Bloomsbury portico in 2007; archive institution photograph, not the imaging laboratory."
+          },
+          {
+            "id": "2026-11-27-saturday-highgate-fungi",
+            "section": "Plan ahead",
+            "headline": "Join Saturday’s tree-and-fungi walk in Highgate Wood",
+            "location": "Across London",
+            "brief": "Highgate Wood’s staff-led Tree and Fungi Walk starts on Saturday 28 November at 11.30am. The City of London’s current timetable says these guided walks are free, last around one to one-and-a-half hours and meet at the information hut beside the café. No booking is required for this date; the page’s registration exception applies to a September walk, not Saturday’s outing.",
+            "why": "Choose this if you want a guided woodland outing rather than an informal Heath drop-in. Highgate Wood is beyond the usual short walk from home, so allow travel time to reach the café meeting point before 11.30am.",
+            "sources": [
+              [
+                "City of London: dates, meeting point and booking policy",
+                "https://www.cityoflondon.gov.uk/events/highgate-wood-guided-walks"
+              ]
+            ],
+            image: images["octHighgateWood"],
+            "action": "Walk",
+            "eventIds": [
+              "2026-11-28-highgate-wood-guided-walk"
+            ]
+          }
+        ],
+        "shortEditionReason": "Six verified choices today. Sold-out events, closed booking windows and repeats of the previous edition have been left out."
+      },
+      "yesterday": {
         "label": "London • Monday 16 November 2026",
         "footer": "Monday 16 November 2026",
         "morning": {
@@ -1427,7 +1574,7 @@
           }
         ]
       },
-      "yesterday": {
+      "day-before": {
         "label": "London • Saturday 31 October 2026",
         "footer": "Saturday 31 October 2026",
         "morning": {
@@ -1579,203 +1726,6 @@
           }
         ],
         "shortEditionReason": "Short edition: seven verified choices and corrections today. The usual local and technology mix is reduced; the fungi walk has moved to 6 November."
-      },
-      "day-before": {
-        "label": "London • Wednesday 28 October 2026",
-        "footer": "Wednesday 28 October 2026",
-        "morning": {
-          "mode": "Nearby POI",
-          "modeUrl": "poi/",
-          "temperature": "16° / 10° overnight",
-          "weatherUrl": "https://weather.metoffice.gov.uk/forecast/gcpvj0v07",
-          "rain": "Under 5% rain risk through this evening",
-          "pollen": "UV 1 · low",
-          "transit": [
-            [
-              "Northern",
-              "Good service",
-              "good",
-              "https://tfl.gov.uk/tube-dlr-overground/status/"
-            ],
-            [
-              "Overground",
-              "Mildmay severe delays; Suffragette part closure",
-              "check",
-              "https://tfl.gov.uk/tube-dlr-overground/status/"
-            ]
-          ]
-        },
-        "stories": [
-          {
-            "id": "2026-10-28-kimberly-tonight",
-            "section": "Near home",
-            "headline": "Book tonight’s Kimberly Akimbo—or its newly extended run",
-            "location": "Near NW3",
-            image: images["qOctTheatre"],
-            "brief": "Hampstead Theatre lists tonight’s Wednesday 28 October performance of Kimberly Akimbo at 7.30pm as selling fast. Maria Friedman leads the musical about a teenager whose body ages unusually quickly. The run now ends on 14 November, one week later than originally announced. Published standard Monday–Saturday ticket bands are £45–£110, subject to change; select a seat for the final price.",
-            "why": "This is a nearby evening option with a verified performance and booking route. The extension also creates extra chances to attend, so the old 7 November closing date should no longer drive your plans.",
-            "sources": [
-              [
-                "Hampstead Theatre",
-                "https://www.hampsteadtheatre.com/production/kimberly-akimbo/"
-              ]
-            ],
-            "action": "Book",
-            "actionUrl": "https://my.hampsteadtheatre.com/15424/15491"
-          },
-          {
-            "id": "2026-10-28-parliament-hill-litter",
-            "section": "Near home",
-            "headline": "Give Parliament Hill an hour on Saturday",
-            "location": "Near NW3",
-            image: images["octHeath"],
-            "brief": "Heath Hands’ next Saturday litter pick is on 31 October, from noon until 1pm. Meet at the Heath Info Hut, the former tennis-bookings hut near the Parliament Hill tennis courts. The organiser welcomes everyone, supplies the equipment and says no booking is necessary. You can email ahead if you want to help the team estimate attendance.",
-            "why": "A clearly timed, practical volunteering session makes an easy local commitment. It is distinct from a guided walk: the purpose is to help care for the Heath, with equipment already organised.",
-            "sources": [
-              [
-                "Heath Hands",
-                "https://www.heath-hands.org.uk/whatson/litter-pick-31oct26"
-              ]
-            ],
-            "action": "Participate",
-            "actionUrl": "https://www.heath-hands.org.uk/whatson/litter-pick-31oct26"
-          },
-          {
-            "id": "2026-10-28-wildlife-interpreters",
-            "section": "Near home",
-            "headline": "Find the wildlife bike on the Heath this Saturday",
-            "location": "Near NW3",
-            image: images["octHeath"],
-            "brief": "Volunteer wildlife interpreters will be in the Parliament Hill area on Saturday 31 October for Wild about Hampstead Heath. The official listing invites everyone to drop in between 2pm and 4pm, with no booking. Look for the large Wild About Hampstead Heath bike and ask about the plants and animals using the Heath’s green spaces.",
-            "why": "This offers a flexible nature stop rather than a fixed-length tour. It can fit around an afternoon walk, and the organisers explicitly welcome drop-ins without requiring you to commit to the full session.",
-            "sources": [
-              [
-                "Heath Hands",
-                "https://www.heath-hands.org.uk/whatson/wildabouthampsteadheath-311026"
-              ]
-            ],
-            "action": "Walk"
-          },
-          {
-            "id": "2026-10-28-fungi-sunday",
-            "section": "Near home",
-            "headline": "Register for Sunday’s Hampstead Heath fungi walk",
-            "location": "Near NW3",
-            image: images["octHeath"],
-            "brief": "The London Natural History Society’s introduction to fungi takes place on Hampstead Heath on Sunday 1 November, from 10.30am to 3pm, led by Mario Tortelli. The published meeting point is Hampstead Heath Overground station. Bring lunch. Places may be limited: email hampsteadbookings@lnhs.org.uk with your name and the walk’s date to register and confirm the meeting details.",
-            "why": "An autumn identification walk is a stronger reason to make time for the Heath than a general suggestion to wander. The organiser warns of limited places, so seek confirmation before treating attendance as secured.",
-            "sources": [
-              [
-                "Heath Hands / London Natural History Society",
-                "https://www.heath-hands.org.uk/whatson/lnhs-funginov"
-              ]
-            ],
-            "action": "Participate",
-            "actionUrl": "https://www.heath-hands.org.uk/whatson/lnhs-funginov"
-          },
-          {
-            "id": "2026-10-28-barbican-archive",
-            "section": "Near work",
-            "headline": "Explore the Barbican through its original plans and models",
-            "location": "Near EC2N",
-            image: images["octBarbican"],
-            "brief": "Concrete and Clay: Archiving the Barbican is a free installation on the Centre’s Mezzanine, Level G, continuing until 1 January 2027. Its changing archive display includes a rarely shown 1:22-scale model of the Centre and Estate. Architectural drawings, photographs and other original material explain the complex’s history, with a touchscreen connecting visitors to the digitised collection.",
-            "why": "This is an indoor cultural detour within reach of the office, without an exhibition-ticket purchase. The archive and scale model offer a concrete way to understand the Barbican’s buildings, rather than another generic architecture recommendation.",
-            "sources": [
-              [
-                "Barbican",
-                "https://www.barbican.org.uk/whats-on/2025/event/concrete-and-clay-archiving-the-barbican"
-              ]
-            ],
-            "action": "Walk"
-          },
-          {
-            "id": "2026-10-28-spitalfields-november-art",
-            "section": "Near work",
-            "headline": "Keep 6–8 November for Spitalfields’ free arts market",
-            "location": "Near EC2N",
-            image: images["octSpitalfields"],
-            "brief": "Spitalfields confirms that its next Arts Market runs on Market Street from Friday 6 to Sunday 8 November. Entry is free. The programme brings artists and makers together with paintings, prints, ceramics and photography. Although the page now leads with its 2027 return, its current-year dates still explicitly include this November weekend and 4–6 December.",
-            "why": "Friday gives you an office-area opportunity before the weekend crowds. The useful decision is when to visit; the updated headline does not mean the confirmed November 2026 market has disappeared.",
-            "sources": [
-              [
-                "Spitalfields Market",
-                "https://www.spitalfields.co.uk/upcoming-events/a-brush-with-creativity-spitalfields-arts-market/"
-              ]
-            ],
-            "action": "Walk"
-          },
-          {
-            "id": "2026-10-28-machenta-instant-learning",
-            "section": "London AI",
-            "headline": "Imperial spinout raises $40m for robots that learn by demonstration",
-            "location": "London-based",
-            image: images["qOctImperialLibrary"],
-            "brief": "Imperial reported on 27 October that its spinout Machenta has raised $40 million in seed funding, led by Creandum and Union Square Ventures. The company builds robot-learning models from research by Professor Edward Johns and colleagues. Its approach aims to teach new physical tasks from one demonstration, with the funding supporting expansion at an office and laboratory in King’s Cross.",
-            "why": "This is a London research-to-business development with a specific local team and expansion plan. The learning claims come from the university and company; investment is evidence of backing, not proof of dependable deployment across every real-world task.",
-            "sources": [
-              [
-                "Imperial College London",
-                "https://www.imperial.ac.uk/news/articles/2026/imperial-ai-spinout-machenta-raises-40-million-to-make-robots-instant-learners/"
-              ],
-              [
-                "Archive campus photo and licence",
-                "https://commons.wikimedia.org/wiki/File:Queen%27s_Tower_above_Imperial_College_Central_Library_in_Late_Autumn.jpg"
-              ]
-            ]
-          },
-          {
-            "id": "2026-10-28-imperial-ampera-digital-twins",
-            "section": "London technology",
-            "headline": "Imperial starts a £7m digital-twin partnership for energy systems",
-            "location": "London-based",
-            image: images["qOctImperialTower"],
-            "brief": "Imperial announced on 27 October a £7 million partnership with AMPERA to develop NeuralTwin, a digital-twinning platform for advanced energy systems. Researchers Christopher Pain and Jiansheng Xiang will contribute computational-modelling expertise. The planned platform combines detailed physics simulation with faster learned approximations, supporting the design and eventual operation of systems including AMPERA’s proposed microreactors.",
-            "why": "The concrete London contribution is engineering research, separate from Machenta’s robot-learning business. This is a development partnership with promised applications; it does not establish that a reactor has been deployed, licensed or proven commercially viable.",
-            "sources": [
-              [
-                "Imperial College London",
-                "https://www.imperial.ac.uk/news/articles/2026/imperial-and-ampera-join-forces-to-develop-digital-twin-platform-for-advanced-nuclear-energy-systems/"
-              ],
-              [
-                "Archive campus photo and licence",
-                "https://commons.wikimedia.org/wiki/File:Queen%27s_Tower_-_Imperial_College_-_geograph.org.uk_-_7508528.jpg"
-              ]
-            ]
-          },
-          {
-            "id": "2026-10-28-kenwood-dairy-saturday",
-            "section": "Plan ahead",
-            "headline": "Make Saturday’s limited Kenwood Dairy opening",
-            "location": "Near NW3",
-            image: images["sunDairy"],
-            "brief": "Kenwood Dairy’s Nature Interpretation Centre opens on Saturday 31 October from 11am to 3pm. Heath Hands invites visitors to see its wildlife specimens and interpretation displays, collect leaflets and find out about activities across the Heath. The published venue is the Dairy at Kenwood House, NW3 7JN. The listing does not advertise a booking requirement or a ticket price.",
-            "why": "This is a specific opening window to plan around, rather than an assumption that the interpretation centre is open every day. Allow extra walking time: Kenwood is on the northern side of the Heath.",
-            "sources": [
-              [
-                "Heath Hands",
-                "https://www.heath-hands.org.uk/whatson/kenwood-dairy-open-311026"
-              ]
-            ],
-            "action": "Walk"
-          },
-          {
-            "id": "2026-10-28-guildhall-november-hours",
-            "section": "Plan ahead",
-            "headline": "Plan an early Guildhall visit on Friday 13 November",
-            "location": "Near EC2N",
-            image: images["sunGuildhall"],
-            "brief": "The City’s current visitor notice says Guildhall Art Gallery and London’s Roman Amphitheatre will open only from 10am to 3.30pm on Friday 13 November. The upper Main Gallery closes earlier, at noon. Saturday 14 November starts later, at 11am, and runs to 5pm. Admission is normally free, but these special hours override the usual timetable.",
-            "why": "Save the date if you are arranging a City visit with guests. An afternoon arrival on 13 November would miss the upper gallery even before the rest of the site closes, so a morning slot is the useful choice.",
-            "sources": [
-              [
-                "City of London",
-                "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/guildhall-art-gallery/visit-guildhall-art-gallery"
-              ]
-            ],
-            "action": "Avoid"
-          }
-        ]
       }
     };
     /* END GENERATED DAILY DATA */
